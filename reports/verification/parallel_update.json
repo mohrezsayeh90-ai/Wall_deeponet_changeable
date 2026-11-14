@@ -1,0 +1,1 @@
+{"serial_parallel_update_match": true, "max_absolute_difference": 5.551115123125783e-17, "devices": ["TFRT_CPU_0", "TFRT_CPU_1"]}

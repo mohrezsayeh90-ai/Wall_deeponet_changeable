@@ -1,0 +1,28 @@
+{
+  "results": {
+    "float64": {
+      "compilation_seconds": 48.98532962899998,
+      "seconds_per_geometry": 0.13246744200000649,
+      "estimated_100k_global_seconds": 423895.81440002075,
+      "loss": 1.2427397984552353,
+      "finite": true
+    },
+    "float32": {
+      "compilation_seconds": 64.625478418,
+      "seconds_per_geometry": 0.03457629700000098,
+      "estimated_100k_global_seconds": 110644.15040000313,
+      "loss": 1.2427394390106201,
+      "finite": true
+    }
+  },
+  "residual_max_precision_difference": 1.0838876256524799e-06,
+  "residual_relative_precision_difference": 1.0082355476065531e-06,
+  "selected_dtype": "float32",
+  "backend": "gpu",
+  "jax": "0.11.1",
+  "devices": [
+    "cuda:0",
+    "cuda:1"
+  ],
+  "precision_scope": "initialization,3 interior points; final checkpoint must separately pass float64 validation"
+}

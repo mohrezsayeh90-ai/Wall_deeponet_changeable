@@ -1,0 +1,167 @@
+{
+  "reason": "Add explicit geometry IDs to references generated earlier in this task on the same verified immutable pool; numerical arrays unchanged",
+  "cases": [
+    {
+      "index": 0,
+      "old_sha256": "168c7ccbea09b35086d557f47af0bd8bebb10abd50fc9de4442d6562b2f65f02",
+      "new_sha256": "1e3dff36e8ad52db0b13e7d4587ab6b806109efc4ee303ac6fad947729a05aff",
+      "geometry_id": "2e866d64658021e09fbc49b9fc7660c53a76fefbad9c42da435822388d55a5ed"
+    },
+    {
+      "index": 1,
+      "old_sha256": "9a748e75fe5105be45e4e8599c5f17817dcc0efb1970bc2ea65a0ce636d24441",
+      "new_sha256": "f20ca2d936256e72384dfb6699890148da79c6ec20f755dbb560c1c6a93130f5",
+      "geometry_id": "5ac806973dd2ec97469ba125d47de98059e566cc724ecc98732e74ea2d299e9d"
+    },
+    {
+      "index": 2,
+      "old_sha256": "b765536788a703060f4651a2c02ed6bce239aa546602cb43c54ae167d7f98984",
+      "new_sha256": "a159c66fed3e324ad4dedae15a332f13c20b7337c3271f39dfd725d8a5c1309a",
+      "geometry_id": "19ef11bb0a9d8f12eeb3edd5dee571bf11f3f671984a245de5eb84d8a838ced6"
+    },
+    {
+      "index": 3,
+      "old_sha256": "ac7595ba36154c1b4c01be0642ea8380ec2164f0b4dfe5b1201720fe0256d870",
+      "new_sha256": "1bb2f27d5e750a0e0c930d28f7016d3e57cdd0826d9378a16dca09672463de19",
+      "geometry_id": "9ae88b285de90dde11a2b44d3ae4cc579e7abaaec9aa80fed6eb762a4623850a"
+    },
+    {
+      "index": 4,
+      "old_sha256": "7b28e0d59f7352a84e6876782aaa4cb89f7cb544e62a303313298a025d5518a4",
+      "new_sha256": "b0187d4f073f7b9cfc64594f14d5f8faf10074f6b093d491cab4e6c20b81afff",
+      "geometry_id": "7e346192d20d25e1accd81819d669851472a6b5f164c0410573a1f7aea21c424"
+    },
+    {
+      "index": 5,
+      "old_sha256": "025fe00543b6afc6d97d78cf17aaa8bcbd76bc7859f53d4b8fdc976497d8e14d",
+      "new_sha256": "17290a817b667df5a1aaaa725da52ba432fb55898c5d07e209bd80cd17de56ad",
+      "geometry_id": "b2a6885c62db1b98665f366772a11a95ea107aff345924bb506b8ea4719843bb"
+    },
+    {
+      "index": 6,
+      "old_sha256": "9b97a3848b42743a6b02637b729f71f1ac820e4c63868fb333a23f518e25aa81",
+      "new_sha256": "e20bc538cbc4ce5e2e3af780ccf575a08a1c3a8c0227feb9ac887d65d319f00c",
+      "geometry_id": "18eeadd32bd9a730bfa6c43c613d1b95103cad58e4f6db5f816edfb23a876ba1"
+    },
+    {
+      "index": 7,
+      "old_sha256": "4a97948a4269dc95b23145c31bdd94543aec6383fecf564fdb19f1182f0b745a",
+      "new_sha256": "8730d315d417048f2e941ed4e3c47daef7d79abda22096a9f74a68993b2e80ce",
+      "geometry_id": "692f9d4bfd6b148accfbce110760f032503f49c5bd967b870cff1430303c56e6"
+    },
+    {
+      "index": 8,
+      "old_sha256": "a3ffc392aed9c641199ca72e9ec60e7c204955a899e6bae11729afd9a34258aa",
+      "new_sha256": "a5c08cadd504652d027e9eb39b9f3b791b1a2b921c5aa681da368de9f62df895",
+      "geometry_id": "d43830aa6173cec633c076921b04e96391f9d6317f916d17cb6c9108f87c1057"
+    },
+    {
+      "index": 9,
+      "old_sha256": "5a36c29c5513ab9dab1d463fa974137abeaa347c4aef6d2e1692737d73949cc0",
+      "new_sha256": "16ec4981d3ffaafb18de3c5d1811ee042406f75b6cdbb6b54a3208c55176a664",
+      "geometry_id": "6cce90ef9a409c2de95d033dd84c7a0d02ac84af64eb7848c8d73a3b07398c69"
+    },
+    {
+      "index": 10,
+      "old_sha256": "443663be4db4ba1e6ecaac16d1f53e8860e297203ae42adb57020881e2d7169b",
+      "new_sha256": "3e3692ef7a38926c8231e93e3a0146caa85ec7e336e9e9e32f6f9183ac2b090e",
+      "geometry_id": "97a35a59beeb4b69d3b156650ab98475bb8cfd6f7f48c535c920ca1572278916"
+    },
+    {
+      "index": 11,
+      "old_sha256": "f53ac88b0da5cc745f3dbd2360df96e754c789e74c21646a3c2e136720702667",
+      "new_sha256": "66a8cc9ffdbbc19d281d1fbdb59487b024555d32e275afaea3d8fdfc5deec8e5",
+      "geometry_id": "702c55f96c43f5c385952df1c7683b82460e9be768671bfe957c87fd05186141"
+    },
+    {
+      "index": 12,
+      "old_sha256": "4c50f515a59e01fad1d5e188258c6e3f66f99db3994ca176d4f0fdd21c439a7c",
+      "new_sha256": "1cda4e9009a3ac86ee132a7cdb4a3cc6f8125b90e17af5c7eecb29328659dba4",
+      "geometry_id": "afa84782a20cdd035dd47f500836abb4d9082651f247278ad30f4d6a72794056"
+    },
+    {
+      "index": 13,
+      "old_sha256": "5ffafa2feb4494c0b313fd686c354933116653ca75516c4c92352ddb660797e5",
+      "new_sha256": "4980bb94babe349f8bec8db9cfdee67d60484b89d640f16b87d2351225d0616c",
+      "geometry_id": "12527da28e88f3258c286a35b9d0d5095813eabc78337552b204783a2cf40ffe"
+    },
+    {
+      "index": 14,
+      "old_sha256": "ee357d7ac2fde874e582a80cae97ca2def7de401ab619b340f17569466bd0ace",
+      "new_sha256": "a81672ae31bb1c77d6e1a0a364ce244d4c9dceabfd5654ce98ebed9317a6b839",
+      "geometry_id": "c6cf29731687ecccd1f29c23c8fc8d98b7f11f0fd5f5804c1cfe881852962804"
+    },
+    {
+      "index": 15,
+      "old_sha256": "83d890e545364319635b9f3bddc3ee254c5e6516444082b988ce2e30a435e2c7",
+      "new_sha256": "b53a856f012883a060f3e78de4afe2ee9ce53e08b0872162c32195bb766ae672",
+      "geometry_id": "b68839239b8a81a9a8198b23739b846398d090b60bc5acffc6bf3cda88d3dc83"
+    },
+    {
+      "index": 16,
+      "old_sha256": "597b3d4b5e766794d3b29ef847843db7cf44ae4efd5154c9e809b106f67ce809",
+      "new_sha256": "5b4217c8bf79ef837135b27e3ccd6da296ff897751dea45cd7c07c1cd1f8fdd0",
+      "geometry_id": "a206e5f0762f6a9894c306c09007c8ffc1f57a48ef8523170fe319b4e661820f"
+    },
+    {
+      "index": 17,
+      "old_sha256": "ef30b39c9df5d82483ccd2686dc95b7e8d4439a92b2c23aa3f26e7430d509578",
+      "new_sha256": "eeca2fa69436266e6a2859d3ebb89b2a250428b151d6652c2724606e9636cc5e",
+      "geometry_id": "499e3f763118dc6528278bd5af69e52f9a2b73b30334fda0698d42b0ab193d29"
+    },
+    {
+      "index": 18,
+      "old_sha256": "39438e27ad1a8731ed069c622d4e5e163d011e8afb2d7555d71cfe22b0b5a22a",
+      "new_sha256": "1c2a03c2c70cbc93272febb84ef8175b9bfdd1562bd745b59a52e8a1dddd72ae",
+      "geometry_id": "bcae1089551285d7ef3f4dca4a8812010349bd519f412fa26e235deb030d9b0c"
+    },
+    {
+      "index": 19,
+      "old_sha256": "9279c8b46bb476e752894570c2e9c55c85929b629019ba2230713a071304fd3a",
+      "new_sha256": "65b41c438f0b1c6d18f46e7cc7c8b587f3c86047e7c713490d13a4b9691bc7db",
+      "geometry_id": "5b8d9788e85a38bd78f45c466d2f9efe77623645ebb64caa0837c528789acd1a"
+    },
+    {
+      "index": 20,
+      "old_sha256": "b2697e7bf095cacfe38992d979dd7bd5020055ea520fce744444e5b19f5767b4",
+      "new_sha256": "edbdd075cdeb56bf1d02071ee71d57c81191d9758173a7af5bff95fea947ef17",
+      "geometry_id": "8767dcf8ed6a941c170e1d307230912711a2d622a51145ef12043f113e50c1eb"
+    },
+    {
+      "index": 21,
+      "old_sha256": "cadd2fc0cddb912bde44cb7fa8358326e56c5c9c842c07392ccbf24f4e8d2e67",
+      "new_sha256": "04c9ea01cf74ae5f3a626a196b2b30bcc1366f106bf354cfe484004427d235e3",
+      "geometry_id": "38c47547426bc9c1aeb4747a575203fc6ddeee5969aed174ce792bf4826b21f5"
+    },
+    {
+      "index": 22,
+      "old_sha256": "f75a3e8a9cc8c2c303cb75e7076873c26e8c23c6fc6997f232f2f385136a1576",
+      "new_sha256": "c3758754c112a60c384b4930bf650a0b82094624652bb38e5ae48021447cffbe",
+      "geometry_id": "9b474c594f8354ce390e8341e6d5768a9762e32173d14755b753071d547e6c8e"
+    },
+    {
+      "index": 23,
+      "old_sha256": "a706d9f875b5780d2c108bd22bddb17409935bee7c0d0efe95807265e2edcebb",
+      "new_sha256": "f1d569184fe728435a4c5338d51657ff63dc5340b82836bddfc5decbe2947e95",
+      "geometry_id": "22327ffbb7302eb1c5a64b556e37d36c5d250b2e0cf72191b2157907300fd35e"
+    },
+    {
+      "index": 24,
+      "old_sha256": "8844263a702c3cf87c86a4a85c04c84b4457ac0627d6184a88d731ae01ddeec8",
+      "new_sha256": "7ebd5a837d257290cb3b76733c63a2401f150438b140b10a24c9828bc56230b6",
+      "geometry_id": "d89b9f2cdf8cb06ba96b39bf37e6cf8a3d5ea3d5cb1bf069af894f64b5b33d26"
+    },
+    {
+      "index": 26,
+      "old_sha256": "d1c982c276f1ef91e1fcaabc0845802674c836ba7d460b42f4e61eef4729587c",
+      "new_sha256": "1523bedb08ea000ca4c0e386f3521400c6498e09cca0d575caf3026ffd6d6192",
+      "geometry_id": "ac6e844ba42f8cf1b23d2c1597097edf7a63c7eb4136a577d371c10d186e280f"
+    },
+    {
+      "index": 27,
+      "old_sha256": "1bdcca9a757de1c3f0f902fd19f6aaeba2317ebdbb408ef722dba1429218a661",
+      "new_sha256": "98893fc2b4094e723f02b0f9549d18aa8c2aa2fd9ff761a673f24f7775e6436a",
+      "geometry_id": "b9935efb8ed2ca020b397411095435cc910e57f3c2cda880cbb60357237b91f1"
+    }
+  ]
+}

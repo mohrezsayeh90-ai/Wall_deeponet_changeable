@@ -1,0 +1,44 @@
+{
+  "project": "geometry-conditioned-pi-deeponet",
+  "implementation": "initial implementation tested",
+  "unit_tests_passed": 13,
+  "gpu_access_verified": true,
+  "gpu_probe_jax": "0.11.1",
+  "gpu_probe_devices": 2,
+  "kaggle_main": "mohrezsayeh/geometry-pi-deeponet-main",
+  "kaggle_version": 1,
+  "kaggle_source_revision": "f6b32ae",
+  "kaggle_status_last_observed": "RUNNING",
+  "main_training_steps_verified": 770,
+  "main_training_completed": false,
+  "trained_model_accepted": false,
+  "locked_test_opened": false,
+  "pools": {
+    "train": 10000,
+    "dev": 400,
+    "test": 1000,
+    "stress": 200
+  },
+  "reference_pilot_passed": 8,
+  "reference_development_generation": "running on CPU",
+  "baseline_lift_velocity_median": 0.06518807909744846,
+  "remaining": [
+    "Retrieve GPU logs and checkpoints",
+    "Complete main training or continue saved checkpoint",
+    "Full development FEM/model selection",
+    "Locked test and Reynolds sweeps",
+    "Stress benchmark",
+    "Matched learned baselines and ablations",
+    "Wall stress verification"
+  ],
+  "blockers": [
+    "Kaggle output-download domain not granted in current runtime; network draft saved, needs user apply/publish",
+    "Observed allocation 6 GPU hours; measured global updates imply approximately 15 hours for 100k steps on one device"
+  ],
+  "observed_at_utc": "2026-11-14T22:08:30.605006+00:00",
+  "main_last_logged_loss": 0.32649263739585876,
+  "main_step_seconds_observed": 0.5296107550000215,
+  "main_100k_hours_from_global_batch": 14.71140986111171,
+  "reference_development_completed": 27,
+  "reference_development_failed": 0
+}

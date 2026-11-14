@@ -1,0 +1,22 @@
+{
+  "step": 2,
+  "train_pool_sha256": "5ac9e404615d133786f93bc8ebaa4471c54822481e6e77482deb532a8109476f",
+  "code_revision": "uncommitted",
+  "accepted": false,
+  "training_labels": 0,
+  "backend": "cpu",
+  "devices": [
+    "TFRT_CPU_0"
+  ],
+  "jax": "0.4.38",
+  "python": "3.12.14",
+  "target_steps": 2,
+  "global_batch": 1,
+  "interior_points": 2,
+  "outlet_points": 2,
+  "sampling": "biased mixture; unweighted strong momentum and traction",
+  "selection": "latest; FEM selection pending",
+  "elapsed_seconds": 13.950838838998607,
+  "compilation_seconds": 13.870434090000344,
+  "stop_reason": "target_completed"
+}

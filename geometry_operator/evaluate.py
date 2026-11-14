@@ -83,6 +83,8 @@ def evaluate(args):
             if not ref.exists():raise FileNotFoundError('Independent mesh-converged reference missing')
             with np.load(ref,allow_pickle=False) as d:
                 xy,w,truth=d['xy'],d['weights'],d['fields'];rm=json.loads(str(d['metadata']))
+            if rm.get('geometry_id')!=case['id'] or rm['reynolds']!=re:
+                raise ValueError('Reference geometry/Re does not match immutable case')
             t=time.monotonic();pred=model.evaluate(coeff,re,xy,allow_stress=args.split=='stress');first=time.monotonic()-t
             t=time.monotonic();model.evaluate(coeff,re,xy,allow_stress=args.split=='stress');steady=time.monotonic()-t
             drop=pressure_sections(lambda q:model.evaluate(coeff,re,q,allow_stress=args.split=='stress'),coeff)

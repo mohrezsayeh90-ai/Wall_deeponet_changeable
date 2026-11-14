@@ -9,7 +9,7 @@ import numpy as np
 from scipy.sparse import bmat,csr_matrix
 from skfem import MeshTri,Basis,ElementTriP2,ElementTriP1,ElementVector,BilinearForm,asm,condense,solve
 from skfem.helpers import ddot,dot,div
-from .geometry import sample_numpy
+from .geometry import sample_numpy,geometry_id
 from .sampling import load_pool,sha
 
 @BilinearForm
@@ -97,7 +97,11 @@ def pressure_sections(evaluate,coeff):
 
 def build_case(coeff,re,path,nx=80,ny=24,mesh_rtol=.01):
     path=Path(path)
-    if path.exists():return json.loads(str(np.load(path,allow_pickle=False)['metadata']))
+    if path.exists():
+        with np.load(path,allow_pickle=False) as d:cached=json.loads(str(d['metadata']))
+        if cached.get('geometry_id')!=geometry_id(coeff) or cached['reynolds']!=float(re):
+            raise ValueError('Cached reference geometry/Re mismatch or missing provenance')
+        return cached
     xy,w=quadrature(coeff);coarse,mc=solve_reference(coeff,re,nx,ny);fine,mf=solve_reference(coeff,re,nx*2,ny*2)
     # Chordal meshes approximate the exact walls. Explicitly quantify the common
     # valid interior; never extrapolate or silently discard the boundary strip.
@@ -113,7 +117,7 @@ def build_case(coeff,re,path,nx=80,ny=24,mesh_rtol=.01):
     if max(uncertainty.values())>mesh_rtol:
         if nx<160:return build_case(coeff,re,path,nx*2,ny*2,mesh_rtol)
         raise RuntimeError(f'Mesh convergence unresolved: {uncertainty}')
-    metadata=dict(reynolds=float(re),coarse=mc,fine=mf,mesh_uncertainty=uncertainty,pressure_drop=drop,
+    metadata=dict(geometry_id=geometry_id(coeff),reynolds=float(re),coarse=mc,fine=mf,mesh_uncertainty=uncertainty,pressure_drop=drop,
                   pressure_sections=[.25,4.75],pressure_denominator_floor=1e-8,wall_stress_verified=False,
                   common_domain_excluded_area_fraction=excluded,common_domain_rule='both chordal meshes; exclude <=.5% physical quadrature area')
     path.parent.mkdir(parents=True,exist_ok=True)

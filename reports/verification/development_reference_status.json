@@ -1,0 +1,1081 @@
+{
+  "split": "dev",
+  "pool_sha256": "e6421f0ce908ff12cd92e9940bf57c19af8f04b48a904e2428e1d30111add330",
+  "expected": 400,
+  "cases": [
+    {
+      "index": 0,
+      "status": "passed",
+      "reynolds": 10.0,
+      "coarse": {
+        "nx": 40,
+        "ny": 12,
+        "iterations": 13,
+        "algebraic_residual": 1.3494790878137627e-08,
+        "seconds": 0.5408334059975459,
+        "velocity_dofs": 4050,
+        "pressure_dofs": 533,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "fine": {
+        "nx": 80,
+        "ny": 24,
+        "iterations": 14,
+        "algebraic_residual": 2.632316748572184e-09,
+        "seconds": 4.258803952998278,
+        "velocity_dofs": 15778,
+        "pressure_dofs": 2025,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "mesh_uncertainty": {
+        "velocity": 0.00021430709977250087,
+        "pressure": 0.00017982456486588386,
+        "pressure_drop": 2.8620932226424724e-05
+      },
+      "pressure_drop": 5.576434039784546,
+      "pressure_sections": [
+        0.25,
+        4.75
+      ],
+      "pressure_denominator_floor": 1e-08,
+      "wall_stress_verified": false,
+      "geometry_id": "2e866d64658021e09fbc49b9fc7660c53a76fefbad9c42da435822388d55a5ed"
+    },
+    {
+      "index": 1,
+      "status": "passed",
+      "reynolds": 10.0,
+      "coarse": {
+        "nx": 40,
+        "ny": 12,
+        "iterations": 16,
+        "algebraic_residual": 1.0869638154406188e-08,
+        "seconds": 0.6610555480001494,
+        "velocity_dofs": 4050,
+        "pressure_dofs": 533,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "fine": {
+        "nx": 80,
+        "ny": 24,
+        "iterations": 16,
+        "algebraic_residual": 5.5983737624931015e-09,
+        "seconds": 4.839309350998519,
+        "velocity_dofs": 15778,
+        "pressure_dofs": 2025,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "mesh_uncertainty": {
+        "velocity": 0.002311178396818203,
+        "pressure": 0.0029817925213591846,
+        "pressure_drop": 0.0024685566538838713
+      },
+      "pressure_drop": 6.000248397957121,
+      "pressure_sections": [
+        0.25,
+        4.75
+      ],
+      "pressure_denominator_floor": 1e-08,
+      "wall_stress_verified": false,
+      "common_domain_excluded_area_fraction": 0.00056925333676692,
+      "common_domain_rule": "both chordal meshes; exclude <=.5% physical quadrature area",
+      "geometry_id": "5ac806973dd2ec97469ba125d47de98059e566cc724ecc98732e74ea2d299e9d"
+    },
+    {
+      "index": 2,
+      "status": "passed",
+      "reynolds": 10.0,
+      "coarse": {
+        "nx": 40,
+        "ny": 12,
+        "iterations": 14,
+        "algebraic_residual": 9.34757301063203e-09,
+        "seconds": 0.528350328997476,
+        "velocity_dofs": 4050,
+        "pressure_dofs": 533,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "fine": {
+        "nx": 80,
+        "ny": 24,
+        "iterations": 14,
+        "algebraic_residual": 4.973404866361239e-09,
+        "seconds": 4.265849547999096,
+        "velocity_dofs": 15778,
+        "pressure_dofs": 2025,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "mesh_uncertainty": {
+        "velocity": 0.0026810245164196455,
+        "pressure": 0.0030435583636723705,
+        "pressure_drop": 0.0022191357980126144
+      },
+      "pressure_drop": 5.015474443102625,
+      "pressure_sections": [
+        0.25,
+        4.75
+      ],
+      "pressure_denominator_floor": 1e-08,
+      "wall_stress_verified": false,
+      "geometry_id": "19ef11bb0a9d8f12eeb3edd5dee571bf11f3f671984a245de5eb84d8a838ced6"
+    },
+    {
+      "index": 3,
+      "status": "passed",
+      "reynolds": 10.0,
+      "coarse": {
+        "nx": 40,
+        "ny": 12,
+        "iterations": 15,
+        "algebraic_residual": 1.1896734981760168e-08,
+        "seconds": 0.5515000960003817,
+        "velocity_dofs": 4050,
+        "pressure_dofs": 533,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "fine": {
+        "nx": 80,
+        "ny": 24,
+        "iterations": 15,
+        "algebraic_residual": 6.123293947814374e-09,
+        "seconds": 4.602147247998801,
+        "velocity_dofs": 15778,
+        "pressure_dofs": 2025,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "mesh_uncertainty": {
+        "velocity": 0.00184004470428727,
+        "pressure": 0.0016789791046568352,
+        "pressure_drop": 0.0013307732204838334
+      },
+      "pressure_drop": 4.923739206376781,
+      "pressure_sections": [
+        0.25,
+        4.75
+      ],
+      "pressure_denominator_floor": 1e-08,
+      "wall_stress_verified": false,
+      "geometry_id": "9ae88b285de90dde11a2b44d3ae4cc579e7abaaec9aa80fed6eb762a4623850a"
+    },
+    {
+      "index": 4,
+      "status": "passed",
+      "reynolds": 10.0,
+      "coarse": {
+        "nx": 40,
+        "ny": 12,
+        "iterations": 15,
+        "algebraic_residual": 9.653251443787325e-09,
+        "seconds": 0.5926222520029114,
+        "velocity_dofs": 4050,
+        "pressure_dofs": 533,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "fine": {
+        "nx": 80,
+        "ny": 24,
+        "iterations": 15,
+        "algebraic_residual": 5.07886387644943e-09,
+        "seconds": 4.426763890001894,
+        "velocity_dofs": 15778,
+        "pressure_dofs": 2025,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "mesh_uncertainty": {
+        "velocity": 0.0032223626305880543,
+        "pressure": 0.0062814135774887795,
+        "pressure_drop": 0.005415521001795295
+      },
+      "pressure_drop": 7.148603908439109,
+      "pressure_sections": [
+        0.25,
+        4.75
+      ],
+      "pressure_denominator_floor": 1e-08,
+      "wall_stress_verified": false,
+      "common_domain_excluded_area_fraction": 0.0005813565006352467,
+      "common_domain_rule": "both chordal meshes; exclude <=.5% physical quadrature area",
+      "geometry_id": "7e346192d20d25e1accd81819d669851472a6b5f164c0410573a1f7aea21c424"
+    },
+    {
+      "index": 5,
+      "status": "passed",
+      "reynolds": 10.0,
+      "coarse": {
+        "nx": 40,
+        "ny": 12,
+        "iterations": 15,
+        "algebraic_residual": 7.869440079318298e-09,
+        "seconds": 0.5907729009995819,
+        "velocity_dofs": 4050,
+        "pressure_dofs": 533,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "fine": {
+        "nx": 80,
+        "ny": 24,
+        "iterations": 15,
+        "algebraic_residual": 4.0563911796459975e-09,
+        "seconds": 4.3661973159978515,
+        "velocity_dofs": 15778,
+        "pressure_dofs": 2025,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "mesh_uncertainty": {
+        "velocity": 0.0018844678581990222,
+        "pressure": 0.001930942324311688,
+        "pressure_drop": 0.0017708434288253004
+      },
+      "pressure_drop": 6.1591503816874615,
+      "pressure_sections": [
+        0.25,
+        4.75
+      ],
+      "pressure_denominator_floor": 1e-08,
+      "wall_stress_verified": false,
+      "common_domain_excluded_area_fraction": 0.00022778911290294136,
+      "common_domain_rule": "both chordal meshes; exclude <=.5% physical quadrature area",
+      "geometry_id": "b2a6885c62db1b98665f366772a11a95ea107aff345924bb506b8ea4719843bb"
+    },
+    {
+      "index": 6,
+      "status": "passed",
+      "reynolds": 10.0,
+      "coarse": {
+        "nx": 40,
+        "ny": 12,
+        "iterations": 16,
+        "algebraic_residual": 8.46709076028249e-09,
+        "seconds": 0.6376088329998311,
+        "velocity_dofs": 4050,
+        "pressure_dofs": 533,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "fine": {
+        "nx": 80,
+        "ny": 24,
+        "iterations": 16,
+        "algebraic_residual": 4.4386612680427485e-09,
+        "seconds": 4.973379806000594,
+        "velocity_dofs": 15778,
+        "pressure_dofs": 2025,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "mesh_uncertainty": {
+        "velocity": 0.0031450579773998227,
+        "pressure": 0.0044751132275322155,
+        "pressure_drop": 0.00402953842395566
+      },
+      "pressure_drop": 6.053906620915362,
+      "pressure_sections": [
+        0.25,
+        4.75
+      ],
+      "pressure_denominator_floor": 1e-08,
+      "wall_stress_verified": false,
+      "common_domain_excluded_area_fraction": 0.0007046429489316687,
+      "common_domain_rule": "both chordal meshes; exclude <=.5% physical quadrature area",
+      "geometry_id": "18eeadd32bd9a730bfa6c43c613d1b95103cad58e4f6db5f816edfb23a876ba1"
+    },
+    {
+      "index": 7,
+      "status": "passed",
+      "reynolds": 10.0,
+      "coarse": {
+        "nx": 40,
+        "ny": 12,
+        "iterations": 15,
+        "algebraic_residual": 6.370647949733238e-09,
+        "seconds": 0.604000569001073,
+        "velocity_dofs": 4050,
+        "pressure_dofs": 533,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "fine": {
+        "nx": 80,
+        "ny": 24,
+        "iterations": 15,
+        "algebraic_residual": 3.2966936546276107e-09,
+        "seconds": 4.795347617000516,
+        "velocity_dofs": 15778,
+        "pressure_dofs": 2025,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "mesh_uncertainty": {
+        "velocity": 0.002158232280766892,
+        "pressure": 0.00273152675135466,
+        "pressure_drop": 0.0014432235552594994
+      },
+      "pressure_drop": 5.175588787388294,
+      "pressure_sections": [
+        0.25,
+        4.75
+      ],
+      "pressure_denominator_floor": 1e-08,
+      "wall_stress_verified": false,
+      "common_domain_excluded_area_fraction": 0.00026783660503001256,
+      "common_domain_rule": "both chordal meshes; exclude <=.5% physical quadrature area",
+      "geometry_id": "692f9d4bfd6b148accfbce110760f032503f49c5bd967b870cff1430303c56e6"
+    },
+    {
+      "index": 8,
+      "status": "passed",
+      "reynolds": 30.0,
+      "coarse": {
+        "nx": 40,
+        "ny": 12,
+        "iterations": 48,
+        "algebraic_residual": 5.41479050281612e-09,
+        "seconds": 1.808385520002048,
+        "velocity_dofs": 4050,
+        "pressure_dofs": 533,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "fine": {
+        "nx": 80,
+        "ny": 24,
+        "iterations": 49,
+        "algebraic_residual": 2.7791863687902644e-09,
+        "seconds": 12.81970152500071,
+        "velocity_dofs": 15778,
+        "pressure_dofs": 2025,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "mesh_uncertainty": {
+        "velocity": 0.0012492675506200234,
+        "pressure": 0.001600875073844825,
+        "pressure_drop": 0.0008751119589044431
+      },
+      "pressure_drop": 1.8466076118601609,
+      "pressure_sections": [
+        0.25,
+        4.75
+      ],
+      "pressure_denominator_floor": 1e-08,
+      "wall_stress_verified": false,
+      "common_domain_excluded_area_fraction": 0.00019528809137585854,
+      "common_domain_rule": "both chordal meshes; exclude <=.5% physical quadrature area",
+      "geometry_id": "d43830aa6173cec633c076921b04e96391f9d6317f916d17cb6c9108f87c1057"
+    },
+    {
+      "index": 9,
+      "status": "passed",
+      "reynolds": 30.0,
+      "coarse": {
+        "nx": 40,
+        "ny": 12,
+        "iterations": 50,
+        "algebraic_residual": 3.344395646636247e-09,
+        "seconds": 1.8312052060027781,
+        "velocity_dofs": 4050,
+        "pressure_dofs": 533,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "fine": {
+        "nx": 80,
+        "ny": 24,
+        "iterations": 50,
+        "algebraic_residual": 1.7613883268685619e-09,
+        "seconds": 12.869345685998269,
+        "velocity_dofs": 15778,
+        "pressure_dofs": 2025,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "mesh_uncertainty": {
+        "velocity": 0.0022592952716904463,
+        "pressure": 0.0040817258798366805,
+        "pressure_drop": 0.002347929846853551
+      },
+      "pressure_drop": 1.873756856611795,
+      "pressure_sections": [
+        0.25,
+        4.75
+      ],
+      "pressure_denominator_floor": 1e-08,
+      "wall_stress_verified": false,
+      "common_domain_excluded_area_fraction": 0.0008260540201233744,
+      "common_domain_rule": "both chordal meshes; exclude <=.5% physical quadrature area",
+      "geometry_id": "6cce90ef9a409c2de95d033dd84c7a0d02ac84af64eb7848c8d73a3b07398c69"
+    },
+    {
+      "index": 10,
+      "status": "passed",
+      "reynolds": 30.0,
+      "coarse": {
+        "nx": 40,
+        "ny": 12,
+        "iterations": 47,
+        "algebraic_residual": 3.258246097960562e-09,
+        "seconds": 1.6051696900030947,
+        "velocity_dofs": 4050,
+        "pressure_dofs": 533,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "fine": {
+        "nx": 80,
+        "ny": 24,
+        "iterations": 47,
+        "algebraic_residual": 1.7279398725282086e-09,
+        "seconds": 12.029069160998915,
+        "velocity_dofs": 15778,
+        "pressure_dofs": 2025,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "mesh_uncertainty": {
+        "velocity": 0.0026531861074467486,
+        "pressure": 0.0037023909821880456,
+        "pressure_drop": 0.002385842939469168
+      },
+      "pressure_drop": 1.6904117765967381,
+      "pressure_sections": [
+        0.25,
+        4.75
+      ],
+      "pressure_denominator_floor": 1e-08,
+      "wall_stress_verified": false,
+      "common_domain_excluded_area_fraction": 0.0004371920705525698,
+      "common_domain_rule": "both chordal meshes; exclude <=.5% physical quadrature area",
+      "geometry_id": "97a35a59beeb4b69d3b156650ab98475bb8cfd6f7f48c535c920ca1572278916"
+    },
+    {
+      "index": 11,
+      "status": "passed",
+      "reynolds": 30.0,
+      "coarse": {
+        "nx": 40,
+        "ny": 12,
+        "iterations": 51,
+        "algebraic_residual": 3.2030667350809514e-09,
+        "seconds": 1.801516495001124,
+        "velocity_dofs": 4050,
+        "pressure_dofs": 533,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "fine": {
+        "nx": 80,
+        "ny": 24,
+        "iterations": 51,
+        "algebraic_residual": 1.6506290703707342e-09,
+        "seconds": 13.172026878997713,
+        "velocity_dofs": 15778,
+        "pressure_dofs": 2025,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "mesh_uncertainty": {
+        "velocity": 0.002000185101395233,
+        "pressure": 0.002462296895718656,
+        "pressure_drop": 0.0013082005118887888
+      },
+      "pressure_drop": 1.6490309107155627,
+      "pressure_sections": [
+        0.25,
+        4.75
+      ],
+      "pressure_denominator_floor": 1e-08,
+      "wall_stress_verified": false,
+      "common_domain_excluded_area_fraction": 0.0,
+      "common_domain_rule": "both chordal meshes; exclude <=.5% physical quadrature area",
+      "geometry_id": "702c55f96c43f5c385952df1c7683b82460e9be768671bfe957c87fd05186141"
+    },
+    {
+      "index": 12,
+      "status": "passed",
+      "reynolds": 30.0,
+      "coarse": {
+        "nx": 40,
+        "ny": 12,
+        "iterations": 48,
+        "algebraic_residual": 2.9358326748080612e-09,
+        "seconds": 1.8945739610026067,
+        "velocity_dofs": 4050,
+        "pressure_dofs": 533,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "fine": {
+        "nx": 80,
+        "ny": 24,
+        "iterations": 48,
+        "algebraic_residual": 1.5799486910787522e-09,
+        "seconds": 12.103715376000764,
+        "velocity_dofs": 15778,
+        "pressure_dofs": 2025,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "mesh_uncertainty": {
+        "velocity": 0.003466553726450755,
+        "pressure": 0.0081342219971766,
+        "pressure_drop": 0.006835293224966681
+      },
+      "pressure_drop": 2.242090391824038,
+      "pressure_sections": [
+        0.25,
+        4.75
+      ],
+      "pressure_denominator_floor": 1e-08,
+      "wall_stress_verified": false,
+      "common_domain_excluded_area_fraction": 0.0009894688868638771,
+      "common_domain_rule": "both chordal meshes; exclude <=.5% physical quadrature area",
+      "geometry_id": "afa84782a20cdd035dd47f500836abb4d9082651f247278ad30f4d6a72794056"
+    },
+    {
+      "index": 13,
+      "status": "passed",
+      "reynolds": 30.0,
+      "coarse": {
+        "nx": 40,
+        "ny": 12,
+        "iterations": 51,
+        "algebraic_residual": 3.310761916985348e-09,
+        "seconds": 1.8227738900022814,
+        "velocity_dofs": 4050,
+        "pressure_dofs": 533,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "fine": {
+        "nx": 80,
+        "ny": 24,
+        "iterations": 51,
+        "algebraic_residual": 1.6916843172729236e-09,
+        "seconds": 12.99047636999967,
+        "velocity_dofs": 15778,
+        "pressure_dofs": 2025,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "mesh_uncertainty": {
+        "velocity": 0.0012015513226828144,
+        "pressure": 0.0016854876990440055,
+        "pressure_drop": 0.001099308610929548
+      },
+      "pressure_drop": 1.5831806176514716,
+      "pressure_sections": [
+        0.25,
+        4.75
+      ],
+      "pressure_denominator_floor": 1e-08,
+      "wall_stress_verified": false,
+      "common_domain_excluded_area_fraction": 0.0,
+      "common_domain_rule": "both chordal meshes; exclude <=.5% physical quadrature area",
+      "geometry_id": "12527da28e88f3258c286a35b9d0d5095813eabc78337552b204783a2cf40ffe"
+    },
+    {
+      "index": 14,
+      "status": "passed",
+      "reynolds": 30.0,
+      "coarse": {
+        "nx": 40,
+        "ny": 12,
+        "iterations": 50,
+        "algebraic_residual": 2.7601189538656977e-09,
+        "seconds": 1.8520290199994633,
+        "velocity_dofs": 4050,
+        "pressure_dofs": 533,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "fine": {
+        "nx": 80,
+        "ny": 24,
+        "iterations": 50,
+        "algebraic_residual": 1.4415241661007698e-09,
+        "seconds": 12.787636582001142,
+        "velocity_dofs": 15778,
+        "pressure_dofs": 2025,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "mesh_uncertainty": {
+        "velocity": 0.003925550333559751,
+        "pressure": 0.00553060956006315,
+        "pressure_drop": 0.00439317044529771
+      },
+      "pressure_drop": 1.8653642705972602,
+      "pressure_sections": [
+        0.25,
+        4.75
+      ],
+      "pressure_denominator_floor": 1e-08,
+      "wall_stress_verified": false,
+      "common_domain_excluded_area_fraction": 0.0005155171037803013,
+      "common_domain_rule": "both chordal meshes; exclude <=.5% physical quadrature area",
+      "geometry_id": "c6cf29731687ecccd1f29c23c8fc8d98b7f11f0fd5f5804c1cfe881852962804"
+    },
+    {
+      "index": 15,
+      "status": "passed",
+      "reynolds": 30.0,
+      "coarse": {
+        "nx": 40,
+        "ny": 12,
+        "iterations": 51,
+        "algebraic_residual": 2.5247237899588884e-09,
+        "seconds": 1.835287234000134,
+        "velocity_dofs": 4050,
+        "pressure_dofs": 533,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "fine": {
+        "nx": 80,
+        "ny": 24,
+        "iterations": 51,
+        "algebraic_residual": 1.293545415426166e-09,
+        "seconds": 13.210787689000426,
+        "velocity_dofs": 15778,
+        "pressure_dofs": 2025,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "mesh_uncertainty": {
+        "velocity": 0.0020311862199130382,
+        "pressure": 0.0025341897865999077,
+        "pressure_drop": 0.0012019003875725395
+      },
+      "pressure_drop": 2.0279370173049074,
+      "pressure_sections": [
+        0.25,
+        4.75
+      ],
+      "pressure_denominator_floor": 1e-08,
+      "wall_stress_verified": false,
+      "common_domain_excluded_area_fraction": 0.0004122439000816893,
+      "common_domain_rule": "both chordal meshes; exclude <=.5% physical quadrature area",
+      "geometry_id": "b68839239b8a81a9a8198b23739b846398d090b60bc5acffc6bf3cda88d3dc83"
+    },
+    {
+      "index": 16,
+      "status": "passed",
+      "reynolds": 60.0,
+      "coarse": {
+        "nx": 40,
+        "ny": 12,
+        "iterations": 78,
+        "algebraic_residual": 2.8352316710741847e-09,
+        "seconds": 2.65170600700003,
+        "velocity_dofs": 4050,
+        "pressure_dofs": 533,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "fine": {
+        "nx": 80,
+        "ny": 24,
+        "iterations": 78,
+        "algebraic_residual": 1.4431822863910553e-09,
+        "seconds": 19.08620218500073,
+        "velocity_dofs": 15778,
+        "pressure_dofs": 2025,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "mesh_uncertainty": {
+        "velocity": 0.0003908223324232271,
+        "pressure": 0.0006627208428982338,
+        "pressure_drop": 0.00017167607270153582
+      },
+      "pressure_drop": 0.8781870351649297,
+      "pressure_sections": [
+        0.25,
+        4.75
+      ],
+      "pressure_denominator_floor": 1e-08,
+      "wall_stress_verified": false,
+      "common_domain_excluded_area_fraction": 0.0,
+      "common_domain_rule": "both chordal meshes; exclude <=.5% physical quadrature area",
+      "geometry_id": "a206e5f0762f6a9894c306c09007c8ffc1f57a48ef8523170fe319b4e661820f"
+    },
+    {
+      "index": 17,
+      "status": "passed",
+      "reynolds": 60.0,
+      "coarse": {
+        "nx": 40,
+        "ny": 12,
+        "iterations": 94,
+        "algebraic_residual": 1.8143671236817542e-09,
+        "seconds": 3.2792361589999928,
+        "velocity_dofs": 4050,
+        "pressure_dofs": 533,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "fine": {
+        "nx": 80,
+        "ny": 24,
+        "iterations": 94,
+        "algebraic_residual": 9.587464677878351e-10,
+        "seconds": 22.74876310500258,
+        "velocity_dofs": 15778,
+        "pressure_dofs": 2025,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "mesh_uncertainty": {
+        "velocity": 0.0021120210350515666,
+        "pressure": 0.005545076037609585,
+        "pressure_drop": 0.004265864652904635
+      },
+      "pressure_drop": 1.0279775141080112,
+      "pressure_sections": [
+        0.25,
+        4.75
+      ],
+      "pressure_denominator_floor": 1e-08,
+      "wall_stress_verified": false,
+      "common_domain_excluded_area_fraction": 0.0006786844184495256,
+      "common_domain_rule": "both chordal meshes; exclude <=.5% physical quadrature area",
+      "geometry_id": "499e3f763118dc6528278bd5af69e52f9a2b73b30334fda0698d42b0ab193d29"
+    },
+    {
+      "index": 18,
+      "status": "passed",
+      "reynolds": 60.0,
+      "coarse": {
+        "nx": 40,
+        "ny": 12,
+        "iterations": 80,
+        "algebraic_residual": 2.0421781830814457e-09,
+        "seconds": 2.7192906380005297,
+        "velocity_dofs": 4050,
+        "pressure_dofs": 533,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "fine": {
+        "nx": 80,
+        "ny": 24,
+        "iterations": 80,
+        "algebraic_residual": 1.081724077528077e-09,
+        "seconds": 20.82176129200161,
+        "velocity_dofs": 15778,
+        "pressure_dofs": 2025,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "mesh_uncertainty": {
+        "velocity": 0.0016053827207022713,
+        "pressure": 0.003790925022933831,
+        "pressure_drop": 0.0033627089553954536
+      },
+      "pressure_drop": 1.3580187883863566,
+      "pressure_sections": [
+        0.25,
+        4.75
+      ],
+      "pressure_denominator_floor": 1e-08,
+      "wall_stress_verified": false,
+      "common_domain_excluded_area_fraction": 0.00032595356858301707,
+      "common_domain_rule": "both chordal meshes; exclude <=.5% physical quadrature area",
+      "geometry_id": "bcae1089551285d7ef3f4dca4a8812010349bd519f412fa26e235deb030d9b0c"
+    },
+    {
+      "index": 19,
+      "status": "passed",
+      "reynolds": 60.0,
+      "coarse": {
+        "nx": 40,
+        "ny": 12,
+        "iterations": 95,
+        "algebraic_residual": 2.5994733436687167e-09,
+        "seconds": 3.2693095190006716,
+        "velocity_dofs": 4050,
+        "pressure_dofs": 533,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "fine": {
+        "nx": 80,
+        "ny": 24,
+        "iterations": 95,
+        "algebraic_residual": 1.280563280467887e-09,
+        "seconds": 23.688936902999558,
+        "velocity_dofs": 15778,
+        "pressure_dofs": 2025,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "mesh_uncertainty": {
+        "velocity": 0.0024173594769173576,
+        "pressure": 0.003507060909639022,
+        "pressure_drop": 0.0022444577809565994
+      },
+      "pressure_drop": 0.7778316190813478,
+      "pressure_sections": [
+        0.25,
+        4.75
+      ],
+      "pressure_denominator_floor": 1e-08,
+      "wall_stress_verified": false,
+      "common_domain_excluded_area_fraction": 0.0,
+      "common_domain_rule": "both chordal meshes; exclude <=.5% physical quadrature area",
+      "geometry_id": "5b8d9788e85a38bd78f45c466d2f9efe77623645ebb64caa0837c528789acd1a"
+    },
+    {
+      "index": 20,
+      "status": "passed",
+      "reynolds": 60.0,
+      "coarse": {
+        "nx": 40,
+        "ny": 12,
+        "iterations": 77,
+        "algebraic_residual": 2.2053623664369778e-09,
+        "seconds": 2.723175277998962,
+        "velocity_dofs": 4050,
+        "pressure_dofs": 533,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "fine": {
+        "nx": 80,
+        "ny": 24,
+        "iterations": 77,
+        "algebraic_residual": 1.149971328291247e-09,
+        "seconds": 18.599641802000406,
+        "velocity_dofs": 15778,
+        "pressure_dofs": 2025,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "mesh_uncertainty": {
+        "velocity": 0.0011292020510177369,
+        "pressure": 0.0022839093978052707,
+        "pressure_drop": 0.001350567275289509
+      },
+      "pressure_drop": 0.7739753147791828,
+      "pressure_sections": [
+        0.25,
+        4.75
+      ],
+      "pressure_denominator_floor": 1e-08,
+      "wall_stress_verified": false,
+      "common_domain_excluded_area_fraction": 0.0,
+      "common_domain_rule": "both chordal meshes; exclude <=.5% physical quadrature area",
+      "geometry_id": "8767dcf8ed6a941c170e1d307230912711a2d622a51145ef12043f113e50c1eb"
+    },
+    {
+      "index": 21,
+      "status": "passed",
+      "reynolds": 60.0,
+      "coarse": {
+        "nx": 40,
+        "ny": 12,
+        "iterations": 103,
+        "algebraic_residual": 3.786749587144935e-09,
+        "seconds": 3.4622825939986797,
+        "velocity_dofs": 4050,
+        "pressure_dofs": 533,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "fine": {
+        "nx": 80,
+        "ny": 24,
+        "iterations": 103,
+        "algebraic_residual": 2.08097874778678e-09,
+        "seconds": 25.691139873000793,
+        "velocity_dofs": 15778,
+        "pressure_dofs": 2025,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "mesh_uncertainty": {
+        "velocity": 0.0031795714543531735,
+        "pressure": 0.007954643719777093,
+        "pressure_drop": 0.005113539092558459
+      },
+      "pressure_drop": 1.5831371689584022,
+      "pressure_sections": [
+        0.25,
+        4.75
+      ],
+      "pressure_denominator_floor": 1e-08,
+      "wall_stress_verified": false,
+      "common_domain_excluded_area_fraction": 0.0007014590751365519,
+      "common_domain_rule": "both chordal meshes; exclude <=.5% physical quadrature area",
+      "geometry_id": "38c47547426bc9c1aeb4747a575203fc6ddeee5969aed174ce792bf4826b21f5"
+    },
+    {
+      "index": 22,
+      "status": "passed",
+      "reynolds": 60.0,
+      "coarse": {
+        "nx": 40,
+        "ny": 12,
+        "iterations": 86,
+        "algebraic_residual": 2.6498600822334246e-09,
+        "seconds": 2.9843440359982196,
+        "velocity_dofs": 4050,
+        "pressure_dofs": 533,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "fine": {
+        "nx": 80,
+        "ny": 24,
+        "iterations": 86,
+        "algebraic_residual": 1.372235240103038e-09,
+        "seconds": 21.515197122000245,
+        "velocity_dofs": 15778,
+        "pressure_dofs": 2025,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "mesh_uncertainty": {
+        "velocity": 0.001919326025535513,
+        "pressure": 0.003912744053806962,
+        "pressure_drop": 0.001439819829123726
+      },
+      "pressure_drop": 0.9123238925538235,
+      "pressure_sections": [
+        0.25,
+        4.75
+      ],
+      "pressure_denominator_floor": 1e-08,
+      "wall_stress_verified": false,
+      "common_domain_excluded_area_fraction": 0.00025524695425810975,
+      "common_domain_rule": "both chordal meshes; exclude <=.5% physical quadrature area",
+      "geometry_id": "9b474c594f8354ce390e8341e6d5768a9762e32173d14755b753071d547e6c8e"
+    },
+    {
+      "index": 23,
+      "status": "passed",
+      "reynolds": 60.0,
+      "coarse": {
+        "nx": 40,
+        "ny": 12,
+        "iterations": 89,
+        "algebraic_residual": 2.336928118087915e-09,
+        "seconds": 3.1369306619999406,
+        "velocity_dofs": 4050,
+        "pressure_dofs": 533,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "fine": {
+        "nx": 80,
+        "ny": 24,
+        "iterations": 89,
+        "algebraic_residual": 1.235858039959179e-09,
+        "seconds": 23.987276251998992,
+        "velocity_dofs": 15778,
+        "pressure_dofs": 2025,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "mesh_uncertainty": {
+        "velocity": 0.00206073374422438,
+        "pressure": 0.004444071266734267,
+        "pressure_drop": 0.0046125134302874675
+      },
+      "pressure_drop": 1.00433837065797,
+      "pressure_sections": [
+        0.25,
+        4.75
+      ],
+      "pressure_denominator_floor": 1e-08,
+      "wall_stress_verified": false,
+      "common_domain_excluded_area_fraction": 0.000714928588571001,
+      "common_domain_rule": "both chordal meshes; exclude <=.5% physical quadrature area",
+      "geometry_id": "22327ffbb7302eb1c5a64b556e37d36c5d250b2e0cf72191b2157907300fd35e"
+    },
+    {
+      "index": 24,
+      "status": "passed",
+      "reynolds": 100.0,
+      "coarse": {
+        "nx": 40,
+        "ny": 12,
+        "iterations": 107,
+        "algebraic_residual": 3.1611636784143743e-09,
+        "seconds": 3.7052100419969065,
+        "velocity_dofs": 4050,
+        "pressure_dofs": 533,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "fine": {
+        "nx": 80,
+        "ny": 24,
+        "iterations": 107,
+        "algebraic_residual": 1.6089474215321697e-09,
+        "seconds": 29.19803955899988,
+        "velocity_dofs": 15778,
+        "pressure_dofs": 2025,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "mesh_uncertainty": {
+        "velocity": 0.0003943325183606717,
+        "pressure": 0.0006780566753162296,
+        "pressure_drop": 0.00018936849829583798
+      },
+      "pressure_drop": 0.524409812227463,
+      "pressure_sections": [
+        0.25,
+        4.75
+      ],
+      "pressure_denominator_floor": 1e-08,
+      "wall_stress_verified": false,
+      "common_domain_excluded_area_fraction": 0.0,
+      "common_domain_rule": "both chordal meshes; exclude <=.5% physical quadrature area",
+      "geometry_id": "d89b9f2cdf8cb06ba96b39bf37e6cf8a3d5ea3d5cb1bf069af894f64b5b33d26"
+    },
+    {
+      "index": 26,
+      "status": "passed",
+      "reynolds": 100.0,
+      "coarse": {
+        "nx": 40,
+        "ny": 12,
+        "iterations": 113,
+        "algebraic_residual": 2.616978354070855e-09,
+        "seconds": 3.9089688709973416,
+        "velocity_dofs": 4050,
+        "pressure_dofs": 533,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "fine": {
+        "nx": 80,
+        "ny": 24,
+        "iterations": 113,
+        "algebraic_residual": 1.1428263694797355e-09,
+        "seconds": 27.668012398000428,
+        "velocity_dofs": 15778,
+        "pressure_dofs": 2025,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "mesh_uncertainty": {
+        "velocity": 0.0022796425413504407,
+        "pressure": 0.008919706664704733,
+        "pressure_drop": 0.004597212003573584
+      },
+      "pressure_drop": 0.7368133640052247,
+      "pressure_sections": [
+        0.25,
+        4.75
+      ],
+      "pressure_denominator_floor": 1e-08,
+      "wall_stress_verified": false,
+      "common_domain_excluded_area_fraction": 0.001066446383987633,
+      "common_domain_rule": "both chordal meshes; exclude <=.5% physical quadrature area",
+      "geometry_id": "ac6e844ba42f8cf1b23d2c1597097edf7a63c7eb4136a577d371c10d186e280f"
+    },
+    {
+      "index": 27,
+      "status": "passed",
+      "reynolds": 100.0,
+      "coarse": {
+        "nx": 40,
+        "ny": 12,
+        "iterations": 121,
+        "algebraic_residual": 1.7291202486966187e-09,
+        "seconds": 4.154823133998434,
+        "velocity_dofs": 4050,
+        "pressure_dofs": 533,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "fine": {
+        "nx": 80,
+        "ny": 24,
+        "iterations": 121,
+        "algebraic_residual": 8.684753830339472e-10,
+        "seconds": 29.41454648400031,
+        "velocity_dofs": 15778,
+        "pressure_dofs": 2025,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "mesh_uncertainty": {
+        "velocity": 0.00179408357576789,
+        "pressure": 0.003394863155429072,
+        "pressure_drop": 0.0017828333356459199
+      },
+      "pressure_drop": 0.5230927598549395,
+      "pressure_sections": [
+        0.25,
+        4.75
+      ],
+      "pressure_denominator_floor": 1e-08,
+      "wall_stress_verified": false,
+      "common_domain_excluded_area_fraction": 0.00037638255175893057,
+      "common_domain_rule": "both chordal meshes; exclude <=.5% physical quadrature area",
+      "geometry_id": "b9935efb8ed2ca020b397411095435cc910e57f3c2cda880cbb60357237b91f1"
+    }
+  ]
+}
