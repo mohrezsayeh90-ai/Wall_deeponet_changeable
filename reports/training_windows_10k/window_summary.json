@@ -1,0 +1,72 @@
+{
+  "start_step": 30000,
+  "last_logged_step": 67840,
+  "window_steps": 10000,
+  "smoothing_records": 100,
+  "smoothing_approx_steps": 1000,
+  "actual_epochs": false,
+  "equivalent_pool_passes_per_window": 32,
+  "mean_definition": "Arithmetic mean of available logged batch losses; not a loss evaluated every step on a fixed validation set.",
+  "source_sha256": {
+    "artifacts/kaggle/main-v1/training.jsonl": "617431210ec6d172b50f06991736a028f7454d6a23c58de320dec7d0ecb25a10",
+    "reports/training_windows_10k/continuation_snapshot.jsonl": "8cd53404a958d386b32daea2c77a8293950bbeb58f70e2250952fe7a6f889c5d"
+  },
+  "windows": [
+    {
+      "start_inclusive": 30000,
+      "end_exclusive": 40000,
+      "last_observed_step": 39990,
+      "complete": true,
+      "logged_records": 1001,
+      "arithmetic_mean": 0.04905040472276978,
+      "median": 0.045104652643203735,
+      "min": 0.015296760946512222,
+      "p10": 0.028744656592607498,
+      "p90": 0.07271251082420349,
+      "reduction_vs_previous_complete_percent": null,
+      "log_decrease_per_10000_steps": null
+    },
+    {
+      "start_inclusive": 40000,
+      "end_exclusive": 50000,
+      "last_observed_step": 49990,
+      "complete": true,
+      "logged_records": 1000,
+      "arithmetic_mean": 0.03967604769766331,
+      "median": 0.03712371736764908,
+      "min": 0.012794703245162964,
+      "p10": 0.023540514893829825,
+      "p90": 0.05874475352466107,
+      "reduction_vs_previous_complete_percent": 19.111681296188742,
+      "log_decrease_per_10000_steps": 0.21210076414381349
+    },
+    {
+      "start_inclusive": 50000,
+      "end_exclusive": 60000,
+      "last_observed_step": 59990,
+      "complete": true,
+      "logged_records": 1000,
+      "arithmetic_mean": 0.03428114252910018,
+      "median": 0.031662872061133385,
+      "min": 0.009988592937588692,
+      "p10": 0.020988872647285464,
+      "p90": 0.05021354556083679,
+      "reduction_vs_previous_complete_percent": 13.597385530113815,
+      "log_decrease_per_10000_steps": 0.14615225056778094
+    },
+    {
+      "start_inclusive": 60000,
+      "end_exclusive": 70000,
+      "last_observed_step": 67840,
+      "complete": false,
+      "logged_records": 785,
+      "arithmetic_mean": 0.02820997576401302,
+      "median": 0.025967106223106384,
+      "min": 0.009079556912183762,
+      "p10": 0.016990958899259567,
+      "p90": 0.04185329005122185,
+      "reduction_vs_previous_complete_percent": null,
+      "log_decrease_per_10000_steps": null
+    }
+  ]
+}

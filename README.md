@@ -17,6 +17,8 @@ The figures and model artifacts below still refer to the completed original run.
 
 ## Training history
 
+[بررسی میانگین loss در پنجره‌های ۱۰هزارگامی، از گام ۳۰هزار به بعد](reports/training_windows_10k/README.md) · [نمودار](reports/training_windows_10k/training_windows.png)
+
 [نمودار روند آموزش و توضیح گام در برابر ایپاک](reports/training_curves/README.md) · [PDF نمودار](reports/training_curves/loss_vs_step.pdf) · [داده‌های CSV](reports/training_curves/training_history.csv)
 
 ![Actual training loss versus optimizer step](reports/training_curves/loss_vs_step.png)
