@@ -1,0 +1,48 @@
+{
+  "checked_at_utc": "2026-11-15T06:20:48.241315+00:00",
+  "cases_verified": 15,
+  "distinct_geometries": 15,
+  "figures_verified": 77,
+  "pdf_pages": 15,
+  "all_local_html_links_resolve": true,
+  "all_errors_recomputed": true,
+  "all_field_arrays_finite": true,
+  "geometry_and_reference_identity_verified": true,
+  "all_mesh_discrepancies_below_1_percent": true,
+  "max_mesh_discrepancy": 0.00720440413127327,
+  "max_common_domain_excluded_fraction": 0.002295053489061706,
+  "flat_fem_vs_analytic_max_abs_error": 1.4340213905228438e-08,
+  "reference_cache_repeatability_verified": true,
+  "unit_tests_passed": 13,
+  "unit_tests_failed": 0,
+  "checkpoint_sha256": "a7e9e35b91d6e3c7f3a37404b940289427bfe78f9b38e39661c10382babd5235",
+  "generator_sha256": "6a78912e45832134e59864bf4aa2c19d3bd153d55faf99d4ad8f5c5ecffb2f24",
+  "environment": {
+    "python": "3.12.14",
+    "jax": "0.4.38",
+    "jaxlib": "0.4.38",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "scikit-fem": "11.0.0",
+    "matplotlib": "3.10.3"
+  },
+  "summary": {
+    "velocity_relative_l2": {
+      "min": 0.009964431777088478,
+      "median": 0.02932575083642438,
+      "max": 0.07813568281643635
+    },
+    "pressure_relative_l2": {
+      "min": 0.017718842200973348,
+      "median": 0.061543360282366316,
+      "max": 0.16179740950291774
+    },
+    "pressure_drop_relative": {
+      "min": 0.0015281579423866902,
+      "median": 0.03153418296961563,
+      "max": 0.16269242813104592
+    }
+  },
+  "new_training_performed": false,
+  "locked_test_used": false
+}

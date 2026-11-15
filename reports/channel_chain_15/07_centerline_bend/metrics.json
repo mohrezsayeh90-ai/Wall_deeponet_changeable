@@ -1,0 +1,59 @@
+{
+  "index": 7,
+  "slug": "centerline_bend",
+  "title": "Constant-gap centerline bend",
+  "geometry_id": "1d3d58a742a98151a8adaee0cb970215d662efb81c777ed5ca83300b701f1f28",
+  "reynolds": 30.0,
+  "amplitude_scale": 1.0,
+  "descriptors": {
+    "min_gap": 1.0,
+    "max_gap": 1.0,
+    "center_deviation": 0.19938702942480874,
+    "max_slope": 0.5124977629084718,
+    "max_curvature": 3.849111071943977
+  },
+  "directory": "07_centerline_bend",
+  "status": "passed",
+  "checkpoint_sha256": "a7e9e35b91d6e3c7f3a37404b940289427bfe78f9b38e39661c10382babd5235",
+  "metrics": {
+    "velocity_relative_l2": 0.03577621978221405,
+    "u_relative_l2": 0.03271481339251804,
+    "v_absolute_rms": 0.01634079106765429,
+    "pressure_relative_l2": 0.06270586435547006,
+    "speed_relative_l2": 0.0331355163949643,
+    "velocity_absolute_rms": 0.03960492911475204,
+    "pressure_absolute_rms": 0.07778054039138962,
+    "velocity_max_abs_at_quadrature": 0.14825667813884646,
+    "pressure_max_abs_at_quadrature": 0.20097198719079934,
+    "pressure_drop_predicted": 1.9080203554291382,
+    "pressure_drop_reference": 1.950329306454492,
+    "pressure_drop_relative": 0.021693234514466354,
+    "physical_area_evaluated": 4.998085893055313,
+    "common_domain_excluded_area_fraction": 0.00038282138893743704
+  },
+  "mesh_uncertainty": {
+    "velocity": 0.0019209668238785204,
+    "pressure": 0.003262851271445503,
+    "pressure_drop": 0.002209135783674085
+  },
+  "fem_coarse": {
+    "nx": 40,
+    "ny": 12,
+    "iterations": 52,
+    "algebraic_residual": 4.472875094743476e-09,
+    "seconds": 1.71420554000008,
+    "velocity_dofs": 4050,
+    "pressure_dofs": 533,
+    "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+  },
+  "fem_fine": {
+    "nx": 80,
+    "ny": 24,
+    "iterations": 52,
+    "algebraic_residual": 2.2969005780214935e-09,
+    "seconds": 13.164600118999942,
+    "velocity_dofs": 15778,
+    "pressure_dofs": 2025,
+    "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+  }
+}

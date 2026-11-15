@@ -1,0 +1,254 @@
+{
+  "schema": "channel-chain-15-v1",
+  "created_at_utc": "2026-11-15T06:18:10.556626+00:00",
+  "checkpoint": "artifacts/kaggle/main-v1/checkpoint.npz",
+  "checkpoint_sha256": "a7e9e35b91d6e3c7f3a37404b940289427bfe78f9b38e39661c10382babd5235",
+  "checkpoint_step": 32216,
+  "reynolds": 30.0,
+  "case_count": 15,
+  "selection": "Prescribed analytic B-spline wall designs ordered by illustrative structural complexity; fixed before error evaluation, no selection using model errors.",
+  "locked_test_used": false,
+  "trained_model_accepted": false,
+  "cases": [
+    {
+      "index": 1,
+      "slug": "straight",
+      "title": "Straight channel",
+      "geometry_id": "f6e28ad1753237d42be72be187a88f09a269097eeda24bcf12908db6bd361246",
+      "reynolds": 30.0,
+      "amplitude_scale": 1.0,
+      "descriptors": {
+        "min_gap": 1.0,
+        "max_gap": 1.0,
+        "center_deviation": 0.0,
+        "max_slope": 0.0,
+        "max_curvature": 0.0
+      },
+      "directory": "01_straight"
+    },
+    {
+      "index": 2,
+      "slug": "mild_constriction",
+      "title": "Mild symmetric constriction",
+      "geometry_id": "6cb3bfee184b960c9c5d512c1a4650b83027bddb0873b4796b30d69fb62f895a",
+      "reynolds": 30.0,
+      "amplitude_scale": 1.0,
+      "descriptors": {
+        "min_gap": 0.9202451882300765,
+        "max_gap": 1.0,
+        "center_deviation": 0.0,
+        "max_slope": 0.10249955258169435,
+        "max_curvature": 0.7698222143887956
+      },
+      "directory": "02_mild_constriction"
+    },
+    {
+      "index": 3,
+      "slug": "moderate_constriction",
+      "title": "Moderate symmetric constriction",
+      "geometry_id": "e895e960ba283ead8dd612b2bb3c177dd5588f92129c014b0f0810916b39f29d",
+      "reynolds": 30.0,
+      "amplitude_scale": 1.0,
+      "descriptors": {
+        "min_gap": 0.7208581588052678,
+        "max_gap": 1.0,
+        "center_deviation": 0.0,
+        "max_slope": 0.35874843403593026,
+        "max_curvature": 2.694377750360784
+      },
+      "directory": "03_moderate_constriction"
+    },
+    {
+      "index": 4,
+      "slug": "expansion",
+      "title": "Symmetric expansion",
+      "geometry_id": "9a9b70997a7d27610ec94961e35cfff0f0b697289f8981f4ae20bd83ba201ae4",
+      "reynolds": 30.0,
+      "amplitude_scale": 1.0,
+      "descriptors": {
+        "min_gap": 1.0,
+        "max_gap": 1.3588966529646558,
+        "center_deviation": 0.0,
+        "max_slope": 0.4612479866176245,
+        "max_curvature": 3.464199964749579
+      },
+      "directory": "04_expansion"
+    },
+    {
+      "index": 5,
+      "slug": "bottom_bump",
+      "title": "One bump on bottom wall",
+      "geometry_id": "7b28212f075e6604391de346448320b36cd7d2c0cf0bd3191ce981c25068ba70",
+      "reynolds": 30.0,
+      "amplitude_scale": 1.0,
+      "descriptors": {
+        "min_gap": 0.7806742676327104,
+        "max_gap": 1.0,
+        "center_deviation": 0.1096628661836448,
+        "max_slope": 0.5637475391993189,
+        "max_curvature": 4.234022179138375
+      },
+      "directory": "05_bottom_bump"
+    },
+    {
+      "index": 6,
+      "slug": "top_bump",
+      "title": "One bump on top wall",
+      "geometry_id": "02f7908a0938edf9b7178b1ca3d681ccbfc0b77dd1e9ec80a1e80d040c697447",
+      "reynolds": 30.0,
+      "amplitude_scale": 1.0,
+      "descriptors": {
+        "min_gap": 0.7407968617477487,
+        "max_gap": 1.0,
+        "center_deviation": 0.12960156912612567,
+        "max_slope": 0.6662470917810132,
+        "max_curvature": 5.003844393527171
+      },
+      "directory": "06_top_bump"
+    },
+    {
+      "index": 7,
+      "slug": "centerline_bend",
+      "title": "Constant-gap centerline bend",
+      "geometry_id": "1d3d58a742a98151a8adaee0cb970215d662efb81c777ed5ca83300b701f1f28",
+      "reynolds": 30.0,
+      "amplitude_scale": 1.0,
+      "descriptors": {
+        "min_gap": 1.0,
+        "max_gap": 1.0,
+        "center_deviation": 0.19938702942480874,
+        "max_slope": 0.5124977629084718,
+        "max_curvature": 3.849111071943977
+      },
+      "directory": "07_centerline_bend"
+    },
+    {
+      "index": 8,
+      "slug": "s_bend",
+      "title": "Constant-gap S bend",
+      "geometry_id": "64b67cfff4f679ee575eb92b651ea1a8bc5833277253db577b11bef3322dab38",
+      "reynolds": 30.0,
+      "amplitude_scale": 1.0,
+      "descriptors": {
+        "min_gap": 1.0,
+        "max_gap": 1.0,
+        "center_deviation": 0.14930206537715413,
+        "max_slope": 0.46073869120994465,
+        "max_curvature": 3.9765542337355693
+      },
+      "directory": "08_s_bend"
+    },
+    {
+      "index": 9,
+      "slug": "double_constriction",
+      "title": "Two symmetric constrictions",
+      "geometry_id": "18883bf1e9229b52a16e2ed43711f6ba65e3c66c735fa1b0acce6c3f5655449d",
+      "reynolds": 30.0,
+      "amplitude_scale": 1.0,
+      "descriptors": {
+        "min_gap": 0.7611166953965534,
+        "max_gap": 1.0,
+        "center_deviation": 0.0,
+        "max_slope": 0.36859095296795574,
+        "max_curvature": 3.1812433869884558
+      },
+      "directory": "09_double_constriction"
+    },
+    {
+      "index": 10,
+      "slug": "constriction_expansion",
+      "title": "Constriction followed by expansion",
+      "geometry_id": "f8b72581537533c87d5fd07a03ea9b5edc78bd4adfbba82b2471e35ce5e782ce",
+      "reynolds": 30.0,
+      "amplitude_scale": 1.0,
+      "descriptors": {
+        "min_gap": 0.7511632243714097,
+        "max_gap": 1.2986041307543084,
+        "center_deviation": 0.0,
+        "max_slope": 0.46073869120994465,
+        "max_curvature": 3.976554233735567
+      },
+      "directory": "10_constriction_expansion"
+    },
+    {
+      "index": 11,
+      "slug": "staggered_walls",
+      "title": "Staggered independent wall bumps",
+      "geometry_id": "d3c9f78a3f9b9ddff385b518850755337ab0c48f8edfc8a898cc4838b840bc8d",
+      "reynolds": 30.0,
+      "amplitude_scale": 1.0,
+      "descriptors": {
+        "min_gap": 0.8009305794971278,
+        "max_gap": 1.0,
+        "center_deviation": 0.0995347102514361,
+        "max_slope": 0.6143182549465928,
+        "max_curvature": 5.302072311647424
+      },
+      "directory": "11_staggered_walls"
+    },
+    {
+      "index": 12,
+      "slug": "triple_constriction",
+      "title": "Three symmetric constrictions",
+      "geometry_id": "4a97de7599208298a3059e78667f57ba09a3f64f77b8d77baa89341852586a62",
+      "reynolds": 30.0,
+      "amplitude_scale": 1.0,
+      "descriptors": {
+        "min_gap": 0.7718167443356874,
+        "max_gap": 1.0,
+        "center_deviation": 0.0,
+        "max_slope": 0.43800300652069407,
+        "max_curvature": 4.1821758666046325
+      },
+      "directory": "12_triple_constriction"
+    },
+    {
+      "index": 13,
+      "slug": "oscillating_gap",
+      "title": "Four alternating gap features",
+      "geometry_id": "ce58f178228de229487db482433c010572c784a484ca9cd125cca164cdd2443f",
+      "reynolds": 30.0,
+      "amplitude_scale": 1.0,
+      "descriptors": {
+        "min_gap": 0.7521447309573105,
+        "max_gap": 1.2478552690426896,
+        "center_deviation": 0.0,
+        "max_slope": 0.4928015422280746,
+        "max_curvature": 4.294471496213214
+      },
+      "directory": "13_oscillating_gap"
+    },
+    {
+      "index": 14,
+      "slug": "oscillating_walls",
+      "title": "Oscillating centerline and gap",
+      "geometry_id": "1f43a427be864d3f8c525bf50a717a995da44e1702c312cce043bc3a8579abdd",
+      "reynolds": 30.0,
+      "amplitude_scale": 0.8080560397304674,
+      "descriptors": {
+        "min_gap": 0.8397752422968278,
+        "max_gap": 1.1602247577031721,
+        "center_deviation": 0.0961348546219033,
+        "max_slope": 0.6990000000000001,
+        "max_curvature": 6.509600901328769
+      },
+      "directory": "14_oscillating_walls"
+    },
+    {
+      "index": 15,
+      "slug": "mixed_independent",
+      "title": "Mixed independent multiscale walls",
+      "geometry_id": "1f6d4820857d6df7df5242f0f5a8df8021e4af4039504cedd4a1f456533b7ac7",
+      "reynolds": 30.0,
+      "amplitude_scale": 0.9176306874985124,
+      "descriptors": {
+        "min_gap": 0.7620935814149821,
+        "max_gap": 1.2026244091973586,
+        "center_deviation": 0.08970978234917196,
+        "max_slope": 0.6989999999999998,
+        "max_curvature": 6.6117572470335
+      },
+      "directory": "15_mixed_independent"
+    }
+  ]
+}

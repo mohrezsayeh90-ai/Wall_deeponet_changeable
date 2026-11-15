@@ -1,0 +1,59 @@
+{
+  "index": 1,
+  "slug": "straight",
+  "title": "Straight channel",
+  "geometry_id": "f6e28ad1753237d42be72be187a88f09a269097eeda24bcf12908db6bd361246",
+  "reynolds": 30.0,
+  "amplitude_scale": 1.0,
+  "descriptors": {
+    "min_gap": 1.0,
+    "max_gap": 1.0,
+    "center_deviation": 0.0,
+    "max_slope": 0.0,
+    "max_curvature": 0.0
+  },
+  "directory": "01_straight",
+  "status": "passed",
+  "checkpoint_sha256": "a7e9e35b91d6e3c7f3a37404b940289427bfe78f9b38e39661c10382babd5235",
+  "metrics": {
+    "velocity_relative_l2": 0.009964431777088478,
+    "u_relative_l2": 0.009000427192882935,
+    "v_absolute_rms": 0.004683871601894843,
+    "pressure_relative_l2": 0.017718842200973348,
+    "speed_relative_l2": 0.008997234274524955,
+    "velocity_absolute_rms": 0.010915488114065322,
+    "pressure_absolute_rms": 0.020459956775711174,
+    "velocity_max_abs_at_quadrature": 0.029030280279136664,
+    "pressure_max_abs_at_quadrature": 0.04445657888782284,
+    "pressure_drop_predicted": 1.765397726739826,
+    "pressure_drop_reference": 1.800000012914123,
+    "pressure_drop_relative": 0.01922349218113467,
+    "physical_area_evaluated": 5.0,
+    "common_domain_excluded_area_fraction": 0.0
+  },
+  "mesh_uncertainty": {
+    "velocity": 6.2461305314406015e-15,
+    "pressure": 4.4355141801538964e-14,
+    "pressure_drop": 4.403884632750728e-14
+  },
+  "fem_coarse": {
+    "nx": 40,
+    "ny": 12,
+    "iterations": 47,
+    "algebraic_residual": 3.716378346284207e-10,
+    "seconds": 1.7408337690000053,
+    "velocity_dofs": 4050,
+    "pressure_dofs": 533,
+    "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+  },
+  "fem_fine": {
+    "nx": 80,
+    "ny": 24,
+    "iterations": 47,
+    "algebraic_residual": 1.8744808737396303e-10,
+    "seconds": 12.429092461999971,
+    "velocity_dofs": 15778,
+    "pressure_dofs": 2025,
+    "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+  }
+}

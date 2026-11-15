@@ -138,5 +138,35 @@
     "complete_split": false,
     "locked_final_test": false,
     "release_comparisons_complete": false
+  },
+  "illustrative_channel_chain_15": {
+    "directory": "reports/channel_chain_15",
+    "cases_completed": 15,
+    "reynolds": 30,
+    "all_fem_mesh_checks_passed": true,
+    "max_mesh_discrepancy": 0.00720440413127327,
+    "checkpoint_sha256": "a7e9e35b91d6e3c7f3a37404b940289427bfe78f9b38e39661c10382babd5235",
+    "figures": 77,
+    "pdf_pages": 15,
+    "error_summary": {
+      "velocity_relative_l2": {
+        "min": 0.009964431777088478,
+        "median": 0.02932575083642438,
+        "max": 0.07813568281643635
+      },
+      "pressure_relative_l2": {
+        "min": 0.017718842200973348,
+        "median": 0.061543360282366316,
+        "max": 0.16179740950291774
+      },
+      "pressure_drop_relative": {
+        "min": 0.0015281579423866902,
+        "median": 0.03153418296961563,
+        "max": 0.16269242813104592
+      }
+    },
+    "formal_locked_benchmark": false,
+    "new_training_performed": false,
+    "verified_at_utc": "2026-11-15T06:20:48.241315+00:00"
   }
 }

@@ -1,0 +1,59 @@
+{
+  "index": 9,
+  "slug": "double_constriction",
+  "title": "Two symmetric constrictions",
+  "geometry_id": "18883bf1e9229b52a16e2ed43711f6ba65e3c66c735fa1b0acce6c3f5655449d",
+  "reynolds": 30.0,
+  "amplitude_scale": 1.0,
+  "descriptors": {
+    "min_gap": 0.7611166953965534,
+    "max_gap": 1.0,
+    "center_deviation": 0.0,
+    "max_slope": 0.36859095296795574,
+    "max_curvature": 3.1812433869884558
+  },
+  "directory": "09_double_constriction",
+  "status": "passed",
+  "checkpoint_sha256": "a7e9e35b91d6e3c7f3a37404b940289427bfe78f9b38e39661c10382babd5235",
+  "metrics": {
+    "velocity_relative_l2": 0.041679143142295136,
+    "u_relative_l2": 0.040935935067620624,
+    "v_absolute_rms": 0.009604353727478325,
+    "pressure_relative_l2": 0.10487173260868997,
+    "speed_relative_l2": 0.041039618335924226,
+    "velocity_absolute_rms": 0.050055326244952056,
+    "pressure_absolute_rms": 0.1654064305518815,
+    "velocity_max_abs_at_quadrature": 0.14678316486940662,
+    "pressure_max_abs_at_quadrature": 0.30240111766847955,
+    "pressure_drop_predicted": 2.4120378556595328,
+    "pressure_drop_reference": 2.671984974628056,
+    "pressure_drop_relative": 0.09728614548242674,
+    "physical_area_evaluated": 4.613352018086301,
+    "common_domain_excluded_area_fraction": 0.002130692373999395
+  },
+  "mesh_uncertainty": {
+    "velocity": 0.0019027699587423057,
+    "pressure": 0.0039348319759200555,
+    "pressure_drop": 0.0031488279410200404
+  },
+  "fem_coarse": {
+    "nx": 40,
+    "ny": 12,
+    "iterations": 47,
+    "algebraic_residual": 5.49193744591483e-09,
+    "seconds": 1.6470034679999799,
+    "velocity_dofs": 4050,
+    "pressure_dofs": 533,
+    "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+  },
+  "fem_fine": {
+    "nx": 80,
+    "ny": 24,
+    "iterations": 47,
+    "algebraic_residual": 2.8664350079810215e-09,
+    "seconds": 11.692830004999905,
+    "velocity_dofs": 15778,
+    "pressure_dofs": 2025,
+    "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+  }
+}

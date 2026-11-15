@@ -1,0 +1,59 @@
+{
+  "index": 13,
+  "slug": "oscillating_gap",
+  "title": "Four alternating gap features",
+  "geometry_id": "ce58f178228de229487db482433c010572c784a484ca9cd125cca164cdd2443f",
+  "reynolds": 30.0,
+  "amplitude_scale": 1.0,
+  "descriptors": {
+    "min_gap": 0.7521447309573105,
+    "max_gap": 1.2478552690426896,
+    "center_deviation": 0.0,
+    "max_slope": 0.4928015422280746,
+    "max_curvature": 4.294471496213214
+  },
+  "directory": "13_oscillating_gap",
+  "status": "passed",
+  "checkpoint_sha256": "a7e9e35b91d6e3c7f3a37404b940289427bfe78f9b38e39661c10382babd5235",
+  "metrics": {
+    "velocity_relative_l2": 0.028157716499359036,
+    "u_relative_l2": 0.02362853515574665,
+    "v_absolute_rms": 0.01738418715893625,
+    "pressure_relative_l2": 0.061543360282366316,
+    "speed_relative_l2": 0.023764485424726207,
+    "velocity_absolute_rms": 0.03185105557915208,
+    "pressure_absolute_rms": 0.08271865603049534,
+    "velocity_max_abs_at_quadrature": 0.11404778483093468,
+    "pressure_max_abs_at_quadrature": 0.17843124644771358,
+    "pressure_drop_predicted": 2.2193691562668754,
+    "pressure_drop_reference": 2.372403309805608,
+    "pressure_drop_relative": 0.06450596022447472,
+    "physical_area_evaluated": 4.9927037009499795,
+    "common_domain_excluded_area_fraction": 0.0014592598100040322
+  },
+  "mesh_uncertainty": {
+    "velocity": 0.0034770355539460018,
+    "pressure": 0.00720440413127327,
+    "pressure_drop": 0.006931684193633277
+  },
+  "fem_coarse": {
+    "nx": 40,
+    "ny": 12,
+    "iterations": 50,
+    "algebraic_residual": 2.5531681508459043e-09,
+    "seconds": 1.7165899999999965,
+    "velocity_dofs": 4050,
+    "pressure_dofs": 533,
+    "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+  },
+  "fem_fine": {
+    "nx": 80,
+    "ny": 24,
+    "iterations": 50,
+    "algebraic_residual": 1.3517477785645228e-09,
+    "seconds": 13.022085384000093,
+    "velocity_dofs": 15778,
+    "pressure_dofs": 2025,
+    "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "index": 15,
+  "slug": "mixed_independent",
+  "title": "Mixed independent multiscale walls",
+  "geometry_id": "1f6d4820857d6df7df5242f0f5a8df8021e4af4039504cedd4a1f456533b7ac7",
+  "reynolds": 30.0,
+  "amplitude_scale": 0.9176306874985124,
+  "descriptors": {
+    "min_gap": 0.7620935814149821,
+    "max_gap": 1.2026244091973586,
+    "center_deviation": 0.08970978234917196,
+    "max_slope": 0.6989999999999998,
+    "max_curvature": 6.6117572470335
+  },
+  "directory": "15_mixed_independent",
+  "status": "passed",
+  "checkpoint_sha256": "a7e9e35b91d6e3c7f3a37404b940289427bfe78f9b38e39661c10382babd5235",
+  "metrics": {
+    "velocity_relative_l2": 0.058071438718079044,
+    "u_relative_l2": 0.0497635283343835,
+    "v_absolute_rms": 0.0347316665306771,
+    "pressure_relative_l2": 0.16179740950291774,
+    "speed_relative_l2": 0.05070903375565371,
+    "velocity_absolute_rms": 0.06676733081585959,
+    "pressure_absolute_rms": 0.22884339980432591,
+    "velocity_max_abs_at_quadrature": 0.20992936315145205,
+    "pressure_max_abs_at_quadrature": 0.4435952220879633,
+    "pressure_drop_predicted": 2.082909242691682,
+    "pressure_drop_reference": 2.487627381706845,
+    "pressure_drop_relative": 0.16269242813104592,
+    "physical_area_evaluated": 4.887551002686816,
+    "common_domain_excluded_area_fraction": 0.0009360720107967878
+  },
+  "mesh_uncertainty": {
+    "velocity": 0.0040006309069811835,
+    "pressure": 0.006593149412759764,
+    "pressure_drop": 0.0065316328054325955
+  },
+  "fem_coarse": {
+    "nx": 40,
+    "ny": 12,
+    "iterations": 53,
+    "algebraic_residual": 4.810766341962184e-09,
+    "seconds": 1.816375110999843,
+    "velocity_dofs": 4050,
+    "pressure_dofs": 533,
+    "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+  },
+  "fem_fine": {
+    "nx": 80,
+    "ny": 24,
+    "iterations": 53,
+    "algebraic_residual": 2.5329385881956782e-09,
+    "seconds": 13.406643222999946,
+    "velocity_dofs": 15778,
+    "pressure_dofs": 2025,
+    "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+  }
+}

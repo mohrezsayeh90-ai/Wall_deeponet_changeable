@@ -1,0 +1,59 @@
+{
+  "index": 4,
+  "slug": "expansion",
+  "title": "Symmetric expansion",
+  "geometry_id": "9a9b70997a7d27610ec94961e35cfff0f0b697289f8981f4ae20bd83ba201ae4",
+  "reynolds": 30.0,
+  "amplitude_scale": 1.0,
+  "descriptors": {
+    "min_gap": 1.0,
+    "max_gap": 1.3588966529646558,
+    "center_deviation": 0.0,
+    "max_slope": 0.4612479866176245,
+    "max_curvature": 3.464199964749579
+  },
+  "directory": "04_expansion",
+  "status": "passed",
+  "checkpoint_sha256": "a7e9e35b91d6e3c7f3a37404b940289427bfe78f9b38e39661c10382babd5235",
+  "metrics": {
+    "velocity_relative_l2": 0.025911891056456568,
+    "u_relative_l2": 0.024243676857649412,
+    "v_absolute_rms": 0.009506717626216214,
+    "pressure_relative_l2": 0.02728098710648402,
+    "speed_relative_l2": 0.024490899661170695,
+    "velocity_absolute_rms": 0.026843482872199512,
+    "pressure_absolute_rms": 0.02945944761839536,
+    "velocity_max_abs_at_quadrature": 0.08345647677716939,
+    "pressure_max_abs_at_quadrature": 0.07291243634482525,
+    "pressure_drop_predicted": 1.5863473379904758,
+    "pressure_drop_reference": 1.5887752374883108,
+    "pressure_drop_relative": 0.0015281579423866902,
+    "physical_area_evaluated": 5.3474844764004015,
+    "common_domain_excluded_area_fraction": 0.0
+  },
+  "mesh_uncertainty": {
+    "velocity": 0.0015505101417345587,
+    "pressure": 0.0023299309788293323,
+    "pressure_drop": 0.0016528414252379416
+  },
+  "fem_coarse": {
+    "nx": 40,
+    "ny": 12,
+    "iterations": 47,
+    "algebraic_residual": 4.688186484862182e-09,
+    "seconds": 1.635360113000047,
+    "velocity_dofs": 4050,
+    "pressure_dofs": 533,
+    "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+  },
+  "fem_fine": {
+    "nx": 80,
+    "ny": 24,
+    "iterations": 47,
+    "algebraic_residual": 2.453718574624348e-09,
+    "seconds": 12.096815281999966,
+    "velocity_dofs": 15778,
+    "pressure_dofs": 2025,
+    "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "index": 11,
+  "slug": "staggered_walls",
+  "title": "Staggered independent wall bumps",
+  "geometry_id": "d3c9f78a3f9b9ddff385b518850755337ab0c48f8edfc8a898cc4838b840bc8d",
+  "reynolds": 30.0,
+  "amplitude_scale": 1.0,
+  "descriptors": {
+    "min_gap": 0.8009305794971278,
+    "max_gap": 1.0,
+    "center_deviation": 0.0995347102514361,
+    "max_slope": 0.6143182549465928,
+    "max_curvature": 5.302072311647424
+  },
+  "directory": "11_staggered_walls",
+  "status": "passed",
+  "checkpoint_sha256": "a7e9e35b91d6e3c7f3a37404b940289427bfe78f9b38e39661c10382babd5235",
+  "metrics": {
+    "velocity_relative_l2": 0.02932575083642438,
+    "u_relative_l2": 0.026625268552667804,
+    "v_absolute_rms": 0.014716327446935523,
+    "pressure_relative_l2": 0.049206341787126136,
+    "speed_relative_l2": 0.026758772973441418,
+    "velocity_absolute_rms": 0.03463111454910304,
+    "pressure_absolute_rms": 0.07425519915822962,
+    "velocity_max_abs_at_quadrature": 0.11412082804829361,
+    "pressure_max_abs_at_quadrature": 0.13214779262561738,
+    "pressure_drop_predicted": 2.4247203669361452,
+    "pressure_drop_reference": 2.5059267578310336,
+    "pressure_drop_relative": 0.03240573198762413,
+    "physical_area_evaluated": 4.696762237709148,
+    "common_domain_excluded_area_fraction": 0.0010506520291886908
+  },
+  "mesh_uncertainty": {
+    "velocity": 0.0022551940405427383,
+    "pressure": 0.003478910590120237,
+    "pressure_drop": 0.0028873006997698477
+  },
+  "fem_coarse": {
+    "nx": 40,
+    "ny": 12,
+    "iterations": 53,
+    "algebraic_residual": 3.2302676530373265e-09,
+    "seconds": 1.8045576869999422,
+    "velocity_dofs": 4050,
+    "pressure_dofs": 533,
+    "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+  },
+  "fem_fine": {
+    "nx": 80,
+    "ny": 24,
+    "iterations": 53,
+    "algebraic_residual": 1.6737720730621304e-09,
+    "seconds": 13.435097199999973,
+    "velocity_dofs": 15778,
+    "pressure_dofs": 2025,
+    "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+  }
+}

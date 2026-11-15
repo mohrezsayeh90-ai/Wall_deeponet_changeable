@@ -1,0 +1,59 @@
+{
+  "index": 14,
+  "slug": "oscillating_walls",
+  "title": "Oscillating centerline and gap",
+  "geometry_id": "1f43a427be864d3f8c525bf50a717a995da44e1702c312cce043bc3a8579abdd",
+  "reynolds": 30.0,
+  "amplitude_scale": 0.8080560397304674,
+  "descriptors": {
+    "min_gap": 0.8397752422968278,
+    "max_gap": 1.1602247577031721,
+    "center_deviation": 0.0961348546219033,
+    "max_slope": 0.6990000000000001,
+    "max_curvature": 6.509600901328769
+  },
+  "directory": "14_oscillating_walls",
+  "status": "passed",
+  "checkpoint_sha256": "a7e9e35b91d6e3c7f3a37404b940289427bfe78f9b38e39661c10382babd5235",
+  "metrics": {
+    "velocity_relative_l2": 0.07813568281643635,
+    "u_relative_l2": 0.06878862627855868,
+    "v_absolute_rms": 0.042226452031642756,
+    "pressure_relative_l2": 0.061604902623845235,
+    "speed_relative_l2": 0.06924879259673038,
+    "velocity_absolute_rms": 0.0877714852128019,
+    "pressure_absolute_rms": 0.09760247260606267,
+    "velocity_max_abs_at_quadrature": 0.23167479719406153,
+    "pressure_max_abs_at_quadrature": 0.21844002905330373,
+    "pressure_drop_predicted": 2.1696098971636335,
+    "pressure_drop_reference": 2.293382897247558,
+    "pressure_drop_relative": 0.053969618519643006,
+    "physical_area_evaluated": 4.992380615288428,
+    "common_domain_excluded_area_fraction": 0.0015238769423144489
+  },
+  "mesh_uncertainty": {
+    "velocity": 0.004025334682650276,
+    "pressure": 0.005950282755511199,
+    "pressure_drop": 0.006262353291208389
+  },
+  "fem_coarse": {
+    "nx": 40,
+    "ny": 12,
+    "iterations": 54,
+    "algebraic_residual": 4.280429418860891e-09,
+    "seconds": 1.8329561059999833,
+    "velocity_dofs": 4050,
+    "pressure_dofs": 533,
+    "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+  },
+  "fem_fine": {
+    "nx": 80,
+    "ny": 24,
+    "iterations": 54,
+    "algebraic_residual": 2.2768400488866345e-09,
+    "seconds": 13.766774872000042,
+    "velocity_dofs": 15778,
+    "pressure_dofs": 2025,
+    "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+  }
+}

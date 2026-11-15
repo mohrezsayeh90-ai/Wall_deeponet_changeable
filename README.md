@@ -9,6 +9,19 @@
 - [گالری هشت خانوادهٔ دیواره](reports/geometry_gallery.png).
 - [شناسه‌ها، پارامترهای هندسی و هش مجموعه‌های ثابت](reports/split_manifest.json).
 
+## 15 channel result chains
+
+برای **۱۵ کانال از ساده تا پیچیده**، زنجیرهٔ «هندسه ← سرعت و فشار مدل ← حل مستقل FEM ← نقشه و معیارهای خطا» آماده شده است. عدد رینولدز همهٔ موارد **۳۰** است و از وزن‌های ثابت موجود استفاده شده؛ آموزش جدیدی انجام نشده است.
+
+- [گالری کامل ۱۵ زنجیره در گیت‌هاب](reports/channel_chain_15/README.md)
+- [PDF پانزده‌صفحه‌ای](reports/channel_chain_15/all_15_chains.pdf)
+- [جدول خطاها](reports/channel_chain_15/summary.csv)
+- [نمای کلی هندسه‌ها](reports/channel_chain_15/geometry_overview.png)
+
+Each case includes separate geometry, model, FEM and absolute-error figures for `u`, `v`, speed magnitude and pressure, plus the complete comparison panel and numerical arrays. FEM mesh checks and physical-area-weighted errors are recorded. These prescribed cases are additional research results, not the locked final benchmark; the checkpoint remains unaccepted. Reproduce with `python -m scripts.channel_chain --workers 2` in the documented CPU environment.
+
+For these 15 prescribed cases, median relative velocity error is **2.93%** (maximum **7.81%**), median pressure error is **6.15%** (maximum **16.18%**), and median pressure-drop error is **3.15%**. All FEM coarse/fine discrepancies are below **0.73%**. [Verification details](reports/channel_chain_15/validation.json) include a flat-channel analytic check, independent metric recomputation, 13 passing tests and PDF/image checks.
+
 ## Collected Kaggle run
 
 [Complete v1 artifacts and restore instructions](artifacts/kaggle/main-v1/README.md) include the checkpoint with optimizer/RNG state, full logs, all geometry pools, eight FEM references and predictions/plots, precision/runtime metadata, and the exact downloaded source. The checksummed archive preserves every one of the **69 output files**, plus the two source/metadata files.

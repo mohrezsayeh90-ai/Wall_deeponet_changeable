@@ -103,3 +103,24 @@ no final test was opened. See [the collection report](KAGGLE_COMPLETED_RUN.md).
 Finishing the 100,000-step budget requires 67,784 more GPU updates and subsequent
 independent evaluation. No paid capacity was enabled, no training was restarted,
 and no accepted-model claim is made.
+
+## Fifteen illustrative channel result chains
+
+[Complete gallery and numerical results](channel_chain_15/README.md) now cover
+15 prescribed geometries from a straight channel to independent mixed walls, all
+at Re=30. The fixed step-32,216 checkpoint was used without training or selection
+on the locked test. Each chain contains geometry, model u/v/speed/pressure,
+independent FEM and absolute-error maps, plus area-weighted metrics.
+
+All 15 coarse/fine FEM checks passed: maximum discrepancy across velocity, pressure
+and pressure drop was 0.7205%; maximum excluded common-domain area was 0.2296%.
+The straight-channel FEM solution matches the analytic solution within 1.44e-8.
+All errors were independently recomputed from saved arrays; all 13 current tests
+passed. Geometry, reference identity, 77 PNGs, 15 PDF pages and gallery links were
+checked. A cached reference rerun succeeded for all 15 cases.
+
+Median relative velocity error is 2.93% (maximum 7.81%), median pressure error
+6.15% (maximum 16.18%), and median pressure-drop error 3.15% (maximum 16.27%).
+The complete figures include poorer cases as well as simpler successful ones.
+These illustrative geometries at a single Re do not replace the 400-case
+development benchmark or the locked final test and do not grant model acceptance.

@@ -1,0 +1,59 @@
+{
+  "index": 10,
+  "slug": "constriction_expansion",
+  "title": "Constriction followed by expansion",
+  "geometry_id": "f8b72581537533c87d5fd07a03ea9b5edc78bd4adfbba82b2471e35ce5e782ce",
+  "reynolds": 30.0,
+  "amplitude_scale": 1.0,
+  "descriptors": {
+    "min_gap": 0.7511632243714097,
+    "max_gap": 1.2986041307543084,
+    "center_deviation": 0.0,
+    "max_slope": 0.46073869120994465,
+    "max_curvature": 3.976554233735567
+  },
+  "directory": "10_constriction_expansion",
+  "status": "passed",
+  "checkpoint_sha256": "a7e9e35b91d6e3c7f3a37404b940289427bfe78f9b38e39661c10382babd5235",
+  "metrics": {
+    "velocity_relative_l2": 0.03220651135674287,
+    "u_relative_l2": 0.03033704326919054,
+    "v_absolute_rms": 0.012045250878595079,
+    "pressure_relative_l2": 0.07178414778401379,
+    "speed_relative_l2": 0.030376859536889296,
+    "velocity_absolute_rms": 0.03566061883943385,
+    "pressure_absolute_rms": 0.08214199815158096,
+    "velocity_max_abs_at_quadrature": 0.08967795137020904,
+    "pressure_max_abs_at_quadrature": 0.1552540301086891,
+    "pressure_drop_predicted": 2.027405041091665,
+    "pressure_drop_reference": 2.0934193086012223,
+    "pressure_drop_relative": 0.03153418296961563,
+    "physical_area_evaluated": 5.034327321929895,
+    "common_domain_excluded_area_fraction": 0.0009768126737649302
+  },
+  "mesh_uncertainty": {
+    "velocity": 0.0022398722227462324,
+    "pressure": 0.004452972227644603,
+    "pressure_drop": 0.003316606734801789
+  },
+  "fem_coarse": {
+    "nx": 40,
+    "ny": 12,
+    "iterations": 48,
+    "algebraic_residual": 2.096249250201686e-09,
+    "seconds": 1.67060456899992,
+    "velocity_dofs": 4050,
+    "pressure_dofs": 533,
+    "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+  },
+  "fem_fine": {
+    "nx": 80,
+    "ny": 24,
+    "iterations": 48,
+    "algebraic_residual": 1.1029969365883461e-09,
+    "seconds": 12.136888488000068,
+    "velocity_dofs": 15778,
+    "pressure_dofs": 2025,
+    "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+  }
+}
