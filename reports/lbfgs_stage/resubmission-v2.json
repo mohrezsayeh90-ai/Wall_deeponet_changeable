@@ -1,0 +1,28 @@
+{
+  "submitted_at_utc": "2026-11-15T16:31:33.967539+00:00",
+  "previous_status": {
+    "status": "CANCEL_ACKNOWLEDGED",
+    "failureMessage": null
+  },
+  "response": {
+    "ref": "/code/mohrezsayeh/geometry-pi-deeponet-l-bfgs-refinement",
+    "url": "https://www.kaggle.com/code/mohrezsayeh/geometry-pi-deeponet-l-bfgs-refinement",
+    "versionNumber": 2,
+    "error": null,
+    "invalidTags": [],
+    "invalidDatasetSources": [],
+    "invalidCompetitionSources": [],
+    "invalidKernelSources": [],
+    "invalidModelSources": [],
+    "kernelId": 145226478
+  },
+  "status_after_submission": {
+    "status": "QUEUED",
+    "failureMessage": null
+  },
+  "script_sha256": "812b55726c58afeecfa0279a67277509b07ef39fdc21ad7420774fc6fb8980ae",
+  "base_adam_step": 82216,
+  "settings_unchanged": true,
+  "timeout_seconds": 41400,
+  "accelerator": "NvidiaTeslaT4"
+}

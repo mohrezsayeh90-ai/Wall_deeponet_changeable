@@ -84,3 +84,11 @@ KAGGLE_CONFIG_DIR=/workspace/.config/kaggle .venv/bin/python scripts/collect_kag
 When complete, collect the separate outputs and inspect `stop_reason`, accepted
 iterations, fixed/probe losses and paired FEM metrics. An API COMPLETE state alone
 must not be described as numerical convergence or improved solution accuracy.
+
+## Restart: version 2
+
+The user canceled the queued version 1. Cancellation was verified as
+`CANCEL_ACKNOWLEDGED` before resubmission. Version 2 was submitted with
+identical code (SHA-256 `812b55726c58afeecfa0279a67277509b07ef39fdc21ad7420774fc6fb8980ae`), base weights and settings.
+Status immediately after submission: **QUEUED**. See
+[resubmission evidence](resubmission-v2.json); this is a snapshot.
