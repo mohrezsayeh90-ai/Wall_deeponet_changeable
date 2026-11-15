@@ -1,0 +1,1232 @@
+{
+  "checkpoint_step": 82216,
+  "old_checkpoint_step": 32216,
+  "checkpoint_sha256": "84276c11feecd5bf230c79d1077250018b356ae118491678a4ed69e46ab83140",
+  "reynolds": 30.0,
+  "expected": 5,
+  "passed": 5,
+  "failed": 0,
+  "fem_rerun": false,
+  "same_reference_points_weights_and_geometry_verified": true,
+  "stress_extrapolation": false,
+  "accepted_model": false,
+  "cases": [
+    {
+      "index": 1,
+      "slug": "roof_plateau",
+      "title": "Rounded plateau roof",
+      "directory": "01_roof_plateau",
+      "reynolds": 30.0,
+      "geometry_id": "570bf536cd82f8d0fd0937a91721db7e78ee24a3c6b9e7e0f0e722fe89be9679",
+      "descriptors": {
+        "min_gap": 1.0,
+        "max_gap": 1.279895930728726,
+        "center_deviation": 0.13994796536436302,
+        "max_slope": 0.5052796643411491,
+        "max_curvature": 3.361410790313214
+      },
+      "amplitude_scale": 1.0,
+      "status": "passed",
+      "checkpoint_sha256": "84276c11feecd5bf230c79d1077250018b356ae118491678a4ed69e46ab83140",
+      "metrics": {
+        "velocity_relative_l2": 0.11263319181462086,
+        "u_relative_l2": 0.10864189027061368,
+        "v_absolute_rms": 0.029629579178708215,
+        "pressure_relative_l2": 0.20938259118127645,
+        "speed_relative_l2": 0.10895609326937505,
+        "velocity_absolute_rms": 0.10875984083452678,
+        "pressure_absolute_rms": 0.19943353554849405,
+        "velocity_max_abs_at_quadrature": 0.27449010893508485,
+        "pressure_max_abs_at_quadrature": 0.2871291931487343,
+        "pressure_drop_predicted": 1.016960995610991,
+        "pressure_drop_reference": 1.2533747729036533,
+        "pressure_drop_relative": 0.1886217773036631,
+        "physical_area_evaluated": 5.744500339730867,
+        "common_domain_excluded_area_fraction": 0.0
+      },
+      "mesh_uncertainty": {
+        "velocity": 0.0008923382418188436,
+        "pressure": 0.0013194781714389275,
+        "pressure_drop": 0.0006769263705088151
+      },
+      "fem_coarse": {
+        "nx": 40,
+        "ny": 12,
+        "iterations": 51,
+        "algebraic_residual": 3.6803689306206065e-09,
+        "seconds": 2.1101945449991035,
+        "velocity_dofs": 4050,
+        "pressure_dofs": 533,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "fem_fine": {
+        "nx": 80,
+        "ny": 24,
+        "iterations": 51,
+        "algebraic_residual": 1.8712044386026622e-09,
+        "seconds": 13.459298023999509,
+        "velocity_dofs": 15778,
+        "pressure_dofs": 2025,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "mean_errors": {
+        "velocity_vector": {
+          "old": {
+            "mae": 0.09243316973394607,
+            "relative_l1": 0.10590279047226483,
+            "reference_mean_magnitude": 0.8728114653235095,
+            "relative_l1_denominator_floored": false
+          },
+          "new": {
+            "mae": 0.08430326911912937,
+            "relative_l1": 0.0965881779381555,
+            "reference_mean_magnitude": 0.8728114653235095,
+            "relative_l1_denominator_floored": false
+          }
+        },
+        "u": {
+          "old": {
+            "mae": 0.08460930795893669,
+            "relative_l1": 0.09720745772628468,
+            "reference_mean_magnitude": 0.8703993493706863,
+            "relative_l1_denominator_floored": false
+          },
+          "new": {
+            "mae": 0.07724052733790014,
+            "relative_l1": 0.0887414810152907,
+            "reference_mean_magnitude": 0.8703993493706863,
+            "relative_l1_denominator_floored": false
+          }
+        },
+        "v": {
+          "old": {
+            "mae": 0.024615434365668227,
+            "relative_l1": 0.5091711555292326,
+            "reference_mean_magnitude": 0.04834412573917887,
+            "relative_l1_denominator_floored": false
+          },
+          "new": {
+            "mae": 0.021892718106326575,
+            "relative_l1": 0.45285167063398474,
+            "reference_mean_magnitude": 0.04834412573917887,
+            "relative_l1_denominator_floored": false
+          }
+        },
+        "pressure": {
+          "old": {
+            "mae": 0.21833167509377643,
+            "relative_l1": 0.24615486326973265,
+            "reference_mean_magnitude": 0.8869687650840032,
+            "relative_l1_denominator_floored": false
+          },
+          "new": {
+            "mae": 0.18078601501450367,
+            "relative_l1": 0.203824556321757,
+            "reference_mean_magnitude": 0.8869687650840032,
+            "relative_l1_denominator_floored": false
+          }
+        },
+        "speed": {
+          "old": {
+            "mae": 0.08502637428138876,
+            "relative_l1": 0.09741665601273186,
+            "reference_mean_magnitude": 0.8728114653235095,
+            "relative_l1_denominator_floored": false
+          },
+          "new": {
+            "mae": 0.07757991809336508,
+            "relative_l1": 0.08888508134412501,
+            "reference_mean_magnitude": 0.8728114653235095,
+            "relative_l1_denominator_floored": false
+          }
+        }
+      }
+    },
+    {
+      "index": 2,
+      "slug": "chirped_wave",
+      "title": "Waves with changing wavelength",
+      "directory": "02_chirped_wave",
+      "reynolds": 30.0,
+      "geometry_id": "ed3ef26f3b4c5da3ca80b391fa06c1646fc6aedc84db3c94ca50ec01cf777c36",
+      "descriptors": {
+        "min_gap": 0.7757467261358204,
+        "max_gap": 1.168279722582958,
+        "center_deviation": 0.0410817630438538,
+        "max_slope": 0.6929416405037261,
+        "max_curvature": 4.529837306387772
+      },
+      "amplitude_scale": 1.0,
+      "status": "passed",
+      "checkpoint_sha256": "84276c11feecd5bf230c79d1077250018b356ae118491678a4ed69e46ab83140",
+      "metrics": {
+        "velocity_relative_l2": 0.024890081339315938,
+        "u_relative_l2": 0.022158967500334373,
+        "v_absolute_rms": 0.012594770276963813,
+        "pressure_relative_l2": 0.016254221967658935,
+        "speed_relative_l2": 0.02264034432020174,
+        "velocity_absolute_rms": 0.02757222029701514,
+        "pressure_absolute_rms": 0.02095945483529202,
+        "velocity_max_abs_at_quadrature": 0.12815410897832397,
+        "pressure_max_abs_at_quadrature": 0.08214866245027211,
+        "pressure_drop_predicted": 2.0048264005168663,
+        "pressure_drop_reference": 2.0154616968634627,
+        "pressure_drop_relative": 0.005276853617782651,
+        "physical_area_evaluated": 5.009164638125312,
+        "common_domain_excluded_area_fraction": 0.0013048543874707187
+      },
+      "mesh_uncertainty": {
+        "velocity": 0.004563779325038956,
+        "pressure": 0.008177374471998058,
+        "pressure_drop": 0.00705321696175947
+      },
+      "fem_coarse": {
+        "nx": 40,
+        "ny": 12,
+        "iterations": 48,
+        "algebraic_residual": 3.3477041116277726e-09,
+        "seconds": 1.9488118970002688,
+        "velocity_dofs": 4050,
+        "pressure_dofs": 533,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "fem_fine": {
+        "nx": 80,
+        "ny": 24,
+        "iterations": 48,
+        "algebraic_residual": 1.909904755948401e-09,
+        "seconds": 12.718723515999955,
+        "velocity_dofs": 15778,
+        "pressure_dofs": 2025,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "mean_errors": {
+        "velocity_vector": {
+          "old": {
+            "mae": 0.029825780416469678,
+            "relative_l1": 0.02984154777252425,
+            "reference_mean_magnitude": 0.9994716307553896,
+            "relative_l1_denominator_floored": false
+          },
+          "new": {
+            "mae": 0.018113328369964852,
+            "relative_l1": 0.018122903955037722,
+            "reference_mean_magnitude": 0.9994716307553896,
+            "relative_l1_denominator_floored": false
+          }
+        },
+        "u": {
+          "old": {
+            "mae": 0.024782143865199682,
+            "relative_l1": 0.024827445559732406,
+            "reference_mean_magnitude": 0.9981753380780262,
+            "relative_l1_denominator_floored": false
+          },
+          "new": {
+            "mae": 0.014651943049854028,
+            "relative_l1": 0.014678726763642704,
+            "reference_mean_magnitude": 0.9981753380780262,
+            "relative_l1_denominator_floored": false
+          }
+        },
+        "v": {
+          "old": {
+            "mae": 0.01232538663203856,
+            "relative_l1": 0.5388867304055421,
+            "reference_mean_magnitude": 0.02287194309416939,
+            "relative_l1_denominator_floored": false
+          },
+          "new": {
+            "mae": 0.008124514982182689,
+            "relative_l1": 0.3552175234404909,
+            "reference_mean_magnitude": 0.02287194309416939,
+            "relative_l1_denominator_floored": false
+          }
+        },
+        "pressure": {
+          "old": {
+            "mae": 0.04783718162208871,
+            "relative_l1": 0.04405260066453038,
+            "reference_mean_magnitude": 1.0859105001854192,
+            "relative_l1_denominator_floored": false
+          },
+          "new": {
+            "mae": 0.016006685593756342,
+            "relative_l1": 0.014740335958647792,
+            "reference_mean_magnitude": 1.0859105001854192,
+            "relative_l1_denominator_floored": false
+          }
+        },
+        "speed": {
+          "old": {
+            "mae": 0.02501631889482658,
+            "relative_l1": 0.02502954373594328,
+            "reference_mean_magnitude": 0.9994716307553896,
+            "relative_l1_denominator_floored": false
+          },
+          "new": {
+            "mae": 0.014817190620921806,
+            "relative_l1": 0.014825023707499468,
+            "reference_mean_magnitude": 0.9994716307553896,
+            "relative_l1_denominator_floored": false
+          }
+        }
+      }
+    },
+    {
+      "index": 3,
+      "slug": "stepped_s_bend",
+      "title": "Rounded stepped S-shaped walls",
+      "directory": "03_stepped_s_bend",
+      "reynolds": 30.0,
+      "geometry_id": "78175c18af98a9f1d06bcd4e0e6859237f4994656794fb63806f481ad9ee57f7",
+      "descriptors": {
+        "min_gap": 0.7829532439071148,
+        "max_gap": 1.0320414077333853,
+        "center_deviation": 0.03288672529188577,
+        "max_slope": 0.2649965876480106,
+        "max_curvature": 1.1857541474519016
+      },
+      "amplitude_scale": 1.0,
+      "status": "passed",
+      "checkpoint_sha256": "84276c11feecd5bf230c79d1077250018b356ae118491678a4ed69e46ab83140",
+      "metrics": {
+        "velocity_relative_l2": 0.01349410984537051,
+        "u_relative_l2": 0.012917827289873953,
+        "v_absolute_rms": 0.004544083090096415,
+        "pressure_relative_l2": 0.042602206950288796,
+        "speed_relative_l2": 0.012959182931265321,
+        "velocity_absolute_rms": 0.015641580013334738,
+        "pressure_absolute_rms": 0.060772834174143225,
+        "velocity_max_abs_at_quadrature": 0.042066271240190606,
+        "pressure_max_abs_at_quadrature": 0.09636405365778011,
+        "pressure_drop_predicted": 2.2153435481616843,
+        "pressure_drop_reference": 2.292214043900448,
+        "pressure_drop_relative": 0.03353547891538105,
+        "physical_area_evaluated": 4.75772452960002,
+        "common_domain_excluded_area_fraction": 0.0
+      },
+      "mesh_uncertainty": {
+        "velocity": 0.0005949382843722581,
+        "pressure": 0.0008838690870642063,
+        "pressure_drop": 0.000726280146722577
+      },
+      "fem_coarse": {
+        "nx": 40,
+        "ny": 12,
+        "iterations": 49,
+        "algebraic_residual": 2.9904172626603525e-09,
+        "seconds": 1.7304909729991778,
+        "velocity_dofs": 4050,
+        "pressure_dofs": 533,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "fem_fine": {
+        "nx": 80,
+        "ny": 24,
+        "iterations": 49,
+        "algebraic_residual": 1.5404326872785934e-09,
+        "seconds": 12.364807569998447,
+        "velocity_dofs": 15778,
+        "pressure_dofs": 2025,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "mean_errors": {
+        "velocity_vector": {
+          "old": {
+            "mae": 0.020162758659575574,
+            "relative_l1": 0.019174604725546857,
+            "reference_mean_magnitude": 1.0515345139142385,
+            "relative_l1_denominator_floored": false
+          },
+          "new": {
+            "mae": 0.012104671964374928,
+            "relative_l1": 0.011511435720085329,
+            "reference_mean_magnitude": 1.0515345139142385,
+            "relative_l1_denominator_floored": false
+          }
+        },
+        "u": {
+          "old": {
+            "mae": 0.018931335899547586,
+            "relative_l1": 0.018014016710518364,
+            "reference_mean_magnitude": 1.0509225234865915,
+            "relative_l1_denominator_floored": false
+          },
+          "new": {
+            "mae": 0.011093458725668555,
+            "relative_l1": 0.010555924416639544,
+            "reference_mean_magnitude": 1.0509225234865915,
+            "relative_l1_denominator_floored": false
+          }
+        },
+        "v": {
+          "old": {
+            "mae": 0.004453728870029512,
+            "relative_l1": 0.21792005676291337,
+            "reference_mean_magnitude": 0.02043744360288487,
+            "relative_l1_denominator_floored": false
+          },
+          "new": {
+            "mae": 0.0032231410876204774,
+            "relative_l1": 0.1577076443731696,
+            "reference_mean_magnitude": 0.02043744360288487,
+            "relative_l1_denominator_floored": false
+          }
+        },
+        "pressure": {
+          "old": {
+            "mae": 0.03719027342045607,
+            "relative_l1": 0.03226125415660234,
+            "reference_mean_magnitude": 1.1527844900240805,
+            "relative_l1_denominator_floored": false
+          },
+          "new": {
+            "mae": 0.05449975764061354,
+            "relative_l1": 0.04727662291802268,
+            "reference_mean_magnitude": 1.1527844900240805,
+            "relative_l1_denominator_floored": false
+          }
+        },
+        "speed": {
+          "old": {
+            "mae": 0.018992328653294907,
+            "relative_l1": 0.01806153616641431,
+            "reference_mean_magnitude": 1.0515345139142385,
+            "relative_l1_denominator_floored": false
+          },
+          "new": {
+            "mae": 0.011138775185408756,
+            "relative_l1": 0.010592876446770837,
+            "reference_mean_magnitude": 1.0515345139142385,
+            "relative_l1_denominator_floored": false
+          }
+        }
+      }
+    },
+    {
+      "index": 4,
+      "slug": "random_spline",
+      "title": "Independent irregular spline walls",
+      "directory": "04_random_spline",
+      "reynolds": 30.0,
+      "geometry_id": "176bd34a5af702fd8fd513ea950f47534a05a9a58686f88df39edd26fa9fe32e",
+      "descriptors": {
+        "min_gap": 0.9271055381841712,
+        "max_gap": 1.1643025600175059,
+        "center_deviation": 0.06650022576581646,
+        "max_slope": 0.699,
+        "max_curvature": 8.389763281425324
+      },
+      "amplitude_scale": 0.4204794991352933,
+      "status": "passed",
+      "checkpoint_sha256": "84276c11feecd5bf230c79d1077250018b356ae118491678a4ed69e46ab83140",
+      "metrics": {
+        "velocity_relative_l2": 0.019303703161832893,
+        "u_relative_l2": 0.017157897129329087,
+        "v_absolute_rms": 0.009722229311682207,
+        "pressure_relative_l2": 0.026228518700519017,
+        "speed_relative_l2": 0.017330781495714553,
+        "velocity_absolute_rms": 0.021186400040095768,
+        "pressure_absolute_rms": 0.03119725437904732,
+        "velocity_max_abs_at_quadrature": 0.08973980703453444,
+        "pressure_max_abs_at_quadrature": 0.09834634934488262,
+        "pressure_drop_predicted": 1.8371435947314805,
+        "pressure_drop_reference": 1.8717006012330024,
+        "pressure_drop_relative": 0.018462892237549714,
+        "physical_area_evaluated": 5.023223146881012,
+        "common_domain_excluded_area_fraction": 0.0001886435997073052
+      },
+      "mesh_uncertainty": {
+        "velocity": 0.004049229601166668,
+        "pressure": 0.005690994183910211,
+        "pressure_drop": 0.004425322734003675
+      },
+      "fem_coarse": {
+        "nx": 40,
+        "ny": 12,
+        "iterations": 48,
+        "algebraic_residual": 3.0652987860227406e-09,
+        "seconds": 1.7609150050011522,
+        "velocity_dofs": 4050,
+        "pressure_dofs": 533,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "fem_fine": {
+        "nx": 80,
+        "ny": 24,
+        "iterations": 48,
+        "algebraic_residual": 1.5959919211897515e-09,
+        "seconds": 12.73701353800061,
+        "velocity_dofs": 15778,
+        "pressure_dofs": 2025,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "mean_errors": {
+        "velocity_vector": {
+          "old": {
+            "mae": 0.026160484060917626,
+            "relative_l1": 0.026264718161423395,
+            "reference_mean_magnitude": 0.9960314022840395,
+            "relative_l1_denominator_floored": false
+          },
+          "new": {
+            "mae": 0.0146338163156581,
+            "relative_l1": 0.014692123443197381,
+            "reference_mean_magnitude": 0.9960314022840395,
+            "relative_l1_denominator_floored": false
+          }
+        },
+        "u": {
+          "old": {
+            "mae": 0.022198930805444658,
+            "relative_l1": 0.022301808954891096,
+            "reference_mean_magnitude": 0.9953870042715134,
+            "relative_l1_denominator_floored": false
+          },
+          "new": {
+            "mae": 0.012391092715497298,
+            "relative_l1": 0.012448517674355088,
+            "reference_mean_magnitude": 0.9953870042715134,
+            "relative_l1_denominator_floored": false
+          }
+        },
+        "v": {
+          "old": {
+            "mae": 0.009434280235867587,
+            "relative_l1": 0.5261025143530347,
+            "reference_mean_magnitude": 0.01793239906383878,
+            "relative_l1_denominator_floored": false
+          },
+          "new": {
+            "mae": 0.005488365155047879,
+            "relative_l1": 0.30605861131628126,
+            "reference_mean_magnitude": 0.01793239906383878,
+            "relative_l1_denominator_floored": false
+          }
+        },
+        "pressure": {
+          "old": {
+            "mae": 0.03532316446553137,
+            "relative_l1": 0.03450013827951732,
+            "reference_mean_magnitude": 1.0238557358624465,
+            "relative_l1_denominator_floored": false
+          },
+          "new": {
+            "mae": 0.025865212802115952,
+            "relative_l1": 0.025262555940391687,
+            "reference_mean_magnitude": 1.0238557358624465,
+            "relative_l1_denominator_floored": false
+          }
+        },
+        "speed": {
+          "old": {
+            "mae": 0.022335857049857945,
+            "relative_l1": 0.02242485226734689,
+            "reference_mean_magnitude": 0.9960314022840395,
+            "relative_l1_denominator_floored": false
+          },
+          "new": {
+            "mae": 0.012506639433260408,
+            "relative_l1": 0.012556471015452857,
+            "reference_mean_magnitude": 0.9960314022840395,
+            "relative_l1_denominator_floored": false
+          }
+        }
+      }
+    },
+    {
+      "index": 5,
+      "slug": "random_fourier",
+      "title": "Independent random Fourier walls",
+      "directory": "05_random_fourier",
+      "reynolds": 30.0,
+      "geometry_id": "51636036a4fbdeb99d551eb5c8bb907a9652ce81b3370d50337f2cad3a0d206b",
+      "descriptors": {
+        "min_gap": 0.6642703359834878,
+        "max_gap": 1.1204100772775691,
+        "center_deviation": 0.11810449236797978,
+        "max_slope": 0.699,
+        "max_curvature": 2.3967566165205483
+      },
+      "amplitude_scale": 0.772523317617625,
+      "status": "passed",
+      "checkpoint_sha256": "84276c11feecd5bf230c79d1077250018b356ae118491678a4ed69e46ab83140",
+      "metrics": {
+        "velocity_relative_l2": 0.04704231532266075,
+        "u_relative_l2": 0.04523858440729891,
+        "v_absolute_rms": 0.01549823731995179,
+        "pressure_relative_l2": 0.03943999967879814,
+        "speed_relative_l2": 0.045329735074247084,
+        "velocity_absolute_rms": 0.054742659972410714,
+        "pressure_absolute_rms": 0.06327468720109207,
+        "velocity_max_abs_at_quadrature": 0.2418604818823497,
+        "pressure_max_abs_at_quadrature": 0.104550111935104,
+        "pressure_drop_predicted": 2.4724687464091915,
+        "pressure_drop_reference": 2.56675738104313,
+        "pressure_drop_relative": 0.03673453335726634,
+        "physical_area_evaluated": 4.813717244431074,
+        "common_domain_excluded_area_fraction": 0.0008084741273130016
+      },
+      "mesh_uncertainty": {
+        "velocity": 0.0029366350549534645,
+        "pressure": 0.00553140043461247,
+        "pressure_drop": 0.004632484087166481
+      },
+      "fem_coarse": {
+        "nx": 40,
+        "ny": 12,
+        "iterations": 56,
+        "algebraic_residual": 5.277375965629465e-09,
+        "seconds": 2.022846752000987,
+        "velocity_dofs": 4050,
+        "pressure_dofs": 533,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "fem_fine": {
+        "nx": 80,
+        "ny": 24,
+        "iterations": 56,
+        "algebraic_residual": 2.8224886808857034e-09,
+        "seconds": 14.33936661900043,
+        "velocity_dofs": 15778,
+        "pressure_dofs": 2025,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "mean_errors": {
+        "velocity_vector": {
+          "old": {
+            "mae": 0.04354319553164605,
+            "relative_l1": 0.04179239922406613,
+            "reference_mean_magnitude": 1.0418926967603173,
+            "relative_l1_denominator_floored": false
+          },
+          "new": {
+            "mae": 0.0373675860555593,
+            "relative_l1": 0.03586510028503976,
+            "reference_mean_magnitude": 1.0418926967603173,
+            "relative_l1_denominator_floored": false
+          }
+        },
+        "u": {
+          "old": {
+            "mae": 0.040098000102177435,
+            "relative_l1": 0.03860400893608945,
+            "reference_mean_magnitude": 1.0387004149895764,
+            "relative_l1_denominator_floored": false
+          },
+          "new": {
+            "mae": 0.03392070964049238,
+            "relative_l1": 0.03265687502477101,
+            "reference_mean_magnitude": 1.0387004149895764,
+            "relative_l1_denominator_floored": false
+          }
+        },
+        "v": {
+          "old": {
+            "mae": 0.011367208188289995,
+            "relative_l1": 0.2317864530856448,
+            "reference_mean_magnitude": 0.04904172800853821,
+            "relative_l1_denominator_floored": false
+          },
+          "new": {
+            "mae": 0.010247851784884725,
+            "relative_l1": 0.20896188207521083,
+            "reference_mean_magnitude": 0.04904172800853821,
+            "relative_l1_denominator_floored": false
+          }
+        },
+        "pressure": {
+          "old": {
+            "mae": 0.02621790492044793,
+            "relative_l1": 0.020812579935282325,
+            "reference_mean_magnitude": 1.2597143171088694,
+            "relative_l1_denominator_floored": false
+          },
+          "new": {
+            "mae": 0.05017546521729504,
+            "relative_l1": 0.03983082873301874,
+            "reference_mean_magnitude": 1.2597143171088694,
+            "relative_l1_denominator_floored": false
+          }
+        },
+        "speed": {
+          "old": {
+            "mae": 0.03993670639153195,
+            "relative_l1": 0.03833092075192769,
+            "reference_mean_magnitude": 1.0418926967603173,
+            "relative_l1_denominator_floored": false
+          },
+          "new": {
+            "mae": 0.033946337896288516,
+            "relative_l1": 0.03258141457545672,
+            "reference_mean_magnitude": 1.0418926967603173,
+            "relative_l1_denominator_floored": false
+          }
+        }
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "index": 1,
+      "title": "Rounded plateau roof",
+      "directory": "01_roof_plateau",
+      "geometry_id": "570bf536cd82f8d0fd0937a91721db7e78ee24a3c6b9e7e0f0e722fe89be9679",
+      "reference_sha256": "5b4928d11fe39b8d731d727bb2a200d5d5b78e824e164cc066cfc0ed31ca070d",
+      "original_reference_path": "reports/random_channel_chain_5/01_roof_plateau/reference.npz",
+      "old": {
+        "velocity_relative_l2": 0.12426185658137812,
+        "u_relative_l2": 0.11968194624694685,
+        "v_absolute_rms": 0.03328334035361138,
+        "pressure_relative_l2": 0.25363680831737817,
+        "speed_relative_l2": 0.12002762418423144,
+        "velocity_absolute_rms": 0.11998860660751637,
+        "pressure_absolute_rms": 0.2415849624488444,
+        "velocity_max_abs_at_quadrature": 0.304585782381,
+        "pressure_max_abs_at_quadrature": 0.35304190680751646,
+        "pressure_drop_predicted": 0.9785629897277726,
+        "pressure_drop_reference": 1.2533747729036533,
+        "pressure_drop_relative": 0.21925747120251435,
+        "physical_area_evaluated": 5.744500339730867,
+        "common_domain_excluded_area_fraction": 0.0
+      },
+      "new": {
+        "velocity_relative_l2": 0.11263319181462086,
+        "u_relative_l2": 0.10864189027061368,
+        "v_absolute_rms": 0.029629579178708215,
+        "pressure_relative_l2": 0.20938259118127645,
+        "speed_relative_l2": 0.10895609326937505,
+        "velocity_absolute_rms": 0.10875984083452678,
+        "pressure_absolute_rms": 0.19943353554849405,
+        "velocity_max_abs_at_quadrature": 0.27449010893508485,
+        "pressure_max_abs_at_quadrature": 0.2871291931487343,
+        "pressure_drop_predicted": 1.016960995610991,
+        "pressure_drop_reference": 1.2533747729036533,
+        "pressure_drop_relative": 0.1886217773036631,
+        "physical_area_evaluated": 5.744500339730867,
+        "common_domain_excluded_area_fraction": 0.0
+      },
+      "mean_errors": {
+        "velocity_vector": {
+          "old": {
+            "mae": 0.09243316973394607,
+            "relative_l1": 0.10590279047226483,
+            "reference_mean_magnitude": 0.8728114653235095,
+            "relative_l1_denominator_floored": false
+          },
+          "new": {
+            "mae": 0.08430326911912937,
+            "relative_l1": 0.0965881779381555,
+            "reference_mean_magnitude": 0.8728114653235095,
+            "relative_l1_denominator_floored": false
+          }
+        },
+        "u": {
+          "old": {
+            "mae": 0.08460930795893669,
+            "relative_l1": 0.09720745772628468,
+            "reference_mean_magnitude": 0.8703993493706863,
+            "relative_l1_denominator_floored": false
+          },
+          "new": {
+            "mae": 0.07724052733790014,
+            "relative_l1": 0.0887414810152907,
+            "reference_mean_magnitude": 0.8703993493706863,
+            "relative_l1_denominator_floored": false
+          }
+        },
+        "v": {
+          "old": {
+            "mae": 0.024615434365668227,
+            "relative_l1": 0.5091711555292326,
+            "reference_mean_magnitude": 0.04834412573917887,
+            "relative_l1_denominator_floored": false
+          },
+          "new": {
+            "mae": 0.021892718106326575,
+            "relative_l1": 0.45285167063398474,
+            "reference_mean_magnitude": 0.04834412573917887,
+            "relative_l1_denominator_floored": false
+          }
+        },
+        "pressure": {
+          "old": {
+            "mae": 0.21833167509377643,
+            "relative_l1": 0.24615486326973265,
+            "reference_mean_magnitude": 0.8869687650840032,
+            "relative_l1_denominator_floored": false
+          },
+          "new": {
+            "mae": 0.18078601501450367,
+            "relative_l1": 0.203824556321757,
+            "reference_mean_magnitude": 0.8869687650840032,
+            "relative_l1_denominator_floored": false
+          }
+        },
+        "speed": {
+          "old": {
+            "mae": 0.08502637428138876,
+            "relative_l1": 0.09741665601273186,
+            "reference_mean_magnitude": 0.8728114653235095,
+            "relative_l1_denominator_floored": false
+          },
+          "new": {
+            "mae": 0.07757991809336508,
+            "relative_l1": 0.08888508134412501,
+            "reference_mean_magnitude": 0.8728114653235095,
+            "relative_l1_denominator_floored": false
+          }
+        }
+      }
+    },
+    {
+      "index": 2,
+      "title": "Waves with changing wavelength",
+      "directory": "02_chirped_wave",
+      "geometry_id": "ed3ef26f3b4c5da3ca80b391fa06c1646fc6aedc84db3c94ca50ec01cf777c36",
+      "reference_sha256": "9c31f172cebc1ec6ad93e199ec3a1af22fb8655fd8a6e4c5a66751ce4f89badf",
+      "original_reference_path": "reports/random_channel_chain_5/02_chirped_wave/reference.npz",
+      "old": {
+        "velocity_relative_l2": 0.03936754469761786,
+        "u_relative_l2": 0.03535885825715862,
+        "v_absolute_rms": 0.01923545494711491,
+        "pressure_relative_l2": 0.04415182077220688,
+        "speed_relative_l2": 0.035951275039924624,
+        "velocity_absolute_rms": 0.043609765679662564,
+        "pressure_absolute_rms": 0.056932783077051914,
+        "velocity_max_abs_at_quadrature": 0.18738569340126768,
+        "pressure_max_abs_at_quadrature": 0.15925779273060603,
+        "pressure_drop_predicted": 1.9668576099530566,
+        "pressure_drop_reference": 2.0154616968634627,
+        "pressure_drop_relative": 0.02411560933459841,
+        "physical_area_evaluated": 5.009164638125312,
+        "common_domain_excluded_area_fraction": 0.0013048543874707187
+      },
+      "new": {
+        "velocity_relative_l2": 0.024890081339315938,
+        "u_relative_l2": 0.022158967500334373,
+        "v_absolute_rms": 0.012594770276963813,
+        "pressure_relative_l2": 0.016254221967658935,
+        "speed_relative_l2": 0.02264034432020174,
+        "velocity_absolute_rms": 0.02757222029701514,
+        "pressure_absolute_rms": 0.02095945483529202,
+        "velocity_max_abs_at_quadrature": 0.12815410897832397,
+        "pressure_max_abs_at_quadrature": 0.08214866245027211,
+        "pressure_drop_predicted": 2.0048264005168663,
+        "pressure_drop_reference": 2.0154616968634627,
+        "pressure_drop_relative": 0.005276853617782651,
+        "physical_area_evaluated": 5.009164638125312,
+        "common_domain_excluded_area_fraction": 0.0013048543874707187
+      },
+      "mean_errors": {
+        "velocity_vector": {
+          "old": {
+            "mae": 0.029825780416469678,
+            "relative_l1": 0.02984154777252425,
+            "reference_mean_magnitude": 0.9994716307553896,
+            "relative_l1_denominator_floored": false
+          },
+          "new": {
+            "mae": 0.018113328369964852,
+            "relative_l1": 0.018122903955037722,
+            "reference_mean_magnitude": 0.9994716307553896,
+            "relative_l1_denominator_floored": false
+          }
+        },
+        "u": {
+          "old": {
+            "mae": 0.024782143865199682,
+            "relative_l1": 0.024827445559732406,
+            "reference_mean_magnitude": 0.9981753380780262,
+            "relative_l1_denominator_floored": false
+          },
+          "new": {
+            "mae": 0.014651943049854028,
+            "relative_l1": 0.014678726763642704,
+            "reference_mean_magnitude": 0.9981753380780262,
+            "relative_l1_denominator_floored": false
+          }
+        },
+        "v": {
+          "old": {
+            "mae": 0.01232538663203856,
+            "relative_l1": 0.5388867304055421,
+            "reference_mean_magnitude": 0.02287194309416939,
+            "relative_l1_denominator_floored": false
+          },
+          "new": {
+            "mae": 0.008124514982182689,
+            "relative_l1": 0.3552175234404909,
+            "reference_mean_magnitude": 0.02287194309416939,
+            "relative_l1_denominator_floored": false
+          }
+        },
+        "pressure": {
+          "old": {
+            "mae": 0.04783718162208871,
+            "relative_l1": 0.04405260066453038,
+            "reference_mean_magnitude": 1.0859105001854192,
+            "relative_l1_denominator_floored": false
+          },
+          "new": {
+            "mae": 0.016006685593756342,
+            "relative_l1": 0.014740335958647792,
+            "reference_mean_magnitude": 1.0859105001854192,
+            "relative_l1_denominator_floored": false
+          }
+        },
+        "speed": {
+          "old": {
+            "mae": 0.02501631889482658,
+            "relative_l1": 0.02502954373594328,
+            "reference_mean_magnitude": 0.9994716307553896,
+            "relative_l1_denominator_floored": false
+          },
+          "new": {
+            "mae": 0.014817190620921806,
+            "relative_l1": 0.014825023707499468,
+            "reference_mean_magnitude": 0.9994716307553896,
+            "relative_l1_denominator_floored": false
+          }
+        }
+      }
+    },
+    {
+      "index": 3,
+      "title": "Rounded stepped S-shaped walls",
+      "directory": "03_stepped_s_bend",
+      "geometry_id": "78175c18af98a9f1d06bcd4e0e6859237f4994656794fb63806f481ad9ee57f7",
+      "reference_sha256": "f58e7175b99128d82e1ec1605a23275e7c9982d766068e9980407d48be7b57b5",
+      "original_reference_path": "reports/random_channel_chain_5/03_stepped_s_bend/reference.npz",
+      "old": {
+        "velocity_relative_l2": 0.020987140215125804,
+        "u_relative_l2": 0.020373966183086383,
+        "v_absolute_rms": 0.005879496666700059,
+        "pressure_relative_l2": 0.02898867202735019,
+        "speed_relative_l2": 0.020448281978652297,
+        "velocity_absolute_rms": 0.024327060968648284,
+        "pressure_absolute_rms": 0.04135287545320079,
+        "velocity_max_abs_at_quadrature": 0.0603608716050822,
+        "pressure_max_abs_at_quadrature": 0.07300702172572099,
+        "pressure_drop_predicted": 2.3407008657317263,
+        "pressure_drop_reference": 2.292214043900448,
+        "pressure_drop_relative": 0.021152833418982393,
+        "physical_area_evaluated": 4.75772452960002,
+        "common_domain_excluded_area_fraction": 0.0
+      },
+      "new": {
+        "velocity_relative_l2": 0.01349410984537051,
+        "u_relative_l2": 0.012917827289873953,
+        "v_absolute_rms": 0.004544083090096415,
+        "pressure_relative_l2": 0.042602206950288796,
+        "speed_relative_l2": 0.012959182931265321,
+        "velocity_absolute_rms": 0.015641580013334738,
+        "pressure_absolute_rms": 0.060772834174143225,
+        "velocity_max_abs_at_quadrature": 0.042066271240190606,
+        "pressure_max_abs_at_quadrature": 0.09636405365778011,
+        "pressure_drop_predicted": 2.2153435481616843,
+        "pressure_drop_reference": 2.292214043900448,
+        "pressure_drop_relative": 0.03353547891538105,
+        "physical_area_evaluated": 4.75772452960002,
+        "common_domain_excluded_area_fraction": 0.0
+      },
+      "mean_errors": {
+        "velocity_vector": {
+          "old": {
+            "mae": 0.020162758659575574,
+            "relative_l1": 0.019174604725546857,
+            "reference_mean_magnitude": 1.0515345139142385,
+            "relative_l1_denominator_floored": false
+          },
+          "new": {
+            "mae": 0.012104671964374928,
+            "relative_l1": 0.011511435720085329,
+            "reference_mean_magnitude": 1.0515345139142385,
+            "relative_l1_denominator_floored": false
+          }
+        },
+        "u": {
+          "old": {
+            "mae": 0.018931335899547586,
+            "relative_l1": 0.018014016710518364,
+            "reference_mean_magnitude": 1.0509225234865915,
+            "relative_l1_denominator_floored": false
+          },
+          "new": {
+            "mae": 0.011093458725668555,
+            "relative_l1": 0.010555924416639544,
+            "reference_mean_magnitude": 1.0509225234865915,
+            "relative_l1_denominator_floored": false
+          }
+        },
+        "v": {
+          "old": {
+            "mae": 0.004453728870029512,
+            "relative_l1": 0.21792005676291337,
+            "reference_mean_magnitude": 0.02043744360288487,
+            "relative_l1_denominator_floored": false
+          },
+          "new": {
+            "mae": 0.0032231410876204774,
+            "relative_l1": 0.1577076443731696,
+            "reference_mean_magnitude": 0.02043744360288487,
+            "relative_l1_denominator_floored": false
+          }
+        },
+        "pressure": {
+          "old": {
+            "mae": 0.03719027342045607,
+            "relative_l1": 0.03226125415660234,
+            "reference_mean_magnitude": 1.1527844900240805,
+            "relative_l1_denominator_floored": false
+          },
+          "new": {
+            "mae": 0.05449975764061354,
+            "relative_l1": 0.04727662291802268,
+            "reference_mean_magnitude": 1.1527844900240805,
+            "relative_l1_denominator_floored": false
+          }
+        },
+        "speed": {
+          "old": {
+            "mae": 0.018992328653294907,
+            "relative_l1": 0.01806153616641431,
+            "reference_mean_magnitude": 1.0515345139142385,
+            "relative_l1_denominator_floored": false
+          },
+          "new": {
+            "mae": 0.011138775185408756,
+            "relative_l1": 0.010592876446770837,
+            "reference_mean_magnitude": 1.0515345139142385,
+            "relative_l1_denominator_floored": false
+          }
+        }
+      }
+    },
+    {
+      "index": 4,
+      "title": "Independent irregular spline walls",
+      "directory": "04_random_spline",
+      "geometry_id": "176bd34a5af702fd8fd513ea950f47534a05a9a58686f88df39edd26fa9fe32e",
+      "reference_sha256": "2c035bb60859172e6ac5556164bf2cd679ca3672c1028a341e3c150a05412ec4",
+      "original_reference_path": "reports/random_channel_chain_5/04_random_spline/reference.npz",
+      "old": {
+        "velocity_relative_l2": 0.033233095373931015,
+        "u_relative_l2": 0.029762166674997013,
+        "v_absolute_rms": 0.016254673280749875,
+        "pressure_relative_l2": 0.0339871728669955,
+        "speed_relative_l2": 0.030017158302781673,
+        "velocity_absolute_rms": 0.036474330715718754,
+        "pressure_absolute_rms": 0.04042570949823909,
+        "velocity_max_abs_at_quadrature": 0.14359169191986157,
+        "pressure_max_abs_at_quadrature": 0.11724565018788047,
+        "pressure_drop_predicted": 1.838361439051656,
+        "pressure_drop_reference": 1.8717006012330024,
+        "pressure_drop_relative": 0.017812230310437382,
+        "physical_area_evaluated": 5.023223146881012,
+        "common_domain_excluded_area_fraction": 0.0001886435997073052
+      },
+      "new": {
+        "velocity_relative_l2": 0.019303703161832893,
+        "u_relative_l2": 0.017157897129329087,
+        "v_absolute_rms": 0.009722229311682207,
+        "pressure_relative_l2": 0.026228518700519017,
+        "speed_relative_l2": 0.017330781495714553,
+        "velocity_absolute_rms": 0.021186400040095768,
+        "pressure_absolute_rms": 0.03119725437904732,
+        "velocity_max_abs_at_quadrature": 0.08973980703453444,
+        "pressure_max_abs_at_quadrature": 0.09834634934488262,
+        "pressure_drop_predicted": 1.8371435947314805,
+        "pressure_drop_reference": 1.8717006012330024,
+        "pressure_drop_relative": 0.018462892237549714,
+        "physical_area_evaluated": 5.023223146881012,
+        "common_domain_excluded_area_fraction": 0.0001886435997073052
+      },
+      "mean_errors": {
+        "velocity_vector": {
+          "old": {
+            "mae": 0.026160484060917626,
+            "relative_l1": 0.026264718161423395,
+            "reference_mean_magnitude": 0.9960314022840395,
+            "relative_l1_denominator_floored": false
+          },
+          "new": {
+            "mae": 0.0146338163156581,
+            "relative_l1": 0.014692123443197381,
+            "reference_mean_magnitude": 0.9960314022840395,
+            "relative_l1_denominator_floored": false
+          }
+        },
+        "u": {
+          "old": {
+            "mae": 0.022198930805444658,
+            "relative_l1": 0.022301808954891096,
+            "reference_mean_magnitude": 0.9953870042715134,
+            "relative_l1_denominator_floored": false
+          },
+          "new": {
+            "mae": 0.012391092715497298,
+            "relative_l1": 0.012448517674355088,
+            "reference_mean_magnitude": 0.9953870042715134,
+            "relative_l1_denominator_floored": false
+          }
+        },
+        "v": {
+          "old": {
+            "mae": 0.009434280235867587,
+            "relative_l1": 0.5261025143530347,
+            "reference_mean_magnitude": 0.01793239906383878,
+            "relative_l1_denominator_floored": false
+          },
+          "new": {
+            "mae": 0.005488365155047879,
+            "relative_l1": 0.30605861131628126,
+            "reference_mean_magnitude": 0.01793239906383878,
+            "relative_l1_denominator_floored": false
+          }
+        },
+        "pressure": {
+          "old": {
+            "mae": 0.03532316446553137,
+            "relative_l1": 0.03450013827951732,
+            "reference_mean_magnitude": 1.0238557358624465,
+            "relative_l1_denominator_floored": false
+          },
+          "new": {
+            "mae": 0.025865212802115952,
+            "relative_l1": 0.025262555940391687,
+            "reference_mean_magnitude": 1.0238557358624465,
+            "relative_l1_denominator_floored": false
+          }
+        },
+        "speed": {
+          "old": {
+            "mae": 0.022335857049857945,
+            "relative_l1": 0.02242485226734689,
+            "reference_mean_magnitude": 0.9960314022840395,
+            "relative_l1_denominator_floored": false
+          },
+          "new": {
+            "mae": 0.012506639433260408,
+            "relative_l1": 0.012556471015452857,
+            "reference_mean_magnitude": 0.9960314022840395,
+            "relative_l1_denominator_floored": false
+          }
+        }
+      }
+    },
+    {
+      "index": 5,
+      "title": "Independent random Fourier walls",
+      "directory": "05_random_fourier",
+      "geometry_id": "51636036a4fbdeb99d551eb5c8bb907a9652ce81b3370d50337f2cad3a0d206b",
+      "reference_sha256": "a0a65f8e9b412b5f9579b7c2dfed8ac130108578e9244f8d7874f9b4ace50040",
+      "original_reference_path": "reports/random_channel_chain_5/05_random_fourier/reference.npz",
+      "old": {
+        "velocity_relative_l2": 0.05493954240509104,
+        "u_relative_l2": 0.05267215493303148,
+        "v_absolute_rms": 0.018720823126509075,
+        "pressure_relative_l2": 0.020628716717836507,
+        "speed_relative_l2": 0.05246786022115314,
+        "velocity_absolute_rms": 0.06393258215062765,
+        "pressure_absolute_rms": 0.03309522333446479,
+        "velocity_max_abs_at_quadrature": 0.2516289398824322,
+        "pressure_max_abs_at_quadrature": 0.1351685982077745,
+        "pressure_drop_predicted": 2.6153292746781247,
+        "pressure_drop_reference": 2.56675738104313,
+        "pressure_drop_relative": 0.018923445586919944,
+        "physical_area_evaluated": 4.813717244431074,
+        "common_domain_excluded_area_fraction": 0.0008084741273130016
+      },
+      "new": {
+        "velocity_relative_l2": 0.04704231532266075,
+        "u_relative_l2": 0.04523858440729891,
+        "v_absolute_rms": 0.01549823731995179,
+        "pressure_relative_l2": 0.03943999967879814,
+        "speed_relative_l2": 0.045329735074247084,
+        "velocity_absolute_rms": 0.054742659972410714,
+        "pressure_absolute_rms": 0.06327468720109207,
+        "velocity_max_abs_at_quadrature": 0.2418604818823497,
+        "pressure_max_abs_at_quadrature": 0.104550111935104,
+        "pressure_drop_predicted": 2.4724687464091915,
+        "pressure_drop_reference": 2.56675738104313,
+        "pressure_drop_relative": 0.03673453335726634,
+        "physical_area_evaluated": 4.813717244431074,
+        "common_domain_excluded_area_fraction": 0.0008084741273130016
+      },
+      "mean_errors": {
+        "velocity_vector": {
+          "old": {
+            "mae": 0.04354319553164605,
+            "relative_l1": 0.04179239922406613,
+            "reference_mean_magnitude": 1.0418926967603173,
+            "relative_l1_denominator_floored": false
+          },
+          "new": {
+            "mae": 0.0373675860555593,
+            "relative_l1": 0.03586510028503976,
+            "reference_mean_magnitude": 1.0418926967603173,
+            "relative_l1_denominator_floored": false
+          }
+        },
+        "u": {
+          "old": {
+            "mae": 0.040098000102177435,
+            "relative_l1": 0.03860400893608945,
+            "reference_mean_magnitude": 1.0387004149895764,
+            "relative_l1_denominator_floored": false
+          },
+          "new": {
+            "mae": 0.03392070964049238,
+            "relative_l1": 0.03265687502477101,
+            "reference_mean_magnitude": 1.0387004149895764,
+            "relative_l1_denominator_floored": false
+          }
+        },
+        "v": {
+          "old": {
+            "mae": 0.011367208188289995,
+            "relative_l1": 0.2317864530856448,
+            "reference_mean_magnitude": 0.04904172800853821,
+            "relative_l1_denominator_floored": false
+          },
+          "new": {
+            "mae": 0.010247851784884725,
+            "relative_l1": 0.20896188207521083,
+            "reference_mean_magnitude": 0.04904172800853821,
+            "relative_l1_denominator_floored": false
+          }
+        },
+        "pressure": {
+          "old": {
+            "mae": 0.02621790492044793,
+            "relative_l1": 0.020812579935282325,
+            "reference_mean_magnitude": 1.2597143171088694,
+            "relative_l1_denominator_floored": false
+          },
+          "new": {
+            "mae": 0.05017546521729504,
+            "relative_l1": 0.03983082873301874,
+            "reference_mean_magnitude": 1.2597143171088694,
+            "relative_l1_denominator_floored": false
+          }
+        },
+        "speed": {
+          "old": {
+            "mae": 0.03993670639153195,
+            "relative_l1": 0.03833092075192769,
+            "reference_mean_magnitude": 1.0418926967603173,
+            "relative_l1_denominator_floored": false
+          },
+          "new": {
+            "mae": 0.033946337896288516,
+            "relative_l1": 0.03258141457545672,
+            "reference_mean_magnitude": 1.0418926967603173,
+            "relative_l1_denominator_floored": false
+          }
+        }
+      }
+    }
+  ]
+}

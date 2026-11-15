@@ -326,5 +326,60 @@
     "original_checkpoint_path": "artifacts/kaggle/main-v1/checkpoint.npz",
     "pilot_report": "artifacts/kaggle/continue-50k-v1/development/report.json"
   },
-  "main_fields_scope": "The main_* fields describe the original main-v1 job. Latest collected research state is in continuation_50k and latest_checkpoint."
+  "main_fields_scope": "The main_* fields describe the original main-v1 job. Latest collected research state is in continuation_50k and latest_checkpoint.",
+  "refreshed_25_cases": {
+    "directory": "reports/checkpoint_82216",
+    "checkpoint_step": 82216,
+    "checkpoint_sha256": "84276c11feecd5bf230c79d1077250018b356ae118491678a4ed69e46ab83140",
+    "cases_completed": 25,
+    "fem_rerun": false,
+    "old_reports_preserved": true,
+    "groups": [
+      {
+        "group": "channel_chain_15",
+        "cases": 15,
+        "archive": "channel_chain_15_step_82216.zip",
+        "archive_bytes": 34153433,
+        "archive_sha256": "1597c82eee841b692887bfcfc1d1e8d2b426a0d336234a815705977573a116d9",
+        "median_old": {
+          "velocity_relative_l2": 0.02932575083642438,
+          "pressure_relative_l2": 0.061543360282366316
+        },
+        "median_new": {
+          "velocity_relative_l2": 0.019779836108002824,
+          "pressure_relative_l2": 0.02660060244449715
+        }
+      },
+      {
+        "group": "random_channel_chain_5",
+        "cases": 5,
+        "archive": "random_channel_chain_5_step_82216.zip",
+        "archive_bytes": 11121636,
+        "archive_sha256": "df17e6c1712a1123869e807dca19cd96958aa7291bcc37f9825e74e5f0c59dd8",
+        "median_old": {
+          "velocity_relative_l2": 0.03936754469761786,
+          "pressure_relative_l2": 0.0339871728669955
+        },
+        "median_new": {
+          "velocity_relative_l2": 0.024890081339315938,
+          "pressure_relative_l2": 0.03943999967879814
+        }
+      },
+      {
+        "group": "extreme_channel_chain_5",
+        "cases": 5,
+        "archive": "extreme_channel_chain_5_step_82216.zip",
+        "archive_bytes": 11714892,
+        "archive_sha256": "5bad532970c77c3e612b1fc459c3abeb7aae07217c35ebb9d0c33b5b172e1826",
+        "median_old": {
+          "velocity_relative_l2": 0.12360896272899703,
+          "pressure_relative_l2": 0.2569695582392193
+        },
+        "median_new": {
+          "velocity_relative_l2": 0.13206876650843485,
+          "pressure_relative_l2": 0.2652468097468657
+        }
+      }
+    ]
+  }
 }

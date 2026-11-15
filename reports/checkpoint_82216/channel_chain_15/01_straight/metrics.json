@@ -1,0 +1,131 @@
+{
+  "index": 1,
+  "slug": "straight",
+  "title": "Straight channel",
+  "geometry_id": "f6e28ad1753237d42be72be187a88f09a269097eeda24bcf12908db6bd361246",
+  "reynolds": 30.0,
+  "amplitude_scale": 1.0,
+  "descriptors": {
+    "min_gap": 1.0,
+    "max_gap": 1.0,
+    "center_deviation": 0.0,
+    "max_slope": 0.0,
+    "max_curvature": 0.0
+  },
+  "directory": "01_straight",
+  "status": "passed",
+  "checkpoint_sha256": "84276c11feecd5bf230c79d1077250018b356ae118491678a4ed69e46ab83140",
+  "metrics": {
+    "velocity_relative_l2": 0.004868280868924713,
+    "u_relative_l2": 0.004734505353010249,
+    "v_absolute_rms": 0.0012415881834436104,
+    "pressure_relative_l2": 0.00991415888959235,
+    "speed_relative_l2": 0.004734438002480167,
+    "velocity_absolute_rms": 0.005332934496361845,
+    "pressure_absolute_rms": 0.011447884689522738,
+    "velocity_max_abs_at_quadrature": 0.013244941584825518,
+    "pressure_max_abs_at_quadrature": 0.02351349127203295,
+    "pressure_drop_predicted": 1.8030600452302243,
+    "pressure_drop_reference": 1.800000012914123,
+    "pressure_drop_relative": 0.0017000179411928735,
+    "physical_area_evaluated": 5.0,
+    "common_domain_excluded_area_fraction": 0.0
+  },
+  "mesh_uncertainty": {
+    "velocity": 6.2461305314406015e-15,
+    "pressure": 4.4355141801538964e-14,
+    "pressure_drop": 4.403884632750728e-14
+  },
+  "fem_coarse": {
+    "nx": 40,
+    "ny": 12,
+    "iterations": 47,
+    "algebraic_residual": 3.716378346284207e-10,
+    "seconds": 1.7408337690000053,
+    "velocity_dofs": 4050,
+    "pressure_dofs": 533,
+    "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+  },
+  "fem_fine": {
+    "nx": 80,
+    "ny": 24,
+    "iterations": 47,
+    "algebraic_residual": 1.8744808737396303e-10,
+    "seconds": 12.429092461999971,
+    "velocity_dofs": 15778,
+    "pressure_dofs": 2025,
+    "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+  },
+  "mean_errors": {
+    "velocity_vector": {
+      "old": {
+        "mae": 0.00907167061460963,
+        "relative_l1": 0.0090716706146096,
+        "reference_mean_magnitude": 1.000000000000003,
+        "relative_l1_denominator_floored": false
+      },
+      "new": {
+        "mae": 0.004211075873850513,
+        "relative_l1": 0.0042110758738505,
+        "reference_mean_magnitude": 1.000000000000003,
+        "relative_l1_denominator_floored": false
+      }
+    },
+    "u": {
+      "old": {
+        "mae": 0.0076465714402167385,
+        "relative_l1": 0.007646571440216714,
+        "reference_mean_magnitude": 1.000000000000003,
+        "relative_l1_denominator_floored": false
+      },
+      "new": {
+        "mae": 0.003960907836561492,
+        "relative_l1": 0.0039609078365614794,
+        "reference_mean_magnitude": 1.000000000000003,
+        "relative_l1_denominator_floored": false
+      }
+    },
+    "v": {
+      "old": {
+        "mae": 0.003389851141090601,
+        "relative_l1": 5070799107781.592,
+        "reference_mean_magnitude": 6.685043262488101e-16,
+        "relative_l1_denominator_floored": false
+      },
+      "new": {
+        "mae": 0.0008559611268746869,
+        "relative_l1": 1280412247558.3013,
+        "reference_mean_magnitude": 6.685043262488101e-16,
+        "relative_l1_denominator_floored": false
+      }
+    },
+    "pressure": {
+      "old": {
+        "mae": 0.01684693537893467,
+        "relative_l1": 0.016846935258066097,
+        "reference_mean_magnitude": 1.0000000071745139,
+        "relative_l1_denominator_floored": false
+      },
+      "new": {
+        "mae": 0.009768200875995364,
+        "relative_l1": 0.009768200805913271,
+        "reference_mean_magnitude": 1.0000000071745139,
+        "relative_l1_denominator_floored": false
+      }
+    },
+    "speed": {
+      "old": {
+        "mae": 0.0076431718970178305,
+        "relative_l1": 0.007643171897017806,
+        "reference_mean_magnitude": 1.000000000000003,
+        "relative_l1_denominator_floored": false
+      },
+      "new": {
+        "mae": 0.003960822066377818,
+        "relative_l1": 0.003960822066377806,
+        "reference_mean_magnitude": 1.000000000000003,
+        "relative_l1_denominator_floored": false
+      }
+    }
+  }
+}

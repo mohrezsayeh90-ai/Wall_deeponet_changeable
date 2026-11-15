@@ -1,0 +1,131 @@
+{
+  "index": 2,
+  "slug": "chirped_wave",
+  "title": "Waves with changing wavelength",
+  "directory": "02_chirped_wave",
+  "reynolds": 30.0,
+  "geometry_id": "ed3ef26f3b4c5da3ca80b391fa06c1646fc6aedc84db3c94ca50ec01cf777c36",
+  "descriptors": {
+    "min_gap": 0.7757467261358204,
+    "max_gap": 1.168279722582958,
+    "center_deviation": 0.0410817630438538,
+    "max_slope": 0.6929416405037261,
+    "max_curvature": 4.529837306387772
+  },
+  "amplitude_scale": 1.0,
+  "status": "passed",
+  "checkpoint_sha256": "84276c11feecd5bf230c79d1077250018b356ae118491678a4ed69e46ab83140",
+  "metrics": {
+    "velocity_relative_l2": 0.024890081339315938,
+    "u_relative_l2": 0.022158967500334373,
+    "v_absolute_rms": 0.012594770276963813,
+    "pressure_relative_l2": 0.016254221967658935,
+    "speed_relative_l2": 0.02264034432020174,
+    "velocity_absolute_rms": 0.02757222029701514,
+    "pressure_absolute_rms": 0.02095945483529202,
+    "velocity_max_abs_at_quadrature": 0.12815410897832397,
+    "pressure_max_abs_at_quadrature": 0.08214866245027211,
+    "pressure_drop_predicted": 2.0048264005168663,
+    "pressure_drop_reference": 2.0154616968634627,
+    "pressure_drop_relative": 0.005276853617782651,
+    "physical_area_evaluated": 5.009164638125312,
+    "common_domain_excluded_area_fraction": 0.0013048543874707187
+  },
+  "mesh_uncertainty": {
+    "velocity": 0.004563779325038956,
+    "pressure": 0.008177374471998058,
+    "pressure_drop": 0.00705321696175947
+  },
+  "fem_coarse": {
+    "nx": 40,
+    "ny": 12,
+    "iterations": 48,
+    "algebraic_residual": 3.3477041116277726e-09,
+    "seconds": 1.9488118970002688,
+    "velocity_dofs": 4050,
+    "pressure_dofs": 533,
+    "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+  },
+  "fem_fine": {
+    "nx": 80,
+    "ny": 24,
+    "iterations": 48,
+    "algebraic_residual": 1.909904755948401e-09,
+    "seconds": 12.718723515999955,
+    "velocity_dofs": 15778,
+    "pressure_dofs": 2025,
+    "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+  },
+  "mean_errors": {
+    "velocity_vector": {
+      "old": {
+        "mae": 0.029825780416469678,
+        "relative_l1": 0.02984154777252425,
+        "reference_mean_magnitude": 0.9994716307553896,
+        "relative_l1_denominator_floored": false
+      },
+      "new": {
+        "mae": 0.018113328369964852,
+        "relative_l1": 0.018122903955037722,
+        "reference_mean_magnitude": 0.9994716307553896,
+        "relative_l1_denominator_floored": false
+      }
+    },
+    "u": {
+      "old": {
+        "mae": 0.024782143865199682,
+        "relative_l1": 0.024827445559732406,
+        "reference_mean_magnitude": 0.9981753380780262,
+        "relative_l1_denominator_floored": false
+      },
+      "new": {
+        "mae": 0.014651943049854028,
+        "relative_l1": 0.014678726763642704,
+        "reference_mean_magnitude": 0.9981753380780262,
+        "relative_l1_denominator_floored": false
+      }
+    },
+    "v": {
+      "old": {
+        "mae": 0.01232538663203856,
+        "relative_l1": 0.5388867304055421,
+        "reference_mean_magnitude": 0.02287194309416939,
+        "relative_l1_denominator_floored": false
+      },
+      "new": {
+        "mae": 0.008124514982182689,
+        "relative_l1": 0.3552175234404909,
+        "reference_mean_magnitude": 0.02287194309416939,
+        "relative_l1_denominator_floored": false
+      }
+    },
+    "pressure": {
+      "old": {
+        "mae": 0.04783718162208871,
+        "relative_l1": 0.04405260066453038,
+        "reference_mean_magnitude": 1.0859105001854192,
+        "relative_l1_denominator_floored": false
+      },
+      "new": {
+        "mae": 0.016006685593756342,
+        "relative_l1": 0.014740335958647792,
+        "reference_mean_magnitude": 1.0859105001854192,
+        "relative_l1_denominator_floored": false
+      }
+    },
+    "speed": {
+      "old": {
+        "mae": 0.02501631889482658,
+        "relative_l1": 0.02502954373594328,
+        "reference_mean_magnitude": 0.9994716307553896,
+        "relative_l1_denominator_floored": false
+      },
+      "new": {
+        "mae": 0.014817190620921806,
+        "relative_l1": 0.014825023707499468,
+        "reference_mean_magnitude": 0.9994716307553896,
+        "relative_l1_denominator_floored": false
+      }
+    }
+  }
+}

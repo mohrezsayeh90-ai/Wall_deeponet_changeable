@@ -146,3 +146,14 @@ CPU optimizer loading, finite arrays, two-case prediction portability, all 13
 current tests, paired reference identity and complete archive restoration were
 verified. Full archive restoration was repeated successfully. The exact Kaggle
 source was downloaded and matches the submitted continuation script.
+
+## Updated 25-case model predictions at step 82,216
+
+The [new 15+5+5 collections](checkpoint_82216/README.md) now evaluate the latest
+checkpoint on all existing saved geometries, reusing the original FEM fields,
+quadrature points and weights exactly. FEM solver entry points were disabled
+during this inference-only refresh. Geometry/reference hashes and FEM arrays
+were checked unchanged in every case. New per-case chains, raw predictions,
+L2/MAE/L1 errors and paired comparisons are separate from the old reports.
+Three full ZIP downloads and PDFs are provided. The stress five remain explicit
+extrapolation cases; they do not establish in-envelope model acceptance.

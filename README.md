@@ -29,6 +29,12 @@ On the same eight Re=10 pilot cases, median velocity error improved **2.59% → 
 
 Training uses random batches with replacement and fresh Re/collocation points, so the primary axis is optimizer updates. The secondary axis shows equivalent geometry-pool passes, not actual epochs. The latest combined history contains 8,223 actual logged records; the original 3,222-record graph remains archived in `reports/training_curves`. No training-time FEM validation curve was recorded.
 
+## Updated results for all 25 cases — checkpoint 82,216
+
+[دانلود مجموعه‌های ۱۵ + ۵ + ۵ و PDF نتایج جدید](reports/checkpoint_82216/README.md)
+
+All original geometries and FEM references are reused exactly. Only new-model predictions and errors were recomputed. Each collection has its own full ZIP/PDF, raw fields, original references, paired old/new comparison and MAE/relative L1 tables. Old step-32,216 reports remain unchanged. The extreme five remain extrapolation cases outside the training geometry envelope.
+
 ## Five extreme channel stress tests
 
 [پنج کانال با تغییرات شدید و مقایسهٔ FEM](reports/extreme_channel_chain_5/README.md) · [هندسه‌ها](reports/extreme_channel_chain_5/geometry_overview.png) · [PDF نتایج](reports/extreme_channel_chain_5/all_5_chains.pdf)

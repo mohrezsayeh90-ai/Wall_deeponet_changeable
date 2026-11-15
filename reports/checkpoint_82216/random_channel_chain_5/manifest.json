@@ -1,0 +1,96 @@
+{
+  "seed": 2026111505,
+  "cases": [
+    {
+      "index": 1,
+      "slug": "roof_plateau",
+      "title": "Rounded plateau roof",
+      "directory": "01_roof_plateau",
+      "reynolds": 30.0,
+      "geometry_id": "570bf536cd82f8d0fd0937a91721db7e78ee24a3c6b9e7e0f0e722fe89be9679",
+      "descriptors": {
+        "min_gap": 1.0,
+        "max_gap": 1.279895930728726,
+        "center_deviation": 0.13994796536436302,
+        "max_slope": 0.5052796643411491,
+        "max_curvature": 3.361410790313214
+      },
+      "amplitude_scale": 1.0
+    },
+    {
+      "index": 2,
+      "slug": "chirped_wave",
+      "title": "Waves with changing wavelength",
+      "directory": "02_chirped_wave",
+      "reynolds": 30.0,
+      "geometry_id": "ed3ef26f3b4c5da3ca80b391fa06c1646fc6aedc84db3c94ca50ec01cf777c36",
+      "descriptors": {
+        "min_gap": 0.7757467261358204,
+        "max_gap": 1.168279722582958,
+        "center_deviation": 0.0410817630438538,
+        "max_slope": 0.6929416405037261,
+        "max_curvature": 4.529837306387772
+      },
+      "amplitude_scale": 1.0
+    },
+    {
+      "index": 3,
+      "slug": "stepped_s_bend",
+      "title": "Rounded stepped S-shaped walls",
+      "directory": "03_stepped_s_bend",
+      "reynolds": 30.0,
+      "geometry_id": "78175c18af98a9f1d06bcd4e0e6859237f4994656794fb63806f481ad9ee57f7",
+      "descriptors": {
+        "min_gap": 0.7829532439071148,
+        "max_gap": 1.0320414077333853,
+        "center_deviation": 0.03288672529188577,
+        "max_slope": 0.2649965876480106,
+        "max_curvature": 1.1857541474519016
+      },
+      "amplitude_scale": 1.0
+    },
+    {
+      "index": 4,
+      "slug": "random_spline",
+      "title": "Independent irregular spline walls",
+      "directory": "04_random_spline",
+      "reynolds": 30.0,
+      "geometry_id": "176bd34a5af702fd8fd513ea950f47534a05a9a58686f88df39edd26fa9fe32e",
+      "descriptors": {
+        "min_gap": 0.9271055381841712,
+        "max_gap": 1.1643025600175059,
+        "center_deviation": 0.06650022576581646,
+        "max_slope": 0.699,
+        "max_curvature": 8.389763281425324
+      },
+      "amplitude_scale": 0.4204794991352933
+    },
+    {
+      "index": 5,
+      "slug": "random_fourier",
+      "title": "Independent random Fourier walls",
+      "directory": "05_random_fourier",
+      "reynolds": 30.0,
+      "geometry_id": "51636036a4fbdeb99d551eb5c8bb907a9652ce81b3370d50337f2cad3a0d206b",
+      "descriptors": {
+        "min_gap": 0.6642703359834878,
+        "max_gap": 1.1204100772775691,
+        "center_deviation": 0.11810449236797978,
+        "max_slope": 0.699,
+        "max_curvature": 2.3967566165205483
+      },
+      "amplitude_scale": 0.772523317617625
+    }
+  ],
+  "case_count": 5,
+  "checkpoint_sha256": "84276c11feecd5bf230c79d1077250018b356ae118491678a4ed69e46ab83140",
+  "selection": "Seeded shape mechanisms, fixed before FEM/model evaluation; not selected by low prediction error.",
+  "checkpoint_step": 82216,
+  "reynolds": 30.0,
+  "locked_test_used": false,
+  "created_at_utc": "2026-11-15T09:38:05.668098+00:00",
+  "source_report": "reports/random_channel_chain_5",
+  "stress_extrapolation": false,
+  "fem_rerun": false,
+  "checkpoint": "artifacts/kaggle/continue-50k-v1/checkpoint.npz"
+}

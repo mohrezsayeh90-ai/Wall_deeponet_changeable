@@ -1,0 +1,14 @@
+{
+  "cases_verified": 15,
+  "checkpoint_step": 82216,
+  "checkpoint_sha256": "84276c11feecd5bf230c79d1077250018b356ae118491678a4ed69e46ab83140",
+  "reference_and_geometry_hashes_unchanged": true,
+  "points_weights_fem_arrays_unchanged": true,
+  "all_predictions_finite": true,
+  "l2_recalculated": true,
+  "mean_metrics_available": true,
+  "fem_solver_disabled_during_refresh": true,
+  "fem_rerun": false,
+  "unit_tests_passed": 13,
+  "stress_extrapolation": false
+}

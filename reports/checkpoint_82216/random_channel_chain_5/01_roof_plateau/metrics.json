@@ -1,0 +1,131 @@
+{
+  "index": 1,
+  "slug": "roof_plateau",
+  "title": "Rounded plateau roof",
+  "directory": "01_roof_plateau",
+  "reynolds": 30.0,
+  "geometry_id": "570bf536cd82f8d0fd0937a91721db7e78ee24a3c6b9e7e0f0e722fe89be9679",
+  "descriptors": {
+    "min_gap": 1.0,
+    "max_gap": 1.279895930728726,
+    "center_deviation": 0.13994796536436302,
+    "max_slope": 0.5052796643411491,
+    "max_curvature": 3.361410790313214
+  },
+  "amplitude_scale": 1.0,
+  "status": "passed",
+  "checkpoint_sha256": "84276c11feecd5bf230c79d1077250018b356ae118491678a4ed69e46ab83140",
+  "metrics": {
+    "velocity_relative_l2": 0.11263319181462086,
+    "u_relative_l2": 0.10864189027061368,
+    "v_absolute_rms": 0.029629579178708215,
+    "pressure_relative_l2": 0.20938259118127645,
+    "speed_relative_l2": 0.10895609326937505,
+    "velocity_absolute_rms": 0.10875984083452678,
+    "pressure_absolute_rms": 0.19943353554849405,
+    "velocity_max_abs_at_quadrature": 0.27449010893508485,
+    "pressure_max_abs_at_quadrature": 0.2871291931487343,
+    "pressure_drop_predicted": 1.016960995610991,
+    "pressure_drop_reference": 1.2533747729036533,
+    "pressure_drop_relative": 0.1886217773036631,
+    "physical_area_evaluated": 5.744500339730867,
+    "common_domain_excluded_area_fraction": 0.0
+  },
+  "mesh_uncertainty": {
+    "velocity": 0.0008923382418188436,
+    "pressure": 0.0013194781714389275,
+    "pressure_drop": 0.0006769263705088151
+  },
+  "fem_coarse": {
+    "nx": 40,
+    "ny": 12,
+    "iterations": 51,
+    "algebraic_residual": 3.6803689306206065e-09,
+    "seconds": 2.1101945449991035,
+    "velocity_dofs": 4050,
+    "pressure_dofs": 533,
+    "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+  },
+  "fem_fine": {
+    "nx": 80,
+    "ny": 24,
+    "iterations": 51,
+    "algebraic_residual": 1.8712044386026622e-09,
+    "seconds": 13.459298023999509,
+    "velocity_dofs": 15778,
+    "pressure_dofs": 2025,
+    "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+  },
+  "mean_errors": {
+    "velocity_vector": {
+      "old": {
+        "mae": 0.09243316973394607,
+        "relative_l1": 0.10590279047226483,
+        "reference_mean_magnitude": 0.8728114653235095,
+        "relative_l1_denominator_floored": false
+      },
+      "new": {
+        "mae": 0.08430326911912937,
+        "relative_l1": 0.0965881779381555,
+        "reference_mean_magnitude": 0.8728114653235095,
+        "relative_l1_denominator_floored": false
+      }
+    },
+    "u": {
+      "old": {
+        "mae": 0.08460930795893669,
+        "relative_l1": 0.09720745772628468,
+        "reference_mean_magnitude": 0.8703993493706863,
+        "relative_l1_denominator_floored": false
+      },
+      "new": {
+        "mae": 0.07724052733790014,
+        "relative_l1": 0.0887414810152907,
+        "reference_mean_magnitude": 0.8703993493706863,
+        "relative_l1_denominator_floored": false
+      }
+    },
+    "v": {
+      "old": {
+        "mae": 0.024615434365668227,
+        "relative_l1": 0.5091711555292326,
+        "reference_mean_magnitude": 0.04834412573917887,
+        "relative_l1_denominator_floored": false
+      },
+      "new": {
+        "mae": 0.021892718106326575,
+        "relative_l1": 0.45285167063398474,
+        "reference_mean_magnitude": 0.04834412573917887,
+        "relative_l1_denominator_floored": false
+      }
+    },
+    "pressure": {
+      "old": {
+        "mae": 0.21833167509377643,
+        "relative_l1": 0.24615486326973265,
+        "reference_mean_magnitude": 0.8869687650840032,
+        "relative_l1_denominator_floored": false
+      },
+      "new": {
+        "mae": 0.18078601501450367,
+        "relative_l1": 0.203824556321757,
+        "reference_mean_magnitude": 0.8869687650840032,
+        "relative_l1_denominator_floored": false
+      }
+    },
+    "speed": {
+      "old": {
+        "mae": 0.08502637428138876,
+        "relative_l1": 0.09741665601273186,
+        "reference_mean_magnitude": 0.8728114653235095,
+        "relative_l1_denominator_floored": false
+      },
+      "new": {
+        "mae": 0.07757991809336508,
+        "relative_l1": 0.08888508134412501,
+        "reference_mean_magnitude": 0.8728114653235095,
+        "relative_l1_denominator_floored": false
+      }
+    }
+  }
+}
