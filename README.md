@@ -4,6 +4,20 @@
 
 **وضعیت: ادامهٔ ۵۰هزارگامی کامل شده است؛ آخرین checkpoint در گام ۸۲٬۲۱۶ ذخیره شده و تمام خروجی‌های اجرای جدید در مخزن موجودند. پایلوت FEM بهبود یافته، اما مدل هنوز تأیید نهایی نشده است.** [وضعیت ماشین‌خوان](STATUS.json) و [گزارش پیشرفت](reports/PROGRESS.md) میان موفقیت کد، پایان آموزش و صحت میدان تفاوت می‌گذارند. این مخزن بازتولید آمادهٔ حل NS از مقاله نیست؛ سازگارکردن جدید آن برای هندسهٔ متغیر است.
 
+## نتایج جدید به‌روزرسانی شد — هر ۲۵ حالت با وزن گام ۸۲٬۲۱۶
+
+پاسخ‌های جدید مدل برای **مجموعهٔ ۱۵تایی و دو مجموعهٔ پنج‌تایی** تولید و ذخیره شدند. پاسخ FEM، هندسه و نقاط ارزیابی همان داده‌های قبلی هستند؛ فقط پیش‌بینی مدل و خطاها دوباره محاسبه شده‌اند. **نسخه‌های قدیمی گام ۳۲٬۲۱۶ نیز حفظ شده‌اند.**
+
+| مجموعه | گزارش و تصاویر جدید | PDF جدید | بستهٔ کامل ZIP |
+| --- | --- | --- | --- |
+| ۱۵ شکل اصلی | [مشاهده](reports/checkpoint_82216/channel_chain_15/README.md) | [دانلود PDF](reports/checkpoint_82216/channel_chain_15/all_chains.pdf) | [دانلود ZIP](reports/checkpoint_82216/downloads/channel_chain_15_step_82216.zip) |
+| ۵ شکل متنوع | [مشاهده](reports/checkpoint_82216/random_channel_chain_5/README.md) | [دانلود PDF](reports/checkpoint_82216/random_channel_chain_5/all_chains.pdf) | [دانلود ZIP](reports/checkpoint_82216/downloads/random_channel_chain_5_step_82216.zip) |
+| ۵ شکل stress | [مشاهده](reports/checkpoint_82216/extreme_channel_chain_5/README.md) | [دانلود PDF](reports/checkpoint_82216/extreme_channel_chain_5/all_chains.pdf) | [دانلود ZIP](reports/checkpoint_82216/downloads/extreme_channel_chain_5_step_82216.zip) |
+
+[صفحهٔ اصلی نتایج جدید و راهنمای دانلود](reports/checkpoint_82216/README.md)
+
+هر بسته شامل میدان‌های سرعت و فشار جدید، مقایسه با FEM، نقشهٔ خطا، داده‌های عددی و جدول خطاهای قدیم/جدید است. مجموعهٔ stress همچنان خارج از حدود اصلی آموزش است و جداگانه گزارش می‌شود؛ این نتایج به‌معنای تأیید نهایی مدل نیستند.
+
 - [اجرای اصلی GPU در Kaggle](https://www.kaggle.com/code/mohrezsayeh/geometry-pi-deeponet-main)؛ خصوصی در حساب مالک.
 - [آزمایش دسترسی GPU](https://www.kaggle.com/code/mohrezsayeh/geometry-pi-deeponet-gpu-probe).
 - [گالری هشت خانوادهٔ دیواره](reports/geometry_gallery.png).
@@ -29,25 +43,19 @@ On the same eight Re=10 pilot cases, median velocity error improved **2.59% → 
 
 Training uses random batches with replacement and fresh Re/collocation points, so the primary axis is optimizer updates. The secondary axis shows equivalent geometry-pool passes, not actual epochs. The latest combined history contains 8,223 actual logged records; the original 3,222-record graph remains archived in `reports/training_curves`. No training-time FEM validation curve was recorded.
 
-## Updated results for all 25 cases — checkpoint 82,216
-
-[دانلود مجموعه‌های ۱۵ + ۵ + ۵ و PDF نتایج جدید](reports/checkpoint_82216/README.md)
-
-All original geometries and FEM references are reused exactly. Only new-model predictions and errors were recomputed. Each collection has its own full ZIP/PDF, raw fields, original references, paired old/new comparison and MAE/relative L1 tables. Old step-32,216 reports remain unchanged. The extreme five remain extrapolation cases outside the training geometry envelope.
-
-## Five extreme channel stress tests
+## Five extreme channel stress tests — archived step 32,216
 
 [پنج کانال با تغییرات شدید و مقایسهٔ FEM](reports/extreme_channel_chain_5/README.md) · [هندسه‌ها](reports/extreme_channel_chain_5/geometry_overview.png) · [PDF نتایج](reports/extreme_channel_chain_5/all_5_chains.pdf)
 
 These local CPU experiments use the original step-32,216 checkpoint at Re=30 without accessing Kaggle. Severe pinching, a large serpentine shift, interlocking smooth teeth, a wide asymmetric cavity and rough multiscale walls probe outside the training geometry envelope while remaining inside the declared stress-input bounds. They are explicitly labeled extrapolation tests; input acceptance does not imply field accuracy. The report includes independent FEM mesh checks, full field comparisons, relative L2 and mean absolute/relative L1 errors.
 
-## Five different random wall-shape examples
+## Five different random wall-shape examples — archived step 32,216
 
 [پنج هندسهٔ متفاوت و زنجیرهٔ کامل نتایج](reports/random_channel_chain_5/README.md) · [نمای هندسه‌ها](reports/random_channel_chain_5/geometry_overview.png) · [PDF پنج مقایسه](reports/random_channel_chain_5/all_5_chains.pdf)
 
 These seeded examples use a plateau roof, chirped waves, rounded steps, irregular spline walls and random Fourier mixtures. The operator predicts flow given wall geometry; it is not restricted to the repeated bump shapes used in the first gallery. All cases remain smooth single channels inside the declared geometric envelope. FEM errors are measured rather than assuming accuracy from valid geometry.
 
-## 15 channel result chains
+## 15 channel result chains — archived step 32,216
 
 [نمودار تغییر خطای u، v، فشار و سرعت در ترتیب ساده‌به‌پیچیده](reports/complexity_error_curves_15/README.md) · [PDF نمودارها](reports/complexity_error_curves_15/error_dashboard.pdf)
 
