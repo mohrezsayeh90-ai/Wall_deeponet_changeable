@@ -9,6 +9,14 @@
 - [گالری هشت خانوادهٔ دیواره](reports/geometry_gallery.png).
 - [شناسه‌ها، پارامترهای هندسی و هش مجموعه‌های ثابت](reports/split_manifest.json).
 
+## Training history
+
+[نمودار روند آموزش و توضیح گام در برابر ایپاک](reports/training_curves/README.md) · [PDF نمودار](reports/training_curves/loss_vs_step.pdf) · [داده‌های CSV](reports/training_curves/training_history.csv)
+
+![Actual training loss versus optimizer step](reports/training_curves/loss_vs_step.png)
+
+Training uses random batches with replacement and fresh Re/collocation points, so the primary axis is optimizer updates. The secondary axis shows equivalent geometry-pool passes, not actual epochs. All 3,222 logged records are preserved; no training-time FEM validation curve was recorded.
+
 ## 15 channel result chains
 
 برای **۱۵ کانال از ساده تا پیچیده**، زنجیرهٔ «هندسه ← سرعت و فشار مدل ← حل مستقل FEM ← نقشه و معیارهای خطا» آماده شده است. عدد رینولدز همهٔ موارد **۳۰** است و از وزن‌های ثابت موجود استفاده شده؛ آموزش جدیدی انجام نشده است.

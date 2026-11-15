@@ -1,0 +1,19 @@
+{
+  "log_sha256": "617431210ec6d172b50f06991736a028f7454d6a23c58de320dec7d0ecb25a10",
+  "records": 3222,
+  "first_logged_step": 1,
+  "last_logged_step": 32210,
+  "checkpoint_step": 32216,
+  "target_steps": 100000,
+  "stop_reason": "wall_clock_budget",
+  "first_logged_loss": 1.889683485031128,
+  "last_logged_loss": 0.07503316551446915,
+  "first_100_records_median": 0.377565935254097,
+  "last_100_records_median": 0.04909386672079563,
+  "checkpoint_geometry_draws": 1030912,
+  "equivalent_pool_passes_at_checkpoint": 103.0912,
+  "actual_epochs_defined": false,
+  "per_step_validation_loss_available": false,
+  "log_loss_matches_weighted_terms": true,
+  "smoothing": "Trailing median of 100 recorded batches, about 1,000 optimizer updates; first 99 smoothed entries unavailable."
+}
