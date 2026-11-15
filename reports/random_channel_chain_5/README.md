@@ -1,5 +1,7 @@
 # Five varied random channel inputs and flow predictions
 
+[Mean absolute MAE and relative L1 errors](mean_errors/README.md)
+
 The flow operator predicts velocity and pressure **given wall geometry**; it is not a geometry generator. The previous 15 shapes used repeated compact bump functions by design. This set uses rounded plateaus, chirped sinusoidal waves, rounded steps, smoothed random spline coefficients and independent Fourier mixtures instead. All use the exact canonical C4 quintic wall representation, flat inlet/outlet strips and the declared gap/centerline/slope envelope. Sharp corners, discontinuous steps, branching channels and obstacles are not supported by this model.
 
 Random seed: `2026111505`. Parameters and shapes were fixed before evaluation. These are illustrative custom inputs, not a certified held-out benchmark or an exhaustive random sample. All cases use **Re=30** and the **original step-32,216 research checkpoint**. The ongoing continuation is not used. Input validity does not guarantee accurate predictions; the FEM comparisons below determine the observed errors.

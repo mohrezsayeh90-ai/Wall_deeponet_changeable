@@ -1,0 +1,213 @@
+{
+  "checkpoint_sha256": "a7e9e35b91d6e3c7f3a37404b940289427bfe78f9b38e39661c10382babd5235",
+  "checkpoint_step": 32216,
+  "reynolds": 30,
+  "case_count": 5,
+  "weighting": "Physical-area quadrature on the original common FEM domain; same samples as the L2 reports.",
+  "relative_definition": "100 * sum(w * norm(prediction-reference)) / max(sum(w * norm(reference)), 1e-16)",
+  "absolute_definition": "sum(w * norm(prediction-reference)) / sum(w)",
+  "norm": "Euclidean for velocity vector; absolute value for scalar u, v, speed and pressure.",
+  "all_mae_relative_identity_checks_passed": true,
+  "cases": [
+    {
+      "index": 1,
+      "title": "Rounded plateau roof",
+      "directory": "01_roof_plateau",
+      "reynolds": 30.0,
+      "fields_sha256": "9c45731d28d526c157525074fdaf88772cb1fd3639e1087d369314735addf755",
+      "evaluated_area": 5.744500339730867,
+      "metrics": {
+        "velocity_vector": {
+          "mae": 0.09243316973394607,
+          "relative_l1_percent": 10.590279047226483,
+          "reference_mean_magnitude": 0.8728114653235095,
+          "denominator_floor_active": false
+        },
+        "u": {
+          "mae": 0.08460930795893669,
+          "relative_l1_percent": 9.720745772628469,
+          "reference_mean_magnitude": 0.8703993493706863,
+          "denominator_floor_active": false
+        },
+        "v": {
+          "mae": 0.024615434365668227,
+          "relative_l1_percent": 50.91711555292326,
+          "reference_mean_magnitude": 0.04834412573917887,
+          "denominator_floor_active": false
+        },
+        "pressure": {
+          "mae": 0.21833167509377643,
+          "relative_l1_percent": 24.615486326973265,
+          "reference_mean_magnitude": 0.8869687650840032,
+          "denominator_floor_active": false
+        },
+        "speed": {
+          "mae": 0.08502637428138876,
+          "relative_l1_percent": 9.741665601273185,
+          "reference_mean_magnitude": 0.8728114653235095,
+          "denominator_floor_active": false
+        }
+      }
+    },
+    {
+      "index": 2,
+      "title": "Waves with changing wavelength",
+      "directory": "02_chirped_wave",
+      "reynolds": 30.0,
+      "fields_sha256": "bb564551c287b6c1bd0c5142cd29dbca6e7a5c420dab57badb83d97fce15582f",
+      "evaluated_area": 5.009164638125312,
+      "metrics": {
+        "velocity_vector": {
+          "mae": 0.029825780416469678,
+          "relative_l1_percent": 2.984154777252425,
+          "reference_mean_magnitude": 0.9994716307553896,
+          "denominator_floor_active": false
+        },
+        "u": {
+          "mae": 0.024782143865199682,
+          "relative_l1_percent": 2.4827445559732406,
+          "reference_mean_magnitude": 0.9981753380780262,
+          "denominator_floor_active": false
+        },
+        "v": {
+          "mae": 0.01232538663203856,
+          "relative_l1_percent": 53.8886730405542,
+          "reference_mean_magnitude": 0.02287194309416939,
+          "denominator_floor_active": false
+        },
+        "pressure": {
+          "mae": 0.04783718162208871,
+          "relative_l1_percent": 4.405260066453038,
+          "reference_mean_magnitude": 1.0859105001854192,
+          "denominator_floor_active": false
+        },
+        "speed": {
+          "mae": 0.02501631889482658,
+          "relative_l1_percent": 2.5029543735943283,
+          "reference_mean_magnitude": 0.9994716307553896,
+          "denominator_floor_active": false
+        }
+      }
+    },
+    {
+      "index": 3,
+      "title": "Rounded stepped S-shaped walls",
+      "directory": "03_stepped_s_bend",
+      "reynolds": 30.0,
+      "fields_sha256": "c098f9195a4a0fb3716259a6b96343ca4a68312612c2a0c307e4a77dd796d9be",
+      "evaluated_area": 4.75772452960002,
+      "metrics": {
+        "velocity_vector": {
+          "mae": 0.020162758659575574,
+          "relative_l1_percent": 1.9174604725546858,
+          "reference_mean_magnitude": 1.0515345139142385,
+          "denominator_floor_active": false
+        },
+        "u": {
+          "mae": 0.018931335899547586,
+          "relative_l1_percent": 1.8014016710518361,
+          "reference_mean_magnitude": 1.0509225234865915,
+          "denominator_floor_active": false
+        },
+        "v": {
+          "mae": 0.004453728870029512,
+          "relative_l1_percent": 21.792005676291335,
+          "reference_mean_magnitude": 0.02043744360288487,
+          "denominator_floor_active": false
+        },
+        "pressure": {
+          "mae": 0.03719027342045607,
+          "relative_l1_percent": 3.2261254156602335,
+          "reference_mean_magnitude": 1.1527844900240805,
+          "denominator_floor_active": false
+        },
+        "speed": {
+          "mae": 0.018992328653294907,
+          "relative_l1_percent": 1.8061536166414307,
+          "reference_mean_magnitude": 1.0515345139142385,
+          "denominator_floor_active": false
+        }
+      }
+    },
+    {
+      "index": 4,
+      "title": "Independent irregular spline walls",
+      "directory": "04_random_spline",
+      "reynolds": 30.0,
+      "fields_sha256": "f58db1356db689bd182b5235db71992245db78591d60a1fc2286274e57792efb",
+      "evaluated_area": 5.023223146881012,
+      "metrics": {
+        "velocity_vector": {
+          "mae": 0.026160484060917626,
+          "relative_l1_percent": 2.6264718161423395,
+          "reference_mean_magnitude": 0.9960314022840395,
+          "denominator_floor_active": false
+        },
+        "u": {
+          "mae": 0.022198930805444658,
+          "relative_l1_percent": 2.23018089548911,
+          "reference_mean_magnitude": 0.9953870042715134,
+          "denominator_floor_active": false
+        },
+        "v": {
+          "mae": 0.009434280235867587,
+          "relative_l1_percent": 52.61025143530347,
+          "reference_mean_magnitude": 0.01793239906383878,
+          "denominator_floor_active": false
+        },
+        "pressure": {
+          "mae": 0.03532316446553137,
+          "relative_l1_percent": 3.4500138279517323,
+          "reference_mean_magnitude": 1.0238557358624465,
+          "denominator_floor_active": false
+        },
+        "speed": {
+          "mae": 0.022335857049857945,
+          "relative_l1_percent": 2.2424852267346886,
+          "reference_mean_magnitude": 0.9960314022840395,
+          "denominator_floor_active": false
+        }
+      }
+    },
+    {
+      "index": 5,
+      "title": "Independent random Fourier walls",
+      "directory": "05_random_fourier",
+      "reynolds": 30.0,
+      "fields_sha256": "5535faada41620743605b8aa387b6633fe89f14423b840d8956ea605319e48b1",
+      "evaluated_area": 4.813717244431074,
+      "metrics": {
+        "velocity_vector": {
+          "mae": 0.04354319553164605,
+          "relative_l1_percent": 4.179239922406612,
+          "reference_mean_magnitude": 1.0418926967603173,
+          "denominator_floor_active": false
+        },
+        "u": {
+          "mae": 0.040098000102177435,
+          "relative_l1_percent": 3.8604008936089453,
+          "reference_mean_magnitude": 1.0387004149895764,
+          "denominator_floor_active": false
+        },
+        "v": {
+          "mae": 0.011367208188289995,
+          "relative_l1_percent": 23.17864530856448,
+          "reference_mean_magnitude": 0.04904172800853821,
+          "denominator_floor_active": false
+        },
+        "pressure": {
+          "mae": 0.02621790492044793,
+          "relative_l1_percent": 2.0812579935282325,
+          "reference_mean_magnitude": 1.2597143171088694,
+          "denominator_floor_active": false
+        },
+        "speed": {
+          "mae": 0.03993670639153195,
+          "relative_l1_percent": 3.833092075192769,
+          "reference_mean_magnitude": 1.0418926967603173,
+          "denominator_floor_active": false
+        }
+      }
+    }
+  ]
+}
