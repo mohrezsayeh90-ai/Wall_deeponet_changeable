@@ -1,0 +1,64 @@
+{
+  "index": 4,
+  "slug": "wide_cavity",
+  "title": "Large asymmetric plateau cavity",
+  "directory": "04_wide_cavity",
+  "reynolds": 30.0,
+  "geometry_id": "cc26b7a4757152ce7f4f36e7bc8e2e7701163afbcda136ec745bd91845715fbb",
+  "descriptors": {
+    "min_gap": 1.0,
+    "max_gap": 1.6989999999999998,
+    "center_deviation": 0.3495,
+    "max_slope": 0.7753464639069394,
+    "max_curvature": 7.840266183673916
+  },
+  "amplitude_scale": 1.036074562013064,
+  "domain_status": "outside_training_geometry_envelope_stress_test",
+  "status": "passed",
+  "checkpoint_sha256": "a7e9e35b91d6e3c7f3a37404b940289427bfe78f9b38e39661c10382babd5235",
+  "metrics": {
+    "velocity_relative_l2": 0.19851329323958888,
+    "u_relative_l2": 0.1858266398759774,
+    "v_absolute_rms": 0.06344262525750664,
+    "pressure_relative_l2": 0.2569695582392193,
+    "speed_relative_l2": 0.18697725034742177,
+    "velocity_absolute_rms": 0.17016705731516915,
+    "pressure_absolute_rms": 0.24176658065088977,
+    "velocity_max_abs_at_quadrature": 0.41226913149439437,
+    "pressure_max_abs_at_quadrature": 0.3523748614218696,
+    "pressure_drop_predicted": 0.8962616166105626,
+    "pressure_drop_reference": 1.0202227520002507,
+    "pressure_drop_relative": 0.12150399032627891,
+    "physical_area_evaluated": 6.738228587185418,
+    "common_domain_excluded_area_fraction": 0.00021397992190011416,
+    "velocity_mae": 0.14072114805270997,
+    "velocity_relative_l1": 0.18769003163362852,
+    "pressure_mae": 0.22486763589348185,
+    "pressure_relative_l1": 0.25096323432845075
+  },
+  "mesh_uncertainty": {
+    "velocity": 0.0018383738676055208,
+    "pressure": 0.0029171896422916727,
+    "pressure_drop": 0.0021120567050148947
+  },
+  "fem_coarse": {
+    "nx": 40,
+    "ny": 12,
+    "iterations": 62,
+    "algebraic_residual": 1.916420020946399e-09,
+    "seconds": 2.1529736749980657,
+    "velocity_dofs": 4050,
+    "pressure_dofs": 533,
+    "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+  },
+  "fem_fine": {
+    "nx": 80,
+    "ny": 24,
+    "iterations": 62,
+    "algebraic_residual": 9.785578804579175e-10,
+    "seconds": 16.816278256999794,
+    "velocity_dofs": 15778,
+    "pressure_dofs": 2025,
+    "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+  }
+}

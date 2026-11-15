@@ -1,0 +1,64 @@
+{
+  "index": 2,
+  "slug": "serpentine",
+  "title": "Strong serpentine displacement",
+  "directory": "02_serpentine",
+  "reynolds": 30.0,
+  "geometry_id": "49150bb9ff66164faba95235e088b681335367c8f0ab9457c62313490c4b6b76",
+  "descriptors": {
+    "min_gap": 0.8354723596079643,
+    "max_gap": 1.0566595696073804,
+    "center_deviation": 0.3476284838811082,
+    "max_slope": 1.099,
+    "max_curvature": 3.151944932383701
+  },
+  "amplitude_scale": 1.0407172146136494,
+  "domain_status": "outside_training_geometry_envelope_stress_test",
+  "status": "passed",
+  "checkpoint_sha256": "a7e9e35b91d6e3c7f3a37404b940289427bfe78f9b38e39661c10382babd5235",
+  "metrics": {
+    "velocity_relative_l2": 0.12360896272899703,
+    "u_relative_l2": 0.11333893862755226,
+    "v_absolute_rms": 0.06714084476927451,
+    "pressure_relative_l2": 0.24721279298281995,
+    "speed_relative_l2": 0.11385698596447336,
+    "velocity_absolute_rms": 0.14700671176377048,
+    "pressure_absolute_rms": 0.5212105498303858,
+    "velocity_max_abs_at_quadrature": 0.6478572027853231,
+    "pressure_max_abs_at_quadrature": 0.8617190355579485,
+    "pressure_drop_predicted": 2.505054779080584,
+    "pressure_drop_reference": 3.332271393591567,
+    "pressure_drop_relative": 0.248244070426508,
+    "physical_area_evaluated": 4.952480465954011,
+    "common_domain_excluded_area_fraction": 0.0011884263786789923,
+    "velocity_mae": 0.09880103384963461,
+    "velocity_relative_l1": 0.09510663163633226,
+    "pressure_mae": 0.3916000918681248,
+    "pressure_relative_l1": 0.23966096629163505
+  },
+  "mesh_uncertainty": {
+    "velocity": 0.0050724081347514076,
+    "pressure": 0.009767412900759498,
+    "pressure_drop": 0.009354361736657858
+  },
+  "fem_coarse": {
+    "nx": 40,
+    "ny": 12,
+    "iterations": 59,
+    "algebraic_residual": 5.761721913757709e-09,
+    "seconds": 2.1797469350021856,
+    "velocity_dofs": 4050,
+    "pressure_dofs": 533,
+    "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+  },
+  "fem_fine": {
+    "nx": 80,
+    "ny": 24,
+    "iterations": 59,
+    "algebraic_residual": 3.0556944868050134e-09,
+    "seconds": 15.224088275001122,
+    "velocity_dofs": 15778,
+    "pressure_dofs": 2025,
+    "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+  }
+}

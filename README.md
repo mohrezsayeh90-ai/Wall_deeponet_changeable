@@ -25,6 +25,12 @@ The figures and model artifacts below still refer to the completed original run.
 
 Training uses random batches with replacement and fresh Re/collocation points, so the primary axis is optimizer updates. The secondary axis shows equivalent geometry-pool passes, not actual epochs. All 3,222 logged records are preserved; no training-time FEM validation curve was recorded.
 
+## Five extreme channel stress tests
+
+[پنج کانال با تغییرات شدید و مقایسهٔ FEM](reports/extreme_channel_chain_5/README.md) · [هندسه‌ها](reports/extreme_channel_chain_5/geometry_overview.png) · [PDF نتایج](reports/extreme_channel_chain_5/all_5_chains.pdf)
+
+These local CPU experiments use the original step-32,216 checkpoint at Re=30 without accessing Kaggle. Severe pinching, a large serpentine shift, interlocking smooth teeth, a wide asymmetric cavity and rough multiscale walls probe outside the training geometry envelope while remaining inside the declared stress-input bounds. They are explicitly labeled extrapolation tests; input acceptance does not imply field accuracy. The report includes independent FEM mesh checks, full field comparisons, relative L2 and mean absolute/relative L1 errors.
+
 ## Five different random wall-shape examples
 
 [پنج هندسهٔ متفاوت و زنجیرهٔ کامل نتایج](reports/random_channel_chain_5/README.md) · [نمای هندسه‌ها](reports/random_channel_chain_5/geometry_overview.png) · [PDF پنج مقایسه](reports/random_channel_chain_5/all_5_chains.pdf)

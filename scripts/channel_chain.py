@@ -99,7 +99,7 @@ def references(output,manifest,workers):
     if any(x['status']!='passed' for x in status.values()):raise RuntimeError('Unresolved FEM cases; see reference-status.json')
 
 
-def render(output,manifest,checkpoint,summary_function=None,pdf_name='all_15_chains.pdf'):
+def render(output,manifest,checkpoint,summary_function=None,pdf_name='all_15_chains.pdf',allow_stress=False):
     import matplotlib
     matplotlib.use('Agg')
     import matplotlib.pyplot as plt
@@ -116,16 +116,16 @@ def render(output,manifest,checkpoint,summary_function=None,pdf_name='all_15_cha
     colors=['#155e75','#b45309','#7c3aed','#be123c']
     def walls_on(ax,x,b,t):
         ax.plot(x,b,color='#111827',lw=1.1);ax.plot(x,t,color='#111827',lw=1.1)
-        ax.set(xlim=(0,5),ylim=(-.48,1.48),xlabel='x',ylabel='y',aspect='equal')
+        ax.set(xlim=(0,5),ylim=(min(-.48,float(np.min(b))-.1),max(1.48,float(np.max(t))+.1)) if allow_stress else (-.48,1.48),xlabel='x',ylabel='y',aspect='equal')
     with PdfPages(output/pdf_name) as pdf:
         for info in manifest['cases']:
             case=output/info['directory']
             with np.load(case/'geometry.npz',allow_pickle=False) as d:coeff=d['coeff'];x=d['x'];bottom=d['bottom'];top=d['top']
             with np.load(case/'reference.npz',allow_pickle=False) as d:xy=d['xy'];weights=d['weights'];truth=d['fields'];refmeta=json.loads(str(d['metadata']))
-            pred=model.evaluate(coeff,info['reynolds'],xy)
+            pred=model.evaluate(coeff,info['reynolds'],xy,allow_stress=allow_stress)
             error=pred-truth;speed_ref=np.linalg.norm(truth[:,:2],axis=1);speed_pred=np.linalg.norm(pred[:,:2],axis=1)
             w=weights/weights.sum()
-            drop=pressure_sections(lambda q:model.evaluate(coeff,info['reynolds'],q),coeff)
+            drop=pressure_sections(lambda q:model.evaluate(coeff,info['reynolds'],q,allow_stress=allow_stress),coeff)
             metrics=dict(velocity_relative_l2=weighted_relative(pred[:,:2],truth[:,:2],weights),u_relative_l2=weighted_relative(pred[:,0],truth[:,0],weights),v_absolute_rms=float(np.sqrt(w@(error[:,1]**2))),pressure_relative_l2=weighted_relative(pred[:,2],truth[:,2],weights),speed_relative_l2=weighted_relative(speed_pred,speed_ref,weights),velocity_absolute_rms=float(np.sqrt(w@np.sum(error[:,:2]**2,axis=1))),pressure_absolute_rms=float(np.sqrt(w@(error[:,2]**2))),velocity_max_abs_at_quadrature=float(np.linalg.norm(error[:,:2],axis=1).max()),pressure_max_abs_at_quadrature=float(abs(error[:,2]).max()),pressure_drop_predicted=drop,pressure_drop_reference=refmeta['pressure_drop'],pressure_drop_relative=abs(drop-refmeta['pressure_drop'])/max(abs(refmeta['pressure_drop']),1e-8),physical_area_evaluated=float(weights.sum()),common_domain_excluded_area_fraction=refmeta['common_domain_excluded_area_fraction'])
             if not np.isfinite(np.r_[pred.ravel(),list(metrics.values())]).all():raise RuntimeError('Nonfinite result')
             np.savez_compressed(case/'fields.npz',xy=xy,weights=weights,fem=truth,predicted=pred,error=error,speed_fem=speed_ref,speed_predicted=speed_pred,coeff=coeff,reynolds=info['reynolds'],checkpoint_sha256=model.sha256)

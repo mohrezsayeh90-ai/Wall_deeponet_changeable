@@ -1,0 +1,64 @@
+{
+  "index": 5,
+  "slug": "rough_multiscale",
+  "title": "Independent rough multiscale walls",
+  "directory": "05_rough_multiscale",
+  "reynolds": 30.0,
+  "geometry_id": "3fb5dcd98eb15de231b71728bc18aa7183027dab30a713420cc4889171453d56",
+  "descriptors": {
+    "min_gap": 0.9816825319618218,
+    "max_gap": 1.239152592121488,
+    "center_deviation": 0.08071720785986167,
+    "max_slope": 1.099,
+    "max_curvature": 18.478156056801016
+  },
+  "amplitude_scale": 0.33550754609073247,
+  "domain_status": "outside_training_geometry_envelope_stress_test",
+  "status": "passed",
+  "checkpoint_sha256": "a7e9e35b91d6e3c7f3a37404b940289427bfe78f9b38e39661c10382babd5235",
+  "metrics": {
+    "velocity_relative_l2": 0.029086317117818224,
+    "u_relative_l2": 0.020050874344881644,
+    "v_absolute_rms": 0.02270713001135222,
+    "pressure_relative_l2": 0.03276785696937446,
+    "speed_relative_l2": 0.02042580387508326,
+    "velocity_absolute_rms": 0.03133493105634163,
+    "pressure_absolute_rms": 0.036772662961782845,
+    "velocity_max_abs_at_quadrature": 0.17650617745949054,
+    "pressure_max_abs_at_quadrature": 0.11359369945109088,
+    "pressure_drop_predicted": 1.6933335069209077,
+    "pressure_drop_reference": 1.7449270992508965,
+    "pressure_drop_relative": 0.029567763806372285,
+    "physical_area_evaluated": 5.112341742326181,
+    "common_domain_excluded_area_fraction": 0.0012261501061204766,
+    "velocity_mae": 0.021637419308929855,
+    "velocity_relative_l1": 0.02211085203139949,
+    "pressure_mae": 0.030356240236938507,
+    "pressure_relative_l1": 0.030910816522281503
+  },
+  "mesh_uncertainty": {
+    "velocity": 0.006124675362318498,
+    "pressure": 0.009182769342503559,
+    "pressure_drop": 0.006853169143537469
+  },
+  "fem_coarse": {
+    "nx": 40,
+    "ny": 12,
+    "iterations": 48,
+    "algebraic_residual": 2.4532143197502033e-09,
+    "seconds": 1.7634985879994929,
+    "velocity_dofs": 4050,
+    "pressure_dofs": 533,
+    "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+  },
+  "fem_fine": {
+    "nx": 80,
+    "ny": 24,
+    "iterations": 48,
+    "algebraic_residual": 1.2822106811478483e-09,
+    "seconds": 13.254390273003082,
+    "velocity_dofs": 15778,
+    "pressure_dofs": 2025,
+    "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+  }
+}

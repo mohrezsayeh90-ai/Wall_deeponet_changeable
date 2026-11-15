@@ -1,0 +1,98 @@
+{
+  "seed": 2026111517,
+  "cases": [
+    {
+      "index": 1,
+      "slug": "hourglass",
+      "title": "Severely pinched hourglass",
+      "directory": "01_hourglass",
+      "reynolds": 30.0,
+      "geometry_id": "6d28e3a0b220e827eda82f6c453d93a8fe777634d90a3826dbccda9de4927c71",
+      "descriptors": {
+        "min_gap": 0.42100000000000004,
+        "max_gap": 1.0209342824462366,
+        "center_deviation": 0.0,
+        "max_slope": 0.4270001726529643,
+        "max_curvature": 1.4192019932966837
+      },
+      "amplitude_scale": 0.8311268786831418,
+      "domain_status": "outside_training_geometry_envelope_stress_test"
+    },
+    {
+      "index": 2,
+      "slug": "serpentine",
+      "title": "Strong serpentine displacement",
+      "directory": "02_serpentine",
+      "reynolds": 30.0,
+      "geometry_id": "49150bb9ff66164faba95235e088b681335367c8f0ab9457c62313490c4b6b76",
+      "descriptors": {
+        "min_gap": 0.8354723596079643,
+        "max_gap": 1.0566595696073804,
+        "center_deviation": 0.3476284838811082,
+        "max_slope": 1.099,
+        "max_curvature": 3.151944932383701
+      },
+      "amplitude_scale": 1.0407172146136494,
+      "domain_status": "outside_training_geometry_envelope_stress_test"
+    },
+    {
+      "index": 3,
+      "slug": "interlocking",
+      "title": "Interlocking rounded wall teeth",
+      "directory": "03_interlocking",
+      "reynolds": 30.0,
+      "geometry_id": "bfd5d6ae3cfd53bc13525053e7f2c608159ff2c4c9d5a004847a76c99db4e223",
+      "descriptors": {
+        "min_gap": 0.6863658398186426,
+        "max_gap": 1.0,
+        "center_deviation": 0.2063418875804867,
+        "max_slope": 1.099,
+        "max_curvature": 5.631736300355035
+      },
+      "amplitude_scale": 0.7485466183540772,
+      "domain_status": "outside_training_geometry_envelope_stress_test"
+    },
+    {
+      "index": 4,
+      "slug": "wide_cavity",
+      "title": "Large asymmetric plateau cavity",
+      "directory": "04_wide_cavity",
+      "reynolds": 30.0,
+      "geometry_id": "cc26b7a4757152ce7f4f36e7bc8e2e7701163afbcda136ec745bd91845715fbb",
+      "descriptors": {
+        "min_gap": 1.0,
+        "max_gap": 1.6989999999999998,
+        "center_deviation": 0.3495,
+        "max_slope": 0.7753464639069394,
+        "max_curvature": 7.840266183673916
+      },
+      "amplitude_scale": 1.036074562013064,
+      "domain_status": "outside_training_geometry_envelope_stress_test"
+    },
+    {
+      "index": 5,
+      "slug": "rough_multiscale",
+      "title": "Independent rough multiscale walls",
+      "directory": "05_rough_multiscale",
+      "reynolds": 30.0,
+      "geometry_id": "3fb5dcd98eb15de231b71728bc18aa7183027dab30a713420cc4889171453d56",
+      "descriptors": {
+        "min_gap": 0.9816825319618218,
+        "max_gap": 1.239152592121488,
+        "center_deviation": 0.08071720785986167,
+        "max_slope": 1.099,
+        "max_curvature": 18.478156056801016
+      },
+      "amplitude_scale": 0.33550754609073247,
+      "domain_status": "outside_training_geometry_envelope_stress_test"
+    }
+  ],
+  "case_count": 5,
+  "checkpoint_step": 32216,
+  "checkpoint_sha256": "a7e9e35b91d6e3c7f3a37404b940289427bfe78f9b38e39661c10382babd5235",
+  "reynolds": 30.0,
+  "selection": "Prescribed extreme mechanisms, radially scaled to the declared stress envelope before error evaluation.",
+  "kaggle_accessed": false,
+  "locked_test_used": false,
+  "created_at_utc": "2026-11-15T12:12:12.515048+00:00"
+}

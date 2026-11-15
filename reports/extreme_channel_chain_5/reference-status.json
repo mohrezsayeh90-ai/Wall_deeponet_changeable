@@ -1,0 +1,216 @@
+{
+  "expected": 5,
+  "completed": 5,
+  "cases": [
+    {
+      "directory": "01_hourglass",
+      "status": "passed",
+      "reference": {
+        "geometry_id": "6d28e3a0b220e827eda82f6c453d93a8fe777634d90a3826dbccda9de4927c71",
+        "reynolds": 30.0,
+        "coarse": {
+          "nx": 80,
+          "ny": 24,
+          "iterations": 52,
+          "algebraic_residual": 3.7960750254723094e-09,
+          "seconds": 13.28261113699773,
+          "velocity_dofs": 15778,
+          "pressure_dofs": 2025,
+          "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+        },
+        "fine": {
+          "nx": 160,
+          "ny": 48,
+          "iterations": 52,
+          "algebraic_residual": 1.9236447789734502e-09,
+          "seconds": 150.08605498600082,
+          "velocity_dofs": 62274,
+          "pressure_dofs": 7889,
+          "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+        },
+        "mesh_uncertainty": {
+          "velocity": 0.0009258243691470824,
+          "pressure": 0.0027930313852966627,
+          "pressure_drop": 0.0025747755698784266
+        },
+        "pressure_drop": 5.598442135927881,
+        "pressure_sections": [
+          0.25,
+          4.75
+        ],
+        "pressure_denominator_floor": 1e-08,
+        "wall_stress_verified": false,
+        "common_domain_excluded_area_fraction": 0.0,
+        "common_domain_rule": "both chordal meshes; exclude <=.5% physical quadrature area"
+      }
+    },
+    {
+      "directory": "02_serpentine",
+      "status": "passed",
+      "reference": {
+        "geometry_id": "49150bb9ff66164faba95235e088b681335367c8f0ab9457c62313490c4b6b76",
+        "reynolds": 30.0,
+        "coarse": {
+          "nx": 40,
+          "ny": 12,
+          "iterations": 59,
+          "algebraic_residual": 5.761721913757709e-09,
+          "seconds": 2.1797469350021856,
+          "velocity_dofs": 4050,
+          "pressure_dofs": 533,
+          "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+        },
+        "fine": {
+          "nx": 80,
+          "ny": 24,
+          "iterations": 59,
+          "algebraic_residual": 3.0556944868050134e-09,
+          "seconds": 15.224088275001122,
+          "velocity_dofs": 15778,
+          "pressure_dofs": 2025,
+          "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+        },
+        "mesh_uncertainty": {
+          "velocity": 0.0050724081347514076,
+          "pressure": 0.009767412900759498,
+          "pressure_drop": 0.009354361736657858
+        },
+        "pressure_drop": 3.332271393591567,
+        "pressure_sections": [
+          0.25,
+          4.75
+        ],
+        "pressure_denominator_floor": 1e-08,
+        "wall_stress_verified": false,
+        "common_domain_excluded_area_fraction": 0.0011884263786789923,
+        "common_domain_rule": "both chordal meshes; exclude <=.5% physical quadrature area"
+      }
+    },
+    {
+      "directory": "03_interlocking",
+      "status": "passed",
+      "reference": {
+        "geometry_id": "bfd5d6ae3cfd53bc13525053e7f2c608159ff2c4c9d5a004847a76c99db4e223",
+        "reynolds": 30.0,
+        "coarse": {
+          "nx": 80,
+          "ny": 24,
+          "iterations": 62,
+          "algebraic_residual": 5.7690625230464566e-09,
+          "seconds": 16.562720090001676,
+          "velocity_dofs": 15778,
+          "pressure_dofs": 2025,
+          "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+        },
+        "fine": {
+          "nx": 160,
+          "ny": 48,
+          "iterations": 62,
+          "algebraic_residual": 3.037695856572731e-09,
+          "seconds": 178.41770046499732,
+          "velocity_dofs": 62274,
+          "pressure_dofs": 7889,
+          "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+        },
+        "mesh_uncertainty": {
+          "velocity": 0.0032843782378120384,
+          "pressure": 0.007595754285173608,
+          "pressure_drop": 0.007122363397222355
+        },
+        "pressure_drop": 5.282213908421067,
+        "pressure_sections": [
+          0.25,
+          4.75
+        ],
+        "pressure_denominator_floor": 1e-08,
+        "wall_stress_verified": false,
+        "common_domain_excluded_area_fraction": 0.0,
+        "common_domain_rule": "both chordal meshes; exclude <=.5% physical quadrature area"
+      }
+    },
+    {
+      "directory": "04_wide_cavity",
+      "status": "passed",
+      "reference": {
+        "geometry_id": "cc26b7a4757152ce7f4f36e7bc8e2e7701163afbcda136ec745bd91845715fbb",
+        "reynolds": 30.0,
+        "coarse": {
+          "nx": 40,
+          "ny": 12,
+          "iterations": 62,
+          "algebraic_residual": 1.916420020946399e-09,
+          "seconds": 2.1529736749980657,
+          "velocity_dofs": 4050,
+          "pressure_dofs": 533,
+          "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+        },
+        "fine": {
+          "nx": 80,
+          "ny": 24,
+          "iterations": 62,
+          "algebraic_residual": 9.785578804579175e-10,
+          "seconds": 16.816278256999794,
+          "velocity_dofs": 15778,
+          "pressure_dofs": 2025,
+          "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+        },
+        "mesh_uncertainty": {
+          "velocity": 0.0018383738676055208,
+          "pressure": 0.0029171896422916727,
+          "pressure_drop": 0.0021120567050148947
+        },
+        "pressure_drop": 1.0202227520002507,
+        "pressure_sections": [
+          0.25,
+          4.75
+        ],
+        "pressure_denominator_floor": 1e-08,
+        "wall_stress_verified": false,
+        "common_domain_excluded_area_fraction": 0.00021397992190011416,
+        "common_domain_rule": "both chordal meshes; exclude <=.5% physical quadrature area"
+      }
+    },
+    {
+      "directory": "05_rough_multiscale",
+      "status": "passed",
+      "reference": {
+        "geometry_id": "3fb5dcd98eb15de231b71728bc18aa7183027dab30a713420cc4889171453d56",
+        "reynolds": 30.0,
+        "coarse": {
+          "nx": 40,
+          "ny": 12,
+          "iterations": 48,
+          "algebraic_residual": 2.4532143197502033e-09,
+          "seconds": 1.7634985879994929,
+          "velocity_dofs": 4050,
+          "pressure_dofs": 533,
+          "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+        },
+        "fine": {
+          "nx": 80,
+          "ny": 24,
+          "iterations": 48,
+          "algebraic_residual": 1.2822106811478483e-09,
+          "seconds": 13.254390273003082,
+          "velocity_dofs": 15778,
+          "pressure_dofs": 2025,
+          "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+        },
+        "mesh_uncertainty": {
+          "velocity": 0.006124675362318498,
+          "pressure": 0.009182769342503559,
+          "pressure_drop": 0.006853169143537469
+        },
+        "pressure_drop": 1.7449270992508965,
+        "pressure_sections": [
+          0.25,
+          4.75
+        ],
+        "pressure_denominator_floor": 1e-08,
+        "wall_stress_verified": false,
+        "common_domain_excluded_area_fraction": 0.0012261501061204766,
+        "common_domain_rule": "both chordal meshes; exclude <=.5% physical quadrature area"
+      }
+    }
+  ]
+}

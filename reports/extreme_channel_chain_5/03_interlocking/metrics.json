@@ -1,0 +1,64 @@
+{
+  "index": 3,
+  "slug": "interlocking",
+  "title": "Interlocking rounded wall teeth",
+  "directory": "03_interlocking",
+  "reynolds": 30.0,
+  "geometry_id": "bfd5d6ae3cfd53bc13525053e7f2c608159ff2c4c9d5a004847a76c99db4e223",
+  "descriptors": {
+    "min_gap": 0.6863658398186426,
+    "max_gap": 1.0,
+    "center_deviation": 0.2063418875804867,
+    "max_slope": 1.099,
+    "max_curvature": 5.631736300355035
+  },
+  "amplitude_scale": 0.7485466183540772,
+  "domain_status": "outside_training_geometry_envelope_stress_test",
+  "status": "passed",
+  "checkpoint_sha256": "a7e9e35b91d6e3c7f3a37404b940289427bfe78f9b38e39661c10382babd5235",
+  "metrics": {
+    "velocity_relative_l2": 0.18716689450259535,
+    "u_relative_l2": 0.1595502648027217,
+    "v_absolute_rms": 0.13291640127346477,
+    "pressure_relative_l2": 0.3951118556182342,
+    "speed_relative_l2": 0.16456501267027404,
+    "velocity_absolute_rms": 0.2444808117733155,
+    "pressure_absolute_rms": 1.3242553842483349,
+    "velocity_max_abs_at_quadrature": 1.1994783885515792,
+    "pressure_max_abs_at_quadrature": 2.0582225342761618,
+    "pressure_drop_predicted": 3.3365079838162854,
+    "pressure_drop_reference": 5.282213908421067,
+    "pressure_drop_relative": 0.3683504603065918,
+    "physical_area_evaluated": 4.528419326350868,
+    "common_domain_excluded_area_fraction": 0.0,
+    "velocity_mae": 0.1444455055843667,
+    "velocity_relative_l1": 0.12892181502738728,
+    "pressure_mae": 1.0215013741351642,
+    "pressure_relative_l1": 0.41781710672959527
+  },
+  "mesh_uncertainty": {
+    "velocity": 0.0032843782378120384,
+    "pressure": 0.007595754285173608,
+    "pressure_drop": 0.007122363397222355
+  },
+  "fem_coarse": {
+    "nx": 80,
+    "ny": 24,
+    "iterations": 62,
+    "algebraic_residual": 5.7690625230464566e-09,
+    "seconds": 16.562720090001676,
+    "velocity_dofs": 15778,
+    "pressure_dofs": 2025,
+    "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+  },
+  "fem_fine": {
+    "nx": 160,
+    "ny": 48,
+    "iterations": 62,
+    "algebraic_residual": 3.037695856572731e-09,
+    "seconds": 178.41770046499732,
+    "velocity_dofs": 62274,
+    "pressure_dofs": 7889,
+    "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+  }
+}
