@@ -23,6 +23,12 @@
 - [گالری هشت خانوادهٔ دیواره](reports/geometry_gallery.png).
 - [شناسه‌ها، پارامترهای هندسی و هش مجموعه‌های ثابت](reports/split_manifest.json).
 
+## Experimental L-BFGS refinement
+
+یک اجرای مستقل برای ریزتنظیم **فقط با L-BFGS** از وزن‌های گام **۸۲٬۲۱۶** ثبت شده است: [اجرای Kaggle](https://www.kaggle.com/code/mohrezsayeh/geometry-pi-deeponet-l-bfgs-refinement) · [روش، آزمون‌ها و آخرین وضعیت مشاهده‌شده](reports/lbfgs_stage/README.md).
+
+The optimizer uses a fixed train-only 512-geometry objective, a disjoint 128-geometry training probe, float64 arithmetic, at most 500 accepted L-BFGS iterations and a 6-hour training budget. No new Adam updates are applied to the production checkpoint. This is an exploratory queued/submitted experiment; no production L-BFGS result or benefit is claimed yet. The latest **collected** weights remain step 82,216, and all existing numerical results retain their stated checkpoint. The linked observation file is a snapshot, not live monitoring.
+
 ## Completed continuation: step 82,216
 
 ادامهٔ آموزش از **۳۲٬۲۱۶ تا ۸۲٬۲۱۶** دقیقاً با ۵۰هزار گام اضافه پایان یافت (`target_completed`). وزن‌های قدیمی حفظ شده‌اند و وزن‌های جدید در پوشه‌ای مستقل قرار دارند.

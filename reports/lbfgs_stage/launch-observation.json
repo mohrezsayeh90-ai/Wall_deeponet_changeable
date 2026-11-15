@@ -1,0 +1,19 @@
+{
+  "kernel": "mohrezsayeh/geometry-pi-deeponet-l-bfgs-refinement",
+  "version": 1,
+  "status": {
+    "status": "QUEUED",
+    "failureMessage": null
+  },
+  "observed_at_utc": "2026-11-15T16:20:33.363657+00:00",
+  "base_adam_step": 82216,
+  "base_checkpoint_sha256": "84276c11feecd5bf230c79d1077250018b356ae118491678a4ed69e46ab83140",
+  "production_lbfgs_iterations_verified": 0,
+  "gpu_resume_verified": false,
+  "local_tests_passed": 15,
+  "max_iterations": 500,
+  "max_training_seconds": 21600,
+  "fixed_train_geometries": 512,
+  "probe_train_geometries": 128,
+  "submitted_script_sha256": "812b55726c58afeecfa0279a67277509b07ef39fdc21ad7420774fc6fb8980ae"
+}

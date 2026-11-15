@@ -1,0 +1,16 @@
+INITIAL_PROBE 0.08064318132500388
+{"event": "objective", "evaluation": 1, "loss": 0.07629015169121876, "gradient_norm": 0.007543534773173821, "seconds": 16.732690409997304, "elapsed_seconds": 33.962252155004535}
+{"event": "objective", "evaluation": 2, "loss": 56.6771488711707, "gradient_norm": 1370.0488999415063, "seconds": 0.009710291000374127, "elapsed_seconds": 33.98045782200643}
+{"event": "objective", "evaluation": 3, "loss": 0.2527421396796584, "gradient_norm": 3.2567088881437876, "seconds": 0.007461064000381157, "elapsed_seconds": 33.9882245550034}
+{"event": "objective", "evaluation": 4, "loss": 0.07628614489259163, "gradient_norm": 0.012236475578174942, "seconds": 0.007662636002351064, "elapsed_seconds": 33.99622136400285}
+{"event": "accepted_iteration", "iteration": 1, "loss": 0.07628614489259163, "function_evaluations": 4, "elapsed_seconds": 33.99652481900557}
+{"event": "objective", "evaluation": 5, "loss": 0.07627297197228243, "gradient_norm": 0.013216814925324777, "seconds": 0.008418292003625538, "elapsed_seconds": 34.01204947200313}
+{"event": "objective", "evaluation": 6, "loss": 0.07622457674303906, "gradient_norm": 0.029836344203102994, "seconds": 0.008186011997167952, "elapsed_seconds": 34.020635684006265}
+{"event": "accepted_iteration", "iteration": 2, "loss": 0.07622457674303906, "function_evaluations": 6, "elapsed_seconds": 34.020900101000734}
+{"event": "objective", "evaluation": 7, "loss": 0.030203583454510644, "gradient_norm": 1.3526402199653678, "seconds": 0.008866951000527479, "elapsed_seconds": 34.035812550006085}
+{"event": "objective", "evaluation": 8, "loss": 3.8611779600288645, "gradient_norm": 132.019418258942, "seconds": 0.00941091199638322, "elapsed_seconds": 34.045701889001066}
+{"event": "objective", "evaluation": 9, "loss": 0.02994507191685026, "gradient_norm": 2.500309413316305, "seconds": 0.01057717399817193, "elapsed_seconds": 34.05795647100604}
+{"event": "objective", "evaluation": 10, "loss": 0.019608868228953018, "gradient_norm": 0.7708120484323032, "seconds": 0.0071809729997767136, "elapsed_seconds": 34.06566084000224}
+{"event": "objective", "evaluation": 11, "loss": 0.01849965301039882, "gradient_norm": 0.7468244839414062, "seconds": 0.008021925001230557, "elapsed_seconds": 34.07414068300568}
+{"event": "accepted_iteration", "iteration": 3, "loss": 0.01849965301039882, "function_evaluations": 11, "elapsed_seconds": 34.07452405799995}
+FINAL_PROBE 0.0785856031591682

@@ -1,0 +1,14 @@
+{
+  "tiny_model_only": true,
+  "production_checkpoint_unchanged": true,
+  "unit_tests_passed": 15,
+  "gradient_finite_difference_checked": true,
+  "objective_matches_adam_loss": true,
+  "deterministic_disjoint_banks_tested": true,
+  "scipy_callbacks_and_checkpoint_load_verified": true,
+  "accepted_iterations": 3,
+  "initial_fixed_loss": 0.07629015169121876,
+  "final_fixed_loss": 0.01849965301039882,
+  "initial_probe_loss": 0.08064318132500388,
+  "final_probe_loss": 0.0785856031591682
+}
