@@ -2,12 +2,24 @@
 
 اپراتور فیزیک‌آگاه برای جریان پایای دوبعدی در کانالی با **دو دیوارهٔ مستقل** و `10 <= Re <= 100`؛ یک checkpoint برای همهٔ هندسه‌ها. مشخصات درخواست در [سند پروژه](reports/PROJECT_SPECIFICATION.md) حفظ شده است.
 
-**وضعیت: پیاده‌سازی و آزمون‌های اولیه انجام شده؛ اجرای GPU در حال انجام است. مدل آموزش‌دیده و تأییدشده هنوز منتشر نشده است.** [وضعیت ماشین‌خوان](STATUS.json) و [گزارش پیشرفت](reports/PROGRESS.md) میان موفقیت کد، پایان آموزش و صحت میدان تفاوت می‌گذارند. این مخزن بازتولید آمادهٔ حل NS از مقاله نیست؛ سازگارکردن جدید آن برای هندسهٔ متغیر است.
+**وضعیت: اجرای Kaggle پایان یافته و تمام خروجی‌های آن در مخزن ذخیره شده‌اند. آموزش به‌دلیل سقف زمانی در گام ۳۲٬۲۱۶ از ۱۰۰٬۰۰۰ متوقف شده است؛ وزن‌ها برای پژوهش موجودند، اما مدل هنوز معیارهای پذیرش را پاس نکرده است.** [وضعیت ماشین‌خوان](STATUS.json) و [گزارش پیشرفت](reports/PROGRESS.md) میان موفقیت کد، پایان آموزش و صحت میدان تفاوت می‌گذارند. این مخزن بازتولید آمادهٔ حل NS از مقاله نیست؛ سازگارکردن جدید آن برای هندسهٔ متغیر است.
 
 - [اجرای اصلی GPU در Kaggle](https://www.kaggle.com/code/mohrezsayeh/geometry-pi-deeponet-main)؛ خصوصی در حساب مالک.
 - [آزمایش دسترسی GPU](https://www.kaggle.com/code/mohrezsayeh/geometry-pi-deeponet-gpu-probe).
 - [گالری هشت خانوادهٔ دیواره](reports/geometry_gallery.png).
 - [شناسه‌ها، پارامترهای هندسی و هش مجموعه‌های ثابت](reports/split_manifest.json).
+
+## Collected Kaggle run
+
+[Complete v1 artifacts and restore instructions](artifacts/kaggle/main-v1/README.md) include the checkpoint with optimizer/RNG state, full logs, all geometry pools, eight FEM references and predictions/plots, precision/runtime metadata, and the exact downloaded source. The checksummed archive preserves every one of the **69 output files**, plus the two source/metadata files.
+
+Kaggle reports `COMPLETE`; the trainer stopped at **32,216/100,000** steps after its 17,400-second budget. The eight-case development pilot has median velocity error **2.59%**, median pressure error **2.68%**, and median pressure-drop error **2.53%**. Only 8/400 development cases were evaluated, all at Re=10; velocity-median and momentum gates fail. These are provisional research weights, not an accepted release. No new training or locked-test evaluation was performed during collection.
+
+```bash
+python scripts/restore_kaggle.py
+```
+
+This verifies all archive/file SHA-256 hashes and restores the original output under `runs/restored-kaggle-v1/`. The checkpoint and readable reports are also available directly in the artifact directory. See [the collection report](reports/KAGGLE_COMPLETED_RUN.md) for validation and remaining work.
 
 ## Model and physics
 
@@ -64,7 +76,7 @@ python -m geometry_operator.train --pool data/geometries \
 
 Use the exact config saved with the checkpoint; `configs/runtime.json` is produced by the Kaggle precision probe. With the unmodified production float64 config, resume with that config instead. Checkpoints retain Adam moments, exact NumPy RNG state, step, wall-pool hash, model config and normalization. One-geometry microbatches accumulate the global batch without reducing it. There is no per-geometry optimizer in inference. FEM labels do not enter training.
 
-The later trainer supports `--devices 2` (global gradient averaging) and `--archive-every 1000` for development checkpoint selection. Matched serial/parallel updates were checked on two virtual CPU devices. The already-running Kaggle v1 is the earlier single-device snapshot, not this later trainer. After archives/references are available, use `python -m scripts.select_checkpoint --candidates runs/main --output runs/selected`; its selection is provisional until all 400 development references are evaluated.
+The later trainer supports `--devices 2` (global gradient averaging) and `--archive-every 1000` for development checkpoint selection. Matched serial/parallel updates were checked on two virtual CPU devices. The collected Kaggle v1 used the earlier single-device trainer snapshot, not this later trainer. After archives/references are available, use `python -m scripts.select_checkpoint --candidates runs/main --output runs/selected`; its selection is provisional until all 400 development references are evaluated.
 
 Kaggle's observed quota was **6 GPU hours**, not an unlimited training allocation. The run targets 100,000 steps with a time-budget stop and atomic checkpoints. A time-budget checkpoint remains provisional; the code does not label a partial run completed or accepted. Selecting by full development FEM and implementing the remaining comparisons are outstanding release tasks.
 

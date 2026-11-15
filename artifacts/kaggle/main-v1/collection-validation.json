@@ -1,0 +1,31 @@
+{
+  "observed_at_utc": "2026-11-15T06:02:47.823209+00:00",
+  "unit_tests": {
+    "passed": 13,
+    "failed": 0,
+    "seconds": 20.8
+  },
+  "output_files_downloaded": 69,
+  "source_files_downloaded": 2,
+  "raw_archive_files_verified": 71,
+  "restore_repeatability": "passed on second invocation",
+  "pool_hashes_match_committed_manifest": true,
+  "checkpoint_sha256": "a7e9e35b91d6e3c7f3a37404b940289427bfe78f9b38e39661c10382babd5235",
+  "checkpoint_step": 32216,
+  "optimizer_load_verified": true,
+  "all_checkpoint_arrays_finite": true,
+  "cpu_jax": "0.4.38",
+  "cpu_prediction_comparison": {
+    "dev_indices": [
+      0,
+      5
+    ],
+    "queries_per_geometry": 6,
+    "max_absolute_difference": 8.881784197001252e-16,
+    "rtol": 2e-05,
+    "atol": 2e-06
+  },
+  "new_training_performed": false,
+  "locked_test_evaluated": false,
+  "accepted": false
+}

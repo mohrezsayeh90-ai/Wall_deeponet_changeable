@@ -1,6 +1,7 @@
 # Implementation and experiment status
 
-This is an initial implementation with a running full-size experiment, **not a
+The Kaggle v1 job has completed and all outputs are archived in the repository.
+Training stopped at step 32,216/100,000 due to its time budget. This is **not a
 completed accuracy-validated research release**. See `../STATUS.json` for the
 last observed training step and reference-generation progress. Training loss is
 not a substitute for independent field errors.
@@ -31,7 +32,7 @@ not a substitute for independent field errors.
   Structural constraints pass while momentum and field-accuracy gates fail.
   Raw numerical references and metrics/plots are retained beside this report.
 
-## Running experiment
+## Collected experiment
 
 Kaggle: https://www.kaggle.com/code/mohrezsayeh/geometry-pi-deeponet-main/versions/1
 
@@ -47,25 +48,27 @@ Production structural evaluation remains float64.
 The single-geometry profile initially estimated about 31 hours for 100k updates.
 The measured global accumulated update is faster, about .53 seconds, implying
 approximately **15 hours** for 100k updates. Available Kaggle quota at launch was
-**6 GPU hours**. The run therefore has a 17,400-second training stop budget and
-will retain a provisional checkpoint if it reaches the budget before 100k.
+**6 GPU hours**. The run had a 17,400-second training stop budget and stopped at step 32,216
+with a provisional checkpoint (optimizer and RNG included).
 The time limit does not count as successful completion of the requested budget.
 
 The later GitHub trainer adds periodic inference archives and two-device
 gradient averaging for continuation. It is a different source snapshot from
-the already-running v1 and is not retroactively described as that run's code.
+the collected v1 and is not retroactively described as that run's code.
 The v1 keeps its latest atomic optimizer/RNG checkpoint every 100 updates.
 
-Independent references for all 400 development cases are being generated on the
-cloud CPU in a separate process. The operation is restartable and skips verified
+Historical cloud CPU generation recorded 27/400 development references. That
+process is not running in this task; only eight references were produced by Kaggle
+and are included in its collected outputs. The operation is restartable and skips verified
 caches. Reference files explicitly bind geometry ID and Re. A provenance-only
 metadata migration for references generated earlier in this task is recorded;
 their numerical arrays were not changed.
 
 ## Remaining release requirements
 
-1. Collect main checkpoint, exact remote pool manifests, runtime metadata and
-   complete training logs; resume the global run if its budget is exhausted.
+1. Collection is complete: all 69 output files and downloaded source/metadata are
+   preserved in `../artifacts/kaggle/main-v1`. Continue training from step 32,216
+   if completing the 100,000-step budget is required.
 2. Finish development references and choose one checkpoint using development
    evidence. Do not use the locked test for model/hyperparameter selection.
 3. Run the complete locked benchmark, the predeclared 80-geometry Reynolds sweep,
@@ -80,19 +83,23 @@ their numerical arrays were not changed.
    examples only after evaluating them. The default API rejects unaccepted
    weights; explicit research use does not change acceptance.
 
-## External requirements
+## Collection and current requirements
 
-The current cloud proxy permits Kaggle API/status/log access, but downloading
-the generated artifact from `www.kaggleusercontent.com` returned a proxy 403.
-Network domain additions were saved in the environment draft for
-`www.kaggle.com`, `api.kaggle.com`, `www.kaggleusercontent.com` and
-`storage.googleapis.com`; the tool also preserved/added `kaggle.com` for the
-existing binding. The current runtime does not yet show the artifact domains
-as applied. The user needs to review/save the environment settings and publish
-the environment before retrying that download path. Saved configuration is not
-proof of active runtime access.
+The previous Kaggle download-network blocker is resolved in the published cloud
+environment. Authenticated status is COMPLETE, all 69 output files were downloaded,
+and all geometry-pool hashes match the committed immutable manifest. Checkpoint
+hash: `a7e9e35b91d6e3c7f3a37404b940289427bfe78f9b38e39661c10382babd5235`.
 
-Finishing the 100k-update budget also needs more GPU time than the observed
-current allocation, whether by renewed Kaggle quota or another GPU environment.
-No paid capacity was enabled. GPU training and CPU reference generation are
-still running; neither is represented as an accepted final model.
+The current CPU environment loads its optimizer state and reproduces saved GPU
+predictions on two development geometries to a maximum absolute difference of
+8.89e-16. All 13 current tests pass. Full archive restoration verifies all 71
+archived files (69 output plus two source files) and is repeatable.
+
+The eight-case Re=10 pilot has median velocity error 2.59%, median pressure error
+2.68%, and median pressure-drop error 2.53%. The velocity-median, family-median,
+momentum and complete-split gates fail. Only 8/400 development cases are evaluated;
+no final test was opened. See [the collection report](KAGGLE_COMPLETED_RUN.md).
+
+Finishing the 100,000-step budget requires 67,784 more GPU updates and subsequent
+independent evaluation. No paid capacity was enabled, no training was restarted,
+and no accepted-model claim is made.

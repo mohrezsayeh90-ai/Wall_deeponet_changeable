@@ -7,9 +7,9 @@
   "gpu_probe_devices": 2,
   "kaggle_main": "mohrezsayeh/geometry-pi-deeponet-main",
   "kaggle_version": 1,
-  "kaggle_source_revision": "f6b32ae",
-  "kaggle_status_last_observed": "RUNNING",
-  "main_training_steps_verified": 770,
+  "kaggle_source_revision": "f6b32ae7e95853f6e48142e822d6718597eb4708",
+  "kaggle_status_last_observed": "COMPLETE",
+  "main_training_steps_verified": 32216,
   "main_training_completed": false,
   "trained_model_accepted": false,
   "locked_test_opened": false,
@@ -20,25 +20,123 @@
     "stress": 200
   },
   "reference_pilot_passed": 8,
-  "reference_development_generation": "running on CPU",
+  "reference_development_generation": "No active reference-generation job in this task; historical local progress is retained separately from collected Kaggle outputs.",
   "baseline_lift_velocity_median": 0.06518807909744846,
   "remaining": [
-    "Retrieve GPU logs and checkpoints",
-    "Complete main training or continue saved checkpoint",
-    "Full development FEM/model selection",
-    "Locked test and Reynolds sweeps",
+    "Continue the provisional checkpoint from 32,216 to 100,000 steps on GPU; 67,784 steps remain",
+    "Complete all 400 development FEM references and checkpoint/model selection",
+    "Locked test and Reynolds sweeps after model selection",
     "Stress benchmark",
     "Matched learned baselines and ablations",
-    "Wall stress verification"
+    "Wall stress verification",
+    "Meet failing pilot velocity-median, family-median and momentum gates before model acceptance"
   ],
-  "blockers": [
-    "Kaggle output-download domain not granted in current runtime; network draft saved, needs user apply/publish",
-    "Observed allocation 6 GPU hours; measured global updates imply approximately 15 hours for 100k steps on one device"
-  ],
-  "observed_at_utc": "2026-11-14T22:08:30.605006+00:00",
-  "main_last_logged_loss": 0.32649263739585876,
-  "main_step_seconds_observed": 0.5296107550000215,
+  "blockers": [],
+  "observed_at_utc": "2026-11-15T06:02:47.823209+00:00",
+  "main_last_logged_loss": 0.07503316551446915,
+  "main_step_seconds_observed": 0.5279535959998611,
   "main_100k_hours_from_global_batch": 14.71140986111171,
   "reference_development_completed": 27,
-  "reference_development_failed": 0
+  "reference_development_failed": 0,
+  "kaggle_run_completed": true,
+  "main_training_target_steps": 100000,
+  "main_training_stop_reason": "wall_clock_budget",
+  "main_training_elapsed_seconds": 17400.489002264,
+  "main_last_logged_step": 32210,
+  "kaggle_development_evaluated": 8,
+  "kaggle_development_failed": 0,
+  "kaggle_outputs_collected": true,
+  "kaggle_output_files": 69,
+  "kaggle_artifact_directory": "artifacts/kaggle/main-v1",
+  "checkpoint_sha256": "a7e9e35b91d6e3c7f3a37404b940289427bfe78f9b38e39661c10382babd5235",
+  "development_pilot_summary": {
+    "velocity_relative_l2": {
+      "median": 0.025873982873175983,
+      "p95": 0.03578514422022633,
+      "max": 0.038086770706589106
+    },
+    "pressure_relative_l2": {
+      "median": 0.02682469536002937,
+      "p95": 0.05184930671034615,
+      "max": 0.054074586053526934
+    },
+    "v_absolute_rms": {
+      "median": 0.01348958137695797,
+      "p95": 0.022182059937736847,
+      "max": 0.023693310684045253
+    },
+    "pressure_drop_relative": {
+      "median": 0.025276785029251,
+      "p95": 0.0432820024701049,
+      "max": 0.0435568468627821
+    },
+    "pressure_drop_predicted": {
+      "median": 5.6652269911924495,
+      "p95": 6.665688214104893,
+      "max": 6.842846844715698
+    },
+    "pressure_drop_reference": {
+      "median": 5.788341218870833,
+      "p95": 6.802295174076032,
+      "max": 7.148603908439109
+    },
+    "first_call_seconds": {
+      "median": 0.046982040999864694,
+      "p95": 1.3233623262995016,
+      "max": 2.0102228579999064
+    },
+    "steady_seconds": {
+      "median": 0.04480960449836857,
+      "p95": 0.04556614579887537,
+      "max": 0.045622737998201046
+    },
+    "momentum_rms": {
+      "median": 0.35535956283983927,
+      "p95": 0.5721266465029217,
+      "max": 0.6167540205027249
+    },
+    "divergence_rms": {
+      "median": 1.1303537230616155e-16,
+      "p95": 2.0743985591183668e-16,
+      "max": 2.1270938250106585e-16
+    },
+    "traction_rms": {
+      "median": 0.0038385753745209944,
+      "p95": 0.009728289202764905,
+      "max": 0.010693943887825243
+    },
+    "wall_max": {
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "inlet_max": {
+      "median": 5.273559366969494e-16,
+      "p95": 5.273559366969494e-16,
+      "max": 5.273559366969494e-16
+    },
+    "flux_max": {
+      "median": 5.995204332975845e-15,
+      "p95": 6.6502359175046875e-15,
+      "max": 6.8833827526759706e-15
+    }
+  },
+  "development_pilot_gates": {
+    "velocity_median": false,
+    "velocity_p95": true,
+    "pressure_median": true,
+    "pressure_p95": true,
+    "pressure_drop_median": true,
+    "pressure_drop_p95": true,
+    "family_medians": false,
+    "flux_max": true,
+    "wall_max": true,
+    "inlet_max": true,
+    "divergence_rms": true,
+    "momentum_rms": false,
+    "traction_rms": true,
+    "complete_split": false,
+    "locked_final_test": false,
+    "release_comparisons_complete": false
+  }
 }
