@@ -1,7 +1,9 @@
 # Implementation and experiment status
 
-The Kaggle v1 job has completed and all outputs are archived in the repository.
-Training stopped at step 32,216/100,000 due to its time budget. This is **not a
+The original Kaggle v1 job and its 50,000-update continuation are both complete
+and fully archived. The latest collected checkpoint is step **82,216**. The
+requested continuation target was reached; the original run had stopped at 32,216
+because of its time budget. This is **not a
 completed accuracy-validated research release**. See `../STATUS.json` for the
 last observed training step and reference-generation progress. Training loss is
 not a substitute for independent field errors.
@@ -66,9 +68,9 @@ their numerical arrays were not changed.
 
 ## Remaining release requirements
 
-1. Collection is complete: all 69 output files and downloaded source/metadata are
-   preserved in `../artifacts/kaggle/main-v1`. Continue training from step 32,216
-   if completing the 100,000-step budget is required.
+1. Both collections are complete: original and continuation outputs are preserved
+   separately. Requested +50,000 updates reached step 82,216. A further 17,784
+   updates would be needed only to reach the original 100,000-step research budget.
 2. Finish development references and choose one checkpoint using development
    evidence. Do not use the locked test for model/hyperparameter selection.
 3. Run the complete locked benchmark, the predeclared 80-geometry Reynolds sweep,
@@ -100,8 +102,8 @@ The eight-case Re=10 pilot has median velocity error 2.59%, median pressure erro
 momentum and complete-split gates fail. Only 8/400 development cases are evaluated;
 no final test was opened. See [the collection report](KAGGLE_COMPLETED_RUN.md).
 
-Finishing the 100,000-step budget requires 67,784 more GPU updates and subsequent
-independent evaluation. No paid capacity was enabled, no training was restarted,
+After the completed continuation, reaching the original 100,000-step research
+budget would require 17,784 more GPU updates and subsequent independent evaluation. No paid capacity was enabled, no training was restarted,
 and no accepted-model claim is made.
 
 ## Fifteen illustrative channel result chains
@@ -124,3 +126,23 @@ Median relative velocity error is 2.93% (maximum 7.81%), median pressure error
 The complete figures include poorer cases as well as simpler successful ones.
 These illustrative geometries at a single Re do not replace the 400-case
 development benchmark or the locked final test and do not grant model acceptance.
+
+## Completed 50,000-update continuation
+
+The new run reached **82,216** with `target_completed` after 26,840.254 seconds.
+All 68 output files plus two source files are archived separately in
+`../artifacts/kaggle/continue-50k-v1`; original weights and previous figures are
+preserved. Full training history and paired evaluation are in
+[the completed continuation report](continuation_50k/completed/README.md).
+
+On identical eight-case Re=10 FEM references/points/weights, median velocity error
+improved 2.59% to 1.83%, pressure 2.68% to 1.05%, pressure drop 2.53% to 0.30%,
+and momentum RMS 0.35536 to 0.25713. The family-median and momentum gates still
+fail; full development/final-test/comparison requirements are incomplete.
+The new checkpoint is research-only and unaccepted. Existing 15/random/stress
+examples remain step-32,216 results and were not rerun or relabeled here.
+
+CPU optimizer loading, finite arrays, two-case prediction portability, all 13
+current tests, paired reference identity and complete archive restoration were
+verified. Full archive restoration was repeated successfully. The exact Kaggle
+source was downloaded and matches the submitted continuation script.

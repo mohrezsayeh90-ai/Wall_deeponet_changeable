@@ -1,0 +1,9 @@
+{
+  "path": "artifacts/kaggle/continue-50k-v1/checkpoint.npz",
+  "step": 82216,
+  "sha256": "84276c11feecd5bf230c79d1077250018b356ae118491678a4ed69e46ab83140",
+  "accepted": false,
+  "description": "Latest collected research checkpoint; not full-development-selected or accepted.",
+  "original_checkpoint_path": "artifacts/kaggle/main-v1/checkpoint.npz",
+  "pilot_report": "artifacts/kaggle/continue-50k-v1/development/report.json"
+}

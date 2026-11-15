@@ -1,0 +1,378 @@
+{
+  "schema": "kaggle-completed-output-v1",
+  "kernel": "mohrezsayeh/geometry-pi-deeponet-continue-50k/1",
+  "collected_at_utc": "2026-11-15T15:40:45.552917+00:00",
+  "kaggle_status": "COMPLETE",
+  "output_file_count": 68,
+  "source_file_count": 2,
+  "pagination_complete": true,
+  "archive": {
+    "format": "concatenated ZIP parts in manifest order",
+    "bytes": 81715480,
+    "sha256": "b9575ba2260ee31f6b4e873759c909565dc91fba37e54bd2e04cebcbc336cc9d",
+    "parts": [
+      {
+        "path": "raw-output.zip.part000",
+        "bytes": 41943040,
+        "sha256": "22d53985bea56ef06a5939b537ae64765ac136b48e50a7344ba5993445059fd6"
+      },
+      {
+        "path": "raw-output.zip.part001",
+        "bytes": 39772440,
+        "sha256": "b4fc304e874b07f2d4d9a63dcc53cd86dab6395780db06b13fb7e8553e1e4017"
+      }
+    ]
+  },
+  "files": [
+    {
+      "path": "output/geometry-pi-deeponet-continue-50k.log",
+      "bytes": 1654611,
+      "sha256": "0feb070da177c7163e62ebca2c8c582de23ddb6551ef413d2d358f217f3d2c1a"
+    },
+    {
+      "path": "output/project/.pytest_cache/.gitignore",
+      "bytes": 37,
+      "sha256": "3ed731b65d06150c138e2dadb0be0697550888a6b47eb8c45ecc9adba8b8e9bd"
+    },
+    {
+      "path": "output/project/.pytest_cache/CACHEDIR.TAG",
+      "bytes": 191,
+      "sha256": "37dc88ef9a0abeddbe81053a6dd8fdfb13afb613045ea1eb4a5c815a74a3bde4"
+    },
+    {
+      "path": "output/project/.pytest_cache/README.md",
+      "bytes": 302,
+      "sha256": "73fd6fccdd802c419a6b2d983d6c3173b7da97558ac4b589edec2dfe443db9ad"
+    },
+    {
+      "path": "output/project/.pytest_cache/v/cache/nodeids",
+      "bytes": 606,
+      "sha256": "b1017db4de717849d69d43423763af238f8f968bef69f56a263452d35eb9b224"
+    },
+    {
+      "path": "output/project/configs/production.json",
+      "bytes": 780,
+      "sha256": "83a915d9774256d52ac132da5971d27afe414201474f8b8ca1d9f30e79da0661"
+    },
+    {
+      "path": "output/project/configs/runtime.json",
+      "bytes": 1068,
+      "sha256": "afb2876048f4144d25c8795e22926b9a63103639f3187b2f2f1f5497910a05e9"
+    },
+    {
+      "path": "output/project/data/geometries/dev.npz",
+      "bytes": 2136958,
+      "sha256": "e6421f0ce908ff12cd92e9940bf57c19af8f04b48a904e2428e1d30111add330"
+    },
+    {
+      "path": "output/project/data/geometries/manifest.json",
+      "bytes": 4657354,
+      "sha256": "e06eaffc0c0c41a263415c01dd3c638c6bb54a58bee0796b8c5a5d0868c35c89"
+    },
+    {
+      "path": "output/project/data/geometries/normalization.npz",
+      "bytes": 8724,
+      "sha256": "b759bf060faa2fce587d1f64eeeeab92ff2fe3af155bd8d631b01d2fcbe5c911"
+    },
+    {
+      "path": "output/project/data/geometries/stress.npz",
+      "bytes": 1062253,
+      "sha256": "f0a7f7936889e8533025506bfdbfabbbf4e36abea22b0cff0dee275edf0ce923"
+    },
+    {
+      "path": "output/project/data/geometries/test.npz",
+      "bytes": 5346514,
+      "sha256": "4634af1e6ac7837b26768ff68d9dcaf7d60519810939fb36af928c4e953ef3a3"
+    },
+    {
+      "path": "output/project/data/geometries/train.npz",
+      "bytes": 53257328,
+      "sha256": "3e23c0fa2f5af6fba53fb0d676207949c376f6df2a5cff460148c3191e11d1f4"
+    },
+    {
+      "path": "output/project/data/references/dev/0000.npz",
+      "bytes": 36908,
+      "sha256": "38a23a9e336bf87cbdc63d4d879c8b1a33b2a5078aefc3c13a56d332c6885b43"
+    },
+    {
+      "path": "output/project/data/references/dev/0001.npz",
+      "bytes": 36555,
+      "sha256": "3068530b4c568c40e257fe7e612e6f02bb79d6ed68fbe4a5f1ec23b2ca1aa82d"
+    },
+    {
+      "path": "output/project/data/references/dev/0002.npz",
+      "bytes": 33390,
+      "sha256": "92b93ed9c182288c99e4b086e13d292ee27ea83f2ee61a7a729680b2328ce7b6"
+    },
+    {
+      "path": "output/project/data/references/dev/0003.npz",
+      "bytes": 36191,
+      "sha256": "a6802efc009970c947e93d63f4684a15a39fe886cb52ab3ba1df0e2791586c44"
+    },
+    {
+      "path": "output/project/data/references/dev/0004.npz",
+      "bytes": 38351,
+      "sha256": "fcf6ab90821219b8d5a556ca4b634b8e75ca5f2e3f6966b4116b7c727a88d1bf"
+    },
+    {
+      "path": "output/project/data/references/dev/0005.npz",
+      "bytes": 37128,
+      "sha256": "0df15be7a764e52c988b16d961530ce36917b1c79a0ccdefa3d7d80c3d2a39a9"
+    },
+    {
+      "path": "output/project/data/references/dev/0006.npz",
+      "bytes": 39185,
+      "sha256": "fce01ae7a66d6685be907b9e0e107edb7f24a6f1ce123dbc70696e59141ece93"
+    },
+    {
+      "path": "output/project/data/references/dev/0007.npz",
+      "bytes": 39265,
+      "sha256": "256b193bc67d00829a253ac2f1aebe15959d71c15b04e69ae14015dd4885a496"
+    },
+    {
+      "path": "output/project/geometry_operator/__init__.py",
+      "bytes": 185,
+      "sha256": "d65330956a33c36ebf6946f32b94fa073cdb52448d77a7b2292da64d9ed6c3ef"
+    },
+    {
+      "path": "output/project/geometry_operator/__pycache__/__init__.cpython-313.pyc",
+      "bytes": 498,
+      "sha256": "c1b8ca139b39f37503f469a958b99dd2efddf6b2ffe35e312e37c2c994d5190e"
+    },
+    {
+      "path": "output/project/geometry_operator/__pycache__/api.cpython-313.pyc",
+      "bytes": 6786,
+      "sha256": "4089ecb2f069a8205f8077ca533ca0e323ac13d945222accba8d49832a5c8791"
+    },
+    {
+      "path": "output/project/geometry_operator/__pycache__/checkpoint.cpython-313.pyc",
+      "bytes": 4039,
+      "sha256": "119017e72986d86b0c5e8d497fc170e1a624f68e4f4b4dd752fd7a166da05791"
+    },
+    {
+      "path": "output/project/geometry_operator/__pycache__/evaluate.cpython-313.pyc",
+      "bytes": 18663,
+      "sha256": "d6829a532326c2fe997de86747c52019cb45dd1451b7625c023a1b239d8ceeb1"
+    },
+    {
+      "path": "output/project/geometry_operator/__pycache__/geometry.cpython-313.pyc",
+      "bytes": 15190,
+      "sha256": "e3b0ad7a73fb1b0400e6a155e2d09e486e7164f0e091592a9f26afb1bcbf2e83"
+    },
+    {
+      "path": "output/project/geometry_operator/__pycache__/model.cpython-313.pyc",
+      "bytes": 6737,
+      "sha256": "58e48d512b9837a824c79e41c53658ab1f0eb42fcdbc117571967d69d83d369b"
+    },
+    {
+      "path": "output/project/geometry_operator/__pycache__/operators.cpython-313.pyc",
+      "bytes": 3475,
+      "sha256": "2f03a4fe6d62a5a124fcfbf08b238c166ffafb0e1a35e325f8b55b783ec6ff1c"
+    },
+    {
+      "path": "output/project/geometry_operator/__pycache__/reference.cpython-313.pyc",
+      "bytes": 17890,
+      "sha256": "4ad0f7d3dea93e55144ccc9bfaacdb2aeffd886454c291ceea9a432a5aaeba8c"
+    },
+    {
+      "path": "output/project/geometry_operator/__pycache__/sampling.cpython-313.pyc",
+      "bytes": 8569,
+      "sha256": "0c3d761a8e035f38ffeafb2a3cd55960dd7148dc35f844f314c7115fb2623db1"
+    },
+    {
+      "path": "output/project/geometry_operator/__pycache__/train.cpython-313.pyc",
+      "bytes": 14922,
+      "sha256": "a609d3055653ec1314cee626e750eee66a3ac9b3c7d2dbc28c7e4e097c2f9e5c"
+    },
+    {
+      "path": "output/project/geometry_operator/api.py",
+      "bytes": 2902,
+      "sha256": "b567104855c8eb3d281edd5f9963c653d83b366aaf808d8723cc05f2edb8759f"
+    },
+    {
+      "path": "output/project/geometry_operator/checkpoint.py",
+      "bytes": 1759,
+      "sha256": "519b3505baf5c5eec9311effbb9c93e18c1413ff6508e56897239ea32d1dca55"
+    },
+    {
+      "path": "output/project/geometry_operator/evaluate.py",
+      "bytes": 9058,
+      "sha256": "cdf98b056e8a8198c1c32a2c365f29cb6ea74ab6c7d574207f364f2973baeb69"
+    },
+    {
+      "path": "output/project/geometry_operator/geometry.py",
+      "bytes": 6693,
+      "sha256": "c4686d0748aface9419b436d32075316c5f3092376d51175a03f449eed8c3ae1"
+    },
+    {
+      "path": "output/project/geometry_operator/model.py",
+      "bytes": 2481,
+      "sha256": "8694715f0977f440f16f6a5d4cc194f09689556a64902c57b6e4137ba09cfaea"
+    },
+    {
+      "path": "output/project/geometry_operator/operators.py",
+      "bytes": 1096,
+      "sha256": "35a77669b843c3a513302ad379bc5b85b0e719cdef45e99cb48bd7486c8e1c54"
+    },
+    {
+      "path": "output/project/geometry_operator/profile.py",
+      "bytes": 2602,
+      "sha256": "38b2abd8c068ea669f8da272e02153fd12d953ef183c06405ead79645cdc3b27"
+    },
+    {
+      "path": "output/project/geometry_operator/reference.py",
+      "bytes": 8080,
+      "sha256": "8a1873573ca99579ebed519326394b6c0b439e7b17363e7273c640f898e82762"
+    },
+    {
+      "path": "output/project/geometry_operator/sampling.py",
+      "bytes": 4314,
+      "sha256": "ed6a1a5546b6c8fd983e6c09bfb31876031367432e9f6576c5cba0ef55e73c94"
+    },
+    {
+      "path": "output/project/geometry_operator/train.py",
+      "bytes": 6581,
+      "sha256": "430668d9e5fa026807e78d3e58482d88c61425f22193b527729f5bac3df4b9fd"
+    },
+    {
+      "path": "output/project/pyproject.toml",
+      "bytes": 67,
+      "sha256": "e8c4628ed8f1f109ed9455dff39a67374c0711c7e24e6a5114517abe41fb61db"
+    },
+    {
+      "path": "output/project/resume_manifest.json",
+      "bytes": 485,
+      "sha256": "803c0d4fde30e1d472a4f16ceadd2d1f2a78c085b635458bd63790a5bbfb394d"
+    },
+    {
+      "path": "output/project/runs/continued_50k/checkpoint.npz",
+      "bytes": 11974777,
+      "sha256": "84276c11feecd5bf230c79d1077250018b356ae118491678a4ed69e46ab83140"
+    },
+    {
+      "path": "output/project/runs/continued_50k/development/0000.npz",
+      "bytes": 62353,
+      "sha256": "f9e990f6a9ccc786969380c79d3e0957451af462261068ea35ca384d3314d83e"
+    },
+    {
+      "path": "output/project/runs/continued_50k/development/0000.png",
+      "bytes": 652186,
+      "sha256": "42e85ea40b71e14dd5cdc2666ab45aec2bf0e45156aaed1d5b31d6b463ae44a5"
+    },
+    {
+      "path": "output/project/runs/continued_50k/development/0001.npz",
+      "bytes": 62228,
+      "sha256": "c1bea86cf2ea0c8b1b8de5bafa633dd1eaa7d26469967208c3cb5d96898adee2"
+    },
+    {
+      "path": "output/project/runs/continued_50k/development/0001.png",
+      "bytes": 632078,
+      "sha256": "b6fe9f464723c4c42fc2e5eabfd1859ad014b89a33581c3a9a633de9901a104d"
+    },
+    {
+      "path": "output/project/runs/continued_50k/development/0002.npz",
+      "bytes": 58940,
+      "sha256": "9093335c7c3aa02aaa15c00675c277c590b5e06f1d7ecf8db28b3f27ba5a045d"
+    },
+    {
+      "path": "output/project/runs/continued_50k/development/0002.png",
+      "bytes": 632401,
+      "sha256": "64bd293685445a3a5cc8dfb65cc658213af9fafc75e9add4195e9cac9cd2758a"
+    },
+    {
+      "path": "output/project/runs/continued_50k/development/0003.npz",
+      "bytes": 61889,
+      "sha256": "edf24a7d6ae66aaf66381df9bf3550abeb71726fbf2f3cccb78954910431100c"
+    },
+    {
+      "path": "output/project/runs/continued_50k/development/0003.png",
+      "bytes": 660072,
+      "sha256": "6b8364be0f8e910167d39ae4ef71c78b129f6b23576e5ce7969aef1584ffd8e5"
+    },
+    {
+      "path": "output/project/runs/continued_50k/development/0004.npz",
+      "bytes": 64152,
+      "sha256": "3be5081ce8cabc9081b90ce3528589f7a68007d9d0dc85cff6b3aac977655f52"
+    },
+    {
+      "path": "output/project/runs/continued_50k/development/0004.png",
+      "bytes": 699397,
+      "sha256": "85ca94dc508dfc1b1c26975d3b2ecb7131a6f50dc488f1f8f593a19868390604"
+    },
+    {
+      "path": "output/project/runs/continued_50k/development/0005.npz",
+      "bytes": 62843,
+      "sha256": "d53f1f889566113d400041f20729f29cb4dc8f745e0e7fcc9888c90bbb384e6a"
+    },
+    {
+      "path": "output/project/runs/continued_50k/development/0005.png",
+      "bytes": 648220,
+      "sha256": "0599e8941f607537f97e902708c7af54aad106424f9ee0e6ec2e5ea3d9c624ba"
+    },
+    {
+      "path": "output/project/runs/continued_50k/development/0006.npz",
+      "bytes": 64989,
+      "sha256": "d923984ccc1927bf5c2c1dbec3ac24d62260b1ccac57bbf96c4048fb546deb0a"
+    },
+    {
+      "path": "output/project/runs/continued_50k/development/0006.png",
+      "bytes": 695817,
+      "sha256": "95c8e77e2a35ea7b320d870781e46ae330e922c850608c84351eef0d59202cd0"
+    },
+    {
+      "path": "output/project/runs/continued_50k/development/0007.npz",
+      "bytes": 65095,
+      "sha256": "2dcf063688eb61f91e9e8b9865c5740e4517fc8f3a6de09a8fe4de7d1696461e"
+    },
+    {
+      "path": "output/project/runs/continued_50k/development/0007.png",
+      "bytes": 678782,
+      "sha256": "f100b288af0e7d767cb3e02ce17f414ec80ae22fd2808cc687a86dadca3f3ec8"
+    },
+    {
+      "path": "output/project/runs/continued_50k/development/cases.json",
+      "bytes": 10227,
+      "sha256": "feeee30778cbf5f53cd6ec21913fc5bea174478fba37706f5f2bbdd9e834f7bc"
+    },
+    {
+      "path": "output/project/runs/continued_50k/development/report.json",
+      "bytes": 2860,
+      "sha256": "eac573ec2bc54508b72ce6b933a6b4d4c8f8eedce6ba0e115e7084917c3b2c0f"
+    },
+    {
+      "path": "output/project/runs/continued_50k/runtime.json",
+      "bytes": 527,
+      "sha256": "ab75fe7f14bd7ffaa0dd660e8ca231c212aee2410e336518a3bf1d3b6ed10cbc"
+    },
+    {
+      "path": "output/project/runs/continued_50k/status.json",
+      "bytes": 663,
+      "sha256": "78b69aeef2d063cb4b485aa6554dac5e5176a476c1dad22df328607a1e514e89"
+    },
+    {
+      "path": "output/project/runs/continued_50k/training.jsonl",
+      "bytes": 1285520,
+      "sha256": "aeab3c35f1ba340fe33d66b0c5c2e59c51052a8ad3078f1ee166d535bea9d7cb"
+    },
+    {
+      "path": "output/project/tests/__pycache__/test_geometry_operator.cpython-313-pytest-8.4.2.pyc",
+      "bytes": 19959,
+      "sha256": "99b05bf272f92e0c0bd593eca72f3e695864961aa39a64837cb2679c495147cc"
+    },
+    {
+      "path": "output/project/tests/test_geometry_operator.py",
+      "bytes": 5563,
+      "sha256": "feb8ea734a6c13e3647b74782112e89ae65b34330a55a8c7fc9c1d66e012f254"
+    },
+    {
+      "path": "source/geometry-pi-deeponet-continue-50k.py",
+      "bytes": 34333,
+      "sha256": "385516e3d2592cfdaf9a4c11e2d000abbd56ff3e91f02a38b5374cb7ac4b9999"
+    },
+    {
+      "path": "source/kernel-metadata.json",
+      "bytes": 671,
+      "sha256": "26f2539b2c560979afa0272a201e8738ac66af07f8b45bc1396eb3bbae68075b"
+    }
+  ]
+}

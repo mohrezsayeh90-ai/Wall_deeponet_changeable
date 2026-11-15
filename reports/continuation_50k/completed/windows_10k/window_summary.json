@@ -1,0 +1,100 @@
+{
+  "start_step": 30000,
+  "last_logged_step": 82210,
+  "window_steps": 10000,
+  "smoothing_records": 100,
+  "smoothing_approx_steps": 1000,
+  "actual_epochs": false,
+  "equivalent_pool_passes_per_window": 32,
+  "mean_definition": "Arithmetic mean of available logged batch losses; not a loss evaluated every step on a fixed validation set.",
+  "source_sha256": {
+    "artifacts/kaggle/main-v1/training.jsonl": "617431210ec6d172b50f06991736a028f7454d6a23c58de320dec7d0ecb25a10",
+    "reports/continuation_50k/completed/windows_10k/continuation_snapshot.jsonl": "aeab3c35f1ba340fe33d66b0c5c2e59c51052a8ad3078f1ee166d535bea9d7cb"
+  },
+  "windows": [
+    {
+      "start_inclusive": 30000,
+      "end_exclusive": 40000,
+      "last_observed_step": 39990,
+      "complete": true,
+      "logged_records": 1001,
+      "arithmetic_mean": 0.04905040472276978,
+      "median": 0.045104652643203735,
+      "min": 0.015296760946512222,
+      "p10": 0.028744656592607498,
+      "p90": 0.07271251082420349,
+      "reduction_vs_previous_complete_percent": null,
+      "log_decrease_per_10000_steps": null
+    },
+    {
+      "start_inclusive": 40000,
+      "end_exclusive": 50000,
+      "last_observed_step": 49990,
+      "complete": true,
+      "logged_records": 1000,
+      "arithmetic_mean": 0.03967604769766331,
+      "median": 0.03712371736764908,
+      "min": 0.012794703245162964,
+      "p10": 0.023540514893829825,
+      "p90": 0.05874475352466107,
+      "reduction_vs_previous_complete_percent": 19.111681296188742,
+      "log_decrease_per_10000_steps": 0.21210076414381349
+    },
+    {
+      "start_inclusive": 50000,
+      "end_exclusive": 60000,
+      "last_observed_step": 59990,
+      "complete": true,
+      "logged_records": 1000,
+      "arithmetic_mean": 0.03428114252910018,
+      "median": 0.031662872061133385,
+      "min": 0.009988592937588692,
+      "p10": 0.020988872647285464,
+      "p90": 0.05021354556083679,
+      "reduction_vs_previous_complete_percent": 13.597385530113815,
+      "log_decrease_per_10000_steps": 0.14615225056778094
+    },
+    {
+      "start_inclusive": 60000,
+      "end_exclusive": 70000,
+      "last_observed_step": 69990,
+      "complete": true,
+      "logged_records": 1000,
+      "arithmetic_mean": 0.028124675527215003,
+      "median": 0.025917667895555496,
+      "min": 0.009079556912183762,
+      "p10": 0.016988692991435527,
+      "p90": 0.04182146787643433,
+      "reduction_vs_previous_complete_percent": 17.9587567615611,
+      "log_decrease_per_10000_steps": 0.19794809884657683
+    },
+    {
+      "start_inclusive": 70000,
+      "end_exclusive": 80000,
+      "last_observed_step": 79990,
+      "complete": true,
+      "logged_records": 1000,
+      "arithmetic_mean": 0.024993011735379697,
+      "median": 0.022984415292739868,
+      "min": 0.009169754572212696,
+      "p10": 0.015051402524113655,
+      "p90": 0.03712586723268032,
+      "reduction_vs_previous_complete_percent": 11.1349330548007,
+      "log_decrease_per_10000_steps": 0.11805106844046881
+    },
+    {
+      "start_inclusive": 80000,
+      "end_exclusive": 90000,
+      "last_observed_step": 82210,
+      "complete": false,
+      "logged_records": 222,
+      "arithmetic_mean": 0.02431374492945972,
+      "median": 0.02256950829178095,
+      "min": 0.009381532669067383,
+      "p10": 0.014048045687377452,
+      "p90": 0.03854415267705918,
+      "reduction_vs_previous_complete_percent": null,
+      "log_decrease_per_10000_steps": null
+    }
+  ]
+}

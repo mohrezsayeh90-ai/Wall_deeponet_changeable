@@ -1,4 +1,6 @@
-# Continue the collected checkpoint for 50,000 additional updates
+# Completed continuation: 50,000 additional updates
+
+**Update:** the final checkpoint at step **82,216** was collected and verified with `target_completed`. See the [complete collection/comparison report](completed/README.md) and [new artifact archive](../../artifacts/kaggle/continue-50k-v1/README.md). The launch observation and initial logs below are retained as historical evidence, not live status.
 
 Private Kaggle run: https://www.kaggle.com/code/mohrezsayeh/geometry-pi-deeponet-continue-50k
 

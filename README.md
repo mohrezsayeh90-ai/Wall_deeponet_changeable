@@ -2,28 +2,32 @@
 
 اپراتور فیزیک‌آگاه برای جریان پایای دوبعدی در کانالی با **دو دیوارهٔ مستقل** و `10 <= Re <= 100`؛ یک checkpoint برای همهٔ هندسه‌ها. مشخصات درخواست در [سند پروژه](reports/PROJECT_SPECIFICATION.md) حفظ شده است.
 
-**وضعیت: اجرای Kaggle پایان یافته و تمام خروجی‌های آن در مخزن ذخیره شده‌اند. آموزش به‌دلیل سقف زمانی در گام ۳۲٬۲۱۶ از ۱۰۰٬۰۰۰ متوقف شده است؛ وزن‌ها برای پژوهش موجودند، اما مدل هنوز معیارهای پذیرش را پاس نکرده است.** [وضعیت ماشین‌خوان](STATUS.json) و [گزارش پیشرفت](reports/PROGRESS.md) میان موفقیت کد، پایان آموزش و صحت میدان تفاوت می‌گذارند. این مخزن بازتولید آمادهٔ حل NS از مقاله نیست؛ سازگارکردن جدید آن برای هندسهٔ متغیر است.
+**وضعیت: ادامهٔ ۵۰هزارگامی کامل شده است؛ آخرین checkpoint در گام ۸۲٬۲۱۶ ذخیره شده و تمام خروجی‌های اجرای جدید در مخزن موجودند. پایلوت FEM بهبود یافته، اما مدل هنوز تأیید نهایی نشده است.** [وضعیت ماشین‌خوان](STATUS.json) و [گزارش پیشرفت](reports/PROGRESS.md) میان موفقیت کد، پایان آموزش و صحت میدان تفاوت می‌گذارند. این مخزن بازتولید آمادهٔ حل NS از مقاله نیست؛ سازگارکردن جدید آن برای هندسهٔ متغیر است.
 
 - [اجرای اصلی GPU در Kaggle](https://www.kaggle.com/code/mohrezsayeh/geometry-pi-deeponet-main)؛ خصوصی در حساب مالک.
 - [آزمایش دسترسی GPU](https://www.kaggle.com/code/mohrezsayeh/geometry-pi-deeponet-gpu-probe).
 - [گالری هشت خانوادهٔ دیواره](reports/geometry_gallery.png).
 - [شناسه‌ها، پارامترهای هندسی و هش مجموعه‌های ثابت](reports/split_manifest.json).
 
-## Ongoing continuation: 50,000 more updates
+## Completed continuation: step 82,216
 
-ادامهٔ آموزش از checkpoint گام **۳۲٬۲۱۶** با هدف **۸۲٬۲۱۶** در [اجرای جداگانهٔ Kaggle](https://www.kaggle.com/code/mohrezsayeh/geometry-pi-deeponet-continue-50k) ثبت شده است. وزن‌ها، Adam و RNG قبلی بازیابی می‌شوند؛ این شروع از صفر نیست. [تنظیمات و آخرین وضعیت مشاهده‌شده](reports/continuation_50k/README.md).
+ادامهٔ آموزش از **۳۲٬۲۱۶ تا ۸۲٬۲۱۶** دقیقاً با ۵۰هزار گام اضافه پایان یافت (`target_completed`). وزن‌های قدیمی حفظ شده‌اند و وزن‌های جدید در پوشه‌ای مستقل قرار دارند.
 
-The figures and model artifacts below still refer to the completed original run. The additional 50,000 steps are not reported as completed until the new final checkpoint is collected and verified.
+- [Latest research weights, logs and complete archive](artifacts/kaggle/continue-50k-v1/README.md)
+- [Before/after FEM comparison and full training history](reports/continuation_50k/completed/README.md)
+- [Latest checkpoint pointer with SHA-256](artifacts/kaggle/latest_checkpoint.json)
+
+On the same eight Re=10 pilot cases, median velocity error improved **2.59% → 1.83%**, pressure **2.68% → 1.05%**, and pressure drop **2.53% → 0.30%**. This is 8/400 development cases; family-median and momentum gates still fail. No accepted-model claim is made. The original 15-channel gallery, random-five and stress-five figures remain results of **step 32,216**, with their original weights and data retained.
 
 ## Training history
 
-[بررسی میانگین loss در پنجره‌های ۱۰هزارگامی، از گام ۳۰هزار به بعد](reports/training_windows_10k/README.md) · [نمودار](reports/training_windows_10k/training_windows.png)
+[بررسی کامل میانگین loss در پنجره‌های ۱۰هزارگامی](reports/continuation_50k/completed/windows_10k/README.md) · [نمودار](reports/continuation_50k/completed/windows_10k/training_windows.png) · [نسخهٔ میانی قبلی](reports/training_windows_10k/README.md)
 
 [نمودار روند آموزش و توضیح گام در برابر ایپاک](reports/training_curves/README.md) · [PDF نمودار](reports/training_curves/loss_vs_step.pdf) · [داده‌های CSV](reports/training_curves/training_history.csv)
 
-![Actual training loss versus optimizer step](reports/training_curves/loss_vs_step.png)
+![Complete training loss through step 82,216](reports/continuation_50k/completed/full_training.png)
 
-Training uses random batches with replacement and fresh Re/collocation points, so the primary axis is optimizer updates. The secondary axis shows equivalent geometry-pool passes, not actual epochs. All 3,222 logged records are preserved; no training-time FEM validation curve was recorded.
+Training uses random batches with replacement and fresh Re/collocation points, so the primary axis is optimizer updates. The secondary axis shows equivalent geometry-pool passes, not actual epochs. The latest combined history contains 8,223 actual logged records; the original 3,222-record graph remains archived in `reports/training_curves`. No training-time FEM validation curve was recorded.
 
 ## Five extreme channel stress tests
 

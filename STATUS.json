@@ -23,16 +23,16 @@
   "reference_development_generation": "No active reference-generation job in this task; historical local progress is retained separately from collected Kaggle outputs.",
   "baseline_lift_velocity_median": 0.06518807909744846,
   "remaining": [
-    "Continue the provisional checkpoint from 32,216 to 100,000 steps on GPU; 67,784 steps remain",
+    "Requested additional 50,000 updates completed. Reaching the original 100,000-step research budget would require 17,784 more updates.",
     "Complete all 400 development FEM references and checkpoint/model selection",
     "Locked test and Reynolds sweeps after model selection",
-    "Stress benchmark",
+    "Full stress benchmark with selected weights; existing stress examples use step 32,216",
     "Matched learned baselines and ablations",
     "Wall stress verification",
-    "Meet failing pilot velocity-median, family-median and momentum gates before model acceptance"
+    "Resolve failing family-median and momentum gates before model acceptance"
   ],
   "blockers": [],
-  "observed_at_utc": "2026-11-15T06:02:47.823209+00:00",
+  "observed_at_utc": "2026-11-15T15:43:42.468194+00:00",
   "main_last_logged_loss": 0.07503316551446915,
   "main_step_seconds_observed": 0.5279535959998611,
   "main_100k_hours_from_global_batch": 14.71140986111171,
@@ -170,37 +170,120 @@
     "verified_at_utc": "2026-11-15T06:20:48.241315+00:00"
   },
   "continuation_50k": {
-    "observed_at_utc": "2026-11-15T06:38:07.296890+00:00",
     "kernel": "mohrezsayeh/geometry-pi-deeponet-continue-50k",
     "version": 1,
     "status": {
-      "status": "RUNNING",
+      "status": "COMPLETE",
       "failureMessage": null
     },
-    "runtime": "RUNTIME 0.11.1 [CudaDevice(id=0), CudaDevice(id=1)]",
-    "frozen_tests": "9 passed in 51.64s",
-    "resume_verification": {
-      "source_kernel": "mohrezsayeh/geometry-pi-deeponet-main",
-      "checkpoint_sha256": "a7e9e35b91d6e3c7f3a37404b940289427bfe78f9b38e39661c10382babd5235",
-      "start_step": 32216,
-      "additional_steps": 50000,
-      "target_step": 82216,
-      "optimizer_restored": true,
-      "rng_restored_by_trainer": true,
-      "dtype": "float32",
-      "source_revision": "f6b32ae7e95853f6e48142e822d6718597eb4708",
-      "max_training_seconds": 36000,
-      "global_batch": 32,
-      "interior_points": 128,
-      "outlet_points": 48
-    },
+    "start_step": 32216,
     "first_logged_step": 32217,
-    "last_logged_step": 32310,
-    "additional_steps_observed": 94,
-    "last_logged_loss": 0.06484907120466232,
-    "last_step_seconds": 0.5231963659999792,
-    "submitted_script_sha256": "385516e3d2592cfdaf9a4c11e2d000abbd56ff3e91f02a38b5374cb7ac4b9999",
-    "target_completed": false
+    "last_logged_step": 82210,
+    "checkpoint_step": 82216,
+    "additional_steps_completed": 50000,
+    "target_step": 82216,
+    "target_completed": true,
+    "stop_reason": "target_completed",
+    "elapsed_training_seconds": 26840.253724692,
+    "last_logged_loss": 0.018711606040596962,
+    "checkpoint_sha256": "84276c11feecd5bf230c79d1077250018b356ae118491678a4ed69e46ab83140",
+    "output_files_collected": 68,
+    "source_files_collected": 2,
+    "artifacts": "artifacts/kaggle/continue-50k-v1",
+    "comparison_report": "reports/continuation_50k/completed/README.md",
+    "pilot_evaluated": 8,
+    "pilot_summary": {
+      "velocity_relative_l2": {
+        "median": 0.018314092527379606,
+        "p95": 0.02892821474602447,
+        "max": 0.03184310938441078
+      },
+      "pressure_relative_l2": {
+        "median": 0.010485950386163765,
+        "p95": 0.017334093866861185,
+        "max": 0.01740064780258209
+      },
+      "v_absolute_rms": {
+        "median": 0.00793858038925353,
+        "p95": 0.015542956779538828,
+        "max": 0.016093988693513053
+      },
+      "pressure_drop_relative": {
+        "median": 0.003044970278666082,
+        "p95": 0.015366222189308784,
+        "max": 0.017853987309302984
+      },
+      "pressure_drop_predicted": {
+        "median": 5.735383997805661,
+        "p95": 6.859609126432834,
+        "max": 7.225423427727989
+      },
+      "pressure_drop_reference": {
+        "median": 5.788341218870833,
+        "p95": 6.802295174076032,
+        "max": 7.148603908439109
+      },
+      "first_call_seconds": {
+        "median": 0.04726864949952869,
+        "p95": 1.581343293899407,
+        "max": 2.4070936549978796
+      },
+      "steady_seconds": {
+        "median": 0.044896773497384856,
+        "p95": 0.04552212249927834,
+        "max": 0.04559575199891697
+      },
+      "momentum_rms": {
+        "median": 0.257126666235368,
+        "p95": 0.5507327350488421,
+        "max": 0.6323596961961319
+      },
+      "divergence_rms": {
+        "median": 1.2141554343412128e-16,
+        "p95": 2.104976463716601e-16,
+        "max": 2.1599471595978658e-16
+      },
+      "traction_rms": {
+        "median": 0.002528264311711691,
+        "p95": 0.0039923786368003976,
+        "max": 0.004420213209488555
+      },
+      "wall_max": {
+        "median": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "inlet_max": {
+        "median": 5.273559366969494e-16,
+        "p95": 5.273559366969494e-16,
+        "max": 5.273559366969494e-16
+      },
+      "flux_max": {
+        "median": 5.995204332975845e-15,
+        "p95": 6.217248937900877e-15,
+        "max": 6.217248937900877e-15
+      }
+    },
+    "pilot_gates": {
+      "velocity_median": true,
+      "velocity_p95": true,
+      "pressure_median": true,
+      "pressure_p95": true,
+      "pressure_drop_median": true,
+      "pressure_drop_p95": true,
+      "family_medians": false,
+      "flux_max": true,
+      "wall_max": true,
+      "inlet_max": true,
+      "divergence_rms": true,
+      "momentum_rms": false,
+      "traction_rms": true,
+      "complete_split": false,
+      "locked_final_test": false,
+      "release_comparisons_complete": false
+    },
+    "accepted": false,
+    "observed_at_utc": "2026-11-15T15:43:42.468180+00:00"
   },
   "random_channel_chain_5": {
     "directory": "reports/random_channel_chain_5",
@@ -232,5 +315,16 @@
     "kaggle_accessed": false,
     "new_training_performed": false,
     "checkpoint_step": 32216
-  }
+  },
+  "latest_training_step": 82216,
+  "latest_checkpoint": {
+    "path": "artifacts/kaggle/continue-50k-v1/checkpoint.npz",
+    "step": 82216,
+    "sha256": "84276c11feecd5bf230c79d1077250018b356ae118491678a4ed69e46ab83140",
+    "accepted": false,
+    "description": "Latest collected research checkpoint; not full-development-selected or accepted.",
+    "original_checkpoint_path": "artifacts/kaggle/main-v1/checkpoint.npz",
+    "pilot_report": "artifacts/kaggle/continue-50k-v1/development/report.json"
+  },
+  "main_fields_scope": "The main_* fields describe the original main-v1 job. Latest collected research state is in continuation_50k and latest_checkpoint."
 }

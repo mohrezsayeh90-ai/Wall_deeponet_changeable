@@ -1,0 +1,327 @@
+{
+  "old_checkpoint_sha256": "a7e9e35b91d6e3c7f3a37404b940289427bfe78f9b38e39661c10382babd5235",
+  "new_checkpoint_sha256": "84276c11feecd5bf230c79d1077250018b356ae118491678a4ed69e46ab83140",
+  "old_step": 32216,
+  "new_step": 82216,
+  "same_geometries_references_points_weights": true,
+  "evaluated": 8,
+  "expected_development_cases": 400,
+  "reynolds": 10,
+  "old_summary": {
+    "velocity_relative_l2": {
+      "median": 0.025873982873175983,
+      "p95": 0.03578514422022633,
+      "max": 0.038086770706589106
+    },
+    "pressure_relative_l2": {
+      "median": 0.02682469536002937,
+      "p95": 0.05184930671034615,
+      "max": 0.054074586053526934
+    },
+    "v_absolute_rms": {
+      "median": 0.01348958137695797,
+      "p95": 0.022182059937736847,
+      "max": 0.023693310684045253
+    },
+    "pressure_drop_relative": {
+      "median": 0.025276785029251,
+      "p95": 0.0432820024701049,
+      "max": 0.0435568468627821
+    },
+    "pressure_drop_predicted": {
+      "median": 5.6652269911924495,
+      "p95": 6.665688214104893,
+      "max": 6.842846844715698
+    },
+    "pressure_drop_reference": {
+      "median": 5.788341218870833,
+      "p95": 6.802295174076032,
+      "max": 7.148603908439109
+    },
+    "first_call_seconds": {
+      "median": 0.046982040999864694,
+      "p95": 1.3233623262995016,
+      "max": 2.0102228579999064
+    },
+    "steady_seconds": {
+      "median": 0.04480960449836857,
+      "p95": 0.04556614579887537,
+      "max": 0.045622737998201046
+    },
+    "momentum_rms": {
+      "median": 0.35535956283983927,
+      "p95": 0.5721266465029217,
+      "max": 0.6167540205027249
+    },
+    "divergence_rms": {
+      "median": 1.1303537230616155e-16,
+      "p95": 2.0743985591183668e-16,
+      "max": 2.1270938250106585e-16
+    },
+    "traction_rms": {
+      "median": 0.0038385753745209944,
+      "p95": 0.009728289202764905,
+      "max": 0.010693943887825243
+    },
+    "wall_max": {
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "inlet_max": {
+      "median": 5.273559366969494e-16,
+      "p95": 5.273559366969494e-16,
+      "max": 5.273559366969494e-16
+    },
+    "flux_max": {
+      "median": 5.995204332975845e-15,
+      "p95": 6.6502359175046875e-15,
+      "max": 6.8833827526759706e-15
+    }
+  },
+  "new_summary": {
+    "velocity_relative_l2": {
+      "median": 0.018314092527379606,
+      "p95": 0.02892821474602447,
+      "max": 0.03184310938441078
+    },
+    "pressure_relative_l2": {
+      "median": 0.010485950386163765,
+      "p95": 0.017334093866861185,
+      "max": 0.01740064780258209
+    },
+    "v_absolute_rms": {
+      "median": 0.00793858038925353,
+      "p95": 0.015542956779538828,
+      "max": 0.016093988693513053
+    },
+    "pressure_drop_relative": {
+      "median": 0.003044970278666082,
+      "p95": 0.015366222189308784,
+      "max": 0.017853987309302984
+    },
+    "pressure_drop_predicted": {
+      "median": 5.735383997805661,
+      "p95": 6.859609126432834,
+      "max": 7.225423427727989
+    },
+    "pressure_drop_reference": {
+      "median": 5.788341218870833,
+      "p95": 6.802295174076032,
+      "max": 7.148603908439109
+    },
+    "first_call_seconds": {
+      "median": 0.04726864949952869,
+      "p95": 1.581343293899407,
+      "max": 2.4070936549978796
+    },
+    "steady_seconds": {
+      "median": 0.044896773497384856,
+      "p95": 0.04552212249927834,
+      "max": 0.04559575199891697
+    },
+    "momentum_rms": {
+      "median": 0.257126666235368,
+      "p95": 0.5507327350488421,
+      "max": 0.6323596961961319
+    },
+    "divergence_rms": {
+      "median": 1.2141554343412128e-16,
+      "p95": 2.104976463716601e-16,
+      "max": 2.1599471595978658e-16
+    },
+    "traction_rms": {
+      "median": 0.002528264311711691,
+      "p95": 0.0039923786368003976,
+      "max": 0.004420213209488555
+    },
+    "wall_max": {
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "inlet_max": {
+      "median": 5.273559366969494e-16,
+      "p95": 5.273559366969494e-16,
+      "max": 5.273559366969494e-16
+    },
+    "flux_max": {
+      "median": 5.995204332975845e-15,
+      "p95": 6.217248937900877e-15,
+      "max": 6.217248937900877e-15
+    }
+  },
+  "new_gates": {
+    "velocity_median": true,
+    "velocity_p95": true,
+    "pressure_median": true,
+    "pressure_p95": true,
+    "pressure_drop_median": true,
+    "pressure_drop_p95": true,
+    "family_medians": false,
+    "flux_max": true,
+    "wall_max": true,
+    "inlet_max": true,
+    "divergence_rms": true,
+    "momentum_rms": false,
+    "traction_rms": true,
+    "complete_split": false,
+    "locked_final_test": false,
+    "release_comparisons_complete": false
+  },
+  "accepted": false,
+  "cases": [
+    {
+      "index": 0,
+      "geometry_id": "2e866d64658021e09fbc49b9fc7660c53a76fefbad9c42da435822388d55a5ed",
+      "family": "mild",
+      "reynolds": 10.0,
+      "reference_sha256": "38a23a9e336bf87cbdc63d4d879c8b1a33b2a5078aefc3c13a56d332c6885b43",
+      "old": {
+        "velocity_relative_l2": 0.013711185761170757,
+        "pressure_relative_l2": 0.008532417715422975,
+        "pressure_drop_relative": 0.006491172395830016,
+        "momentum_rms": 0.13713154682532075
+      },
+      "new": {
+        "velocity_relative_l2": 0.005774972339773495,
+        "pressure_relative_l2": 0.002320135874929198,
+        "pressure_drop_relative": 0.00021768689646236889,
+        "momentum_rms": 0.0702191309470084
+      }
+    },
+    {
+      "index": 1,
+      "geometry_id": "5ac806973dd2ec97469ba125d47de98059e566cc724ecc98732e74ea2d299e9d",
+      "family": "centerline",
+      "reynolds": 10.0,
+      "reference_sha256": "3068530b4c568c40e257fe7e612e6f02bb79d6ed68fbe4a5f1ec23b2ca1aa82d",
+      "old": {
+        "velocity_relative_l2": 0.018320787816017467,
+        "pressure_relative_l2": 0.020709662759212988,
+        "pressure_drop_relative": 0.020841020127022495,
+        "momentum_rms": 0.38963943834308357
+      },
+      "new": {
+        "velocity_relative_l2": 0.02097459500388964,
+        "pressure_relative_l2": 0.01740064780258209,
+        "pressure_drop_relative": 0.017853987309302984,
+        "momentum_rms": 0.28464117525460514
+      }
+    },
+    {
+      "index": 2,
+      "geometry_id": "19ef11bb0a9d8f12eeb3edd5dee571bf11f3f671984a245de5eb84d8a838ced6",
+      "family": "symmetric_gap",
+      "reynolds": 10.0,
+      "reference_sha256": "92b93ed9c182288c99e4b086e13d292ee27ea83f2ee61a7a729680b2328ce7b6",
+      "old": {
+        "velocity_relative_l2": 0.021685999681977045,
+        "pressure_relative_l2": 0.02619279124076331,
+        "pressure_drop_relative": 0.027133102612965816,
+        "momentum_rms": 0.32107968733659503
+      },
+      "new": {
+        "velocity_relative_l2": 0.009712111417717679,
+        "pressure_relative_l2": 0.017210493700522363,
+        "pressure_drop_relative": 0.010485983775168411,
+        "momentum_rms": 0.2342252462572387
+      }
+    },
+    {
+      "index": 3,
+      "geometry_id": "9ae88b285de90dde11a2b44d3ae4cc579e7abaaec9aa80fed6eb762a4623850a",
+      "family": "one_wall",
+      "reynolds": 10.0,
+      "reference_sha256": "a6802efc009970c947e93d63f4684a15a39fe886cb52ab3ba1df0e2791586c44",
+      "old": {
+        "velocity_relative_l2": 0.030616310814811188,
+        "pressure_relative_l2": 0.02248039258043498,
+        "pressure_drop_relative": 0.02122429826659048,
+        "momentum_rms": 0.2779072574082841
+      },
+      "new": {
+        "velocity_relative_l2": 0.017450193951642455,
+        "pressure_relative_l2": 0.005440812820251558,
+        "pressure_drop_relative": 0.0001123379005954703,
+        "momentum_rms": 0.20459115864382763
+      }
+    },
+    {
+      "index": 4,
+      "geometry_id": "7e346192d20d25e1accd81819d669851472a6b5f164c0410573a1f7aea21c424",
+      "family": "multiple_gap",
+      "reynolds": 10.0,
+      "reference_sha256": "fcf6ab90821219b8d5a556ca4b634b8e75ca5f2e3f6966b4116b7c727a88d1bf",
+      "old": {
+        "velocity_relative_l2": 0.0315106950312669,
+        "pressure_relative_l2": 0.054074586053526934,
+        "pressure_drop_relative": 0.04277157716941867,
+        "momentum_rms": 0.6167540205027249
+      },
+      "new": {
+        "velocity_relative_l2": 0.03184310938441078,
+        "pressure_relative_l2": 0.015175118129758542,
+        "pressure_drop_relative": 0.010746086966462426,
+        "momentum_rms": 0.6323596961961319
+      }
+    },
+    {
+      "index": 5,
+      "geometry_id": "b2a6885c62db1b98665f366772a11a95ea107aff345924bb506b8ea4719843bb",
+      "family": "independent_walls",
+      "reynolds": 10.0,
+      "reference_sha256": "0df15be7a764e52c988b16d961530ce36917b1c79a0ccdefa3d7d80c3d2a39a9",
+      "old": {
+        "velocity_relative_l2": 0.03006196606437492,
+        "pressure_relative_l2": 0.02878809308762028,
+        "pressure_drop_relative": 0.028823609750656357,
+        "momentum_rms": 0.41069107937260274
+      },
+      "new": {
+        "velocity_relative_l2": 0.019177991103116757,
+        "pressure_relative_l2": 0.005796782642568989,
+        "pressure_drop_relative": 0.003424064480885943,
+        "momentum_rms": 0.28002808621349734
+      }
+    },
+    {
+      "index": 6,
+      "geometry_id": "18eeadd32bd9a730bfa6c43c613d1b95103cad58e4f6db5f816edfb23a876ba1",
+      "family": "oscillatory",
+      "reynolds": 10.0,
+      "reference_sha256": "fce01ae7a66d6685be907b9e0e107edb7f24a6f1ce123dbc70696e59141ece93",
+      "old": {
+        "velocity_relative_l2": 0.038086770706589106,
+        "pressure_relative_l2": 0.04771664507301041,
+        "pressure_drop_relative": 0.0435568468627821,
+        "momentum_rms": 0.48924723764614453
+      },
+      "new": {
+        "velocity_relative_l2": 0.023514838989021326,
+        "pressure_relative_l2": 0.016291489131718285,
+        "pressure_drop_relative": 0.002665876076446221,
+        "momentum_rms": 0.39913980720387576
+      }
+    },
+    {
+      "index": 7,
+      "geometry_id": "692f9d4bfd6b148accfbce110760f032503f49c5bd967b870cff1430303c56e6",
+      "family": "mixed_spline",
+      "reynolds": 10.0,
+      "reference_sha256": "256b193bc67d00829a253ac2f1aebe15959d71c15b04e69ae14015dd4885a496",
+      "old": {
+        "velocity_relative_l2": 0.017337237922794367,
+        "pressure_relative_l2": 0.02745659947929543,
+        "pressure_drop_relative": 0.02342046744553618,
+        "momentum_rms": 0.2907276832196991
+      },
+      "new": {
+        "velocity_relative_l2": 0.016477643271371342,
+        "pressure_relative_l2": 0.005207843825587709,
+        "pressure_drop_relative": 0.001138051662416601,
+        "momentum_rms": 0.22711759078982552
+      }
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "checkpoint_step": 82216,
+  "optimizer_load_verified": true,
+  "all_arrays_finite": true,
+  "cpu_jax": "0.4.38",
+  "gpu_prediction_reproduction": [
+    {
+      "dev_index": 0,
+      "queries": 6,
+      "max_abs_difference": 4.440892098500626e-16
+    },
+    {
+      "dev_index": 5,
+      "queries": 6,
+      "max_abs_difference": 3.3306690738754696e-16
+    }
+  ],
+  "checkpoint_sha256": "84276c11feecd5bf230c79d1077250018b356ae118491678a4ed69e46ab83140",
+  "new_training_performed": false,
+  "unit_tests_passed": 13,
+  "unit_tests_failed": 0,
+  "archive_files_verified": 70,
+  "archive_restore_repeatability": true,
+  "pool_hashes_match_original": true,
+  "submitted_source_matches_downloaded": true,
+  "pilot_pairing_verified": true,
+  "locked_test_opened": false
+}
