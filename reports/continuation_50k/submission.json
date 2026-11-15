@@ -1,0 +1,20 @@
+{
+  "submitted_at_utc": "2026-11-15T06:34:43.889953+00:00",
+  "response": {
+    "ref": "/code/mohrezsayeh/geometry-pi-deeponet-continue-50k",
+    "url": "https://www.kaggle.com/code/mohrezsayeh/geometry-pi-deeponet-continue-50k",
+    "versionNumber": 1,
+    "error": null,
+    "invalidTags": [],
+    "invalidDatasetSources": [],
+    "invalidCompetitionSources": [],
+    "invalidKernelSources": [],
+    "invalidModelSources": [],
+    "kernelId": 145142146
+  },
+  "timeout_seconds": 41400,
+  "accelerator": "NvidiaTeslaT4",
+  "additional_steps": 50000,
+  "start_step": 32216,
+  "target_step": 82216
+}

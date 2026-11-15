@@ -9,6 +9,12 @@
 - [گالری هشت خانوادهٔ دیواره](reports/geometry_gallery.png).
 - [شناسه‌ها، پارامترهای هندسی و هش مجموعه‌های ثابت](reports/split_manifest.json).
 
+## Ongoing continuation: 50,000 more updates
+
+ادامهٔ آموزش از checkpoint گام **۳۲٬۲۱۶** با هدف **۸۲٬۲۱۶** در [اجرای جداگانهٔ Kaggle](https://www.kaggle.com/code/mohrezsayeh/geometry-pi-deeponet-continue-50k) ثبت شده است. وزن‌ها، Adam و RNG قبلی بازیابی می‌شوند؛ این شروع از صفر نیست. [تنظیمات و آخرین وضعیت مشاهده‌شده](reports/continuation_50k/README.md).
+
+The figures and model artifacts below still refer to the completed original run. The additional 50,000 steps are not reported as completed until the new final checkpoint is collected and verified.
+
 ## Training history
 
 [نمودار روند آموزش و توضیح گام در برابر ایپاک](reports/training_curves/README.md) · [PDF نمودار](reports/training_curves/loss_vs_step.pdf) · [داده‌های CSV](reports/training_curves/training_history.csv)

@@ -168,5 +168,38 @@
     "formal_locked_benchmark": false,
     "new_training_performed": false,
     "verified_at_utc": "2026-11-15T06:20:48.241315+00:00"
+  },
+  "continuation_50k": {
+    "observed_at_utc": "2026-11-15T06:38:07.296890+00:00",
+    "kernel": "mohrezsayeh/geometry-pi-deeponet-continue-50k",
+    "version": 1,
+    "status": {
+      "status": "RUNNING",
+      "failureMessage": null
+    },
+    "runtime": "RUNTIME 0.11.1 [CudaDevice(id=0), CudaDevice(id=1)]",
+    "frozen_tests": "9 passed in 51.64s",
+    "resume_verification": {
+      "source_kernel": "mohrezsayeh/geometry-pi-deeponet-main",
+      "checkpoint_sha256": "a7e9e35b91d6e3c7f3a37404b940289427bfe78f9b38e39661c10382babd5235",
+      "start_step": 32216,
+      "additional_steps": 50000,
+      "target_step": 82216,
+      "optimizer_restored": true,
+      "rng_restored_by_trainer": true,
+      "dtype": "float32",
+      "source_revision": "f6b32ae7e95853f6e48142e822d6718597eb4708",
+      "max_training_seconds": 36000,
+      "global_batch": 32,
+      "interior_points": 128,
+      "outlet_points": 48
+    },
+    "first_logged_step": 32217,
+    "last_logged_step": 32310,
+    "additional_steps_observed": 94,
+    "last_logged_loss": 0.06484907120466232,
+    "last_step_seconds": 0.5231963659999792,
+    "submitted_script_sha256": "385516e3d2592cfdaf9a4c11e2d000abbd56ff3e91f02a38b5374cb7ac4b9999",
+    "target_completed": false
   }
 }
