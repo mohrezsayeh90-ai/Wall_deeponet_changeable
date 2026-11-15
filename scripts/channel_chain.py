@@ -95,11 +95,11 @@ def references(output,manifest,workers):
         for future in as_completed(futures):
             item=future.result();status[item['directory']]=item
             print(json.dumps(item),flush=True)
-            (output/'reference-status.json').write_text(json.dumps(dict(expected=15,completed=len(status),cases=[status[k] for k in sorted(status)]),indent=2)+'\n')
+            (output/'reference-status.json').write_text(json.dumps(dict(expected=len(manifest['cases']),completed=len(status),cases=[status[k] for k in sorted(status)]),indent=2)+'\n')
     if any(x['status']!='passed' for x in status.values()):raise RuntimeError('Unresolved FEM cases; see reference-status.json')
 
 
-def render(output,manifest,checkpoint):
+def render(output,manifest,checkpoint,summary_function=None,pdf_name='all_15_chains.pdf'):
     import matplotlib
     matplotlib.use('Agg')
     import matplotlib.pyplot as plt
@@ -117,7 +117,7 @@ def render(output,manifest,checkpoint):
     def walls_on(ax,x,b,t):
         ax.plot(x,b,color='#111827',lw=1.1);ax.plot(x,t,color='#111827',lw=1.1)
         ax.set(xlim=(0,5),ylim=(-.48,1.48),xlabel='x',ylabel='y',aspect='equal')
-    with PdfPages(output/'all_15_chains.pdf') as pdf:
+    with PdfPages(output/pdf_name) as pdf:
         for info in manifest['cases']:
             case=output/info['directory']
             with np.load(case/'geometry.npz',allow_pickle=False) as d:coeff=d['coeff'];x=d['x'];bottom=d['bottom'];top=d['top']
@@ -169,7 +169,7 @@ def render(output,manifest,checkpoint):
             fig.suptitle(f"Case {info['index']:02d}: {info['title']} | Re = 30",fontsize=18,fontweight='bold')
             fig.savefig(case/'chain.png',dpi=145);pdf.savefig(fig,dpi=145);plt.close(fig)
             print(json.dumps({'case':info['index'],'velocity_error':metrics['velocity_relative_l2'],'pressure_error':metrics['pressure_relative_l2']}),flush=True)
-    summarize(output,manifest,results,plt,colors)
+    (summary_function or summarize)(output,manifest,results,plt,colors)
 
 
 def summarize(output,manifest,records,plt,colors):

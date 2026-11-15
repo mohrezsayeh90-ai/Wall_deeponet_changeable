@@ -201,5 +201,22 @@
     "last_step_seconds": 0.5231963659999792,
     "submitted_script_sha256": "385516e3d2592cfdaf9a4c11e2d000abbd56ff3e91f02a38b5374cb7ac4b9999",
     "target_completed": false
+  },
+  "random_channel_chain_5": {
+    "directory": "reports/random_channel_chain_5",
+    "cases_verified": 5,
+    "figures_verified": 26,
+    "pdf_pages": 5,
+    "independent_error_recomputation": true,
+    "geometry_reference_identity_verified": true,
+    "unit_tests_passed": 13,
+    "old_15_case_artifact_checksums_unchanged": true,
+    "max_fem_mesh_discrepancy": 0.008177374471998058,
+    "velocity_relative_l2_range": [
+      0.020987140215125804,
+      0.12426185658137812
+    ],
+    "checkpoint_step": 32216,
+    "locked_test_used": false
   }
 }

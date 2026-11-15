@@ -1,0 +1,309 @@
+{
+  "expected": 5,
+  "passed": 5,
+  "failed": 0,
+  "checkpoint_sha256": "a7e9e35b91d6e3c7f3a37404b940289427bfe78f9b38e39661c10382babd5235",
+  "checkpoint_step": 32216,
+  "reynolds": 30.0,
+  "seed": 2026111505,
+  "accepted_model": false,
+  "locked_test_used": false,
+  "all_fem_mesh_checks_passed": true,
+  "cases": [
+    {
+      "index": 1,
+      "slug": "roof_plateau",
+      "title": "Rounded plateau roof",
+      "directory": "01_roof_plateau",
+      "reynolds": 30.0,
+      "geometry_id": "570bf536cd82f8d0fd0937a91721db7e78ee24a3c6b9e7e0f0e722fe89be9679",
+      "descriptors": {
+        "min_gap": 1.0,
+        "max_gap": 1.279895930728726,
+        "center_deviation": 0.13994796536436302,
+        "max_slope": 0.5052796643411491,
+        "max_curvature": 3.361410790313214
+      },
+      "amplitude_scale": 1.0,
+      "status": "passed",
+      "checkpoint_sha256": "a7e9e35b91d6e3c7f3a37404b940289427bfe78f9b38e39661c10382babd5235",
+      "metrics": {
+        "velocity_relative_l2": 0.12426185658137812,
+        "u_relative_l2": 0.11968194624694685,
+        "v_absolute_rms": 0.03328334035361138,
+        "pressure_relative_l2": 0.25363680831737817,
+        "speed_relative_l2": 0.12002762418423144,
+        "velocity_absolute_rms": 0.11998860660751637,
+        "pressure_absolute_rms": 0.2415849624488444,
+        "velocity_max_abs_at_quadrature": 0.304585782381,
+        "pressure_max_abs_at_quadrature": 0.35304190680751646,
+        "pressure_drop_predicted": 0.9785629897277726,
+        "pressure_drop_reference": 1.2533747729036533,
+        "pressure_drop_relative": 0.21925747120251435,
+        "physical_area_evaluated": 5.744500339730867,
+        "common_domain_excluded_area_fraction": 0.0
+      },
+      "mesh_uncertainty": {
+        "velocity": 0.0008923382418188436,
+        "pressure": 0.0013194781714389275,
+        "pressure_drop": 0.0006769263705088151
+      },
+      "fem_coarse": {
+        "nx": 40,
+        "ny": 12,
+        "iterations": 51,
+        "algebraic_residual": 3.6803689306206065e-09,
+        "seconds": 2.1101945449991035,
+        "velocity_dofs": 4050,
+        "pressure_dofs": 533,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "fem_fine": {
+        "nx": 80,
+        "ny": 24,
+        "iterations": 51,
+        "algebraic_residual": 1.8712044386026622e-09,
+        "seconds": 13.459298023999509,
+        "velocity_dofs": 15778,
+        "pressure_dofs": 2025,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      }
+    },
+    {
+      "index": 2,
+      "slug": "chirped_wave",
+      "title": "Waves with changing wavelength",
+      "directory": "02_chirped_wave",
+      "reynolds": 30.0,
+      "geometry_id": "ed3ef26f3b4c5da3ca80b391fa06c1646fc6aedc84db3c94ca50ec01cf777c36",
+      "descriptors": {
+        "min_gap": 0.7757467261358204,
+        "max_gap": 1.168279722582958,
+        "center_deviation": 0.0410817630438538,
+        "max_slope": 0.6929416405037261,
+        "max_curvature": 4.529837306387772
+      },
+      "amplitude_scale": 1.0,
+      "status": "passed",
+      "checkpoint_sha256": "a7e9e35b91d6e3c7f3a37404b940289427bfe78f9b38e39661c10382babd5235",
+      "metrics": {
+        "velocity_relative_l2": 0.03936754469761786,
+        "u_relative_l2": 0.03535885825715862,
+        "v_absolute_rms": 0.01923545494711491,
+        "pressure_relative_l2": 0.04415182077220688,
+        "speed_relative_l2": 0.035951275039924624,
+        "velocity_absolute_rms": 0.043609765679662564,
+        "pressure_absolute_rms": 0.056932783077051914,
+        "velocity_max_abs_at_quadrature": 0.18738569340126768,
+        "pressure_max_abs_at_quadrature": 0.15925779273060603,
+        "pressure_drop_predicted": 1.9668576099530566,
+        "pressure_drop_reference": 2.0154616968634627,
+        "pressure_drop_relative": 0.02411560933459841,
+        "physical_area_evaluated": 5.009164638125312,
+        "common_domain_excluded_area_fraction": 0.0013048543874707187
+      },
+      "mesh_uncertainty": {
+        "velocity": 0.004563779325038956,
+        "pressure": 0.008177374471998058,
+        "pressure_drop": 0.00705321696175947
+      },
+      "fem_coarse": {
+        "nx": 40,
+        "ny": 12,
+        "iterations": 48,
+        "algebraic_residual": 3.3477041116277726e-09,
+        "seconds": 1.9488118970002688,
+        "velocity_dofs": 4050,
+        "pressure_dofs": 533,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "fem_fine": {
+        "nx": 80,
+        "ny": 24,
+        "iterations": 48,
+        "algebraic_residual": 1.909904755948401e-09,
+        "seconds": 12.718723515999955,
+        "velocity_dofs": 15778,
+        "pressure_dofs": 2025,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      }
+    },
+    {
+      "index": 3,
+      "slug": "stepped_s_bend",
+      "title": "Rounded stepped S-shaped walls",
+      "directory": "03_stepped_s_bend",
+      "reynolds": 30.0,
+      "geometry_id": "78175c18af98a9f1d06bcd4e0e6859237f4994656794fb63806f481ad9ee57f7",
+      "descriptors": {
+        "min_gap": 0.7829532439071148,
+        "max_gap": 1.0320414077333853,
+        "center_deviation": 0.03288672529188577,
+        "max_slope": 0.2649965876480106,
+        "max_curvature": 1.1857541474519016
+      },
+      "amplitude_scale": 1.0,
+      "status": "passed",
+      "checkpoint_sha256": "a7e9e35b91d6e3c7f3a37404b940289427bfe78f9b38e39661c10382babd5235",
+      "metrics": {
+        "velocity_relative_l2": 0.020987140215125804,
+        "u_relative_l2": 0.020373966183086383,
+        "v_absolute_rms": 0.005879496666700059,
+        "pressure_relative_l2": 0.02898867202735019,
+        "speed_relative_l2": 0.020448281978652297,
+        "velocity_absolute_rms": 0.024327060968648284,
+        "pressure_absolute_rms": 0.04135287545320079,
+        "velocity_max_abs_at_quadrature": 0.0603608716050822,
+        "pressure_max_abs_at_quadrature": 0.07300702172572099,
+        "pressure_drop_predicted": 2.3407008657317263,
+        "pressure_drop_reference": 2.292214043900448,
+        "pressure_drop_relative": 0.021152833418982393,
+        "physical_area_evaluated": 4.75772452960002,
+        "common_domain_excluded_area_fraction": 0.0
+      },
+      "mesh_uncertainty": {
+        "velocity": 0.0005949382843722581,
+        "pressure": 0.0008838690870642063,
+        "pressure_drop": 0.000726280146722577
+      },
+      "fem_coarse": {
+        "nx": 40,
+        "ny": 12,
+        "iterations": 49,
+        "algebraic_residual": 2.9904172626603525e-09,
+        "seconds": 1.7304909729991778,
+        "velocity_dofs": 4050,
+        "pressure_dofs": 533,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "fem_fine": {
+        "nx": 80,
+        "ny": 24,
+        "iterations": 49,
+        "algebraic_residual": 1.5404326872785934e-09,
+        "seconds": 12.364807569998447,
+        "velocity_dofs": 15778,
+        "pressure_dofs": 2025,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      }
+    },
+    {
+      "index": 4,
+      "slug": "random_spline",
+      "title": "Independent irregular spline walls",
+      "directory": "04_random_spline",
+      "reynolds": 30.0,
+      "geometry_id": "176bd34a5af702fd8fd513ea950f47534a05a9a58686f88df39edd26fa9fe32e",
+      "descriptors": {
+        "min_gap": 0.9271055381841712,
+        "max_gap": 1.1643025600175059,
+        "center_deviation": 0.06650022576581646,
+        "max_slope": 0.699,
+        "max_curvature": 8.389763281425324
+      },
+      "amplitude_scale": 0.4204794991352933,
+      "status": "passed",
+      "checkpoint_sha256": "a7e9e35b91d6e3c7f3a37404b940289427bfe78f9b38e39661c10382babd5235",
+      "metrics": {
+        "velocity_relative_l2": 0.033233095373931015,
+        "u_relative_l2": 0.029762166674997013,
+        "v_absolute_rms": 0.016254673280749875,
+        "pressure_relative_l2": 0.0339871728669955,
+        "speed_relative_l2": 0.030017158302781673,
+        "velocity_absolute_rms": 0.036474330715718754,
+        "pressure_absolute_rms": 0.04042570949823909,
+        "velocity_max_abs_at_quadrature": 0.14359169191986157,
+        "pressure_max_abs_at_quadrature": 0.11724565018788047,
+        "pressure_drop_predicted": 1.838361439051656,
+        "pressure_drop_reference": 1.8717006012330024,
+        "pressure_drop_relative": 0.017812230310437382,
+        "physical_area_evaluated": 5.023223146881012,
+        "common_domain_excluded_area_fraction": 0.0001886435997073052
+      },
+      "mesh_uncertainty": {
+        "velocity": 0.004049229601166668,
+        "pressure": 0.005690994183910211,
+        "pressure_drop": 0.004425322734003675
+      },
+      "fem_coarse": {
+        "nx": 40,
+        "ny": 12,
+        "iterations": 48,
+        "algebraic_residual": 3.0652987860227406e-09,
+        "seconds": 1.7609150050011522,
+        "velocity_dofs": 4050,
+        "pressure_dofs": 533,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "fem_fine": {
+        "nx": 80,
+        "ny": 24,
+        "iterations": 48,
+        "algebraic_residual": 1.5959919211897515e-09,
+        "seconds": 12.73701353800061,
+        "velocity_dofs": 15778,
+        "pressure_dofs": 2025,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      }
+    },
+    {
+      "index": 5,
+      "slug": "random_fourier",
+      "title": "Independent random Fourier walls",
+      "directory": "05_random_fourier",
+      "reynolds": 30.0,
+      "geometry_id": "51636036a4fbdeb99d551eb5c8bb907a9652ce81b3370d50337f2cad3a0d206b",
+      "descriptors": {
+        "min_gap": 0.6642703359834878,
+        "max_gap": 1.1204100772775691,
+        "center_deviation": 0.11810449236797978,
+        "max_slope": 0.699,
+        "max_curvature": 2.3967566165205483
+      },
+      "amplitude_scale": 0.772523317617625,
+      "status": "passed",
+      "checkpoint_sha256": "a7e9e35b91d6e3c7f3a37404b940289427bfe78f9b38e39661c10382babd5235",
+      "metrics": {
+        "velocity_relative_l2": 0.05493954240509104,
+        "u_relative_l2": 0.05267215493303148,
+        "v_absolute_rms": 0.018720823126509075,
+        "pressure_relative_l2": 0.020628716717836507,
+        "speed_relative_l2": 0.05246786022115314,
+        "velocity_absolute_rms": 0.06393258215062765,
+        "pressure_absolute_rms": 0.03309522333446479,
+        "velocity_max_abs_at_quadrature": 0.2516289398824322,
+        "pressure_max_abs_at_quadrature": 0.1351685982077745,
+        "pressure_drop_predicted": 2.6153292746781247,
+        "pressure_drop_reference": 2.56675738104313,
+        "pressure_drop_relative": 0.018923445586919944,
+        "physical_area_evaluated": 4.813717244431074,
+        "common_domain_excluded_area_fraction": 0.0008084741273130016
+      },
+      "mesh_uncertainty": {
+        "velocity": 0.0029366350549534645,
+        "pressure": 0.00553140043461247,
+        "pressure_drop": 0.004632484087166481
+      },
+      "fem_coarse": {
+        "nx": 40,
+        "ny": 12,
+        "iterations": 56,
+        "algebraic_residual": 5.277375965629465e-09,
+        "seconds": 2.022846752000987,
+        "velocity_dofs": 4050,
+        "pressure_dofs": 533,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "fem_fine": {
+        "nx": 80,
+        "ny": 24,
+        "iterations": 56,
+        "algebraic_residual": 2.8224886808857034e-09,
+        "seconds": 14.33936661900043,
+        "velocity_dofs": 15778,
+        "pressure_dofs": 2025,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      }
+    }
+  ]
+}

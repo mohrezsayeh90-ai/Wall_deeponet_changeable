@@ -23,6 +23,12 @@ The figures and model artifacts below still refer to the completed original run.
 
 Training uses random batches with replacement and fresh Re/collocation points, so the primary axis is optimizer updates. The secondary axis shows equivalent geometry-pool passes, not actual epochs. All 3,222 logged records are preserved; no training-time FEM validation curve was recorded.
 
+## Five different random wall-shape examples
+
+[پنج هندسهٔ متفاوت و زنجیرهٔ کامل نتایج](reports/random_channel_chain_5/README.md) · [نمای هندسه‌ها](reports/random_channel_chain_5/geometry_overview.png) · [PDF پنج مقایسه](reports/random_channel_chain_5/all_5_chains.pdf)
+
+These seeded examples use a plateau roof, chirped waves, rounded steps, irregular spline walls and random Fourier mixtures. The operator predicts flow given wall geometry; it is not restricted to the repeated bump shapes used in the first gallery. All cases remain smooth single channels inside the declared geometric envelope. FEM errors are measured rather than assuming accuracy from valid geometry.
+
 ## 15 channel result chains
 
 برای **۱۵ کانال از ساده تا پیچیده**، زنجیرهٔ «هندسه ← سرعت و فشار مدل ← حل مستقل FEM ← نقشه و معیارهای خطا» آماده شده است. عدد رینولدز همهٔ موارد **۳۰** است و از وزن‌های ثابت موجود استفاده شده؛ آموزش جدیدی انجام نشده است.

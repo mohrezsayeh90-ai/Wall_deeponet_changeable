@@ -1,0 +1,59 @@
+{
+  "index": 3,
+  "slug": "stepped_s_bend",
+  "title": "Rounded stepped S-shaped walls",
+  "directory": "03_stepped_s_bend",
+  "reynolds": 30.0,
+  "geometry_id": "78175c18af98a9f1d06bcd4e0e6859237f4994656794fb63806f481ad9ee57f7",
+  "descriptors": {
+    "min_gap": 0.7829532439071148,
+    "max_gap": 1.0320414077333853,
+    "center_deviation": 0.03288672529188577,
+    "max_slope": 0.2649965876480106,
+    "max_curvature": 1.1857541474519016
+  },
+  "amplitude_scale": 1.0,
+  "status": "passed",
+  "checkpoint_sha256": "a7e9e35b91d6e3c7f3a37404b940289427bfe78f9b38e39661c10382babd5235",
+  "metrics": {
+    "velocity_relative_l2": 0.020987140215125804,
+    "u_relative_l2": 0.020373966183086383,
+    "v_absolute_rms": 0.005879496666700059,
+    "pressure_relative_l2": 0.02898867202735019,
+    "speed_relative_l2": 0.020448281978652297,
+    "velocity_absolute_rms": 0.024327060968648284,
+    "pressure_absolute_rms": 0.04135287545320079,
+    "velocity_max_abs_at_quadrature": 0.0603608716050822,
+    "pressure_max_abs_at_quadrature": 0.07300702172572099,
+    "pressure_drop_predicted": 2.3407008657317263,
+    "pressure_drop_reference": 2.292214043900448,
+    "pressure_drop_relative": 0.021152833418982393,
+    "physical_area_evaluated": 4.75772452960002,
+    "common_domain_excluded_area_fraction": 0.0
+  },
+  "mesh_uncertainty": {
+    "velocity": 0.0005949382843722581,
+    "pressure": 0.0008838690870642063,
+    "pressure_drop": 0.000726280146722577
+  },
+  "fem_coarse": {
+    "nx": 40,
+    "ny": 12,
+    "iterations": 49,
+    "algebraic_residual": 2.9904172626603525e-09,
+    "seconds": 1.7304909729991778,
+    "velocity_dofs": 4050,
+    "pressure_dofs": 533,
+    "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+  },
+  "fem_fine": {
+    "nx": 80,
+    "ny": 24,
+    "iterations": 49,
+    "algebraic_residual": 1.5404326872785934e-09,
+    "seconds": 12.364807569998447,
+    "velocity_dofs": 15778,
+    "pressure_dofs": 2025,
+    "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+  }
+}

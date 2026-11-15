@@ -1,0 +1,59 @@
+{
+  "index": 5,
+  "slug": "random_fourier",
+  "title": "Independent random Fourier walls",
+  "directory": "05_random_fourier",
+  "reynolds": 30.0,
+  "geometry_id": "51636036a4fbdeb99d551eb5c8bb907a9652ce81b3370d50337f2cad3a0d206b",
+  "descriptors": {
+    "min_gap": 0.6642703359834878,
+    "max_gap": 1.1204100772775691,
+    "center_deviation": 0.11810449236797978,
+    "max_slope": 0.699,
+    "max_curvature": 2.3967566165205483
+  },
+  "amplitude_scale": 0.772523317617625,
+  "status": "passed",
+  "checkpoint_sha256": "a7e9e35b91d6e3c7f3a37404b940289427bfe78f9b38e39661c10382babd5235",
+  "metrics": {
+    "velocity_relative_l2": 0.05493954240509104,
+    "u_relative_l2": 0.05267215493303148,
+    "v_absolute_rms": 0.018720823126509075,
+    "pressure_relative_l2": 0.020628716717836507,
+    "speed_relative_l2": 0.05246786022115314,
+    "velocity_absolute_rms": 0.06393258215062765,
+    "pressure_absolute_rms": 0.03309522333446479,
+    "velocity_max_abs_at_quadrature": 0.2516289398824322,
+    "pressure_max_abs_at_quadrature": 0.1351685982077745,
+    "pressure_drop_predicted": 2.6153292746781247,
+    "pressure_drop_reference": 2.56675738104313,
+    "pressure_drop_relative": 0.018923445586919944,
+    "physical_area_evaluated": 4.813717244431074,
+    "common_domain_excluded_area_fraction": 0.0008084741273130016
+  },
+  "mesh_uncertainty": {
+    "velocity": 0.0029366350549534645,
+    "pressure": 0.00553140043461247,
+    "pressure_drop": 0.004632484087166481
+  },
+  "fem_coarse": {
+    "nx": 40,
+    "ny": 12,
+    "iterations": 56,
+    "algebraic_residual": 5.277375965629465e-09,
+    "seconds": 2.022846752000987,
+    "velocity_dofs": 4050,
+    "pressure_dofs": 533,
+    "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+  },
+  "fem_fine": {
+    "nx": 80,
+    "ny": 24,
+    "iterations": 56,
+    "algebraic_residual": 2.8224886808857034e-09,
+    "seconds": 14.33936661900043,
+    "velocity_dofs": 15778,
+    "pressure_dofs": 2025,
+    "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+  }
+}
