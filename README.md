@@ -31,6 +31,8 @@ These seeded examples use a plateau roof, chirped waves, rounded steps, irregula
 
 ## 15 channel result chains
 
+[نمودار تغییر خطای u، v، فشار و سرعت در ترتیب ساده‌به‌پیچیده](reports/complexity_error_curves_15/README.md) · [PDF نمودارها](reports/complexity_error_curves_15/error_dashboard.pdf)
+
 برای **۱۵ کانال از ساده تا پیچیده**، زنجیرهٔ «هندسه ← سرعت و فشار مدل ← حل مستقل FEM ← نقشه و معیارهای خطا» آماده شده است. عدد رینولدز همهٔ موارد **۳۰** است و از وزن‌های ثابت موجود استفاده شده؛ آموزش جدیدی انجام نشده است.
 
 - [گالری کامل ۱۵ زنجیره در گیت‌هاب](reports/channel_chain_15/README.md)
