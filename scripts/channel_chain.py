@@ -176,7 +176,7 @@ def summarize(output,manifest,records,plt,colors):
     import csv,html
     metrics=['velocity_relative_l2','pressure_relative_l2','pressure_drop_relative','v_absolute_rms']
     with (output/'summary.csv').open('w',newline='') as f:
-        writer=csv.DictWriter(f,fieldnames=['index','title','reynolds']+metrics+['mesh_velocity_uncertainty','mesh_pressure_uncertainty','mesh_drop_uncertainty'])
+        writer=csv.DictWriter(f,lineterminator='\n',fieldnames=['index','title','reynolds']+metrics+['mesh_velocity_uncertainty','mesh_pressure_uncertainty','mesh_drop_uncertainty'])
         writer.writeheader()
         for r in records:writer.writerow({**{k:r[k] for k in ['index','title','reynolds']},**{k:r['metrics'][k] for k in metrics},**{'mesh_'+n+'_uncertainty':r['mesh_uncertainty'][m] for n,m in [('velocity','velocity'),('pressure','pressure'),('drop','pressure_drop')]}})
     report=dict(checkpoint_sha256=manifest['checkpoint_sha256'],checkpoint_step=32216,reynolds=30.,expected=15,passed=len(records),failed=15-len(records),all_fem_mesh_checks_passed=all(max(r['mesh_uncertainty'].values())<=.01 for r in records),locked_test_used=False,accepted_model=False,case_selection=manifest['selection'],cases=records)

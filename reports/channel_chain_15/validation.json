@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-11-15T06:20:48.241315+00:00",
+  "checked_at_utc": "2026-11-15T06:22:32.201241+00:00",
   "cases_verified": 15,
   "distinct_geometries": 15,
   "figures_verified": 77,
@@ -16,7 +16,7 @@
   "unit_tests_passed": 13,
   "unit_tests_failed": 0,
   "checkpoint_sha256": "a7e9e35b91d6e3c7f3a37404b940289427bfe78f9b38e39661c10382babd5235",
-  "generator_sha256": "6a78912e45832134e59864bf4aa2c19d3bd153d55faf99d4ad8f5c5ecffb2f24",
+  "generator_sha256": "fa47d95782a1dbec1208bb804ab1281ee0589ef55e376b8ad0902d564c15ecea",
   "environment": {
     "python": "3.12.14",
     "jax": "0.4.38",
