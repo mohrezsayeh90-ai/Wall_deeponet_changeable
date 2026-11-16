@@ -25,7 +25,7 @@ def render_zoom():
     for ax,field,label in zip(axes,fields,['PINN / DeepONet','Independent FEM']):
         u=np.ma.masked_invalid(field[:,:,0]);v=np.ma.masked_invalid(field[:,:,1])
         pc=ax.pcolormesh(x,y,u,cmap='coolwarm',norm=TwoSlopeNorm(vmin=-.035,vcenter=0,vmax=.15),shading='auto',rasterized=True)
-        ax.streamplot(x,y,u,v,color='#111827',density=(4,3),linewidth=.7,arrowsize=.9)
+        ax.streamplot(x,y,u,v,color='#111827',density=(7,6),linewidth=.5,arrowsize=.75)
         ax.contour(x,y,u,levels=[-.001],colors=['#dc2626'],linewidths=1.4)
         ax.plot(x,b,'k',lw=2);ax.fill_between(x,0,b,color='#d1d5db',zorder=4)
         ax.set(xlim=(2.2,3.4),ylim=(0,.27),aspect='equal',xlabel='x',ylabel='y',title=label)

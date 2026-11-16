@@ -30,7 +30,7 @@ def main():
         ax=fig.add_subplot(gs[row])
         u=np.ma.masked_invalid(field[:,:,0]);v=np.ma.masked_invalid(field[:,:,1])
         pc=ax.pcolormesh(x,y,u,cmap='coolwarm',norm=TwoSlopeNorm(vmin=-.035,vcenter=0,vmax=.3),shading='auto',rasterized=True)
-        ax.streamplot(x,y,u,v,color='#172554',density=(4,3),linewidth=.8,arrowsize=1.)
+        ax.streamplot(x,y,u,v,color='#172554',density=(7,6),linewidth=.55,arrowsize=.8)
         ax.contour(x,y,u,levels=[-.001],colors=['#dc2626'],linewidths=1.5)
         ax.plot(x,b,color='black',lw=2.2)
         ax.fill_between(x,-.02,b,color='#cbd5e1',zorder=4)
