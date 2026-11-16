@@ -1,0 +1,15 @@
+{
+  "source_kernel": "mohrezsayeh/geometry-pi-deeponet-continue-50k",
+  "checkpoint_sha256": "84276c11feecd5bf230c79d1077250018b356ae118491678a4ed69e46ab83140",
+  "start_step": 82216,
+  "additional_steps": 50000,
+  "target_step": 132216,
+  "optimizer_restored": true,
+  "rng_restored_by_trainer": true,
+  "dtype": "float32",
+  "source_revision": "f6b32ae7e95853f6e48142e822d6718597eb4708",
+  "max_training_seconds": 36000,
+  "global_batch": 32,
+  "interior_points": 128,
+  "outlet_points": 48
+}

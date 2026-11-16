@@ -1,0 +1,61 @@
+{
+  "index": 8,
+  "slug": "s_bend",
+  "title": "Constant-gap S bend",
+  "geometry_id": "64b67cfff4f679ee575eb92b651ea1a8bc5833277253db577b11bef3322dab38",
+  "reynolds": 30.0,
+  "amplitude_scale": 1.0,
+  "descriptors": {
+    "min_gap": 1.0,
+    "max_gap": 1.0,
+    "center_deviation": 0.14930206537715413,
+    "max_slope": 0.46073869120994465,
+    "max_curvature": 3.9765542337355693
+  },
+  "directory": "08_s_bend",
+  "original_index": 8,
+  "source_group": "channel_chain_15",
+  "status": "passed",
+  "checkpoint_sha256": "dabe75cd4121d1f4c6e2c920dced4c38cf033e2da7b1d74c4805ee90cf1e1544",
+  "metrics": {
+    "velocity_relative_l2": 0.021067472354155865,
+    "u_relative_l2": 0.01976902822850742,
+    "v_absolute_rms": 0.00832904937796464,
+    "pressure_relative_l2": 0.018534467372397504,
+    "speed_relative_l2": 0.01953873093636164,
+    "velocity_absolute_rms": 0.023386047039502693,
+    "pressure_absolute_rms": 0.02328547582644086,
+    "velocity_max_abs_at_quadrature": 0.06401340186524901,
+    "pressure_max_abs_at_quadrature": 0.07167452015335177,
+    "pressure_drop_predicted": 1.9629487260105485,
+    "pressure_drop_reference": 1.9953658715191125,
+    "pressure_drop_relative": 0.016246216281069384,
+    "physical_area_evaluated": 4.993373064360492,
+    "common_domain_excluded_area_fraction": 0.0013253871279015703
+  },
+  "mesh_uncertainty": {
+    "velocity": 0.0026192945557784817,
+    "pressure": 0.004472455102278146,
+    "pressure_drop": 0.00354063569234242
+  },
+  "fem_coarse": {
+    "nx": 40,
+    "ny": 12,
+    "iterations": 53,
+    "algebraic_residual": 2.35032262135617e-09,
+    "seconds": 1.7966376220000484,
+    "velocity_dofs": 4050,
+    "pressure_dofs": 533,
+    "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+  },
+  "fem_fine": {
+    "nx": 80,
+    "ny": 24,
+    "iterations": 53,
+    "algebraic_residual": 1.2137324335093048e-09,
+    "seconds": 13.361813416000018,
+    "velocity_dofs": 15778,
+    "pressure_dofs": 2025,
+    "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+  }
+}

@@ -2,7 +2,13 @@
 
 اپراتور فیزیک‌آگاه برای جریان پایای دوبعدی در کانالی با **دو دیوارهٔ مستقل** و `10 <= Re <= 100`؛ یک checkpoint برای همهٔ هندسه‌ها. مشخصات درخواست در [سند پروژه](reports/PROJECT_SPECIFICATION.md) حفظ شده است.
 
-**وضعیت: ادامهٔ ۵۰هزارگامی کامل شده است؛ آخرین checkpoint در گام ۸۲٬۲۱۶ ذخیره شده و تمام خروجی‌های اجرای جدید در مخزن موجودند. پایلوت FEM بهبود یافته، اما مدل هنوز تأیید نهایی نشده است.** [وضعیت ماشین‌خوان](STATUS.json) و [گزارش پیشرفت](reports/PROGRESS.md) میان موفقیت کد، پایان آموزش و صحت میدان تفاوت می‌گذارند. این مخزن بازتولید آمادهٔ حل NS از مقاله نیست؛ سازگارکردن جدید آن برای هندسهٔ متغیر است.
+**وضعیت: ادامهٔ دوم Adam کامل شد؛ وزن نهایی گام ۱۳۲٬۲۱۶ و همهٔ خروجی‌های ران دریافت و بررسی شدند. مقایسهٔ سه مرحله و تصاویر جدید آماده‌اند؛ مدل هنوز تأیید نهایی نشده است.** [وضعیت ماشین‌خوان](STATUS.json) و [گزارش پیشرفت](reports/PROGRESS.md) میان موفقیت کد، پایان آموزش و صحت میدان تفاوت می‌گذارند. این مخزن بازتولید آمادهٔ حل NS از مقاله نیست؛ سازگارکردن جدید آن برای هندسهٔ متغیر است.
+
+## نتایج جدید گام ۱۳۲٬۲۱۶ و مقایسهٔ سه مرحله
+
+[گزارش کامل ۲۰ حالت](reports/adam_next50k_comparison/README.md) · [نمودار خطای سه مرحله](reports/adam_next50k_comparison/three_stage_errors.png) · [PDF شش نمونهٔ تصادفی زنجیره‌ای](reports/adam_next50k_comparison/selected/six_random_chains.pdf) · [دانلود کامل تصاویر و داده‌ها](reports/adam_next50k_comparison/three_stage_20_cases.zip).
+
+با همان FEM، هندسه و Re=30، میانهٔ خطای L2 سرعت در گام‌های ۳۲٬۲۱۶ ← ۸۲٬۲۱۶ ← ۱۳۲٬۲۱۶ برابر **۳٫۲۷٪ ← ۱٫۹۹٪ ← ۱٫۷۹٪** و فشار **۴٫۷۳٪ ← ۲٫۷۳٪ ← ۲٫۲۳٪** است. نسبت به مرحلهٔ قبل، سرعت در **۱۳ از ۲۰** و فشار در **۱۴ از ۲۰** حالت بهتر شده است؛ پسرفت‌های سایر موارد نیز گزارش شده‌اند. داده‌ها و نتایج قدیمی حفظ شده‌اند.
 
 ## دو پلهٔ نرم و جریان بین آن‌ها
 
@@ -33,11 +39,11 @@
 - [گالری هشت خانوادهٔ دیواره](reports/geometry_gallery.png).
 - [شناسه‌ها، پارامترهای هندسی و هش مجموعه‌های ثابت](reports/split_manifest.json).
 
-## New Adam continuation: target 132,216
+## Completed new Adam continuation: 132,216
 
-ادامهٔ آموزش با **Adam** از وزن موفقِ گام **۸۲٬۲۱۶**، برای **۵۰هزار گام دیگر** و هدف **۱۳۲٬۲۱۶** ثبت شده است. [اجرای Kaggle](https://www.kaggle.com/code/mohrezsayeh/geometry-pi-deeponet-adam-next50k) · [تنظیمات و وضعیت مشاهده‌شده](reports/adam_next50k/README.md).
+ادامهٔ آموزش با **Adam** از وزن موفقِ گام **۸۲٬۲۱۶**، برای **۵۰هزار گام دیگر** اجرا شد و دقیقاً در گام **۱۳۲٬۲۱۶** به پایان رسید. [اجرای Kaggle](https://www.kaggle.com/code/mohrezsayeh/geometry-pi-deeponet-adam-next50k) · [تنظیمات و وضعیت مشاهده‌شده](reports/adam_next50k/README.md).
 
-The original float32 trainer, random sampling, batch 32, Adam moments, RNG and global learning-rate schedule are retained. The L-BFGS checkpoint is not used. Last collected weights remain Adam step 82,216; completion of the new run is not claimed before its final checkpoint is retrieved.
+The original float32 trainer, random sampling, batch 32, Adam moments, RNG and global learning-rate schedule are retained. The L-BFGS checkpoint is not used. The final Adam checkpoint at step 132,216 has been retrieved and verified; see the completion record and three-stage comparison above.
 
 ## L-BFGS experiment — not adopted
 

@@ -1,0 +1,51 @@
+{
+  "case_id": 12,
+  "group": "channel_chain_15",
+  "original_index": 12,
+  "directory": "12_triple_constriction",
+  "title": "Three symmetric constrictions",
+  "result_directory": "cases/12_triple_constriction",
+  "selected_for_chain": false,
+  "metrics": {
+    "32216": {
+      "velocity_relative_l2": 0.0747974241235437,
+      "u_relative_l2": 0.07185494194885497,
+      "v_absolute_rms": 0.025456823284765954,
+      "pressure_relative_l2": 0.16086903572244202,
+      "pressure_drop_relative": 0.1368038621103199,
+      "velocity_mae": 0.06886599807323061,
+      "pressure_mae": 0.2176805087587311,
+      "velocity_relative_l1": 0.06290400393228517,
+      "pressure_relative_l1": 0.16756193686141171
+    },
+    "82216": {
+      "velocity_relative_l2": 0.030424334696404716,
+      "u_relative_l2": 0.028656500723320554,
+      "v_absolute_rms": 0.012484047938916606,
+      "pressure_relative_l2": 0.028028037073183416,
+      "pressure_drop_relative": 0.015608042982300133,
+      "velocity_mae": 0.027419168480925075,
+      "pressure_mae": 0.03861457621791689,
+      "velocity_relative_l1": 0.025045385679446787,
+      "pressure_relative_l1": 0.029723989616949286
+    },
+    "132216": {
+      "velocity_relative_l2": 0.0374712827309087,
+      "u_relative_l2": 0.03490514145573323,
+      "v_absolute_rms": 0.016630549518264065,
+      "pressure_relative_l2": 0.045393867950038046,
+      "pressure_drop_relative": 0.026840859739155606,
+      "velocity_mae": 0.033959731354854306,
+      "pressure_mae": 0.062055995083676735,
+      "velocity_relative_l1": 0.03101970688660478,
+      "pressure_relative_l1": 0.04776827649556863
+    }
+  },
+  "reference_sha256": "5ecf8a6b07632be0b001e58825898f597c9c6c69b8df5c6149fd259575a20403",
+  "geometry_sha256": "f3d7adff68c0fa7056444a6fb05bc4411c19690f9a2f5bdf3c68a76d54ad8b27",
+  "mesh_uncertainty": {
+    "velocity": 0.0029131099056252763,
+    "pressure": 0.005942147020136897,
+    "pressure_drop": 0.005639796071987251
+  }
+}

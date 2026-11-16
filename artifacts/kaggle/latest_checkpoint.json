@@ -1,9 +1,10 @@
 {
-  "path": "artifacts/kaggle/continue-50k-v1/checkpoint.npz",
-  "step": 82216,
-  "sha256": "84276c11feecd5bf230c79d1077250018b356ae118491678a4ed69e46ab83140",
+  "path": "artifacts/kaggle/adam-next50k-v1/checkpoint.npz",
+  "step": 132216,
+  "sha256": "dabe75cd4121d1f4c6e2c920dced4c38cf033e2da7b1d74c4805ee90cf1e1544",
   "accepted": false,
-  "description": "Latest collected research checkpoint; not full-development-selected or accepted.",
-  "original_checkpoint_path": "artifacts/kaggle/main-v1/checkpoint.npz",
-  "pilot_report": "artifacts/kaggle/continue-50k-v1/development/report.json"
+  "description": "Latest collected Adam research checkpoint; no passing full independent benchmark.",
+  "previous_checkpoint_path": "artifacts/kaggle/continue-50k-v1/checkpoint.npz",
+  "pilot_report": "artifacts/kaggle/adam-next50k-v1/development/report.json",
+  "original_checkpoint_path": "artifacts/kaggle/main-v1/checkpoint.npz"
 }

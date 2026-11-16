@@ -23,7 +23,6 @@
   "reference_development_generation": "No active reference-generation job in this task; historical local progress is retained separately from collected Kaggle outputs.",
   "baseline_lift_velocity_median": 0.06518807909744846,
   "remaining": [
-    "Requested additional 50,000 updates completed. Reaching the original 100,000-step research budget would require 17,784 more updates.",
     "Complete all 400 development FEM references and checkpoint/model selection",
     "Locked test and Reynolds sweeps after model selection",
     "Full stress benchmark with selected weights; existing stress examples use step 32,216",
@@ -316,17 +315,18 @@
     "new_training_performed": false,
     "checkpoint_step": 32216
   },
-  "latest_training_step": 82216,
+  "latest_training_step": 132216,
   "latest_checkpoint": {
-    "path": "artifacts/kaggle/continue-50k-v1/checkpoint.npz",
-    "step": 82216,
-    "sha256": "84276c11feecd5bf230c79d1077250018b356ae118491678a4ed69e46ab83140",
+    "path": "artifacts/kaggle/adam-next50k-v1/checkpoint.npz",
+    "step": 132216,
+    "sha256": "dabe75cd4121d1f4c6e2c920dced4c38cf033e2da7b1d74c4805ee90cf1e1544",
     "accepted": false,
-    "description": "Latest collected research checkpoint; not full-development-selected or accepted.",
-    "original_checkpoint_path": "artifacts/kaggle/main-v1/checkpoint.npz",
-    "pilot_report": "artifacts/kaggle/continue-50k-v1/development/report.json"
+    "description": "Latest collected Adam research checkpoint; no passing full independent benchmark.",
+    "previous_checkpoint_path": "artifacts/kaggle/continue-50k-v1/checkpoint.npz",
+    "pilot_report": "artifacts/kaggle/adam-next50k-v1/development/report.json",
+    "original_checkpoint_path": "artifacts/kaggle/main-v1/checkpoint.npz"
   },
-  "main_fields_scope": "The main_* fields describe the original main-v1 job. Latest collected research state is in continuation_50k and latest_checkpoint.",
+  "main_fields_scope": "The main_* fields describe original main-v1. Latest collected research state is in adam_next50k and latest_checkpoint; continuation_50k is the preserved first continuation.",
   "refreshed_25_cases": {
     "directory": "reports/checkpoint_82216",
     "checkpoint_step": 82216,
@@ -486,17 +486,23 @@
     "kernel": "mohrezsayeh/geometry-pi-deeponet-adam-next50k",
     "version": 1,
     "status": {
-      "status": "QUEUED",
+      "status": "COMPLETE",
       "failureMessage": null
     },
-    "observed_at_utc": "2026-11-16T08:19:23.970009+00:00",
+    "observed_at_utc": "2026-11-16T17:07:09.341307+00:00",
     "optimizer": "Adam",
     "start_step": 82216,
     "additional_steps": 50000,
     "target_step": 132216,
     "base_checkpoint_sha256": "84276c11feecd5bf230c79d1077250018b356ae118491678a4ed69e46ab83140",
     "lbfgs_weights_used": false,
-    "gpu_resume_verified": false,
-    "additional_updates_verified": 0
+    "gpu_resume_verified": true,
+    "additional_updates_verified": 50000,
+    "final_step": 132216,
+    "stop_reason": "target_completed",
+    "outputs_collected": true,
+    "artifact_directory": "artifacts/kaggle/adam-next50k-v1",
+    "checkpoint_sha256": "dabe75cd4121d1f4c6e2c920dced4c38cf033e2da7b1d74c4805ee90cf1e1544",
+    "comparison_report": "reports/adam_next50k_comparison/README.md"
   }
 }

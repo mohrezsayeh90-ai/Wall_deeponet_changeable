@@ -1,0 +1,23 @@
+{
+  "id": "mohrezsayeh/geometry-pi-deeponet-adam-next50k",
+  "id_no": 145356624,
+  "title": "Geometry PI DeepONet Adam Next50k",
+  "code_file": "geometry-pi-deeponet-adam-next50k.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [
+    "gpu"
+  ],
+  "dataset_sources": [],
+  "kernel_sources": [
+    "mohrezsayeh/geometry-pi-deeponet-continue-50k"
+  ],
+  "competition_sources": [],
+  "model_sources": [],
+  "docker_image": "gcr.io/kaggle-private-byod/python@sha256:de153e6d303881930c51286216393d56f56b26458d0661350305a1e8144eea01",
+  "machine_shape": "NvidiaTeslaT4"
+}

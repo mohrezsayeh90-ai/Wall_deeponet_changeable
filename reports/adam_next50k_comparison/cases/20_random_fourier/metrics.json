@@ -1,0 +1,51 @@
+{
+  "case_id": 20,
+  "group": "random_channel_chain_5",
+  "original_index": 5,
+  "directory": "05_random_fourier",
+  "title": "Independent random Fourier walls",
+  "result_directory": "cases/20_random_fourier",
+  "selected_for_chain": true,
+  "metrics": {
+    "32216": {
+      "velocity_relative_l2": 0.05493954240509104,
+      "u_relative_l2": 0.05267215493303148,
+      "v_absolute_rms": 0.018720823126509075,
+      "pressure_relative_l2": 0.020628716717836507,
+      "pressure_drop_relative": 0.018923445586919944,
+      "velocity_mae": 0.043543195531646026,
+      "pressure_mae": 0.026217904920447926,
+      "velocity_relative_l1": 0.04179239922406613,
+      "pressure_relative_l1": 0.020812579935282325
+    },
+    "82216": {
+      "velocity_relative_l2": 0.04704231532266075,
+      "u_relative_l2": 0.04523858440729891,
+      "v_absolute_rms": 0.01549823731995179,
+      "pressure_relative_l2": 0.03943999967879814,
+      "pressure_drop_relative": 0.03673453335726634,
+      "velocity_mae": 0.0373675860555593,
+      "pressure_mae": 0.05017546521729504,
+      "velocity_relative_l1": 0.03586510028503976,
+      "pressure_relative_l1": 0.03983082873301874
+    },
+    "132216": {
+      "velocity_relative_l2": 0.04757416788428595,
+      "u_relative_l2": 0.04557454697312027,
+      "v_absolute_rms": 0.016347631940724718,
+      "pressure_relative_l2": 0.03483624139335469,
+      "pressure_drop_relative": 0.031079985073745403,
+      "velocity_mae": 0.036570974014237034,
+      "pressure_mae": 0.0454645233081865,
+      "velocity_relative_l1": 0.035100518631094715,
+      "pressure_relative_l1": 0.03609113803876637
+    }
+  },
+  "reference_sha256": "a0a65f8e9b412b5f9579b7c2dfed8ac130108578e9244f8d7874f9b4ace50040",
+  "geometry_sha256": "22b5317036496b7ee0074c79028914746b1b08b7c673c9d801ce8a5e6a7738f2",
+  "mesh_uncertainty": {
+    "velocity": 0.0029366350549534645,
+    "pressure": 0.00553140043461247,
+    "pressure_drop": 0.004632484087166481
+  }
+}

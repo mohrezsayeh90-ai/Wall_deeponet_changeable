@@ -1,0 +1,51 @@
+{
+  "case_id": 9,
+  "group": "channel_chain_15",
+  "original_index": 9,
+  "directory": "09_double_constriction",
+  "title": "Two symmetric constrictions",
+  "result_directory": "cases/09_double_constriction",
+  "selected_for_chain": false,
+  "metrics": {
+    "32216": {
+      "velocity_relative_l2": 0.041679143142295136,
+      "u_relative_l2": 0.040935935067620624,
+      "v_absolute_rms": 0.009604353727478325,
+      "pressure_relative_l2": 0.10487173260868997,
+      "pressure_drop_relative": 0.09728614548242674,
+      "velocity_mae": 0.03925234114239775,
+      "pressure_mae": 0.1346374618554321,
+      "velocity_relative_l1": 0.03617518548600976,
+      "pressure_relative_l1": 0.10583909261815305
+    },
+    "82216": {
+      "velocity_relative_l2": 0.019779836108002824,
+      "u_relative_l2": 0.018691337300947384,
+      "v_absolute_rms": 0.007820915175010488,
+      "pressure_relative_l2": 0.009113383002027275,
+      "pressure_drop_relative": 0.0004136708644293336,
+      "velocity_mae": 0.017948292379403524,
+      "pressure_mae": 0.012564671541133169,
+      "velocity_relative_l1": 0.0165412504601094,
+      "pressure_relative_l1": 0.009877142785019102
+    },
+    "132216": {
+      "velocity_relative_l2": 0.016307470487517788,
+      "u_relative_l2": 0.015048764462664982,
+      "v_absolute_rms": 0.007577863965618942,
+      "pressure_relative_l2": 0.02813269353391168,
+      "pressure_drop_relative": 0.02454650983500501,
+      "velocity_mae": 0.01516209741020446,
+      "pressure_mae": 0.036172175290737685,
+      "velocity_relative_l1": 0.013973477000551448,
+      "pressure_relative_l1": 0.02843510385621542
+    }
+  },
+  "reference_sha256": "5a1581de97556ba9980e8d207a5f078c07149966c4012bf6257a696cb8a5621b",
+  "geometry_sha256": "06f964cf111e718f27f640e62d06e5d5b6841fa1571a8fd7e44dd454e902899f",
+  "mesh_uncertainty": {
+    "velocity": 0.0019027699587423057,
+    "pressure": 0.0039348319759200555,
+    "pressure_drop": 0.0031488279410200404
+  }
+}

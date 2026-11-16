@@ -1,0 +1,61 @@
+{
+  "index": 20,
+  "slug": "random_fourier",
+  "title": "Independent random Fourier walls",
+  "directory": "20_random_fourier",
+  "reynolds": 30.0,
+  "geometry_id": "51636036a4fbdeb99d551eb5c8bb907a9652ce81b3370d50337f2cad3a0d206b",
+  "descriptors": {
+    "min_gap": 0.6642703359834878,
+    "max_gap": 1.1204100772775691,
+    "center_deviation": 0.11810449236797978,
+    "max_slope": 0.699,
+    "max_curvature": 2.3967566165205483
+  },
+  "amplitude_scale": 0.772523317617625,
+  "original_index": 5,
+  "source_group": "random_channel_chain_5",
+  "status": "passed",
+  "checkpoint_sha256": "dabe75cd4121d1f4c6e2c920dced4c38cf033e2da7b1d74c4805ee90cf1e1544",
+  "metrics": {
+    "velocity_relative_l2": 0.04757416788428595,
+    "u_relative_l2": 0.04557454697312027,
+    "v_absolute_rms": 0.016347631940724718,
+    "pressure_relative_l2": 0.03483624139335469,
+    "speed_relative_l2": 0.04574959608955823,
+    "velocity_absolute_rms": 0.055361571344795454,
+    "pressure_absolute_rms": 0.05588874988280491,
+    "velocity_max_abs_at_quadrature": 0.22052692733322266,
+    "pressure_max_abs_at_quadrature": 0.09251671055296695,
+    "pressure_drop_predicted": 2.4869825999523836,
+    "pressure_drop_reference": 2.56675738104313,
+    "pressure_drop_relative": 0.031079985073745403,
+    "physical_area_evaluated": 4.813717244431074,
+    "common_domain_excluded_area_fraction": 0.0008084741273130016
+  },
+  "mesh_uncertainty": {
+    "velocity": 0.0029366350549534645,
+    "pressure": 0.00553140043461247,
+    "pressure_drop": 0.004632484087166481
+  },
+  "fem_coarse": {
+    "nx": 40,
+    "ny": 12,
+    "iterations": 56,
+    "algebraic_residual": 5.277375965629465e-09,
+    "seconds": 2.022846752000987,
+    "velocity_dofs": 4050,
+    "pressure_dofs": 533,
+    "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+  },
+  "fem_fine": {
+    "nx": 80,
+    "ny": 24,
+    "iterations": 56,
+    "algebraic_residual": 2.8224886808857034e-09,
+    "seconds": 14.33936661900043,
+    "velocity_dofs": 15778,
+    "pressure_dofs": 2025,
+    "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+  }
+}

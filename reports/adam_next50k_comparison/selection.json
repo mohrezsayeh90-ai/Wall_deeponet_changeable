@@ -1,0 +1,154 @@
+{
+  "seed": 20261116,
+  "selection_timing": "Selected before evaluating new checkpoint errors; no resampling by results.",
+  "population": [
+    {
+      "case_id": 1,
+      "group": "channel_chain_15",
+      "original_index": 1,
+      "directory": "01_straight",
+      "title": "Straight channel"
+    },
+    {
+      "case_id": 2,
+      "group": "channel_chain_15",
+      "original_index": 2,
+      "directory": "02_mild_constriction",
+      "title": "Mild symmetric constriction"
+    },
+    {
+      "case_id": 3,
+      "group": "channel_chain_15",
+      "original_index": 3,
+      "directory": "03_moderate_constriction",
+      "title": "Moderate symmetric constriction"
+    },
+    {
+      "case_id": 4,
+      "group": "channel_chain_15",
+      "original_index": 4,
+      "directory": "04_expansion",
+      "title": "Symmetric expansion"
+    },
+    {
+      "case_id": 5,
+      "group": "channel_chain_15",
+      "original_index": 5,
+      "directory": "05_bottom_bump",
+      "title": "One bump on bottom wall"
+    },
+    {
+      "case_id": 6,
+      "group": "channel_chain_15",
+      "original_index": 6,
+      "directory": "06_top_bump",
+      "title": "One bump on top wall"
+    },
+    {
+      "case_id": 7,
+      "group": "channel_chain_15",
+      "original_index": 7,
+      "directory": "07_centerline_bend",
+      "title": "Constant-gap centerline bend"
+    },
+    {
+      "case_id": 8,
+      "group": "channel_chain_15",
+      "original_index": 8,
+      "directory": "08_s_bend",
+      "title": "Constant-gap S bend"
+    },
+    {
+      "case_id": 9,
+      "group": "channel_chain_15",
+      "original_index": 9,
+      "directory": "09_double_constriction",
+      "title": "Two symmetric constrictions"
+    },
+    {
+      "case_id": 10,
+      "group": "channel_chain_15",
+      "original_index": 10,
+      "directory": "10_constriction_expansion",
+      "title": "Constriction followed by expansion"
+    },
+    {
+      "case_id": 11,
+      "group": "channel_chain_15",
+      "original_index": 11,
+      "directory": "11_staggered_walls",
+      "title": "Staggered independent wall bumps"
+    },
+    {
+      "case_id": 12,
+      "group": "channel_chain_15",
+      "original_index": 12,
+      "directory": "12_triple_constriction",
+      "title": "Three symmetric constrictions"
+    },
+    {
+      "case_id": 13,
+      "group": "channel_chain_15",
+      "original_index": 13,
+      "directory": "13_oscillating_gap",
+      "title": "Four alternating gap features"
+    },
+    {
+      "case_id": 14,
+      "group": "channel_chain_15",
+      "original_index": 14,
+      "directory": "14_oscillating_walls",
+      "title": "Oscillating centerline and gap"
+    },
+    {
+      "case_id": 15,
+      "group": "channel_chain_15",
+      "original_index": 15,
+      "directory": "15_mixed_independent",
+      "title": "Mixed independent multiscale walls"
+    },
+    {
+      "case_id": 16,
+      "group": "random_channel_chain_5",
+      "original_index": 1,
+      "directory": "01_roof_plateau",
+      "title": "Rounded plateau roof"
+    },
+    {
+      "case_id": 17,
+      "group": "random_channel_chain_5",
+      "original_index": 2,
+      "directory": "02_chirped_wave",
+      "title": "Waves with changing wavelength"
+    },
+    {
+      "case_id": 18,
+      "group": "random_channel_chain_5",
+      "original_index": 3,
+      "directory": "03_stepped_s_bend",
+      "title": "Rounded stepped S-shaped walls"
+    },
+    {
+      "case_id": 19,
+      "group": "random_channel_chain_5",
+      "original_index": 4,
+      "directory": "04_random_spline",
+      "title": "Independent irregular spline walls"
+    },
+    {
+      "case_id": 20,
+      "group": "random_channel_chain_5",
+      "original_index": 5,
+      "directory": "05_random_fourier",
+      "title": "Independent random Fourier walls"
+    }
+  ],
+  "selected_case_ids": [
+    4,
+    5,
+    8,
+    16,
+    17,
+    20
+  ]
+}

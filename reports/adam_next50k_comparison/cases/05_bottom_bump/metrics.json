@@ -1,0 +1,51 @@
+{
+  "case_id": 5,
+  "group": "channel_chain_15",
+  "original_index": 5,
+  "directory": "05_bottom_bump",
+  "title": "One bump on bottom wall",
+  "result_directory": "cases/05_bottom_bump",
+  "selected_for_chain": true,
+  "metrics": {
+    "32216": {
+      "velocity_relative_l2": 0.01793762993166663,
+      "u_relative_l2": 0.016532044828704427,
+      "v_absolute_rms": 0.008128997935021557,
+      "pressure_relative_l2": 0.023087085966242954,
+      "pressure_drop_relative": 0.008416038843970144,
+      "velocity_mae": 0.01544933791970564,
+      "pressure_mae": 0.028603368503136765,
+      "velocity_relative_l1": 0.014756804817651275,
+      "pressure_relative_l1": 0.024757409387018054
+    },
+    "82216": {
+      "velocity_relative_l2": 0.013349457006440435,
+      "u_relative_l2": 0.011960333831912189,
+      "v_absolute_rms": 0.0069045754626137,
+      "pressure_relative_l2": 0.007949578847929486,
+      "pressure_drop_relative": 0.002304354189139235,
+      "velocity_mae": 0.011123452129388848,
+      "pressure_mae": 0.00968260330167237,
+      "velocity_relative_l1": 0.010624831486306576,
+      "pressure_relative_l1": 0.008380697323999004
+    },
+    "132216": {
+      "velocity_relative_l2": 0.01206908627131661,
+      "u_relative_l2": 0.010956802950959136,
+      "v_absolute_rms": 0.0058998084357807365,
+      "pressure_relative_l2": 0.0059118728962329415,
+      "pressure_drop_relative": 0.005635844965144931,
+      "velocity_mae": 0.009852298324409441,
+      "pressure_mae": 0.006617251453370642,
+      "velocity_relative_l1": 0.009410658510688645,
+      "pressure_relative_l1": 0.00572750734690466
+    }
+  },
+  "reference_sha256": "8c1179ecc32262107a547a158e21d66ce3db4270ee7c57ab48d68db4d6390c04",
+  "geometry_sha256": "3f528f922af56b052cbee2fa741ed345ccb90f680c7c922f7c6a670682811d68",
+  "mesh_uncertainty": {
+    "velocity": 0.0013667326613709234,
+    "pressure": 0.0021252614397033573,
+    "pressure_drop": 0.0014362637588421693
+  }
+}

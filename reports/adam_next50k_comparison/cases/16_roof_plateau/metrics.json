@@ -1,0 +1,51 @@
+{
+  "case_id": 16,
+  "group": "random_channel_chain_5",
+  "original_index": 1,
+  "directory": "01_roof_plateau",
+  "title": "Rounded plateau roof",
+  "result_directory": "cases/16_roof_plateau",
+  "selected_for_chain": true,
+  "metrics": {
+    "32216": {
+      "velocity_relative_l2": 0.12426185658137812,
+      "u_relative_l2": 0.11968194624694685,
+      "v_absolute_rms": 0.03328334035361138,
+      "pressure_relative_l2": 0.25363680831737817,
+      "pressure_drop_relative": 0.21925747120251435,
+      "velocity_mae": 0.09243316973394607,
+      "pressure_mae": 0.21833167509377643,
+      "velocity_relative_l1": 0.10590279047226483,
+      "pressure_relative_l1": 0.24615486326973265
+    },
+    "82216": {
+      "velocity_relative_l2": 0.11263319181462086,
+      "u_relative_l2": 0.10864189027061368,
+      "v_absolute_rms": 0.029629579178708215,
+      "pressure_relative_l2": 0.20938259118127645,
+      "pressure_drop_relative": 0.1886217773036631,
+      "velocity_mae": 0.08430326911912939,
+      "pressure_mae": 0.1807860150145037,
+      "velocity_relative_l1": 0.0965881779381555,
+      "pressure_relative_l1": 0.203824556321757
+    },
+    "132216": {
+      "velocity_relative_l2": 0.08706802478331949,
+      "u_relative_l2": 0.08384554399779301,
+      "v_absolute_rms": 0.02336575994127319,
+      "pressure_relative_l2": 0.1497185117809074,
+      "pressure_drop_relative": 0.12409233524624219,
+      "velocity_mae": 0.06637125019908169,
+      "pressure_mae": 0.13039548468498074,
+      "velocity_relative_l1": 0.07604305492765387,
+      "pressure_relative_l1": 0.1470124877200509
+    }
+  },
+  "reference_sha256": "5b4928d11fe39b8d731d727bb2a200d5d5b78e824e164cc066cfc0ed31ca070d",
+  "geometry_sha256": "bcafc3bc8f115a74a44cafb3389589748ae75a9d198cbc212db540a0d0a845ac",
+  "mesh_uncertainty": {
+    "velocity": 0.0008923382418188436,
+    "pressure": 0.0013194781714389275,
+    "pressure_drop": 0.0006769263705088151
+  }
+}

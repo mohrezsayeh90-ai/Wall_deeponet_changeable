@@ -1,0 +1,51 @@
+{
+  "case_id": 10,
+  "group": "channel_chain_15",
+  "original_index": 10,
+  "directory": "10_constriction_expansion",
+  "title": "Constriction followed by expansion",
+  "result_directory": "cases/10_constriction_expansion",
+  "selected_for_chain": false,
+  "metrics": {
+    "32216": {
+      "velocity_relative_l2": 0.03220651135674287,
+      "u_relative_l2": 0.03033704326919054,
+      "v_absolute_rms": 0.012045250878595079,
+      "pressure_relative_l2": 0.07178414778401379,
+      "pressure_drop_relative": 0.03153418296961563,
+      "velocity_mae": 0.02965053670806172,
+      "pressure_mae": 0.0724388220867876,
+      "velocity_relative_l1": 0.02981635963214104,
+      "pressure_relative_l1": 0.0763106039073723
+    },
+    "82216": {
+      "velocity_relative_l2": 0.020006796295302498,
+      "u_relative_l2": 0.01875564140922135,
+      "v_absolute_rms": 0.007753933379444949,
+      "pressure_relative_l2": 0.033727377779157436,
+      "pressure_drop_relative": 0.01473886326500553,
+      "velocity_mae": 0.0183835695041644,
+      "pressure_mae": 0.03454494150062221,
+      "velocity_relative_l1": 0.01848638104110926,
+      "pressure_relative_l1": 0.036391333706379314
+    },
+    "132216": {
+      "velocity_relative_l2": 0.010716393185938828,
+      "u_relative_l2": 0.009704797144403919,
+      "v_absolute_rms": 0.005050226684327858,
+      "pressure_relative_l2": 0.014400929502481044,
+      "pressure_drop_relative": 0.00353274542097445,
+      "velocity_mae": 0.00980635655263172,
+      "pressure_mae": 0.013867181590761442,
+      "velocity_relative_l1": 0.009861199361520223,
+      "pressure_relative_l1": 0.014608368430071596
+    }
+  },
+  "reference_sha256": "d37fb1c797143a10d874616932a62de44362d40d2210cffd4a0e0adeadef2b5f",
+  "geometry_sha256": "b80aad3943acd82f6ffdf28350629b2dd49faf55a82adf7f2395268a8d579472",
+  "mesh_uncertainty": {
+    "velocity": 0.0022398722227462324,
+    "pressure": 0.004452972227644603,
+    "pressure_drop": 0.003316606734801789
+  }
+}

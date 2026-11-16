@@ -1,0 +1,6 @@
+{
+  "dev_case": 0,
+  "points": 256,
+  "maximum_absolute_difference_vs_saved_gpu_prediction": 8.881784197001252e-16,
+  "passed": true
+}

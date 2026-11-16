@@ -1,0 +1,51 @@
+{
+  "case_id": 7,
+  "group": "channel_chain_15",
+  "original_index": 7,
+  "directory": "07_centerline_bend",
+  "title": "Constant-gap centerline bend",
+  "result_directory": "cases/07_centerline_bend",
+  "selected_for_chain": false,
+  "metrics": {
+    "32216": {
+      "velocity_relative_l2": 0.03577621978221405,
+      "u_relative_l2": 0.03271481339251804,
+      "v_absolute_rms": 0.01634079106765429,
+      "pressure_relative_l2": 0.06270586435547006,
+      "pressure_drop_relative": 0.021693234514466354,
+      "velocity_mae": 0.029579545959461995,
+      "pressure_mae": 0.06264758227527592,
+      "velocity_relative_l1": 0.029444870186314132,
+      "pressure_relative_l1": 0.05934472877624707
+    },
+    "82216": {
+      "velocity_relative_l2": 0.02215898426628894,
+      "u_relative_l2": 0.02074668312070394,
+      "v_absolute_rms": 0.008849074445647967,
+      "pressure_relative_l2": 0.0469637529285072,
+      "pressure_drop_relative": 0.03725076616334134,
+      "velocity_mae": 0.017443310625449123,
+      "pressure_mae": 0.050260130572222575,
+      "velocity_relative_l1": 0.017363891172967987,
+      "pressure_relative_l1": 0.04761035795382058
+    },
+    "132216": {
+      "velocity_relative_l2": 0.013532234096028113,
+      "u_relative_l2": 0.01188709879472835,
+      "v_absolute_rms": 0.00725095134125183,
+      "pressure_relative_l2": 0.03563673614856251,
+      "pressure_drop_relative": 0.02552390464245568,
+      "velocity_mae": 0.01231193267419028,
+      "pressure_mae": 0.037133617736842726,
+      "velocity_relative_l1": 0.01225587640293738,
+      "pressure_relative_l1": 0.035175890162699223
+    }
+  },
+  "reference_sha256": "007de96ffe89fa40980ba58148ce1f138fddeddfb59ec1d1e665ad81b958afc5",
+  "geometry_sha256": "9551fa3f33a60cc723c6f59364b700eb748abadadd8d8f250ea93e9a10851da7",
+  "mesh_uncertainty": {
+    "velocity": 0.0019209668238785204,
+    "pressure": 0.003262851271445503,
+    "pressure_drop": 0.002209135783674085
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "model": {
+    "sensors": 257,
+    "width": 192,
+    "depth": 4,
+    "rank": 128,
+    "seed": 20261115,
+    "dtype": "float32",
+    "local_features": true,
+    "inlet_length": 0.05
+  },
+  "training": {
+    "steps": 100000,
+    "batch": 32,
+    "points": 128,
+    "outlet": 48,
+    "optimizer": "Adam",
+    "physics_only": true
+  },
+  "geometry": {
+    "length": 5,
+    "gap": [
+      0.6,
+      1.5
+    ],
+    "center_deviation": 0.35,
+    "max_slope": 0.7,
+    "reynolds": [
+      10,
+      100
+    ],
+    "flat_strips": [
+      0.5,
+      4.5
+    ],
+    "representation": "quintic C4 B-spline,80 intervals"
+  },
+  "pools": {
+    "train": 10000,
+    "dev": 400,
+    "test": 1000,
+    "stress": 200
+  },
+  "release": {
+    "velocity_median": 0.02,
+    "velocity_p95": 0.05,
+    "pressure_median": 0.05,
+    "pressure_p95": 0.1,
+    "pressure_drop_median": 0.03,
+    "pressure_drop_p95": 0.07,
+    "family_velocity_median": 0.03,
+    "flux_max": 0.001,
+    "boundary_max": 1e-05,
+    "divergence_rms": 1e-05,
+    "momentum_p95": 0.05,
+    "traction_p95": 0.01
+  }
+}

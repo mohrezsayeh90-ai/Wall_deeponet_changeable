@@ -1,0 +1,51 @@
+{
+  "case_id": 19,
+  "group": "random_channel_chain_5",
+  "original_index": 4,
+  "directory": "04_random_spline",
+  "title": "Independent irregular spline walls",
+  "result_directory": "cases/19_random_spline",
+  "selected_for_chain": false,
+  "metrics": {
+    "32216": {
+      "velocity_relative_l2": 0.033233095373931015,
+      "u_relative_l2": 0.029762166674997013,
+      "v_absolute_rms": 0.016254673280749875,
+      "pressure_relative_l2": 0.0339871728669955,
+      "pressure_drop_relative": 0.017812230310437382,
+      "velocity_mae": 0.02616048406091762,
+      "pressure_mae": 0.035323164465531375,
+      "velocity_relative_l1": 0.026264718161423395,
+      "pressure_relative_l1": 0.03450013827951732
+    },
+    "82216": {
+      "velocity_relative_l2": 0.019303703161832893,
+      "u_relative_l2": 0.017157897129329087,
+      "v_absolute_rms": 0.009722229311682207,
+      "pressure_relative_l2": 0.026228518700519017,
+      "pressure_drop_relative": 0.018462892237549714,
+      "velocity_mae": 0.0146338163156581,
+      "pressure_mae": 0.025865212802115966,
+      "velocity_relative_l1": 0.014692123443197381,
+      "pressure_relative_l1": 0.025262555940391687
+    },
+    "132216": {
+      "velocity_relative_l2": 0.01957130604755588,
+      "u_relative_l2": 0.0170255717445145,
+      "v_absolute_rms": 0.010606480877282724,
+      "pressure_relative_l2": 0.01675775568779734,
+      "pressure_drop_relative": 0.008342447594459432,
+      "velocity_mae": 0.01596151910819698,
+      "pressure_mae": 0.01586272382660921,
+      "velocity_relative_l1": 0.016025116348334974,
+      "pressure_relative_l1": 0.015493123953881265
+    }
+  },
+  "reference_sha256": "2c035bb60859172e6ac5556164bf2cd679ca3672c1028a341e3c150a05412ec4",
+  "geometry_sha256": "844f091852a8ddf270538cd43245345c02b9bcebf12cd918ba6e7ab4bee9e313",
+  "mesh_uncertainty": {
+    "velocity": 0.004049229601166668,
+    "pressure": 0.005690994183910211,
+    "pressure_drop": 0.004425322734003675
+  }
+}

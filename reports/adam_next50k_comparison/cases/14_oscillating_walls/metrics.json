@@ -1,0 +1,51 @@
+{
+  "case_id": 14,
+  "group": "channel_chain_15",
+  "original_index": 14,
+  "directory": "14_oscillating_walls",
+  "title": "Oscillating centerline and gap",
+  "result_directory": "cases/14_oscillating_walls",
+  "selected_for_chain": false,
+  "metrics": {
+    "32216": {
+      "velocity_relative_l2": 0.07813568281643635,
+      "u_relative_l2": 0.06878862627855868,
+      "v_absolute_rms": 0.042226452031642756,
+      "pressure_relative_l2": 0.061604902623845235,
+      "pressure_drop_relative": 0.053969618519643006,
+      "velocity_mae": 0.07204507169901031,
+      "pressure_mae": 0.08801529062119531,
+      "velocity_relative_l1": 0.07158468493554868,
+      "pressure_relative_l1": 0.06562808975917132
+    },
+    "82216": {
+      "velocity_relative_l2": 0.049535928689112094,
+      "u_relative_l2": 0.04313490207690937,
+      "v_absolute_rms": 0.027717128141378916,
+      "pressure_relative_l2": 0.10533315405257063,
+      "pressure_drop_relative": 0.10076933700814979,
+      "velocity_mae": 0.04510707211143996,
+      "pressure_mae": 0.14695277582084143,
+      "velocity_relative_l1": 0.04481882617804186,
+      "pressure_relative_l1": 0.10957448295475034
+    },
+    "132216": {
+      "velocity_relative_l2": 0.05206413945478697,
+      "u_relative_l2": 0.0468289108194899,
+      "v_absolute_rms": 0.026010418709386526,
+      "pressure_relative_l2": 0.09495015260667757,
+      "pressure_drop_relative": 0.09182183322202103,
+      "velocity_mae": 0.04540743250567539,
+      "pressure_mae": 0.13362748142772957,
+      "velocity_relative_l1": 0.04511726719116608,
+      "pressure_relative_l1": 0.09963855465949185
+    }
+  },
+  "reference_sha256": "251d770b9d0be8b687ce86af73994d95aced755bf9e13655f68a22e35d53090b",
+  "geometry_sha256": "c35fdb7128b9e76e6abcf1e8f3183bafbdce46e65e9929260e88f4007bed7f9e",
+  "mesh_uncertainty": {
+    "velocity": 0.004025334682650276,
+    "pressure": 0.005950282755511199,
+    "pressure_drop": 0.006262353291208389
+  }
+}

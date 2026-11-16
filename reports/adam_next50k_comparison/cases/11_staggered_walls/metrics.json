@@ -1,0 +1,51 @@
+{
+  "case_id": 11,
+  "group": "channel_chain_15",
+  "original_index": 11,
+  "directory": "11_staggered_walls",
+  "title": "Staggered independent wall bumps",
+  "result_directory": "cases/11_staggered_walls",
+  "selected_for_chain": false,
+  "metrics": {
+    "32216": {
+      "velocity_relative_l2": 0.02932575083642438,
+      "u_relative_l2": 0.026625268552667804,
+      "v_absolute_rms": 0.014716327446935523,
+      "pressure_relative_l2": 0.049206341787126136,
+      "pressure_drop_relative": 0.03240573198762413,
+      "velocity_mae": 0.02835025927144127,
+      "pressure_mae": 0.0659012371531872,
+      "velocity_relative_l1": 0.02654090129655761,
+      "pressure_relative_l1": 0.05329583598125953
+    },
+    "82216": {
+      "velocity_relative_l2": 0.017956107072720107,
+      "u_relative_l2": 0.01643679057744088,
+      "v_absolute_rms": 0.008666261920694807,
+      "pressure_relative_l2": 0.02653378472776725,
+      "pressure_drop_relative": 0.01958231272254725,
+      "velocity_mae": 0.017398665322477597,
+      "pressure_mae": 0.032855472597455714,
+      "velocity_relative_l1": 0.016288255235848557,
+      "pressure_relative_l1": 0.026570971263717467
+    },
+    "132216": {
+      "velocity_relative_l2": 0.024816700335784782,
+      "u_relative_l2": 0.023260094971184087,
+      "v_absolute_rms": 0.010432472465455584,
+      "pressure_relative_l2": 0.011426300633085494,
+      "pressure_drop_relative": 0.0015921407315776831,
+      "velocity_mae": 0.023187857440148143,
+      "pressure_mae": 0.013327770291906696,
+      "velocity_relative_l1": 0.021707972040226554,
+      "pressure_relative_l1": 0.01077847230427918
+    }
+  },
+  "reference_sha256": "1f9d09efb028f8f29c10a7065806c5e2f4ea2b6fe0b03506ae2daf46dd7b7ed2",
+  "geometry_sha256": "67643ab84fd68b56fb3497a540139f1461e3d5ae0e99757f7c330f76f88d8664",
+  "mesh_uncertainty": {
+    "velocity": 0.0022551940405427383,
+    "pressure": 0.003478910590120237,
+    "pressure_drop": 0.0028873006997698477
+  }
+}

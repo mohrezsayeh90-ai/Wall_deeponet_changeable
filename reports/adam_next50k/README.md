@@ -1,4 +1,8 @@
-# Adam continuation: 82,216 → 132,216
+# Completed Adam continuation: 82,216 → 132,216
+
+**Verified complete:** exactly 50,000 additional updates, final step **132,216**, `target_completed`. Training took **7 h 20 min 41 s**. All 68 output files and two source files are preserved in [the artifact archive](../../artifacts/kaggle/adam-next50k-v1/inventory.json); archive parts and every downloaded file were hash-checked. Adam moments, configuration, normalization and training-pool identity were checked. CPU inference agrees with saved GPU predictions to <1e-14 on 256 saved pilot points. [Completion record](completion.json).
+
+[Twenty-case three-stage comparison and six random result chains](../adam_next50k_comparison/README.md). Old checkpoints/reports remain available. Model acceptance is still false; the eight-case pilot is not the full benchmark.
 
 Private run: https://www.kaggle.com/code/mohrezsayeh/geometry-pi-deeponet-adam-next50k
 
@@ -23,8 +27,8 @@ with the same previous procedure is implemented as **another 50,000 Adam updates
   Final checkpoint records `target_completed` only if step 132,216 is reached.
   A wall-clock/quota stop is partial, not 50,000 completed updates.
 - Original weights/results and both earlier jobs are preserved. The latest
-  collected research-weight pointer remains at Adam step 82,216 until new outputs
-  are actually downloaded and checked.
+  collected research-weight pointer now refers to Adam step 132,216 after downloading
+  and checking the completed outputs.
 
 The first job action checks GPU availability and runs the original frozen nine-test
 suite. Before optimization, it verifies exact input checkpoint hash, base step,
@@ -34,10 +38,10 @@ opened and no model-acceptance claim is made. The pilot alone is not the full
 400-case development benchmark.
 
 `submission.json` records accepted Kaggle version and initial state;
-`launch-observation.json` is the last observed snapshot, not automatic live progress.
+`launch-observation.json` preserves the initial launch snapshot. See `completion.json` for the verified final state.
 The script and metadata are in `../../notebooks/kaggle_adam_next50k/`.
 
-## Reproduce packaging / monitor
+## Historical packaging / monitoring commands
 
 `python -m scripts.build_adam_next50k` recreates only the new launch files from
 the preserved previous Adam launch. It does not launch another session. The embedded

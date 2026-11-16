@@ -64,7 +64,7 @@ def main():
     import geometry_operator.reference as reference
     def forbidden(*args,**kwargs):raise RuntimeError('FEM solving is forbidden in this inference-only refresh')
     reference.solve_reference=forbidden;reference.build_case=forbidden
-    latest=json.loads((ROOT/'artifacts/kaggle/latest_checkpoint.json').read_text());checkpoint=ROOT/latest['path'];assert latest['step']==82216 and sha(checkpoint)==latest['sha256']
+    latest=dict(path='artifacts/kaggle/continue-50k-v1/checkpoint.npz',step=82216,sha256='84276c11feecd5bf230c79d1077250018b356ae118491678a4ed69e46ab83140');checkpoint=ROOT/latest['path'];assert sha(checkpoint)==latest['sha256']
     OUT.mkdir(exist_ok=True);downloads=OUT/'downloads';downloads.mkdir(exist_ok=True);index=[]
     for name,count,stress in GROUPS:
         source=ROOT/'reports'/name;target=OUT/name;target.mkdir(exist_ok=True)

@@ -1,0 +1,104 @@
+{
+  "checkpoint_sha256": "dabe75cd4121d1f4c6e2c920dced4c38cf033e2da7b1d74c4805ee90cf1e1544",
+  "step": 132216,
+  "split": "dev",
+  "split_sha256": "e6421f0ce908ff12cd92e9940bf57c19af8f04b48a904e2428e1d30111add330",
+  "expected_cases": 400,
+  "evaluated": 8,
+  "failed": 0,
+  "summary": {
+    "velocity_relative_l2": {
+      "median": 0.014284589016097218,
+      "p95": 0.029400005994918946,
+      "max": 0.031799123283849734
+    },
+    "pressure_relative_l2": {
+      "median": 0.010056676550601547,
+      "p95": 0.01478095144428694,
+      "max": 0.015140229421143618
+    },
+    "v_absolute_rms": {
+      "median": 0.006666320473242071,
+      "p95": 0.014216958153693431,
+      "max": 0.01461262788881616
+    },
+    "pressure_drop_relative": {
+      "median": 0.006168903808042938,
+      "p95": 0.015550042572440073,
+      "max": 0.016272179554130215
+    },
+    "pressure_drop_predicted": {
+      "median": 5.726118511752093,
+      "p95": 6.7607219149118905,
+      "max": 7.131768479036877
+    },
+    "pressure_drop_reference": {
+      "median": 5.788341218870833,
+      "p95": 6.802295174076032,
+      "max": 7.148603908439109
+    },
+    "first_call_seconds": {
+      "median": 0.04806631249994098,
+      "p95": 1.5847974312986466,
+      "max": 2.410744896998949
+    },
+    "steady_seconds": {
+      "median": 0.04592229499940004,
+      "p95": 0.047770079649853865,
+      "max": 0.048663728000974515
+    },
+    "momentum_rms": {
+      "median": 0.22602009861478933,
+      "p95": 0.5932339429767485,
+      "max": 0.689385087131655
+    },
+    "divergence_rms": {
+      "median": 1.1671461696322715e-16,
+      "p95": 2.2062324315700535e-16,
+      "max": 2.2584231394879104e-16
+    },
+    "traction_rms": {
+      "median": 0.0013368428983781568,
+      "p95": 0.0031517842009176943,
+      "max": 0.003801279619467638
+    },
+    "wall_max": {
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "inlet_max": {
+      "median": 5.273559366969494e-16,
+      "p95": 5.273559366969494e-16,
+      "max": 5.273559366969494e-16
+    },
+    "flux_max": {
+      "median": 5.995204332975845e-15,
+      "p95": 6.361577931102147e-15,
+      "max": 6.439293542825908e-15
+    }
+  },
+  "gates": {
+    "velocity_median": true,
+    "velocity_p95": true,
+    "pressure_median": true,
+    "pressure_p95": true,
+    "pressure_drop_median": true,
+    "pressure_drop_p95": true,
+    "family_medians": false,
+    "flux_max": true,
+    "wall_max": true,
+    "inlet_max": true,
+    "divergence_rms": true,
+    "momentum_rms": false,
+    "traction_rms": true,
+    "complete_split": false,
+    "locked_final_test": false,
+    "release_comparisons_complete": false
+  },
+  "all_gates_passed": false,
+  "timing": "frozen branch and batched trunk; no optimization or solver in prediction",
+  "limitations": [
+    "Wall stress and required matched baselines/ablations not yet completed."
+  ]
+}

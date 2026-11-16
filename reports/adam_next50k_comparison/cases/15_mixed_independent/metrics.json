@@ -1,0 +1,51 @@
+{
+  "case_id": 15,
+  "group": "channel_chain_15",
+  "original_index": 15,
+  "directory": "15_mixed_independent",
+  "title": "Mixed independent multiscale walls",
+  "result_directory": "cases/15_mixed_independent",
+  "selected_for_chain": false,
+  "metrics": {
+    "32216": {
+      "velocity_relative_l2": 0.058071438718079044,
+      "u_relative_l2": 0.0497635283343835,
+      "v_absolute_rms": 0.0347316665306771,
+      "pressure_relative_l2": 0.16179740950291774,
+      "pressure_drop_relative": 0.16269242813104592,
+      "velocity_mae": 0.05384941150204616,
+      "pressure_mae": 0.18457153883533606,
+      "velocity_relative_l1": 0.05241789753568096,
+      "pressure_relative_l1": 0.15815597712470497
+    },
+    "82216": {
+      "velocity_relative_l2": 0.034461072032643515,
+      "u_relative_l2": 0.029210325734760685,
+      "v_absolute_rms": 0.021202080602149852,
+      "pressure_relative_l2": 0.07211098510164968,
+      "pressure_drop_relative": 0.05856586692986244,
+      "velocity_mae": 0.03186434204408785,
+      "pressure_mae": 0.08740879538151759,
+      "velocity_relative_l1": 0.031017271493216238,
+      "pressure_relative_l1": 0.07489899867601191
+    },
+    "132216": {
+      "velocity_relative_l2": 0.02971569936461983,
+      "u_relative_l2": 0.02547586324796867,
+      "v_absolute_rms": 0.017751055594702046,
+      "pressure_relative_l2": 0.06815308710233703,
+      "pressure_drop_relative": 0.0498805868059938,
+      "velocity_mae": 0.026753474003719222,
+      "pressure_mae": 0.08234843381298075,
+      "velocity_relative_l1": 0.02604226898556119,
+      "pressure_relative_l1": 0.07056286736602561
+    }
+  },
+  "reference_sha256": "c5567d597a885bf114be1b153b858a50c802b2a62ffaa2b4ed9cd28f114a2170",
+  "geometry_sha256": "d0b6ead111d99912b6e0b25d4e06c0dc83eeebfeb607971b1a1321f00eda9d4b",
+  "mesh_uncertainty": {
+    "velocity": 0.0040006309069811835,
+    "pressure": 0.006593149412759764,
+    "pressure_drop": 0.0065316328054325955
+  }
+}

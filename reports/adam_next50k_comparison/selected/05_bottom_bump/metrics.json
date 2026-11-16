@@ -1,0 +1,61 @@
+{
+  "index": 5,
+  "slug": "bottom_bump",
+  "title": "One bump on bottom wall",
+  "geometry_id": "7b28212f075e6604391de346448320b36cd7d2c0cf0bd3191ce981c25068ba70",
+  "reynolds": 30.0,
+  "amplitude_scale": 1.0,
+  "descriptors": {
+    "min_gap": 0.7806742676327104,
+    "max_gap": 1.0,
+    "center_deviation": 0.1096628661836448,
+    "max_slope": 0.5637475391993189,
+    "max_curvature": 4.234022179138375
+  },
+  "directory": "05_bottom_bump",
+  "original_index": 5,
+  "source_group": "channel_chain_15",
+  "status": "passed",
+  "checkpoint_sha256": "dabe75cd4121d1f4c6e2c920dced4c38cf033e2da7b1d74c4805ee90cf1e1544",
+  "metrics": {
+    "velocity_relative_l2": 0.01206908627131661,
+    "u_relative_l2": 0.010956802950959136,
+    "v_absolute_rms": 0.0058998084357807365,
+    "pressure_relative_l2": 0.0059118728962329415,
+    "speed_relative_l2": 0.011036832154602378,
+    "velocity_absolute_rms": 0.01394703735772018,
+    "pressure_absolute_rms": 0.008435181841393196,
+    "velocity_max_abs_at_quadrature": 0.05019667466257279,
+    "pressure_max_abs_at_quadrature": 0.02554755782255147,
+    "pressure_drop_predicted": 2.305607606146385,
+    "pressure_drop_reference": 2.2926863811485325,
+    "pressure_drop_relative": 0.005635844965144931,
+    "physical_area_evaluated": 4.785750963416195,
+    "common_domain_excluded_area_fraction": 0.0003963140080609998
+  },
+  "mesh_uncertainty": {
+    "velocity": 0.0013667326613709234,
+    "pressure": 0.0021252614397033573,
+    "pressure_drop": 0.0014362637588421693
+  },
+  "fem_coarse": {
+    "nx": 40,
+    "ny": 12,
+    "iterations": 53,
+    "algebraic_residual": 2.5160320956669813e-09,
+    "seconds": 1.9988043529999686,
+    "velocity_dofs": 4050,
+    "pressure_dofs": 533,
+    "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+  },
+  "fem_fine": {
+    "nx": 80,
+    "ny": 24,
+    "iterations": 53,
+    "algebraic_residual": 1.2915619868365462e-09,
+    "seconds": 13.593544533,
+    "velocity_dofs": 15778,
+    "pressure_dofs": 2025,
+    "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+  }
+}

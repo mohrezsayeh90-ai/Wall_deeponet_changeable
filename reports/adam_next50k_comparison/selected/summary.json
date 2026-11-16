@@ -1,0 +1,372 @@
+{
+  "checkpoint_step": 132216,
+  "cases": [
+    {
+      "index": 4,
+      "slug": "expansion",
+      "title": "Symmetric expansion",
+      "geometry_id": "9a9b70997a7d27610ec94961e35cfff0f0b697289f8981f4ae20bd83ba201ae4",
+      "reynolds": 30.0,
+      "amplitude_scale": 1.0,
+      "descriptors": {
+        "min_gap": 1.0,
+        "max_gap": 1.3588966529646558,
+        "center_deviation": 0.0,
+        "max_slope": 0.4612479866176245,
+        "max_curvature": 3.464199964749579
+      },
+      "directory": "04_expansion",
+      "original_index": 4,
+      "source_group": "channel_chain_15",
+      "status": "passed",
+      "checkpoint_sha256": "dabe75cd4121d1f4c6e2c920dced4c38cf033e2da7b1d74c4805ee90cf1e1544",
+      "metrics": {
+        "velocity_relative_l2": 0.011528053324996549,
+        "u_relative_l2": 0.010913141029889696,
+        "v_absolute_rms": 0.003863622532752669,
+        "pressure_relative_l2": 0.02396954975285767,
+        "speed_relative_l2": 0.011018898335357828,
+        "velocity_absolute_rms": 0.011942513238617518,
+        "pressure_absolute_rms": 0.02588358304722054,
+        "velocity_max_abs_at_quadrature": 0.035883221177703345,
+        "pressure_max_abs_at_quadrature": 0.04600533752985836,
+        "pressure_drop_predicted": 1.5608936488403615,
+        "pressure_drop_reference": 1.5887752374883108,
+        "pressure_drop_relative": 0.01754910826280703,
+        "physical_area_evaluated": 5.3474844764004015,
+        "common_domain_excluded_area_fraction": 0.0
+      },
+      "mesh_uncertainty": {
+        "velocity": 0.0015505101417345587,
+        "pressure": 0.0023299309788293323,
+        "pressure_drop": 0.0016528414252379416
+      },
+      "fem_coarse": {
+        "nx": 40,
+        "ny": 12,
+        "iterations": 47,
+        "algebraic_residual": 4.688186484862182e-09,
+        "seconds": 1.635360113000047,
+        "velocity_dofs": 4050,
+        "pressure_dofs": 533,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "fem_fine": {
+        "nx": 80,
+        "ny": 24,
+        "iterations": 47,
+        "algebraic_residual": 2.453718574624348e-09,
+        "seconds": 12.096815281999966,
+        "velocity_dofs": 15778,
+        "pressure_dofs": 2025,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      }
+    },
+    {
+      "index": 5,
+      "slug": "bottom_bump",
+      "title": "One bump on bottom wall",
+      "geometry_id": "7b28212f075e6604391de346448320b36cd7d2c0cf0bd3191ce981c25068ba70",
+      "reynolds": 30.0,
+      "amplitude_scale": 1.0,
+      "descriptors": {
+        "min_gap": 0.7806742676327104,
+        "max_gap": 1.0,
+        "center_deviation": 0.1096628661836448,
+        "max_slope": 0.5637475391993189,
+        "max_curvature": 4.234022179138375
+      },
+      "directory": "05_bottom_bump",
+      "original_index": 5,
+      "source_group": "channel_chain_15",
+      "status": "passed",
+      "checkpoint_sha256": "dabe75cd4121d1f4c6e2c920dced4c38cf033e2da7b1d74c4805ee90cf1e1544",
+      "metrics": {
+        "velocity_relative_l2": 0.01206908627131661,
+        "u_relative_l2": 0.010956802950959136,
+        "v_absolute_rms": 0.0058998084357807365,
+        "pressure_relative_l2": 0.0059118728962329415,
+        "speed_relative_l2": 0.011036832154602378,
+        "velocity_absolute_rms": 0.01394703735772018,
+        "pressure_absolute_rms": 0.008435181841393196,
+        "velocity_max_abs_at_quadrature": 0.05019667466257279,
+        "pressure_max_abs_at_quadrature": 0.02554755782255147,
+        "pressure_drop_predicted": 2.305607606146385,
+        "pressure_drop_reference": 2.2926863811485325,
+        "pressure_drop_relative": 0.005635844965144931,
+        "physical_area_evaluated": 4.785750963416195,
+        "common_domain_excluded_area_fraction": 0.0003963140080609998
+      },
+      "mesh_uncertainty": {
+        "velocity": 0.0013667326613709234,
+        "pressure": 0.0021252614397033573,
+        "pressure_drop": 0.0014362637588421693
+      },
+      "fem_coarse": {
+        "nx": 40,
+        "ny": 12,
+        "iterations": 53,
+        "algebraic_residual": 2.5160320956669813e-09,
+        "seconds": 1.9988043529999686,
+        "velocity_dofs": 4050,
+        "pressure_dofs": 533,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "fem_fine": {
+        "nx": 80,
+        "ny": 24,
+        "iterations": 53,
+        "algebraic_residual": 1.2915619868365462e-09,
+        "seconds": 13.593544533,
+        "velocity_dofs": 15778,
+        "pressure_dofs": 2025,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      }
+    },
+    {
+      "index": 8,
+      "slug": "s_bend",
+      "title": "Constant-gap S bend",
+      "geometry_id": "64b67cfff4f679ee575eb92b651ea1a8bc5833277253db577b11bef3322dab38",
+      "reynolds": 30.0,
+      "amplitude_scale": 1.0,
+      "descriptors": {
+        "min_gap": 1.0,
+        "max_gap": 1.0,
+        "center_deviation": 0.14930206537715413,
+        "max_slope": 0.46073869120994465,
+        "max_curvature": 3.9765542337355693
+      },
+      "directory": "08_s_bend",
+      "original_index": 8,
+      "source_group": "channel_chain_15",
+      "status": "passed",
+      "checkpoint_sha256": "dabe75cd4121d1f4c6e2c920dced4c38cf033e2da7b1d74c4805ee90cf1e1544",
+      "metrics": {
+        "velocity_relative_l2": 0.021067472354155865,
+        "u_relative_l2": 0.01976902822850742,
+        "v_absolute_rms": 0.00832904937796464,
+        "pressure_relative_l2": 0.018534467372397504,
+        "speed_relative_l2": 0.01953873093636164,
+        "velocity_absolute_rms": 0.023386047039502693,
+        "pressure_absolute_rms": 0.02328547582644086,
+        "velocity_max_abs_at_quadrature": 0.06401340186524901,
+        "pressure_max_abs_at_quadrature": 0.07167452015335177,
+        "pressure_drop_predicted": 1.9629487260105485,
+        "pressure_drop_reference": 1.9953658715191125,
+        "pressure_drop_relative": 0.016246216281069384,
+        "physical_area_evaluated": 4.993373064360492,
+        "common_domain_excluded_area_fraction": 0.0013253871279015703
+      },
+      "mesh_uncertainty": {
+        "velocity": 0.0026192945557784817,
+        "pressure": 0.004472455102278146,
+        "pressure_drop": 0.00354063569234242
+      },
+      "fem_coarse": {
+        "nx": 40,
+        "ny": 12,
+        "iterations": 53,
+        "algebraic_residual": 2.35032262135617e-09,
+        "seconds": 1.7966376220000484,
+        "velocity_dofs": 4050,
+        "pressure_dofs": 533,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "fem_fine": {
+        "nx": 80,
+        "ny": 24,
+        "iterations": 53,
+        "algebraic_residual": 1.2137324335093048e-09,
+        "seconds": 13.361813416000018,
+        "velocity_dofs": 15778,
+        "pressure_dofs": 2025,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      }
+    },
+    {
+      "index": 16,
+      "slug": "roof_plateau",
+      "title": "Rounded plateau roof",
+      "directory": "16_roof_plateau",
+      "reynolds": 30.0,
+      "geometry_id": "570bf536cd82f8d0fd0937a91721db7e78ee24a3c6b9e7e0f0e722fe89be9679",
+      "descriptors": {
+        "min_gap": 1.0,
+        "max_gap": 1.279895930728726,
+        "center_deviation": 0.13994796536436302,
+        "max_slope": 0.5052796643411491,
+        "max_curvature": 3.361410790313214
+      },
+      "amplitude_scale": 1.0,
+      "original_index": 1,
+      "source_group": "random_channel_chain_5",
+      "status": "passed",
+      "checkpoint_sha256": "dabe75cd4121d1f4c6e2c920dced4c38cf033e2da7b1d74c4805ee90cf1e1544",
+      "metrics": {
+        "velocity_relative_l2": 0.08706802478331949,
+        "u_relative_l2": 0.08384554399779301,
+        "v_absolute_rms": 0.02336575994127319,
+        "pressure_relative_l2": 0.1497185117809074,
+        "speed_relative_l2": 0.08413069482367468,
+        "velocity_absolute_rms": 0.08407383618139841,
+        "pressure_absolute_rms": 0.1426044637859811,
+        "velocity_max_abs_at_quadrature": 0.2163745518889,
+        "pressure_max_abs_at_quadrature": 0.21164768151290203,
+        "pressure_drop_predicted": 1.0978405703953105,
+        "pressure_drop_reference": 1.2533747729036533,
+        "pressure_drop_relative": 0.12409233524624219,
+        "physical_area_evaluated": 5.744500339730867,
+        "common_domain_excluded_area_fraction": 0.0
+      },
+      "mesh_uncertainty": {
+        "velocity": 0.0008923382418188436,
+        "pressure": 0.0013194781714389275,
+        "pressure_drop": 0.0006769263705088151
+      },
+      "fem_coarse": {
+        "nx": 40,
+        "ny": 12,
+        "iterations": 51,
+        "algebraic_residual": 3.6803689306206065e-09,
+        "seconds": 2.1101945449991035,
+        "velocity_dofs": 4050,
+        "pressure_dofs": 533,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "fem_fine": {
+        "nx": 80,
+        "ny": 24,
+        "iterations": 51,
+        "algebraic_residual": 1.8712044386026622e-09,
+        "seconds": 13.459298023999509,
+        "velocity_dofs": 15778,
+        "pressure_dofs": 2025,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      }
+    },
+    {
+      "index": 17,
+      "slug": "chirped_wave",
+      "title": "Waves with changing wavelength",
+      "directory": "17_chirped_wave",
+      "reynolds": 30.0,
+      "geometry_id": "ed3ef26f3b4c5da3ca80b391fa06c1646fc6aedc84db3c94ca50ec01cf777c36",
+      "descriptors": {
+        "min_gap": 0.7757467261358204,
+        "max_gap": 1.168279722582958,
+        "center_deviation": 0.0410817630438538,
+        "max_slope": 0.6929416405037261,
+        "max_curvature": 4.529837306387772
+      },
+      "amplitude_scale": 1.0,
+      "original_index": 2,
+      "source_group": "random_channel_chain_5",
+      "status": "passed",
+      "checkpoint_sha256": "dabe75cd4121d1f4c6e2c920dced4c38cf033e2da7b1d74c4805ee90cf1e1544",
+      "metrics": {
+        "velocity_relative_l2": 0.027466043093174745,
+        "u_relative_l2": 0.02511444565395576,
+        "v_absolute_rms": 0.01236722334484747,
+        "pressure_relative_l2": 0.025516936775577585,
+        "speed_relative_l2": 0.025658548424914947,
+        "velocity_absolute_rms": 0.030425766012106496,
+        "pressure_absolute_rms": 0.03290351792579523,
+        "velocity_max_abs_at_quadrature": 0.149099186649779,
+        "pressure_max_abs_at_quadrature": 0.08850443619642925,
+        "pressure_drop_predicted": 1.9840037559420596,
+        "pressure_drop_reference": 2.0154616968634627,
+        "pressure_drop_relative": 0.015608305020313268,
+        "physical_area_evaluated": 5.009164638125312,
+        "common_domain_excluded_area_fraction": 0.0013048543874707187
+      },
+      "mesh_uncertainty": {
+        "velocity": 0.004563779325038956,
+        "pressure": 0.008177374471998058,
+        "pressure_drop": 0.00705321696175947
+      },
+      "fem_coarse": {
+        "nx": 40,
+        "ny": 12,
+        "iterations": 48,
+        "algebraic_residual": 3.3477041116277726e-09,
+        "seconds": 1.9488118970002688,
+        "velocity_dofs": 4050,
+        "pressure_dofs": 533,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "fem_fine": {
+        "nx": 80,
+        "ny": 24,
+        "iterations": 48,
+        "algebraic_residual": 1.909904755948401e-09,
+        "seconds": 12.718723515999955,
+        "velocity_dofs": 15778,
+        "pressure_dofs": 2025,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      }
+    },
+    {
+      "index": 20,
+      "slug": "random_fourier",
+      "title": "Independent random Fourier walls",
+      "directory": "20_random_fourier",
+      "reynolds": 30.0,
+      "geometry_id": "51636036a4fbdeb99d551eb5c8bb907a9652ce81b3370d50337f2cad3a0d206b",
+      "descriptors": {
+        "min_gap": 0.6642703359834878,
+        "max_gap": 1.1204100772775691,
+        "center_deviation": 0.11810449236797978,
+        "max_slope": 0.699,
+        "max_curvature": 2.3967566165205483
+      },
+      "amplitude_scale": 0.772523317617625,
+      "original_index": 5,
+      "source_group": "random_channel_chain_5",
+      "status": "passed",
+      "checkpoint_sha256": "dabe75cd4121d1f4c6e2c920dced4c38cf033e2da7b1d74c4805ee90cf1e1544",
+      "metrics": {
+        "velocity_relative_l2": 0.04757416788428595,
+        "u_relative_l2": 0.04557454697312027,
+        "v_absolute_rms": 0.016347631940724718,
+        "pressure_relative_l2": 0.03483624139335469,
+        "speed_relative_l2": 0.04574959608955823,
+        "velocity_absolute_rms": 0.055361571344795454,
+        "pressure_absolute_rms": 0.05588874988280491,
+        "velocity_max_abs_at_quadrature": 0.22052692733322266,
+        "pressure_max_abs_at_quadrature": 0.09251671055296695,
+        "pressure_drop_predicted": 2.4869825999523836,
+        "pressure_drop_reference": 2.56675738104313,
+        "pressure_drop_relative": 0.031079985073745403,
+        "physical_area_evaluated": 4.813717244431074,
+        "common_domain_excluded_area_fraction": 0.0008084741273130016
+      },
+      "mesh_uncertainty": {
+        "velocity": 0.0029366350549534645,
+        "pressure": 0.00553140043461247,
+        "pressure_drop": 0.004632484087166481
+      },
+      "fem_coarse": {
+        "nx": 40,
+        "ny": 12,
+        "iterations": 56,
+        "algebraic_residual": 5.277375965629465e-09,
+        "seconds": 2.022846752000987,
+        "velocity_dofs": 4050,
+        "pressure_dofs": 533,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "fem_fine": {
+        "nx": 80,
+        "ny": 24,
+        "iterations": 56,
+        "algebraic_residual": 2.8224886808857034e-09,
+        "seconds": 14.33936661900043,
+        "velocity_dofs": 15778,
+        "pressure_dofs": 2025,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      }
+    }
+  ],
+  "fem_rerun": false
+}

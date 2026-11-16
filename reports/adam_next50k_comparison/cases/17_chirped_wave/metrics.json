@@ -1,0 +1,51 @@
+{
+  "case_id": 17,
+  "group": "random_channel_chain_5",
+  "original_index": 2,
+  "directory": "02_chirped_wave",
+  "title": "Waves with changing wavelength",
+  "result_directory": "cases/17_chirped_wave",
+  "selected_for_chain": true,
+  "metrics": {
+    "32216": {
+      "velocity_relative_l2": 0.03936754469761786,
+      "u_relative_l2": 0.03535885825715862,
+      "v_absolute_rms": 0.01923545494711491,
+      "pressure_relative_l2": 0.04415182077220688,
+      "pressure_drop_relative": 0.02411560933459841,
+      "velocity_mae": 0.02982578041646968,
+      "pressure_mae": 0.04783718162208873,
+      "velocity_relative_l1": 0.02984154777252425,
+      "pressure_relative_l1": 0.04405260066453038
+    },
+    "82216": {
+      "velocity_relative_l2": 0.024890081339315938,
+      "u_relative_l2": 0.022158967500334373,
+      "v_absolute_rms": 0.012594770276963813,
+      "pressure_relative_l2": 0.016254221967658935,
+      "pressure_drop_relative": 0.005276853617782651,
+      "velocity_mae": 0.01811332836996485,
+      "pressure_mae": 0.016006685593756346,
+      "velocity_relative_l1": 0.018122903955037722,
+      "pressure_relative_l1": 0.014740335958647792
+    },
+    "132216": {
+      "velocity_relative_l2": 0.027466043093174745,
+      "u_relative_l2": 0.02511444565395576,
+      "v_absolute_rms": 0.01236722334484747,
+      "pressure_relative_l2": 0.025516936775577585,
+      "pressure_drop_relative": 0.015608305020313268,
+      "velocity_mae": 0.020545119643168918,
+      "pressure_mae": 0.027155554446166397,
+      "velocity_relative_l1": 0.020555980791211792,
+      "pressure_relative_l1": 0.025007175491469687
+    }
+  },
+  "reference_sha256": "9c31f172cebc1ec6ad93e199ec3a1af22fb8655fd8a6e4c5a66751ce4f89badf",
+  "geometry_sha256": "d3437811a1e1e73a14aa8cdc33661c67acfa4b8e1ccb12b9c42e95b0d7594853",
+  "mesh_uncertainty": {
+    "velocity": 0.004563779325038956,
+    "pressure": 0.008177374471998058,
+    "pressure_drop": 0.00705321696175947
+  }
+}

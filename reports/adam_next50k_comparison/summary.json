@@ -1,0 +1,1323 @@
+{
+  "checkpoint_step": 132216,
+  "checkpoint_sha256": "dabe75cd4121d1f4c6e2c920dced4c38cf033e2da7b1d74c4805ee90cf1e1544",
+  "checkpoint_path": "artifacts/kaggle/adam-next50k-v1/checkpoint.npz",
+  "steps": [
+    32216,
+    82216,
+    132216
+  ],
+  "seed": 20261116,
+  "selected_case_ids": [
+    4,
+    5,
+    8,
+    16,
+    17,
+    20
+  ],
+  "cases": [
+    {
+      "case_id": 1,
+      "group": "channel_chain_15",
+      "original_index": 1,
+      "directory": "01_straight",
+      "title": "Straight channel",
+      "result_directory": "cases/01_straight",
+      "selected_for_chain": false,
+      "metrics": {
+        "32216": {
+          "velocity_relative_l2": 0.009964431777088478,
+          "u_relative_l2": 0.009000427192882935,
+          "v_absolute_rms": 0.004683871601894843,
+          "pressure_relative_l2": 0.017718842200973348,
+          "pressure_drop_relative": 0.01922349218113467,
+          "velocity_mae": 0.00907167061460963,
+          "pressure_mae": 0.01684693537893467,
+          "velocity_relative_l1": 0.0090716706146096,
+          "pressure_relative_l1": 0.016846935258066097
+        },
+        "82216": {
+          "velocity_relative_l2": 0.004868280868924713,
+          "u_relative_l2": 0.004734505353010249,
+          "v_absolute_rms": 0.0012415881834436104,
+          "pressure_relative_l2": 0.00991415888959235,
+          "pressure_drop_relative": 0.0017000179411928735,
+          "velocity_mae": 0.004211075873850513,
+          "pressure_mae": 0.009768200875995364,
+          "velocity_relative_l1": 0.0042110758738505,
+          "pressure_relative_l1": 0.009768200805913271
+        },
+        "132216": {
+          "velocity_relative_l2": 0.003961613445979658,
+          "u_relative_l2": 0.003831497347016303,
+          "v_absolute_rms": 0.0011030915692763824,
+          "pressure_relative_l2": 0.005872166252230336,
+          "pressure_drop_relative": 0.0011292629769372262,
+          "velocity_mae": 0.0036349249270699437,
+          "pressure_mae": 0.006422625871265178,
+          "velocity_relative_l1": 0.003634924927069932,
+          "pressure_relative_l1": 0.006422625825185961
+        }
+      },
+      "reference_sha256": "e1dacf8b09690fb3463fb9d7af82882699c7d766a457ceb5c5459e3f3201e559",
+      "geometry_sha256": "392ba80de22785327a0e06dab5860fb3fda0ee4228ddd3aea35514e7817736d7",
+      "mesh_uncertainty": {
+        "velocity": 6.2461305314406015e-15,
+        "pressure": 4.4355141801538964e-14,
+        "pressure_drop": 4.403884632750728e-14
+      }
+    },
+    {
+      "case_id": 2,
+      "group": "channel_chain_15",
+      "original_index": 2,
+      "directory": "02_mild_constriction",
+      "title": "Mild symmetric constriction",
+      "result_directory": "cases/02_mild_constriction",
+      "selected_for_chain": false,
+      "metrics": {
+        "32216": {
+          "velocity_relative_l2": 0.010910684927311716,
+          "u_relative_l2": 0.010519016867754511,
+          "v_absolute_rms": 0.003227543959015542,
+          "pressure_relative_l2": 0.045336169177266225,
+          "pressure_drop_relative": 0.035075331081558934,
+          "velocity_mae": 0.00983471817178891,
+          "pressure_mae": 0.04811497688719743,
+          "velocity_relative_l1": 0.00968226468076525,
+          "pressure_relative_l1": 0.04672453458130798
+        },
+        "82216": {
+          "velocity_relative_l2": 0.0050769623193082074,
+          "u_relative_l2": 0.004760849460534862,
+          "v_absolute_rms": 0.001964147951488444,
+          "pressure_relative_l2": 0.012221228504200878,
+          "pressure_drop_relative": 0.007121806106517212,
+          "velocity_mae": 0.00453720804051675,
+          "pressure_mae": 0.012267815790448904,
+          "velocity_relative_l1": 0.004466874229908776,
+          "pressure_relative_l1": 0.011913296445757345
+        },
+        "132216": {
+          "velocity_relative_l2": 0.003999882107228013,
+          "u_relative_l2": 0.0036840391621217115,
+          "v_absolute_rms": 0.0017350092397450242,
+          "pressure_relative_l2": 0.01605214160637129,
+          "pressure_drop_relative": 0.012203104988034468,
+          "velocity_mae": 0.003522319908594423,
+          "pressure_mae": 0.016615486999551815,
+          "velocity_relative_l1": 0.003467718449031735,
+          "pressure_relative_l1": 0.01613532723326332
+        }
+      },
+      "reference_sha256": "8e6aa0f3cd3e65f50575a7d12d365c0be480d20b31135cd60b4f5319d264ee2c",
+      "geometry_sha256": "0ad70650fb062e5bcfac36eba3503dd951f2a8f445d7b33b444b5319219fdf10",
+      "mesh_uncertainty": {
+        "velocity": 0.0002970139641231173,
+        "pressure": 0.0004899260299762384,
+        "pressure_drop": 0.00012976406332001144
+      }
+    },
+    {
+      "case_id": 3,
+      "group": "channel_chain_15",
+      "original_index": 3,
+      "directory": "03_moderate_constriction",
+      "title": "Moderate symmetric constriction",
+      "result_directory": "cases/03_moderate_constriction",
+      "selected_for_chain": false,
+      "metrics": {
+        "32216": {
+          "velocity_relative_l2": 0.02115053913342085,
+          "u_relative_l2": 0.020654044263452777,
+          "v_absolute_rms": 0.005395479349811973,
+          "pressure_relative_l2": 0.026920536168324297,
+          "pressure_drop_relative": 0.021437422132188973,
+          "velocity_mae": 0.02018754714703106,
+          "pressure_mae": 0.03627232670713428,
+          "velocity_relative_l1": 0.019066531164263174,
+          "pressure_relative_l1": 0.029971344688494418
+        },
+        "82216": {
+          "velocity_relative_l2": 0.009972409068672007,
+          "u_relative_l2": 0.0095045585467069,
+          "v_absolute_rms": 0.0035547327003531085,
+          "pressure_relative_l2": 0.02660060244449715,
+          "pressure_drop_relative": 0.019728707020400513,
+          "velocity_mae": 0.008305483217407574,
+          "pressure_mae": 0.0367818708692194,
+          "velocity_relative_l1": 0.00784427912146105,
+          "pressure_relative_l1": 0.030392374302590255
+        },
+        "132216": {
+          "velocity_relative_l2": 0.005242983089344281,
+          "u_relative_l2": 0.004771828398737547,
+          "v_absolute_rms": 0.0025509715459056514,
+          "pressure_relative_l2": 0.011244769831409018,
+          "pressure_drop_relative": 0.004348033269267236,
+          "velocity_mae": 0.0049176047475123375,
+          "pressure_mae": 0.015980988800768602,
+          "velocity_relative_l1": 0.004644529792999732,
+          "pressure_relative_l1": 0.013204880064024057
+        }
+      },
+      "reference_sha256": "505c4972e8e7f8b751f475a77a9de2cea4af3ca34ad1c0ecaea4d88ef2731eea",
+      "geometry_sha256": "f7f2f680dd83e452d0f3ac777f16384f532c0948c3332e41db284d8d354d2afa",
+      "mesh_uncertainty": {
+        "velocity": 0.0011562611398683172,
+        "pressure": 0.002597443104385247,
+        "pressure_drop": 0.0018523445690576989
+      }
+    },
+    {
+      "case_id": 4,
+      "group": "channel_chain_15",
+      "original_index": 4,
+      "directory": "04_expansion",
+      "title": "Symmetric expansion",
+      "result_directory": "cases/04_expansion",
+      "selected_for_chain": true,
+      "metrics": {
+        "32216": {
+          "velocity_relative_l2": 0.025911891056456568,
+          "u_relative_l2": 0.024243676857649412,
+          "v_absolute_rms": 0.009506717626216214,
+          "pressure_relative_l2": 0.02728098710648402,
+          "pressure_drop_relative": 0.0015281579423866902,
+          "velocity_mae": 0.018726849854469797,
+          "pressure_mae": 0.023171777840839722,
+          "velocity_relative_l1": 0.020010912998357937,
+          "pressure_relative_l1": 0.023936806919678033
+        },
+        "82216": {
+          "velocity_relative_l2": 0.013723944818212324,
+          "u_relative_l2": 0.01291713701137762,
+          "v_absolute_rms": 0.004820068402687301,
+          "pressure_relative_l2": 0.01020992616379307,
+          "pressure_drop_relative": 0.009932677300478551,
+          "velocity_mae": 0.01080384270594612,
+          "pressure_mae": 0.009104133614891975,
+          "velocity_relative_l1": 0.011544640882835381,
+          "pressure_relative_l1": 0.009404711628407458
+        },
+        "132216": {
+          "velocity_relative_l2": 0.011528053324996549,
+          "u_relative_l2": 0.010913141029889696,
+          "v_absolute_rms": 0.003863622532752669,
+          "pressure_relative_l2": 0.02396954975285767,
+          "pressure_drop_relative": 0.01754910826280703,
+          "velocity_mae": 0.008253188117075065,
+          "pressure_mae": 0.02185741922465218,
+          "velocity_relative_l1": 0.008819092941595361,
+          "pressure_relative_l1": 0.02257905402583464
+        }
+      },
+      "reference_sha256": "38e04037f45674d7559af1e9fa0a6652f3331421a2bffdbd5baa56475bbe7d68",
+      "geometry_sha256": "2eb797d74f792416715d5de1b9c5e412dcf5c954d6260b997158df23fd45aefb",
+      "mesh_uncertainty": {
+        "velocity": 0.0015505101417345587,
+        "pressure": 0.0023299309788293323,
+        "pressure_drop": 0.0016528414252379416
+      }
+    },
+    {
+      "case_id": 5,
+      "group": "channel_chain_15",
+      "original_index": 5,
+      "directory": "05_bottom_bump",
+      "title": "One bump on bottom wall",
+      "result_directory": "cases/05_bottom_bump",
+      "selected_for_chain": true,
+      "metrics": {
+        "32216": {
+          "velocity_relative_l2": 0.01793762993166663,
+          "u_relative_l2": 0.016532044828704427,
+          "v_absolute_rms": 0.008128997935021557,
+          "pressure_relative_l2": 0.023087085966242954,
+          "pressure_drop_relative": 0.008416038843970144,
+          "velocity_mae": 0.01544933791970564,
+          "pressure_mae": 0.028603368503136765,
+          "velocity_relative_l1": 0.014756804817651275,
+          "pressure_relative_l1": 0.024757409387018054
+        },
+        "82216": {
+          "velocity_relative_l2": 0.013349457006440435,
+          "u_relative_l2": 0.011960333831912189,
+          "v_absolute_rms": 0.0069045754626137,
+          "pressure_relative_l2": 0.007949578847929486,
+          "pressure_drop_relative": 0.002304354189139235,
+          "velocity_mae": 0.011123452129388848,
+          "pressure_mae": 0.00968260330167237,
+          "velocity_relative_l1": 0.010624831486306576,
+          "pressure_relative_l1": 0.008380697323999004
+        },
+        "132216": {
+          "velocity_relative_l2": 0.01206908627131661,
+          "u_relative_l2": 0.010956802950959136,
+          "v_absolute_rms": 0.0058998084357807365,
+          "pressure_relative_l2": 0.0059118728962329415,
+          "pressure_drop_relative": 0.005635844965144931,
+          "velocity_mae": 0.009852298324409441,
+          "pressure_mae": 0.006617251453370642,
+          "velocity_relative_l1": 0.009410658510688645,
+          "pressure_relative_l1": 0.00572750734690466
+        }
+      },
+      "reference_sha256": "8c1179ecc32262107a547a158e21d66ce3db4270ee7c57ab48d68db4d6390c04",
+      "geometry_sha256": "3f528f922af56b052cbee2fa741ed345ccb90f680c7c922f7c6a670682811d68",
+      "mesh_uncertainty": {
+        "velocity": 0.0013667326613709234,
+        "pressure": 0.0021252614397033573,
+        "pressure_drop": 0.0014362637588421693
+      }
+    },
+    {
+      "case_id": 6,
+      "group": "channel_chain_15",
+      "original_index": 6,
+      "directory": "06_top_bump",
+      "title": "One bump on top wall",
+      "result_directory": "cases/06_top_bump",
+      "selected_for_chain": false,
+      "metrics": {
+        "32216": {
+          "velocity_relative_l2": 0.02538043208190335,
+          "u_relative_l2": 0.022837152190276138,
+          "v_absolute_rms": 0.013103913817206131,
+          "pressure_relative_l2": 0.02717700224904074,
+          "pressure_drop_relative": 0.030795689572657374,
+          "velocity_mae": 0.023122679990757074,
+          "pressure_mae": 0.0325410469334132,
+          "velocity_relative_l1": 0.021889297339929954,
+          "pressure_relative_l1": 0.026790599865697824
+        },
+        "82216": {
+          "velocity_relative_l2": 0.01688157830658017,
+          "u_relative_l2": 0.01581444901504726,
+          "v_absolute_rms": 0.007043259690613301,
+          "pressure_relative_l2": 0.03247281082725373,
+          "pressure_drop_relative": 0.03289649390587352,
+          "velocity_mae": 0.014330765489169037,
+          "pressure_mae": 0.03829950583216423,
+          "velocity_relative_l1": 0.013566350744231228,
+          "pressure_relative_l1": 0.0315314604936667
+        },
+        "132216": {
+          "velocity_relative_l2": 0.014988162955367899,
+          "u_relative_l2": 0.014010917351984769,
+          "v_absolute_rms": 0.006343653106479282,
+          "pressure_relative_l2": 0.009372447678148673,
+          "pressure_drop_relative": 0.00881328124603896,
+          "velocity_mae": 0.013357358454530226,
+          "pressure_mae": 0.011823375339875045,
+          "velocity_relative_l1": 0.012644866036467877,
+          "pressure_relative_l1": 0.009734023568470576
+        }
+      },
+      "reference_sha256": "bb30e7ea83bdcfeac3de53d57e6ce69c3fb4ff3701d3b335cac9524e8bb6eca4",
+      "geometry_sha256": "45a249a299beb5d3d3dd408e0ce6c023ae90624d30bfe01c00ce9e086c42440c",
+      "mesh_uncertainty": {
+        "velocity": 0.001620977982416953,
+        "pressure": 0.002664256922032071,
+        "pressure_drop": 0.0020336058612527895
+      }
+    },
+    {
+      "case_id": 7,
+      "group": "channel_chain_15",
+      "original_index": 7,
+      "directory": "07_centerline_bend",
+      "title": "Constant-gap centerline bend",
+      "result_directory": "cases/07_centerline_bend",
+      "selected_for_chain": false,
+      "metrics": {
+        "32216": {
+          "velocity_relative_l2": 0.03577621978221405,
+          "u_relative_l2": 0.03271481339251804,
+          "v_absolute_rms": 0.01634079106765429,
+          "pressure_relative_l2": 0.06270586435547006,
+          "pressure_drop_relative": 0.021693234514466354,
+          "velocity_mae": 0.029579545959461995,
+          "pressure_mae": 0.06264758227527592,
+          "velocity_relative_l1": 0.029444870186314132,
+          "pressure_relative_l1": 0.05934472877624707
+        },
+        "82216": {
+          "velocity_relative_l2": 0.02215898426628894,
+          "u_relative_l2": 0.02074668312070394,
+          "v_absolute_rms": 0.008849074445647967,
+          "pressure_relative_l2": 0.0469637529285072,
+          "pressure_drop_relative": 0.03725076616334134,
+          "velocity_mae": 0.017443310625449123,
+          "pressure_mae": 0.050260130572222575,
+          "velocity_relative_l1": 0.017363891172967987,
+          "pressure_relative_l1": 0.04761035795382058
+        },
+        "132216": {
+          "velocity_relative_l2": 0.013532234096028113,
+          "u_relative_l2": 0.01188709879472835,
+          "v_absolute_rms": 0.00725095134125183,
+          "pressure_relative_l2": 0.03563673614856251,
+          "pressure_drop_relative": 0.02552390464245568,
+          "velocity_mae": 0.01231193267419028,
+          "pressure_mae": 0.037133617736842726,
+          "velocity_relative_l1": 0.01225587640293738,
+          "pressure_relative_l1": 0.035175890162699223
+        }
+      },
+      "reference_sha256": "007de96ffe89fa40980ba58148ce1f138fddeddfb59ec1d1e665ad81b958afc5",
+      "geometry_sha256": "9551fa3f33a60cc723c6f59364b700eb748abadadd8d8f250ea93e9a10851da7",
+      "mesh_uncertainty": {
+        "velocity": 0.0019209668238785204,
+        "pressure": 0.003262851271445503,
+        "pressure_drop": 0.002209135783674085
+      }
+    },
+    {
+      "case_id": 8,
+      "group": "channel_chain_15",
+      "original_index": 8,
+      "directory": "08_s_bend",
+      "title": "Constant-gap S bend",
+      "result_directory": "cases/08_s_bend",
+      "selected_for_chain": true,
+      "metrics": {
+        "32216": {
+          "velocity_relative_l2": 0.04243128242906625,
+          "u_relative_l2": 0.03841840050287917,
+          "v_absolute_rms": 0.02037214478859638,
+          "pressure_relative_l2": 0.07715653752786554,
+          "pressure_drop_relative": 0.026565739328212195,
+          "velocity_mae": 0.03878437730447962,
+          "pressure_mae": 0.08718836945361293,
+          "velocity_relative_l1": 0.03855191074109913,
+          "pressure_relative_l1": 0.08122210773161646
+        },
+        "82216": {
+          "velocity_relative_l2": 0.020793031383312507,
+          "u_relative_l2": 0.019582745836117885,
+          "v_absolute_rms": 0.008010877726184784,
+          "pressure_relative_l2": 0.030351528625694037,
+          "pressure_drop_relative": 0.019077160224255246,
+          "velocity_mae": 0.017995610785145194,
+          "pressure_mae": 0.030181329682739576,
+          "velocity_relative_l1": 0.017887748339338375,
+          "pressure_relative_l1": 0.02811603458508451
+        },
+        "132216": {
+          "velocity_relative_l2": 0.021067472354155865,
+          "u_relative_l2": 0.01976902822850742,
+          "v_absolute_rms": 0.00832904937796464,
+          "pressure_relative_l2": 0.018534467372397504,
+          "pressure_drop_relative": 0.016246216281069384,
+          "velocity_mae": 0.018436544395075624,
+          "pressure_mae": 0.017547385346657802,
+          "velocity_relative_l1": 0.01832603907272667,
+          "pressure_relative_l1": 0.016346625495648245
+        }
+      },
+      "reference_sha256": "df876c7639dae5a6e9bcf1257e380a564a73d1d8b0cbdc6448e140fa3d8751d7",
+      "geometry_sha256": "5478d178b34b3b0d3c03f7b009cfd508260172f802b07d80619cbea777097a8d",
+      "mesh_uncertainty": {
+        "velocity": 0.0026192945557784817,
+        "pressure": 0.004472455102278146,
+        "pressure_drop": 0.00354063569234242
+      }
+    },
+    {
+      "case_id": 9,
+      "group": "channel_chain_15",
+      "original_index": 9,
+      "directory": "09_double_constriction",
+      "title": "Two symmetric constrictions",
+      "result_directory": "cases/09_double_constriction",
+      "selected_for_chain": false,
+      "metrics": {
+        "32216": {
+          "velocity_relative_l2": 0.041679143142295136,
+          "u_relative_l2": 0.040935935067620624,
+          "v_absolute_rms": 0.009604353727478325,
+          "pressure_relative_l2": 0.10487173260868997,
+          "pressure_drop_relative": 0.09728614548242674,
+          "velocity_mae": 0.03925234114239775,
+          "pressure_mae": 0.1346374618554321,
+          "velocity_relative_l1": 0.03617518548600976,
+          "pressure_relative_l1": 0.10583909261815305
+        },
+        "82216": {
+          "velocity_relative_l2": 0.019779836108002824,
+          "u_relative_l2": 0.018691337300947384,
+          "v_absolute_rms": 0.007820915175010488,
+          "pressure_relative_l2": 0.009113383002027275,
+          "pressure_drop_relative": 0.0004136708644293336,
+          "velocity_mae": 0.017948292379403524,
+          "pressure_mae": 0.012564671541133169,
+          "velocity_relative_l1": 0.0165412504601094,
+          "pressure_relative_l1": 0.009877142785019102
+        },
+        "132216": {
+          "velocity_relative_l2": 0.016307470487517788,
+          "u_relative_l2": 0.015048764462664982,
+          "v_absolute_rms": 0.007577863965618942,
+          "pressure_relative_l2": 0.02813269353391168,
+          "pressure_drop_relative": 0.02454650983500501,
+          "velocity_mae": 0.01516209741020446,
+          "pressure_mae": 0.036172175290737685,
+          "velocity_relative_l1": 0.013973477000551448,
+          "pressure_relative_l1": 0.02843510385621542
+        }
+      },
+      "reference_sha256": "5a1581de97556ba9980e8d207a5f078c07149966c4012bf6257a696cb8a5621b",
+      "geometry_sha256": "06f964cf111e718f27f640e62d06e5d5b6841fa1571a8fd7e44dd454e902899f",
+      "mesh_uncertainty": {
+        "velocity": 0.0019027699587423057,
+        "pressure": 0.0039348319759200555,
+        "pressure_drop": 0.0031488279410200404
+      }
+    },
+    {
+      "case_id": 10,
+      "group": "channel_chain_15",
+      "original_index": 10,
+      "directory": "10_constriction_expansion",
+      "title": "Constriction followed by expansion",
+      "result_directory": "cases/10_constriction_expansion",
+      "selected_for_chain": false,
+      "metrics": {
+        "32216": {
+          "velocity_relative_l2": 0.03220651135674287,
+          "u_relative_l2": 0.03033704326919054,
+          "v_absolute_rms": 0.012045250878595079,
+          "pressure_relative_l2": 0.07178414778401379,
+          "pressure_drop_relative": 0.03153418296961563,
+          "velocity_mae": 0.02965053670806172,
+          "pressure_mae": 0.0724388220867876,
+          "velocity_relative_l1": 0.02981635963214104,
+          "pressure_relative_l1": 0.0763106039073723
+        },
+        "82216": {
+          "velocity_relative_l2": 0.020006796295302498,
+          "u_relative_l2": 0.01875564140922135,
+          "v_absolute_rms": 0.007753933379444949,
+          "pressure_relative_l2": 0.033727377779157436,
+          "pressure_drop_relative": 0.01473886326500553,
+          "velocity_mae": 0.0183835695041644,
+          "pressure_mae": 0.03454494150062221,
+          "velocity_relative_l1": 0.01848638104110926,
+          "pressure_relative_l1": 0.036391333706379314
+        },
+        "132216": {
+          "velocity_relative_l2": 0.010716393185938828,
+          "u_relative_l2": 0.009704797144403919,
+          "v_absolute_rms": 0.005050226684327858,
+          "pressure_relative_l2": 0.014400929502481044,
+          "pressure_drop_relative": 0.00353274542097445,
+          "velocity_mae": 0.00980635655263172,
+          "pressure_mae": 0.013867181590761442,
+          "velocity_relative_l1": 0.009861199361520223,
+          "pressure_relative_l1": 0.014608368430071596
+        }
+      },
+      "reference_sha256": "d37fb1c797143a10d874616932a62de44362d40d2210cffd4a0e0adeadef2b5f",
+      "geometry_sha256": "b80aad3943acd82f6ffdf28350629b2dd49faf55a82adf7f2395268a8d579472",
+      "mesh_uncertainty": {
+        "velocity": 0.0022398722227462324,
+        "pressure": 0.004452972227644603,
+        "pressure_drop": 0.003316606734801789
+      }
+    },
+    {
+      "case_id": 11,
+      "group": "channel_chain_15",
+      "original_index": 11,
+      "directory": "11_staggered_walls",
+      "title": "Staggered independent wall bumps",
+      "result_directory": "cases/11_staggered_walls",
+      "selected_for_chain": false,
+      "metrics": {
+        "32216": {
+          "velocity_relative_l2": 0.02932575083642438,
+          "u_relative_l2": 0.026625268552667804,
+          "v_absolute_rms": 0.014716327446935523,
+          "pressure_relative_l2": 0.049206341787126136,
+          "pressure_drop_relative": 0.03240573198762413,
+          "velocity_mae": 0.02835025927144127,
+          "pressure_mae": 0.0659012371531872,
+          "velocity_relative_l1": 0.02654090129655761,
+          "pressure_relative_l1": 0.05329583598125953
+        },
+        "82216": {
+          "velocity_relative_l2": 0.017956107072720107,
+          "u_relative_l2": 0.01643679057744088,
+          "v_absolute_rms": 0.008666261920694807,
+          "pressure_relative_l2": 0.02653378472776725,
+          "pressure_drop_relative": 0.01958231272254725,
+          "velocity_mae": 0.017398665322477597,
+          "pressure_mae": 0.032855472597455714,
+          "velocity_relative_l1": 0.016288255235848557,
+          "pressure_relative_l1": 0.026570971263717467
+        },
+        "132216": {
+          "velocity_relative_l2": 0.024816700335784782,
+          "u_relative_l2": 0.023260094971184087,
+          "v_absolute_rms": 0.010432472465455584,
+          "pressure_relative_l2": 0.011426300633085494,
+          "pressure_drop_relative": 0.0015921407315776831,
+          "velocity_mae": 0.023187857440148143,
+          "pressure_mae": 0.013327770291906696,
+          "velocity_relative_l1": 0.021707972040226554,
+          "pressure_relative_l1": 0.01077847230427918
+        }
+      },
+      "reference_sha256": "1f9d09efb028f8f29c10a7065806c5e2f4ea2b6fe0b03506ae2daf46dd7b7ed2",
+      "geometry_sha256": "67643ab84fd68b56fb3497a540139f1461e3d5ae0e99757f7c330f76f88d8664",
+      "mesh_uncertainty": {
+        "velocity": 0.0022551940405427383,
+        "pressure": 0.003478910590120237,
+        "pressure_drop": 0.0028873006997698477
+      }
+    },
+    {
+      "case_id": 12,
+      "group": "channel_chain_15",
+      "original_index": 12,
+      "directory": "12_triple_constriction",
+      "title": "Three symmetric constrictions",
+      "result_directory": "cases/12_triple_constriction",
+      "selected_for_chain": false,
+      "metrics": {
+        "32216": {
+          "velocity_relative_l2": 0.0747974241235437,
+          "u_relative_l2": 0.07185494194885497,
+          "v_absolute_rms": 0.025456823284765954,
+          "pressure_relative_l2": 0.16086903572244202,
+          "pressure_drop_relative": 0.1368038621103199,
+          "velocity_mae": 0.06886599807323061,
+          "pressure_mae": 0.2176805087587311,
+          "velocity_relative_l1": 0.06290400393228517,
+          "pressure_relative_l1": 0.16756193686141171
+        },
+        "82216": {
+          "velocity_relative_l2": 0.030424334696404716,
+          "u_relative_l2": 0.028656500723320554,
+          "v_absolute_rms": 0.012484047938916606,
+          "pressure_relative_l2": 0.028028037073183416,
+          "pressure_drop_relative": 0.015608042982300133,
+          "velocity_mae": 0.027419168480925075,
+          "pressure_mae": 0.03861457621791689,
+          "velocity_relative_l1": 0.025045385679446787,
+          "pressure_relative_l1": 0.029723989616949286
+        },
+        "132216": {
+          "velocity_relative_l2": 0.0374712827309087,
+          "u_relative_l2": 0.03490514145573323,
+          "v_absolute_rms": 0.016630549518264065,
+          "pressure_relative_l2": 0.045393867950038046,
+          "pressure_drop_relative": 0.026840859739155606,
+          "velocity_mae": 0.033959731354854306,
+          "pressure_mae": 0.062055995083676735,
+          "velocity_relative_l1": 0.03101970688660478,
+          "pressure_relative_l1": 0.04776827649556863
+        }
+      },
+      "reference_sha256": "5ecf8a6b07632be0b001e58825898f597c9c6c69b8df5c6149fd259575a20403",
+      "geometry_sha256": "f3d7adff68c0fa7056444a6fb05bc4411c19690f9a2f5bdf3c68a76d54ad8b27",
+      "mesh_uncertainty": {
+        "velocity": 0.0029131099056252763,
+        "pressure": 0.005942147020136897,
+        "pressure_drop": 0.005639796071987251
+      }
+    },
+    {
+      "case_id": 13,
+      "group": "channel_chain_15",
+      "original_index": 13,
+      "directory": "13_oscillating_gap",
+      "title": "Four alternating gap features",
+      "result_directory": "cases/13_oscillating_gap",
+      "selected_for_chain": false,
+      "metrics": {
+        "32216": {
+          "velocity_relative_l2": 0.028157716499359036,
+          "u_relative_l2": 0.02362853515574665,
+          "v_absolute_rms": 0.01738418715893625,
+          "pressure_relative_l2": 0.061543360282366316,
+          "pressure_drop_relative": 0.06450596022447472,
+          "velocity_mae": 0.025301559585839184,
+          "pressure_mae": 0.06683609008261629,
+          "velocity_relative_l1": 0.025201981416330076,
+          "pressure_relative_l1": 0.061066542412753354
+        },
+        "82216": {
+          "velocity_relative_l2": 0.027145633296822534,
+          "u_relative_l2": 0.0228309416544036,
+          "v_absolute_rms": 0.01666935518868442,
+          "pressure_relative_l2": 0.01698694529708205,
+          "pressure_drop_relative": 0.001620709037355692,
+          "velocity_mae": 0.025749507080474462,
+          "pressure_mae": 0.014732424555980794,
+          "velocity_relative_l1": 0.02564816594487623,
+          "pressure_relative_l1": 0.013460665156780112
+        },
+        "132216": {
+          "velocity_relative_l2": 0.02450024654690966,
+          "u_relative_l2": 0.021082689697398432,
+          "v_absolute_rms": 0.014177355156597963,
+          "pressure_relative_l2": 0.027575526560613448,
+          "pressure_drop_relative": 0.00033504592074010483,
+          "velocity_mae": 0.022149589184599333,
+          "pressure_mae": 0.026207581688193475,
+          "velocity_relative_l1": 0.022062416078178822,
+          "pressure_relative_l1": 0.0239452427082359
+        }
+      },
+      "reference_sha256": "4cceae70325471f37efb565f7d87464578784844d7b2d237054c89885c46ce7d",
+      "geometry_sha256": "2949762f22ae4795b2726b83f82e9b9f68a68f7c1e861225bf2b60dc13535db8",
+      "mesh_uncertainty": {
+        "velocity": 0.0034770355539460018,
+        "pressure": 0.00720440413127327,
+        "pressure_drop": 0.006931684193633277
+      }
+    },
+    {
+      "case_id": 14,
+      "group": "channel_chain_15",
+      "original_index": 14,
+      "directory": "14_oscillating_walls",
+      "title": "Oscillating centerline and gap",
+      "result_directory": "cases/14_oscillating_walls",
+      "selected_for_chain": false,
+      "metrics": {
+        "32216": {
+          "velocity_relative_l2": 0.07813568281643635,
+          "u_relative_l2": 0.06878862627855868,
+          "v_absolute_rms": 0.042226452031642756,
+          "pressure_relative_l2": 0.061604902623845235,
+          "pressure_drop_relative": 0.053969618519643006,
+          "velocity_mae": 0.07204507169901031,
+          "pressure_mae": 0.08801529062119531,
+          "velocity_relative_l1": 0.07158468493554868,
+          "pressure_relative_l1": 0.06562808975917132
+        },
+        "82216": {
+          "velocity_relative_l2": 0.049535928689112094,
+          "u_relative_l2": 0.04313490207690937,
+          "v_absolute_rms": 0.027717128141378916,
+          "pressure_relative_l2": 0.10533315405257063,
+          "pressure_drop_relative": 0.10076933700814979,
+          "velocity_mae": 0.04510707211143996,
+          "pressure_mae": 0.14695277582084143,
+          "velocity_relative_l1": 0.04481882617804186,
+          "pressure_relative_l1": 0.10957448295475034
+        },
+        "132216": {
+          "velocity_relative_l2": 0.05206413945478697,
+          "u_relative_l2": 0.0468289108194899,
+          "v_absolute_rms": 0.026010418709386526,
+          "pressure_relative_l2": 0.09495015260667757,
+          "pressure_drop_relative": 0.09182183322202103,
+          "velocity_mae": 0.04540743250567539,
+          "pressure_mae": 0.13362748142772957,
+          "velocity_relative_l1": 0.04511726719116608,
+          "pressure_relative_l1": 0.09963855465949185
+        }
+      },
+      "reference_sha256": "251d770b9d0be8b687ce86af73994d95aced755bf9e13655f68a22e35d53090b",
+      "geometry_sha256": "c35fdb7128b9e76e6abcf1e8f3183bafbdce46e65e9929260e88f4007bed7f9e",
+      "mesh_uncertainty": {
+        "velocity": 0.004025334682650276,
+        "pressure": 0.005950282755511199,
+        "pressure_drop": 0.006262353291208389
+      }
+    },
+    {
+      "case_id": 15,
+      "group": "channel_chain_15",
+      "original_index": 15,
+      "directory": "15_mixed_independent",
+      "title": "Mixed independent multiscale walls",
+      "result_directory": "cases/15_mixed_independent",
+      "selected_for_chain": false,
+      "metrics": {
+        "32216": {
+          "velocity_relative_l2": 0.058071438718079044,
+          "u_relative_l2": 0.0497635283343835,
+          "v_absolute_rms": 0.0347316665306771,
+          "pressure_relative_l2": 0.16179740950291774,
+          "pressure_drop_relative": 0.16269242813104592,
+          "velocity_mae": 0.05384941150204616,
+          "pressure_mae": 0.18457153883533606,
+          "velocity_relative_l1": 0.05241789753568096,
+          "pressure_relative_l1": 0.15815597712470497
+        },
+        "82216": {
+          "velocity_relative_l2": 0.034461072032643515,
+          "u_relative_l2": 0.029210325734760685,
+          "v_absolute_rms": 0.021202080602149852,
+          "pressure_relative_l2": 0.07211098510164968,
+          "pressure_drop_relative": 0.05856586692986244,
+          "velocity_mae": 0.03186434204408785,
+          "pressure_mae": 0.08740879538151759,
+          "velocity_relative_l1": 0.031017271493216238,
+          "pressure_relative_l1": 0.07489899867601191
+        },
+        "132216": {
+          "velocity_relative_l2": 0.02971569936461983,
+          "u_relative_l2": 0.02547586324796867,
+          "v_absolute_rms": 0.017751055594702046,
+          "pressure_relative_l2": 0.06815308710233703,
+          "pressure_drop_relative": 0.0498805868059938,
+          "velocity_mae": 0.026753474003719222,
+          "pressure_mae": 0.08234843381298075,
+          "velocity_relative_l1": 0.02604226898556119,
+          "pressure_relative_l1": 0.07056286736602561
+        }
+      },
+      "reference_sha256": "c5567d597a885bf114be1b153b858a50c802b2a62ffaa2b4ed9cd28f114a2170",
+      "geometry_sha256": "d0b6ead111d99912b6e0b25d4e06c0dc83eeebfeb607971b1a1321f00eda9d4b",
+      "mesh_uncertainty": {
+        "velocity": 0.0040006309069811835,
+        "pressure": 0.006593149412759764,
+        "pressure_drop": 0.0065316328054325955
+      }
+    },
+    {
+      "case_id": 16,
+      "group": "random_channel_chain_5",
+      "original_index": 1,
+      "directory": "01_roof_plateau",
+      "title": "Rounded plateau roof",
+      "result_directory": "cases/16_roof_plateau",
+      "selected_for_chain": true,
+      "metrics": {
+        "32216": {
+          "velocity_relative_l2": 0.12426185658137812,
+          "u_relative_l2": 0.11968194624694685,
+          "v_absolute_rms": 0.03328334035361138,
+          "pressure_relative_l2": 0.25363680831737817,
+          "pressure_drop_relative": 0.21925747120251435,
+          "velocity_mae": 0.09243316973394607,
+          "pressure_mae": 0.21833167509377643,
+          "velocity_relative_l1": 0.10590279047226483,
+          "pressure_relative_l1": 0.24615486326973265
+        },
+        "82216": {
+          "velocity_relative_l2": 0.11263319181462086,
+          "u_relative_l2": 0.10864189027061368,
+          "v_absolute_rms": 0.029629579178708215,
+          "pressure_relative_l2": 0.20938259118127645,
+          "pressure_drop_relative": 0.1886217773036631,
+          "velocity_mae": 0.08430326911912939,
+          "pressure_mae": 0.1807860150145037,
+          "velocity_relative_l1": 0.0965881779381555,
+          "pressure_relative_l1": 0.203824556321757
+        },
+        "132216": {
+          "velocity_relative_l2": 0.08706802478331949,
+          "u_relative_l2": 0.08384554399779301,
+          "v_absolute_rms": 0.02336575994127319,
+          "pressure_relative_l2": 0.1497185117809074,
+          "pressure_drop_relative": 0.12409233524624219,
+          "velocity_mae": 0.06637125019908169,
+          "pressure_mae": 0.13039548468498074,
+          "velocity_relative_l1": 0.07604305492765387,
+          "pressure_relative_l1": 0.1470124877200509
+        }
+      },
+      "reference_sha256": "5b4928d11fe39b8d731d727bb2a200d5d5b78e824e164cc066cfc0ed31ca070d",
+      "geometry_sha256": "bcafc3bc8f115a74a44cafb3389589748ae75a9d198cbc212db540a0d0a845ac",
+      "mesh_uncertainty": {
+        "velocity": 0.0008923382418188436,
+        "pressure": 0.0013194781714389275,
+        "pressure_drop": 0.0006769263705088151
+      }
+    },
+    {
+      "case_id": 17,
+      "group": "random_channel_chain_5",
+      "original_index": 2,
+      "directory": "02_chirped_wave",
+      "title": "Waves with changing wavelength",
+      "result_directory": "cases/17_chirped_wave",
+      "selected_for_chain": true,
+      "metrics": {
+        "32216": {
+          "velocity_relative_l2": 0.03936754469761786,
+          "u_relative_l2": 0.03535885825715862,
+          "v_absolute_rms": 0.01923545494711491,
+          "pressure_relative_l2": 0.04415182077220688,
+          "pressure_drop_relative": 0.02411560933459841,
+          "velocity_mae": 0.02982578041646968,
+          "pressure_mae": 0.04783718162208873,
+          "velocity_relative_l1": 0.02984154777252425,
+          "pressure_relative_l1": 0.04405260066453038
+        },
+        "82216": {
+          "velocity_relative_l2": 0.024890081339315938,
+          "u_relative_l2": 0.022158967500334373,
+          "v_absolute_rms": 0.012594770276963813,
+          "pressure_relative_l2": 0.016254221967658935,
+          "pressure_drop_relative": 0.005276853617782651,
+          "velocity_mae": 0.01811332836996485,
+          "pressure_mae": 0.016006685593756346,
+          "velocity_relative_l1": 0.018122903955037722,
+          "pressure_relative_l1": 0.014740335958647792
+        },
+        "132216": {
+          "velocity_relative_l2": 0.027466043093174745,
+          "u_relative_l2": 0.02511444565395576,
+          "v_absolute_rms": 0.01236722334484747,
+          "pressure_relative_l2": 0.025516936775577585,
+          "pressure_drop_relative": 0.015608305020313268,
+          "velocity_mae": 0.020545119643168918,
+          "pressure_mae": 0.027155554446166397,
+          "velocity_relative_l1": 0.020555980791211792,
+          "pressure_relative_l1": 0.025007175491469687
+        }
+      },
+      "reference_sha256": "9c31f172cebc1ec6ad93e199ec3a1af22fb8655fd8a6e4c5a66751ce4f89badf",
+      "geometry_sha256": "d3437811a1e1e73a14aa8cdc33661c67acfa4b8e1ccb12b9c42e95b0d7594853",
+      "mesh_uncertainty": {
+        "velocity": 0.004563779325038956,
+        "pressure": 0.008177374471998058,
+        "pressure_drop": 0.00705321696175947
+      }
+    },
+    {
+      "case_id": 18,
+      "group": "random_channel_chain_5",
+      "original_index": 3,
+      "directory": "03_stepped_s_bend",
+      "title": "Rounded stepped S-shaped walls",
+      "result_directory": "cases/18_stepped_s_bend",
+      "selected_for_chain": false,
+      "metrics": {
+        "32216": {
+          "velocity_relative_l2": 0.020987140215125804,
+          "u_relative_l2": 0.020373966183086383,
+          "v_absolute_rms": 0.005879496666700059,
+          "pressure_relative_l2": 0.02898867202735019,
+          "pressure_drop_relative": 0.021152833418982393,
+          "velocity_mae": 0.02016275865957557,
+          "pressure_mae": 0.03719027342045607,
+          "velocity_relative_l1": 0.019174604725546857,
+          "pressure_relative_l1": 0.03226125415660234
+        },
+        "82216": {
+          "velocity_relative_l2": 0.01349410984537051,
+          "u_relative_l2": 0.012917827289873953,
+          "v_absolute_rms": 0.004544083090096415,
+          "pressure_relative_l2": 0.042602206950288796,
+          "pressure_drop_relative": 0.03353547891538105,
+          "velocity_mae": 0.012104671964374928,
+          "pressure_mae": 0.05449975764061354,
+          "velocity_relative_l1": 0.011511435720085329,
+          "pressure_relative_l1": 0.04727662291802268
+        },
+        "132216": {
+          "velocity_relative_l2": 0.012015470239589716,
+          "u_relative_l2": 0.01157412399041797,
+          "v_absolute_rms": 0.0037613137256011283,
+          "pressure_relative_l2": 0.02063508986687433,
+          "pressure_drop_relative": 0.011832846576237822,
+          "velocity_mae": 0.010589348586048495,
+          "pressure_mae": 0.026907101082871705,
+          "velocity_relative_l1": 0.010070376621905294,
+          "pressure_relative_l1": 0.023340963827774647
+        }
+      },
+      "reference_sha256": "f58e7175b99128d82e1ec1605a23275e7c9982d766068e9980407d48be7b57b5",
+      "geometry_sha256": "a25f65a975f8932342cd53fe68fda2f572b49cfe6b6486ddd024efc7138e50dd",
+      "mesh_uncertainty": {
+        "velocity": 0.0005949382843722581,
+        "pressure": 0.0008838690870642063,
+        "pressure_drop": 0.000726280146722577
+      }
+    },
+    {
+      "case_id": 19,
+      "group": "random_channel_chain_5",
+      "original_index": 4,
+      "directory": "04_random_spline",
+      "title": "Independent irregular spline walls",
+      "result_directory": "cases/19_random_spline",
+      "selected_for_chain": false,
+      "metrics": {
+        "32216": {
+          "velocity_relative_l2": 0.033233095373931015,
+          "u_relative_l2": 0.029762166674997013,
+          "v_absolute_rms": 0.016254673280749875,
+          "pressure_relative_l2": 0.0339871728669955,
+          "pressure_drop_relative": 0.017812230310437382,
+          "velocity_mae": 0.02616048406091762,
+          "pressure_mae": 0.035323164465531375,
+          "velocity_relative_l1": 0.026264718161423395,
+          "pressure_relative_l1": 0.03450013827951732
+        },
+        "82216": {
+          "velocity_relative_l2": 0.019303703161832893,
+          "u_relative_l2": 0.017157897129329087,
+          "v_absolute_rms": 0.009722229311682207,
+          "pressure_relative_l2": 0.026228518700519017,
+          "pressure_drop_relative": 0.018462892237549714,
+          "velocity_mae": 0.0146338163156581,
+          "pressure_mae": 0.025865212802115966,
+          "velocity_relative_l1": 0.014692123443197381,
+          "pressure_relative_l1": 0.025262555940391687
+        },
+        "132216": {
+          "velocity_relative_l2": 0.01957130604755588,
+          "u_relative_l2": 0.0170255717445145,
+          "v_absolute_rms": 0.010606480877282724,
+          "pressure_relative_l2": 0.01675775568779734,
+          "pressure_drop_relative": 0.008342447594459432,
+          "velocity_mae": 0.01596151910819698,
+          "pressure_mae": 0.01586272382660921,
+          "velocity_relative_l1": 0.016025116348334974,
+          "pressure_relative_l1": 0.015493123953881265
+        }
+      },
+      "reference_sha256": "2c035bb60859172e6ac5556164bf2cd679ca3672c1028a341e3c150a05412ec4",
+      "geometry_sha256": "844f091852a8ddf270538cd43245345c02b9bcebf12cd918ba6e7ab4bee9e313",
+      "mesh_uncertainty": {
+        "velocity": 0.004049229601166668,
+        "pressure": 0.005690994183910211,
+        "pressure_drop": 0.004425322734003675
+      }
+    },
+    {
+      "case_id": 20,
+      "group": "random_channel_chain_5",
+      "original_index": 5,
+      "directory": "05_random_fourier",
+      "title": "Independent random Fourier walls",
+      "result_directory": "cases/20_random_fourier",
+      "selected_for_chain": true,
+      "metrics": {
+        "32216": {
+          "velocity_relative_l2": 0.05493954240509104,
+          "u_relative_l2": 0.05267215493303148,
+          "v_absolute_rms": 0.018720823126509075,
+          "pressure_relative_l2": 0.020628716717836507,
+          "pressure_drop_relative": 0.018923445586919944,
+          "velocity_mae": 0.043543195531646026,
+          "pressure_mae": 0.026217904920447926,
+          "velocity_relative_l1": 0.04179239922406613,
+          "pressure_relative_l1": 0.020812579935282325
+        },
+        "82216": {
+          "velocity_relative_l2": 0.04704231532266075,
+          "u_relative_l2": 0.04523858440729891,
+          "v_absolute_rms": 0.01549823731995179,
+          "pressure_relative_l2": 0.03943999967879814,
+          "pressure_drop_relative": 0.03673453335726634,
+          "velocity_mae": 0.0373675860555593,
+          "pressure_mae": 0.05017546521729504,
+          "velocity_relative_l1": 0.03586510028503976,
+          "pressure_relative_l1": 0.03983082873301874
+        },
+        "132216": {
+          "velocity_relative_l2": 0.04757416788428595,
+          "u_relative_l2": 0.04557454697312027,
+          "v_absolute_rms": 0.016347631940724718,
+          "pressure_relative_l2": 0.03483624139335469,
+          "pressure_drop_relative": 0.031079985073745403,
+          "velocity_mae": 0.036570974014237034,
+          "pressure_mae": 0.0454645233081865,
+          "velocity_relative_l1": 0.035100518631094715,
+          "pressure_relative_l1": 0.03609113803876637
+        }
+      },
+      "reference_sha256": "a0a65f8e9b412b5f9579b7c2dfed8ac130108578e9244f8d7874f9b4ace50040",
+      "geometry_sha256": "22b5317036496b7ee0074c79028914746b1b08b7c673c9d801ce8a5e6a7738f2",
+      "mesh_uncertainty": {
+        "velocity": 0.0029366350549534645,
+        "pressure": 0.00553140043461247,
+        "pressure_drop": 0.004632484087166481
+      }
+    }
+  ],
+  "aggregates": {
+    "all_20": {
+      "velocity_relative_l2": {
+        "medians": {
+          "32216": 0.03271980336533695,
+          "82216": 0.01989331620165266,
+          "132216": 0.017939388267536834
+        },
+        "improved_vs_82216": 13,
+        "worsened_vs_82216": 7,
+        "median_error_reduction_percent_vs_82216": 9.822032256007185
+      },
+      "u_relative_l2": {
+        "medians": {
+          "32216": 0.030049604972093774,
+          "82216": 0.018723489355084368,
+          "132216": 0.01603716810358974
+        },
+        "improved_vs_82216": 14,
+        "worsened_vs_82216": 6,
+        "median_error_reduction_percent_vs_82216": 14.347332383133804
+      },
+      "v_absolute_rms": {
+        "medians": {
+          "32216": 0.015485500363842698,
+          "82216": 0.008338569823439796,
+          "132216": 0.007953456671791792
+        },
+        "improved_vs_82216": 15,
+        "worsened_vs_82216": 5,
+        "median_error_reduction_percent_vs_82216": 4.618455680078948
+      },
+      "pressure_relative_l2": {
+        "medians": {
+          "32216": 0.047271255482196184,
+          "82216": 0.027314319758840282,
+          "132216": 0.022302319809866
+        },
+        "improved_vs_82216": 14,
+        "worsened_vs_82216": 6,
+        "median_error_reduction_percent_vs_82216": 18.349349327479214
+      },
+      "pressure_drop_relative": {
+        "medians": {
+          "32216": 0.028680714450434783,
+          "82216": 0.01877002623090248,
+          "132216": 0.013905705004173867
+        },
+        "improved_vs_82216": 14,
+        "worsened_vs_82216": 6,
+        "median_error_reduction_percent_vs_82216": 25.915367229056518
+      },
+      "velocity_mae": {
+        "medians": {
+          "32216": 0.028964902615451635,
+          "82216": 0.017695801502426323,
+          "132216": 0.01556180825920072
+        },
+        "improved_vs_82216": 14,
+        "worsened_vs_82216": 6,
+        "median_error_reduction_percent_vs_82216": 12.059319511088585
+      },
+      "pressure_mae": {
+        "medians": {
+          "32216": 0.055381279581236675,
+          "82216": 0.03370020704903896,
+          "132216": 0.02403250045642283
+        },
+        "improved_vs_82216": 14,
+        "worsened_vs_82216": 6,
+        "median_error_reduction_percent_vs_82216": 28.687380402583706
+      },
+      "velocity_relative_l1": {
+        "medians": {
+          "32216": 0.027992885741435873,
+          "82216": 0.01695257081653869,
+          "132216": 0.014999296674443212
+        },
+        "improved_vs_82216": 14,
+        "worsened_vs_82216": 6,
+        "median_error_reduction_percent_vs_82216": 11.521993703691791
+      },
+      "pressure_relative_l1": {
+        "medians": {
+          "32216": 0.05001018528128376,
+          "82216": 0.028920012101016898,
+          "132216": 0.022960008926804644
+        },
+        "improved_vs_82216": 14,
+        "worsened_vs_82216": 6,
+        "median_error_reduction_percent_vs_82216": 20.60857773293493
+      }
+    },
+    "channel_chain_15": {
+      "velocity_relative_l2": {
+        "medians": {
+          "32216": 0.02932575083642438,
+          "82216": 0.019779836108002824,
+          "132216": 0.014988162955367899
+        },
+        "improved_vs_82216": 11,
+        "worsened_vs_82216": 4,
+        "median_error_reduction_percent_vs_82216": 24.22503971454161
+      },
+      "u_relative_l2": {
+        "medians": {
+          "32216": 0.026625268552667804,
+          "82216": 0.018691337300947384,
+          "132216": 0.014010917351984769
+        },
+        "improved_vs_82216": 11,
+        "worsened_vs_82216": 4,
+        "median_error_reduction_percent_vs_82216": 25.040583632961265
+      },
+      "v_absolute_rms": {
+        "medians": {
+          "32216": 0.013103913817206131,
+          "82216": 0.007820915175010488,
+          "132216": 0.00725095134125183
+        },
+        "improved_vs_82216": 12,
+        "worsened_vs_82216": 3,
+        "median_error_reduction_percent_vs_82216": 7.287687195225123
+      },
+      "pressure_relative_l2": {
+        "medians": {
+          "32216": 0.061543360282366316,
+          "82216": 0.02660060244449715,
+          "132216": 0.018534467372397504
+        },
+        "improved_vs_82216": 10,
+        "worsened_vs_82216": 5,
+        "median_error_reduction_percent_vs_82216": 30.323129293518235
+      },
+      "pressure_drop_relative": {
+        "medians": {
+          "32216": 0.03153418296961563,
+          "82216": 0.015608042982300133,
+          "132216": 0.012203104988034468
+        },
+        "improved_vs_82216": 10,
+        "worsened_vs_82216": 5,
+        "median_error_reduction_percent_vs_82216": 21.8152781750213
+      },
+      "velocity_mae": {
+        "medians": {
+          "32216": 0.02835025927144127,
+          "82216": 0.017443310625449123,
+          "132216": 0.013357358454530226
+        },
+        "improved_vs_82216": 11,
+        "worsened_vs_82216": 4,
+        "median_error_reduction_percent_vs_82216": 23.424178234592972
+      },
+      "pressure_mae": {
+        "medians": {
+          "32216": 0.0659012371531872,
+          "82216": 0.032855472597455714,
+          "132216": 0.017547385346657802
+        },
+        "improved_vs_82216": 10,
+        "worsened_vs_82216": 5,
+        "median_error_reduction_percent_vs_82216": 46.59219923071005
+      },
+      "velocity_relative_l1": {
+        "medians": {
+          "32216": 0.02654090129655761,
+          "82216": 0.0165412504601094,
+          "132216": 0.012644866036467877
+        },
+        "improved_vs_82216": 11,
+        "worsened_vs_82216": 4,
+        "median_error_reduction_percent_vs_82216": 23.555561491786715
+      },
+      "pressure_relative_l1": {
+        "medians": {
+          "32216": 0.05934472877624707,
+          "82216": 0.02811603458508451,
+          "132216": 0.016346625495648245
+        },
+        "improved_vs_82216": 10,
+        "worsened_vs_82216": 5,
+        "median_error_reduction_percent_vs_82216": 41.86013164061162
+      }
+    },
+    "random_channel_chain_5": {
+      "velocity_relative_l2": {
+        "medians": {
+          "32216": 0.03936754469761786,
+          "82216": 0.024890081339315938,
+          "132216": 0.027466043093174745
+        },
+        "improved_vs_82216": 2,
+        "worsened_vs_82216": 3,
+        "median_error_reduction_percent_vs_82216": -10.349350485206577
+      },
+      "u_relative_l2": {
+        "medians": {
+          "32216": 0.03535885825715862,
+          "82216": 0.022158967500334373,
+          "132216": 0.02511444565395576
+        },
+        "improved_vs_82216": 3,
+        "worsened_vs_82216": 2,
+        "median_error_reduction_percent_vs_82216": -13.337616716919642
+      },
+      "v_absolute_rms": {
+        "medians": {
+          "32216": 0.018720823126509075,
+          "82216": 0.012594770276963813,
+          "132216": 0.01236722334484747
+        },
+        "improved_vs_82216": 3,
+        "worsened_vs_82216": 2,
+        "median_error_reduction_percent_vs_82216": 1.8066779076751582
+      },
+      "pressure_relative_l2": {
+        "medians": {
+          "32216": 0.0339871728669955,
+          "82216": 0.03943999967879814,
+          "132216": 0.025516936775577585
+        },
+        "improved_vs_82216": 4,
+        "worsened_vs_82216": 1,
+        "median_error_reduction_percent_vs_82216": 35.30188391635613
+      },
+      "pressure_drop_relative": {
+        "medians": {
+          "32216": 0.021152833418982393,
+          "82216": 0.03353547891538105,
+          "132216": 0.015608305020313268
+        },
+        "improved_vs_82216": 4,
+        "worsened_vs_82216": 1,
+        "median_error_reduction_percent_vs_82216": 53.457336751631956
+      },
+      "velocity_mae": {
+        "medians": {
+          "32216": 0.02982578041646968,
+          "82216": 0.01811332836996485,
+          "132216": 0.020545119643168918
+        },
+        "improved_vs_82216": 3,
+        "worsened_vs_82216": 2,
+        "median_error_reduction_percent_vs_82216": -13.42542476752322
+      },
+      "pressure_mae": {
+        "medians": {
+          "32216": 0.03719027342045607,
+          "82216": 0.05017546521729504,
+          "132216": 0.027155554446166397
+        },
+        "improved_vs_82216": 4,
+        "worsened_vs_82216": 1,
+        "median_error_reduction_percent_vs_82216": 45.87881880404346
+      },
+      "velocity_relative_l1": {
+        "medians": {
+          "32216": 0.02984154777252425,
+          "82216": 0.018122903955037722,
+          "132216": 0.020555980791211792
+        },
+        "improved_vs_82216": 3,
+        "worsened_vs_82216": 2,
+        "median_error_reduction_percent_vs_82216": -13.425424767523175
+      },
+      "pressure_relative_l1": {
+        "medians": {
+          "32216": 0.03450013827951732,
+          "82216": 0.03983082873301874,
+          "132216": 0.025007175491469687
+        },
+        "improved_vs_82216": 4,
+        "worsened_vs_82216": 1,
+        "median_error_reduction_percent_vs_82216": 37.21653230192678
+      }
+    }
+  },
+  "reynolds": 30.0,
+  "same_geometry_reference_points_weights_verified": true,
+  "fem_rerun": false,
+  "accepted_model": false
+}

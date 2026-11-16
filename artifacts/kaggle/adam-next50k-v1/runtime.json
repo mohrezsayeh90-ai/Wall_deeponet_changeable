@@ -1,0 +1,19 @@
+{
+  "train_pool_sha256": "3e23c0fa2f5af6fba53fb0d676207949c376f6df2a5cff460148c3191e11d1f4",
+  "code_revision": "f6b32ae7e95853f6e48142e822d6718597eb4708",
+  "accepted": false,
+  "training_labels": 0,
+  "backend": "gpu",
+  "devices": [
+    "cuda:0",
+    "cuda:1"
+  ],
+  "jax": "0.11.1",
+  "python": "3.13.16",
+  "target_steps": 132216,
+  "global_batch": 32,
+  "interior_points": 128,
+  "outlet_points": 48,
+  "sampling": "biased mixture; unweighted strong momentum and traction",
+  "selection": "latest; FEM selection pending"
+}

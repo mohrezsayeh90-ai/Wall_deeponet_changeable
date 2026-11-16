@@ -1,0 +1,51 @@
+{
+  "case_id": 3,
+  "group": "channel_chain_15",
+  "original_index": 3,
+  "directory": "03_moderate_constriction",
+  "title": "Moderate symmetric constriction",
+  "result_directory": "cases/03_moderate_constriction",
+  "selected_for_chain": false,
+  "metrics": {
+    "32216": {
+      "velocity_relative_l2": 0.02115053913342085,
+      "u_relative_l2": 0.020654044263452777,
+      "v_absolute_rms": 0.005395479349811973,
+      "pressure_relative_l2": 0.026920536168324297,
+      "pressure_drop_relative": 0.021437422132188973,
+      "velocity_mae": 0.02018754714703106,
+      "pressure_mae": 0.03627232670713428,
+      "velocity_relative_l1": 0.019066531164263174,
+      "pressure_relative_l1": 0.029971344688494418
+    },
+    "82216": {
+      "velocity_relative_l2": 0.009972409068672007,
+      "u_relative_l2": 0.0095045585467069,
+      "v_absolute_rms": 0.0035547327003531085,
+      "pressure_relative_l2": 0.02660060244449715,
+      "pressure_drop_relative": 0.019728707020400513,
+      "velocity_mae": 0.008305483217407574,
+      "pressure_mae": 0.0367818708692194,
+      "velocity_relative_l1": 0.00784427912146105,
+      "pressure_relative_l1": 0.030392374302590255
+    },
+    "132216": {
+      "velocity_relative_l2": 0.005242983089344281,
+      "u_relative_l2": 0.004771828398737547,
+      "v_absolute_rms": 0.0025509715459056514,
+      "pressure_relative_l2": 0.011244769831409018,
+      "pressure_drop_relative": 0.004348033269267236,
+      "velocity_mae": 0.0049176047475123375,
+      "pressure_mae": 0.015980988800768602,
+      "velocity_relative_l1": 0.004644529792999732,
+      "pressure_relative_l1": 0.013204880064024057
+    }
+  },
+  "reference_sha256": "505c4972e8e7f8b751f475a77a9de2cea4af3ca34ad1c0ecaea4d88ef2731eea",
+  "geometry_sha256": "f7f2f680dd83e452d0f3ac777f16384f532c0948c3332e41db284d8d354d2afa",
+  "mesh_uncertainty": {
+    "velocity": 0.0011562611398683172,
+    "pressure": 0.002597443104385247,
+    "pressure_drop": 0.0018523445690576989
+  }
+}

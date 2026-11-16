@@ -1,0 +1,51 @@
+{
+  "case_id": 4,
+  "group": "channel_chain_15",
+  "original_index": 4,
+  "directory": "04_expansion",
+  "title": "Symmetric expansion",
+  "result_directory": "cases/04_expansion",
+  "selected_for_chain": true,
+  "metrics": {
+    "32216": {
+      "velocity_relative_l2": 0.025911891056456568,
+      "u_relative_l2": 0.024243676857649412,
+      "v_absolute_rms": 0.009506717626216214,
+      "pressure_relative_l2": 0.02728098710648402,
+      "pressure_drop_relative": 0.0015281579423866902,
+      "velocity_mae": 0.018726849854469797,
+      "pressure_mae": 0.023171777840839722,
+      "velocity_relative_l1": 0.020010912998357937,
+      "pressure_relative_l1": 0.023936806919678033
+    },
+    "82216": {
+      "velocity_relative_l2": 0.013723944818212324,
+      "u_relative_l2": 0.01291713701137762,
+      "v_absolute_rms": 0.004820068402687301,
+      "pressure_relative_l2": 0.01020992616379307,
+      "pressure_drop_relative": 0.009932677300478551,
+      "velocity_mae": 0.01080384270594612,
+      "pressure_mae": 0.009104133614891975,
+      "velocity_relative_l1": 0.011544640882835381,
+      "pressure_relative_l1": 0.009404711628407458
+    },
+    "132216": {
+      "velocity_relative_l2": 0.011528053324996549,
+      "u_relative_l2": 0.010913141029889696,
+      "v_absolute_rms": 0.003863622532752669,
+      "pressure_relative_l2": 0.02396954975285767,
+      "pressure_drop_relative": 0.01754910826280703,
+      "velocity_mae": 0.008253188117075065,
+      "pressure_mae": 0.02185741922465218,
+      "velocity_relative_l1": 0.008819092941595361,
+      "pressure_relative_l1": 0.02257905402583464
+    }
+  },
+  "reference_sha256": "38e04037f45674d7559af1e9fa0a6652f3331421a2bffdbd5baa56475bbe7d68",
+  "geometry_sha256": "2eb797d74f792416715d5de1b9c5e412dcf5c954d6260b997158df23fd45aefb",
+  "mesh_uncertainty": {
+    "velocity": 0.0015505101417345587,
+    "pressure": 0.0023299309788293323,
+    "pressure_drop": 0.0016528414252379416
+  }
+}

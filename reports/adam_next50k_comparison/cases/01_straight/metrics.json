@@ -1,0 +1,51 @@
+{
+  "case_id": 1,
+  "group": "channel_chain_15",
+  "original_index": 1,
+  "directory": "01_straight",
+  "title": "Straight channel",
+  "result_directory": "cases/01_straight",
+  "selected_for_chain": false,
+  "metrics": {
+    "32216": {
+      "velocity_relative_l2": 0.009964431777088478,
+      "u_relative_l2": 0.009000427192882935,
+      "v_absolute_rms": 0.004683871601894843,
+      "pressure_relative_l2": 0.017718842200973348,
+      "pressure_drop_relative": 0.01922349218113467,
+      "velocity_mae": 0.00907167061460963,
+      "pressure_mae": 0.01684693537893467,
+      "velocity_relative_l1": 0.0090716706146096,
+      "pressure_relative_l1": 0.016846935258066097
+    },
+    "82216": {
+      "velocity_relative_l2": 0.004868280868924713,
+      "u_relative_l2": 0.004734505353010249,
+      "v_absolute_rms": 0.0012415881834436104,
+      "pressure_relative_l2": 0.00991415888959235,
+      "pressure_drop_relative": 0.0017000179411928735,
+      "velocity_mae": 0.004211075873850513,
+      "pressure_mae": 0.009768200875995364,
+      "velocity_relative_l1": 0.0042110758738505,
+      "pressure_relative_l1": 0.009768200805913271
+    },
+    "132216": {
+      "velocity_relative_l2": 0.003961613445979658,
+      "u_relative_l2": 0.003831497347016303,
+      "v_absolute_rms": 0.0011030915692763824,
+      "pressure_relative_l2": 0.005872166252230336,
+      "pressure_drop_relative": 0.0011292629769372262,
+      "velocity_mae": 0.0036349249270699437,
+      "pressure_mae": 0.006422625871265178,
+      "velocity_relative_l1": 0.003634924927069932,
+      "pressure_relative_l1": 0.006422625825185961
+    }
+  },
+  "reference_sha256": "e1dacf8b09690fb3463fb9d7af82882699c7d766a457ceb5c5459e3f3201e559",
+  "geometry_sha256": "392ba80de22785327a0e06dab5860fb3fda0ee4228ddd3aea35514e7817736d7",
+  "mesh_uncertainty": {
+    "velocity": 6.2461305314406015e-15,
+    "pressure": 4.4355141801538964e-14,
+    "pressure_drop": 4.403884632750728e-14
+  }
+}

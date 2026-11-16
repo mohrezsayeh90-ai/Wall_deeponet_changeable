@@ -1,0 +1,51 @@
+{
+  "case_id": 8,
+  "group": "channel_chain_15",
+  "original_index": 8,
+  "directory": "08_s_bend",
+  "title": "Constant-gap S bend",
+  "result_directory": "cases/08_s_bend",
+  "selected_for_chain": true,
+  "metrics": {
+    "32216": {
+      "velocity_relative_l2": 0.04243128242906625,
+      "u_relative_l2": 0.03841840050287917,
+      "v_absolute_rms": 0.02037214478859638,
+      "pressure_relative_l2": 0.07715653752786554,
+      "pressure_drop_relative": 0.026565739328212195,
+      "velocity_mae": 0.03878437730447962,
+      "pressure_mae": 0.08718836945361293,
+      "velocity_relative_l1": 0.03855191074109913,
+      "pressure_relative_l1": 0.08122210773161646
+    },
+    "82216": {
+      "velocity_relative_l2": 0.020793031383312507,
+      "u_relative_l2": 0.019582745836117885,
+      "v_absolute_rms": 0.008010877726184784,
+      "pressure_relative_l2": 0.030351528625694037,
+      "pressure_drop_relative": 0.019077160224255246,
+      "velocity_mae": 0.017995610785145194,
+      "pressure_mae": 0.030181329682739576,
+      "velocity_relative_l1": 0.017887748339338375,
+      "pressure_relative_l1": 0.02811603458508451
+    },
+    "132216": {
+      "velocity_relative_l2": 0.021067472354155865,
+      "u_relative_l2": 0.01976902822850742,
+      "v_absolute_rms": 0.00832904937796464,
+      "pressure_relative_l2": 0.018534467372397504,
+      "pressure_drop_relative": 0.016246216281069384,
+      "velocity_mae": 0.018436544395075624,
+      "pressure_mae": 0.017547385346657802,
+      "velocity_relative_l1": 0.01832603907272667,
+      "pressure_relative_l1": 0.016346625495648245
+    }
+  },
+  "reference_sha256": "df876c7639dae5a6e9bcf1257e380a564a73d1d8b0cbdc6448e140fa3d8751d7",
+  "geometry_sha256": "5478d178b34b3b0d3c03f7b009cfd508260172f802b07d80619cbea777097a8d",
+  "mesh_uncertainty": {
+    "velocity": 0.0026192945557784817,
+    "pressure": 0.004472455102278146,
+    "pressure_drop": 0.00354063569234242
+  }
+}

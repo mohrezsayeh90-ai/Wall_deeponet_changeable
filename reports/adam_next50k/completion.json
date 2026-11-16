@@ -1,0 +1,14 @@
+{
+  "observed_at_utc": "2026-11-16T17:07:09.341307+00:00",
+  "kaggle_status": "COMPLETE",
+  "checkpoint_step": 132216,
+  "checkpoint_sha256": "dabe75cd4121d1f4c6e2c920dced4c38cf033e2da7b1d74c4805ee90cf1e1544",
+  "additional_updates": 50000,
+  "stop_reason": "target_completed",
+  "elapsed_training_seconds": 26441.272184737,
+  "output_files": 68,
+  "source_files": 2,
+  "archive_hashes_and_all_source_files_verified": true,
+  "cpu_gpu_check": "artifacts/kaggle/adam-next50k-v1/cpu-inference-check.json",
+  "accepted_model": false
+}
