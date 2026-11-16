@@ -16,10 +16,12 @@ ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/'reports/double_step_82216'
 
 
-def render():
-    with np.load(OUT/'fields.npz',allow_pickle=False) as f:
+def render(output=None):
+    output=OUT if output is None else Path(output)
+    with np.load(output/'fields.npz',allow_pickle=False) as f:
         x,y,b,t=f['x'],f['y'],f['bottom'],f['top']
         fields=[f['model'],f['fem']]
+        re=float(f['reynolds'])
     plt.rcParams.update({'font.size':11,'figure.facecolor':'white','axes.spines.top':False,'axes.spines.right':False})
     for zoom,filename in [(False,'streamlines'),(True,'between_steps_zoom')]:
         fig,axes=plt.subplots(2,1,figsize=(13,8 if zoom else 7),layout='constrained')
@@ -37,21 +39,27 @@ def render():
             ax.fill_between(x,-.025,b,color='#cbd5e1',zorder=4)
             ax.set(xlim=(1.4,3.65) if zoom else (0,5),ylim=(-.01,.5) if zoom else (-.02,1.02),aspect='equal',xlabel='x',ylabel='y',title=label)
             fig.colorbar(pc,ax=ax,label='Axial velocity u; blue = reverse flow' if zoom else 'Speed |U|',shrink=.8,extend='max' if zoom else 'neither')
-        fig.suptitle('Two rounded steps on the lower wall | Re = 100 | standard geometry bounds\n'+('Enlarged inter-step region; equal physical x/y scale' if zoom else 'Dense streamlines; pink contour: u = -0.001'),fontsize=14)
-        fig.savefig(OUT/(filename+'.png'),dpi=210);fig.savefig(OUT/(filename+'.pdf'));plt.close(fig)
+        fig.suptitle(f'Two rounded steps on the lower wall | Re = {re:g} | standard geometry bounds\n'+('Enlarged inter-step region; equal physical x/y scale' if zoom else 'Dense streamlines; pink contour: u = -0.001'),fontsize=14)
+        fig.savefig(output/(filename+'.png'),dpi=210);fig.savefig(output/(filename+'.pdf'));plt.close(fig)
     fig,ax=plt.subplots(figsize=(12,3),layout='constrained')
     ax.fill_between(x,b,t,color='#dbeafe');ax.fill_between(x,0,b,color='#cbd5e1');ax.plot(x,b,'k',lw=2);ax.plot(x,t,'k',lw=2)
     ax.set(xlim=(0,5),ylim=(-.02,1.02),aspect='equal',xlabel='x',ylabel='y',title='Exact smooth two-step geometry | no stress override')
-    fig.savefig(OUT/'geometry.png',dpi=200);plt.close(fig)
+    fig.savefig(output/'geometry.png',dpi=200);plt.close(fig)
 
 
-def main():
+def main(re=100.):
+    global OUT
+    if re not in (50.,100.):raise ValueError('This paired experiment supports Re=50 or Re=100')
+    OUT=ROOT/('reports/double_step_82216' if re==100 else 'reports/double_step_re50_82216')
     OUT.mkdir(parents=True,exist_ok=True)
     checkpoint=ROOT/'artifacts/kaggle/continue-50k-v1/checkpoint.npz'
     knots=np.r_[np.zeros(6),BREAKS[1:-1],np.full(6,5.)]
     gx=np.array([np.mean(knots[i+1:i+6]) for i in range(len(knots)-6)])
     bottom=sum(.38*.5*(np.tanh((gx-left)/.28)-np.tanh((gx-right)/.28)) for left,right in [(.95,1.85),(3.15,4.05)])
-    coeff=_canonical([bottom/2,-bottom]);desc=validate(coeff);re=100.
+    coeff=_canonical([bottom/2,-bottom]);desc=validate(coeff)
+    if re==50:
+        with np.load(ROOT/'reports/double_step_82216/geometry.npz',allow_pickle=False) as saved:
+            np.testing.assert_array_equal(coeff,saved['coeff'])
     np.savez_compressed(OUT/'geometry.npz',coeff=coeff)
     print(json.dumps({'phase':'geometry_validated','descriptors':desc}),flush=True)
     meta=build_case(coeff,re,OUT/'reference.npz',nx=40,ny=12)
@@ -89,7 +97,7 @@ def main():
              'geometry_scope':'C4 single-valued lower wall, fixed upper wall, standard bounds including flat inlet/outlet; no stress override.'}
     (OUT/'summary.json').write_text(json.dumps(summary,indent=2)+'\n')
     render()
-    finding=('FEM shows a clear inter-step recirculating region, while the stored model misses the reversed flow in the diagnostic region.'
+    finding=('FEM shows inter-step reverse flow, while the stored model misses the reversed flow in the diagnostic region.'
              if reverse['fem']['inter_step_points_u_below_minus_0_001']>0 and reverse['model']['inter_step_points_u_below_minus_0_001']==0
              else 'Compare the signed velocities and streamline patterns below; reversal diagnostics are region-specific.')
     summary['finding']=finding
@@ -100,9 +108,9 @@ def main():
         statements.append(f"- {name}: minimum inter-step u = {r['minimum_u_in_inter_step_region']:.6f}; approximate reversed area in the stated diagnostic region = {r['approx_reversed_area_in_diagnostic_region']:.6f}.")
     text=f'''# Two smooth steps on the bottom wall
 
-Two rounded raised floor sections approximate the supplied sketch. Frozen Adam **step 82,216**, **Re=100**, no retraining or Kaggle use. The upper wall is flat; inlet/outlet use the original model boundary conditions. C4 splines and **all standard geometry limits** pass without stress overrides. Sharp vertical steps are outside this model's geometry domain.
+Two rounded raised floor sections approximate the supplied sketch. Frozen Adam **step 82,216**, **Re={re:g}**, no retraining or Kaggle use. The upper wall is flat; inlet/outlet use the original model boundary conditions. C4 splines and **all standard geometry limits** pass without stress overrides. Sharp vertical steps are outside this model's geometry domain.
 
-[Full flow PNG](streamlines.png) · [Full flow PDF](streamlines.pdf) · [Between-step zoom PNG](between_steps_zoom.png) · [Zoom PDF](between_steps_zoom.pdf) · [Complete ZIP](double_step_82216.zip) · [Fields](fields.npz) · [Metrics/provenance](summary.json)
+[Full flow PNG](streamlines.png) · [Full flow PDF](streamlines.pdf) · [Between-step zoom PNG](between_steps_zoom.png) · [Zoom PDF](between_steps_zoom.pdf) · [Complete ZIP]({OUT.name}.zip) · [Fields](fields.npz) · [Metrics/provenance](summary.json)
 
 ![Geometry](geometry.png)
 
@@ -118,19 +126,22 @@ Velocity relative L2 error **{metrics['velocity_relative_l2']:.2%}**; pressure r
 
 **{finding}** Standard input validity does not guarantee an accurate flow prediction.
 
-'''+'\n'.join(statements)+'''
+'''+'\n'.join(statements)+f'''
 
 Diagnostics use **1.9<x<3.1**, **bottom(x)+0.02<y<0.36**, and reversal threshold **u<-0.001**. Area is an approximate uniform plot-grid estimate within that region, not the full recirculation-bubble area. Streamlines use evaluated velocity vectors with arrows; red/pink contours delimit u=-0.001. Inspect both streamline direction and the signed axial velocity. A negative-u contour alone does not establish a closed vortex or exact separation/reattachment points. The research checkpoint has no passing full validation benchmark.
 
-Reproduce: `OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 JAX_ENABLE_X64=true .venv/bin/python -m scripts.double_step_flow`. Re-render existing fields without solving: `from scripts.double_step_flow import render; render()`. Complete ZIP contains fields, geometry, FEM quadrature/reference, plots and metadata; weights remain at the recorded checkpoint path and SHA256.
+Reproduce: `OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 JAX_ENABLE_X64=true .venv/bin/python -m scripts.double_step_flow --re {re:g}`. Re-render existing fields without solving: `from scripts.double_step_flow import render; render("reports/{OUT.name}")`. Complete ZIP contains fields, geometry, FEM quadrature/reference, plots and metadata; weights remain at the recorded checkpoint path and SHA256.
 '''
     (OUT/'README.md').write_text(text)
-    with zipfile.ZipFile(OUT/'double_step_82216.zip','w',compression=zipfile.ZIP_DEFLATED) as z:
+    with zipfile.ZipFile(OUT/(OUT.name+'.zip'),'w',compression=zipfile.ZIP_DEFLATED) as z:
         for path in sorted(OUT.iterdir()):
             if path.suffix!='.zip':z.write(path,arcname=OUT.name+'/'+path.name)
-    with zipfile.ZipFile(OUT/'double_step_82216.zip') as z:
+    with zipfile.ZipFile(OUT/(OUT.name+'.zip')) as z:
         assert z.testzip() is None
         for name in z.namelist():assert z.read(name)==(OUT/Path(name).name).read_bytes()
     print(json.dumps(summary),flush=True)
 
-if __name__=='__main__':main()
+if __name__=='__main__':
+    import argparse
+    parser=argparse.ArgumentParser();parser.add_argument('--re',type=float,choices=[50.,100.],default=100.)
+    main(parser.parse_args().re)
