@@ -6,6 +6,8 @@
 
 ## نتایج جدید گام ۱۳۲٬۲۱۶ و مقایسهٔ سه مرحله
 
+[آرشیو کامل ران جدید، شامل وزن‌ها، وضعیت Adam، لاگ‌ها، داده‌ها و کد](artifacts/kaggle/adam-next50k-v1/README.md) · [تأیید سلامت تمام ۶۸ خروجی و ۲ فایل کد و تنظیمات اجرا](artifacts/kaggle/adam-next50k-v1/archive-verification.json) · [آخرین بررسی سهمیهٔ Kaggle](reports/adam_next50k/quota-snapshot.json).
+
 [گزارش کامل ۲۰ حالت](reports/adam_next50k_comparison/README.md) · [نمودار خطای سه مرحله](reports/adam_next50k_comparison/three_stage_errors.png) · [PDF شش نمونهٔ تصادفی زنجیره‌ای](reports/adam_next50k_comparison/selected/six_random_chains.pdf) · [دانلود کامل تصاویر و داده‌ها](reports/adam_next50k_comparison/three_stage_20_cases.zip).
 
 با همان FEM، هندسه و Re=30، میانهٔ خطای L2 سرعت در گام‌های ۳۲٬۲۱۶ ← ۸۲٬۲۱۶ ← ۱۳۲٬۲۱۶ برابر **۳٫۲۷٪ ← ۱٫۹۹٪ ← ۱٫۷۹٪** و فشار **۴٫۷۳٪ ← ۲٫۷۳٪ ← ۲٫۲۳٪** است. نسبت به مرحلهٔ قبل، سرعت در **۱۳ از ۲۰** و فشار در **۱۴ از ۲۰** حالت بهتر شده است؛ پسرفت‌های سایر موارد نیز گزارش شده‌اند. داده‌ها و نتایج قدیمی حفظ شده‌اند.

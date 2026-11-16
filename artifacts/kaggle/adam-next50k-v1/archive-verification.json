@@ -1,0 +1,12 @@
+{
+  "verified_at_utc": "2026-11-16T17:11:53.293078+00:00",
+  "verified_original_files": 70,
+  "output_files": 68,
+  "source_files": 2,
+  "all_parts_sha256_passed": true,
+  "concatenated_archive_sha256_passed": true,
+  "zip_crc_passed": true,
+  "all_member_sizes_and_sha256_passed": true,
+  "direct_checkpoint_log_status_runtime_match_archive": true,
+  "archive_sha256": "b713418c57011e18ba52cec8377c3b0c14ce2b0427db56bc0efaa3905da7745e"
+}

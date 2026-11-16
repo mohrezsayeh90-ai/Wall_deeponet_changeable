@@ -503,6 +503,8 @@
     "outputs_collected": true,
     "artifact_directory": "artifacts/kaggle/adam-next50k-v1",
     "checkpoint_sha256": "dabe75cd4121d1f4c6e2c920dced4c38cf033e2da7b1d74c4805ee90cf1e1544",
-    "comparison_report": "reports/adam_next50k_comparison/README.md"
-  }
+    "comparison_report": "reports/adam_next50k_comparison/README.md",
+    "archive_verification": "artifacts/kaggle/adam-next50k-v1/archive-verification.json"
+  },
+  "kaggle_quota_snapshot": "reports/adam_next50k/quota-snapshot.json"
 }

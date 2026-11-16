@@ -7,3 +7,5 @@ All 68 outputs and two source files are archived losslessly. [Inventory and per-
 Restore: `python -m scripts.restore_kaggle --artifact-dir artifacts/kaggle/adam-next50k-v1 --output runs/restored-adam-next50k-v1`.
 
 [Twenty-case comparison and six random chains](../../../reports/adam_next50k_comparison/README.md). [Completion record](../../../reports/adam_next50k/completion.json). [CPU/GPU inference check](cpu-inference-check.json). This is a research checkpoint with no passing full benchmark; the saved eight-case development pilot is not full model acceptance.
+
+[Full archive verification](archive-verification.json): concatenated SHA256, all ZIP CRCs and exact SHA256/size of every original member passed (68 outputs + two source files). Direct checkpoint, training log, status and runtime copies match the archive.

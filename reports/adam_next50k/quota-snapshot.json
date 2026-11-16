@@ -1,0 +1,15 @@
+{
+  "observed_at_utc": "2026-11-16T17:11:51.556814+00:00",
+  "observed_at_tehran": "2026-11-16T20:41:51.556814+03:30",
+  "source": "Kaggle authenticated accelerator quota statistics API; timedelta.total_seconds() used to include day components",
+  "gpu_total_seconds": 108000.0,
+  "gpu_used_seconds": 93510.175,
+  "gpu_reserved_seconds": 0.0,
+  "gpu_remaining_seconds": 14489.824999999997,
+  "gpu_total_hours": 30.0,
+  "gpu_used_hours": 25.975048611111113,
+  "gpu_remaining_hours": 4.024951388888888,
+  "quota_refresh_utc": "2026-11-21T00:00:00+00:00",
+  "quota_refresh_tehran": "2026-11-21T03:30:00+03:30",
+  "seconds_until_refresh_at_observation": 370088.443186
+}

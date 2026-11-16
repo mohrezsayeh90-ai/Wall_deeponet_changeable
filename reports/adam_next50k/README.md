@@ -59,3 +59,11 @@ RNG; matched config, pool hash and normalization; compiled the packaged script a
 verified **132,216 − 82,216 = 50,000**. This validates packaging and local resume
 prerequisites, not production GPU progress. New outputs will be under
 `project/runs/adam_next50k/`.
+
+## Complete archive verification and current quota snapshot
+
+The complete downloaded output archive was reconstructed from both parts, checked against its full SHA256, ZIP CRC-tested, and all **70 original files** checked individually for exact size and SHA256. Direct checkpoint, training log, status and runtime copies also match the archived originals. [Verification record](../../artifacts/kaggle/adam-next50k-v1/archive-verification.json).
+
+The archive includes final weights and Adam moments/RNG, all 5,001 saved training records, kernel log, runtime/configuration, frozen source, geometry pools and normalization, reference data and the eight-case pilot outputs. All 68 outputs plus two source/metadata files are retained; previous run artifacts are preserved separately.
+
+[Authenticated Kaggle quota snapshot](quota-snapshot.json), observed **16 November 2026, 20:41 Tehran**: GPU allowance **30 h**, consumed **25 h 58 min 30 s**, reserved **0**, remaining **4 h 1 min 30 s**. Next reset: **21 November 2026, 03:30 Tehran**, approximately **4 days 6 h 48 min** after observation. This is a recorded snapshot; subsequent sessions can change the balance.
