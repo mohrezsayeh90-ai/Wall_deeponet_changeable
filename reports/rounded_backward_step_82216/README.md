@@ -4,6 +4,12 @@ Frozen Adam checkpoint **82,216**, Re=100. No retraining or Kaggle access. This 
 
 [Streamlines PNG](streamlines.png) · [PDF](streamlines.pdf) · [Numerical fields](fields.npz) · [Metrics and provenance](summary.json) · [Download complete case](rounded_step_82216.zip)
 
+[Enlarged whole-step view](step_enlarged.png) · [Enlarged view PDF](step_enlarged.pdf)
+
+![Whole step, enlarged](step_enlarged.png)
+
+The enlarged view includes the full descending floor and downstream reverse-flow region. The red rectangle locates the crop in the full channel. Both axes retain equal physical scale; geometry, weights and numerical results are unchanged. Reproduce this view with `python -m scripts.plot_step_focus`.
+
 ![Flow and streamlines](streamlines.png)
 
 [Recirculation close-up PDF](recirculation_zoom.pdf)

@@ -6,7 +6,7 @@
 
 ## جریان روی پلهٔ نرم با مدل ذخیره‌شده
 
-[خطوط جریان مدل گام ۸۲٬۲۱۶ و مقایسه با FEM در Re=100](reports/rounded_backward_step_82216/README.md) · [تصویر](reports/rounded_backward_step_82216/streamlines.png) · [دانلود کامل](reports/rounded_backward_step_82216/rounded_step_82216.zip). هندسه در محدودهٔ اصلی مدل است؛ این یک تقریب نرم از پلهٔ پس‌رونده است و با بنچمارک پلهٔ قائم یکسان نیست.
+[نمای بزرگ‌شدهٔ پله و گردش](reports/rounded_backward_step_82216/step_enlarged.png) · [خطوط جریان مدل گام ۸۲٬۲۱۶ و مقایسه با FEM در Re=100](reports/rounded_backward_step_82216/README.md) · [تصویر](reports/rounded_backward_step_82216/streamlines.png) · [دانلود کامل](reports/rounded_backward_step_82216/rounded_step_82216.zip). هندسه در محدودهٔ اصلی مدل است؛ این یک تقریب نرم از پلهٔ پس‌رونده است و با بنچمارک پلهٔ قائم یکسان نیست.
 
 ## نتایج جدید به‌روزرسانی شد — هر ۲۵ حالت با وزن گام ۸۲٬۲۱۶
 
