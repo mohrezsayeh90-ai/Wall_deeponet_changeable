@@ -1,0 +1,84 @@
+{
+  "checkpoint": "artifacts/kaggle/continue-50k-v1/checkpoint.npz",
+  "checkpoint_step": 82216,
+  "checkpoint_sha256": "84276c11feecd5bf230c79d1077250018b356ae118491678a4ed69e46ab83140",
+  "reynolds": 100.0,
+  "geometry_id": "47087315833cc7f2b474797eb8f1cc0aa2a432f6db06f466c64139688baf9ca3",
+  "descriptors": {
+    "min_gap": 0.6506726441997276,
+    "max_gap": 1.0,
+    "center_deviation": 0.1746636779001362,
+    "max_slope": 0.6578490747402855,
+    "max_curvature": 7.631326534306323
+  },
+  "metrics": {
+    "velocity_relative_l2": 0.2299483976558488,
+    "pressure_relative_l2": 0.15709716697528345
+  },
+  "reverse_flow": {
+    "model": {
+      "minimum_u_in_inter_step_region": 0.03759948023822114,
+      "inter_step_points_u_below_minus_0_001": 0,
+      "approx_reversed_area_in_diagnostic_region": 0.0
+    },
+    "fem": {
+      "minimum_u_in_inter_step_region": -0.057700332568389204,
+      "inter_step_points_u_below_minus_0_001": 1556,
+      "approx_reversed_area_in_diagnostic_region": 0.080912
+    }
+  },
+  "diagnostic_region": "1.9<x<3.1, bottom(x)+0.02<y<0.36; uniform-grid estimate, threshold u<-0.001",
+  "fem_reference": {
+    "geometry_id": "47087315833cc7f2b474797eb8f1cc0aa2a432f6db06f466c64139688baf9ca3",
+    "reynolds": 100.0,
+    "coarse": {
+      "nx": 40,
+      "ny": 12,
+      "iterations": 203,
+      "algebraic_residual": 4.076295463434841e-09,
+      "seconds": 6.880562450999605,
+      "velocity_dofs": 4050,
+      "pressure_dofs": 533,
+      "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+    },
+    "fine": {
+      "nx": 80,
+      "ny": 24,
+      "iterations": 204,
+      "algebraic_residual": 2.1745912495694562e-09,
+      "seconds": 49.67171760600013,
+      "velocity_dofs": 15778,
+      "pressure_dofs": 2025,
+      "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+    },
+    "mesh_uncertainty": {
+      "velocity": 0.004465534467390402,
+      "pressure": 0.008435348486367827,
+      "pressure_drop": 0.00714949922257285
+    },
+    "pressure_drop": 1.773624472575843,
+    "pressure_sections": [
+      0.25,
+      4.75
+    ],
+    "pressure_denominator_floor": 1e-08,
+    "wall_stress_verified": false,
+    "common_domain_excluded_area_fraction": 0.001420353189048759,
+    "common_domain_rule": "both chordal meshes; exclude <=.5% physical quadrature area"
+  },
+  "display_fem_solver": {
+    "nx": 80,
+    "ny": 24,
+    "iterations": 204,
+    "algebraic_residual": 2.1745912495694562e-09,
+    "seconds": 49.08251116300016,
+    "velocity_dofs": 15778,
+    "pressure_dofs": 2025,
+    "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+  },
+  "accepted_model": false,
+  "training_performed": false,
+  "selection": "Two prescribed rounded plateaus patterned after the user sketch; geometry fixed before solving, no error-based selection.",
+  "geometry_scope": "C4 single-valued lower wall, fixed upper wall, standard bounds including flat inlet/outlet; no stress override.",
+  "finding": "FEM shows a clear inter-step recirculating region, while the stored model misses the reversed flow in the diagnostic region."
+}
