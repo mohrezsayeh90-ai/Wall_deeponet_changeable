@@ -1,0 +1,17 @@
+{
+  "kernel": "mohrezsayeh/geometry-pi-deeponet-adam-next50k",
+  "version": 1,
+  "status": {
+    "status": "QUEUED",
+    "failureMessage": null
+  },
+  "observed_at_utc": "2026-11-16T08:19:23.970009+00:00",
+  "optimizer": "Adam",
+  "start_step": 82216,
+  "additional_steps": 50000,
+  "target_step": 132216,
+  "base_checkpoint_sha256": "84276c11feecd5bf230c79d1077250018b356ae118491678a4ed69e46ab83140",
+  "lbfgs_weights_used": false,
+  "gpu_resume_verified": false,
+  "additional_updates_verified": 0
+}

@@ -1,5 +1,7 @@
 # L-BFGS refinement after the completed Adam continuation
 
+**Experiment closed and not adopted.** The final run stopped at its time budget after 448 accepted iterations. Fixed loss improved from 0.0219672 to 0.00570065, but probe loss worsened from 0.0243558 to 0.0426823; pilot FEM medians worsened relative to the base Adam checkpoint. See [final status](final-status.json) and [final pilot report](final-pilot-report.json). Per the user request, the next run resumes the original Adam weights, not this refinement. Historical launch notes below are retained.
+
 Run: https://www.kaggle.com/code/mohrezsayeh/geometry-pi-deeponet-l-bfgs-refinement
 
 This is a separate private experiment, initialized from the original research

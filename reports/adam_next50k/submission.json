@@ -1,0 +1,30 @@
+{
+  "submitted_at_utc": "2026-11-16T08:17:29.984691+00:00",
+  "response": {
+    "ref": "/code/mohrezsayeh/geometry-pi-deeponet-adam-next50k",
+    "url": "https://www.kaggle.com/code/mohrezsayeh/geometry-pi-deeponet-adam-next50k",
+    "versionNumber": 1,
+    "error": null,
+    "invalidTags": [],
+    "invalidDatasetSources": [],
+    "invalidCompetitionSources": [],
+    "invalidKernelSources": [],
+    "invalidModelSources": [],
+    "kernelId": 145356624
+  },
+  "status_after_submission": {
+    "status": "QUEUED",
+    "failureMessage": null
+  },
+  "script_sha256": "34070dc9329afbab63330786082a8d1607d199c1d252deaf9dce009a7ded740c",
+  "optimizer": "Adam",
+  "source_kernel": "mohrezsayeh/geometry-pi-deeponet-continue-50k/1",
+  "base_checkpoint_sha256": "84276c11feecd5bf230c79d1077250018b356ae118491678a4ed69e46ab83140",
+  "start_step": 82216,
+  "additional_steps": 50000,
+  "target_step": 132216,
+  "lbfgs_weights_used": false,
+  "session_timeout_seconds": 37800,
+  "training_time_budget_seconds": 36000,
+  "gpu_quota_hours_remaining_at_preflight": 11.43075111111111
+}

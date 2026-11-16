@@ -23,11 +23,15 @@
 - [گالری هشت خانوادهٔ دیواره](reports/geometry_gallery.png).
 - [شناسه‌ها، پارامترهای هندسی و هش مجموعه‌های ثابت](reports/split_manifest.json).
 
-## Experimental L-BFGS refinement
+## New Adam continuation: target 132,216
 
-یک اجرای مستقل برای ریزتنظیم **فقط با L-BFGS** از وزن‌های گام **۸۲٬۲۱۶** ثبت شده است: [اجرای Kaggle](https://www.kaggle.com/code/mohrezsayeh/geometry-pi-deeponet-l-bfgs-refinement) · [روش، آزمون‌ها و آخرین وضعیت مشاهده‌شده](reports/lbfgs_stage/README.md).
+ادامهٔ آموزش با **Adam** از وزن موفقِ گام **۸۲٬۲۱۶**، برای **۵۰هزار گام دیگر** و هدف **۱۳۲٬۲۱۶** ثبت شده است. [اجرای Kaggle](https://www.kaggle.com/code/mohrezsayeh/geometry-pi-deeponet-adam-next50k) · [تنظیمات و وضعیت مشاهده‌شده](reports/adam_next50k/README.md).
 
-The optimizer uses a fixed train-only 512-geometry objective, a disjoint 128-geometry training probe, float64 arithmetic, at most 500 accepted L-BFGS iterations and a 6-hour training budget. No new Adam updates are applied to the production checkpoint. This is an exploratory queued/submitted experiment; no production L-BFGS result or benefit is claimed yet. The latest **collected** weights remain step 82,216, and all existing numerical results retain their stated checkpoint. The linked observation file is a snapshot, not live monitoring.
+The original float32 trainer, random sampling, batch 32, Adam moments, RNG and global learning-rate schedule are retained. The L-BFGS checkpoint is not used. Last collected weights remain Adam step 82,216; completion of the new run is not claimed before its final checkpoint is retrieved.
+
+## L-BFGS experiment — not adopted
+
+The separate [L-BFGS experiment](reports/lbfgs_stage/README.md) ended after 448 accepted iterations at its time budget. Its fixed-bank loss improved, but the disjoint training probe and pilot FEM medians worsened. It was not selected for continuation; the workflow returns to the preserved Adam checkpoint. Results are retained for provenance.
 
 ## Completed continuation: step 82,216
 

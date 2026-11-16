@@ -1,0 +1,15 @@
+{
+  "id": "mohrezsayeh/geometry-pi-deeponet-adam-next50k",
+  "title": "Geometry PI DeepONet Adam Next50k",
+  "code_file": "run.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": [],
+  "competition_sources": [],
+  "kernel_sources": [
+    "mohrezsayeh/geometry-pi-deeponet-continue-50k"
+  ]
+}

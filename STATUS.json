@@ -386,20 +386,117 @@
     "kernel": "mohrezsayeh/geometry-pi-deeponet-l-bfgs-refinement",
     "version": 2,
     "status": {
-      "status": "QUEUED",
+      "status": "COMPLETE",
       "failureMessage": null
     },
-    "observed_at_utc": "2026-11-15T16:31:33.967979+00:00",
+    "observed_at_utc": "2026-11-16T08:20:27.878050+00:00",
     "base_adam_step": 82216,
     "base_checkpoint_sha256": "84276c11feecd5bf230c79d1077250018b356ae118491678a4ed69e46ab83140",
-    "production_lbfgs_iterations_verified": 0,
-    "gpu_resume_verified": false,
+    "production_lbfgs_iterations_verified": 448,
+    "gpu_resume_verified": true,
     "local_tests_passed": 15,
     "max_iterations": 500,
     "max_training_seconds": 21600,
     "fixed_train_geometries": 512,
     "probe_train_geometries": 128,
     "submitted_script_sha256": "812b55726c58afeecfa0279a67277509b07ef39fdc21ad7420774fc6fb8980ae",
-    "restarted_after_user_cancel": true
+    "restarted_after_user_cancel": true,
+    "selected_for_continuation": false,
+    "decision": "Discard refinement and continue original Adam step-82216 checkpoint",
+    "final_iterations": 448,
+    "initial_fixed_loss": 0.02196715552887397,
+    "final_fixed_loss": 0.00570065097756512,
+    "initial_probe_loss": 0.024355812346962383,
+    "final_probe_loss": 0.04268231746481247,
+    "stop_reason": "wall_clock_budget",
+    "pilot_summary": {
+      "velocity_relative_l2": {
+        "median": 0.021951845385641874,
+        "p95": 0.029594607965367243,
+        "max": 0.029872609538759747
+      },
+      "pressure_relative_l2": {
+        "median": 0.013709251144217227,
+        "p95": 0.020653534942027683,
+        "max": 0.022694994986391832
+      },
+      "v_absolute_rms": {
+        "median": 0.009205150034011091,
+        "p95": 0.017353164407172328,
+        "max": 0.01751796414548489
+      },
+      "pressure_drop_relative": {
+        "median": 0.015361160994037143,
+        "p95": 0.02404757111541151,
+        "max": 0.027212313152445815
+      },
+      "pressure_drop_predicted": {
+        "median": 5.742805898714785,
+        "p95": 6.889570172376062,
+        "max": 7.343133956598352
+      },
+      "pressure_drop_reference": {
+        "median": 5.788341218870833,
+        "p95": 6.802295174076032,
+        "max": 7.148603908439109
+      },
+      "first_call_seconds": {
+        "median": 0.04855213250084489,
+        "p95": 1.3554482346014982,
+        "max": 2.0587888180016307
+      },
+      "steady_seconds": {
+        "median": 0.04575350600134698,
+        "p95": 0.04599263905111002,
+        "max": 0.046011293001356535
+      },
+      "momentum_rms": {
+        "median": 0.3422547603323757,
+        "p95": 0.6662773737891267,
+        "max": 0.6856741639474572
+      },
+      "divergence_rms": {
+        "median": 1.2229505781483536e-16,
+        "p95": 2.2338609601200844e-16,
+        "max": 2.240180521902639e-16
+      },
+      "traction_rms": {
+        "median": 0.0024619682395693636,
+        "p95": 0.0047527581562635205,
+        "max": 0.004861350427625009
+      },
+      "wall_max": {
+        "median": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "inlet_max": {
+        "median": 5.273559366969494e-16,
+        "p95": 5.273559366969494e-16,
+        "max": 5.273559366969494e-16
+      },
+      "flux_max": {
+        "median": 6.106226635438361e-15,
+        "p95": 1.2190248810384215e-14,
+        "max": 1.4210854715202004e-14
+      }
+    }
+  },
+  "adam_next50k": {
+    "kernel": "mohrezsayeh/geometry-pi-deeponet-adam-next50k",
+    "version": 1,
+    "status": {
+      "status": "QUEUED",
+      "failureMessage": null
+    },
+    "observed_at_utc": "2026-11-16T08:19:23.970009+00:00",
+    "optimizer": "Adam",
+    "start_step": 82216,
+    "additional_steps": 50000,
+    "target_step": 132216,
+    "base_checkpoint_sha256": "84276c11feecd5bf230c79d1077250018b356ae118491678a4ed69e46ab83140",
+    "lbfgs_weights_used": false,
+    "gpu_resume_verified": false,
+    "additional_updates_verified": 0
   }
 }
