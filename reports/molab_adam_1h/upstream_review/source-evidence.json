@@ -1,0 +1,51 @@
+{
+  "repository": "https://github.com/PredictiveIntelligenceLab/Physics-informed-DeepONets",
+  "revision": "77e7c747d653b34e79e43df7d88bad87de5c27d8",
+  "optimizer_definitions": [
+    {
+      "notebook": "Advection/PI_DeepONet_adv.ipynb",
+      "cell_index_zero_based": 3,
+      "optimizer_excerpt": "        # Use optimizers to set optimizer initialization and update functions\n        self.opt_init, \\\n        self.opt_update, \\\n        self.get_params = optimizers.adam(optimizers.exponential_decay(1e-3, \n                                                                      decay_steps=2000, \n                                                                      decay_rate=0.9))\n        self.opt_state = self.opt_init(params)"
+    },
+    {
+      "notebook": "Antiderivative/DeepONet_antideriv.ipynb",
+      "cell_index_zero_based": 3,
+      "optimizer_excerpt": "        # Use optimizers to set optimizer initialization and update functions\n        self.opt_init, \\\n        self.opt_update, \\\n        self.get_params = optimizers.adam(optimizers.exponential_decay(1e-3, \n                                                                      decay_steps=1000, \n                                                                      decay_rate=0.9))\n        self.opt_state = self.opt_init(params)"
+    },
+    {
+      "notebook": "Antiderivative/PI_DeepONet_FF_antideriv.ipynb",
+      "cell_index_zero_based": 3,
+      "optimizer_excerpt": "        # Use optimizers to set optimizer initialization and update functions\n        self.opt_init, \\\n        self.opt_update, \\\n        self.get_params = optimizers.adam(optimizers.exponential_decay(1e-3, \n                                                                      decay_steps=5000, \n                                                                      decay_rate=0.9))\n        self.opt_state = self.opt_init(params)"
+    },
+    {
+      "notebook": "Antiderivative/PI_DeepONet_antideriv.ipynb",
+      "cell_index_zero_based": 3,
+      "optimizer_excerpt": "        # Use optimizers to set optimizer initialization and update functions\n        self.opt_init, \\\n        self.opt_update, \\\n        self.get_params = optimizers.adam(optimizers.exponential_decay(1e-3, \n                                                                      decay_steps=1000, \n                                                                      decay_rate=0.9))\n        self.opt_state = self.opt_init(params)"
+    },
+    {
+      "notebook": "Burger/PI_DeepONet_Burger.ipynb",
+      "cell_index_zero_based": 3,
+      "optimizer_excerpt": "        # Use optimizers to set optimizer initialization and update functions\n        self.opt_init, \\\n        self.opt_update, \\\n        self.get_params = optimizers.adam(optimizers.exponential_decay(1e-3, \n                                                                      decay_steps=2000, \n                                                                      decay_rate=0.9))\n        self.opt_state = self.opt_init(params)"
+    },
+    {
+      "notebook": "Diffusion-reaction/DeepONet_DR.ipynb",
+      "cell_index_zero_based": 3,
+      "optimizer_excerpt": "        # Use optimizers to set optimizer initialization and update functions\n        self.opt_init, \\\n        self.opt_update, \\\n        self.get_params = optimizers.adam(optimizers.exponential_decay(1e-3, \n                                                                      decay_steps=2000, \n                                                                      decay_rate=0.9))\n        self.opt_state = self.opt_init(params)"
+    },
+    {
+      "notebook": "Diffusion-reaction/PI_DeepONet_DR.ipynb",
+      "cell_index_zero_based": 3,
+      "optimizer_excerpt": "        # Use optimizers to set optimizer initialization and update functions\n        self.opt_init, \\\n        self.opt_update, \\\n        self.get_params = optimizers.adam(optimizers.exponential_decay(1e-3, \n                                                                      decay_steps=2000, \n                                                                      decay_rate=0.9))\n        self.opt_state = self.opt_init(params)"
+    },
+    {
+      "notebook": "Eikonal/PI_DeepONet_Eikonal_airfoil.ipynb",
+      "cell_index_zero_based": 3,
+      "optimizer_excerpt": "        # Use optimizers to set optimizer initialization and update functions\n        self.opt_init, \\\n        self.opt_update, \\\n        self.get_params = optimizers.adam(optimizers.exponential_decay(1e-3, \n                                                                      decay_steps=1000, \n                                                                      decay_rate=0.9))\n        self.opt_state = self.opt_init(params)"
+    },
+    {
+      "notebook": "Eikonal/PI_DeepOnet_Eikonal_circle.ipynb",
+      "cell_index_zero_based": 3,
+      "optimizer_excerpt": "        # Use optimizers to set optimizer initialization and update functions\n        self.opt_init, \\\n        self.opt_update, \\\n        self.get_params = optimizers.adam(optimizers.exponential_decay(1e-3, \n                                                                      decay_steps=1000, \n                                                                      decay_rate=0.9))\n        self.opt_state = self.opt_init(params)"
+    }
+  ]
+}
