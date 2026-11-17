@@ -1,0 +1,137 @@
+{
+  "manifest.json": {
+    "base_step": 172400,
+    "base_sha256": "e1717e8fc20690919c71cb3d267973ca45b3b57a71436c3edf99e81b42d9ccf2",
+    "optimizer_present": true,
+    "original_worker_interrupted": true,
+    "reason": "User requested branching learning-rate trials from the latest intact saved full-state checkpoint",
+    "observed_at_utc": "2026-11-17T11:33:23.537067+00:00",
+    "updates_per_case": 15000,
+    "pool": "/home/marimo/wall_adam_1h/frozen/output/project/data/geometries",
+    "config": "/home/marimo/wall_adam_1h/frozen/output/project/configs/runtime.json",
+    "reference_pilot": "/home/marimo/wall_adam_1h/frozen/output/project/runs/adam_next50k/development",
+    "source_train_before_sha256": "430668d9e5fa026807e78d3e58482d88c61425f22193b527729f5bac3df4b9fd",
+    "source_train_after_sha256": "669e243dc3096cd2538b8f4e0017e48bd0464b51ad962605eb275ce8d02ebaf9",
+    "cases": [
+      {
+        "id": "constant_2e5",
+        "label": "Constant 2e-5 (baseline)",
+        "kind": "constant",
+        "high": 2e-05
+      },
+      {
+        "id": "constant_5e5",
+        "label": "Constant 5e-5",
+        "kind": "constant",
+        "high": 5e-05
+      },
+      {
+        "id": "constant_1e4",
+        "label": "Constant 1e-4",
+        "kind": "constant",
+        "high": 0.0001
+      },
+      {
+        "id": "cosine_1e4_2e5",
+        "label": "Cosine 1e-4 to 2e-5",
+        "kind": "cosine",
+        "high": 0.0001,
+        "low": 2e-05
+      }
+    ]
+  },
+  "suite-status.json": {
+    "phase": "running",
+    "started_at_utc": "2026-11-17T11:36:44.513022+00:00",
+    "completed": [],
+    "active_case": "constant_2e5",
+    "worker_pid": 9641
+  },
+  "transition.json": {
+    "base_step": 172400,
+    "base_sha256": "e1717e8fc20690919c71cb3d267973ca45b3b57a71436c3edf99e81b42d9ccf2",
+    "optimizer_present": true,
+    "original_worker_interrupted": true,
+    "reason": "User requested branching learning-rate trials from the latest intact saved full-state checkpoint",
+    "observed_at_utc": "2026-11-17T11:33:23.537067+00:00"
+  },
+  "resume.json": {
+    "base_step": 172400,
+    "base_sha256": "e1717e8fc20690919c71cb3d267973ca45b3b57a71436c3edf99e81b42d9ccf2",
+    "first_batch_sha256": "e72513f123674cc65173d198398634156736df8acba6e66913e366506f1c7079",
+    "optimizer_restored": true,
+    "rng_restored": true,
+    "spec": {
+      "id": "constant_2e5",
+      "label": "Constant 2e-5 (baseline)",
+      "kind": "constant",
+      "high": 2e-05
+    }
+  },
+  "status.json": {
+    "step": 173000,
+    "train_pool_sha256": "3e23c0fa2f5af6fba53fb0d676207949c376f6df2a5cff460148c3191e11d1f4",
+    "code_revision": "frozen-plus-explicit-LR-control",
+    "accepted": false,
+    "training_labels": 0,
+    "backend": "gpu",
+    "devices": [
+      "cuda:0"
+    ],
+    "jax": "0.11.0",
+    "python": "3.13.11",
+    "target_steps": 187400,
+    "global_batch": 32,
+    "interior_points": 128,
+    "outlet_points": 48,
+    "sampling": "biased mixture; unweighted strong momentum and traction",
+    "selection": "latest; FEM selection pending",
+    "elapsed_seconds": 93.44369886999993,
+    "compilation_seconds": 49.96945738999966,
+    "stop_reason": "running"
+  },
+  "training.jsonl": [
+    {
+      "step": 172401,
+      "loss": 0.013716576620936394,
+      "terms": [
+        0.013707583770155907,
+        7.511834496654046e-07,
+        1.4796664515870361e-07,
+        5.100744913250077e-12
+      ],
+      "gradient_norm": 0.2650147080421448,
+      "step_seconds": 49.96945738999966,
+      "elapsed_seconds": 50.03089282000019
+    },
+    {
+      "step": 173030,
+      "loss": 0.021287603303790092,
+      "terms": [
+        0.02126331627368927,
+        1.3251860764285084e-06,
+        1.1034364888473647e-06,
+        1.9442272444769593e-11
+      ],
+      "gradient_norm": 0.423451691865921,
+      "step_seconds": 0.0658374240001649,
+      "elapsed_seconds": 95.91395874499995
+    }
+  ],
+  "probe.jsonl": [
+    {
+      "step": 172400,
+      "offset": 0,
+      "loss": 0.013673214241862297,
+      "terms": [
+        0.01366428378969431,
+        6.339856213344319e-07,
+        2.589886207715608e-07,
+        2.805903296168588e-12
+      ],
+      "learning_rate": 1.9999999494757503e-05
+    }
+  ],
+  "console_tail": "0.4143964350223541, \"step_seconds\": 0.06640302300002077, \"elapsed_seconds\": 92.08371910400001}\n{\"step\": 172990, \"loss\": 0.016387632116675377, \"terms\": [0.016378207132220268, 6.665949854323117e-07, 2.7582163397710246e-07, 1.511753916494385e-11], \"gradient_norm\": 0.5359821915626526, \"step_seconds\": 0.06622955000057118, \"elapsed_seconds\": 92.76455379700019}\n{\"step\": 173000, \"loss\": 0.01267947070300579, \"terms\": [0.012673360295593739, 4.469108887406037e-07, 1.643537075324275e-07, 3.00381876490452e-12], \"gradient_norm\": 0.40550798177719116, \"step_seconds\": 0.06533922399921721, \"elapsed_seconds\": 93.44355298200026}\n{\"step\": 173010, \"loss\": 0.020987777039408684, \"terms\": [0.020978279411792755, 6.014117843733402e-07, 3.4861929520957347e-07, 5.995981922773952e-12], \"gradient_norm\": 0.4538717269897461, \"step_seconds\": 0.06566560699957336, \"elapsed_seconds\": 94.55564818499988}\n{\"step\": 173020, \"loss\": 0.01201825775206089, \"terms\": [0.012012994848191738, 3.1643105558032403e-07, 2.0966683678125264e-07, 3.81335414634254e-12], \"gradient_norm\": 0.272861510515213, \"step_seconds\": 0.06539454199992178, \"elapsed_seconds\": 95.23520658399957}\n{\"step\": 173030, \"loss\": 0.021287603303790092, \"terms\": [0.02126331627368927, 1.3251860764285084e-06, 1.1034364888473647e-06, 1.9442272444769593e-11], \"gradient_norm\": 0.423451691865921, \"step_seconds\": 0.0658374240001649, \"elapsed_seconds\": 95.91395874499995}\n",
+  "ui_errors": []
+}

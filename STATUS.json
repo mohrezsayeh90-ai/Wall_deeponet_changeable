@@ -508,7 +508,7 @@
   },
   "kaggle_quota_snapshot": "reports/adam_next50k/quota-snapshot.json",
   "molab_adam_1h": {
-    "phase": "running",
+    "phase": "stopped_at_user_request_for_lr_trials",
     "base_step": 132216,
     "training_budget_seconds": 3600,
     "started_at_utc": "2026-11-17T10:43:33.937699+00:00",
@@ -516,6 +516,16 @@
     "last_logged_step": 132300,
     "last_logged_loss": 0.0114132734015584,
     "report": "reports/molab_adam_1h/README.md",
-    "latest_collected_checkpoint_unchanged": true
+    "latest_collected_checkpoint_unchanged": true,
+    "transition_checkpoint_step": 172400
+  },
+  "molab_lr_trials": {
+    "phase": "running",
+    "base_step": 172400,
+    "updates_per_case": 15000,
+    "case_count": 4,
+    "total_updates": 60000,
+    "active_case": "constant_2e5",
+    "report": "reports/molab_lr_trials/README.md"
   }
 }
