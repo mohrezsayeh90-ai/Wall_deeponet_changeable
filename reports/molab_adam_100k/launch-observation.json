@@ -1,0 +1,170 @@
+{
+  "supervisor-status.json": {
+    "phase": "running",
+    "started_at_utc": "2026-11-17T14:37:26.941108+00:00",
+    "base_step": 187400,
+    "target_step": 287400,
+    "additional_updates": 100000,
+    "worker_pid": 36566
+  },
+  "manifest.json": {
+    "base_step": 187400,
+    "base_sha256": "7b53db720ac5e3644739704da16f77baa8828012792ccc433528ebcb5ca7bebd",
+    "optimizer_present": true,
+    "original_worker_interrupted": true,
+    "reason": "User requested branching learning-rate trials from the latest intact saved full-state checkpoint",
+    "observed_at_utc": "2026-11-17T11:33:23.537067+00:00",
+    "updates_per_case": 100000,
+    "pool": "/home/marimo/wall_adam_1h/frozen/output/project/data/geometries",
+    "config": "/home/marimo/wall_adam_1h/frozen/output/project/configs/runtime.json",
+    "reference_pilot": "/home/marimo/wall_adam_1h/frozen/output/project/runs/adam_next50k/development",
+    "source_train_before_sha256": "430668d9e5fa026807e78d3e58482d88c61425f22193b527729f5bac3df4b9fd",
+    "source_train_after_sha256": "669e243dc3096cd2538b8f4e0017e48bd0464b51ad962605eb275ce8d02ebaf9",
+    "cases": [
+      {
+        "id": "cosine_100k",
+        "label": "Cosine 1e-4 to 2e-5 over 100k",
+        "kind": "cosine",
+        "high": 0.0001,
+        "low": 2e-05,
+        "updates": 100000,
+        "probe_interval": 5000
+      }
+    ],
+    "source_trial": "cosine_1e4_2e5",
+    "selection": "Best terminal fixed-probe and FEM pilot among four candidates; probe did not improve from common starting checkpoint; extended horizon is a new experiment"
+  },
+  "resume.json": {
+    "base_step": 187400,
+    "base_sha256": "7b53db720ac5e3644739704da16f77baa8828012792ccc433528ebcb5ca7bebd",
+    "first_batch_sha256": "e656e80a5f2ef35ab63813ce729215a0ae4244fc98da1fc61f770e5df4497cd9",
+    "optimizer_restored": true,
+    "rng_restored": true,
+    "spec": {
+      "id": "cosine_100k",
+      "label": "Cosine 1e-4 to 2e-5 over 100k",
+      "kind": "cosine",
+      "high": 0.0001,
+      "low": 2e-05,
+      "updates": 100000,
+      "probe_interval": 5000
+    }
+  },
+  "status.json": {
+    "step": 188800,
+    "train_pool_sha256": "3e23c0fa2f5af6fba53fb0d676207949c376f6df2a5cff460148c3191e11d1f4",
+    "code_revision": "frozen-plus-explicit-LR-control",
+    "accepted": false,
+    "training_labels": 0,
+    "backend": "gpu",
+    "devices": [
+      "cuda:0"
+    ],
+    "jax": "0.11.0",
+    "python": "3.13.11",
+    "target_steps": 287400,
+    "global_batch": 32,
+    "interior_points": 128,
+    "outlet_points": 48,
+    "sampling": "biased mixture; unweighted strong momentum and traction",
+    "selection": "latest; FEM selection pending",
+    "elapsed_seconds": 152.84875519700108,
+    "compilation_seconds": 52.489454272999865,
+    "stop_reason": "running"
+  },
+  "best.json": {
+    "step": 187400,
+    "probe_loss": 0.01369785238057375,
+    "selection": "fixed dev probe; not full benchmark acceptance"
+  },
+  "training.jsonl": [
+    {
+      "step": 187401,
+      "loss": 0.013460343703627586,
+      "terms": [
+        0.013450151309370995,
+        6.178194666972558e-07,
+        4.0145837942873186e-07,
+        5.359611409197496e-13
+      ],
+      "gradient_norm": 0.3273008465766907,
+      "step_seconds": 52.489454272999865,
+      "elapsed_seconds": 52.54660319800132
+    },
+    {
+      "step": 188810,
+      "loss": 0.011204369366168976,
+      "terms": [
+        0.011155853979289532,
+        4.557796728477115e-06,
+        2.939019623227068e-07,
+        3.717838537031781e-12
+      ],
+      "gradient_norm": 0.43408334255218506,
+      "step_seconds": 0.06498463199932303,
+      "elapsed_seconds": 153.95583298100064
+    }
+  ],
+  "probe.jsonl": [
+    {
+      "step": 187400,
+      "offset": 0,
+      "loss": 0.01369785238057375,
+      "terms": [
+        0.01369020901620388,
+        5.173658337298548e-07,
+        2.4703001599846175e-07,
+        6.552959997546681e-12
+      ],
+      "learning_rate": 0.0001
+    }
+  ],
+  "ui_errors": [],
+  "console_tail": "conds\": 149.49032265999995}\n{\"step\": 188760, \"loss\": 0.020424101501703262, \"terms\": [0.02040400356054306, 1.7992621224038885e-06, 2.1047445386557229e-07, 2.34052902926829e-12], \"gradient_norm\": 0.7821651101112366, \"step_seconds\": 0.06482646400036174, \"elapsed_seconds\": 150.15837834500053}\n{\"step\": 188770, \"loss\": 0.026771394535899162, \"terms\": [0.02673962712287903, 3.078017243751674e-06, 9.883714113811948e-08, 5.228350304781193e-12], \"gradient_norm\": 1.3057891130447388, \"step_seconds\": 0.06578078400161758, \"elapsed_seconds\": 150.8322877190003}\n{\"step\": 188780, \"loss\": 0.01949577033519745, \"terms\": [0.019470717757940292, 2.448721943437704e-06, 5.6744553944554355e-08, 1.2480252942204118e-11], \"gradient_norm\": 0.606886088848114, \"step_seconds\": 0.06582664600136923, \"elapsed_seconds\": 151.5067202400005}\n{\"step\": 188790, \"loss\": 0.02401248924434185, \"terms\": [0.02397644706070423, 3.4211807360406965e-06, 1.830752580644912e-07, 5.877065327453135e-12], \"gradient_norm\": 1.3818590641021729, \"step_seconds\": 0.06480277799892065, \"elapsed_seconds\": 152.17999168999995}\n{\"step\": 188800, \"loss\": 0.019900068640708923, \"terms\": [0.019877804443240166, 2.0234999738022452e-06, 2.0310136505941045e-07, 2.5404875685780537e-12], \"gradient_norm\": 0.5691695809364319, \"step_seconds\": 0.06454009499975655, \"elapsed_seconds\": 152.84854071800146}\n{\"step\": 188810, \"loss\": 0.011204369366168976, \"terms\": [0.011155853979289532, 4.557796728477115e-06, 2.939019623227068e-07, 3.717838537031781e-12], \"gradient_norm\": 0.43408334255218506, \"step_seconds\": 0.06498463199932303, \"elapsed_seconds\": 153.95583298100064}\n",
+  "baseline_fem": {
+    "cases": [
+      {
+        "case": 0,
+        "velocity_relative_l2": 0.0028067235402741866,
+        "pressure_relative_l2": 0.003099985389747902
+      },
+      {
+        "case": 1,
+        "velocity_relative_l2": 0.014012771096861498,
+        "pressure_relative_l2": 0.013457965745724205
+      },
+      {
+        "case": 2,
+        "velocity_relative_l2": 0.007641425062732487,
+        "pressure_relative_l2": 0.01136808298208274
+      },
+      {
+        "case": 3,
+        "velocity_relative_l2": 0.012456196895426694,
+        "pressure_relative_l2": 0.005619311811040585
+      },
+      {
+        "case": 4,
+        "velocity_relative_l2": 0.0313440533031009,
+        "pressure_relative_l2": 0.01139187830011383
+      },
+      {
+        "case": 5,
+        "velocity_relative_l2": 0.012513005178314537,
+        "pressure_relative_l2": 0.005380708649259477
+      },
+      {
+        "case": 6,
+        "velocity_relative_l2": 0.02204954293182818,
+        "pressure_relative_l2": 0.012771713904077811
+      },
+      {
+        "case": 7,
+        "velocity_relative_l2": 0.022736557998022534,
+        "pressure_relative_l2": 0.0032669122503829603
+      }
+    ],
+    "median_velocity_l2": 0.013262888137588018,
+    "median_pressure_l2": 0.008493697396561662
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "ranked_by": "final fixed-development-probe objective; no automatic model promotion",
+  "base_step": 172400,
+  "cases": [
+    {
+      "case": "cosine_1e4_2e5",
+      "label": "Cosine 1e-4 to 2e-5",
+      "final_step": 187400,
+      "last_300_record_mean_loss": 0.01446527716393272,
+      "last_300_record_median_loss": 0.013424030039459467,
+      "initial_probe_loss": 0.0136732067912817,
+      "final_probe_loss": 0.013697854243218899,
+      "probe_reduction_percent": -0.18026094619525423,
+      "fem_velocity_median": 0.012787663374504562,
+      "fem_pressure_median": 0.009047718482527393
+    },
+    {
+      "case": "constant_2e5",
+      "label": "Constant 2e-5 (baseline)",
+      "final_step": 187400,
+      "last_300_record_mean_loss": 0.01444075244323661,
+      "last_300_record_median_loss": 0.013393775559961796,
+      "initial_probe_loss": 0.013673214241862297,
+      "final_probe_loss": 0.014333152212202549,
+      "probe_reduction_percent": -4.826502084051065,
+      "fem_velocity_median": 0.012878102008491005,
+      "fem_pressure_median": 0.009424189088798503
+    },
+    {
+      "case": "constant_5e5",
+      "label": "Constant 5e-5",
+      "final_step": 187400,
+      "last_300_record_mean_loss": 0.015475829613084595,
+      "last_300_record_median_loss": 0.01442952873185277,
+      "initial_probe_loss": 0.013673214241862297,
+      "final_probe_loss": 0.014665568247437477,
+      "probe_reduction_percent": -7.25764979632193,
+      "fem_velocity_median": 0.013309300070410975,
+      "fem_pressure_median": 0.010540904449338914
+    },
+    {
+      "case": "constant_1e4",
+      "label": "Constant 1e-4",
+      "final_step": 187400,
+      "last_300_record_mean_loss": 0.017961908620782195,
+      "last_300_record_median_loss": 0.016728521324694157,
+      "initial_probe_loss": 0.013673204928636551,
+      "final_probe_loss": 0.015141470357775688,
+      "probe_reduction_percent": -10.738268290443509,
+      "fem_velocity_median": 0.014230786225244738,
+      "fem_pressure_median": 0.011837642006091076
+    }
+  ]
+}

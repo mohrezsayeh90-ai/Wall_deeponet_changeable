@@ -520,12 +520,26 @@
     "transition_checkpoint_step": 172400
   },
   "molab_lr_trials": {
-    "phase": "running",
+    "phase": "completed",
     "base_step": 172400,
     "updates_per_case": 15000,
     "case_count": 4,
     "total_updates": 60000,
     "active_case": "constant_2e5",
-    "report": "reports/molab_lr_trials/README.md"
+    "report": "reports/molab_lr_trials/README.md",
+    "completed_cases": 4,
+    "selected_terminal_case": "cosine_1e4_2e5",
+    "selection_limit": "Best among terminal candidates; fixed probe did not improve relative to the common baseline; pressure FEM worsened versus baseline"
+  },
+  "molab_adam_100k": {
+    "phase": "running",
+    "base_step": 187400,
+    "target_step": 287400,
+    "additional_updates": 100000,
+    "controller": "cosine 1e-4 -> 2e-5 over 100k updates",
+    "last_observed_logged_step": 188810,
+    "base_checkpoint_sha256": "7b53db720ac5e3644739704da16f77baa8828012792ccc433528ebcb5ca7bebd",
+    "report": "reports/molab_adam_100k/README.md",
+    "best_probe_checkpoint_saved_separately": true
   }
 }

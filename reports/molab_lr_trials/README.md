@@ -1,31 +1,28 @@
-# Paired 15,000-update Adam learning-rate trials on molab
+# Completed paired learning-rate trials and selected continuation
 
-**Started; results pending.** The user requested stopping the one-hour baseline and comparing independent LR continuations. The latest intact full-state checkpoint at **step 172,400** was copied and SHA256-verified before the old worker was interrupted. The baseline remains immutable on molab at `/home/marimo/wall_lr_trials/base.npz`. [Manifest](manifest.json) · [Launch observation](launch-observation.json) · [Worker/controller/dashboard source](../../notebooks/molab_lr_trials/).
+**All four completed exactly 15,000 updates: 172,400 → 187,400.** Parameters, Adam moments, RNG and the first sampled batch started identically. The suite verified matching first-batch hashes and initial losses (tolerance 1e-6). No FEM labels entered training. [Detailed observations](results-observation.json) · [CSV](comparison.csv) · [JSON](comparison.json).
 
-| Order | Schedule | Updates | Start → target |
-| --- | --- | ---: | --- |
-| 1 | Constant 2e-5 (existing floor baseline) | 15,000 | 172,400 → 187,400 |
-| 2 | Constant 5e-5 | 15,000 | 172,400 → 187,400 |
-| 3 | Constant 1e-4 | 15,000 | 172,400 → 187,400 |
-| 4 | Cosine 1e-4 → 2e-5 | 15,000 | 172,400 → 187,400 |
+![Comparison](comparison.png)
 
-All four restart from the same parameter arrays, Adam moments, global step and RNG. They do **not** chain candidate weights. Same batch 32, interior 128, outlet 48, float32, training pool and frozen physics. The copied trainer changes only its LR expression and imports the explicit controller. Compiled schedule checks cover all 15,000 values, positivity, endpoints and cosine monotonicity. Initial sampled-batch hashes and first loss values are compared across completed trials as an additional pairing check.
+| Controller | Mean train loss, last 3k updates | Final fixed-probe loss | Median velocity FEM L2 | Median pressure FEM L2 |
+| --- | ---: | ---: | ---: | ---: |
+| Constant 2e-5 (baseline) | 0.014441 | 0.014333 | 1.288% | 0.942% |
+| Constant 5e-5 | 0.015476 | 0.014666 | 1.331% | 1.054% |
+| Constant 1e-4 | 0.017962 | 0.015141 | 1.423% | 1.184% |
+| Cosine 1e-4 to 2e-5 | 0.014465 | 0.013698 | 1.279% | 0.905% |
 
-At launch observation, the first trial had reached **173,030**, with a full optimizer checkpoint saved at **173,000**. The first resumed update was **172,401**. This is not a completed comparison or a claim that any controller is better.
+## Interpretation
 
-## Fixed evaluation and display
+Cosine has the best **terminal** fixed-probe loss and both median FEM errors among the four endpoints. However its fixed-probe loss is **0.18% higher**, not lower, than the common starting checkpoint (~0.0136732). The baseline constant rate has a marginally lower mean training loss (0.0144408 vs 0.0144653). Higher constant rates are worse. This experiment does not demonstrate that increasing LR resolves the plateau.
 
-A seeded, immutable development probe contains 16 sampled dev geometries with fixed Re and collocation points. Its objective is evaluated at offsets **0, 5k, 10k, 15k** without entering the training gradients. The baseline probe loss was **0.0136732142**. This probe is a controlled optimization diagnostic, not a full generalization benchmark. After each complete trial, the same eight previously saved FEM cases are evaluated without resolving FEM. Their median velocity and pressure errors are retained alongside loss results.
+The original common checkpoint's matched FEM pilot medians were **1.3263% velocity** and **0.8494% pressure**, measured separately after the trials. Cosine's endpoint improves the velocity median to **1.2788%** but worsens pressure to **0.9048%**. There is no all-metric improvement or full-domain acceptance claim. The probe uses 16 fixed development draws; the eight FEM cases are a small Re=10 pilot, not the 400-case development benchmark.
 
-The existing molab dashboard preserves the earlier loss history and overlays all new branches from the same global step. Thin curves show logged batch loss and bold curves show means over up to 100 logged records. A second plot compares the fixed dev probe. Progress advances across the four sequential trials; total training work is **60,000 updates**. Estimated total duration **75–85 minutes**, including repeated compilation and evaluation, based on observed speed; actual timing is recorded.
+The 5k intermediate probe minimum under constant 2e-5 was lower, but full-state intermediate checkpoints were not retained by the prior trial worker. It cannot be represented as an available continuation weight. The selected deployable endpoint is cosine. Earlier base and candidate endpoints remain preserved.
 
-An independent report finalizer waits for completion, ranks trials by final fixed-probe loss, retains separate matched FEM metrics, exports PNG/PDF/CSV/JSON, and makes an atomic ZIP available in the dashboard. It does not automatically replace the main model or promote a winner. Any improvement is determined after the actual runs, not from minimum noisy batch loss.
+## Authorized 100k run
 
-## Files on molab
+The new continuation starts from the cosine endpoint **187,400** with its own Adam moments and RNG and targets **287,400**, exactly **100,000 additional updates**. It uses a single cosine schedule 1e-4 → 2e-5 across the new 100k horizon. Extending the schedule from 15k to 100k is a new experiment, not a result validated by the short trials. Fixed-probe checks every 5k retain the best full-state checkpoint separately; periodic full-state copies every 10k and the latest checkpoint remain available. No automatic public model acceptance is implied.
 
-- `/home/marimo/wall_lr_trials/suite-status.json`: active trial, completed trials and process state.
-- `/home/marimo/wall_lr_trials/cases/<case>/`: training.jsonl, probe.jsonl, resume.json, lr.json, full-state checkpoint.npz, status.json and final FEM pilot metrics.
-- `/home/marimo/wall_lr_trials/comparison.png`, `comparison.pdf`, `comparison.csv`, `comparison.json`: generated after all cases finish.
-- `/home/marimo/wall_lr_trials/lr_trials_results.zip`: final complete bundle; the dashboard download is enabled after verification.
+[100k launch report](../molab_adam_100k/README.md) · [Experiment code](../../notebooks/molab_lr_trials/).
 
-The interrupted older run and its logs/checkpoints remain under `/home/marimo/wall_adam_1h`. The stop was user-requested; an interrupt-related legacy failure marker does not indicate a corrupt saved baseline. The latest collected GitHub checkpoint remains 132,216 until later molab outputs are retrieved and verified. No additional LR trials are started by refreshing the dashboard.
+Complete remote artifacts remain under `/home/marimo/wall_lr_trials`; the verified result archive is being collected into the local ignored `runs/molab-lr-completed` workspace. The data in this report were read directly from completed trial outputs.
