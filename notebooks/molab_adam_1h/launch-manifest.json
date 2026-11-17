@@ -1,0 +1,23 @@
+{
+  "base_step": 132216,
+  "base_checkpoint_sha256": "dabe75cd4121d1f4c6e2c920dced4c38cf033e2da7b1d74c4805ee90cf1e1544",
+  "training_budget_seconds": 3600,
+  "optimizer": "Adam",
+  "float_dtype": "float32",
+  "global_batch": 32,
+  "interior_points": 128,
+  "outlet_points": 48,
+  "save_every_steps": 100,
+  "log_every_steps": 10,
+  "full_state_snapshot_interval_seconds": 600,
+  "jax_molab": "0.11.0",
+  "jax_previous_kaggle": "0.11.1",
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "source_frozen_revision": "f6b32ae7e95853f6e48142e822d6718597eb4708",
+  "source_files": {
+    "worker.py": "0fdd6ad3aa20dc1a4a83083c507a16633d9d692144c81586fefa4f69d0465dbc",
+    "supervisor.py": "806e31e161027dcc0fc2526910fcaa7100f298cc90afae1d7f77d7309918f7c4"
+  },
+  "training_clock_includes_jit_compilation": true,
+  "lbfgs_used": false
+}

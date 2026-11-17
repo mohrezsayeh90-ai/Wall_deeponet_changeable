@@ -1,0 +1,160 @@
+{
+  "observed_at_utc": "2026-11-17T10:44:38.360333+00:00",
+  "preflight-status.json": {
+    "state": "passed",
+    "start_step": 132216,
+    "checkpoint_sha256": "dabe75cd4121d1f4c6e2c920dced4c38cf033e2da7b1d74c4805ee90cf1e1544",
+    "optimizer_restored": true,
+    "rng_restored": true,
+    "first_batch_sha256": "ed62d9f59e8a83960738de70cd1b85e8c0c76fbeeab7e1e9be244f11505ff40e",
+    "pool_sha256": "3e23c0fa2f5af6fba53fb0d676207949c376f6df2a5cff460148c3191e11d1f4",
+    "config": {
+      "sensors": 257,
+      "width": 192,
+      "depth": 4,
+      "rank": 128,
+      "seed": 20261115,
+      "dtype": "float32",
+      "local_features": true,
+      "inlet_length": 0.05
+    },
+    "jax": "0.11.0",
+    "devices": [
+      "cuda:0"
+    ],
+    "pilot_inference_max_difference": 8.881784197001252e-16,
+    "test_scope": "Original frozen physical derivatives/boundaries, geometry, checkpoint and gradient/deterministic-update tests; independent FEM test excluded because no FEM solve is needed for training."
+  },
+  "supervisor-status.json": {
+    "phase": "running",
+    "started_at_utc": "2026-11-17T10:43:33.937699+00:00",
+    "base_step": 132216,
+    "training_budget_seconds": 3600,
+    "budget_scope": "Frozen trainer clock includes JIT compilation; import/preflight time excluded; final update/save can slightly exceed the limit.",
+    "watchdog_seconds": 3780,
+    "root": "/home/marimo/wall_adam_1h",
+    "checkpoint_sha256_before_training": "dabe75cd4121d1f4c6e2c920dced4c38cf033e2da7b1d74c4805ee90cf1e1544",
+    "optimizer": "Adam",
+    "optimizer_and_rng_restored": true,
+    "frozen_code_revision": "f6b32ae7e95853f6e48142e822d6718597eb4708",
+    "worker_pid": 3029
+  },
+  "launch-manifest.json": {
+    "base_step": 132216,
+    "base_checkpoint_sha256": "dabe75cd4121d1f4c6e2c920dced4c38cf033e2da7b1d74c4805ee90cf1e1544",
+    "training_budget_seconds": 3600,
+    "optimizer": "Adam",
+    "float_dtype": "float32",
+    "global_batch": 32,
+    "interior_points": 128,
+    "outlet_points": 48,
+    "save_every_steps": 100,
+    "log_every_steps": 10,
+    "full_state_snapshot_interval_seconds": 600,
+    "jax_molab": "0.11.0",
+    "jax_previous_kaggle": "0.11.1",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "source_frozen_revision": "f6b32ae7e95853f6e48142e822d6718597eb4708",
+    "source_files": {
+      "worker.py": "0fdd6ad3aa20dc1a4a83083c507a16633d9d692144c81586fefa4f69d0465dbc",
+      "supervisor.py": "806e31e161027dcc0fc2526910fcaa7100f298cc90afae1d7f77d7309918f7c4"
+    },
+    "training_clock_includes_jit_compilation": true,
+    "lbfgs_used": false
+  },
+  "run/runtime.json": {
+    "train_pool_sha256": "3e23c0fa2f5af6fba53fb0d676207949c376f6df2a5cff460148c3191e11d1f4",
+    "code_revision": "f6b32ae7e95853f6e48142e822d6718597eb4708",
+    "accepted": false,
+    "training_labels": 0,
+    "backend": "gpu",
+    "devices": [
+      "cuda:0"
+    ],
+    "jax": "0.11.0",
+    "python": "3.13.11",
+    "target_steps": 100000000,
+    "global_batch": 32,
+    "interior_points": 128,
+    "outlet_points": 48,
+    "sampling": "biased mixture; unweighted strong momentum and traction",
+    "selection": "latest; FEM selection pending"
+  },
+  "run/status.json": {
+    "step": 132300,
+    "train_pool_sha256": "3e23c0fa2f5af6fba53fb0d676207949c376f6df2a5cff460148c3191e11d1f4",
+    "code_revision": "f6b32ae7e95853f6e48142e822d6718597eb4708",
+    "accepted": false,
+    "training_labels": 0,
+    "backend": "gpu",
+    "devices": [
+      "cuda:0"
+    ],
+    "jax": "0.11.0",
+    "python": "3.13.11",
+    "target_steps": 100000000,
+    "global_batch": 32,
+    "interior_points": 128,
+    "outlet_points": 48,
+    "sampling": "biased mixture; unweighted strong momentum and traction",
+    "selection": "latest; FEM selection pending",
+    "elapsed_seconds": 60.50737101000004,
+    "compilation_seconds": 54.28947556999992,
+    "stop_reason": "running"
+  },
+  "training_records": 10,
+  "first_training_record": {
+    "step": 132217,
+    "loss": 0.016630638390779495,
+    "terms": [
+      0.01662379689514637,
+      4.6111264850878797e-07,
+      2.232145135394603e-07,
+      2.242861495485582e-12
+    ],
+    "gradient_norm": 0.45803624391555786,
+    "step_seconds": 54.28947556999992,
+    "elapsed_seconds": 54.35377900100002
+  },
+  "last_training_record": {
+    "step": 132300,
+    "loss": 0.0114132734015584,
+    "terms": [
+      0.011409425176680088,
+      2.98996042147337e-07,
+      8.579478105730232e-08,
+      3.2835552853105465e-12
+    ],
+    "gradient_norm": 0.1826220452785492,
+    "step_seconds": 0.06758413600005042,
+    "elapsed_seconds": 60.50718030500002
+  },
+  "console_tail": "0.01837414689362049, \"terms\": [0.018364317715168, 5.701695044990629e-07, 4.1256811300627305e-07, 3.5248427440737196e-12], \"gradient_norm\": 0.7566139698028564, \"step_seconds\": 0.06644001800009391, \"elapsed_seconds\": 56.39120878599988}\n{\"step\": 132250, \"loss\": 0.025359822437167168, \"terms\": [0.02534998022019863, 7.691660357522778e-07, 2.1493275426109903e-07, 4.749652060542786e-12], \"gradient_norm\": 0.9902151823043823, \"step_seconds\": 0.06556307899995772, \"elapsed_seconds\": 57.07508847200006}\n{\"step\": 132260, \"loss\": 0.007060969714075327, \"terms\": [0.007057073526084423, 2.693454348445812e-07, 1.2027253148971795e-07, 4.593463196617131e-12], \"gradient_norm\": 0.1953992247581482, \"step_seconds\": 0.06743565199985824, \"elapsed_seconds\": 57.75861233499995}\n{\"step\": 132270, \"loss\": 0.01691439189016819, \"terms\": [0.016908468678593636, 4.852395818488731e-07, 1.0679680428893334e-07, 2.3658724718905733e-12], \"gradient_norm\": 0.3476402461528778, \"step_seconds\": 0.06570114000010108, \"elapsed_seconds\": 58.441133334999904}\n{\"step\": 132280, \"loss\": 0.014049154706299305, \"terms\": [0.014041011221706867, 6.540043955283181e-07, 1.6033150984640088e-07, 2.9423490553737164e-12], \"gradient_norm\": 0.681129515171051, \"step_seconds\": 0.06627950200004307, \"elapsed_seconds\": 59.12555445599992}\n{\"step\": 132290, \"loss\": 0.008315145038068295, \"terms\": [0.008310692384839058, 3.825071814844705e-07, 6.255191919990466e-08, 7.845121579273806e-13], \"gradient_norm\": 0.216356560587883, \"step_seconds\": 0.06680133399981969, \"elapsed_seconds\": 59.8183949029999}\n{\"step\": 132300, \"loss\": 0.0114132734015584, \"terms\": [0.011409425176680088, 2.98996042147337e-07, 8.579478105730232e-08, 3.2835552853105465e-12], \"gradient_norm\": 0.1826220452785492, \"step_seconds\": 0.06758413600005042, \"elapsed_seconds\": 60.50718030500002}\n",
+  "notebook_cells": [
+    {
+      "id": "Hbol",
+      "name": "__",
+      "status": "idle",
+      "errors": []
+    },
+    {
+      "id": "HJOZ",
+      "name": "wall_training_refresh",
+      "status": "idle",
+      "errors": []
+    },
+    {
+      "id": "nLex",
+      "name": "wall_adam_dashboard",
+      "status": "idle",
+      "errors": []
+    },
+    {
+      "id": "hHiQ",
+      "name": "wall_training_download",
+      "status": "idle",
+      "errors": []
+    }
+  ],
+  "gpu_status": "NVIDIA RTX PRO 6000 Blackwell Server Edition, 94 %, 1979 MiB"
+}
