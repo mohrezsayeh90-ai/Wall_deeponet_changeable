@@ -18,7 +18,7 @@ At the recorded observation: latest logged step **132,300**, loss **0.01141327**
 
 ## Live notebook and outputs
 
-The user's existing molab notebook now contains an automatically refreshed dashboard (10 seconds) and a download control for the completed result bundle. Training runs as a separate background process, so UI refreshes do not restart optimization. A retained lock prevents accidental duplicate launches.
+The user's existing molab notebook now opens with an automatically refreshed dashboard (10 seconds), a time-progress bar, current/new steps, latest loss, saved checkpoint and a live logarithmic loss plot with a rolling mean. Dashboard code is collapsed and the visible dashboard is placed first. A download control is available for the completed result bundle. The dashboard cell source is preserved in `notebooks/molab_adam_1h/dashboard_cell.py` and is intended for the live notebook, not standalone execution. Training runs as a separate background process, so UI refreshes do not restart optimization. A retained lock prevents accidental duplicate launches.
 
 Files on molab:
 
