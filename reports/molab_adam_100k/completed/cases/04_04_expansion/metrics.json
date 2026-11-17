@@ -1,0 +1,34 @@
+{
+  "case_id": 4,
+  "group": "channel_chain_15",
+  "original_index": 4,
+  "directory": "cases/04_04_expansion",
+  "title": "Symmetric expansion",
+  "metrics": {
+    "base": {
+      "velocity_relative_l2": 0.010386149051621616,
+      "pressure_relative_l2": 0.020940737801926092,
+      "u_relative_l2": 0.009806996971093154,
+      "v_absolute_rms": 0.0035561692123588203,
+      "velocity_mae": 0.008333261895416711,
+      "pressure_mae": 0.01937072902797645
+    },
+    "final": {
+      "velocity_relative_l2": 0.008753696915145093,
+      "pressure_relative_l2": 0.017854978680942428,
+      "u_relative_l2": 0.008200918985376546,
+      "v_absolute_rms": 0.0031819593336584627,
+      "velocity_mae": 0.007065615298125507,
+      "pressure_mae": 0.016151286978212404
+    },
+    "best": {
+      "velocity_relative_l2": 0.008834548070076208,
+      "pressure_relative_l2": 0.01878055229250005,
+      "u_relative_l2": 0.008371831985664978,
+      "v_absolute_rms": 0.002934955529240384,
+      "velocity_mae": 0.006903758828554804,
+      "pressure_mae": 0.01706695767981859
+    }
+  },
+  "reference_sha256": "38e04037f45674d7559af1e9fa0a6652f3331421a2bffdbd5baa56475bbe7d68"
+}

@@ -1,0 +1,14 @@
+{
+  "path": "artifacts/molab/adam-100k-v1/checkpoint.npz",
+  "step": 287400,
+  "sha256": "72bbe88ddc539258b9bfb433709aa434776393bd5f7e163d90478cbf7fa0e6c2",
+  "accepted": false,
+  "description": "Latest collected final research checkpoint; no passing full benchmark. Best fixed-probe checkpoint retained separately.",
+  "best_fixed_probe": {
+    "path": "artifacts/molab/adam-100k-v1/best_checkpoint.npz",
+    "step": 282400,
+    "sha256": "4333a74c3eebcc7d21f83a29138eb5353e6d812d341e5d48feb4b8448ce34463"
+  },
+  "previous_checkpoint_path": "artifacts/kaggle/adam-next50k-v1/checkpoint.npz",
+  "pilot_report": "artifacts/molab/adam-100k-v1/fem_pilot.json"
+}

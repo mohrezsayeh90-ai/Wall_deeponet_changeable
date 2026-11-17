@@ -1,0 +1,13 @@
+{
+  "phase": "completed",
+  "started_at_utc": "2026-11-17T11:36:44.513022+00:00",
+  "completed": [
+    "constant_2e5",
+    "constant_5e5",
+    "constant_1e4",
+    "cosine_1e4_2e5"
+  ],
+  "active_case": "cosine_1e4_2e5",
+  "worker_pid": 25980,
+  "finished_at_utc": "2026-11-17T12:53:11.406218+00:00"
+}

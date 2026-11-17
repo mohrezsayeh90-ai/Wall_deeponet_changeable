@@ -1,0 +1,34 @@
+{
+  "case_id": 9,
+  "group": "channel_chain_15",
+  "original_index": 9,
+  "directory": "cases/09_09_double_constriction",
+  "title": "Two symmetric constrictions",
+  "metrics": {
+    "base": {
+      "velocity_relative_l2": 0.014619821764467425,
+      "pressure_relative_l2": 0.023829361595103606,
+      "u_relative_l2": 0.01362068653257545,
+      "v_absolute_rms": 0.006411293256436198,
+      "velocity_mae": 0.013107469315757226,
+      "pressure_mae": 0.03246321587451351
+    },
+    "final": {
+      "velocity_relative_l2": 0.012189538743963836,
+      "pressure_relative_l2": 0.014916465832913502,
+      "u_relative_l2": 0.011399568041652538,
+      "v_absolute_rms": 0.005211815717941522,
+      "velocity_mae": 0.011108400064255054,
+      "pressure_mae": 0.02015223022415956
+    },
+    "best": {
+      "velocity_relative_l2": 0.011192775037155945,
+      "pressure_relative_l2": 0.010422752229246622,
+      "u_relative_l2": 0.010319593460308843,
+      "v_absolute_rms": 0.005227530650803307,
+      "velocity_mae": 0.010435045469888717,
+      "pressure_mae": 0.01371327613946274
+    }
+  },
+  "reference_sha256": "5a1581de97556ba9980e8d207a5f078c07149966c4012bf6257a696cb8a5621b"
+}

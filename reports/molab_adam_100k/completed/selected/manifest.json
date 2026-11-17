@@ -1,0 +1,41 @@
+{
+  "checkpoint_step": 282400,
+  "checkpoint_sha256": "4333a74c3eebcc7d21f83a29138eb5353e6d812d341e5d48feb4b8448ce34463",
+  "checkpoint": "artifacts/molab/adam-100k-v1/best_checkpoint.npz",
+  "cases": [
+    {
+      "index": 12,
+      "slug": "triple_constriction",
+      "title": "Three symmetric constrictions",
+      "geometry_id": "4a97de7599208298a3059e78667f57ba09a3f64f77b8d77baa89341852586a62",
+      "reynolds": 30.0,
+      "amplitude_scale": 1.0,
+      "descriptors": {
+        "min_gap": 0.7718167443356874,
+        "max_gap": 1.0,
+        "center_deviation": 0.0,
+        "max_slope": 0.43800300652069407,
+        "max_curvature": 4.1821758666046325
+      },
+      "directory": "12_12_triple_constriction"
+    },
+    {
+      "index": 16,
+      "slug": "roof_plateau",
+      "title": "Rounded plateau roof",
+      "directory": "16_01_roof_plateau",
+      "reynolds": 30.0,
+      "geometry_id": "570bf536cd82f8d0fd0937a91721db7e78ee24a3c6b9e7e0f0e722fe89be9679",
+      "descriptors": {
+        "min_gap": 1.0,
+        "max_gap": 1.279895930728726,
+        "center_deviation": 0.13994796536436302,
+        "max_slope": 0.5052796643411491,
+        "max_curvature": 3.361410790313214
+      },
+      "amplitude_scale": 1.0
+    }
+  ],
+  "case_count": 2,
+  "fem_rerun": false
+}

@@ -1,0 +1,8 @@
+{
+  "base_step": 172400,
+  "base_sha256": "e1717e8fc20690919c71cb3d267973ca45b3b57a71436c3edf99e81b42d9ccf2",
+  "optimizer_present": true,
+  "original_worker_interrupted": true,
+  "reason": "User requested branching learning-rate trials from the latest intact saved full-state checkpoint",
+  "observed_at_utc": "2026-11-17T11:33:23.537067+00:00"
+}

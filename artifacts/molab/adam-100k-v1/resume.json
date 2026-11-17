@@ -1,0 +1,16 @@
+{
+  "base_step": 187400,
+  "base_sha256": "7b53db720ac5e3644739704da16f77baa8828012792ccc433528ebcb5ca7bebd",
+  "first_batch_sha256": "e656e80a5f2ef35ab63813ce729215a0ae4244fc98da1fc61f770e5df4497cd9",
+  "optimizer_restored": true,
+  "rng_restored": true,
+  "spec": {
+    "id": "cosine_100k",
+    "label": "Cosine 1e-4 to 2e-5 over 100k",
+    "kind": "cosine",
+    "high": 0.0001,
+    "low": 2e-05,
+    "updates": 100000,
+    "probe_interval": 5000
+  }
+}

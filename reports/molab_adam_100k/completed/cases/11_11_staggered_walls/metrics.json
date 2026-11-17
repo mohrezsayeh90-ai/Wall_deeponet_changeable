@@ -1,0 +1,34 @@
+{
+  "case_id": 11,
+  "group": "channel_chain_15",
+  "original_index": 11,
+  "directory": "cases/11_11_staggered_walls",
+  "title": "Staggered independent wall bumps",
+  "metrics": {
+    "base": {
+      "velocity_relative_l2": 0.024886432988159807,
+      "pressure_relative_l2": 0.009829876050781703,
+      "u_relative_l2": 0.023156536593955647,
+      "v_absolute_rms": 0.010969664407016173,
+      "velocity_mae": 0.02305776852865022,
+      "pressure_mae": 0.01126404986656976
+    },
+    "final": {
+      "velocity_relative_l2": 0.02116564512320811,
+      "pressure_relative_l2": 0.012237344210677837,
+      "u_relative_l2": 0.01954783861347555,
+      "v_absolute_rms": 0.009747484430946854,
+      "velocity_mae": 0.01998732020545887,
+      "pressure_mae": 0.014146031741232268
+    },
+    "best": {
+      "velocity_relative_l2": 0.021637182338976654,
+      "pressure_relative_l2": 0.012068427418151268,
+      "u_relative_l2": 0.020109802787890384,
+      "v_absolute_rms": 0.009605461686765595,
+      "velocity_mae": 0.02066052306022418,
+      "pressure_mae": 0.012746453945497921
+    }
+  },
+  "reference_sha256": "1f9d09efb028f8f29c10a7065806c5e2f4ea2b6fe0b03506ae2daf46dd7b7ed2"
+}

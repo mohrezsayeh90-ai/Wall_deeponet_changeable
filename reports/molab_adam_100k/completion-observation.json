@@ -1,0 +1,184 @@
+{
+  "supervisor-status.json": {
+    "phase": "completed",
+    "started_at_utc": "2026-11-17T14:37:26.941108+00:00",
+    "base_step": 187400,
+    "target_step": 287400,
+    "additional_updates": 100000,
+    "worker_pid": 36566,
+    "exit_code": 0,
+    "finished_at_utc": "2026-11-17T16:39:17.811272+00:00"
+  },
+  "manifest.json": {
+    "base_step": 187400,
+    "base_sha256": "7b53db720ac5e3644739704da16f77baa8828012792ccc433528ebcb5ca7bebd",
+    "optimizer_present": true,
+    "original_worker_interrupted": true,
+    "reason": "User requested branching learning-rate trials from the latest intact saved full-state checkpoint",
+    "observed_at_utc": "2026-11-17T11:33:23.537067+00:00",
+    "updates_per_case": 100000,
+    "pool": "/home/marimo/wall_adam_1h/frozen/output/project/data/geometries",
+    "config": "/home/marimo/wall_adam_1h/frozen/output/project/configs/runtime.json",
+    "reference_pilot": "/home/marimo/wall_adam_1h/frozen/output/project/runs/adam_next50k/development",
+    "source_train_before_sha256": "430668d9e5fa026807e78d3e58482d88c61425f22193b527729f5bac3df4b9fd",
+    "source_train_after_sha256": "669e243dc3096cd2538b8f4e0017e48bd0464b51ad962605eb275ce8d02ebaf9",
+    "cases": [
+      {
+        "id": "cosine_100k",
+        "label": "Cosine 1e-4 to 2e-5 over 100k",
+        "kind": "cosine",
+        "high": 0.0001,
+        "low": 2e-05,
+        "updates": 100000,
+        "probe_interval": 5000
+      }
+    ],
+    "source_trial": "cosine_1e4_2e5",
+    "selection": "Best terminal fixed-probe and FEM pilot among four candidates; probe did not improve from common starting checkpoint; extended horizon is a new experiment"
+  },
+  "resume.json": {
+    "base_step": 187400,
+    "base_sha256": "7b53db720ac5e3644739704da16f77baa8828012792ccc433528ebcb5ca7bebd",
+    "first_batch_sha256": "e656e80a5f2ef35ab63813ce729215a0ae4244fc98da1fc61f770e5df4497cd9",
+    "optimizer_restored": true,
+    "rng_restored": true,
+    "spec": {
+      "id": "cosine_100k",
+      "label": "Cosine 1e-4 to 2e-5 over 100k",
+      "kind": "cosine",
+      "high": 0.0001,
+      "low": 2e-05,
+      "updates": 100000,
+      "probe_interval": 5000
+    }
+  },
+  "status.json": {
+    "step": 287400,
+    "train_pool_sha256": "3e23c0fa2f5af6fba53fb0d676207949c376f6df2a5cff460148c3191e11d1f4",
+    "code_revision": "frozen-plus-explicit-LR-control",
+    "accepted": false,
+    "training_labels": 0,
+    "backend": "gpu",
+    "devices": [
+      "cuda:0"
+    ],
+    "jax": "0.11.0",
+    "python": "3.13.11",
+    "target_steps": 287400,
+    "global_batch": 32,
+    "interior_points": 128,
+    "outlet_points": 48,
+    "sampling": "biased mixture; unweighted strong momentum and traction",
+    "selection": "latest; FEM selection pending",
+    "elapsed_seconds": 7285.997047035002,
+    "compilation_seconds": 52.489454272999865,
+    "stop_reason": "target_completed"
+  },
+  "best.json": {
+    "step": 282400,
+    "probe_loss": 0.01048239041119814,
+    "selection": "fixed dev probe; not full benchmark acceptance"
+  },
+  "training.jsonl": [
+    {
+      "step": 187401,
+      "loss": 0.013460343703627586,
+      "terms": [
+        0.013450151309370995,
+        6.178194666972558e-07,
+        4.0145837942873186e-07,
+        5.359611409197496e-13
+      ],
+      "gradient_norm": 0.3273008465766907,
+      "step_seconds": 52.489454272999865,
+      "elapsed_seconds": 52.54660319800132
+    },
+    {
+      "step": 287400,
+      "loss": 0.027798274531960487,
+      "terms": [
+        0.027792520821094513,
+        3.7172773659222e-07,
+        2.0378027443257452e-07,
+        6.471136560631807e-12
+      ],
+      "gradient_norm": 0.4564448595046997,
+      "step_seconds": 0.06581942299817456,
+      "elapsed_seconds": 7285.550884414002
+    }
+  ],
+  "probe.jsonl": [
+    {
+      "step": 187400,
+      "offset": 0,
+      "loss": 0.01369785238057375,
+      "terms": [
+        0.01369020901620388,
+        5.173658337298548e-07,
+        2.4703001599846175e-07,
+        6.552959997546681e-12
+      ],
+      "learning_rate": 0.0001
+    },
+    {
+      "step": 287400,
+      "offset": 100000,
+      "loss": 0.013760179281234741,
+      "terms": [
+        0.013753915205597878,
+        4.275333935765957e-07,
+        1.987891806720654e-07,
+        1.1015321467466865e-11
+      ],
+      "learning_rate": 2e-05
+    }
+  ],
+  "ui_errors": [],
+  "console_tail": "48, \"elapsed_seconds\": 7281.433167756}\n{\"step\": 287350, \"loss\": 0.014345443807542324, \"terms\": [0.014339629560709, 3.902173375536222e-07, 1.9132488660034142e-07, 3.8714504692338725e-12], \"gradient_norm\": 0.35842451453208923, \"step_seconds\": 0.06583865599895944, \"elapsed_seconds\": 7282.116860234}\n{\"step\": 287360, \"loss\": 0.013460568152368069, \"terms\": [0.013456292450428009, 3.3187558301506215e-07, 9.563123626321612e-08, 1.4478720306021486e-11], \"gradient_norm\": 0.6325435638427734, \"step_seconds\": 0.06575950999831548, \"elapsed_seconds\": 7282.805271035002}\n{\"step\": 287370, \"loss\": 0.022019440308213234, \"terms\": [0.022010697051882744, 5.22804157299106e-07, 3.5096701367365313e-07, 4.15427154482062e-12], \"gradient_norm\": 0.45324215292930603, \"step_seconds\": 0.0664217009980348, \"elapsed_seconds\": 7283.495995822999}\n{\"step\": 287380, \"loss\": 0.01514274999499321, \"terms\": [0.015138091519474983, 3.864024336053262e-07, 7.973692106588715e-08, 8.343988694425875e-12], \"gradient_norm\": 0.6922279596328735, \"step_seconds\": 0.0668412150007498, \"elapsed_seconds\": 7284.186546827001}\n{\"step\": 287390, \"loss\": 0.011908043175935745, \"terms\": [0.011904019862413406, 3.260385312842118e-07, 7.643414079439026e-08, 8.29711733346672e-12], \"gradient_norm\": 0.31663957238197327, \"step_seconds\": 0.06623173199841403, \"elapsed_seconds\": 7284.868492698999}\n{\"step\": 287400, \"loss\": 0.027798274531960487, \"terms\": [0.027792520821094513, 3.7172773659222e-07, 2.0378027443257452e-07, 6.471136560631807e-12], \"gradient_norm\": 0.4564448595046997, \"step_seconds\": 0.06581942299817456, \"elapsed_seconds\": 7285.550884414002}\n",
+  "baseline_fem": {
+    "cases": [
+      {
+        "case": 0,
+        "velocity_relative_l2": 0.0028067235402741866,
+        "pressure_relative_l2": 0.003099985389747902
+      },
+      {
+        "case": 1,
+        "velocity_relative_l2": 0.014012771096861498,
+        "pressure_relative_l2": 0.013457965745724205
+      },
+      {
+        "case": 2,
+        "velocity_relative_l2": 0.007641425062732487,
+        "pressure_relative_l2": 0.01136808298208274
+      },
+      {
+        "case": 3,
+        "velocity_relative_l2": 0.012456196895426694,
+        "pressure_relative_l2": 0.005619311811040585
+      },
+      {
+        "case": 4,
+        "velocity_relative_l2": 0.0313440533031009,
+        "pressure_relative_l2": 0.01139187830011383
+      },
+      {
+        "case": 5,
+        "velocity_relative_l2": 0.012513005178314537,
+        "pressure_relative_l2": 0.005380708649259477
+      },
+      {
+        "case": 6,
+        "velocity_relative_l2": 0.02204954293182818,
+        "pressure_relative_l2": 0.012771713904077811
+      },
+      {
+        "case": 7,
+        "velocity_relative_l2": 0.022736557998022534,
+        "pressure_relative_l2": 0.0032669122503829603
+      }
+    ],
+    "median_velocity_l2": 0.013262888137588018,
+    "median_pressure_l2": 0.008493697396561662
+  }
+}

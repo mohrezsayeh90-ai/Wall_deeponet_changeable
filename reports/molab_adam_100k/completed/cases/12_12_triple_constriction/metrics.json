@@ -1,0 +1,34 @@
+{
+  "case_id": 12,
+  "group": "channel_chain_15",
+  "original_index": 12,
+  "directory": "cases/12_12_triple_constriction",
+  "title": "Three symmetric constrictions",
+  "metrics": {
+    "base": {
+      "velocity_relative_l2": 0.033291841915135775,
+      "pressure_relative_l2": 0.0189616612495691,
+      "u_relative_l2": 0.031117806041804596,
+      "v_absolute_rms": 0.014444337612937957,
+      "velocity_mae": 0.02911667796351487,
+      "pressure_mae": 0.02490562094289167
+    },
+    "final": {
+      "velocity_relative_l2": 0.03806379462391021,
+      "pressure_relative_l2": 0.00993499570610834,
+      "u_relative_l2": 0.03578274130770743,
+      "v_absolute_rms": 0.015850948187232393,
+      "velocity_mae": 0.031923726760619234,
+      "pressure_mae": 0.01267909646448483
+    },
+    "best": {
+      "velocity_relative_l2": 0.03627802617684693,
+      "pressure_relative_l2": 0.007922943775842859,
+      "u_relative_l2": 0.03404440878856562,
+      "v_absolute_rms": 0.015303758803210341,
+      "velocity_mae": 0.031176177433701848,
+      "pressure_mae": 0.010070830388226634
+    }
+  },
+  "reference_sha256": "5ecf8a6b07632be0b001e58825898f597c9c6c69b8df5c6149fd259575a20403"
+}

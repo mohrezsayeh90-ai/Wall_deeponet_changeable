@@ -1,0 +1,34 @@
+{
+  "case_id": 18,
+  "group": "random_channel_chain_5",
+  "original_index": 3,
+  "directory": "cases/18_03_stepped_s_bend",
+  "title": "Rounded stepped S-shaped walls",
+  "metrics": {
+    "base": {
+      "velocity_relative_l2": 0.01088094817568003,
+      "pressure_relative_l2": 0.020190355575528618,
+      "u_relative_l2": 0.010399121863113928,
+      "v_absolute_rms": 0.0037289031736422026,
+      "velocity_mae": 0.009754071304677247,
+      "pressure_mae": 0.02627808281914237
+    },
+    "final": {
+      "velocity_relative_l2": 0.010465188040369831,
+      "pressure_relative_l2": 0.014431254687315017,
+      "u_relative_l2": 0.010075204203346344,
+      "v_absolute_rms": 0.0032989850414465406,
+      "velocity_mae": 0.009387639606051044,
+      "pressure_mae": 0.018737994814193536
+    },
+    "best": {
+      "velocity_relative_l2": 0.00946166336392935,
+      "pressure_relative_l2": 0.013249889991693678,
+      "u_relative_l2": 0.00899554659288489,
+      "v_absolute_rms": 0.00341399436410627,
+      "velocity_mae": 0.008487591187004262,
+      "pressure_mae": 0.017435987003081143
+    }
+  },
+  "reference_sha256": "f58e7175b99128d82e1ec1605a23275e7c9982d766068e9980407d48be7b57b5"
+}

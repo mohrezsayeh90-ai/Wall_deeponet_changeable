@@ -1,0 +1,34 @@
+{
+  "case_id": 3,
+  "group": "channel_chain_15",
+  "original_index": 3,
+  "directory": "cases/03_03_moderate_constriction",
+  "title": "Moderate symmetric constriction",
+  "metrics": {
+    "base": {
+      "velocity_relative_l2": 0.00499779666306681,
+      "pressure_relative_l2": 0.011825531963701577,
+      "u_relative_l2": 0.004620416589291579,
+      "v_absolute_rms": 0.0022386524234784514,
+      "velocity_mae": 0.004793629530132781,
+      "pressure_mae": 0.01691686946015654
+    },
+    "final": {
+      "velocity_relative_l2": 0.004811110800848314,
+      "pressure_relative_l2": 0.00871144294889587,
+      "u_relative_l2": 0.004525175649611958,
+      "v_absolute_rms": 0.0019217179281528906,
+      "velocity_mae": 0.00454811239093666,
+      "pressure_mae": 0.012385799465375082
+    },
+    "best": {
+      "velocity_relative_l2": 0.004973582957540406,
+      "pressure_relative_l2": 0.009715582433928732,
+      "u_relative_l2": 0.004618202450780786,
+      "v_absolute_rms": 0.0021698735836791962,
+      "velocity_mae": 0.004839671213890225,
+      "pressure_mae": 0.013852467317127559
+    }
+  },
+  "reference_sha256": "505c4972e8e7f8b751f475a77a9de2cea4af3ca34ad1c0ecaea4d88ef2731eea"
+}

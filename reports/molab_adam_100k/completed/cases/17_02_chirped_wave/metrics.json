@@ -1,0 +1,34 @@
+{
+  "case_id": 17,
+  "group": "random_channel_chain_5",
+  "original_index": 2,
+  "directory": "cases/17_02_chirped_wave",
+  "title": "Waves with changing wavelength",
+  "metrics": {
+    "base": {
+      "velocity_relative_l2": 0.02269545977863535,
+      "pressure_relative_l2": 0.020609642348352827,
+      "u_relative_l2": 0.0205466496534736,
+      "v_absolute_rms": 0.01071623106967424,
+      "velocity_mae": 0.01684241333584397,
+      "pressure_mae": 0.02041494905201408
+    },
+    "final": {
+      "velocity_relative_l2": 0.018200973365669938,
+      "pressure_relative_l2": 0.02225040081168649,
+      "u_relative_l2": 0.016256731041076233,
+      "v_absolute_rms": 0.009095051951981022,
+      "velocity_mae": 0.014340073825374625,
+      "pressure_mae": 0.023681767650925927
+    },
+    "best": {
+      "velocity_relative_l2": 0.017631456181021674,
+      "pressure_relative_l2": 0.020947867086088465,
+      "u_relative_l2": 0.0158477587010607,
+      "v_absolute_rms": 0.008588621456426382,
+      "velocity_mae": 0.013937434201982901,
+      "pressure_mae": 0.021797248447715425
+    }
+  },
+  "reference_sha256": "9c31f172cebc1ec6ad93e199ec3a1af22fb8655fd8a6e4c5a66751ce4f89badf"
+}

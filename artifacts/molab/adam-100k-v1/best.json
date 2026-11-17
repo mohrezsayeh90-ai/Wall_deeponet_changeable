@@ -1,0 +1,5 @@
+{
+  "step": 282400,
+  "probe_loss": 0.01048239041119814,
+  "selection": "fixed dev probe; not full benchmark acceptance"
+}

@@ -1,0 +1,10 @@
+{
+  "phase": "completed",
+  "started_at_utc": "2026-11-17T14:37:26.941108+00:00",
+  "base_step": 187400,
+  "target_step": 287400,
+  "additional_updates": 100000,
+  "worker_pid": 36566,
+  "exit_code": 0,
+  "finished_at_utc": "2026-11-17T16:39:17.811272+00:00"
+}

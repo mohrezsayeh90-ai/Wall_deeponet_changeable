@@ -1,0 +1,34 @@
+{
+  "case_id": 6,
+  "group": "channel_chain_15",
+  "original_index": 6,
+  "directory": "cases/06_06_top_bump",
+  "title": "One bump on top wall",
+  "metrics": {
+    "base": {
+      "velocity_relative_l2": 0.014346556732122465,
+      "pressure_relative_l2": 0.011563470798172324,
+      "u_relative_l2": 0.013216995729112902,
+      "v_absolute_rms": 0.006626356398438353,
+      "velocity_mae": 0.012292737170520152,
+      "pressure_mae": 0.013420795613247822
+    },
+    "final": {
+      "velocity_relative_l2": 0.012366271911559878,
+      "pressure_relative_l2": 0.005731475656996796,
+      "u_relative_l2": 0.011407298098584805,
+      "v_absolute_rms": 0.005671700724718408,
+      "velocity_mae": 0.010452959508260798,
+      "pressure_mae": 0.007107616558241158
+    },
+    "best": {
+      "velocity_relative_l2": 0.011852377728367473,
+      "pressure_relative_l2": 0.008071135011778969,
+      "u_relative_l2": 0.010963470534649291,
+      "v_absolute_rms": 0.005352517051566149,
+      "velocity_mae": 0.009726373668547544,
+      "pressure_mae": 0.010219418987002096
+    }
+  },
+  "reference_sha256": "bb30e7ea83bdcfeac3de53d57e6ce69c3fb4ff3701d3b335cac9524e8bb6eca4"
+}

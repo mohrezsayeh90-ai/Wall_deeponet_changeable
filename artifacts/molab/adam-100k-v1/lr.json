@@ -1,0 +1,10 @@
+{
+  "id": "cosine_100k",
+  "label": "Cosine 1e-4 to 2e-5 over 100k",
+  "kind": "cosine",
+  "high": 0.0001,
+  "low": 2e-05,
+  "updates": 100000,
+  "probe_interval": 5000,
+  "base_step": 187400
+}

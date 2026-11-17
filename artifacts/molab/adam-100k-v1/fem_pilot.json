@@ -1,0 +1,46 @@
+{
+  "cases": [
+    {
+      "case": 0,
+      "velocity_relative_l2": 0.002391949732355186,
+      "pressure_relative_l2": 0.0035102441738069654
+    },
+    {
+      "case": 1,
+      "velocity_relative_l2": 0.009297832262384289,
+      "pressure_relative_l2": 0.010562980014777958
+    },
+    {
+      "case": 2,
+      "velocity_relative_l2": 0.006724108645242523,
+      "pressure_relative_l2": 0.013291314667503063
+    },
+    {
+      "case": 3,
+      "velocity_relative_l2": 0.010816861188263359,
+      "pressure_relative_l2": 0.007949194034149891
+    },
+    {
+      "case": 4,
+      "velocity_relative_l2": 0.02384318914717842,
+      "pressure_relative_l2": 0.010532387322236783
+    },
+    {
+      "case": 5,
+      "velocity_relative_l2": 0.012017589855419461,
+      "pressure_relative_l2": 0.008643773404069332
+    },
+    {
+      "case": 6,
+      "velocity_relative_l2": 0.01852477779863267,
+      "pressure_relative_l2": 0.005629180985618452
+    },
+    {
+      "case": 7,
+      "velocity_relative_l2": 0.024152054580682873,
+      "pressure_relative_l2": 0.0067891747916523455
+    }
+  ],
+  "median_velocity_l2": 0.01141722552184141,
+  "median_pressure_l2": 0.008296483719109612
+}

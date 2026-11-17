@@ -1,0 +1,123 @@
+{
+  "cases": [
+    {
+      "index": 12,
+      "slug": "triple_constriction",
+      "title": "Three symmetric constrictions",
+      "geometry_id": "4a97de7599208298a3059e78667f57ba09a3f64f77b8d77baa89341852586a62",
+      "reynolds": 30.0,
+      "amplitude_scale": 1.0,
+      "descriptors": {
+        "min_gap": 0.7718167443356874,
+        "max_gap": 1.0,
+        "center_deviation": 0.0,
+        "max_slope": 0.43800300652069407,
+        "max_curvature": 4.1821758666046325
+      },
+      "directory": "12_12_triple_constriction",
+      "status": "passed",
+      "checkpoint_sha256": "4333a74c3eebcc7d21f83a29138eb5353e6d812d341e5d48feb4b8448ce34463",
+      "metrics": {
+        "velocity_relative_l2": 0.03627802617684693,
+        "u_relative_l2": 0.03404440878856562,
+        "v_absolute_rms": 0.015303758803210343,
+        "pressure_relative_l2": 0.007922943775842859,
+        "speed_relative_l2": 0.034318293024567015,
+        "velocity_absolute_rms": 0.04404161770355203,
+        "pressure_absolute_rms": 0.01290021863121086,
+        "velocity_max_abs_at_quadrature": 0.15091913234780366,
+        "pressure_max_abs_at_quadrature": 0.04423328512272451,
+        "pressure_drop_predicted": 2.7986605977149663,
+        "pressure_drop_reference": 2.7776076220181563,
+        "pressure_drop_relative": 0.0075795355434377,
+        "physical_area_evaluated": 4.573225722036651,
+        "common_domain_excluded_area_fraction": 0.002295053489061706
+      },
+      "mesh_uncertainty": {
+        "velocity": 0.0029131099056252763,
+        "pressure": 0.005942147020136897,
+        "pressure_drop": 0.005639796071987251
+      },
+      "fem_coarse": {
+        "nx": 40,
+        "ny": 12,
+        "iterations": 47,
+        "algebraic_residual": 5.957352016047053e-09,
+        "seconds": 1.6490508899998986,
+        "velocity_dofs": 4050,
+        "pressure_dofs": 533,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "fem_fine": {
+        "nx": 80,
+        "ny": 24,
+        "iterations": 47,
+        "algebraic_residual": 3.194834926533122e-09,
+        "seconds": 12.06617310699994,
+        "velocity_dofs": 15778,
+        "pressure_dofs": 2025,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      }
+    },
+    {
+      "index": 16,
+      "slug": "roof_plateau",
+      "title": "Rounded plateau roof",
+      "directory": "16_01_roof_plateau",
+      "reynolds": 30.0,
+      "geometry_id": "570bf536cd82f8d0fd0937a91721db7e78ee24a3c6b9e7e0f0e722fe89be9679",
+      "descriptors": {
+        "min_gap": 1.0,
+        "max_gap": 1.279895930728726,
+        "center_deviation": 0.13994796536436302,
+        "max_slope": 0.5052796643411491,
+        "max_curvature": 3.361410790313214
+      },
+      "amplitude_scale": 1.0,
+      "status": "passed",
+      "checkpoint_sha256": "4333a74c3eebcc7d21f83a29138eb5353e6d812d341e5d48feb4b8448ce34463",
+      "metrics": {
+        "velocity_relative_l2": 0.07780542424387944,
+        "u_relative_l2": 0.07485047875293376,
+        "v_absolute_rms": 0.021129057929537877,
+        "pressure_relative_l2": 0.1422255938679088,
+        "speed_relative_l2": 0.0750414669380467,
+        "velocity_absolute_rms": 0.0751297678818749,
+        "pressure_absolute_rms": 0.13546758052107674,
+        "velocity_max_abs_at_quadrature": 0.20281806411026546,
+        "pressure_max_abs_at_quadrature": 0.20468115830742262,
+        "pressure_drop_predicted": 1.07474560069931,
+        "pressure_drop_reference": 1.2533747729036533,
+        "pressure_drop_relative": 0.1425185635342882,
+        "physical_area_evaluated": 5.744500339730867,
+        "common_domain_excluded_area_fraction": 0.0
+      },
+      "mesh_uncertainty": {
+        "velocity": 0.0008923382418188436,
+        "pressure": 0.0013194781714389275,
+        "pressure_drop": 0.0006769263705088151
+      },
+      "fem_coarse": {
+        "nx": 40,
+        "ny": 12,
+        "iterations": 51,
+        "algebraic_residual": 3.6803689306206065e-09,
+        "seconds": 2.1101945449991035,
+        "velocity_dofs": 4050,
+        "pressure_dofs": 533,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      },
+      "fem_fine": {
+        "nx": 80,
+        "ny": 24,
+        "iterations": 51,
+        "algebraic_residual": 1.8712044386026622e-09,
+        "seconds": 13.459298023999509,
+        "velocity_dofs": 15778,
+        "pressure_dofs": 2025,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      }
+    }
+  ],
+  "checkpoint_step": 282400
+}

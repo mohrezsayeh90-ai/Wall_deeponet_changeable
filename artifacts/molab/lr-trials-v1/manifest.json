@@ -1,0 +1,41 @@
+{
+  "base_step": 172400,
+  "base_sha256": "e1717e8fc20690919c71cb3d267973ca45b3b57a71436c3edf99e81b42d9ccf2",
+  "optimizer_present": true,
+  "original_worker_interrupted": true,
+  "reason": "User requested branching learning-rate trials from the latest intact saved full-state checkpoint",
+  "observed_at_utc": "2026-11-17T11:33:23.537067+00:00",
+  "updates_per_case": 15000,
+  "pool": "/home/marimo/wall_adam_1h/frozen/output/project/data/geometries",
+  "config": "/home/marimo/wall_adam_1h/frozen/output/project/configs/runtime.json",
+  "reference_pilot": "/home/marimo/wall_adam_1h/frozen/output/project/runs/adam_next50k/development",
+  "source_train_before_sha256": "430668d9e5fa026807e78d3e58482d88c61425f22193b527729f5bac3df4b9fd",
+  "source_train_after_sha256": "669e243dc3096cd2538b8f4e0017e48bd0464b51ad962605eb275ce8d02ebaf9",
+  "cases": [
+    {
+      "id": "constant_2e5",
+      "label": "Constant 2e-5 (baseline)",
+      "kind": "constant",
+      "high": 2e-05
+    },
+    {
+      "id": "constant_5e5",
+      "label": "Constant 5e-5",
+      "kind": "constant",
+      "high": 5e-05
+    },
+    {
+      "id": "constant_1e4",
+      "label": "Constant 1e-4",
+      "kind": "constant",
+      "high": 0.0001
+    },
+    {
+      "id": "cosine_1e4_2e5",
+      "label": "Cosine 1e-4 to 2e-5",
+      "kind": "cosine",
+      "high": 0.0001,
+      "low": 2e-05
+    }
+  ]
+}

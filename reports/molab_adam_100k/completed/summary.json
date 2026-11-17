@@ -1,0 +1,875 @@
+{
+  "final_step": 287400,
+  "best_probe_step": 282400,
+  "start_step": 187400,
+  "updates": 100000,
+  "accepted_model": false,
+  "fem_rerun": false,
+  "checkpoints": {
+    "base": {
+      "step": 187400,
+      "sha256": "7b53db720ac5e3644739704da16f77baa8828012792ccc433528ebcb5ca7bebd"
+    },
+    "final": {
+      "step": 287400,
+      "sha256": "72bbe88ddc539258b9bfb433709aa434776393bd5f7e163d90478cbf7fa0e6c2"
+    },
+    "best": {
+      "step": 282400,
+      "sha256": "4333a74c3eebcc7d21f83a29138eb5353e6d812d341e5d48feb4b8448ce34463"
+    }
+  },
+  "all_20_medians": {
+    "base": {
+      "velocity_relative_l2": 0.01631481204999441,
+      "pressure_relative_l2": 0.02040729037077213
+    },
+    "final": {
+      "velocity_relative_l2": 0.01384750952418112,
+      "pressure_relative_l2": 0.014744432862416956
+    },
+    "best": {
+      "velocity_relative_l2": 0.014533179782430855,
+      "pressure_relative_l2": 0.012659158704922473
+    }
+  },
+  "pilot_8_medians": {
+    "base": {
+      "velocity_relative_l2": 0.012787663374504548,
+      "pressure_relative_l2": 0.009047718482527344
+    },
+    "final": {
+      "velocity_relative_l2": 0.01141722552184139,
+      "pressure_relative_l2": 0.008296483719109592
+    },
+    "best": {
+      "velocity_relative_l2": 0.012115264372609232,
+      "pressure_relative_l2": 0.010516881948363832
+    }
+  },
+  "fixed_probe_initial": 0.01369785238057375,
+  "fixed_probe_final": 0.013760179281234741,
+  "fixed_probe_best": 0.01048239041119814,
+  "training_mean_first_1000_records": 0.018830206046812237,
+  "training_mean_last_1000_records": 0.012868560215458274,
+  "cases": [
+    {
+      "case_id": 1,
+      "group": "channel_chain_15",
+      "original_index": 1,
+      "directory": "cases/01_01_straight",
+      "title": "Straight channel",
+      "metrics": {
+        "base": {
+          "velocity_relative_l2": 0.0029770265097673076,
+          "pressure_relative_l2": 0.00453336465864422,
+          "u_relative_l2": 0.002858108113621966,
+          "v_absolute_rms": 0.0009125162030598317,
+          "velocity_mae": 0.002609196558155021,
+          "pressure_mae": 0.004659411290279259
+        },
+        "final": {
+          "velocity_relative_l2": 0.0022042299526102613,
+          "pressure_relative_l2": 0.0037869942846361438,
+          "u_relative_l2": 0.002061588460468028,
+          "v_absolute_rms": 0.0008545052629323977,
+          "velocity_mae": 0.0020388510872724397,
+          "pressure_mae": 0.003838488553651765
+        },
+        "best": {
+          "velocity_relative_l2": 0.002100578070599064,
+          "pressure_relative_l2": 0.005504006822714053,
+          "u_relative_l2": 0.0019903979417070393,
+          "v_absolute_rms": 0.0007354543610558619,
+          "velocity_mae": 0.0018253891934073923,
+          "pressure_mae": 0.005972088655771441
+        }
+      },
+      "reference_sha256": "e1dacf8b09690fb3463fb9d7af82882699c7d766a457ceb5c5459e3f3201e559"
+    },
+    {
+      "case_id": 2,
+      "group": "channel_chain_15",
+      "original_index": 2,
+      "directory": "cases/02_02_mild_constriction",
+      "title": "Mild symmetric constriction",
+      "metrics": {
+        "base": {
+          "velocity_relative_l2": 0.0031756223715320897,
+          "pressure_relative_l2": 0.007845860974324204,
+          "u_relative_l2": 0.002855232496427278,
+          "v_absolute_rms": 0.001548032245621148,
+          "velocity_mae": 0.002880679506977927,
+          "pressure_mae": 0.008509700949167613
+        },
+        "final": {
+          "velocity_relative_l2": 0.002038755735271182,
+          "pressure_relative_l2": 0.004027500389948845,
+          "u_relative_l2": 0.0018289404522419555,
+          "v_absolute_rms": 0.0010032155162377281,
+          "velocity_mae": 0.0019462049984326861,
+          "pressure_mae": 0.0039035002379637115
+        },
+        "best": {
+          "velocity_relative_l2": 0.001966108647774643,
+          "pressure_relative_l2": 0.00639674461151442,
+          "u_relative_l2": 0.0017667166340452228,
+          "v_absolute_rms": 0.0009607788744300786,
+          "velocity_mae": 0.0017989244397996274,
+          "pressure_mae": 0.006502637717562777
+        }
+      },
+      "reference_sha256": "8e6aa0f3cd3e65f50575a7d12d365c0be480d20b31135cd60b4f5319d264ee2c"
+    },
+    {
+      "case_id": 3,
+      "group": "channel_chain_15",
+      "original_index": 3,
+      "directory": "cases/03_03_moderate_constriction",
+      "title": "Moderate symmetric constriction",
+      "metrics": {
+        "base": {
+          "velocity_relative_l2": 0.00499779666306681,
+          "pressure_relative_l2": 0.011825531963701577,
+          "u_relative_l2": 0.004620416589291579,
+          "v_absolute_rms": 0.0022386524234784514,
+          "velocity_mae": 0.004793629530132781,
+          "pressure_mae": 0.01691686946015654
+        },
+        "final": {
+          "velocity_relative_l2": 0.004811110800848314,
+          "pressure_relative_l2": 0.00871144294889587,
+          "u_relative_l2": 0.004525175649611958,
+          "v_absolute_rms": 0.0019217179281528906,
+          "velocity_mae": 0.00454811239093666,
+          "pressure_mae": 0.012385799465375082
+        },
+        "best": {
+          "velocity_relative_l2": 0.004973582957540406,
+          "pressure_relative_l2": 0.009715582433928732,
+          "u_relative_l2": 0.004618202450780786,
+          "v_absolute_rms": 0.0021698735836791962,
+          "velocity_mae": 0.004839671213890225,
+          "pressure_mae": 0.013852467317127559
+        }
+      },
+      "reference_sha256": "505c4972e8e7f8b751f475a77a9de2cea4af3ca34ad1c0ecaea4d88ef2731eea"
+    },
+    {
+      "case_id": 4,
+      "group": "channel_chain_15",
+      "original_index": 4,
+      "directory": "cases/04_04_expansion",
+      "title": "Symmetric expansion",
+      "metrics": {
+        "base": {
+          "velocity_relative_l2": 0.010386149051621616,
+          "pressure_relative_l2": 0.020940737801926092,
+          "u_relative_l2": 0.009806996971093154,
+          "v_absolute_rms": 0.0035561692123588203,
+          "velocity_mae": 0.008333261895416711,
+          "pressure_mae": 0.01937072902797645
+        },
+        "final": {
+          "velocity_relative_l2": 0.008753696915145093,
+          "pressure_relative_l2": 0.017854978680942428,
+          "u_relative_l2": 0.008200918985376546,
+          "v_absolute_rms": 0.0031819593336584627,
+          "velocity_mae": 0.007065615298125507,
+          "pressure_mae": 0.016151286978212404
+        },
+        "best": {
+          "velocity_relative_l2": 0.008834548070076208,
+          "pressure_relative_l2": 0.01878055229250005,
+          "u_relative_l2": 0.008371831985664978,
+          "v_absolute_rms": 0.002934955529240384,
+          "velocity_mae": 0.006903758828554804,
+          "pressure_mae": 0.01706695767981859
+        }
+      },
+      "reference_sha256": "38e04037f45674d7559af1e9fa0a6652f3331421a2bffdbd5baa56475bbe7d68"
+    },
+    {
+      "case_id": 5,
+      "group": "channel_chain_15",
+      "original_index": 5,
+      "directory": "cases/05_05_bottom_bump",
+      "title": "One bump on bottom wall",
+      "metrics": {
+        "base": {
+          "velocity_relative_l2": 0.011485572805522053,
+          "pressure_relative_l2": 0.0047797278645255875,
+          "u_relative_l2": 0.010395432309748542,
+          "v_absolute_rms": 0.005692068775162346,
+          "velocity_mae": 0.009178568953546788,
+          "pressure_mae": 0.005310646802346453
+        },
+        "final": {
+          "velocity_relative_l2": 0.01194085035469154,
+          "pressure_relative_l2": 0.006853316694715344,
+          "u_relative_l2": 0.010960292788044496,
+          "v_absolute_rms": 0.005531214768688488,
+          "velocity_mae": 0.00959886191396871,
+          "pressure_mae": 0.007622950940801935
+        },
+        "best": {
+          "velocity_relative_l2": 0.012435544543283841,
+          "pressure_relative_l2": 0.007674948593520983,
+          "u_relative_l2": 0.011541135101803926,
+          "v_absolute_rms": 0.005413901207043053,
+          "velocity_mae": 0.010331947813925981,
+          "pressure_mae": 0.008851102887234842
+        }
+      },
+      "reference_sha256": "8c1179ecc32262107a547a158e21d66ce3db4270ee7c57ab48d68db4d6390c04"
+    },
+    {
+      "case_id": 6,
+      "group": "channel_chain_15",
+      "original_index": 6,
+      "directory": "cases/06_06_top_bump",
+      "title": "One bump on top wall",
+      "metrics": {
+        "base": {
+          "velocity_relative_l2": 0.014346556732122465,
+          "pressure_relative_l2": 0.011563470798172324,
+          "u_relative_l2": 0.013216995729112902,
+          "v_absolute_rms": 0.006626356398438353,
+          "velocity_mae": 0.012292737170520152,
+          "pressure_mae": 0.013420795613247822
+        },
+        "final": {
+          "velocity_relative_l2": 0.012366271911559878,
+          "pressure_relative_l2": 0.005731475656996796,
+          "u_relative_l2": 0.011407298098584805,
+          "v_absolute_rms": 0.005671700724718408,
+          "velocity_mae": 0.010452959508260798,
+          "pressure_mae": 0.007107616558241158
+        },
+        "best": {
+          "velocity_relative_l2": 0.011852377728367473,
+          "pressure_relative_l2": 0.008071135011778969,
+          "u_relative_l2": 0.010963470534649291,
+          "v_absolute_rms": 0.005352517051566149,
+          "velocity_mae": 0.009726373668547544,
+          "pressure_mae": 0.010219418987002096
+        }
+      },
+      "reference_sha256": "bb30e7ea83bdcfeac3de53d57e6ce69c3fb4ff3701d3b335cac9524e8bb6eca4"
+    },
+    {
+      "case_id": 7,
+      "group": "channel_chain_15",
+      "original_index": 7,
+      "directory": "cases/07_07_centerline_bend",
+      "title": "Constant-gap centerline bend",
+      "metrics": {
+        "base": {
+          "velocity_relative_l2": 0.011249668172139918,
+          "pressure_relative_l2": 0.03104616772385406,
+          "u_relative_l2": 0.009743482730027123,
+          "v_absolute_rms": 0.006296190011085512,
+          "velocity_mae": 0.00930570394663374,
+          "pressure_mae": 0.03167128784202608
+        },
+        "final": {
+          "velocity_relative_l2": 0.009431573867737528,
+          "pressure_relative_l2": 0.02796494505585007,
+          "u_relative_l2": 0.008052133515886321,
+          "v_absolute_rms": 0.005492321760504232,
+          "velocity_mae": 0.0077321244570444725,
+          "pressure_mae": 0.02940910963392251
+        },
+        "best": {
+          "velocity_relative_l2": 0.00906673329047103,
+          "pressure_relative_l2": 0.022692128943269316,
+          "u_relative_l2": 0.007693399854343387,
+          "v_absolute_rms": 0.0053631955680240135,
+          "velocity_mae": 0.007764565913986539,
+          "pressure_mae": 0.023707286996019258
+        }
+      },
+      "reference_sha256": "007de96ffe89fa40980ba58148ce1f138fddeddfb59ec1d1e665ad81b958afc5"
+    },
+    {
+      "case_id": 8,
+      "group": "channel_chain_15",
+      "original_index": 8,
+      "directory": "cases/08_08_s_bend",
+      "title": "Constant-gap S bend",
+      "metrics": {
+        "base": {
+          "velocity_relative_l2": 0.018009802335521394,
+          "pressure_relative_l2": 0.030753408294442452,
+          "u_relative_l2": 0.01683008481771037,
+          "v_absolute_rms": 0.007319213941357686,
+          "velocity_mae": 0.015780711512605974,
+          "pressure_mae": 0.02922580091503505
+        },
+        "final": {
+          "velocity_relative_l2": 0.014975949431485926,
+          "pressure_relative_l2": 0.02202891573686836,
+          "u_relative_l2": 0.013731514870641654,
+          "v_absolute_rms": 0.006779950808112034,
+          "velocity_mae": 0.013442329860857598,
+          "pressure_mae": 0.02043158081093659
+        },
+        "best": {
+          "velocity_relative_l2": 0.015944823339071535,
+          "pressure_relative_l2": 0.025548634092187154,
+          "u_relative_l2": 0.014670486956650665,
+          "v_absolute_rms": 0.007092016891702712,
+          "velocity_mae": 0.014208641207138979,
+          "pressure_mae": 0.02420343986249879
+        }
+      },
+      "reference_sha256": "df876c7639dae5a6e9bcf1257e380a564a73d1d8b0cbdc6448e140fa3d8751d7"
+    },
+    {
+      "case_id": 9,
+      "group": "channel_chain_15",
+      "original_index": 9,
+      "directory": "cases/09_09_double_constriction",
+      "title": "Two symmetric constrictions",
+      "metrics": {
+        "base": {
+          "velocity_relative_l2": 0.014619821764467425,
+          "pressure_relative_l2": 0.023829361595103606,
+          "u_relative_l2": 0.01362068653257545,
+          "v_absolute_rms": 0.006411293256436198,
+          "velocity_mae": 0.013107469315757226,
+          "pressure_mae": 0.03246321587451351
+        },
+        "final": {
+          "velocity_relative_l2": 0.012189538743963836,
+          "pressure_relative_l2": 0.014916465832913502,
+          "u_relative_l2": 0.011399568041652538,
+          "v_absolute_rms": 0.005211815717941522,
+          "velocity_mae": 0.011108400064255054,
+          "pressure_mae": 0.02015223022415956
+        },
+        "best": {
+          "velocity_relative_l2": 0.011192775037155945,
+          "pressure_relative_l2": 0.010422752229246622,
+          "u_relative_l2": 0.010319593460308843,
+          "v_absolute_rms": 0.005227530650803307,
+          "velocity_mae": 0.010435045469888717,
+          "pressure_mae": 0.01371327613946274
+        }
+      },
+      "reference_sha256": "5a1581de97556ba9980e8d207a5f078c07149966c4012bf6257a696cb8a5621b"
+    },
+    {
+      "case_id": 10,
+      "group": "channel_chain_15",
+      "original_index": 10,
+      "directory": "cases/10_10_constriction_expansion",
+      "title": "Constriction followed by expansion",
+      "metrics": {
+        "base": {
+          "velocity_relative_l2": 0.012054234463565008,
+          "pressure_relative_l2": 0.017297260084558667,
+          "u_relative_l2": 0.011061697383813534,
+          "v_absolute_rms": 0.005325410917307049,
+          "velocity_mae": 0.010714644484220258,
+          "pressure_mae": 0.017513419169067006
+        },
+        "final": {
+          "velocity_relative_l2": 0.012719069616876313,
+          "pressure_relative_l2": 0.009856870938803733,
+          "u_relative_l2": 0.011692407993695374,
+          "v_absolute_rms": 0.005566409869627731,
+          "velocity_mae": 0.011336752246222263,
+          "pressure_mae": 0.009226189272221496
+        },
+        "best": {
+          "velocity_relative_l2": 0.013121536225790174,
+          "pressure_relative_l2": 0.010972951441629047,
+          "u_relative_l2": 0.0120919474036417,
+          "v_absolute_rms": 0.005665937438474684,
+          "velocity_mae": 0.011504694164542062,
+          "pressure_mae": 0.010126489003472853
+        }
+      },
+      "reference_sha256": "d37fb1c797143a10d874616932a62de44362d40d2210cffd4a0e0adeadef2b5f"
+    },
+    {
+      "case_id": 11,
+      "group": "channel_chain_15",
+      "original_index": 11,
+      "directory": "cases/11_11_staggered_walls",
+      "title": "Staggered independent wall bumps",
+      "metrics": {
+        "base": {
+          "velocity_relative_l2": 0.024886432988159807,
+          "pressure_relative_l2": 0.009829876050781703,
+          "u_relative_l2": 0.023156536593955647,
+          "v_absolute_rms": 0.010969664407016173,
+          "velocity_mae": 0.02305776852865022,
+          "pressure_mae": 0.01126404986656976
+        },
+        "final": {
+          "velocity_relative_l2": 0.02116564512320811,
+          "pressure_relative_l2": 0.012237344210677837,
+          "u_relative_l2": 0.01954783861347555,
+          "v_absolute_rms": 0.009747484430946854,
+          "velocity_mae": 0.01998732020545887,
+          "pressure_mae": 0.014146031741232268
+        },
+        "best": {
+          "velocity_relative_l2": 0.021637182338976654,
+          "pressure_relative_l2": 0.012068427418151268,
+          "u_relative_l2": 0.020109802787890384,
+          "v_absolute_rms": 0.009605461686765595,
+          "velocity_mae": 0.02066052306022418,
+          "pressure_mae": 0.012746453945497921
+        }
+      },
+      "reference_sha256": "1f9d09efb028f8f29c10a7065806c5e2f4ea2b6fe0b03506ae2daf46dd7b7ed2"
+    },
+    {
+      "case_id": 12,
+      "group": "channel_chain_15",
+      "original_index": 12,
+      "directory": "cases/12_12_triple_constriction",
+      "title": "Three symmetric constrictions",
+      "metrics": {
+        "base": {
+          "velocity_relative_l2": 0.033291841915135775,
+          "pressure_relative_l2": 0.0189616612495691,
+          "u_relative_l2": 0.031117806041804596,
+          "v_absolute_rms": 0.014444337612937957,
+          "velocity_mae": 0.02911667796351487,
+          "pressure_mae": 0.02490562094289167
+        },
+        "final": {
+          "velocity_relative_l2": 0.03806379462391021,
+          "pressure_relative_l2": 0.00993499570610834,
+          "u_relative_l2": 0.03578274130770743,
+          "v_absolute_rms": 0.015850948187232393,
+          "velocity_mae": 0.031923726760619234,
+          "pressure_mae": 0.01267909646448483
+        },
+        "best": {
+          "velocity_relative_l2": 0.03627802617684693,
+          "pressure_relative_l2": 0.007922943775842859,
+          "u_relative_l2": 0.03404440878856562,
+          "v_absolute_rms": 0.015303758803210341,
+          "velocity_mae": 0.031176177433701848,
+          "pressure_mae": 0.010070830388226634
+        }
+      },
+      "reference_sha256": "5ecf8a6b07632be0b001e58825898f597c9c6c69b8df5c6149fd259575a20403"
+    },
+    {
+      "case_id": 13,
+      "group": "channel_chain_15",
+      "original_index": 13,
+      "directory": "cases/13_13_oscillating_gap",
+      "title": "Four alternating gap features",
+      "metrics": {
+        "base": {
+          "velocity_relative_l2": 0.029679963891088408,
+          "pressure_relative_l2": 0.020204938393191433,
+          "u_relative_l2": 0.02608434923412988,
+          "v_absolute_rms": 0.016096886244958548,
+          "velocity_mae": 0.02639370708634166,
+          "pressure_mae": 0.019287819707242904
+        },
+        "final": {
+          "velocity_relative_l2": 0.024591322589691822,
+          "pressure_relative_l2": 0.017931040008901236,
+          "u_relative_l2": 0.02179386300562915,
+          "v_absolute_rms": 0.012954391423007342,
+          "velocity_mae": 0.022634754722355908,
+          "pressure_mae": 0.019145996110718034
+        },
+        "best": {
+          "velocity_relative_l2": 0.025499840692060592,
+          "pressure_relative_l2": 0.021669533518466764,
+          "u_relative_l2": 0.022777920385821163,
+          "v_absolute_rms": 0.013041815894431237,
+          "velocity_mae": 0.0233249462388908,
+          "pressure_mae": 0.023450424727784882
+        }
+      },
+      "reference_sha256": "4cceae70325471f37efb565f7d87464578784844d7b2d237054c89885c46ce7d"
+    },
+    {
+      "case_id": 14,
+      "group": "channel_chain_15",
+      "original_index": 14,
+      "directory": "cases/14_14_oscillating_walls",
+      "title": "Oscillating centerline and gap",
+      "metrics": {
+        "base": {
+          "velocity_relative_l2": 0.048918337660696615,
+          "pressure_relative_l2": 0.07956791531412354,
+          "u_relative_l2": 0.043686118397214826,
+          "v_absolute_rms": 0.02513228437068905,
+          "velocity_mae": 0.04147354090494132,
+          "pressure_mae": 0.11213169827566731
+        },
+        "final": {
+          "velocity_relative_l2": 0.04742227249755486,
+          "pressure_relative_l2": 0.06370474667923598,
+          "u_relative_l2": 0.04222338464925816,
+          "v_absolute_rms": 0.024637255506436005,
+          "velocity_mae": 0.03987801092114252,
+          "pressure_mae": 0.0893769021778785
+        },
+        "best": {
+          "velocity_relative_l2": 0.046023011840495454,
+          "pressure_relative_l2": 0.06165876090561431,
+          "u_relative_l2": 0.04114808216763003,
+          "v_absolute_rms": 0.02354094153866793,
+          "velocity_mae": 0.03856500337840421,
+          "pressure_mae": 0.08710867911594951
+        }
+      },
+      "reference_sha256": "251d770b9d0be8b687ce86af73994d95aced755bf9e13655f68a22e35d53090b"
+    },
+    {
+      "case_id": 15,
+      "group": "channel_chain_15",
+      "original_index": 15,
+      "directory": "cases/15_15_mixed_independent",
+      "title": "Mixed independent multiscale walls",
+      "metrics": {
+        "base": {
+          "velocity_relative_l2": 0.031612586350420295,
+          "pressure_relative_l2": 0.055778164817062825,
+          "u_relative_l2": 0.02752053963348083,
+          "v_absolute_rms": 0.018072126490794708,
+          "velocity_mae": 0.0281339002981584,
+          "pressure_mae": 0.06780137786085792
+        },
+        "final": {
+          "velocity_relative_l2": 0.03170222294091117,
+          "pressure_relative_l2": 0.042289287762626145,
+          "u_relative_l2": 0.028663483229493754,
+          "v_absolute_rms": 0.015804679246674936,
+          "velocity_mae": 0.02753866408078121,
+          "pressure_mae": 0.05110594875939473
+        },
+        "best": {
+          "velocity_relative_l2": 0.03230486300692883,
+          "pressure_relative_l2": 0.03709422685893822,
+          "u_relative_l2": 0.028967538961662556,
+          "v_absolute_rms": 0.016666437615151904,
+          "velocity_mae": 0.02827778623087683,
+          "pressure_mae": 0.04523745074154177
+        }
+      },
+      "reference_sha256": "c5567d597a885bf114be1b153b858a50c802b2a62ffaa2b4ed9cd28f114a2170"
+    },
+    {
+      "case_id": 16,
+      "group": "random_channel_chain_5",
+      "original_index": 1,
+      "directory": "cases/16_01_roof_plateau",
+      "title": "Rounded plateau roof",
+      "metrics": {
+        "base": {
+          "velocity_relative_l2": 0.08934911632758874,
+          "pressure_relative_l2": 0.18095677182367775,
+          "u_relative_l2": 0.08597725234222234,
+          "v_absolute_rms": 0.024193133256851712,
+          "velocity_mae": 0.06655531674115242,
+          "pressure_mae": 0.15038877514690005
+        },
+        "final": {
+          "velocity_relative_l2": 0.07649980823932519,
+          "pressure_relative_l2": 0.14427832936167384,
+          "u_relative_l2": 0.07342980464159896,
+          "v_absolute_rms": 0.02130818179629054,
+          "velocity_mae": 0.0560900682407433,
+          "pressure_mae": 0.12276808097762648
+        },
+        "best": {
+          "velocity_relative_l2": 0.07780542424387944,
+          "pressure_relative_l2": 0.1422255938679088,
+          "u_relative_l2": 0.07485047875293376,
+          "v_absolute_rms": 0.021129057929537877,
+          "velocity_mae": 0.05728798934189863,
+          "pressure_mae": 0.1212452023362368
+        }
+      },
+      "reference_sha256": "5b4928d11fe39b8d731d727bb2a200d5d5b78e824e164cc066cfc0ed31ca070d"
+    },
+    {
+      "case_id": 17,
+      "group": "random_channel_chain_5",
+      "original_index": 2,
+      "directory": "cases/17_02_chirped_wave",
+      "title": "Waves with changing wavelength",
+      "metrics": {
+        "base": {
+          "velocity_relative_l2": 0.02269545977863535,
+          "pressure_relative_l2": 0.020609642348352827,
+          "u_relative_l2": 0.0205466496534736,
+          "v_absolute_rms": 0.01071623106967424,
+          "velocity_mae": 0.01684241333584397,
+          "pressure_mae": 0.02041494905201408
+        },
+        "final": {
+          "velocity_relative_l2": 0.018200973365669938,
+          "pressure_relative_l2": 0.02225040081168649,
+          "u_relative_l2": 0.016256731041076233,
+          "v_absolute_rms": 0.009095051951981022,
+          "velocity_mae": 0.014340073825374625,
+          "pressure_mae": 0.023681767650925927
+        },
+        "best": {
+          "velocity_relative_l2": 0.017631456181021674,
+          "pressure_relative_l2": 0.020947867086088465,
+          "u_relative_l2": 0.0158477587010607,
+          "v_absolute_rms": 0.008588621456426382,
+          "velocity_mae": 0.013937434201982901,
+          "pressure_mae": 0.021797248447715425
+        }
+      },
+      "reference_sha256": "9c31f172cebc1ec6ad93e199ec3a1af22fb8655fd8a6e4c5a66751ce4f89badf"
+    },
+    {
+      "case_id": 18,
+      "group": "random_channel_chain_5",
+      "original_index": 3,
+      "directory": "cases/18_03_stepped_s_bend",
+      "title": "Rounded stepped S-shaped walls",
+      "metrics": {
+        "base": {
+          "velocity_relative_l2": 0.01088094817568003,
+          "pressure_relative_l2": 0.020190355575528618,
+          "u_relative_l2": 0.010399121863113928,
+          "v_absolute_rms": 0.0037289031736422026,
+          "velocity_mae": 0.009754071304677247,
+          "pressure_mae": 0.02627808281914237
+        },
+        "final": {
+          "velocity_relative_l2": 0.010465188040369831,
+          "pressure_relative_l2": 0.014431254687315017,
+          "u_relative_l2": 0.010075204203346344,
+          "v_absolute_rms": 0.0032989850414465406,
+          "velocity_mae": 0.009387639606051044,
+          "pressure_mae": 0.018737994814193536
+        },
+        "best": {
+          "velocity_relative_l2": 0.00946166336392935,
+          "pressure_relative_l2": 0.013249889991693678,
+          "u_relative_l2": 0.00899554659288489,
+          "v_absolute_rms": 0.00341399436410627,
+          "velocity_mae": 0.008487591187004262,
+          "pressure_mae": 0.017435987003081143
+        }
+      },
+      "reference_sha256": "f58e7175b99128d82e1ec1605a23275e7c9982d766068e9980407d48be7b57b5"
+    },
+    {
+      "case_id": 19,
+      "group": "random_channel_chain_5",
+      "original_index": 4,
+      "directory": "cases/19_04_random_spline",
+      "title": "Independent irregular spline walls",
+      "metrics": {
+        "base": {
+          "velocity_relative_l2": 0.020088773044544823,
+          "pressure_relative_l2": 0.02284637643584651,
+          "u_relative_l2": 0.017648632470402704,
+          "v_absolute_rms": 0.01054585995252348,
+          "velocity_mae": 0.01673466140987323,
+          "pressure_mae": 0.022080185622801625
+        },
+        "final": {
+          "velocity_relative_l2": 0.017639318292449746,
+          "pressure_relative_l2": 0.01457239989192041,
+          "u_relative_l2": 0.015380657217917636,
+          "v_absolute_rms": 0.009490015015147532,
+          "velocity_mae": 0.014571964853930447,
+          "pressure_mae": 0.013417011654117628
+        },
+        "best": {
+          "velocity_relative_l2": 0.0178935582565226,
+          "pressure_relative_l2": 0.011531587263913394,
+          "u_relative_l2": 0.015741972670351653,
+          "v_absolute_rms": 0.009349191658436876,
+          "velocity_mae": 0.015047300936891828,
+          "pressure_mae": 0.00938982448519548
+        }
+      },
+      "reference_sha256": "2c035bb60859172e6ac5556164bf2cd679ca3672c1028a341e3c150a05412ec4"
+    },
+    {
+      "case_id": 20,
+      "group": "random_channel_chain_5",
+      "original_index": 5,
+      "directory": "cases/20_05_random_fourier",
+      "title": "Independent random Fourier walls",
+      "metrics": {
+        "base": {
+          "velocity_relative_l2": 0.049621122757777684,
+          "pressure_relative_l2": 0.023101501118484483,
+          "u_relative_l2": 0.04720846588419802,
+          "v_absolute_rms": 0.01823367944415639,
+          "velocity_mae": 0.03635208518213038,
+          "pressure_mae": 0.030798199119277083
+        },
+        "final": {
+          "velocity_relative_l2": 0.05108969788894714,
+          "pressure_relative_l2": 0.018812577782113673,
+          "u_relative_l2": 0.04869588339682084,
+          "v_absolute_rms": 0.018455616497761673,
+          "velocity_mae": 0.037659283727982155,
+          "pressure_mae": 0.025514218201188894
+        },
+        "best": {
+          "velocity_relative_l2": 0.05176786589389808,
+          "pressure_relative_l2": 0.0204752501748974,
+          "u_relative_l2": 0.049380943474578984,
+          "v_absolute_rms": 0.018562610728684547,
+          "velocity_mae": 0.038036908979238185,
+          "pressure_mae": 0.027900446254065646
+        }
+      },
+      "reference_sha256": "a0a65f8e9b412b5f9579b7c2dfed8ac130108578e9244f8d7874f9b4ace50040"
+    }
+  ],
+  "pilot": [
+    {
+      "case": 0,
+      "metrics": {
+        "base": {
+          "velocity_relative_l2": 0.0030402587679007774,
+          "pressure_relative_l2": 0.0034962637875457048
+        },
+        "final": {
+          "velocity_relative_l2": 0.0023919497323552008,
+          "pressure_relative_l2": 0.0035102441738069645
+        },
+        "best": {
+          "velocity_relative_l2": 0.002644989910955262,
+          "pressure_relative_l2": 0.004439021116408895
+        }
+      }
+    },
+    {
+      "case": 1,
+      "metrics": {
+        "base": {
+          "velocity_relative_l2": 0.01236036453998325,
+          "pressure_relative_l2": 0.019887375841787427
+        },
+        "final": {
+          "velocity_relative_l2": 0.009297832262384278,
+          "pressure_relative_l2": 0.010562980014778013
+        },
+        "best": {
+          "velocity_relative_l2": 0.012456965397914325,
+          "pressure_relative_l2": 0.011429719443533414
+        }
+      }
+    },
+    {
+      "case": 2,
+      "metrics": {
+        "base": {
+          "velocity_relative_l2": 0.008386004959262951,
+          "pressure_relative_l2": 0.014007086362845741
+        },
+        "final": {
+          "velocity_relative_l2": 0.00672410864524249,
+          "pressure_relative_l2": 0.013291314667503063
+        },
+        "best": {
+          "velocity_relative_l2": 0.00737210489569103,
+          "pressure_relative_l2": 0.011613910222855928
+        }
+      }
+    },
+    {
+      "case": 3,
+      "metrics": {
+        "base": {
+          "velocity_relative_l2": 0.012679284259427232,
+          "pressure_relative_l2": 0.008931802681304188
+        },
+        "final": {
+          "velocity_relative_l2": 0.010816861188263338,
+          "pressure_relative_l2": 0.00794919403414988
+        },
+        "best": {
+          "velocity_relative_l2": 0.011540360356229401,
+          "pressure_relative_l2": 0.010140205763132772
+        }
+      }
+    },
+    {
+      "case": 4,
+      "metrics": {
+        "base": {
+          "velocity_relative_l2": 0.027880481116942534,
+          "pressure_relative_l2": 0.01401610507738944
+        },
+        "final": {
+          "velocity_relative_l2": 0.023843189147178423,
+          "pressure_relative_l2": 0.010532387322236792
+        },
+        "best": {
+          "velocity_relative_l2": 0.026289365881764306,
+          "pressure_relative_l2": 0.014030940315635494
+        }
+      }
+    },
+    {
+      "case": 5,
+      "metrics": {
+        "base": {
+          "velocity_relative_l2": 0.012896042489581865,
+          "pressure_relative_l2": 0.0091636342837505
+        },
+        "final": {
+          "velocity_relative_l2": 0.01201758985541944,
+          "pressure_relative_l2": 0.008643773404069304
+        },
+        "best": {
+          "velocity_relative_l2": 0.011773563347304138,
+          "pressure_relative_l2": 0.010893558133594893
+        }
+      }
+    },
+    {
+      "case": 6,
+      "metrics": {
+        "base": {
+          "velocity_relative_l2": 0.02209443848452374,
+          "pressure_relative_l2": 0.0074365018446595705
+        },
+        "final": {
+          "velocity_relative_l2": 0.018524777798632645,
+          "pressure_relative_l2": 0.0056291809856184654
+        },
+        "best": {
+          "velocity_relative_l2": 0.0201128493135551,
+          "pressure_relative_l2": 0.00826992011149659
+        }
+      }
+    },
+    {
+      "case": 7,
+      "metrics": {
+        "base": {
+          "velocity_relative_l2": 0.022324635136296535,
+          "pressure_relative_l2": 0.0029221421152628643
+        },
+        "final": {
+          "velocity_relative_l2": 0.024152054580682873,
+          "pressure_relative_l2": 0.0067891747916522804
+        },
+        "best": {
+          "velocity_relative_l2": 0.025083302084381236,
+          "pressure_relative_l2": 0.0053028999777481435
+        }
+      }
+    }
+  ]
+}

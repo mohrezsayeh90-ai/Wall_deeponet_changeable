@@ -1,0 +1,34 @@
+{
+  "case_id": 19,
+  "group": "random_channel_chain_5",
+  "original_index": 4,
+  "directory": "cases/19_04_random_spline",
+  "title": "Independent irregular spline walls",
+  "metrics": {
+    "base": {
+      "velocity_relative_l2": 0.020088773044544823,
+      "pressure_relative_l2": 0.02284637643584651,
+      "u_relative_l2": 0.017648632470402704,
+      "v_absolute_rms": 0.01054585995252348,
+      "velocity_mae": 0.01673466140987323,
+      "pressure_mae": 0.022080185622801625
+    },
+    "final": {
+      "velocity_relative_l2": 0.017639318292449746,
+      "pressure_relative_l2": 0.01457239989192041,
+      "u_relative_l2": 0.015380657217917636,
+      "v_absolute_rms": 0.009490015015147532,
+      "velocity_mae": 0.014571964853930447,
+      "pressure_mae": 0.013417011654117628
+    },
+    "best": {
+      "velocity_relative_l2": 0.0178935582565226,
+      "pressure_relative_l2": 0.011531587263913394,
+      "u_relative_l2": 0.015741972670351653,
+      "v_absolute_rms": 0.009349191658436876,
+      "velocity_mae": 0.015047300936891828,
+      "pressure_mae": 0.00938982448519548
+    }
+  },
+  "reference_sha256": "2c035bb60859172e6ac5556164bf2cd679ca3672c1028a341e3c150a05412ec4"
+}

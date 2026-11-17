@@ -1,0 +1,34 @@
+{
+  "case_id": 15,
+  "group": "channel_chain_15",
+  "original_index": 15,
+  "directory": "cases/15_15_mixed_independent",
+  "title": "Mixed independent multiscale walls",
+  "metrics": {
+    "base": {
+      "velocity_relative_l2": 0.031612586350420295,
+      "pressure_relative_l2": 0.055778164817062825,
+      "u_relative_l2": 0.02752053963348083,
+      "v_absolute_rms": 0.018072126490794708,
+      "velocity_mae": 0.0281339002981584,
+      "pressure_mae": 0.06780137786085792
+    },
+    "final": {
+      "velocity_relative_l2": 0.03170222294091117,
+      "pressure_relative_l2": 0.042289287762626145,
+      "u_relative_l2": 0.028663483229493754,
+      "v_absolute_rms": 0.015804679246674936,
+      "velocity_mae": 0.02753866408078121,
+      "pressure_mae": 0.05110594875939473
+    },
+    "best": {
+      "velocity_relative_l2": 0.03230486300692883,
+      "pressure_relative_l2": 0.03709422685893822,
+      "u_relative_l2": 0.028967538961662556,
+      "v_absolute_rms": 0.016666437615151904,
+      "velocity_mae": 0.02827778623087683,
+      "pressure_mae": 0.04523745074154177
+    }
+  },
+  "reference_sha256": "c5567d597a885bf114be1b153b858a50c802b2a62ffaa2b4ed9cd28f114a2170"
+}

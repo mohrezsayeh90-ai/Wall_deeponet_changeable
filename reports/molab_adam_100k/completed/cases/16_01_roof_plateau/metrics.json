@@ -1,0 +1,34 @@
+{
+  "case_id": 16,
+  "group": "random_channel_chain_5",
+  "original_index": 1,
+  "directory": "cases/16_01_roof_plateau",
+  "title": "Rounded plateau roof",
+  "metrics": {
+    "base": {
+      "velocity_relative_l2": 0.08934911632758874,
+      "pressure_relative_l2": 0.18095677182367775,
+      "u_relative_l2": 0.08597725234222234,
+      "v_absolute_rms": 0.024193133256851712,
+      "velocity_mae": 0.06655531674115242,
+      "pressure_mae": 0.15038877514690005
+    },
+    "final": {
+      "velocity_relative_l2": 0.07649980823932519,
+      "pressure_relative_l2": 0.14427832936167384,
+      "u_relative_l2": 0.07342980464159896,
+      "v_absolute_rms": 0.02130818179629054,
+      "velocity_mae": 0.0560900682407433,
+      "pressure_mae": 0.12276808097762648
+    },
+    "best": {
+      "velocity_relative_l2": 0.07780542424387944,
+      "pressure_relative_l2": 0.1422255938679088,
+      "u_relative_l2": 0.07485047875293376,
+      "v_absolute_rms": 0.021129057929537877,
+      "velocity_mae": 0.05728798934189863,
+      "pressure_mae": 0.1212452023362368
+    }
+  },
+  "reference_sha256": "5b4928d11fe39b8d731d727bb2a200d5d5b78e824e164cc066cfc0ed31ca070d"
+}

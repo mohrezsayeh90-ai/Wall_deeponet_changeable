@@ -315,16 +315,20 @@
     "new_training_performed": false,
     "checkpoint_step": 32216
   },
-  "latest_training_step": 132216,
+  "latest_training_step": 287400,
   "latest_checkpoint": {
-    "path": "artifacts/kaggle/adam-next50k-v1/checkpoint.npz",
-    "step": 132216,
-    "sha256": "dabe75cd4121d1f4c6e2c920dced4c38cf033e2da7b1d74c4805ee90cf1e1544",
+    "path": "artifacts/molab/adam-100k-v1/checkpoint.npz",
+    "step": 287400,
+    "sha256": "72bbe88ddc539258b9bfb433709aa434776393bd5f7e163d90478cbf7fa0e6c2",
     "accepted": false,
-    "description": "Latest collected Adam research checkpoint; no passing full independent benchmark.",
-    "previous_checkpoint_path": "artifacts/kaggle/continue-50k-v1/checkpoint.npz",
-    "pilot_report": "artifacts/kaggle/adam-next50k-v1/development/report.json",
-    "original_checkpoint_path": "artifacts/kaggle/main-v1/checkpoint.npz"
+    "description": "Latest collected final research checkpoint; no passing full benchmark. Best fixed-probe checkpoint retained separately.",
+    "best_fixed_probe": {
+      "path": "artifacts/molab/adam-100k-v1/best_checkpoint.npz",
+      "step": 282400,
+      "sha256": "4333a74c3eebcc7d21f83a29138eb5353e6d812d341e5d48feb4b8448ce34463"
+    },
+    "previous_checkpoint_path": "artifacts/kaggle/adam-next50k-v1/checkpoint.npz",
+    "pilot_report": "artifacts/molab/adam-100k-v1/fem_pilot.json"
   },
   "main_fields_scope": "The main_* fields describe original main-v1. Latest collected research state is in adam_next50k and latest_checkpoint; continuation_50k is the preserved first continuation.",
   "refreshed_25_cases": {
@@ -529,10 +533,12 @@
     "report": "reports/molab_lr_trials/README.md",
     "completed_cases": 4,
     "selected_terminal_case": "cosine_1e4_2e5",
-    "selection_limit": "Best among terminal candidates; fixed probe did not improve relative to the common baseline; pressure FEM worsened versus baseline"
+    "selection_limit": "Best among terminal candidates; fixed probe did not improve relative to the common baseline; pressure FEM worsened versus baseline",
+    "outputs_collected": true,
+    "artifact_directory": "artifacts/molab/lr-trials-v1"
   },
   "molab_adam_100k": {
-    "phase": "running",
+    "phase": "completed",
     "base_step": 187400,
     "target_step": 287400,
     "additional_updates": 100000,
@@ -540,6 +546,13 @@
     "last_observed_logged_step": 188810,
     "base_checkpoint_sha256": "7b53db720ac5e3644739704da16f77baa8828012792ccc433528ebcb5ca7bebd",
     "report": "reports/molab_adam_100k/README.md",
-    "best_probe_checkpoint_saved_separately": true
+    "best_probe_checkpoint_saved_separately": true,
+    "final_step": 287400,
+    "completed_updates": 100000,
+    "stop_reason": "target_completed",
+    "outputs_collected": true,
+    "artifact_directory": "artifacts/molab/adam-100k-v1",
+    "best_fixed_probe_step": 282400,
+    "completed_report": "reports/molab_adam_100k/completed/README.md"
   }
 }

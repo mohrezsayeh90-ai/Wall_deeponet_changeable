@@ -1,0 +1,22 @@
+{
+  "step": 287400,
+  "train_pool_sha256": "3e23c0fa2f5af6fba53fb0d676207949c376f6df2a5cff460148c3191e11d1f4",
+  "code_revision": "frozen-plus-explicit-LR-control",
+  "accepted": false,
+  "training_labels": 0,
+  "backend": "gpu",
+  "devices": [
+    "cuda:0"
+  ],
+  "jax": "0.11.0",
+  "python": "3.13.11",
+  "target_steps": 287400,
+  "global_batch": 32,
+  "interior_points": 128,
+  "outlet_points": 48,
+  "sampling": "biased mixture; unweighted strong momentum and traction",
+  "selection": "latest; FEM selection pending",
+  "elapsed_seconds": 7285.997047035002,
+  "compilation_seconds": 52.489454272999865,
+  "stop_reason": "target_completed"
+}

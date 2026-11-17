@@ -1,0 +1,34 @@
+{
+  "case_id": 14,
+  "group": "channel_chain_15",
+  "original_index": 14,
+  "directory": "cases/14_14_oscillating_walls",
+  "title": "Oscillating centerline and gap",
+  "metrics": {
+    "base": {
+      "velocity_relative_l2": 0.048918337660696615,
+      "pressure_relative_l2": 0.07956791531412354,
+      "u_relative_l2": 0.043686118397214826,
+      "v_absolute_rms": 0.02513228437068905,
+      "velocity_mae": 0.04147354090494132,
+      "pressure_mae": 0.11213169827566731
+    },
+    "final": {
+      "velocity_relative_l2": 0.04742227249755486,
+      "pressure_relative_l2": 0.06370474667923598,
+      "u_relative_l2": 0.04222338464925816,
+      "v_absolute_rms": 0.024637255506436005,
+      "velocity_mae": 0.03987801092114252,
+      "pressure_mae": 0.0893769021778785
+    },
+    "best": {
+      "velocity_relative_l2": 0.046023011840495454,
+      "pressure_relative_l2": 0.06165876090561431,
+      "u_relative_l2": 0.04114808216763003,
+      "v_absolute_rms": 0.02354094153866793,
+      "velocity_mae": 0.03856500337840421,
+      "pressure_mae": 0.08710867911594951
+    }
+  },
+  "reference_sha256": "251d770b9d0be8b687ce86af73994d95aced755bf9e13655f68a22e35d53090b"
+}

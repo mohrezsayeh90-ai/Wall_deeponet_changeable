@@ -1,4 +1,8 @@
-# Selected cosine Adam continuation: 187,400 → 287,400
+# Completed cosine Adam continuation: 187,400 → 287,400
+
+**Completion verified:** exactly 100,000 updates, final step **287,400**, `target_completed`, exit code 0. Trainer time **2 h 1 min 26 s**. All **30 original output files** are preserved in [the complete archive](../../artifacts/molab/adam-100k-v1/README.md); all parts and members were hash/CRC verified. Final, best-probe and all ten periodic full-state checkpoints are retained. [Completed evaluation, figures and downloads](completed/README.md). [Final observed state](completion-observation.json).
+
+The eight-case GPU FEM pilot was reproduced locally within tolerance. All 20 saved Re=30 geometries, FEM fields and weights were reused for paired evaluation. The launch observations below are historical snapshots.
 
 **100,000 additional updates authorized and launched on molab.** First resumed update **187,401** verified; at the recorded observation, training had reached **188,810** and checkpoint **188,800** was saved with no dashboard errors. [Launch observation](launch-observation.json) · [Exact manifest](manifest.json) · [Results used for selection](../molab_lr_trials/README.md) · [Worker/controller/dashboard source](../../notebooks/molab_adam_100k/).
 
