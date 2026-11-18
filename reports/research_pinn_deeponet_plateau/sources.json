@@ -1,0 +1,21 @@
+{
+  "review_date": "2026-11-18",
+  "jaxpi_pirate_revision_observed": "9b5196b846285c32a8f2e337982d19699de85956",
+  "source_files_read": [
+    {
+      "source_file": "pirate_examples_ldc_configs_default.py",
+      "sha256": "7002f639272f1ee3ff55685473fd2cb4cf215814505ef90fa565aa7e9878fd73"
+    },
+    {
+      "source_file": "pirate_jaxpi_archs.py",
+      "sha256": "79f045ad5e9ed913e285c85b47bba8ba3c2d28d5e35b19ea3636011ac51b0b05"
+    },
+    {
+      "source_file": "pirate_jaxpi_models.py",
+      "sha256": "636a677b3e79dc6efef95e50a3d4ff196a137dcb5fbe170b542d8837abe5de0f"
+    }
+  ],
+  "pinn_sampling_revision": "c20433036c3eaec21758384e1710e15024745d95",
+  "gradient_pathologies_revision": "93e752b0e3b541818d5cca49b681f4957bc36808",
+  "scope": "Official research repositories, source implementations and linked paper descriptions; not an exhaustive full-text literature review."
+}
