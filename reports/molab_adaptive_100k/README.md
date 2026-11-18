@@ -2,7 +2,7 @@
 
 **Launched; completion and accuracy results are pending.** Continues the final previous checkpoint (step **287,400**, final learning rate **2e-5**) with its exact Adam moments and RNG. The final previous checkpoint was chosen because it had better velocity metrics on the saved 20 cases and better median metrics on the eight-case FEM pilot than the old best-probe checkpoint. That old checkpoint remains preserved; no universal superiority is claimed.
 
-[Launch observation](launch-observation.json) · [Manifest](manifest.json) · [Driver, supervisor, dashboard and setup source](../../notebooks/molab_adaptive_100k/).
+[Interim continuation audit: same-probe improvement and mixed FEM changes](diagnostic/) · [Launch observation](launch-observation.json) · [Manifest](manifest.json) · [Driver, supervisor, dashboard and setup source](../../notebooks/molab_adaptive_100k/).
 
 ## Bounded adaptive controller
 

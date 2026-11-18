@@ -1,0 +1,20 @@
+--- original
++++ current
+@@ -25,7 +25,7 @@
+         terms=jnp.array([jnp.mean(jnp.sum(rr[:,:2]**2,axis=1)),jnp.mean(tt[:,0]**2),jnp.mean(tt[:,1]**2),jnp.mean(rr[:,2]**2)])
+         return terms[0]+10*(terms[1]+terms[2]),terms
+     vg=jax.value_and_grad(one,has_aux=True)
+-    def step(params,m,v,count,data):
++    def step(params,m,v,count,data,learning_rate):
+         zero=jax.tree_util.tree_map(jnp.zeros_like,params)
+         def accum(carry,item):
+             gs,ls,ts=carry;(loss,terms),grad=vg(params,item)
+@@ -35,7 +35,7 @@
+         norm=jnp.sqrt(sum(jnp.sum(x*x) for x in jax.tree_util.tree_leaves(g)))
+         g=jax.tree_util.tree_map(lambda x:x*jnp.minimum(1.,10/(norm+1e-20)),g)
+         m=jax.tree_util.tree_map(lambda a,b:.9*a+.1*b,m,g);v=jax.tree_util.tree_map(lambda a,b:.999*a+.001*b*b,v,g)
+-        lr=jnp.maximum(2e-5,1e-3*.95**(count/2000))
++        lr=learning_rate
+         params=jax.tree_util.tree_map(lambda p,a,b:p-lr*(a/(1-.9**count))/(jnp.sqrt(b/(1-.999**count))+1e-8),params,m,v)
+         return params,m,v,loss,terms,norm
+     return jax.jit(step),jax.jit(one)
