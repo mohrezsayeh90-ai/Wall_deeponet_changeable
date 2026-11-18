@@ -1,0 +1,74 @@
+[
+  {
+    "phase": "kaggle_main",
+    "path": "artifacts/kaggle/main-v1/training.jsonl",
+    "sha256": "617431210ec6d172b50f06991736a028f7454d6a23c58de320dec7d0ecb25a10",
+    "records": 3222,
+    "first_step": 1,
+    "last_step": 32210
+  },
+  {
+    "phase": "kaggle_plus50k",
+    "path": "artifacts/kaggle/continue-50k-v1/training.jsonl",
+    "sha256": "aeab3c35f1ba340fe33d66b0c5c2e59c51052a8ad3078f1ee166d535bea9d7cb",
+    "records": 5001,
+    "first_step": 32217,
+    "last_step": 82210
+  },
+  {
+    "phase": "kaggle_next50k",
+    "path": "artifacts/kaggle/adam-next50k-v1/training.jsonl",
+    "sha256": "00596ea09d222d7481b79bff2744c5666521b74b5b49e6e774e046af454a9c26",
+    "records": 5001,
+    "first_step": 82217,
+    "last_step": 132210
+  },
+  {
+    "phase": "selected_cosine_trial",
+    "path": "runs/verified-molab-lr/cases/cosine_1e4_2e5/training.jsonl",
+    "sha256": "5a94c0b0f7c1a7e9d3284803b66d43e808d62d04f166e8b4e3f2884e8005f717",
+    "records": 1501,
+    "first_step": 172401,
+    "last_step": 187400
+  },
+  {
+    "phase": "molab_cosine100k",
+    "path": "artifacts/molab/adam-100k-v1/training.jsonl",
+    "sha256": "95046b0bd09d6b9c18242f0b82ee6c11c6a48d3487eeea384aeefc2847bbed89",
+    "records": 10001,
+    "first_step": 187401,
+    "last_step": 287400
+  },
+  {
+    "phase": "molab_adaptive100k",
+    "path": "current_run_observation.json",
+    "sha256": "dcf7d4f1768b6bcce86e3b01a84ad16cdc23bb392575ee12323fdff2a71a3c5d",
+    "records": 9148,
+    "first_step": 287401,
+    "last_step": 378600,
+    "observed_utc": "2026-11-18T14:19:37.536616+00:00",
+    "status": {
+      "phase": "running",
+      "start_step": 287400,
+      "target_step": 387400,
+      "initial_lr": 2e-05,
+      "current_lr": 2.5e-06,
+      "accepted_step": 378500,
+      "physical_updates": 100100,
+      "elapsed_seconds": 8014.600755413
+    }
+  },
+  {
+    "phase": "molab_first_hour",
+    "path": "reports/molab_adam_1h/loss_audit/molab.json",
+    "sha256": "06e5190789c1e4e2d256af25f82a5daa1aaefe276ec82f91c4488c6318766db7",
+    "aggregate_records": 150,
+    "raw_records": 1,
+    "aggregate_end": 147216,
+    "missing_interval": [
+      147216,
+      172400
+    ],
+    "note": "Saved 100-step means cover only 132216\u2013147216; raw full first-hour log unavailable in accessible storage. No synthetic points inserted."
+  }
+]

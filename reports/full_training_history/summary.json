@@ -1,0 +1,14 @@
+{
+  "first_logged_step": 1,
+  "last_logged_step": 378600,
+  "raw_batch_records": 33875,
+  "aggregate_records": 150,
+  "missing_loss_interval": [
+    147216,
+    172400
+  ],
+  "smoothing": "Per-phase trailing mean of 100 logged records, approximately 1000 updates. Aggregate-only segment uses 10 saved 100-step means. No cross-gap smoothing.",
+  "lineage": "Accepted cosine trial only; other LR branches and rejected LBFGS excluded.",
+  "axes": "Global accepted Adam updates, not epochs.",
+  "last_logged_loss": 0.01532825082540512
+}
