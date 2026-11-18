@@ -1,0 +1,176 @@
+{
+  "setup-status.json": {
+    "phase": "ready",
+    "base_step": 287400,
+    "base_sha256": "72bbe88ddc539258b9bfb433709aa434776393bd5f7e163d90478cbf7fa0e6c2",
+    "jax": "0.11.2",
+    "devices": [
+      "cuda:0"
+    ],
+    "optimizer_restored": true,
+    "normalization_verified": true,
+    "pool_sha256": "3e23c0fa2f5af6fba53fb0d676207949c376f6df2a5cff460148c3191e11d1f4"
+  },
+  "core-check.json": {
+    "passed": true,
+    "base_step": 287400,
+    "dynamic_core_matches_original_at_2e5": true,
+    "moments_and_gradients_independent_of_lr_for_same_first_batch": true,
+    "parameter_update_scale_ratio_4e5_vs_2e5": 1.9999991257887826,
+    "disjoint_control_audit_geometries": true,
+    "first_batch_sha256": "091545e904a2e5998e3dc4d0901ab3bb68807f96d6337254c7504d8c51551357"
+  },
+  "core-source-hashes.json": {
+    "original": "430668d9e5fa026807e78d3e58482d88c61425f22193b527729f5bac3df4b9fd",
+    "dynamic": "a77be38c0a1862a5c2d844847de02768c82d1c5c4395b7165682425b5d8a14eb",
+    "changes": "Only explicit LR input replaces old schedule; Adam/gradient/physics math unchanged"
+  },
+  "manifest.json": {
+    "base_step": 287400,
+    "target_step": 387400,
+    "accepted_updates": 100000,
+    "initial_lr": 2e-05,
+    "min_lr": 2e-06,
+    "max_lr": 4e-05,
+    "tune_every": 10000,
+    "pilot_updates": 500,
+    "minimum_relative_gain_to_switch": 0.005,
+    "control_geometry_count": 32,
+    "audit_geometry_count": 32,
+    "audit_used_for_lr_selection": false,
+    "maximum_extra_discarded_updates": 9000,
+    "base_sha256": "72bbe88ddc539258b9bfb433709aa434776393bd5f7e163d90478cbf7fa0e6c2",
+    "jax_current": "0.11.2"
+  },
+  "status.json": {
+    "phase": "running",
+    "start_step": 287400,
+    "target_step": 387400,
+    "initial_lr": 2e-05,
+    "current_lr": 2e-05,
+    "accepted_step": 287800,
+    "physical_updates": 400,
+    "elapsed_seconds": 51.65385455099977
+  },
+  "supervisor-status.json": {
+    "phase": "running",
+    "started_at_utc": "2026-11-18T12:05:52.995275+00:00",
+    "base_step": 287400,
+    "target_step": 387400,
+    "worker_pid": 5343
+  },
+  "probe_ids.json": {
+    "control": [
+      348,
+      235,
+      199,
+      269,
+      247,
+      292,
+      337,
+      67,
+      218,
+      370,
+      326,
+      382,
+      317,
+      195,
+      267,
+      358,
+      283,
+      396,
+      379,
+      371,
+      177,
+      184,
+      241,
+      149,
+      20,
+      312,
+      261,
+      106,
+      268,
+      206,
+      72,
+      43
+    ],
+    "audit": [
+      334,
+      266,
+      340,
+      119,
+      175,
+      378,
+      254,
+      352,
+      29,
+      55,
+      174,
+      46,
+      165,
+      60,
+      274,
+      12,
+      309,
+      230,
+      227,
+      170,
+      279,
+      343,
+      179,
+      399,
+      289,
+      100,
+      135,
+      132,
+      126,
+      98,
+      245,
+      54
+    ],
+    "seed": 2026111801,
+    "disjoint_geometry_ids": true
+  },
+  "training.jsonl": [
+    {
+      "step": 287401,
+      "loss": 0.014555537141859531,
+      "terms": [
+        0.014548796229064465,
+        3.220640678591735e-07,
+        3.5203328252464416e-07,
+        2.639640893017936e-12
+      ],
+      "gradient_norm": 0.3370046615600586,
+      "lr": 2e-05,
+      "step_seconds": 5.821202281999831,
+      "elapsed_seconds": 19.516353052999875
+    },
+    {
+      "step": 287810,
+      "loss": 0.012233525514602661,
+      "terms": [
+        0.012221778742969036,
+        8.126496595650679e-07,
+        3.6204463071953796e-07,
+        5.958875753941939e-12
+      ],
+      "gradient_norm": 0.5759404301643372,
+      "lr": 2e-05,
+      "step_seconds": 0.07103798600019218,
+      "elapsed_seconds": 52.39692902099978
+    }
+  ],
+  "validation.jsonl": [
+    {
+      "step": 287400,
+      "offset": 0,
+      "control_loss": 0.012946955859661102,
+      "audit_loss": 0.013348939828574657,
+      "lr": 2e-05,
+      "elapsed_seconds": 13.218724815999849
+    }
+  ],
+  "ui_errors": [],
+  "console_tail": ""
+}

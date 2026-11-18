@@ -1,0 +1,17 @@
+{
+  "base_step": 287400,
+  "target_step": 387400,
+  "accepted_updates": 100000,
+  "initial_lr": 2e-05,
+  "min_lr": 2e-06,
+  "max_lr": 4e-05,
+  "tune_every": 10000,
+  "pilot_updates": 500,
+  "minimum_relative_gain_to_switch": 0.005,
+  "control_geometry_count": 32,
+  "audit_geometry_count": 32,
+  "audit_used_for_lr_selection": false,
+  "maximum_extra_discarded_updates": 9000,
+  "base_sha256": "72bbe88ddc539258b9bfb433709aa434776393bd5f7e163d90478cbf7fa0e6c2",
+  "jax_current": "0.11.2"
+}

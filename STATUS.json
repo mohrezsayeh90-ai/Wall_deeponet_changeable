@@ -554,5 +554,19 @@
     "artifact_directory": "artifacts/molab/adam-100k-v1",
     "best_fixed_probe_step": 282400,
     "completed_report": "reports/molab_adam_100k/completed/README.md"
+  },
+  "molab_adaptive_100k": {
+    "phase": "running",
+    "base_step": 287400,
+    "target_step": 387400,
+    "accepted_updates": 100000,
+    "maximum_extra_discarded_updates": 9000,
+    "initial_lr": 2e-05,
+    "min_lr": 2e-06,
+    "max_lr": 4e-05,
+    "controller": "paired 500-update pilots every 10k accepted steps",
+    "last_observed_logged_step": 287810,
+    "report": "reports/molab_adaptive_100k/README.md",
+    "outputs_collected": false
   }
 }
