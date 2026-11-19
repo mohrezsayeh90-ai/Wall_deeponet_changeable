@@ -15,7 +15,7 @@ p=D/'branch_only_result.json'
 if p.exists():
  x=read(p)['branch_only'];rows.append(('Frozen trunk, branch-only',x['probe'],x['fem']['saved20']))
 with (D/'comparison.csv').open('w') as f:
- w=csv.writer(f);w.writerow(['method','control_loss','audit_loss','median_velocity_relative_L2','median_pressure_relative_L2','reference','scope'])
+ w=csv.writer(f,lineterminator="\n");w.writerow(['method','control_loss','audit_loss','median_velocity_relative_L2','median_pressure_relative_L2','reference','scope'])
  for name,probe,med in rows:w.writerow([name,probe['control'],probe['audit'],med['velocity_l2_median'],med['pressure_l2_median'],'batch32 full SOAP at315400','development only; weight average is not a trained checkpoint'])
 fig,axs=plt.subplots(1,2,figsize=(12,5.8),layout='constrained',sharey=True);names=[x[0].replace('Weight average (inference only)','Weight average\n(inference only)').replace('Frozen trunk, branch-only','Frozen trunk\nbranch-only') for x in rows[1:]];ix=np.arange(len(names));colors=['#e67e22','#c0392b','#16a085','#8e44ad'][:len(names)]
 changes=[100*(x[1]['audit']/ref['probe']['audit']-1) for x in rows[1:]]
