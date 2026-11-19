@@ -1,9 +1,10 @@
 {
-  "phase": "running",
-  "branch": "rad",
-  "step": 297600,
-  "offset": 10200,
-  "target_step": 302400,
-  "lr": 2e-05,
-  "elapsed_branch_seconds": 863.2918427969998
+  "phase": "completed",
+  "branches": [
+    "baseline",
+    "rad"
+  ],
+  "step": 302400,
+  "updates_each": 15000,
+  "automatic_promotion": false
 }
