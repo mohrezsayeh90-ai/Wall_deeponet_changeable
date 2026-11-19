@@ -41,5 +41,5 @@ _zip=_r/'results.zip';_dl=mo.download(data=lambda:_zip.read_bytes(),filename='so
 _diagroot=Path('/home/marimo/wall_branch_only_probe_v1')
 _ds=_read(_diagroot/'status.json');_du=_ds.get('optimizer_updates',0)
 _drows=_rows(_diagroot/'branch_only/probe.jsonl');_da=_drows[-1].get('audit') if _drows else None
-_dtext=mo.md(f'**بررسی توقف کاهش خطا:** دو آزمون batch128 بهتر نشدند و رد شدند؛ آموزش اصلی پس از وقفهٔ تشخیصی ادامه یافت. آزمون جداگانهٔ ثابت‌نگه‌داشتن trunk: **{_du:,} از ۲۰۰۰ گام** — آخرین loss روی مجموعهٔ ثابت: **{_da if _da is not None else "در انتظار"}**. هندسه‌ها و نقاط هر گام تازه‌اند؛ از FEM برای آموزش استفاده نشده است. این آزمون هنوز جایگزین مدل اصلی نشده است.')
+_dtext=mo.md('**بررسی توقف کاهش خطا کامل شد:** ادامهٔ اصلی تا گام ۳۲۲٬۴۰۰ پایان یافت. loss ارزیابی ثابت از ۰٫۰۱۲۸۱۵ به ۰٫۰۱۲۴۸۴ رسید؛ فقط ۲٫۵۸٪ کاهش در ۲۰هزار گام. میانهٔ سرعت ۲۰ کیس: ۱٫۳۶۱٪ → ۱٫۳۴۰٪؛ فشار: ۱٫۱۳۶٪ → ۱٫۱۷۱٪. دو آزمون batch128 و آزمون branch-only کاهش بزرگ و یکدستی ندادند و جایگزین مدل نشدند. همهٔ حالت‌ها و وزن‌ها جداگانه نگه داشته شدند. **آموزش جدیدی بر پایهٔ این نتایج شروع نشده است.**')
 mo.vstack([training_refresh,_header,_dtext,_guard_text,_comparison_note,_plot,_dl])

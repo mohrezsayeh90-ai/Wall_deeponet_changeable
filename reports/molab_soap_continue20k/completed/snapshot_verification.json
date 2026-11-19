@@ -1,0 +1,131 @@
+{
+  "passed": true,
+  "snapshot_count": 25,
+  "files": [
+    {
+      "file": "artifacts/molab/soap-continue20k-v1/continuation/snapshots/checkpoint_302500.npz",
+      "bytes": 32849180,
+      "sha256": "a3c16f17cf0c747128e5f2fff16276e4078703b7f97add8f2fe9663e3a37e29d"
+    },
+    {
+      "file": "artifacts/molab/soap-continue20k-v1/continuation/snapshots/checkpoint_303400.npz",
+      "bytes": 32851254,
+      "sha256": "ffd964ae36ac60c584dd58eb70612a47c07de46eb3067c3b8a0a184bc91bee31"
+    },
+    {
+      "file": "artifacts/molab/soap-continue20k-v1/continuation/snapshots/checkpoint_304400.npz",
+      "bytes": 32864491,
+      "sha256": "c90eda73805a3d0e43ba0e1150c0b154c3f5d2c4c1c595bef48820f0c12f94bf"
+    },
+    {
+      "file": "artifacts/molab/soap-continue20k-v1/continuation/snapshots/checkpoint_304900.npz",
+      "bytes": 32857144,
+      "sha256": "74ca394c37e19a11793162090af554c819b6f3dd1f0e6064e0ce401b8539c3c8"
+    },
+    {
+      "file": "artifacts/molab/soap-continue20k-v1/continuation/snapshots/checkpoint_305400.npz",
+      "bytes": 32895565,
+      "sha256": "d9f4c6476a91c5edbad7777c653cebe0d63c1de2053e79f67cec3ade3a83ce6b"
+    },
+    {
+      "file": "artifacts/molab/soap-continue20k-v1/continuation/snapshots/checkpoint_306400.npz",
+      "bytes": 32835188,
+      "sha256": "16fcc3cbc78520638c7dee039455dd30de2915ff833c3e7461378bf4e710b886"
+    },
+    {
+      "file": "artifacts/molab/soap-continue20k-v1/continuation/snapshots/checkpoint_307400.npz",
+      "bytes": 32845390,
+      "sha256": "665c8c34dd41be8fa05a94ca529abe0158000ed2a9703ab70fe401f20abf350e"
+    },
+    {
+      "file": "artifacts/molab/soap-continue20k-v1/continuation/snapshots/checkpoint_308400.npz",
+      "bytes": 32876488,
+      "sha256": "46b5a855b4844b8184aef37a38e9e567f96bffc4145039e8cf503e33ac106281"
+    },
+    {
+      "file": "artifacts/molab/soap-continue20k-v1/continuation/snapshots/checkpoint_309400.npz",
+      "bytes": 32858228,
+      "sha256": "34c1b9bcb9d73d0ae77d340dec241c2e3e3f39ad329cb12ab8ea858246d2b249"
+    },
+    {
+      "file": "artifacts/molab/soap-continue20k-v1/continuation/snapshots/checkpoint_309900.npz",
+      "bytes": 32876845,
+      "sha256": "15edb0582771908d5b0c48de32feee98a6a5e8fad3718ddaee5d27c0acb75122"
+    },
+    {
+      "file": "artifacts/molab/soap-continue20k-v1/continuation/snapshots/checkpoint_310400.npz",
+      "bytes": 32857175,
+      "sha256": "4b6866512ba1e45b737492de628d4fbcb42de56f06bf25bf3fd1425238f1b919"
+    },
+    {
+      "file": "artifacts/molab/soap-continue20k-v1/continuation/snapshots/checkpoint_311400.npz",
+      "bytes": 32866338,
+      "sha256": "ef5a1efe952f509df4d282add5a90926d328ec0f88adbf588ede0fd76eb42c0a"
+    },
+    {
+      "file": "artifacts/molab/soap-continue20k-v1/continuation/snapshots/checkpoint_312400.npz",
+      "bytes": 32835659,
+      "sha256": "3ba8eb54f36d32459bf9edd18cd442b4c08c533990da9815aef6ffd633d40219"
+    },
+    {
+      "file": "artifacts/molab/soap-continue20k-v1/continuation/snapshots/checkpoint_313400.npz",
+      "bytes": 32848559,
+      "sha256": "1f66f97353558c44f8af33be70f202bfb034dba9d1749682476893dad8636130"
+    },
+    {
+      "file": "artifacts/molab/soap-continue20k-v1/continuation/snapshots/checkpoint_314400.npz",
+      "bytes": 32855116,
+      "sha256": "32fe21bde5c70952385c74181623d172fe4c7ca3c1bc6e66a1b96c8bb58557b5"
+    },
+    {
+      "file": "artifacts/molab/soap-continue20k-v1/continuation/snapshots/checkpoint_314900.npz",
+      "bytes": 32838009,
+      "sha256": "4134eb8d4bf9e68f7d6a8eb7b4236add8f3fab70cbe0bd312bb47dce2e3595bf"
+    },
+    {
+      "file": "artifacts/molab/soap-continue20k-v1/continuation/snapshots/checkpoint_315400.npz",
+      "bytes": 32851107,
+      "sha256": "a500fac7a8f6d07e2fdf8058b5d77c1303c45098278d28e664c2b5ffacd1dc25"
+    },
+    {
+      "file": "artifacts/molab/soap-continue20k-v1/continuation/snapshots/checkpoint_316400.npz",
+      "bytes": 32837386,
+      "sha256": "71da01400aa1d06208838cafd4049fc59d9fe287970723e55eda239c65df6284"
+    },
+    {
+      "file": "artifacts/molab/soap-continue20k-v1/continuation/snapshots/checkpoint_317400.npz",
+      "bytes": 32864496,
+      "sha256": "e75e11d41140a52c9a513af6817c914b9425f9ede87fe5b73d6ec595911fe714"
+    },
+    {
+      "file": "artifacts/molab/soap-continue20k-v1/continuation/snapshots/checkpoint_318400.npz",
+      "bytes": 32833073,
+      "sha256": "4b80d2bf3e5c60861c650afca0b35ea4cac719d548d42f7c0bd14e3bf649f8af"
+    },
+    {
+      "file": "artifacts/molab/soap-continue20k-v1/continuation/snapshots/checkpoint_319400.npz",
+      "bytes": 32872223,
+      "sha256": "a215142887014e636885fcb31195e52268a294e65e05c0de89923ef18f21dc1c"
+    },
+    {
+      "file": "artifacts/molab/soap-continue20k-v1/continuation/snapshots/checkpoint_319900.npz",
+      "bytes": 32858373,
+      "sha256": "8bd41517dd90aac70642425157b00e21640802cf69f9af4f173111a76d0452eb"
+    },
+    {
+      "file": "artifacts/molab/soap-continue20k-v1/continuation/snapshots/checkpoint_320400.npz",
+      "bytes": 32852810,
+      "sha256": "401ea121d9cf6d4dac17b2ecadbfd9dba6e23efe98a792ebec5e5394937efb5e"
+    },
+    {
+      "file": "artifacts/molab/soap-continue20k-v1/continuation/snapshots/checkpoint_321400.npz",
+      "bytes": 32818006,
+      "sha256": "0004c6ec6cec7d3792058b7784bba0555c3619b0634d088f967b25c182fc1f45"
+    },
+    {
+      "file": "artifacts/molab/soap-continue20k-v1/continuation/snapshots/checkpoint_322400.npz",
+      "bytes": 32884631,
+      "sha256": "768c56f1c08515b3c0aa24d20ed19308cdf977e43746110db6b309c380f2b3e2"
+    }
+  ]
+}

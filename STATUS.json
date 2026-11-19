@@ -556,7 +556,7 @@
     "completed_report": "reports/molab_adam_100k/completed/README.md"
   },
   "molab_adaptive_100k": {
-    "phase": "running",
+    "phase": "historical_session_unavailable_terminal_state_unverified",
     "base_step": 287400,
     "target_step": 387400,
     "accepted_updates": 100000,
@@ -567,6 +567,45 @@
     "controller": "paired 500-update pilots every 10k accepted steps",
     "last_observed_logged_step": 287810,
     "report": "reports/molab_adaptive_100k/README.md",
-    "outputs_collected": false
+    "outputs_collected": false,
+    "last_archived_logged_step": 378600
+  },
+  "molab_soap_continue20k": {
+    "phase": "completed",
+    "start_step": 302400,
+    "final_step": 322400,
+    "additional_updates": 20000,
+    "total_soap_parameter_updates": 35000,
+    "optimizer_count": 35001,
+    "optimizer": "SOAP",
+    "learning_rate": 2e-05,
+    "complete_optimizer_state_restored": true,
+    "sampling": "fresh geometry/Re/interior/outlet every update",
+    "fixed_audit_start": 0.012815143913030624,
+    "fixed_audit_end": 0.012484267354011536,
+    "median_velocity_20_cases_start": 0.013609245728176471,
+    "median_velocity_20_cases_end": 0.013403590879704157,
+    "median_pressure_20_cases_start": 0.01135821917540607,
+    "median_pressure_20_cases_end": 0.011708598057885615,
+    "checkpoint_sha256": "768c56f1c08515b3c0aa24d20ed19308cdf977e43746110db6b309c380f2b3e2",
+    "report": "reports/molab_soap_continue20k/completed/README.md",
+    "artifact_directory": "artifacts/molab/soap-continue20k-v1",
+    "automatic_model_promotion": false,
+    "pause_seconds": 1061.4500861167908,
+    "fem_scope": "20 Re30 plus8 Re10 repeatedly used development cases; no full-domain acceptance",
+    "outputs_collected": true,
+    "snapshot_count": 25,
+    "sha256_verified": true,
+    "archive_pushed": true
+  },
+  "plateau_diagnosis": {
+    "phase": "completed",
+    "report": "reports/plateau_diagnosis/README.md",
+    "batch128_2e5": "rejected",
+    "batch128_4e5": "rejected",
+    "branch_only_2000": "mixed small changes; not adopted",
+    "weight_average": "inference only; small mixed gains; no promotion",
+    "large_consistent_fix_established": false,
+    "new_training_running": false
   }
 }

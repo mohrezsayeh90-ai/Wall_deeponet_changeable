@@ -1,3 +1,5 @@
+**Completed at322400. [Final metrics, regressions and decisions](completed/README.md).**
+
 # SOAP20k continuation: 302400 → 322400
 
 User requested immediate20000 additional steps. Resume the **complete SOAP state** from step302400, SHA256 `6f38542948ca8a1d4264ef50e85739046a3d3348b8b153704633f0e6addf6630`, preserving parameters, all225 optimizer leaves, RNG and normalization. Fixed LR **2e-5** and unchanged SOAP hyperparameters (betas.95/.95, frequency10, max dimension1024, no1D preconditioning/decay). Optimizer counter15001 continues to15002; no new basis initialization or optimizer reset occurs. Target35000 total SOAP parameter updates since287400.

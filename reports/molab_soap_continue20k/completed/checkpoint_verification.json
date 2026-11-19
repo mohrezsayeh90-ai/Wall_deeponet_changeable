@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "final_step": 322400,
+  "bytes": 32884631,
+  "sha256": "768c56f1c08515b3c0aa24d20ed19308cdf977e43746110db6b309c380f2b3e2",
+  "finite_params_and_optimizer_state": true,
+  "leaf_counts": {
+    "param": 56,
+    "soap": 225
+  },
+  "numpy_allow_pickle": false
+}
