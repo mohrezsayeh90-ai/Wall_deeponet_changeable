@@ -1,0 +1,82 @@
+{
+  "base287400": {
+    "saved20": {
+      "velocity_l2_median": 0.013847509524181113,
+      "velocity_l2_max": 0.07649980823932513,
+      "pressure_l2_median": 0.014744432862417028,
+      "pressure_l2_max": 0.14427832936167362
+    },
+    "pilot8": {
+      "velocity_l2_median": 0.011417225521841413,
+      "velocity_l2_max": 0.024152054580682866,
+      "pressure_l2_median": 0.008296483719109612,
+      "pressure_l2_max": 0.013291314667503063
+    }
+  },
+  "soap_start292400": {
+    "saved20": {
+      "velocity_l2_median": 0.014068098655125233,
+      "velocity_l2_max": 0.07819292118684212,
+      "pressure_l2_median": 0.012252560005714565,
+      "pressure_l2_max": 0.13892641031099345
+    },
+    "pilot8": {
+      "velocity_l2_median": 0.011631408536159932,
+      "velocity_l2_max": 0.024892167660685638,
+      "pressure_l2_median": 0.007194284624401378,
+      "pressure_l2_max": 0.013528022060904627
+    }
+  },
+  "soap_final": {
+    "saved20": {
+      "velocity_l2_median": 0.013609245728176471,
+      "velocity_l2_max": 0.07489605368007551,
+      "pressure_l2_median": 0.01135821917540607,
+      "pressure_l2_max": 0.13856731660308613
+    },
+    "pilot8": {
+      "velocity_l2_median": 0.011026604859472341,
+      "velocity_l2_max": 0.025862516422179155,
+      "pressure_l2_median": 0.007341547619534178,
+      "pressure_l2_max": 0.01638665229319747
+    },
+    "improved_vs_base287400": {
+      "velocity_l2_saved20": 11,
+      "velocity_l2_pilot8": 3,
+      "pressure_l2_saved20": 13,
+      "pressure_l2_pilot8": 6
+    },
+    "improved_vs_soap_start292400": {
+      "velocity_l2_saved20": 7,
+      "velocity_l2_pilot8": 3,
+      "pressure_l2_saved20": 10,
+      "pressure_l2_pilot8": 6
+    },
+    "improved_vs_adam15k": {
+      "velocity_l2_saved20": 19,
+      "velocity_l2_pilot8": 4,
+      "pressure_l2_saved20": 11,
+      "pressure_l2_pilot8": 6
+    }
+  },
+  "adam15k": {
+    "saved20": {
+      "velocity_l2_median": 0.01410385600069283,
+      "velocity_l2_max": 0.07669785008671984,
+      "pressure_l2_median": 0.012341309262537705,
+      "pressure_l2_max": 0.14627855861165404
+    },
+    "pilot8": {
+      "velocity_l2_median": 0.010940945478914742,
+      "velocity_l2_max": 0.026266713588099126,
+      "pressure_l2_median": 0.007836953378197842,
+      "pressure_l2_max": 0.0204117134705737
+    }
+  },
+  "timing": {
+    "soap_two_stage_seconds": 1340.5122112269992,
+    "adam15k_seconds": 1069.1837101319998,
+    "ratio": 1.2537716376744101,
+    "scope": "Includes branch evaluation/checkpoint overhead; excludes extra separate continuation preflight/setup time. Not a matched-time run."
+  }
+}

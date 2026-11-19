@@ -1,3 +1,5 @@
+**Completed at302400. [Final analysis and next proposal](completed/README.md).**
+
 # SOAP continuation: 292400 → 302400, at2e-5
 
 Resume the complete selected SOAP state from `artifacts/molab/soap-trials-v1/soap_2e5/snapshots/checkpoint_292400.npz`, SHA256 `a65fc5a53f906f873b96e20e0dd61c2f169fe6963900d6aa7e037df6adff579d`. Exactly10000 additional parameter updates are targeted, reaching15000 SOAP updates since287400, matching the previously completed Adam15k budget. No new long run or automatic model promotion is introduced.
