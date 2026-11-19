@@ -1,2 +1,5 @@
 {"optimizer_updates": 100, "equivalent_batch32_updates": 400, "control": 0.012867986224591732, "audit": 0.01223584171384573}
 {"optimizer_updates": 200, "equivalent_batch32_updates": 800, "control": 0.012688928283751011, "audit": 0.012178569100797176}
+{"optimizer_updates": 300, "equivalent_batch32_updates": 1200, "control": 0.012759391218423843, "audit": 0.012359724380075932}
+{"optimizer_updates": 400, "equivalent_batch32_updates": 1600, "control": 0.012744034640491009, "audit": 0.01234489120543003}
+{"optimizer_updates": 500, "equivalent_batch32_updates": 2000, "control": 0.01268349401652813, "audit": 0.012339679524302483}

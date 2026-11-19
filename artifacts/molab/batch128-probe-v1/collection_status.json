@@ -1,6 +1,6 @@
 {
-  "last_success_unix": 1795103405.5922263,
-  "verified_files": 11,
+  "last_success_unix": 1795103567.5562449,
+  "verified_files": 16,
   "sha256": {
     "pause_record.json": "5cb9db88494004d3f94acdfb3024e3f5b73dc270c5c1184d3ef1742c2afb070f",
     "worker.py": "714ac7c29b267680ceb94adfb42f7ed815834376e9e1faf7f576b6e17b60e543",
@@ -8,11 +8,16 @@
     "preflight.json": "76956c7529377e3c4f39f4b6ed7c768bb69793c822d1ed37cebb8bc0167e8b2a",
     "base_metrics.json": "ceeb8c3cc85d910432b09f9b231aea885749d6b23a296579b6204f08b56d753f",
     "reference_metrics.json": "cee7cad9052b8768585bfc478132f81bbe4cfbb6d5a48c7ab9bfb5e5165dfe41",
-    "status.json": "6f543de3091654d09f190da530ed48f9fffaf2d357c84da0d04352b855157a45",
-    "batch128/training.jsonl": "5b8e6e5dd1785969cc6425bbb21f16aea419a3788b28940c8bea29406c4f8ef6",
-    "batch128/probe.jsonl": "141083ee5460afa1d60ec2e0e72e9aeee54d410eef505fea8bc07e3c68fd9881",
+    "status.json": "745997ae90a9d6d17a56df88c31e84440d7f2aa7ab656fa5e42a2f2a371d9b17",
+    "batch128/training.jsonl": "f41a661925f3b4b6cf5e3bf383ad5a43447c8bb53c5b6b169d2c332b53c88872",
+    "batch128/probe.jsonl": "0661b6efcad40943561b9c5067a6705072513c2dc668fc48b847f1480f50df16",
     "batch128/snapshots/checkpoint_313500.ready.json": "f8b9225af69269fbf16575006a27e3b193499e59efc623b8dec22f741099dd36",
-    "batch128/snapshots/checkpoint_313500.npz": "65ad48dfa19bd04190da1f8236a6b315fff327f6647ced4b9b9fa4dfe9a10072"
+    "batch128/snapshots/checkpoint_313500.npz": "65ad48dfa19bd04190da1f8236a6b315fff327f6647ced4b9b9fa4dfe9a10072",
+    "comparison.json": "4f45b94b918e48e0dd5d5694fe868075e8ac465d67fd22e16243d7552363186b",
+    "batch128/snapshots/checkpoint_313650.ready.json": "cea2e552b329df34ee771c35e91fad4fa411afa71494c2b05e835d620c868e29",
+    "batch128/snapshots/checkpoint_313650.npz": "81ab6c1a52c4ba802e3dcdd22b3338b0a21f602586cd8298a4650b27cef13e95",
+    "batch128/snapshots/checkpoint_313900.ready.json": "d368be10ae9c56fe9709636f9cb9070e003d7725c1725f7494aaffa852789de3",
+    "batch128/snapshots/checkpoint_313900.npz": "d0cc46ddf8d4a4f95648001914f5c74e1cc6cf48f1eb07ad66e217a3eb712521"
   },
   "collector_lifetime": "Runs in Codex cloud; reconnect/restart needed if that environment stops. No molab persistence guarantee."
 }
