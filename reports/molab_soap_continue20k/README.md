@@ -13,3 +13,7 @@ Full-state snapshots after100, every1000 and every2500 additional steps, plus fi
 [Source](../../notebooks/molab_soap_continue20k/) · [Collected outputs](../../artifacts/molab/soap-continue20k-v1/). Molab root `/home/marimo/wall_soap_continue20k_v1`. Reproduction needs the pinned helper/vendor/venv and frozen inputs restored at the prior-stage paths recorded in the worker. No credentials are saved in files.
 
 Live dashboard combines the previous15k and this20k SOAP history. The existing Adam15k curve is explicitly a **shorter-budget reference**, not a matched35000-step comparison. Final metrics and a ZIP bundle are generated after completion/guarded stop. No accuracy gain is presumed from launching.
+
+## Verified launch
+
+Production preflight passed: exact parameter/SOAP-state roundtrip, identical next sampled batch and identical next optimizer update. SOAP counter15001→15002 was verified, with no new basis initialization. Training reached302600 (200 new updates); the live dashboard had no errors. This records execution, not an accuracy improvement.
