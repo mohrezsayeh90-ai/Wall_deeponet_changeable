@@ -1,0 +1,17 @@
+{
+  "anchor_step": 313400,
+  "global_batch": 32,
+  "learning_rate": 2e-05,
+  "no_optimizer_reset": true,
+  "training_labels": 0,
+  "trainable": [
+    "psi_branch",
+    "p_branch"
+  ],
+  "frozen": [
+    "psi_trunk",
+    "p_trunk"
+  ],
+  "same_physics_objective": true,
+  "decision": "Not promoted unless fixed probes and FEM improve; short diagnostic only"
+}
