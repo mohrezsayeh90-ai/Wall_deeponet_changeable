@@ -28,3 +28,9 @@ Candidate checkpoints contain all SOAP state, RNG and explicit batch128/equivale
 ## Decision criteria, recorded before endpoint results
 
 A larger-batch candidate is considered promising only if fixed audit is at least1% below the cached batch32 endpoint, control is no more than1% higher, both20-case FEM medians are within2% of reference with at least one improving2%, neither8-case median regresses more than5%, and neither20-case maximum regresses more than5%. These thresholds are heuristic development criteria, not statistical significance or full acceptance. No selection is made from a smoother stochastic training curve.
+
+## First result and bounded LR-scaling follow-up
+
+At batch128/LR2e-5 the audit endpoint was0.01233968 versus0.01230275 for the matched cached batch32 reference;20-case medians were1.3770% velocity and1.2177% pressure versus1.3698% and1.1947%. It did not meet the predeclared gates and is not adopted. [Complete first result](batch128_lr2e5_result.json).
+
+A second and final bounded500-update probe starts from exactly the same state/data stream with batch128 and LR4e-5, testing a square-root-style LR adjustment for the4x batch increase. Same cached batch32 reference, same FEM/probes and decision gates; the original worker remains temporarily paused. The first probe is the same-LR batch ablation; the follow-up changes LR and is labeled separately. No result from the second probe is assumed before measurements.
