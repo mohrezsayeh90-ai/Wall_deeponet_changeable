@@ -1,0 +1,42 @@
+{
+  "scope": "Four already-used development examples. Ridge projection against FEM uses a fit split and a disjoint point split; not a trained network or accepted result. No model parameters are changed.",
+  "checkpoint_step": 315400,
+  "cases": [
+    {
+      "case": 1,
+      "online_velocity_l2": 0.0023422373894131155,
+      "online_pressure_l2": 0.00390761666243277,
+      "projected_velocity_l2": 1.480272161807816e-07,
+      "projected_pressure_l2": 3.819510021477853e-12,
+      "pressure_coefficient_norm_ratio": 6.309193521520231e-08,
+      "velocity_coefficient_norm_ratio": 0.00024415552198541347
+    },
+    {
+      "case": 12,
+      "online_velocity_l2": 0.0368358799074708,
+      "online_pressure_l2": 0.010524340159763109,
+      "projected_velocity_l2": 0.0019187981173648607,
+      "projected_pressure_l2": 0.0016451091705737733,
+      "pressure_coefficient_norm_ratio": 5.530746060127731,
+      "velocity_coefficient_norm_ratio": 2.5794755732519623
+    },
+    {
+      "case": 16,
+      "online_velocity_l2": 0.07323226644189816,
+      "online_pressure_l2": 0.13910105740789802,
+      "projected_velocity_l2": 0.0007310418408859987,
+      "projected_pressure_l2": 0.000703940543871209,
+      "pressure_coefficient_norm_ratio": 3.0231448610078044,
+      "velocity_coefficient_norm_ratio": 2.5297184885145874
+    },
+    {
+      "case": 20,
+      "online_velocity_l2": 0.05141525420996895,
+      "online_pressure_l2": 0.014767271302579094,
+      "projected_velocity_l2": 0.0010584526205454782,
+      "projected_pressure_l2": 0.0009485936549507483,
+      "pressure_coefficient_norm_ratio": 3.9826087507548977,
+      "velocity_coefficient_norm_ratio": 3.5314992480984904
+    }
+  ]
+}

@@ -10,7 +10,7 @@ Highest matmul precision changed that batch loss by only0.00324%, gradient relat
 
 ## Intervention
 
-The original20k continuation worker is **temporarily SIGSTOP-paused**, with its live state preserved and immutable source/matched reference already saved. Original supervisor remains alive. It can be resumed with SIGCONT to its verified process group; do not launch a duplicate worker. Pause metadata is on molab at `wall_soap_continue20k_v1/pause_status.json`. The pause has not reset parameters or discarded previous GitHub checkpoints.
+The original20k worker was SIGSTOP-paused for1061.45 seconds (17.69 minutes), then **SIGCONT-resumed with its full live state** after both batch128 probes failed. No optimizer reset and no duplicate original worker. Pause metadata is archived in [pause_status.json](../../artifacts/molab/soap-continue20k-v1/pause_status.json). Wall-clock durations include this pause and diagnostic/GPU contention, and must not be interpreted as pure training-speed measurements. The original model was not replaced by any rejected probe.
 
 Compare from the exact same complete SOAP state313400:
 
@@ -33,4 +33,25 @@ A larger-batch candidate is considered promising only if fixed audit is at least
 
 At batch128/LR2e-5 the audit endpoint was0.01233968 versus0.01230275 for the matched cached batch32 reference;20-case medians were1.3770% velocity and1.2177% pressure versus1.3698% and1.1947%. It did not meet the predeclared gates and is not adopted. [Complete first result](batch128_lr2e5_result.json).
 
-A second and final bounded500-update probe starts from exactly the same state/data stream with batch128 and LR4e-5, testing a square-root-style LR adjustment for the4x batch increase. Same cached batch32 reference, same FEM/probes and decision gates; the original worker remains temporarily paused. The first probe is the same-LR batch ablation; the follow-up changes LR and is labeled separately. No result from the second probe is assumed before measurements.
+A second and final bounded500-update probe starts from exactly the same state/data stream with batch128 and LR4e-5, testing a square-root-style LR adjustment for the4x batch increase. Same cached batch32 reference, same FEM/probes and decision gates; the original worker was temporarily paused during these two probes and was resumed afterward. The first probe is the same-LR batch ablation; the follow-up changes LR and is labeled separately.
+
+
+## Final batch-size decision
+
+The LR4e-5 probe also failed: fixed audit0.01245287 (+1.22% vs reference), median velocity1.3609%, median pressure1.2578% (+5.28% pressure error). **Neither batch128 candidate is adopted.** The noisy-gradient observation did not establish the principal plateau cause. [Complete second result](batch128_lr4e5_result.json).
+
+## Weight averaging: small inference-only effect
+
+Uniformly average parameter tensors from311400,312400,313400,314400,315400, accumulated in float64 then cast back to float32. No further training. Compared to315400, audit decreases0.80%,20-case velocity median changes1.3698%→1.3534% and pressure1.1947%→1.1610%. The8-case worst pressure regresses1.5929%→1.7052%; it is not a uniform improvement or a large plateau fix. The averaged file has **no optimizer state** and is not selected for continuation. Original full-state checkpoints remain available. [All cases](weight_average_result.json) · [Inference-only weights](../../artifacts/molab/weight-average-v1/average.npz).
+
+## Fixed-trunk representation diagnostic
+
+Four already-used Re30 development geometries were evaluated. With the current trunk fixed, independent per-case branch coefficients were fitted by weighted ridge least squares to FEM on half of up to3000 sampled points and assessed on the disjoint point half. Current versus projected velocity errors (%): straight0.234→0.000015; triple constriction3.684→0.192; roof plateau7.323→0.073; Fourier5.142→0.106. Current versus projected pressure (%):0.391→~0;1.052→0.165;13.910→0.070;1.477→0.095.
+
+**These are FEM-assisted diagnostic projections, not trained operator predictions, not held-out-geometry results, and not accepted model accuracy.** They do not verify PDE derivatives/outlet traction, nor prove that the branch MLP can learn the optimal coefficient map. Difficult-case coefficient norms are2.5–5.5 times current norms. Nevertheless these observations provide no evidence that enlarging the current spatial basis is the first necessary change. [Data](trunk_capacity_diagnostic.json) · [Source](../../notebooks/molab_batch128_probe/trunk_capacity_diagnostic.py).
+
+## Bounded branch-only ablation
+
+A separate2000-update SOAP trial starts from identical full state313400 and uses exactly the same fresh batch32 geometry/Re/interior/outlet draw stream as the cached315400 reference. Same LR2e-5, same objective and all original constraints. Only psi_branch/p_branch receive parameter updates; both trunks are checked bitwise unchanged on save. The original full SOAP state is restored; branch moments/preconditioners are retained. Trunk gradients/updates are zeroed, so trunk-state accumulators may evolve but no trunk parameter moves. Metadata explicitly records branch-only mode. No FEM labels enter training; no automatic promotion. [Source](../../notebooks/molab_branch_only_probe/) · [Artifacts](../../artifacts/molab/branch-only-probe-v1/).
+
+[Endpoint chart](comparison.png) · [PDF](comparison.pdf) · [CSV](comparison.csv) · Reproduce: `.venv/bin/python scripts/report_plateau_diagnosis.py`.

@@ -1,0 +1,5 @@
+method,control_loss,audit_loss,median_velocity_relative_L2,median_pressure_relative_L2,reference,scope
+Batch32 reference,0.01270266529172659,0.01230275072157383,0.013697525698797449,0.011947389043125402,batch32 full SOAP at315400,development only; weight average is not a trained checkpoint
+"Batch128, LR 2e-5",0.01268349401652813,0.012339679524302483,0.013769897455239603,0.01217654733574999,batch32 full SOAP at315400,development only; weight average is not a trained checkpoint
+"Batch128, LR 4e-5",0.012750668451189995,0.012452872470021248,0.01360906846383133,0.012577691504718724,batch32 full SOAP at315400,development only; weight average is not a trained checkpoint
+Weight average (inference only),0.01271070446819067,0.012204773724079132,0.013534482162384915,0.01160996898225164,batch32 full SOAP at315400,development only; weight average is not a trained checkpoint
