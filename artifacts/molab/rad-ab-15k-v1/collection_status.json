@@ -1,6 +1,6 @@
 {
-  "last_success_unix": 1795095586.8697898,
-  "verified_files": 29,
+  "last_success_unix": 1795095942.2026308,
+  "verified_files": 38,
   "sha256": {
     "prepare.py": "7197b6e5706dc651bf25d9eaacf58b793998790740cd0c6fbb79b3192a8c3bd0",
     "setup.log": "c8b28ebb9cbd4b4ebfd502e68b18918453a45c0c3b566c455c39e89217b4e0a5",
@@ -19,10 +19,10 @@
     "supervisor-status.json": "bb13c035990a8134167b8887885f35df346a71a7f808283259ac5305907544a5",
     "preflight.json": "f74156dfeb044705635b4d7de9e078b27f5d30a4ae68283715d0a825dd94047d",
     "base_fem.json": "e938d316fb94d2a607d29007897e96d0e79f7e351f4b9f3bc1f2433289df17c3",
-    "status.json": "9e55a133f3873b6cbb0d5b556b36437e51fefbbdd3996054fdaf0ea1edec3ade",
-    "baseline/probe.jsonl": "54391cde20be3f391785a6fe0420a15be009b6bbfc8b461e37cb820e5f57bc78",
+    "status.json": "6ca31d1639a308b68ede47a1ae891e84aa8d319f4ebb1e6e6d7f863d4f533648",
+    "baseline/probe.jsonl": "9110f2f9c8e50149a20e1846106cbbf57a9cfc9ad429f4a79e5edcb9cedda4d1",
     "baseline/fem_287400.json": "e938d316fb94d2a607d29007897e96d0e79f7e351f4b9f3bc1f2433289df17c3",
-    "baseline/training.jsonl": "305a27618ec1c4fcaf2cbefa2715352c919b8ea380d2a7c81491ca621638debe",
+    "baseline/training.jsonl": "89991400a33decc4dffec01d8017d120d111e6107b0bd709e489b4947ff6b204",
     "baseline/snapshots/checkpoint_287500.ready.json": "01b777edc6e8b33dd7855e8d2877ab40a788000a5ef7592b794418016d3f4dc2",
     "baseline/snapshots/checkpoint_287500.npz": "3511d13701ae833202627d50eed434ffcd6dd48cdded6f95325f17c51bedc54d",
     "baseline/fem_292400.json": "d6420dc31a3f8e9805ed96356baec6d60e7d423222cb0f2d8ecc9db949a74178",
@@ -30,7 +30,16 @@
     "baseline/snapshots/checkpoint_292400.npz": "3f9021874cc505be0a20b8005f812f3fbab6f23d614d847c75cd45c5d64302c6",
     "baseline/fem_297400.json": "1ef5a7dc8a625e41de150636fb134871d28fafa5ecf3303c6fc0555f3af4a1c6",
     "baseline/snapshots/checkpoint_297400.ready.json": "454868644e47b143af591e7b20f85718b4da7e3cc8f0b26962b98a0785d2a689",
-    "baseline/snapshots/checkpoint_297400.npz": "dd85da31268467358810c3a8f6760aceaf1a0eaceb782169ac8a4ad52e0acc4f"
+    "baseline/snapshots/checkpoint_297400.npz": "dd85da31268467358810c3a8f6760aceaf1a0eaceb782169ac8a4ad52e0acc4f",
+    "baseline/fem_302400.json": "bf03c7d67ae46626238b239861e42c65e6145633bcc58ab622471c8188ddf6b0",
+    "baseline/completed.json": "584a8241e86a793f165193c1d2269e179071fe52a0144d729a2a02ce7697bdda",
+    "baseline/snapshots/checkpoint_302400.ready.json": "97ec8b9e7377dad8f0860993f10eaae1ae3297e31878868c36e3eeee2f201976",
+    "baseline/snapshots/checkpoint_302400.npz": "9c1b6837497e0cc103ab31b974a02d4726ffe5818f6981f74eb806d4f8709ba0",
+    "rad/probe.jsonl": "6d1f2eea1301665f05c41a39ad2679ca69d4da99f52e2e0726158007bfd1b9a2",
+    "rad/fem_287400.json": "e938d316fb94d2a607d29007897e96d0e79f7e351f4b9f3bc1f2433289df17c3",
+    "rad/training.jsonl": "4693f85392cb17e190bac0ec73f816d0c9f89d9784690c1e583f2cc39fe50007",
+    "rad/snapshots/checkpoint_287500.ready.json": "9d3efb7e0639d54c6029547c8d5cb05c012c8e7641481f3af6340754954a7abd",
+    "rad/snapshots/checkpoint_287500.npz": "8523dacf49b80dc537c744a7c27fc0e7006aa2edf290b7daeb3bf4e226718aab"
   },
   "collector_lifetime": "Runs in Codex cloud; reconnect/restart needed if that environment stops. No molab persistence guarantee."
 }
