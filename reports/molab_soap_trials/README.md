@@ -1,3 +1,5 @@
+**Both branches completed. [Final analysis, all-case errors and next proposal](completed/README.md).**
+
 # SOAP continuation experiment: two independent 5k branches
 
 Both branches start from archived step **287400**, SHA256 `72bbe88ddc539258b9bfb433709aa434776393bd5f7e163d90478cbf7fa0e6c2`. Parameters are retained; **SOAP statistics start fresh**. The saved Adam state remains in the original checkpoint and is not reinterpreted as SOAP state. Each branch performs5000 parameter updates, ending at continuation step292400, at fixed LR **2e-5** or **1e-4**. One extra gradient evaluation initializes each SOAP basis and makes no parameter update; it does not advance the shared training RNG. No later long run or promotion occurs automatically.

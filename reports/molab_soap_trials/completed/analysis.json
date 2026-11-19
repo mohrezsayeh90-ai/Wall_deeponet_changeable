@@ -1,0 +1,239 @@
+{
+  "completed": true,
+  "base_step": 287400,
+  "updates_each": 5000,
+  "final_step_each": 292400,
+  "base_fem": {
+    "cases": [
+      {
+        "case": "1",
+        "velocity_l2": 0.0022042299526102488,
+        "pressure_l2": 0.003786994284636155
+      },
+      {
+        "case": "2",
+        "velocity_l2": 0.0020387557352711774,
+        "pressure_l2": 0.004027500389948826
+      },
+      {
+        "case": "3",
+        "velocity_l2": 0.004811110800848323,
+        "pressure_l2": 0.00871144294889589
+      },
+      {
+        "case": "4",
+        "velocity_l2": 0.008753696915145099,
+        "pressure_l2": 0.017854978680942525
+      },
+      {
+        "case": "5",
+        "velocity_l2": 0.01194085035469154,
+        "pressure_l2": 0.006853316694715187
+      },
+      {
+        "case": "6",
+        "velocity_l2": 0.012366271911559827,
+        "pressure_l2": 0.005731475656996764
+      },
+      {
+        "case": "7",
+        "velocity_l2": 0.009431573867737523,
+        "pressure_l2": 0.027964945055850066
+      },
+      {
+        "case": "8",
+        "velocity_l2": 0.014975949431485907,
+        "pressure_l2": 0.02202891573686843
+      },
+      {
+        "case": "9",
+        "velocity_l2": 0.012189538743963842,
+        "pressure_l2": 0.014916465832913542
+      },
+      {
+        "case": "10",
+        "velocity_l2": 0.01271906961687632,
+        "pressure_l2": 0.009856870938803759
+      },
+      {
+        "case": "11",
+        "velocity_l2": 0.0211656451232081,
+        "pressure_l2": 0.012237344210677861
+      },
+      {
+        "case": "12",
+        "velocity_l2": 0.03806379462391024,
+        "pressure_l2": 0.009934995706108335
+      },
+      {
+        "case": "13",
+        "velocity_l2": 0.024591322589691832,
+        "pressure_l2": 0.01793104000890132
+      },
+      {
+        "case": "14",
+        "velocity_l2": 0.047422272497554895,
+        "pressure_l2": 0.06370474667923617
+      },
+      {
+        "case": "15",
+        "velocity_l2": 0.03170222294091114,
+        "pressure_l2": 0.04228928776262617
+      },
+      {
+        "case": "16",
+        "velocity_l2": 0.07649980823932513,
+        "pressure_l2": 0.14427832936167362
+      },
+      {
+        "case": "17",
+        "velocity_l2": 0.01820097336566994,
+        "pressure_l2": 0.022250400811686527
+      },
+      {
+        "case": "18",
+        "velocity_l2": 0.010465188040369807,
+        "pressure_l2": 0.014431254687315024
+      },
+      {
+        "case": "19",
+        "velocity_l2": 0.017639318292449722,
+        "pressure_l2": 0.014572399891920515
+      },
+      {
+        "case": "20",
+        "velocity_l2": 0.05108969788894719,
+        "pressure_l2": 0.018812577782113548
+      },
+      {
+        "case": "pilot_0",
+        "velocity_l2": 0.0023919497323551865,
+        "pressure_l2": 0.0035102441738069654
+      },
+      {
+        "case": "pilot_1",
+        "velocity_l2": 0.009297832262384287,
+        "pressure_l2": 0.01056298001477796
+      },
+      {
+        "case": "pilot_2",
+        "velocity_l2": 0.006724108645242522,
+        "pressure_l2": 0.013291314667503063
+      },
+      {
+        "case": "pilot_3",
+        "velocity_l2": 0.010816861188263364,
+        "pressure_l2": 0.007949194034149891
+      },
+      {
+        "case": "pilot_4",
+        "velocity_l2": 0.02384318914717842,
+        "pressure_l2": 0.010532387322236785
+      },
+      {
+        "case": "pilot_5",
+        "velocity_l2": 0.012017589855419463,
+        "pressure_l2": 0.008643773404069332
+      },
+      {
+        "case": "pilot_6",
+        "velocity_l2": 0.018524777798632677,
+        "pressure_l2": 0.005629180985618452
+      },
+      {
+        "case": "pilot_7",
+        "velocity_l2": 0.024152054580682866,
+        "pressure_l2": 0.0067891747916523455
+      }
+    ],
+    "saved20": {
+      "velocity_l2_median": 0.013847509524181113,
+      "velocity_l2_max": 0.07649980823932513,
+      "pressure_l2_median": 0.014744432862417028,
+      "pressure_l2_max": 0.14427832936167362
+    },
+    "pilot8": {
+      "velocity_l2_median": 0.011417225521841413,
+      "velocity_l2_max": 0.024152054580682866,
+      "pressure_l2_median": 0.008296483719109612,
+      "pressure_l2_max": 0.013291314667503063
+    }
+  },
+  "methods": {
+    "adam": {
+      "elapsed_to_5000_log_seconds": 366.94234531200027,
+      "audit_loss": 0.01355315838009119,
+      "control_loss": 0.013356483541429043,
+      "saved20": {
+        "velocity_l2_median": 0.014495155805533937,
+        "velocity_l2_max": 0.07950281722829253,
+        "pressure_l2_median": 0.014199701699886567,
+        "pressure_l2_max": 0.14045285256360346,
+        "velocity_improved_cases": 12,
+        "pressure_improved_cases": 10
+      },
+      "pilot8": {
+        "velocity_l2_median": 0.012035015978728636,
+        "velocity_l2_max": 0.02524098165353031,
+        "pressure_l2_median": 0.006649037447303229,
+        "pressure_l2_max": 0.016925888835383582,
+        "velocity_improved_cases": 1,
+        "pressure_improved_cases": 5
+      }
+    },
+    "soap_2e5": {
+      "elapsed_to_5000_log_seconds": 460.6655890239999,
+      "audit_loss": 0.013059241697192192,
+      "control_loss": 0.012971451506018639,
+      "saved20": {
+        "velocity_l2_median": 0.014068098655125233,
+        "velocity_l2_max": 0.07819292118684212,
+        "pressure_l2_median": 0.012252560005714565,
+        "pressure_l2_max": 0.13892641031099345,
+        "velocity_improved_cases": 12,
+        "pressure_improved_cases": 12
+      },
+      "pilot8": {
+        "velocity_l2_median": 0.011631408536159932,
+        "velocity_l2_max": 0.024892167660685638,
+        "pressure_l2_median": 0.007194284624401378,
+        "pressure_l2_max": 0.013528022060904627,
+        "velocity_improved_cases": 1,
+        "pressure_improved_cases": 6
+      }
+    },
+    "soap_1e4": {
+      "elapsed_to_5000_log_seconds": 431.02441418299895,
+      "audit_loss": 0.013274230062961578,
+      "control_loss": 0.013369477353990078,
+      "saved20": {
+        "velocity_l2_median": 0.013978249324866871,
+        "velocity_l2_max": 0.08008046640049583,
+        "pressure_l2_median": 0.01232831852262269,
+        "pressure_l2_max": 0.15267044611497338,
+        "velocity_improved_cases": 11,
+        "pressure_improved_cases": 11
+      },
+      "pilot8": {
+        "velocity_l2_median": 0.012270366298616258,
+        "velocity_l2_max": 0.024681365731976435,
+        "pressure_l2_median": 0.0074469898538804535,
+        "pressure_l2_max": 0.016468133430755632,
+        "velocity_improved_cases": 3,
+        "pressure_improved_cases": 5
+      }
+    }
+  },
+  "all_14_snapshot_sha256_verified": true,
+  "selection": "SOAP2e-5 is a candidate for a bounded continuation, not a universally improved model",
+  "next_proposal": {
+    "optimizer": "SOAP",
+    "lr": 2e-05,
+    "resume_step": 292400,
+    "additional_updates": 10000,
+    "target_step": 302400,
+    "reason": "Match the already completed Adam15k budget; retain own optimizer state and RNG; no loss reweighting or RAD",
+    "evaluation_interval": 2500,
+    "long_100k_run_authorized_by_results": false
+  }
+}
