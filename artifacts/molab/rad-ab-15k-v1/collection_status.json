@@ -1,6 +1,6 @@
 {
-  "last_success_unix": 1795094953.9339619,
-  "verified_files": 23,
+  "last_success_unix": 1795095245.3168404,
+  "verified_files": 26,
   "sha256": {
     "prepare.py": "7197b6e5706dc651bf25d9eaacf58b793998790740cd0c6fbb79b3192a8c3bd0",
     "setup.log": "c8b28ebb9cbd4b4ebfd502e68b18918453a45c0c3b566c455c39e89217b4e0a5",
@@ -19,12 +19,15 @@
     "supervisor-status.json": "bb13c035990a8134167b8887885f35df346a71a7f808283259ac5305907544a5",
     "preflight.json": "f74156dfeb044705635b4d7de9e078b27f5d30a4ae68283715d0a825dd94047d",
     "base_fem.json": "e938d316fb94d2a607d29007897e96d0e79f7e351f4b9f3bc1f2433289df17c3",
-    "status.json": "633af28db80343d9192aa4bbc18f84f6b341c47a013d138ea600045fec9a641a",
-    "baseline/probe.jsonl": "6d1f2eea1301665f05c41a39ad2679ca69d4da99f52e2e0726158007bfd1b9a2",
+    "status.json": "f6c297289c57eaaccd617382b5b0cf608f6ca9662a95f373392a016cb0617a4f",
+    "baseline/probe.jsonl": "5bbe204cd7eeaadfa2ba3f5d9228bc3170850b9c55fb1e622e69cc62584284cd",
     "baseline/fem_287400.json": "e938d316fb94d2a607d29007897e96d0e79f7e351f4b9f3bc1f2433289df17c3",
-    "baseline/training.jsonl": "ab1e5ec9024d3fca7f4d343c4cbe1d7143377866481c5106d2e2518089fb957b",
+    "baseline/training.jsonl": "736aaf7317b4d021695725947d02cf5936f9f8b72734ea3c98dd5d6788735e77",
     "baseline/snapshots/checkpoint_287500.ready.json": "01b777edc6e8b33dd7855e8d2877ab40a788000a5ef7592b794418016d3f4dc2",
-    "baseline/snapshots/checkpoint_287500.npz": "3511d13701ae833202627d50eed434ffcd6dd48cdded6f95325f17c51bedc54d"
+    "baseline/snapshots/checkpoint_287500.npz": "3511d13701ae833202627d50eed434ffcd6dd48cdded6f95325f17c51bedc54d",
+    "baseline/fem_292400.json": "d6420dc31a3f8e9805ed96356baec6d60e7d423222cb0f2d8ecc9db949a74178",
+    "baseline/snapshots/checkpoint_292400.ready.json": "1153d94bea8b144ca12866eaa64d74c2556f30aa8fbbc06ed4ba58b14e5f128a",
+    "baseline/snapshots/checkpoint_292400.npz": "3f9021874cc505be0a20b8005f812f3fbab6f23d614d847c75cd45c5d64302c6"
   },
   "collector_lifetime": "Runs in Codex cloud; reconnect/restart needed if that environment stops. No molab persistence guarantee."
 }
