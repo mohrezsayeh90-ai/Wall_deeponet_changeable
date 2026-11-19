@@ -21,3 +21,7 @@ Full SOAP state is saved after the first100 new updates, every1000 and every2500
 [Source](../../notebooks/molab_soap_continue10k/) · [Collected outputs](../../artifacts/molab/soap-continue10k-v1/). Remote root `/home/marimo/wall_soap_continue10k_v1`. Input dependencies, isolated venv, pinned optimizer helper/vendor and frozen references remain in the prior stage roots specified in the worker; restore those archives/source for reproduction. No token is saved in repository files.
 
 New dashboard will show the10000-step continuation and combined15000-step SOAP history alongside the existing Adam15k history. Final plots/metrics and `results.zip` are produced after completion or the regression guard stops the run. No improvement is claimed before observing FEM results.
+
+## Launch verification
+
+Preflight passed on the production GPU: restored parameters and all optimizer leaves exactly, optimizer count5001→5002, identical next sampled batch and next update after a full save/restore. No basis warm-up or optimizer reset occurred. The first resumed training branch reached step292700 (300 new updates) with no dashboard error. This records launch, not a claim of improved FEM accuracy.
