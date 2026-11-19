@@ -1,9 +1,9 @@
 {
   "phase": "running",
   "branch": "soap_2e5",
-  "step": 289700,
-  "offset": 2300,
+  "step": 290700,
+  "offset": 3300,
   "target_step": 292400,
   "learning_rate": 2e-05,
-  "elapsed_seconds": 223.395991331
+  "elapsed_seconds": 319.6978015169998
 }
