@@ -1,0 +1,25 @@
+{
+  "base_step": 287400,
+  "updates_each": 5000,
+  "branches": [
+    "soap_2e5",
+    "soap_1e4"
+  ],
+  "learning_rates": [
+    2e-05,
+    0.0001
+  ],
+  "soap_betas": [
+    0.95,
+    0.95
+  ],
+  "precondition_frequency": 10,
+  "max_precond_dim": 1024,
+  "precondition_1d": false,
+  "weight_decay": 0,
+  "extra_initialization_gradient_evaluations_each": 1,
+  "shared_training_rng_restored": true,
+  "optimizer_state": "Fresh SOAP state; original Adam state is retained only in base and comparison",
+  "source_commit": "a7c92f174c49b13136294a94ae0d46266b4f671f",
+  "automatic_promotion": false
+}

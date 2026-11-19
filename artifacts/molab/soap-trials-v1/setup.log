@@ -1,0 +1,28 @@
+Using CPython 3.13.11 interpreter at: /usr/local/bin/python3.13
+Creating virtual environment at: /home/marimo/wall_soap_trials_v1/venv
+Using Python 3.13.11 environment at: /home/marimo/wall_soap_trials_v1/venv
+Resolved 13 packages in 701ms
+Downloading jax (3.2MiB)
+Downloading jaxlib (85.7MiB)
+Downloading numpy (15.0MiB)
+Downloading scipy (33.7MiB)
+ Downloaded jax
+ Downloaded numpy
+ Downloaded scipy
+ Downloaded jaxlib
+Prepared 13 packages in 5.24s
+Installed 13 packages in 86ms
+ + absl-py==2.5.1
+ + chex==0.1.91
+ + jax==0.11.2
+ + jaxlib==0.11.2
+ + jaxtyping==0.3.3
+ + ml-dtypes==0.7.0
+ + numpy==2.5.5
+ + opt-einsum==3.4.0
+ + optax==0.2.6
+ + scipy==1.18.1
+ + toolz==1.2.0
+ + typing-extensions==4.16.0
+ + wadler-lindig==0.1.8
+GPU_AND_DEPENDENCIES_OK [CudaDevice(id=0)]

@@ -1,0 +1,14 @@
+{
+  "phase": "ready",
+  "base_step": 287400,
+  "base_sha256": "72bbe88ddc539258b9bfb433709aa434776393bd5f7e163d90478cbf7fa0e6c2",
+  "python": "/home/marimo/wall_soap_trials_v1/venv/bin/python",
+  "dependency_pins": {
+    "jax": "0.11.2",
+    "jaxlib": "0.11.2",
+    "optax": "0.2.6",
+    "chex": "0.1.91",
+    "jaxtyping": "0.3.3"
+  },
+  "soap_source_commit": "a7c92f174c49b13136294a94ae0d46266b4f671f"
+}

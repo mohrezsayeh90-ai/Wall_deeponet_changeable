@@ -1,0 +1,5 @@
+{
+  "original_sha256": "430668d9e5fa026807e78d3e58482d88c61425f22193b527729f5bac3df4b9fd",
+  "gradient_sha256": "7cc4eea92d6ebba50f798839d28778386f073548104d8d4d5462896dad3f3808",
+  "changes": "Return identical clipped batch gradient, loss, terms and norm before original Adam update; physics untouched"
+}
