@@ -13,6 +13,7 @@ def _rows(_p):
   except json.JSONDecodeError:pass
  return _out
 _s=_read(_r/'status.json');_pre=_read(_r/'preflight.json');_fail=_read(_r/'failure.json');_off=_s.get('offset',0);_step=_s.get('step',302400)
+_comparison_note=mo.md('**آبی: Adam تا ۱۵هزار گام اجرا شده و متوقف است. نارنجی: SOAP در حال ادامه است. بعد از خط‌چین، فقط SOAP آموزش دیده؛ Adam هم‌بودجه هنوز اجرا نشده است.**')
 _phase='خطا؛ بررسی لازم است' if _fail else {'completed':'پایان ۲۰هزار گام','stopped':'توقف طبق معیار ارزیابی','running':'آموزش در حال اجرا'}.get(_s.get('phase'),'بررسی بازیابی دقیق SOAP')
 _now=_dt.now(_ZI('Asia/Tehran')).strftime('%H:%M:%S')
 _header=mo.Html(f'<section dir="rtl" style="font-family:Tahoma;background:#eef2ff;padding:20px;border-radius:14px"><h2>ادامهٔ ۲۰هزارگامی SOAP</h2><h3>{_phase} · گام {_step:,}</h3><p>آخرین تازه‌سازی: {_now} تهران · نرخ 2e-5</p><progress value="{_off}" max="20000" style="width:100%;height:22px"></progress><p>{_off:,} از ۲۰٬۰۰۰ گام جدید — مجموع SOAP: {_off+15000:,} از ۳۵٬۰۰۰</p><p>ادامه از وزن ۳۰۲٬۴۰۰ با حفظ کامل وضعیت SOAP و نمونه‌برداری جدید در هر گام؛ هدف ۳۲۲٬۴۰۰.</p><p>ارزیابی ۲۸ نمونهٔ FEM هر ۲۵۰۰ گام؛ توقف در صورت پسرفت پایدار. بازیابی دقیق: {"موفق" if _pre.get("passed") else "در حال بررسی"}</p></section>')
@@ -24,10 +25,12 @@ for _name,_t,_v in [('Adam15k (shorter reference)',_rows(_old/'baseline/training
 for _a in _axs:
  _a.axvline(15000,color='gray',ls=':',alpha=.6);_a.set(yscale='log',xlabel='Total parameter updates since base287400',ylabel='Loss');_a.grid(alpha=.2)
  if _a.lines:_a.legend(fontsize=8)
+ _a.text(15000,1.01,'Adam ends at15k',transform=_a.get_xaxis_transform(),ha='right',fontsize=8,color='#2563eb')
+ if _step>302400:_a.axvspan(15000,_step-287400,color='#f59e0b',alpha=.06)
 _axs0=_axs[0];_axs0.set_title('Combined SOAP history: 15k completed + 20k continuation')
 _axs[1].set_title('Identical fixed audit; compare physical FEM errors separately')
 _plot=mo.as_html(_fig);_plt.close(_fig)
 _mark=_r/'regression_guard.json';_guard=_read(_mark)
 _guard_text=mo.md(f'آخرین بررسی FEM: گام **{_guard.get("step",302400):,}** · تعداد بررسی‌های پیاپی با پسرفت بیش از آستانه: **{_guard.get("bad_streak",0)}**')
 _zip=_r/'results.zip';_dl=mo.download(data=lambda:_zip.read_bytes(),filename='soap_continue20k_results.zip',label='دانلود خروجی کامل') if _zip.exists() else mo.md('وزن‌های دوره‌ای به گیت‌هاب منتقل می‌شوند؛ خروجی نهایی پس از پایان آماده می‌شود.')
-mo.vstack([training_refresh,_header,_guard_text,_plot,_dl])
+mo.vstack([training_refresh,_header,_guard_text,_comparison_note,_plot,_dl])

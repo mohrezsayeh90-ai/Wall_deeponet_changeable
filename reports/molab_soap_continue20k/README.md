@@ -17,3 +17,7 @@ Live dashboard combines the previous15k and this20k SOAP history. The existing A
 ## Verified launch
 
 Production preflight passed: exact parameter/SOAP-state roundtrip, identical next sampled batch and identical next optimizer update. SOAP counter15001→15002 was verified, with no new basis initialization. Training reached302600 (200 new updates); the live dashboard had no errors. This records execution, not an accuracy improvement.
+
+## Chart interpretation
+
+Blue is the completed Adam15k reference; only the orange SOAP branch was continued. The dashboard explicitly explains this in Persian, labels the Adam cutoff at15000 and shades subsequent SOAP-only updates. No Adam continuation was executed or extrapolated. A matched35k Adam comparison requires another20k actual Adam updates from its saved302400 state.
