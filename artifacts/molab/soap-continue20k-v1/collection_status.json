@@ -1,6 +1,6 @@
 {
-  "last_success_unix": 1795101896.5381548,
-  "verified_files": 16,
+  "last_success_unix": 1795102009.7697241,
+  "verified_files": 19,
   "sha256": {
     "supervisor.py": "774e7e1c018141670491815278c6fbe4c6d2b8e006ff3fcb93ef71e7cfdb4282",
     "worker.py": "105c5a534365605957ccc9b4d5d43850f4aa6e613169a24236e4ba280e6597a0",
@@ -13,11 +13,14 @@
     "control.npz": "7e97b889d2db3b627acd5bfde5d5ee973bccb4bf2c010c065c5dd4e509f8c7ce",
     "audit.npz": "d718b0427f63ca06a416c490c9c5ac072424b9d798f0582be878f28533c3453a",
     "start_fem.json": "75013db912e437ab0b41bf67cba5d5ac148ba96152a065e8962b4ff2d4cde1d8",
-    "status.json": "68dd4cfd25ead8b8c7efbf2de990e5694206b42d4ec35f3e633b5db33ef697e3",
-    "continuation/probe.jsonl": "e9231bbe7e428afd0912ad0b4f3e79ecea2c97e8ff5098b04f911bc4b643fc3a",
-    "continuation/training.jsonl": "d6b19cfefcf69373ea8a68ecd6d03777960e60332b9fbcc77e7c04ee82619cc6",
+    "status.json": "d0d41acfef33d532d2d00f775849647068cba605c1437c79acd62794ff06fc84",
+    "continuation/probe.jsonl": "09542e4c480a593be328164c71f52944da4c7ff978bdfcd8030cf3bfaab167fa",
+    "continuation/training.jsonl": "972f355603e579be8f6547bce1dfb9f27b7602de8f6b5d34442f2cf771a8ad51",
     "continuation/snapshots/checkpoint_302500.ready.json": "6866703df46fc6b24244d0df6909116741c285fce3c836d9ec246c9b8b4350bc",
-    "continuation/snapshots/checkpoint_302500.npz": "a3c16f17cf0c747128e5f2fff16276e4078703b7f97add8f2fe9663e3a37e29d"
+    "continuation/snapshots/checkpoint_302500.npz": "a3c16f17cf0c747128e5f2fff16276e4078703b7f97add8f2fe9663e3a37e29d",
+    "dashboard.png": "9661808508c8fc227fa568489b1ef0899b1b44715f177b921a5df7d6690f2702",
+    "continuation/snapshots/checkpoint_303400.ready.json": "a81bfd2a1025873bbc9aa6de20ee38ac8bfac89afb0276c5e172774fcf3af1a3",
+    "continuation/snapshots/checkpoint_303400.npz": "ffd964ae36ac60c584dd58eb70612a47c07de46eb3067c3b8a0a184bc91bee31"
   },
   "collector_lifetime": "Runs in Codex cloud; reconnect/restart needed if that environment stops. No molab persistence guarantee."
 }
