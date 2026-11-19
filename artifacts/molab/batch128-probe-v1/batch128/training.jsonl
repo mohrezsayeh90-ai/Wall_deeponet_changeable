@@ -1,0 +1,7 @@
+{"step": 313401, "optimizer_updates": 1, "equivalent_batch32_updates": 4, "loss": 0.016258252784609795, "gradient_norm": 0.34947463870048523, "step_seconds": 49.324692113999845, "elapsed_seconds": 49.32573459999912}
+{"step": 313405, "optimizer_updates": 5, "equivalent_batch32_updates": 20, "loss": 0.009595934301614761, "gradient_norm": 0.13248884677886963, "step_seconds": 0.24896586700015177, "elapsed_seconds": 50.34085145499921}
+{"step": 313410, "optimizer_updates": 10, "equivalent_batch32_updates": 40, "loss": 0.012985014356672764, "gradient_norm": 0.1878660023212433, "step_seconds": 0.3016165210010513, "elapsed_seconds": 51.656323391000114}
+{"step": 313415, "optimizer_updates": 15, "equivalent_batch32_updates": 60, "loss": 0.016779739409685135, "gradient_norm": 0.264788955450058, "step_seconds": 0.2508406469987676, "elapsed_seconds": 52.93347411799914}
+{"step": 313420, "optimizer_updates": 20, "equivalent_batch32_updates": 80, "loss": 0.013894246891140938, "gradient_norm": 0.18066377937793732, "step_seconds": 0.28653169400058687, "elapsed_seconds": 54.237725017999765}
+{"step": 313425, "optimizer_updates": 25, "equivalent_batch32_updates": 100, "loss": 0.012250556610524654, "gradient_norm": 0.1825011819601059, "step_seconds": 0.25481667700114485, "elapsed_seconds": 55.507849814999645}
+{"step": 313430, "optimizer_updates": 30, "equivalent_batch32_updates": 120, "loss": 0.01081261970102787, "gradient_norm": 0.15700329840183258, "step_seconds": 0.29941507799958345, "elapsed_seconds": 56.827429814000425}
