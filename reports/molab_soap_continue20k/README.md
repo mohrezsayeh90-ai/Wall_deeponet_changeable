@@ -12,7 +12,7 @@ Full-state snapshots after100, every1000 and every2500 additional steps, plus fi
 
 [Source](../../notebooks/molab_soap_continue20k/) · [Collected outputs](../../artifacts/molab/soap-continue20k-v1/). Molab root `/home/marimo/wall_soap_continue20k_v1`. Reproduction needs the pinned helper/vendor/venv and frozen inputs restored at the prior-stage paths recorded in the worker. No credentials are saved in files.
 
-Live dashboard combines the previous15k and this20k SOAP history. The existing Adam15k curve is explicitly a **shorter-budget reference**, not a matched35000-step comparison. Final metrics and a ZIP bundle are generated after completion/guarded stop. No accuracy gain is presumed from launching.
+Live dashboard compares SOAP to the actual earlier adaptive-Adam training history archived through378600, clipped to their common progress. Their learning-rate policies differ and are plotted explicitly. Final FEM metrics retain the separate Adam15k result as a shorter-budget reference; historical weights at matching later SOAP steps were not archived. No accuracy gain is presumed from launching.
 
 ## Verified launch
 
@@ -20,4 +20,4 @@ Production preflight passed: exact parameter/SOAP-state roundtrip, identical nex
 
 ## Chart interpretation
 
-Blue is the completed Adam15k reference; only the orange SOAP branch was continued. The dashboard explicitly explains this in Persian, labels the Adam cutoff at15000 and shades subsequent SOAP-only updates. No Adam continuation was executed or extrapolated. A matched35k Adam comparison requires another20k actual Adam updates from its saved302400 state.
+The blue curve now uses the previously saved adaptive-Adam log through378600, replacing the shorter constant-rate15k curve. The orange SOAP curve and blue history are shown over common progress, with actual recorded audit points and an LR panel. No extrapolation or additional Adam training is used. [Comparison and exact paired evaluations](../historical_adam_vs_soap/README.md).

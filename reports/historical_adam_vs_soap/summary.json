@@ -1,0 +1,20 @@
+{
+  "historical_log_last_step": 378600,
+  "historical_audit_last_step": 372400,
+  "common_display_last_step": 307090,
+  "last_exact_common_probe": {
+    "step": 302400,
+    "updates": 15000,
+    "adam_control": 0.012782204896211624,
+    "soap_control": 0.012697843834757805,
+    "adam_audit": 0.013216866180300713,
+    "soap_audit": 0.012815143913030624,
+    "soap_audit_reduction_vs_adam_percent": 3.039466858405826,
+    "historical_adam_lr": 1e-05
+  },
+  "historical_sources": {
+    "reports/full_training_history/current_run_observation.json": "dcf7d4f1768b6bcce86e3b01a84ad16cdc23bb392575ee12323fdff2a71a3c5d",
+    "reports/molab_adaptive_100k/diagnostic/observation.json": "12d0f54c2a61167c3635a5347601a47b8ed51cd78caa0a36b26d65fa15d19cf3"
+  },
+  "note": "Earlier Adam used adaptive learning rates; SOAP uses constant2e-5. Same starting parameters and fixed control/audit cohorts. Different evaluation cadence: compare only exact common recorded steps. No loss extrapolation or additional Adam training."
+}
