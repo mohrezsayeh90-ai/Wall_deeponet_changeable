@@ -1,6 +1,6 @@
 {
-  "last_success_unix": 1795101785.459053,
-  "verified_files": 7,
+  "last_success_unix": 1795101896.5381548,
+  "verified_files": 16,
   "sha256": {
     "supervisor.py": "774e7e1c018141670491815278c6fbe4c6d2b8e006ff3fcb93ef71e7cfdb4282",
     "worker.py": "105c5a534365605957ccc9b4d5d43850f4aa6e613169a24236e4ba280e6597a0",
@@ -8,7 +8,16 @@
     "manifest.json": "70acc9de04a7aafa980d708bef869fdb9401c0e55458fa6921c2e2046915677c",
     "supervisor.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "console.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "supervisor-status.json": "a07af436f0a84d9435e6c2d51fc1d34188b688e442556ea62c892bb527352c13"
+    "supervisor-status.json": "a07af436f0a84d9435e6c2d51fc1d34188b688e442556ea62c892bb527352c13",
+    "preflight.json": "a4aca9a555f99d069b2f912e973bb90ba258b70c634ab4b179cd6bbda76c02bb",
+    "control.npz": "7e97b889d2db3b627acd5bfde5d5ee973bccb4bf2c010c065c5dd4e509f8c7ce",
+    "audit.npz": "d718b0427f63ca06a416c490c9c5ac072424b9d798f0582be878f28533c3453a",
+    "start_fem.json": "75013db912e437ab0b41bf67cba5d5ac148ba96152a065e8962b4ff2d4cde1d8",
+    "status.json": "68dd4cfd25ead8b8c7efbf2de990e5694206b42d4ec35f3e633b5db33ef697e3",
+    "continuation/probe.jsonl": "e9231bbe7e428afd0912ad0b4f3e79ecea2c97e8ff5098b04f911bc4b643fc3a",
+    "continuation/training.jsonl": "d6b19cfefcf69373ea8a68ecd6d03777960e60332b9fbcc77e7c04ee82619cc6",
+    "continuation/snapshots/checkpoint_302500.ready.json": "6866703df46fc6b24244d0df6909116741c285fce3c836d9ec246c9b8b4350bc",
+    "continuation/snapshots/checkpoint_302500.npz": "a3c16f17cf0c747128e5f2fff16276e4078703b7f97add8f2fe9663e3a37e29d"
   },
   "collector_lifetime": "Runs in Codex cloud; reconnect/restart needed if that environment stops. No molab persistence guarantee."
 }

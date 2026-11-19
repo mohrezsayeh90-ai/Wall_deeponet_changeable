@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "source_sha256": "6f38542948ca8a1d4264ef50e85739046a3d3348b8b153704633f0e6addf6630",
+  "resumed_step": 302400,
+  "restored_optimizer_count": 15001,
+  "next_optimizer_count": 15002,
+  "parameters_and_state_exact": true,
+  "rng_next_batch_exact": true,
+  "next_update_after_roundtrip_exact": true,
+  "no_optimizer_reinitialization": true,
+  "extra_basis_initialization_updates": 0
+}
