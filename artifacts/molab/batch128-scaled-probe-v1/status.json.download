@@ -1,0 +1,10 @@
+{
+  "phase": "running",
+  "optimizer_updates": 500,
+  "target_optimizer_updates": 500,
+  "equivalent_batch32_updates": 2000,
+  "target_equivalent_batch32_updates": 2000,
+  "global_batch": 128,
+  "anchor_step": 313400,
+  "elapsed_seconds": 137.14117972500026
+}

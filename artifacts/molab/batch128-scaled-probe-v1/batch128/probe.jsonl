@@ -1,0 +1,4 @@
+{"optimizer_updates": 100, "equivalent_batch32_updates": 400, "control": 0.012968607246875763, "audit": 0.012346198782324791}
+{"optimizer_updates": 200, "equivalent_batch32_updates": 800, "control": 0.01271471194922924, "audit": 0.0123063363134861}
+{"optimizer_updates": 300, "equivalent_batch32_updates": 1200, "control": 0.01281799841672182, "audit": 0.012512125074863434}
+{"optimizer_updates": 400, "equivalent_batch32_updates": 1600, "control": 0.012764992192387581, "audit": 0.012480719946324825}

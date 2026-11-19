@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "anchor_step": 313400,
+  "global_batch": 128,
+  "microbatch": 32,
+  "microbatches": 4,
+  "gradient_matches_four_microbatches": true,
+  "loss_matches_four_microbatches": true,
+  "same_physics_objective": true,
+  "learning_rate": 4e-05,
+  "no_optimizer_reset": true
+}

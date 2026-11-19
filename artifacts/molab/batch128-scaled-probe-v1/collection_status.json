@@ -1,0 +1,19 @@
+{
+  "last_success_unix": 1795103825.8252213,
+  "verified_files": 12,
+  "sha256": {
+    "pause_record.json": "5cb9db88494004d3f94acdfb3024e3f5b73dc270c5c1184d3ef1742c2afb070f",
+    "worker.py": "b20747e2a4cc56edc19983f55fb96efe07a33738cb8a3704dd69fa35a2de9070",
+    "console.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "preflight.json": "18d95427e41dc15f44a8879135f0d64d5041102c2418a6bf6282546407177e43",
+    "base_metrics.json": "ceeb8c3cc85d910432b09f9b231aea885749d6b23a296579b6204f08b56d753f",
+    "reference_metrics.json": "cee7cad9052b8768585bfc478132f81bbe4cfbb6d5a48c7ab9bfb5e5165dfe41",
+    "batch128/training.jsonl": "d1f0c9ec2b067753de27787e3dc3a2f456b1a6a97137cb0018b5bce0862c2a7f",
+    "batch128/probe.jsonl": "e1e193e60d40a83dbca8a5eda179a8b9f5df898998a4f0fa8eee82f71c81335c",
+    "batch128/snapshots/checkpoint_313500.ready.json": "3c1b46033aed255d778d12e9d6f53f41bc051a19588b608fe2bd94f23932e796",
+    "batch128/snapshots/checkpoint_313500.npz": "c752f0297e756f123200716480b57c51d70b5c34e7e5bc494d18aa7a0942212d",
+    "batch128/snapshots/checkpoint_313650.ready.json": "b8a2d7b8b3ca4143c45a07018171c6aaea50fe35ee1855b82cbb3b95068ed2bb",
+    "batch128/snapshots/checkpoint_313650.npz": "a65a704764ab16c87fc65f0b8d8e0548cfb13ffae64868bfcfae167785da5351"
+  },
+  "collector_lifetime": "Runs in Codex cloud; reconnect/restart needed if that environment stops. No molab persistence guarantee."
+}
