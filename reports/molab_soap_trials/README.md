@@ -23,3 +23,7 @@ The independent collector verifies file SHA256 and pushes immutable full-state s
 [Source and pinned SOAP implementation](../../notebooks/molab_soap_trials/) · [Collected outputs](../../artifacts/molab/soap-trials-v1/).
 
 Remote root: `/home/marimo/wall_soap_trials_v1`. Reproduction requires restoring the existing frozen Kaggle source/pool/FEM inputs and the completed RAD-suite references at the paths recorded in the worker. No locked test is opened.
+
+## Launch verification
+
+Production preflight passed: clipped-gradient agreement, finite nonzero SOAP update, exact full-state round trip and identical next update after restore. Off-preconditioning EMA changes were verified. First common-batch SHA256 matches the earlier287400 continuation (`091545e904a2e5998e3dc4d0901ab3bb68807f96d6337254c7504d8c51551357`). A full model+SOAP NPZ is about31.7MB. The first low-rate branch reached its first100 parameter updates; high-rate branch is queued. No convergence result is claimed from launch.
