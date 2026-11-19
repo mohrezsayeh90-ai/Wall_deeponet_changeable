@@ -11,3 +11,7 @@ Latest full state is saved every100 steps. Immutable full-state snapshots are re
 [Source](../../notebooks/molab_rad_ab_15k/) · [Collected logs, evaluations and snapshots](../../artifacts/molab/rad-ab-15k-v1/). The independent cloud collector verifies every file SHA256 and pushes snapshots during training. It depends on this Codex cloud process remaining alive and network credentials remaining valid; only a successful Git push proves a backup reached GitHub. It does not make ephemeral molab storage persistent. No tokens are stored in repository files. The old287400 checkpoint is retained permanently.
 
 Live notebook root: `/home/marimo/wall_rad_ab_15k_v1`. Final figures and per-case metrics are produced after both branches finish, with a downloadable `results.zip`. A4h watchdog stops runaway computation; expected time will be refined from measured branch speeds. No later long run is launched automatically before comparing these results.
+
+## Dashboard visibility repair
+
+The refresh widget now renders inside the dashboard itself, including focused/kiosk output views. Previously the timer lived in a separate cell and the dashboard retained its initial580-step output. Imports and controls precede the dashboard, its output is expanded, and a Tehran refresh timestamp is displayed. Browser screenshots confirmed rendering; the refresh counter advanced to `10 (12)` and the dashboard showed the RAD branch without cell errors. This changes presentation only; trainer processes are untouched.
