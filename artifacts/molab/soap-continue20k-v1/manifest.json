@@ -1,0 +1,14 @@
+{
+  "resume_step": 302400,
+  "source_sha256": "6f38542948ca8a1d4264ef50e85739046a3d3348b8b153704633f0e6addf6630",
+  "additional_updates": 20000,
+  "target_step": 322400,
+  "optimizer": "soap",
+  "learning_rate": 2e-05,
+  "reset_optimizer": false,
+  "resample_each_update": true,
+  "fem_interval": 2500,
+  "deferred_expanded_fem": "User explicitly chose immediate20k continuation rather than new32-case FEM validation",
+  "regression_guard": "Stop after two consecutive checks with any monitored median >1.10 times its302400 value",
+  "automatic_promotion": false
+}
