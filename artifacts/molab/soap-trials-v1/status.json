@@ -1,9 +1,10 @@
 {
-  "phase": "running",
-  "branch": "soap_1e4",
-  "step": 290500,
-  "offset": 3100,
-  "target_step": 292400,
-  "learning_rate": 0.0001,
-  "elapsed_seconds": 272.41022922699995
+  "phase": "completed",
+  "branches": [
+    "soap_2e5",
+    "soap_1e4"
+  ],
+  "updates_each": 5000,
+  "step": 292400,
+  "automatic_promotion": false
 }

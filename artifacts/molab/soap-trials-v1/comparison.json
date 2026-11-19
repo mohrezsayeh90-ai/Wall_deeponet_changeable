@@ -1,0 +1,677 @@
+{
+  "base_step": 287400,
+  "updates_each": 5000,
+  "base_fem": {
+    "cases": [
+      {
+        "case": "1",
+        "velocity_l2": 0.0022042299526102488,
+        "pressure_l2": 0.003786994284636155
+      },
+      {
+        "case": "2",
+        "velocity_l2": 0.0020387557352711774,
+        "pressure_l2": 0.004027500389948826
+      },
+      {
+        "case": "3",
+        "velocity_l2": 0.004811110800848323,
+        "pressure_l2": 0.00871144294889589
+      },
+      {
+        "case": "4",
+        "velocity_l2": 0.008753696915145099,
+        "pressure_l2": 0.017854978680942525
+      },
+      {
+        "case": "5",
+        "velocity_l2": 0.01194085035469154,
+        "pressure_l2": 0.006853316694715187
+      },
+      {
+        "case": "6",
+        "velocity_l2": 0.012366271911559827,
+        "pressure_l2": 0.005731475656996764
+      },
+      {
+        "case": "7",
+        "velocity_l2": 0.009431573867737523,
+        "pressure_l2": 0.027964945055850066
+      },
+      {
+        "case": "8",
+        "velocity_l2": 0.014975949431485907,
+        "pressure_l2": 0.02202891573686843
+      },
+      {
+        "case": "9",
+        "velocity_l2": 0.012189538743963842,
+        "pressure_l2": 0.014916465832913542
+      },
+      {
+        "case": "10",
+        "velocity_l2": 0.01271906961687632,
+        "pressure_l2": 0.009856870938803759
+      },
+      {
+        "case": "11",
+        "velocity_l2": 0.0211656451232081,
+        "pressure_l2": 0.012237344210677861
+      },
+      {
+        "case": "12",
+        "velocity_l2": 0.03806379462391024,
+        "pressure_l2": 0.009934995706108335
+      },
+      {
+        "case": "13",
+        "velocity_l2": 0.024591322589691832,
+        "pressure_l2": 0.01793104000890132
+      },
+      {
+        "case": "14",
+        "velocity_l2": 0.047422272497554895,
+        "pressure_l2": 0.06370474667923617
+      },
+      {
+        "case": "15",
+        "velocity_l2": 0.03170222294091114,
+        "pressure_l2": 0.04228928776262617
+      },
+      {
+        "case": "16",
+        "velocity_l2": 0.07649980823932513,
+        "pressure_l2": 0.14427832936167362
+      },
+      {
+        "case": "17",
+        "velocity_l2": 0.01820097336566994,
+        "pressure_l2": 0.022250400811686527
+      },
+      {
+        "case": "18",
+        "velocity_l2": 0.010465188040369807,
+        "pressure_l2": 0.014431254687315024
+      },
+      {
+        "case": "19",
+        "velocity_l2": 0.017639318292449722,
+        "pressure_l2": 0.014572399891920515
+      },
+      {
+        "case": "20",
+        "velocity_l2": 0.05108969788894719,
+        "pressure_l2": 0.018812577782113548
+      },
+      {
+        "case": "pilot_0",
+        "velocity_l2": 0.0023919497323551865,
+        "pressure_l2": 0.0035102441738069654
+      },
+      {
+        "case": "pilot_1",
+        "velocity_l2": 0.009297832262384287,
+        "pressure_l2": 0.01056298001477796
+      },
+      {
+        "case": "pilot_2",
+        "velocity_l2": 0.006724108645242522,
+        "pressure_l2": 0.013291314667503063
+      },
+      {
+        "case": "pilot_3",
+        "velocity_l2": 0.010816861188263364,
+        "pressure_l2": 0.007949194034149891
+      },
+      {
+        "case": "pilot_4",
+        "velocity_l2": 0.02384318914717842,
+        "pressure_l2": 0.010532387322236785
+      },
+      {
+        "case": "pilot_5",
+        "velocity_l2": 0.012017589855419463,
+        "pressure_l2": 0.008643773404069332
+      },
+      {
+        "case": "pilot_6",
+        "velocity_l2": 0.018524777798632677,
+        "pressure_l2": 0.005629180985618452
+      },
+      {
+        "case": "pilot_7",
+        "velocity_l2": 0.024152054580682866,
+        "pressure_l2": 0.0067891747916523455
+      }
+    ],
+    "saved20": {
+      "velocity_l2_median": 0.013847509524181113,
+      "velocity_l2_max": 0.07649980823932513,
+      "pressure_l2_median": 0.014744432862417028,
+      "pressure_l2_max": 0.14427832936167362
+    },
+    "pilot8": {
+      "velocity_l2_median": 0.011417225521841413,
+      "velocity_l2_max": 0.024152054580682866,
+      "pressure_l2_median": 0.008296483719109612,
+      "pressure_l2_max": 0.013291314667503063
+    }
+  },
+  "methods": {
+    "adam": {
+      "fem": {
+        "cases": [
+          {
+            "case": "1",
+            "velocity_l2": 0.0018924631748742525,
+            "pressure_l2": 0.005563905194682126
+          },
+          {
+            "case": "2",
+            "velocity_l2": 0.0018311746367304894,
+            "pressure_l2": 0.007139093007514692
+          },
+          {
+            "case": "3",
+            "velocity_l2": 0.004777087308449986,
+            "pressure_l2": 0.007192568858688236
+          },
+          {
+            "case": "4",
+            "velocity_l2": 0.008967799207203373,
+            "pressure_l2": 0.020793333815663815
+          },
+          {
+            "case": "5",
+            "velocity_l2": 0.010807791499008049,
+            "pressure_l2": 0.014224978885467227
+          },
+          {
+            "case": "6",
+            "velocity_l2": 0.013130168730375024,
+            "pressure_l2": 0.006268046975229005
+          },
+          {
+            "case": "7",
+            "velocity_l2": 0.008324537269888941,
+            "pressure_l2": 0.018896856551596095
+          },
+          {
+            "case": "8",
+            "velocity_l2": 0.015085301961703712,
+            "pressure_l2": 0.024999345168859433
+          },
+          {
+            "case": "9",
+            "velocity_l2": 0.011543291990868869,
+            "pressure_l2": 0.01417442451430591
+          },
+          {
+            "case": "10",
+            "velocity_l2": 0.013905009649364164,
+            "pressure_l2": 0.01408645565986084
+          },
+          {
+            "case": "11",
+            "velocity_l2": 0.02090511466008924,
+            "pressure_l2": 0.005953826969177391
+          },
+          {
+            "case": "12",
+            "velocity_l2": 0.04077611762551362,
+            "pressure_l2": 0.012581182007482514
+          },
+          {
+            "case": "13",
+            "velocity_l2": 0.024062055487916734,
+            "pressure_l2": 0.020593173444427824
+          },
+          {
+            "case": "14",
+            "velocity_l2": 0.04545247082023266,
+            "pressure_l2": 0.05121456702908004
+          },
+          {
+            "case": "15",
+            "velocity_l2": 0.03288267805184317,
+            "pressure_l2": 0.0458412553818318
+          },
+          {
+            "case": "16",
+            "velocity_l2": 0.07950281722829253,
+            "pressure_l2": 0.14045285256360346
+          },
+          {
+            "case": "17",
+            "velocity_l2": 0.019359825758902723,
+            "pressure_l2": 0.018286634378773953
+          },
+          {
+            "case": "18",
+            "velocity_l2": 0.009421756814218675,
+            "pressure_l2": 0.009187792818496564
+          },
+          {
+            "case": "19",
+            "velocity_l2": 0.017594031365240428,
+            "pressure_l2": 0.011448831938826912
+          },
+          {
+            "case": "20",
+            "velocity_l2": 0.05041637131775454,
+            "pressure_l2": 0.014411049869053491
+          },
+          {
+            "case": "pilot_0",
+            "velocity_l2": 0.003216390889027959,
+            "pressure_l2": 0.0024567192810038305
+          },
+          {
+            "case": "pilot_1",
+            "velocity_l2": 0.010273735783157954,
+            "pressure_l2": 0.008188018703800386
+          },
+          {
+            "case": "pilot_2",
+            "velocity_l2": 0.007078323042944729,
+            "pressure_l2": 0.016925888835383582
+          },
+          {
+            "case": "pilot_3",
+            "velocity_l2": 0.011127811170621168,
+            "pressure_l2": 0.006574792062189058
+          },
+          {
+            "case": "pilot_4",
+            "velocity_l2": 0.023016032095344398,
+            "pressure_l2": 0.016641253402178122
+          },
+          {
+            "case": "pilot_5",
+            "velocity_l2": 0.012942220786836102,
+            "pressure_l2": 0.0053851045275908225
+          },
+          {
+            "case": "pilot_6",
+            "velocity_l2": 0.018975308485072742,
+            "pressure_l2": 0.006723282832417401
+          },
+          {
+            "case": "pilot_7",
+            "velocity_l2": 0.02524098165353031,
+            "pressure_l2": 0.00543052727771533
+          }
+        ],
+        "saved20": {
+          "velocity_l2_median": 0.014495155805533937,
+          "velocity_l2_max": 0.07950281722829253,
+          "pressure_l2_median": 0.014199701699886567,
+          "pressure_l2_max": 0.14045285256360346
+        },
+        "pilot8": {
+          "velocity_l2_median": 0.012035015978728636,
+          "velocity_l2_max": 0.02524098165353031,
+          "pressure_l2_median": 0.006649037447303229,
+          "pressure_l2_max": 0.016925888835383582
+        }
+      },
+      "last_probe": {
+        "step": 292400,
+        "offset": 5000,
+        "control": 0.013356483541429043,
+        "audit": 0.01355315838009119
+      },
+      "elapsed_to_last_5000_log": 366.94234531200027,
+      "scope": "Same starting parameters and baseline RNG; SOAP own fresh state and extra initialization gradient; Adam continues saved state"
+    },
+    "soap_2e5": {
+      "fem": {
+        "cases": [
+          {
+            "case": "1",
+            "velocity_l2": 0.0018585221621659504,
+            "pressure_l2": 0.003905447541230085
+          },
+          {
+            "case": "2",
+            "velocity_l2": 0.0017417856537136195,
+            "pressure_l2": 0.004139194936486745
+          },
+          {
+            "case": "3",
+            "velocity_l2": 0.004783998441389911,
+            "pressure_l2": 0.008347932554325917
+          },
+          {
+            "case": "4",
+            "velocity_l2": 0.008375168153554848,
+            "pressure_l2": 0.016334330856885564
+          },
+          {
+            "case": "5",
+            "velocity_l2": 0.011383043705983191,
+            "pressure_l2": 0.008730089405739687
+          },
+          {
+            "case": "6",
+            "velocity_l2": 0.012799262092784373,
+            "pressure_l2": 0.006067626925785569
+          },
+          {
+            "case": "7",
+            "velocity_l2": 0.007915401094098754,
+            "pressure_l2": 0.02271295397626538
+          },
+          {
+            "case": "8",
+            "velocity_l2": 0.015126854220726217,
+            "pressure_l2": 0.023199909050779077
+          },
+          {
+            "case": "9",
+            "velocity_l2": 0.011397901144941491,
+            "pressure_l2": 0.012109170910769585
+          },
+          {
+            "case": "10",
+            "velocity_l2": 0.013009343089524249,
+            "pressure_l2": 0.010433691416032443
+          },
+          {
+            "case": "11",
+            "velocity_l2": 0.02037793543906666,
+            "pressure_l2": 0.009212981139864627
+          },
+          {
+            "case": "12",
+            "velocity_l2": 0.03864541467794799,
+            "pressure_l2": 0.011286465224289262
+          },
+          {
+            "case": "13",
+            "velocity_l2": 0.02377198708827341,
+            "pressure_l2": 0.018463603017879967
+          },
+          {
+            "case": "14",
+            "velocity_l2": 0.04606443413524591,
+            "pressure_l2": 0.055256768116876166
+          },
+          {
+            "case": "15",
+            "velocity_l2": 0.03223311219079851,
+            "pressure_l2": 0.04055339031701637
+          },
+          {
+            "case": "16",
+            "velocity_l2": 0.07819292118684212,
+            "pressure_l2": 0.13892641031099345
+          },
+          {
+            "case": "17",
+            "velocity_l2": 0.018728370996860307,
+            "pressure_l2": 0.01878108607022466
+          },
+          {
+            "case": "18",
+            "velocity_l2": 0.009829002024532352,
+            "pressure_l2": 0.012266786984723898
+          },
+          {
+            "case": "19",
+            "velocity_l2": 0.017907436558309217,
+            "pressure_l2": 0.012238333026705232
+          },
+          {
+            "case": "20",
+            "velocity_l2": 0.05058662030313033,
+            "pressure_l2": 0.015650783040514305
+          },
+          {
+            "case": "pilot_0",
+            "velocity_l2": 0.0029278963398566183,
+            "pressure_l2": 0.003114512023456406
+          },
+          {
+            "case": "pilot_1",
+            "velocity_l2": 0.010007785053308564,
+            "pressure_l2": 0.008513349326975233
+          },
+          {
+            "case": "pilot_2",
+            "velocity_l2": 0.007007607802367716,
+            "pressure_l2": 0.013300703338360595
+          },
+          {
+            "case": "pilot_3",
+            "velocity_l2": 0.011885413642327359,
+            "pressure_l2": 0.006965482692666217
+          },
+          {
+            "case": "pilot_4",
+            "velocity_l2": 0.02425025588251631,
+            "pressure_l2": 0.013528022060904627
+          },
+          {
+            "case": "pilot_5",
+            "velocity_l2": 0.011377403429992503,
+            "pressure_l2": 0.0074230865561365385
+          },
+          {
+            "case": "pilot_6",
+            "velocity_l2": 0.01885609359228162,
+            "pressure_l2": 0.00509316916670957
+          },
+          {
+            "case": "pilot_7",
+            "velocity_l2": 0.024892167660685638,
+            "pressure_l2": 0.0059439219541434045
+          }
+        ],
+        "saved20": {
+          "velocity_l2_median": 0.014068098655125233,
+          "velocity_l2_max": 0.07819292118684212,
+          "pressure_l2_median": 0.012252560005714565,
+          "pressure_l2_max": 0.13892641031099345
+        },
+        "pilot8": {
+          "velocity_l2_median": 0.011631408536159932,
+          "velocity_l2_max": 0.024892167660685638,
+          "pressure_l2_median": 0.007194284624401378,
+          "pressure_l2_max": 0.013528022060904627
+        }
+      },
+      "last_probe": {
+        "step": 292400,
+        "offset": 5000,
+        "control": 0.012971451506018639,
+        "audit": 0.013059241697192192,
+        "elapsed_seconds": 462.02980820599987
+      },
+      "elapsed_to_last_5000_log": 460.6655890239999,
+      "scope": "Same starting parameters and baseline RNG; SOAP own fresh state and extra initialization gradient; Adam continues saved state",
+      "completion": {
+        "completed": true,
+        "step": 292400,
+        "parameter_updates": 5000,
+        "initialization_gradient_evaluations": 1,
+        "elapsed_seconds": 465.82550139700015
+      }
+    },
+    "soap_1e4": {
+      "fem": {
+        "cases": [
+          {
+            "case": "1",
+            "velocity_l2": 0.0018113363092960477,
+            "pressure_l2": 0.00581851346460031
+          },
+          {
+            "case": "2",
+            "velocity_l2": 0.0016829369960325684,
+            "pressure_l2": 0.005861087729794181
+          },
+          {
+            "case": "3",
+            "velocity_l2": 0.005633737562786814,
+            "pressure_l2": 0.007596859345534934
+          },
+          {
+            "case": "4",
+            "velocity_l2": 0.009397230864581255,
+            "pressure_l2": 0.014748452440812972
+          },
+          {
+            "case": "5",
+            "velocity_l2": 0.010980004128813194,
+            "pressure_l2": 0.012090903653371452
+          },
+          {
+            "case": "6",
+            "velocity_l2": 0.01310177941102446,
+            "pressure_l2": 0.006411180956413155
+          },
+          {
+            "case": "7",
+            "velocity_l2": 0.008093711952424433,
+            "pressure_l2": 0.019905700889455674
+          },
+          {
+            "case": "8",
+            "velocity_l2": 0.014854719238709282,
+            "pressure_l2": 0.02634863157440345
+          },
+          {
+            "case": "9",
+            "velocity_l2": 0.011830433095460637,
+            "pressure_l2": 0.012125197455179296
+          },
+          {
+            "case": "10",
+            "velocity_l2": 0.01224658684820032,
+            "pressure_l2": 0.012531439590066081
+          },
+          {
+            "case": "11",
+            "velocity_l2": 0.018758622593939973,
+            "pressure_l2": 0.006433425719925456
+          },
+          {
+            "case": "12",
+            "velocity_l2": 0.03975473353186259,
+            "pressure_l2": 0.011056312250276685
+          },
+          {
+            "case": "13",
+            "velocity_l2": 0.023450045626258784,
+            "pressure_l2": 0.019058561336247667
+          },
+          {
+            "case": "14",
+            "velocity_l2": 0.04460549948757777,
+            "pressure_l2": 0.04808585342224222
+          },
+          {
+            "case": "15",
+            "velocity_l2": 0.03275592921455789,
+            "pressure_l2": 0.03983847709893708
+          },
+          {
+            "case": "16",
+            "velocity_l2": 0.08008046640049583,
+            "pressure_l2": 0.15267044611497338
+          },
+          {
+            "case": "17",
+            "velocity_l2": 0.019195556998977424,
+            "pressure_l2": 0.019861944772789943
+          },
+          {
+            "case": "18",
+            "velocity_l2": 0.009251700565647844,
+            "pressure_l2": 0.009990780132674869
+          },
+          {
+            "case": "19",
+            "velocity_l2": 0.018187060808529505,
+            "pressure_l2": 0.011100366842683009
+          },
+          {
+            "case": "20",
+            "velocity_l2": 0.051344903190985516,
+            "pressure_l2": 0.014003305516505977
+          },
+          {
+            "case": "pilot_0",
+            "velocity_l2": 0.0036973574377649585,
+            "pressure_l2": 0.0032637452046903785
+          },
+          {
+            "case": "pilot_1",
+            "velocity_l2": 0.008664751152050952,
+            "pressure_l2": 0.008630735676836766
+          },
+          {
+            "case": "pilot_2",
+            "velocity_l2": 0.007764735844853853,
+            "pressure_l2": 0.016468133430755632
+          },
+          {
+            "case": "pilot_3",
+            "velocity_l2": 0.012522938337962574,
+            "pressure_l2": 0.00559780077672642
+          },
+          {
+            "case": "pilot_4",
+            "velocity_l2": 0.022943586998533123,
+            "pressure_l2": 0.015672730862353008
+          },
+          {
+            "case": "pilot_5",
+            "velocity_l2": 0.012017794259269944,
+            "pressure_l2": 0.005910121220638223
+          },
+          {
+            "case": "pilot_6",
+            "velocity_l2": 0.018194664832778408,
+            "pressure_l2": 0.008408846348028664
+          },
+          {
+            "case": "pilot_7",
+            "velocity_l2": 0.024681365731976435,
+            "pressure_l2": 0.006485133359732242
+          }
+        ],
+        "saved20": {
+          "velocity_l2_median": 0.013978249324866871,
+          "velocity_l2_max": 0.08008046640049583,
+          "pressure_l2_median": 0.01232831852262269,
+          "pressure_l2_max": 0.15267044611497338
+        },
+        "pilot8": {
+          "velocity_l2_median": 0.012270366298616258,
+          "velocity_l2_max": 0.024681365731976435,
+          "pressure_l2_median": 0.0074469898538804535,
+          "pressure_l2_max": 0.016468133430755632
+        }
+      },
+      "last_probe": {
+        "step": 292400,
+        "offset": 5000,
+        "control": 0.013369477353990078,
+        "audit": 0.013274230062961578,
+        "elapsed_seconds": 432.3774739979999
+      },
+      "elapsed_to_last_5000_log": 431.02441418299895,
+      "scope": "Same starting parameters and baseline RNG; SOAP own fresh state and extra initialization gradient; Adam continues saved state",
+      "completion": {
+        "completed": true,
+        "step": 292400,
+        "parameter_updates": 5000,
+        "initialization_gradient_evaluations": 1,
+        "elapsed_seconds": 436.45240233000004
+      }
+    }
+  },
+  "selection": "No automatic promotion. Compare individual errors and worst cases, equal updates and measured elapsed time. Existing Adam15k endpoint is an additional longer-budget reference, not equal-updates SOAP comparison."
+}
