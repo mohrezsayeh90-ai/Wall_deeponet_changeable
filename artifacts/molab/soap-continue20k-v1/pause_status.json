@@ -1,5 +1,5 @@
 {
-  "phase": "paused",
+  "phase": "resumed",
   "worker_pid": 44481,
   "reason": "User requested investigate stall; matched batch128 probe with preserved state",
   "anchor_step": 313400,
@@ -7,5 +7,8 @@
   "paused_at_unix": 1795103044.3914967,
   "training_resume_command": "SIGCONT to verified worker group",
   "source_sha256": "1f66f97353558c44f8af33be70f202bfb034dba9d1749682476893dad8636130",
-  "reference_sha256": "a500fac7a8f6d07e2fdf8058b5d77c1303c45098278d28e664c2b5ffacd1dc25"
+  "reference_sha256": "a500fac7a8f6d07e2fdf8058b5d77c1303c45098278d28e664c2b5ffacd1dc25",
+  "resumed_at_unix": 1795104105.8415823,
+  "pause_duration_seconds": 1061.4500861167908,
+  "decision": "Both matched batch128 probes failed predeclared accuracy gates; retain original trainer and full state"
 }
