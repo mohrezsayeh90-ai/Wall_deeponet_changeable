@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "production_gradient_matches_original": true,
+  "initialization_zero_update": true,
+  "actual_update_finite_nonzero": true,
+  "serialization_exact": true,
+  "resumed_next_update_exact": true,
+  "off_precondition_state_updates": true,
+  "full_state_bytes": 31732800,
+  "jax": "0.11.2",
+  "device": "cuda:0",
+  "first_batch_sha256": "091545e904a2e5998e3dc4d0901ab3bb68807f96d6337254c7504d8c51551357"
+}

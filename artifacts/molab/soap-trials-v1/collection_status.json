@@ -1,6 +1,6 @@
 {
-  "last_success_unix": 1795098907.8276994,
-  "verified_files": 16,
+  "last_success_unix": 1795099000.49547,
+  "verified_files": 22,
   "sha256": {
     "prepare.py": "b833a67ae0e2260e70201bc16a3b6bd2792fb69ce0791e98daa8ad540852483d",
     "setup.log": "3f84cca3e571079e8150a86472a8cd1eda5c7ecdc211c7a540dafa202507fdf7",
@@ -17,7 +17,13 @@
     "console.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "supervisor-status.json": "e98c1a4abeceee40057ecb802f3ab6c21ca2a53f214e7d070949bd0b44ae3a19",
     "gradient_core.py": "7cc4eea92d6ebba50f798839d28778386f073548104d8d4d5462896dad3f3808",
-    "gradient_source.json": "b3bbcaa1a51e9b935bfe22905d24a3dc76cdb81290118b0af53e61589683823a"
+    "gradient_source.json": "b3bbcaa1a51e9b935bfe22905d24a3dc76cdb81290118b0af53e61589683823a",
+    "preflight.json": "9a2f5eade199fc714c878d94954f89103f4cc89df3e71968a278c4ac2142a6c1",
+    "status.json": "1f8633ef16f78d36728a458a34f766c4ef3b1ae1d77a54237e27fbb44b91e865",
+    "soap_2e5/probe.jsonl": "263aa76db288d223fbdf3fd5a9ea76c4ac923ca4b56bd37337af54b3bfdd63f7",
+    "soap_2e5/training.jsonl": "6972808411617abca238728cc0b173c65b7b80c857ef1ab66bd69230aeac5e0b",
+    "soap_2e5/snapshots/checkpoint_287500.ready.json": "49154b3add8aa2e4a7fba5d7d1b49ed9607b147503e033a08d646520baeee8e2",
+    "soap_2e5/snapshots/checkpoint_287500.npz": "2f36f9038ad07df1b1dccf1c64cf006fa8c7a60a49594565de28d8d3e47db003"
   },
   "collector_lifetime": "Runs in Codex cloud; reconnect/restart needed if that environment stops. No molab persistence guarantee."
 }
