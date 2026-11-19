@@ -1,0 +1,2 @@
+{"optimizer_updates": 500, "equivalent_batch32_updates": 500, "control": 0.012760483659803867, "audit": 0.012378832325339317}
+{"optimizer_updates": 1000, "equivalent_batch32_updates": 1000, "control": 0.012688937596976757, "audit": 0.01232682354748249}
