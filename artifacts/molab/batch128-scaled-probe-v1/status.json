@@ -1,0 +1,7 @@
+{
+  "phase": "completed",
+  "optimizer_updates": 500,
+  "equivalent_batch32_updates": 2000,
+  "global_batch": 128,
+  "no_automatic_promotion": true
+}
