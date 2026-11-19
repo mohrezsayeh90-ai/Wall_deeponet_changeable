@@ -1,17 +1,20 @@
 {
-  "last_success_unix": 1795104704.8852155,
-  "verified_files": 10,
+  "last_success_unix": 1795104884.8058891,
+  "verified_files": 13,
   "sha256": {
     "worker.py": "767d359ba3d91e3081ce2c459738c8097018bd7c4c903f2b061884254329efce",
     "console.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "preflight.json": "d8497d5d1ae1c90ff0fe5b4a6687d833f98a3e4466243e1e3a7d6c63e08592c0",
     "base_metrics.json": "ceeb8c3cc85d910432b09f9b231aea885749d6b23a296579b6204f08b56d753f",
     "reference_metrics.json": "cee7cad9052b8768585bfc478132f81bbe4cfbb6d5a48c7ab9bfb5e5165dfe41",
-    "branch_only/training.jsonl": "52ef1e0784ddc6e5c6bde8cf803d13b522c965b7d171e7385f04107e7a11a805",
-    "status.json": "8162bcdb54c99075091be705b606bff66a1ed67d2a2d50e2f37c24256e012320",
-    "branch_only/probe.jsonl": "7fadc4b34b5092ae14b4c9e9e741b01e961b025c8bae3bd03b415d6d47f7efba",
+    "branch_only/training.jsonl": "1d5eab9ad5cd5bc495d0ea6ec86793f06e5a52fdad149619e46f20ae6e14b8d0",
+    "status.json": "86a1f653603a23b6e7c29a495b94d8971cbacab9aa56b99d90657d602a9bf11e",
+    "branch_only/probe.jsonl": "7f9bc779091a1b7f095e61deb13f726da7f84abc43891b3a8bc9999c56719dc0",
     "branch_only/snapshots/checkpoint_314400.ready.json": "d5247680e04ddacc6ef601bc478291400d085ffee89ee6c023880fb42d4bcad2",
-    "branch_only/snapshots/checkpoint_314400.npz": "61da447816025dd759cdc49ec8645907125fa3f5e016d1b6b5731c967a1f1820"
+    "branch_only/snapshots/checkpoint_314400.npz": "61da447816025dd759cdc49ec8645907125fa3f5e016d1b6b5731c967a1f1820",
+    "comparison.json": "302b40f9cd96de864c9df0e9f5eb80f8ad0cebbecfaf78098776ee5897b3254e",
+    "branch_only/snapshots/checkpoint_315400.ready.json": "65bf77596446bd52934402f93334ce54617432b26ee1fc855855945c3928b38c",
+    "branch_only/snapshots/checkpoint_315400.npz": "546eb8616ba44af3884debe49d228397959e969e3ac1911181d5547912052018"
   },
   "collector_lifetime": "Runs in Codex cloud; reconnect/restart needed if that environment stops. No molab persistence guarantee."
 }
