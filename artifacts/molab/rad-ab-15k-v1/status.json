@@ -1,9 +1,9 @@
 {
   "phase": "running",
   "branch": "rad",
-  "step": 292500,
-  "offset": 5100,
+  "step": 297600,
+  "offset": 10200,
   "target_step": 302400,
   "lr": 2e-05,
-  "elapsed_branch_seconds": 429.24787160100004
+  "elapsed_branch_seconds": 863.2918427969998
 }
