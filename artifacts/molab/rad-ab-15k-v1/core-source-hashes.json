@@ -1,0 +1,5 @@
+{
+  "original": "430668d9e5fa026807e78d3e58482d88c61425f22193b527729f5bac3df4b9fd",
+  "dynamic": "a77be38c0a1862a5c2d844847de02768c82d1c5c4395b7165682425b5d8a14eb",
+  "changes": "Only explicit LR input replaces old schedule; Adam/gradient/physics math unchanged"
+}

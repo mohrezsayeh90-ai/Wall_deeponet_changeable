@@ -1,0 +1,4 @@
+{"phase": "restoring_inputs"}
+Cloning into '/home/marimo/wall_rad_ab_15k_v1/repo'...
+Verified and restored 70 files to /home/marimo/wall_rad_ab_15k_v1/frozen
+{"phase": "ready", "base_step": 287400, "base_sha256": "72bbe88ddc539258b9bfb433709aa434776393bd5f7e163d90478cbf7fa0e6c2", "jax": "0.11.2", "devices": ["cuda:0"], "optimizer_restored": true, "normalization_verified": true, "pool_sha256": "3e23c0fa2f5af6fba53fb0d676207949c376f6df2a5cff460148c3191e11d1f4"}

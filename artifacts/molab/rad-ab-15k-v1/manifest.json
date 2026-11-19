@@ -1,0 +1,13 @@
+{
+  "base_step": 287400,
+  "updates_each": 15000,
+  "lr": 2e-05,
+  "branches": [
+    "baseline",
+    "rad"
+  ],
+  "rad": "64 baseline points + 64 residual-weighted selections from 256 candidates per geometry; unweighted changed objective",
+  "common_geometry_Re_and_baseline_rng": true,
+  "adaptive_rng_independent": true,
+  "automatic_promotion": false
+}
