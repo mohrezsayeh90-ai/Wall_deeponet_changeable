@@ -24,3 +24,7 @@ Compare unchanged control/audit objectives and the same28 cached FEM cases at bo
 Candidate checkpoints contain all SOAP state, RNG and explicit batch128/equivalent-batch32 metadata. The final candidate's actual step is313900 (500 updates), but its geometry-draw budget equals the batch32 reference315400. Do not relabel it as2000 parameter updates or merge it into the old step plot without adjusting axes. No automatic model promotion occurs before endpoint comparison.
 
 [Source](../../notebooks/molab_batch128_probe/) · [Collected files](../../artifacts/molab/batch128-probe-v1/). Molab root `/home/marimo/wall_batch128_probe_v1`. Full-state snapshots are collected and SHA256 verified by the independent cloud collector while the cloud environment/auth remain available. This is a bounded500-update probe, not a promise to eliminate the error floor.
+
+## Decision criteria, recorded before endpoint results
+
+A larger-batch candidate is considered promising only if fixed audit is at least1% below the cached batch32 endpoint, control is no more than1% higher, both20-case FEM medians are within2% of reference with at least one improving2%, neither8-case median regresses more than5%, and neither20-case maximum regresses more than5%. These thresholds are heuristic development criteria, not statistical significance or full acceptance. No selection is made from a smoother stochastic training curve.
