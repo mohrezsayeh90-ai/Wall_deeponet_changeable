@@ -21,7 +21,7 @@ def fetch(remote,local,info):
  tmp=local.with_suffix(local.suffix+'.download');local.parent.mkdir(parents=True,exist_ok=True)
  with tmp.open('wb') as f:
   for pos in range(0,info['bytes'],524288):
-   code="import base64 as _b\nwith open("+repr(remote)+",'rb') as _f:\n _f.seek("+str(pos)+");print('CHUNK::'+_b.b64encode(_f.read(524288)).decode())"
+   code="import base64 as _b\nwith open("+repr(remote)+",'rb') as _f:\n _f.seek("+str(pos)+");print('CHUNK::'+_b.b64encode(_f.read("+str(min(524288,info['bytes']-pos))+")).decode())"
    text=execute(code);data=base64.b64decode(re.search(r'CHUNK::([A-Za-z0-9+/=]+)',text).group(1));assert len(data)==min(524288,info['bytes']-pos);f.write(data)
  assert hashlib.sha256(tmp.read_bytes()).hexdigest()==info['sha256'];tmp.replace(local)
  if local.suffix=='.npz' and 'checkpoint_' in local.name:
@@ -52,7 +52,10 @@ print('FILES::'+_j.dumps(_o))
    name=info['path'];local=dest/name
    if seen.get(name)==info['sha256']:continue
    if local.exists() and hashlib.sha256(local.read_bytes()).hexdigest()==info['sha256']:seen[name]=info['sha256'];continue
-   fetch(root+'/'+name,local,info);seen[name]=info['sha256'];changed.append(name)
+   try:fetch(root+'/'+name,local,info)
+   except AssertionError:
+    print('FILE_CHANGED_DURING_COLLECTION',name,flush=True);continue
+   seen[name]=info['sha256'];changed.append(name)
   (dest/'collection_status.json').write_text(json.dumps({'last_success_unix':time.time(),'verified_files':len(seen),'sha256':seen,'collector_lifetime':'Runs in Codex cloud; reconnect/restart needed if that environment stops. No molab persistence guarantee.'},indent=2))
   newweights=[x for x in changed if x.endswith('.npz') and 'checkpoint_' in x]
   finished=(dest/'comparison.json').exists()
