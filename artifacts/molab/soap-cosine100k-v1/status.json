@@ -1,1 +1,9 @@
-{"phase": "preflight", "step": 322400, "offset": 0, "target_step": 422400, "learning_rate": 0.0001}
+{
+  "phase": "running",
+  "step": 322600,
+  "offset": 200,
+  "target_step": 422400,
+  "learning_rate": 9.99990717247238e-05,
+  "optimizer_count": 35201,
+  "elapsed_seconds": 34.06877416900011
+}

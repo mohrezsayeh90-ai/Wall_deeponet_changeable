@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "source_sha256": "768c56f1c08515b3c0aa24d20ed19308cdf977e43746110db6b309c380f2b3e2",
+  "resumed_step": 322400,
+  "restored_optimizer_count": 35001,
+  "next_optimizer_count": 35002,
+  "first_lr": 0.0001,
+  "final_lr": 5e-06,
+  "scheduled_update_matches_direct_1e4": true,
+  "schedule_state_added": false,
+  "parameters_and_state_exact": true,
+  "rng_next_batch_exact": true,
+  "next_update_after_roundtrip_exact": true,
+  "no_optimizer_reinitialization": true,
+  "extra_basis_initialization_updates": 0
+}
