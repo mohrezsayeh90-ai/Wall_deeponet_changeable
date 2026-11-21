@@ -1,4 +1,22 @@
 {
+  "molab_soap_cosine100k": {
+    "phase": "running",
+    "resume_step": 322400,
+    "target_step": 422400,
+    "additional_updates": 100000,
+    "batch_size": 32,
+    "schedule": "continuous cosine 1e-4 to 5e-6; exact first and last updates",
+    "initial_lr": 0.0001,
+    "final_lr": 0.000005,
+    "preflight_passed": true,
+    "optimizer_reset": false,
+    "source_sha256": "768c56f1c08515b3c0aa24d20ed19308cdf977e43746110db6b309c380f2b3e2",
+    "last_verified_step_at_launch": 322800,
+    "report": "reports/molab_soap_cosine100k/README.md",
+    "artifact_directory": "artifacts/molab/soap-cosine100k-v1",
+    "observed_date": "2026-11-21",
+    "completion_or_accuracy_improvement_claimed": false
+  },
   "project": "geometry-conditioned-pi-deeponet",
   "implementation": "initial implementation tested",
   "unit_tests_passed": 15,
