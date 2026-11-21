@@ -1,0 +1,1 @@
+{"worker_pid": 1838, "source_step": 322400, "target_step": 422400, "additional_updates": 100000, "schedule": "continuous cosine", "initial_lr": 0.0001, "final_lr": 5e-06, "batch_size": 32}

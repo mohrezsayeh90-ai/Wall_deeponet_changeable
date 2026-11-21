@@ -1,0 +1,13 @@
+{
+  "last_success_unix": 1795252222.5359156,
+  "verified_files": 6,
+  "sha256": {
+    "start_fem.json": "da0b5c883b31bb09c0eef12e0d99452d22803ab80171b9cf1f54a525fc4b1640",
+    "worker.py": "ba7cbbda8f28509da774fc72dedef37cca791ca0602560bccb6b63b2ec0887ad",
+    "restore_manifest.json": "a4e0f94cac309781bf4d4745acdb0a5fd4d0ec646aa03e91849bfec6c2855470",
+    "status.json": "b279dfa1d23c22920a13261bdaf1880988ce25024581837771cd160dea834227",
+    "console.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "launch.json": "cd6b01996146e11d3afda4743afbec17de2c1c005f2e21254eaf06aaca332bcb"
+  },
+  "collector_lifetime": "Runs in Codex cloud; reconnect/restart needed if that environment stops. No molab persistence guarantee."
+}
