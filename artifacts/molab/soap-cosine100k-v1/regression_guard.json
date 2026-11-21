@@ -1,6 +1,6 @@
 {
-  "step": 337400,
-  "bad_streak": 0,
+  "step": 342400,
+  "bad_streak": 1,
   "threshold_ratio": 1.1,
   "required_consecutive": 2
 }
