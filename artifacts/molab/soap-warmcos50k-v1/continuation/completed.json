@@ -1,0 +1,9 @@
+{
+  "completed": true,
+  "step": 442400,
+  "new_updates": 50000,
+  "total_soap_parameter_updates": 155000,
+  "optimizer_count": 155001,
+  "elapsed_seconds": 3970.0506424039995,
+  "stop_reason": "target_completed"
+}
