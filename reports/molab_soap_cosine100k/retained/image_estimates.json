@@ -1,0 +1,44 @@
+{
+  "scope": "Cached final figure only; no final weights or raw post347400 logs available",
+  "image_sha256": "74b87205bb69a99f328c7def825232e0fd5d3cf73f78df58a77a1ae250b91455",
+  "image_dimensions": [
+    1623,
+    2023
+  ],
+  "reported_completed_step_in_cached_html": 422400,
+  "probe_estimates": {
+    "control": {
+      "source": "raster estimate, not recovered raw log",
+      "exact_start_loss": 0.012403824366629124,
+      "estimated_final_loss": 0.010417430642284299,
+      "estimated_relative_reduction_percent": 16.014365131523135,
+      "endpoint_y_pixel": 966.0,
+      "calibration_points": 18,
+      "calibration_rms_pixels": 0.5168653850830613,
+      "illustrative_plus_minus3_pixel_range": [
+        0.010394350017025414,
+        0.010440562518007289
+      ]
+    },
+    "audit": {
+      "source": "raster estimate, not recovered raw log",
+      "exact_start_loss": 0.01248427014797926,
+      "estimated_final_loss": 0.010752204073097708,
+      "estimated_relative_reduction_percent": 13.873987460627879,
+      "endpoint_y_pixel": 923.0,
+      "calibration_points": 23,
+      "calibration_rms_pixels": 1.0826578273460972,
+      "illustrative_plus_minus3_pixel_range": [
+        0.010728303249682582,
+        0.010776158143456605
+      ]
+    }
+  },
+  "training_mean_estimate": {
+    "source": "Raster estimate of final plotted100-record mean; exact archived initial100-record mean",
+    "initial_mean": 0.012882544305175542,
+    "estimated_final_mean": 0.00939507030832113,
+    "estimated_relative_reduction_percent": 27.071313819998476,
+    "calibration_points": 23
+  }
+}

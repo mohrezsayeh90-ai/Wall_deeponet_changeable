@@ -1,0 +1,21 @@
+{
+  "files": [
+    {
+      "file": "notebook.py",
+      "bytes": 7683,
+      "sha256": "8f452ac01a20ee01b94700d89a6d4b41f5ca47c82814e64977274781cedb695a"
+    },
+    {
+      "file": "notebook.html",
+      "bytes": 516088,
+      "sha256": "e67da0c88c68c3f8a97952dbb366cc0a493a637ae0870157546ca29e04e8544b"
+    },
+    {
+      "file": "session.json",
+      "bytes": 445474,
+      "sha256": "0ad507939bfbc9f80db9653cb6386a523141ecfed46389e390c2cf199717c04f"
+    }
+  ],
+  "scope": "Retained notebook code/HTML/session cache only; not training logs or checkpoints",
+  "collected_date": "2026-11-22"
+}

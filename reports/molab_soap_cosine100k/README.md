@@ -1,5 +1,7 @@
 # SOAP continuation:322400 →422400
 
+**2026-11-22 recovery:** the retained notebook reports completion at422400 and its full final plot was recovered. The current Molab instance has no original run directories or final weights/logs. The highest archived checkpoint remains342400. [Recovered figure, approximate loss reductions and exact archive limits](retained/README.md). Do not treat the retained plot as a recovered terminal model or final FEM evaluation.
+
 User requested100000 further updates from the complete final SOAP checkpoint322400, batch32, with a continuous decrease in learning rate from1e-4 to5e-6. The new Molab instance was empty of training files. The original frozen physics source, immutable train/dev pools, fixed probes, cached28 FEM references, pinned SOAP vendor and full checkpoint were restored from the existing archives. All55 transferred files were verified against a SHA256 manifest. No locked test data were transferred or opened.
 
 Source checkpoint SHA256: `768c56f1c08515b3c0aa24d20ed19308cdf977e43746110db6b309c380f2b3e2`. Parameters, normalization, RNG and all225 SOAP-state leaves are restored. SOAP counter35001 continues to35002; the original basis-only initialization is not repeated.

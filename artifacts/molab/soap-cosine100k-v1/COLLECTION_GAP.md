@@ -1,5 +1,7 @@
 # Archive check on2026-11-22
 
+**Follow-up after publication:** authenticated access succeeded. The current instance has no original run directories, checkpoint422400 or raw training/probe/FEM files. The notebook's retained HTML/session cache and original full final plot were recovered and SHA256 verified. [Recovery analysis and preserved outputs](../../../reports/molab_soap_cosine100k/retained/README.md). The network blocker below describes the earlier check; it is now resolved. Final model artifacts remain unavailable on the inspected instance.
+
 This archive is **partial**. The user's Molab screenshot shows100000 new updates completed (target422400), but the live kernel and final files have not yet been inspected. The new Molab hostname was denied by this Codex environment's network policy before authentication. The required hostname was added to the configuration draft; the tool reports that publication is required before it is applied.
 
 Files already received locally were checked and preserved:
