@@ -1,0 +1,11 @@
+{
+  "anchor": 342400,
+  "updates": 50000,
+  "optimizer_count": 55001,
+  "mode": "cosine",
+  "lr": 0.001,
+  "end_lr": 0.0001,
+  "base_sha256": "b49cc0e7c38809a5fe9f9913ae24c35563c6d8c5287af0bfe0aec283a7522018",
+  "case": "highlr_cosine50k",
+  "fem_training_labels": 0
+}

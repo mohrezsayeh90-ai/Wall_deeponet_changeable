@@ -1,0 +1,269 @@
+{
+  "used_for_training": false,
+  "training_labels": 0,
+  "selection": "12of20 highest wall curvature, chosen solely from geometry before evaluating new model",
+  "hard_cases": [
+    "5",
+    "6",
+    "7",
+    "8",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "17",
+    "19"
+  ],
+  "reynolds": 30,
+  "cases": [
+    {
+      "case": "1",
+      "title": "Straight channel",
+      "descriptors": {
+        "min_gap": 1.0,
+        "max_gap": 1.0,
+        "center_deviation": 0.0,
+        "max_slope": 0.0,
+        "max_curvature": 0.0
+      },
+      "geometry_id": "f6e28ad1753237d42be72be187a88f09a269097eeda24bcf12908db6bd361246"
+    },
+    {
+      "case": "2",
+      "title": "Mild symmetric constriction",
+      "descriptors": {
+        "min_gap": 0.9202451882300765,
+        "max_gap": 1.0,
+        "center_deviation": 0.0,
+        "max_slope": 0.10249955258169435,
+        "max_curvature": 0.7698222143887956
+      },
+      "geometry_id": "6cb3bfee184b960c9c5d512c1a4650b83027bddb0873b4796b30d69fb62f895a"
+    },
+    {
+      "case": "3",
+      "title": "Moderate symmetric constriction",
+      "descriptors": {
+        "min_gap": 0.7208581588052678,
+        "max_gap": 1.0,
+        "center_deviation": 0.0,
+        "max_slope": 0.35874843403593026,
+        "max_curvature": 2.694377750360784
+      },
+      "geometry_id": "e895e960ba283ead8dd612b2bb3c177dd5588f92129c014b0f0810916b39f29d"
+    },
+    {
+      "case": "4",
+      "title": "Symmetric expansion",
+      "descriptors": {
+        "min_gap": 1.0,
+        "max_gap": 1.3588966529646558,
+        "center_deviation": 0.0,
+        "max_slope": 0.4612479866176245,
+        "max_curvature": 3.464199964749579
+      },
+      "geometry_id": "9a9b70997a7d27610ec94961e35cfff0f0b697289f8981f4ae20bd83ba201ae4"
+    },
+    {
+      "case": "5",
+      "title": "One bump on bottom wall",
+      "descriptors": {
+        "min_gap": 0.7806742676327104,
+        "max_gap": 1.0,
+        "center_deviation": 0.1096628661836448,
+        "max_slope": 0.5637475391993189,
+        "max_curvature": 4.234022179138375
+      },
+      "geometry_id": "7b28212f075e6604391de346448320b36cd7d2c0cf0bd3191ce981c25068ba70"
+    },
+    {
+      "case": "6",
+      "title": "One bump on top wall",
+      "descriptors": {
+        "min_gap": 0.7407968617477487,
+        "max_gap": 1.0,
+        "center_deviation": 0.12960156912612567,
+        "max_slope": 0.6662470917810132,
+        "max_curvature": 5.003844393527171
+      },
+      "geometry_id": "02f7908a0938edf9b7178b1ca3d681ccbfc0b77dd1e9ec80a1e80d040c697447"
+    },
+    {
+      "case": "7",
+      "title": "Constant-gap centerline bend",
+      "descriptors": {
+        "min_gap": 1.0,
+        "max_gap": 1.0,
+        "center_deviation": 0.19938702942480874,
+        "max_slope": 0.5124977629084718,
+        "max_curvature": 3.849111071943977
+      },
+      "geometry_id": "1d3d58a742a98151a8adaee0cb970215d662efb81c777ed5ca83300b701f1f28"
+    },
+    {
+      "case": "8",
+      "title": "Constant-gap S bend",
+      "descriptors": {
+        "min_gap": 1.0,
+        "max_gap": 1.0,
+        "center_deviation": 0.14930206537715413,
+        "max_slope": 0.46073869120994465,
+        "max_curvature": 3.9765542337355693
+      },
+      "geometry_id": "64b67cfff4f679ee575eb92b651ea1a8bc5833277253db577b11bef3322dab38"
+    },
+    {
+      "case": "9",
+      "title": "Two symmetric constrictions",
+      "descriptors": {
+        "min_gap": 0.7611166953965534,
+        "max_gap": 1.0,
+        "center_deviation": 0.0,
+        "max_slope": 0.36859095296795574,
+        "max_curvature": 3.1812433869884558
+      },
+      "geometry_id": "18883bf1e9229b52a16e2ed43711f6ba65e3c66c735fa1b0acce6c3f5655449d"
+    },
+    {
+      "case": "10",
+      "title": "Constriction followed by expansion",
+      "descriptors": {
+        "min_gap": 0.7511632243714097,
+        "max_gap": 1.2986041307543084,
+        "center_deviation": 0.0,
+        "max_slope": 0.46073869120994465,
+        "max_curvature": 3.976554233735567
+      },
+      "geometry_id": "f8b72581537533c87d5fd07a03ea9b5edc78bd4adfbba82b2471e35ce5e782ce"
+    },
+    {
+      "case": "11",
+      "title": "Staggered independent wall bumps",
+      "descriptors": {
+        "min_gap": 0.8009305794971278,
+        "max_gap": 1.0,
+        "center_deviation": 0.0995347102514361,
+        "max_slope": 0.6143182549465928,
+        "max_curvature": 5.302072311647424
+      },
+      "geometry_id": "d3c9f78a3f9b9ddff385b518850755337ab0c48f8edfc8a898cc4838b840bc8d"
+    },
+    {
+      "case": "12",
+      "title": "Three symmetric constrictions",
+      "descriptors": {
+        "min_gap": 0.7718167443356874,
+        "max_gap": 1.0,
+        "center_deviation": 0.0,
+        "max_slope": 0.43800300652069407,
+        "max_curvature": 4.1821758666046325
+      },
+      "geometry_id": "4a97de7599208298a3059e78667f57ba09a3f64f77b8d77baa89341852586a62"
+    },
+    {
+      "case": "13",
+      "title": "Four alternating gap features",
+      "descriptors": {
+        "min_gap": 0.7521447309573105,
+        "max_gap": 1.2478552690426896,
+        "center_deviation": 0.0,
+        "max_slope": 0.4928015422280746,
+        "max_curvature": 4.294471496213214
+      },
+      "geometry_id": "ce58f178228de229487db482433c010572c784a484ca9cd125cca164cdd2443f"
+    },
+    {
+      "case": "14",
+      "title": "Oscillating centerline and gap",
+      "descriptors": {
+        "min_gap": 0.8397752422968278,
+        "max_gap": 1.1602247577031721,
+        "center_deviation": 0.0961348546219033,
+        "max_slope": 0.6990000000000001,
+        "max_curvature": 6.509600901328769
+      },
+      "geometry_id": "1f43a427be864d3f8c525bf50a717a995da44e1702c312cce043bc3a8579abdd"
+    },
+    {
+      "case": "15",
+      "title": "Mixed independent multiscale walls",
+      "descriptors": {
+        "min_gap": 0.7620935814149821,
+        "max_gap": 1.2026244091973586,
+        "center_deviation": 0.08970978234917196,
+        "max_slope": 0.6989999999999998,
+        "max_curvature": 6.6117572470335
+      },
+      "geometry_id": "1f6d4820857d6df7df5242f0f5a8df8021e4af4039504cedd4a1f456533b7ac7"
+    },
+    {
+      "case": "16",
+      "title": "Rounded plateau roof",
+      "descriptors": {
+        "min_gap": 1.0,
+        "max_gap": 1.279895930728726,
+        "center_deviation": 0.13994796536436302,
+        "max_slope": 0.5052796643411491,
+        "max_curvature": 3.361410790313214
+      },
+      "geometry_id": "570bf536cd82f8d0fd0937a91721db7e78ee24a3c6b9e7e0f0e722fe89be9679"
+    },
+    {
+      "case": "17",
+      "title": "Waves with changing wavelength",
+      "descriptors": {
+        "min_gap": 0.7757467261358204,
+        "max_gap": 1.168279722582958,
+        "center_deviation": 0.0410817630438538,
+        "max_slope": 0.6929416405037261,
+        "max_curvature": 4.529837306387772
+      },
+      "geometry_id": "ed3ef26f3b4c5da3ca80b391fa06c1646fc6aedc84db3c94ca50ec01cf777c36"
+    },
+    {
+      "case": "18",
+      "title": "Rounded stepped S-shaped walls",
+      "descriptors": {
+        "min_gap": 0.7829532439071148,
+        "max_gap": 1.0320414077333853,
+        "center_deviation": 0.03288672529188577,
+        "max_slope": 0.2649965876480106,
+        "max_curvature": 1.1857541474519016
+      },
+      "geometry_id": "78175c18af98a9f1d06bcd4e0e6859237f4994656794fb63806f481ad9ee57f7"
+    },
+    {
+      "case": "19",
+      "title": "Independent irregular spline walls",
+      "descriptors": {
+        "min_gap": 0.9271055381841712,
+        "max_gap": 1.1643025600175059,
+        "center_deviation": 0.06650022576581646,
+        "max_slope": 0.699,
+        "max_curvature": 8.389763281425324
+      },
+      "geometry_id": "176bd34a5af702fd8fd513ea950f47534a05a9a58686f88df39edd26fa9fe32e"
+    },
+    {
+      "case": "20",
+      "title": "Independent random Fourier walls",
+      "descriptors": {
+        "min_gap": 0.6642703359834878,
+        "max_gap": 1.1204100772775691,
+        "center_deviation": 0.11810449236797978,
+        "max_slope": 0.699,
+        "max_curvature": 2.3967566165205483
+      },
+      "geometry_id": "51636036a4fbdeb99d551eb5c8bb907a9652ce81b3370d50337f2cad3a0d206b"
+    }
+  ],
+  "bounds": {
+    "min_gap": 0.6,
+    "max_gap": 1.5,
+    "center_deviation": 0.35,
+    "max_slope": 0.7
+  },
+  "all_validate_passed": true
+}

@@ -1,0 +1,10 @@
+{
+  "trainer_pid": 17360,
+  "evaluator_pid": 17361,
+  "source_step": 342400,
+  "new_updates": 50000,
+  "target_step": 392400,
+  "initial_lr": 0.001,
+  "final_lr": 0.0001,
+  "fem_labels_used_for_training": false
+}
