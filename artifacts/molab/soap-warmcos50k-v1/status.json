@@ -1,9 +1,9 @@
 {
   "phase": "running",
-  "step": 420000,
-  "offset": 27600,
+  "step": 422900,
+  "offset": 30500,
   "target_step": 442400,
-  "learning_rate": 0.0002885412331260217,
-  "optimizer_count": 132601,
-  "elapsed_seconds": 2199.5627305220005
+  "learning_rate": 0.0002463447592565639,
+  "optimizer_count": 135501,
+  "elapsed_seconds": 2427.4530522759997
 }
