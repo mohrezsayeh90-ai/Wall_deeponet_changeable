@@ -30,4 +30,8 @@ _axs[0].set(yscale='log',title='100-record training mean; compare common first50
 _axs[1].set(yscale='log',title='Same fixed control cohort; FEM assessed separately',ylabel='Control loss')
 _axs[2].set(ylabel='Learning rate')
 _plot=mo.as_html(_fig);_plt.close(_fig)
-mo.vstack([training_refresh,_header,mo.md(str(_fail)) if _fail else mo.md(''),_plot,mo.md('مرحلهٔ ۳۰هزارگامی بودجهٔ بیشتری دارد؛ برتری اپتیمایزر را از مقایسهٔ نابرابر نتیجه نمی‌گیریم. وزن‌های کامل هر ۲۵۰۰ گام و ارزیابی FEM ذخیره می‌شوند.')])
+_downloads=[]
+for _name in _names:
+ _p=_r/_name/'continuation/checkpoint.npz'
+ if _p.exists():_downloads.append(mo.download(data=lambda _path=_p:_path.read_bytes(),filename=_name+'_last_saved.npz',label='دانلود آخرین وزن ذخیره‌شده: '+_name))
+mo.vstack([training_refresh,_header,mo.md(str(_fail)) if _fail else mo.md(''),_plot,mo.md('مرحلهٔ ۳۰هزارگامی بودجهٔ بیشتری دارد؛ برتری اپتیمایزر را از مقایسهٔ نابرابر نتیجه نمی‌گیریم. وزن‌های کامل هر ۲۵۰۰ گام و ارزیابی FEM ذخیره می‌شوند. برای داشتن نسخهٔ شخصی، پیش از بستن ماشین Molab وزن‌ها را از دکمه‌های زیر دانلود کنید.'),*_downloads])
