@@ -1,4 +1,21 @@
 {
+  "molab_soap_sweep50k": {
+    "phase": "running",
+    "source_step": 342400,
+    "parameter_update_budget": 50000,
+    "screen_cases": 5,
+    "updates_per_screen": 5000,
+    "constant_1e4_extension_updates": 25000,
+    "constant_1e4_total_updates": 30000,
+    "batch_size": 32,
+    "last_observed_case": "constant_1e4",
+    "last_observed_step": 342800,
+    "preflight_passed": true,
+    "report": "reports/molab_soap_sweep50k/README.md",
+    "artifacts": "artifacts/molab/soap-sweep50k-v1",
+    "automatic_200k_launch": false,
+    "observed_date": "2026-11-22"
+  },
   "molab_soap_cosine100k": {
     "phase": "completion_reported_in_retained_notebook_final_model_unavailable",
     "reported_completed_step": 422400,
