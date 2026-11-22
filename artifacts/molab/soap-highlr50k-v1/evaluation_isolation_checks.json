@@ -1,0 +1,8 @@
+{
+  "trainer_has_no_fem_loading_or_evaluation": true,
+  "evaluator_has_no_optimizer_or_parameter_update": true,
+  "baseline_metrics_match_previous20_references": true,
+  "all20_geometries_validate_inside_envelope": true,
+  "separate_processes": true,
+  "training_fem_labels": 0
+}
