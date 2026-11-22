@@ -1,0 +1,18 @@
+{
+  "last_success_unix": 1795332891.1798506,
+  "verified_files": 11,
+  "sha256": {
+    "start_fem.json": "6338182c85e145c80d1f1e518bafee86be1b004bfd6a2a7cd5fcec50d28d8db7",
+    "worker.py": "1a305f4c0adb7d66aa62a5edeba590ab3690f7ffa3c74379a4909586a94508f2",
+    "supervisor.py": "34f74f34e612ece9279f9147af1a965bf0341e8a31a737715af1658d6b5a4c8d",
+    "restore_manifest.json": "268858660cb7ec5568bbabef79775f78ef74b1d5ad09584590e5ee1e2dc983ca",
+    "console.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "launch.json": "67fa9a1df13c7daffe8f68ae2cdf83f7910d33a2082fa9592ee74633b1c61dff",
+    "status.json": "78e9d5f841151ea3bd9be1cf6dcd55277bf5a606a2e8c9cac7e6921119bf052b",
+    "process.json": "1983679d7f95481f50440d19473ce9e47b79efca591319e900027f8badc50e5a",
+    "constant_1e4/start_fem.json": "6338182c85e145c80d1f1e518bafee86be1b004bfd6a2a7cd5fcec50d28d8db7",
+    "constant_1e4/run_config.json": "7317dfee8fe3e0cdd6cc708331a68ddc7cee0727ad4f61447663d681d54a353c",
+    "constant_1e4/console.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "collector_lifetime": "Runs in Codex cloud; reconnect/restart needed if that environment stops. No molab persistence guarantee."
+}

@@ -1,0 +1,8 @@
+{
+  "phase": "running",
+  "active_case": "constant_1e4",
+  "completed_updates": 0,
+  "budget": 50000,
+  "case_target": 5000,
+  "case_anchor": 342400
+}

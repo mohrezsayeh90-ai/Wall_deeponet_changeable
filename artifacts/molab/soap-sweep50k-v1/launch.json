@@ -1,0 +1,1 @@
+{"worker_pid": 2544, "source_step": 342400, "additional_updates": 50000, "schedule": "five5k screens plus25k constant extension", "initial_lr": 0.0001, "final_lr": 5e-06, "batch_size": 32}
