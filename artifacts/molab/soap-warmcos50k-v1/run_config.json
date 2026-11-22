@@ -1,0 +1,12 @@
+{
+  "anchor": 392400,
+  "updates": 50000,
+  "optimizer_count": 105001,
+  "mode": "smooth_warmup_then_cosine",
+  "lr": 0.0001,
+  "end_lr": 8e-05,
+  "peak_lr": 0.0005,
+  "warmup_updates": 5000,
+  "decay_updates": 45000,
+  "base_sha256": "fba423df7dd80c9eeea4082e1d12d2167dfe707fede76c00162a6dc275025c72"
+}

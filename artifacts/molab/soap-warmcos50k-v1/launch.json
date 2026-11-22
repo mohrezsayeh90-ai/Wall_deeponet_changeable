@@ -1,0 +1,8 @@
+{
+  "trainer_pid": 29131,
+  "evaluator_pid": 29132,
+  "source_step": 392400,
+  "target_step": 442400,
+  "new_updates": 50000,
+  "source_sha256": "fba423df7dd80c9eeea4082e1d12d2167dfe707fede76c00162a6dc275025c72"
+}

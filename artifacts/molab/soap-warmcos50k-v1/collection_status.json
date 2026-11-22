@@ -1,0 +1,20 @@
+{
+  "last_success_unix": 1795340970.4875062,
+  "verified_files": 13,
+  "sha256": {
+    "worker.py": "508a840a9b49b00a96f369c9e258ab563b4b90baf4599d2b5076116d7dbb0e31",
+    "evaluate.py": "24ea141e0fbd2ca5be417f40d2eb7ce36ecf807731a95fd560696bc60103758b",
+    "run_config.json": "7d8f9c93db0a9a6a5fe98355a34767c084b7c50062927d272b598a0f57d8381d",
+    "console.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "evaluation.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "launch.json": "29cc8c2dcad7d1223ee760dab5d1497be7a94d016091e9a8b146e8115e66a255",
+    "fem_cohort.json": "c1f707d9157746d928f4637fdc4d097940921809d59550b5ab0064368fee0ba4",
+    "preflight.json": "1c81382c26b79b1ef2d1fa1833634afa3f15e3cdee6bc5dc8171568b8724a202",
+    "control.npz": "7e97b889d2db3b627acd5bfde5d5ee973bccb4bf2c010c065c5dd4e509f8c7ce",
+    "audit.npz": "d718b0427f63ca06a416c490c9c5ac072424b9d798f0582be878f28533c3453a",
+    "continuation/probe.jsonl": "4dc36b574f5fcad19da9ee4776e302015b47e87e5872f7bbdcccd2cc7fcbbaaa",
+    "continuation/training.jsonl": "61c5664a1fb477d7908f7db75c80f42ee6577233d5367e7195744afa58102f93",
+    "fem/fem_392400.json": "b46d150e10b6f4545ed955cd3556bffe3169681b54135b9fe37c5224a46da13e"
+  },
+  "collector_lifetime": "Runs in Codex cloud; reconnect/restart needed if that environment stops. No molab persistence guarantee."
+}
