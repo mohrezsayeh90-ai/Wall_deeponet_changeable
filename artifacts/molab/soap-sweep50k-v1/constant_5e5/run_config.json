@@ -1,0 +1,10 @@
+{
+  "anchor": 342400,
+  "updates": 5000,
+  "optimizer_count": 55001,
+  "mode": "constant",
+  "lr": 5e-05,
+  "end_lr": 5e-05,
+  "base_sha256": "b49cc0e7c38809a5fe9f9913ae24c35563c6d8c5287af0bfe0aec283a7522018",
+  "case": "constant_5e5"
+}
