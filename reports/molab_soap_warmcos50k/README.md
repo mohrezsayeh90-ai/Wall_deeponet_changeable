@@ -1,5 +1,7 @@
 # Smooth warm-up then cosine:392400→442400
 
+**Completed at442400; full archive verified. [Download weights, logs, final notebook/plots and verification evidence](completed/README.md).**
+
 User requested50000 additional SOAP updates from the completed latest run: smooth increase1e-4→5e-4 in5000 updates, then cosine decay5e-4→8e-5 in45000 updates. The complete392400 state is preserved: SHA256 `fba423df7dd80c9eeea4082e1d12d2167dfe707fede76c00162a6dc275025c72`, SOAP counter105001, normalization and sampling RNG. Final target442400, counter155001. Batch32 and the physics training workflow stay unchanged.
 
 For update j=1…5000: `LR=1e-4+(5e-4−1e-4)/2×(1−cos(π(j−1)/4999))`.

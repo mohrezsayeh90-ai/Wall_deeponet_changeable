@@ -1,6 +1,12 @@
 {
   "molab_soap_warmcos50k": {
-    "phase": "running",
+    "phase": "completed_and_archive_verified",
+    "final_step": 442400,
+    "completed_updates": 50000,
+    "full_state_snapshots": 21,
+    "fem_evaluations": 22,
+    "final_checkpoint_sha256": "722df80b9524c2fc517a2a8d01360f2f5da62a6d895b7e090dcd0b02e13fad62",
+    "archive_inventory_verification": "reports/molab_soap_warmcos50k/completed/archive_verification.json",
     "resume_step": 392400,
     "target_step": 442400,
     "additional_updates": 50000,

@@ -1,0 +1,15 @@
+{
+  "original_png_bytes_extracted": true,
+  "plots": [
+    {
+      "file": "figure_01.png",
+      "bytes": 375266,
+      "sha256": "0e2a66d0a1cc1a3d9f6fbcae2a3ca0bf4478abd53d18e76fa621117bf8ce8d60"
+    },
+    {
+      "file": "figure_02.png",
+      "bytes": 1098386,
+      "sha256": "b6f92882f0905fa9703fcb6a423dfbe9cdc981b08b1fa0372b1288300097cd21"
+    }
+  ]
+}
