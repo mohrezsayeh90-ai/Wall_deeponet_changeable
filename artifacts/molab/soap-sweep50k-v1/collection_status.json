@@ -1,5 +1,5 @@
 {
-  "last_success_unix": 1795333062.6321251,
+  "last_success_unix": 1795333112.3825388,
   "verified_files": 19,
   "sha256": {
     "start_fem.json": "6338182c85e145c80d1f1e518bafee86be1b004bfd6a2a7cd5fcec50d28d8db7",
@@ -10,15 +10,15 @@
     "launch.json": "67fa9a1df13c7daffe8f68ae2cdf83f7910d33a2082fa9592ee74633b1c61dff",
     "status.json": "78e9d5f841151ea3bd9be1cf6dcd55277bf5a606a2e8c9cac7e6921119bf052b",
     "process.json": "1983679d7f95481f50440d19473ce9e47b79efca591319e900027f8badc50e5a",
-    "finalize.py": "31ebedd38d478a70403b18f3e09f362f573f10c4fe2596b75d658d31febcd039",
-    "analysis.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "constant_1e4/start_fem.json": "6338182c85e145c80d1f1e518bafee86be1b004bfd6a2a7cd5fcec50d28d8db7",
     "constant_1e4/run_config.json": "7317dfee8fe3e0cdd6cc708331a68ddc7cee0727ad4f61447663d681d54a353c",
     "constant_1e4/console.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "finalize.py": "31ebedd38d478a70403b18f3e09f362f573f10c4fe2596b75d658d31febcd039",
+    "analysis.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "constant_1e4/preflight.json": "6e874a113baba63470611d5f789b8a6654325cda15ddf780abb9aa9f6638b54c",
-    "constant_1e4/start_fem.json": "6338182c85e145c80d1f1e518bafee86be1b004bfd6a2a7cd5fcec50d28d8db7",
-    "constant_1e4/status.json": "804577e3803700ecfda5a38e0ddf7439137959c8a06f151cd90a088de749e86f",
-    "constant_1e4/continuation/probe.jsonl": "7f1d158f09c0f553d1200eaec893228740c6d7113a81025eda350d0c5e7c7894",
-    "constant_1e4/continuation/training.jsonl": "c27da67003ab7306d8e75412df6e4a7636156bec47cd68ebe3eab476e20afd3e",
+    "constant_1e4/status.json": "c23312ac7dedd0ca34b590c8a2596ba4ced3445beaa52616f03487949f29f884",
+    "constant_1e4/continuation/probe.jsonl": "27282e180762de6e3b0709ed78283ff9283b08e78d88307c31d56207d07e0a1a",
+    "constant_1e4/continuation/training.jsonl": "5f0f6787fae7b5acda44e3e629a095c3ee320a7f954d649573edb6c52726c7ef",
     "constant_1e4/continuation/snapshots/checkpoint_342500.ready.json": "d2ec2cfe84e33cca99c8d5af8ca85121942f1346441f157190f809f3124b8ea3",
     "constant_1e4/continuation/snapshots/checkpoint_342500.npz": "7307a7203e02b3ce75df89f59e0481d4d02e8a5d774a74b5c04c03b0c6555b4f"
   },
