@@ -1,6 +1,6 @@
 {
-  "last_success_unix": 1795332978.630683,
-  "verified_files": 17,
+  "last_success_unix": 1795333062.6321251,
+  "verified_files": 19,
   "sha256": {
     "start_fem.json": "6338182c85e145c80d1f1e518bafee86be1b004bfd6a2a7cd5fcec50d28d8db7",
     "worker.py": "1a305f4c0adb7d66aa62a5edeba590ab3690f7ffa3c74379a4909586a94508f2",
@@ -16,9 +16,11 @@
     "constant_1e4/console.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "constant_1e4/preflight.json": "6e874a113baba63470611d5f789b8a6654325cda15ddf780abb9aa9f6638b54c",
     "constant_1e4/start_fem.json": "6338182c85e145c80d1f1e518bafee86be1b004bfd6a2a7cd5fcec50d28d8db7",
-    "constant_1e4/status.json": "5c3188d38a39a235c91a71df2b4b1b80c7d46b2ed0676a5ec5fdeb9facb0d438",
+    "constant_1e4/status.json": "804577e3803700ecfda5a38e0ddf7439137959c8a06f151cd90a088de749e86f",
     "constant_1e4/continuation/probe.jsonl": "7f1d158f09c0f553d1200eaec893228740c6d7113a81025eda350d0c5e7c7894",
-    "constant_1e4/continuation/training.jsonl": "0cd43fd6edf21887a940c809a40ad11b9f1083e2803e2349c0c3d21f9c31a93b"
+    "constant_1e4/continuation/training.jsonl": "c27da67003ab7306d8e75412df6e4a7636156bec47cd68ebe3eab476e20afd3e",
+    "constant_1e4/continuation/snapshots/checkpoint_342500.ready.json": "d2ec2cfe84e33cca99c8d5af8ca85121942f1346441f157190f809f3124b8ea3",
+    "constant_1e4/continuation/snapshots/checkpoint_342500.npz": "7307a7203e02b3ce75df89f59e0481d4d02e8a5d774a74b5c04c03b0c6555b4f"
   },
   "collector_lifetime": "Runs in Codex cloud; reconnect/restart needed if that environment stops. No molab persistence guarantee."
 }
