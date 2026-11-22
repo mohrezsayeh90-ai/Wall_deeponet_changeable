@@ -1,4 +1,23 @@
 {
+  "molab_soap_highlr50k": {
+    "phase": "running",
+    "resume_step": 342400,
+    "target_step": 392400,
+    "additional_updates": 50000,
+    "batch_size": 32,
+    "lr_start": 0.001,
+    "lr_end": 0.0001,
+    "schedule": "continuous cosine",
+    "preflight_passed": true,
+    "last_verified_new_updates": 1500,
+    "fem_evaluation_process_separate": true,
+    "fem_labels_used_in_training": 0,
+    "fem_cohort_count": 20,
+    "higher_curvature_subgroup_count": 12,
+    "all_fem_geometries_inside_original_bounds": true,
+    "report": "reports/molab_soap_highlr50k/README.md",
+    "artifacts": "artifacts/molab/soap-highlr50k-v1"
+  },
   "molab_soap_sweep50k": {
     "phase": "paused_after_equal_budget_comparison",
     "completed_screen_updates": 25000,
