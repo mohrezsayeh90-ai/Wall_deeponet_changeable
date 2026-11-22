@@ -1,7 +1,7 @@
 {
   "phase": "running",
-  "active_case": "constant_2e4",
-  "completed_updates": 15000,
+  "active_case": "cosine_1e4_2e5",
+  "completed_updates": 20000,
   "budget": 50000,
   "case_target": 5000,
   "case_anchor": 342400
