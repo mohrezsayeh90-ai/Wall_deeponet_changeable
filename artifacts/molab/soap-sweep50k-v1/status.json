@@ -1,8 +1,8 @@
 {
   "phase": "running",
-  "active_case": "cosine_1e4_2e5",
-  "completed_updates": 20000,
+  "active_case": "constant_1e4_extend25k",
+  "completed_updates": 25000,
   "budget": 50000,
-  "case_target": 5000,
-  "case_anchor": 342400
+  "case_target": 25000,
+  "case_anchor": 347400
 }
