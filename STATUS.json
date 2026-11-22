@@ -1,6 +1,24 @@
 {
-  "molab_soap_highlr50k": {
+  "molab_soap_warmcos50k": {
     "phase": "running",
+    "resume_step": 392400,
+    "target_step": 442400,
+    "additional_updates": 50000,
+    "warmup_updates": 5000,
+    "decay_updates": 45000,
+    "initial_lr": 0.0001,
+    "peak_lr": 0.0005,
+    "final_lr": 0.00008,
+    "preflight_passed": true,
+    "last_verified_new_updates": 600,
+    "report": "reports/molab_soap_warmcos50k/README.md",
+    "artifacts": "artifacts/molab/soap-warmcos50k-v1"
+  },
+  "molab_soap_highlr50k": {
+    "phase": "completed",
+    "final_step": 392400,
+    "completed_updates": 50000,
+    "final_full_state_verified": true,
     "resume_step": 342400,
     "target_step": 392400,
     "additional_updates": 50000,
