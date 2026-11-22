@@ -1,5 +1,7 @@
 # New50000-update high-LR SOAP run
 
+[Same-case comparison at374900 versus the preserved100k Adam model and the available partial SOAP100k checkpoint](versus100k/README.md). The terminal SOAP422400 model remains unavailable; it is explicitly not used or substituted silently.
+
 User requested an additional50000-update run with continuous cosine LR **1e-3→1e-4**, overlaid on the existing comparison plots with the new update axis starting at zero. This run restores the **same common full checkpoint342400**, not the paused extension, random initialization, or missing422400 weights. Full SOAP counter55001 and RNG are retained; the target is392400. This is a newly authorized50000-update budget, separate from the previously held experiment. The previous unconditional extension remains paused.
 
 For new update j=1,…,50000: `lr(j)=1e-4+(1e-3−1e-4)/2×[1+cos(π(j−1)/49999)]`. First actual LR1e-3, final1e-4; no resets, step reductions or adaptive LR decisions. Batch32 and the original fresh geometry/Re/interior/outlet sampler, hard constraints, loss, clipping, precision and SOAP hyperparameters remain unchanged. The source SHA256 is `b49cc0e7c38809a5fe9f9913ae24c35563c6d8c5287af0bfe0aec283a7522018`.

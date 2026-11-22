@@ -1,0 +1,329 @@
+{
+  "current_step": 374900,
+  "current_updates": 32500,
+  "same_fields_verified_case_ids": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20"
+  ],
+  "missing_100k_SOAP_final422400": true,
+  "models": {
+    "adam100k_final287400": {
+      "all20": {
+        "velocity_l2": {
+          "median": 0.01384750952418112,
+          "max": 0.07649980823932519,
+          "count": 20
+        },
+        "pressure_l2": {
+          "median": 0.014744432862416956,
+          "max": 0.14427832936167384,
+          "count": 20
+        },
+        "u_l2": {
+          "median": 0.012711961432168514,
+          "max": 0.07342980464159896,
+          "count": 20
+        },
+        "v_l2": {
+          "median": 0.11114725069671283,
+          "max": 0.32781302766351544,
+          "count": 19
+        }
+      },
+      "same_curvature12": {
+        "velocity_l2": {
+          "median": 0.01792014582905984,
+          "max": 0.04742227249755486,
+          "count": 12
+        },
+        "pressure_l2": {
+          "median": 0.016251719950410824,
+          "max": 0.06370474667923598,
+          "count": 12
+        },
+        "u_l2": {
+          "median": 0.015818694129496935,
+          "max": 0.04222338464925816,
+          "count": 12
+        },
+        "v_l2": {
+          "median": 0.1478279442749035,
+          "max": 0.32781302766351544,
+          "count": 12
+        }
+      }
+    },
+    "adam100k_probe_best282400": {
+      "all20": {
+        "velocity_l2": {
+          "median": 0.014533179782430855,
+          "max": 0.07780542424387944,
+          "count": 20
+        },
+        "pressure_l2": {
+          "median": 0.012659158704922473,
+          "max": 0.1422255938679088,
+          "count": 20
+        },
+        "u_l2": {
+          "median": 0.013381217180146183,
+          "max": 0.07485047875293376,
+          "count": 20
+        },
+        "v_l2": {
+          "median": 0.11148238756205864,
+          "max": 0.31649661891857456,
+          "count": 19
+        }
+      },
+      "same_curvature12": {
+        "velocity_l2": {
+          "median": 0.017762507218772136,
+          "max": 0.046023011840495454,
+          "count": 12
+        },
+        "pressure_l2": {
+          "median": 0.016508147252119867,
+          "max": 0.06165876090561431,
+          "count": 12
+        },
+        "u_l2": {
+          "median": 0.015794865685706178,
+          "max": 0.04114808216763003,
+          "count": 12
+        },
+        "v_l2": {
+          "median": 0.15354287211237067,
+          "max": 0.31649661891857456,
+          "count": 12
+        }
+      }
+    },
+    "soap_cosine_partial342400": {
+      "all20": {
+        "velocity_l2": {
+          "median": 0.01371751694509943,
+          "max": 0.07060395069839197,
+          "count": 20
+        },
+        "pressure_l2": {
+          "median": 0.013092908156931208,
+          "max": 0.11174951999130195,
+          "count": 20
+        },
+        "u_l2": {
+          "median": 0.012742386017115364,
+          "max": 0.0677921146236099,
+          "count": 20
+        },
+        "v_l2": {
+          "median": 0.09870607427316308,
+          "max": 0.3093236334367276,
+          "count": 19
+        }
+      },
+      "same_curvature12": {
+        "velocity_l2": {
+          "median": 0.017374233032186645,
+          "max": 0.04343207450489879,
+          "count": 12
+        },
+        "pressure_l2": {
+          "median": 0.014431609380754783,
+          "max": 0.06566878253380837,
+          "count": 12
+        },
+        "u_l2": {
+          "median": 0.015406640861665995,
+          "max": 0.03884282422245765,
+          "count": 12
+        },
+        "v_l2": {
+          "median": 0.13603254615609323,
+          "max": 0.3093236334367276,
+          "count": 12
+        }
+      }
+    },
+    "new_highlr374900": {
+      "all20": {
+        "velocity_l2": {
+          "median": 0.0127161727921545,
+          "max": 0.06993616041543099,
+          "count": 20
+        },
+        "pressure_l2": {
+          "median": 0.012402704882335431,
+          "max": 0.0968616792023449,
+          "count": 20
+        },
+        "u_l2": {
+          "median": 0.011831231533641006,
+          "max": 0.0668817913247783,
+          "count": 20
+        },
+        "v_l2": {
+          "median": 0.10567430596944087,
+          "max": 0.2982601471871158,
+          "count": 19
+        }
+      },
+      "same_curvature12": {
+        "velocity_l2": {
+          "median": 0.01371498146409168,
+          "max": 0.030173059554387066,
+          "count": 12
+        },
+        "pressure_l2": {
+          "median": 0.014035683498502007,
+          "max": 0.027476419278728254,
+          "count": 12
+        },
+        "u_l2": {
+          "median": 0.012596029361653488,
+          "max": 0.027016432526999683,
+          "count": 12
+        },
+        "v_l2": {
+          "median": 0.10300328541152007,
+          "max": 0.253544080733419,
+          "count": 12
+        }
+      }
+    }
+  },
+  "comparisons": {
+    "adam100k_final287400": {
+      "all20": {
+        "velocity_l2": {
+          "median_relative_reduction_percent": 8.169965364898513,
+          "improved_cases": 14
+        },
+        "pressure_l2": {
+          "median_relative_reduction_percent": 15.882116334569286,
+          "improved_cases": 12
+        },
+        "u_l2": {
+          "median_relative_reduction_percent": 6.928355653272822,
+          "improved_cases": 14
+        },
+        "v_l2": {
+          "median_relative_reduction_percent": 4.92404867683679,
+          "improved_cases": 15
+        }
+      },
+      "same_curvature12": {
+        "velocity_l2": {
+          "median_relative_reduction_percent": 23.466128038695654,
+          "improved_cases": 9
+        },
+        "pressure_l2": {
+          "median_relative_reduction_percent": 13.635704151133854,
+          "improved_cases": 7
+        },
+        "u_l2": {
+          "median_relative_reduction_percent": 20.3725082580248,
+          "improved_cases": 9
+        },
+        "v_l2": {
+          "median_relative_reduction_percent": 30.322182374414062,
+          "improved_cases": 10
+        }
+      }
+    },
+    "adam100k_probe_best282400": {
+      "all20": {
+        "velocity_l2": {
+          "median_relative_reduction_percent": 12.502473770213262,
+          "improved_cases": 15
+        },
+        "pressure_l2": {
+          "median_relative_reduction_percent": 2.025836223123745,
+          "improved_cases": 13
+        },
+        "u_l2": {
+          "median_relative_reduction_percent": 11.583293400281281,
+          "improved_cases": 14
+        },
+        "v_l2": {
+          "median_relative_reduction_percent": 5.209864732565572,
+          "improved_cases": 15
+        }
+      },
+      "same_curvature12": {
+        "velocity_l2": {
+          "median_relative_reduction_percent": 22.786905614331676,
+          "improved_cases": 10
+        },
+        "pressure_l2": {
+          "median_relative_reduction_percent": 14.977233458469197,
+          "improved_cases": 8
+        },
+        "u_l2": {
+          "median_relative_reduction_percent": 20.252380664101043,
+          "improved_cases": 9
+        },
+        "v_l2": {
+          "median_relative_reduction_percent": 32.915618944435984,
+          "improved_cases": 10
+        }
+      }
+    },
+    "soap_cosine_partial342400": {
+      "all20": {
+        "velocity_l2": {
+          "median_relative_reduction_percent": 7.299747884056085,
+          "improved_cases": 13
+        },
+        "pressure_l2": {
+          "median_relative_reduction_percent": 5.271581121039127,
+          "improved_cases": 12
+        },
+        "u_l2": {
+          "median_relative_reduction_percent": 7.150579822731085,
+          "improved_cases": 13
+        },
+        "v_l2": {
+          "median_relative_reduction_percent": -7.059577384258664,
+          "improved_cases": 12
+        }
+      },
+      "same_curvature12": {
+        "velocity_l2": {
+          "median_relative_reduction_percent": 21.061370371377063,
+          "improved_cases": 8
+        },
+        "pressure_l2": {
+          "median_relative_reduction_percent": 2.7434631287953315,
+          "improved_cases": 8
+        },
+        "u_l2": {
+          "median_relative_reduction_percent": 18.24285725388539,
+          "improved_cases": 8
+        },
+        "v_l2": {
+          "median_relative_reduction_percent": 24.28041059135443,
+          "improved_cases": 8
+        }
+      }
+    }
+  }
+}
