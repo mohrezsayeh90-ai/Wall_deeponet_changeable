@@ -1,7 +1,7 @@
 {
   "phase": "running",
-  "active_case": "constant_5e5",
-  "completed_updates": 10000,
+  "active_case": "constant_2e4",
+  "completed_updates": 15000,
   "budget": 50000,
   "case_target": 5000,
   "case_anchor": 342400
