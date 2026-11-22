@@ -1,0 +1,1339 @@
+{
+  "scope": "Five paired5000-update development screens; extension separate; no new run started",
+  "methods": {
+    "constant_2e5": {
+      "config": {
+        "anchor": 342400,
+        "updates": 5000,
+        "optimizer_count": 55001,
+        "mode": "constant",
+        "lr": 2e-05,
+        "end_lr": 2e-05,
+        "base_sha256": "b49cc0e7c38809a5fe9f9913ae24c35563c6d8c5287af0bfe0aec283a7522018",
+        "case": "constant_2e5"
+      },
+      "endpoint": {
+        "step": 347400,
+        "offset": 5000,
+        "control": 0.011637757532298565,
+        "audit": 0.011444015428423882,
+        "elapsed_seconds": 404.88800660200013
+      },
+      "final3_probe_mean": {
+        "control": 0.011490678104261557,
+        "audit": 0.01151852992673715
+      },
+      "relative_probe_change_percent": {
+        "control": -4.4715909568706085,
+        "audit": -9.605142948488343
+      },
+      "fem": {
+        "cases": [
+          {
+            "case": "1",
+            "velocity_l2": 0.001588209993107762,
+            "pressure_l2": 0.00420630903296158
+          },
+          {
+            "case": "2",
+            "velocity_l2": 0.0019656665084529907,
+            "pressure_l2": 0.00409281655102277
+          },
+          {
+            "case": "3",
+            "velocity_l2": 0.004862215608247824,
+            "pressure_l2": 0.009185707252881047
+          },
+          {
+            "case": "4",
+            "velocity_l2": 0.007567374398890779,
+            "pressure_l2": 0.01588835704604519
+          },
+          {
+            "case": "5",
+            "velocity_l2": 0.010710647899333323,
+            "pressure_l2": 0.004933509812310962
+          },
+          {
+            "case": "6",
+            "velocity_l2": 0.011093163315635188,
+            "pressure_l2": 0.006253567881335101
+          },
+          {
+            "case": "7",
+            "velocity_l2": 0.007490902081728691,
+            "pressure_l2": 0.02349044537953203
+          },
+          {
+            "case": "8",
+            "velocity_l2": 0.014001537229042384,
+            "pressure_l2": 0.025125207148735788
+          },
+          {
+            "case": "9",
+            "velocity_l2": 0.009346287317537833,
+            "pressure_l2": 0.008190727011332019
+          },
+          {
+            "case": "10",
+            "velocity_l2": 0.011927134147349385,
+            "pressure_l2": 0.008678358029883747
+          },
+          {
+            "case": "11",
+            "velocity_l2": 0.01767585164748807,
+            "pressure_l2": 0.011911063510103086
+          },
+          {
+            "case": "12",
+            "velocity_l2": 0.03590396545280474,
+            "pressure_l2": 0.01282345632322178
+          },
+          {
+            "case": "13",
+            "velocity_l2": 0.01957915883374467,
+            "pressure_l2": 0.016311066583779874
+          },
+          {
+            "case": "14",
+            "velocity_l2": 0.04235599101192444,
+            "pressure_l2": 0.0549453797278651
+          },
+          {
+            "case": "15",
+            "velocity_l2": 0.03292105313060195,
+            "pressure_l2": 0.030908810715256235
+          },
+          {
+            "case": "16",
+            "velocity_l2": 0.07152233288017798,
+            "pressure_l2": 0.12380508103059659
+          },
+          {
+            "case": "17",
+            "velocity_l2": 0.016761954720420722,
+            "pressure_l2": 0.016369547120442307
+          },
+          {
+            "case": "18",
+            "velocity_l2": 0.009426591527139653,
+            "pressure_l2": 0.01045745699054595
+          },
+          {
+            "case": "19",
+            "velocity_l2": 0.01713462205321085,
+            "pressure_l2": 0.010792934976119543
+          },
+          {
+            "case": "20",
+            "velocity_l2": 0.04872098577208594,
+            "pressure_l2": 0.013991170997659978
+          },
+          {
+            "case": "pilot_0",
+            "velocity_l2": 0.002699449265824457,
+            "pressure_l2": 0.0026078437968306803
+          },
+          {
+            "case": "pilot_1",
+            "velocity_l2": 0.009748588964785452,
+            "pressure_l2": 0.002677470275575484
+          },
+          {
+            "case": "pilot_2",
+            "velocity_l2": 0.006581183510917325,
+            "pressure_l2": 0.007410954681475134
+          },
+          {
+            "case": "pilot_3",
+            "velocity_l2": 0.009943807436434901,
+            "pressure_l2": 0.004207087924331199
+          },
+          {
+            "case": "pilot_4",
+            "velocity_l2": 0.02209200108166646,
+            "pressure_l2": 0.017264658584315338
+          },
+          {
+            "case": "pilot_5",
+            "velocity_l2": 0.009727312023292687,
+            "pressure_l2": 0.004636367122135827
+          },
+          {
+            "case": "pilot_6",
+            "velocity_l2": 0.01874988797101368,
+            "pressure_l2": 0.008611972191885572
+          },
+          {
+            "case": "pilot_7",
+            "velocity_l2": 0.020773235642789694,
+            "pressure_l2": 0.004507311299527336
+          }
+        ],
+        "saved20": {
+          "velocity_l2_median": 0.012964335688195884,
+          "velocity_l2_max": 0.07152233288017798,
+          "pressure_l2_median": 0.012367259916662432,
+          "pressure_l2_max": 0.12380508103059659
+        },
+        "pilot8": {
+          "velocity_l2_median": 0.009846198200610176,
+          "velocity_l2_max": 0.02209200108166646,
+          "pressure_l2_median": 0.004571839210831582,
+          "pressure_l2_max": 0.017264658584315338
+        }
+      },
+      "per_case_improvements": {
+        "saved20": {
+          "velocity_l2": 12,
+          "pressure_l2": 10
+        },
+        "pilot8": {
+          "velocity_l2": 6,
+          "pressure_l2": 2
+        }
+      }
+    },
+    "constant_5e5": {
+      "config": {
+        "anchor": 342400,
+        "updates": 5000,
+        "optimizer_count": 55001,
+        "mode": "constant",
+        "lr": 5e-05,
+        "end_lr": 5e-05,
+        "base_sha256": "b49cc0e7c38809a5fe9f9913ae24c35563c6d8c5287af0bfe0aec283a7522018",
+        "case": "constant_5e5"
+      },
+      "endpoint": {
+        "step": 347400,
+        "offset": 5000,
+        "control": 0.01183386892080307,
+        "audit": 0.011481758207082748,
+        "elapsed_seconds": 406.6491442480001
+      },
+      "final3_probe_mean": {
+        "control": 0.011598863328496615,
+        "audit": 0.011793499812483788
+      },
+      "relative_probe_change_percent": {
+        "control": -2.861812708176137,
+        "audit": -9.307017425770049
+      },
+      "fem": {
+        "cases": [
+          {
+            "case": "1",
+            "velocity_l2": 0.0018811784152682125,
+            "pressure_l2": 0.004074762631536976
+          },
+          {
+            "case": "2",
+            "velocity_l2": 0.0017638368663414185,
+            "pressure_l2": 0.0035854756497040743
+          },
+          {
+            "case": "3",
+            "velocity_l2": 0.004344742526500533,
+            "pressure_l2": 0.010241538234170776
+          },
+          {
+            "case": "4",
+            "velocity_l2": 0.00718724089154019,
+            "pressure_l2": 0.014263125443833314
+          },
+          {
+            "case": "5",
+            "velocity_l2": 0.01003115640358354,
+            "pressure_l2": 0.005249375321131782
+          },
+          {
+            "case": "6",
+            "velocity_l2": 0.011725593544364178,
+            "pressure_l2": 0.007449540406071996
+          },
+          {
+            "case": "7",
+            "velocity_l2": 0.00733622771636453,
+            "pressure_l2": 0.023826735162944205
+          },
+          {
+            "case": "8",
+            "velocity_l2": 0.013517704211291927,
+            "pressure_l2": 0.019862406353604947
+          },
+          {
+            "case": "9",
+            "velocity_l2": 0.009260207891215917,
+            "pressure_l2": 0.008260902373555073
+          },
+          {
+            "case": "10",
+            "velocity_l2": 0.012051909673674135,
+            "pressure_l2": 0.00956425667179044
+          },
+          {
+            "case": "11",
+            "velocity_l2": 0.017745437391154913,
+            "pressure_l2": 0.012505056053735713
+          },
+          {
+            "case": "12",
+            "velocity_l2": 0.037253645145074954,
+            "pressure_l2": 0.01020341741377572
+          },
+          {
+            "case": "13",
+            "velocity_l2": 0.019692194173782623,
+            "pressure_l2": 0.015847035379522333
+          },
+          {
+            "case": "14",
+            "velocity_l2": 0.04303617849138164,
+            "pressure_l2": 0.05251782089373508
+          },
+          {
+            "case": "15",
+            "velocity_l2": 0.033210904880515625,
+            "pressure_l2": 0.03339107217127665
+          },
+          {
+            "case": "16",
+            "velocity_l2": 0.07092976644850793,
+            "pressure_l2": 0.12771241140226147
+          },
+          {
+            "case": "17",
+            "velocity_l2": 0.015999024049436195,
+            "pressure_l2": 0.017548644333705087
+          },
+          {
+            "case": "18",
+            "velocity_l2": 0.008964678958401516,
+            "pressure_l2": 0.010642396655411559
+          },
+          {
+            "case": "19",
+            "velocity_l2": 0.016926897981081015,
+            "pressure_l2": 0.010234605213899925
+          },
+          {
+            "case": "20",
+            "velocity_l2": 0.047544244958131206,
+            "pressure_l2": 0.013549362602472964
+          },
+          {
+            "case": "pilot_0",
+            "velocity_l2": 0.0027632632966191777,
+            "pressure_l2": 0.0031151959356509676
+          },
+          {
+            "case": "pilot_1",
+            "velocity_l2": 0.009346922452899932,
+            "pressure_l2": 0.002911796193216703
+          },
+          {
+            "case": "pilot_2",
+            "velocity_l2": 0.006307777486659284,
+            "pressure_l2": 0.007521403336651064
+          },
+          {
+            "case": "pilot_3",
+            "velocity_l2": 0.009868464850187747,
+            "pressure_l2": 0.004309796340314397
+          },
+          {
+            "case": "pilot_4",
+            "velocity_l2": 0.021487723951971398,
+            "pressure_l2": 0.019053261983492987
+          },
+          {
+            "case": "pilot_5",
+            "velocity_l2": 0.009871310879895165,
+            "pressure_l2": 0.005300429704259646
+          },
+          {
+            "case": "pilot_6",
+            "velocity_l2": 0.018889978000680187,
+            "pressure_l2": 0.009755959852799433
+          },
+          {
+            "case": "pilot_7",
+            "velocity_l2": 0.020693552855246215,
+            "pressure_l2": 0.00398386112922888
+          }
+        ],
+        "saved20": {
+          "velocity_l2_median": 0.012784806942483032,
+          "velocity_l2_max": 0.07092976644850793,
+          "pressure_l2_median": 0.011573726354573636,
+          "pressure_l2_max": 0.12771241140226147
+        },
+        "pilot8": {
+          "velocity_l2_median": 0.009869887865041456,
+          "velocity_l2_max": 0.021487723951971398,
+          "pressure_l2_median": 0.004805113022287021,
+          "pressure_l2_max": 0.019053261983492987
+        }
+      },
+      "per_case_improvements": {
+        "saved20": {
+          "velocity_l2": 15,
+          "pressure_l2": 9
+        },
+        "pilot8": {
+          "velocity_l2": 6,
+          "pressure_l2": 3
+        }
+      }
+    },
+    "constant_1e4": {
+      "config": {
+        "anchor": 342400,
+        "updates": 5000,
+        "optimizer_count": 55001,
+        "mode": "constant",
+        "lr": 0.0001,
+        "end_lr": 0.0001,
+        "base_sha256": "b49cc0e7c38809a5fe9f9913ae24c35563c6d8c5287af0bfe0aec283a7522018",
+        "case": "constant_1e4"
+      },
+      "endpoint": {
+        "step": 347400,
+        "offset": 5000,
+        "control": 0.012280603870749474,
+        "audit": 0.011776426807045937,
+        "elapsed_seconds": 422.17240821899986
+      },
+      "final3_probe_mean": {
+        "control": 0.01196738767127196,
+        "audit": 0.012037933804094791
+      },
+      "relative_probe_change_percent": {
+        "control": 0.8052063815327193,
+        "audit": -6.979466738877105
+      },
+      "fem": {
+        "cases": [
+          {
+            "case": "1",
+            "velocity_l2": 0.0021899192720169123,
+            "pressure_l2": 0.004671927119028315
+          },
+          {
+            "case": "2",
+            "velocity_l2": 0.0016722539358826935,
+            "pressure_l2": 0.003735548181186007
+          },
+          {
+            "case": "3",
+            "velocity_l2": 0.00406870020427312,
+            "pressure_l2": 0.01014532241559106
+          },
+          {
+            "case": "4",
+            "velocity_l2": 0.007361467889890435,
+            "pressure_l2": 0.008099614800201622
+          },
+          {
+            "case": "5",
+            "velocity_l2": 0.009943075059803248,
+            "pressure_l2": 0.006848410232861265
+          },
+          {
+            "case": "6",
+            "velocity_l2": 0.012278844384599853,
+            "pressure_l2": 0.009375723707632155
+          },
+          {
+            "case": "7",
+            "velocity_l2": 0.007690402758629023,
+            "pressure_l2": 0.02355204839233565
+          },
+          {
+            "case": "8",
+            "velocity_l2": 0.013194472548595163,
+            "pressure_l2": 0.01454067364317112
+          },
+          {
+            "case": "9",
+            "velocity_l2": 0.009343601330545466,
+            "pressure_l2": 0.007019692208496803
+          },
+          {
+            "case": "10",
+            "velocity_l2": 0.011981705009569686,
+            "pressure_l2": 0.010767838731287923
+          },
+          {
+            "case": "11",
+            "velocity_l2": 0.017360047560692125,
+            "pressure_l2": 0.015764627301303083
+          },
+          {
+            "case": "12",
+            "velocity_l2": 0.03750812980531451,
+            "pressure_l2": 0.009329972475536429
+          },
+          {
+            "case": "13",
+            "velocity_l2": 0.019765643321921256,
+            "pressure_l2": 0.013870464608027296
+          },
+          {
+            "case": "14",
+            "velocity_l2": 0.04357586077355149,
+            "pressure_l2": 0.05266873990677325
+          },
+          {
+            "case": "15",
+            "velocity_l2": 0.032453911009150495,
+            "pressure_l2": 0.03391427824029774
+          },
+          {
+            "case": "16",
+            "velocity_l2": 0.07039330948859972,
+            "pressure_l2": 0.12529916527652094
+          },
+          {
+            "case": "17",
+            "velocity_l2": 0.01547171797983436,
+            "pressure_l2": 0.01965095829567545
+          },
+          {
+            "case": "18",
+            "velocity_l2": 0.008803626613897676,
+            "pressure_l2": 0.010135956030779271
+          },
+          {
+            "case": "19",
+            "velocity_l2": 0.01648718408146511,
+            "pressure_l2": 0.010718053004377748
+          },
+          {
+            "case": "20",
+            "velocity_l2": 0.04753628658416373,
+            "pressure_l2": 0.01337335255103526
+          },
+          {
+            "case": "pilot_0",
+            "velocity_l2": 0.0028379191768603033,
+            "pressure_l2": 0.0028900263696208474
+          },
+          {
+            "case": "pilot_1",
+            "velocity_l2": 0.008727886310802135,
+            "pressure_l2": 0.0025823501283201884
+          },
+          {
+            "case": "pilot_2",
+            "velocity_l2": 0.006707236502264699,
+            "pressure_l2": 0.006308191476841048
+          },
+          {
+            "case": "pilot_3",
+            "velocity_l2": 0.009711323182682946,
+            "pressure_l2": 0.004321146892270999
+          },
+          {
+            "case": "pilot_4",
+            "velocity_l2": 0.01996309304366846,
+            "pressure_l2": 0.023784278303008666
+          },
+          {
+            "case": "pilot_5",
+            "velocity_l2": 0.009214876639926945,
+            "pressure_l2": 0.005813313568687714
+          },
+          {
+            "case": "pilot_6",
+            "velocity_l2": 0.0188769883565752,
+            "pressure_l2": 0.012759106358469713
+          },
+          {
+            "case": "pilot_7",
+            "velocity_l2": 0.0204678014215143,
+            "pressure_l2": 0.005306467344665289
+          }
+        ],
+        "saved20": {
+          "velocity_l2_median": 0.012736658466597509,
+          "velocity_l2_max": 0.07039330948859972,
+          "pressure_l2_median": 0.010742945867832835,
+          "pressure_l2_max": 0.12529916527652094
+        },
+        "pilot8": {
+          "velocity_l2_median": 0.009463099911304946,
+          "velocity_l2_max": 0.0204678014215143,
+          "pressure_l2_median": 0.005559890456676502,
+          "pressure_l2_max": 0.023784278303008666
+        }
+      },
+      "per_case_improvements": {
+        "saved20": {
+          "velocity_l2": 17,
+          "pressure_l2": 9
+        },
+        "pilot8": {
+          "velocity_l2": 8,
+          "pressure_l2": 1
+        }
+      }
+    },
+    "constant_2e4": {
+      "config": {
+        "anchor": 342400,
+        "updates": 5000,
+        "optimizer_count": 55001,
+        "mode": "constant",
+        "lr": 0.0002,
+        "end_lr": 0.0002,
+        "base_sha256": "b49cc0e7c38809a5fe9f9913ae24c35563c6d8c5287af0bfe0aec283a7522018",
+        "case": "constant_2e4"
+      },
+      "endpoint": {
+        "step": 347400,
+        "offset": 5000,
+        "control": 0.013442336581647396,
+        "audit": 0.012898772023618221,
+        "elapsed_seconds": 407.2867938999998
+      },
+      "final3_probe_mean": {
+        "control": 0.01304584431151549,
+        "audit": 0.012796613698204359
+      },
+      "relative_probe_change_percent": {
+        "control": 10.34127699457299,
+        "audit": 1.8857987834424828
+      },
+      "fem": {
+        "cases": [
+          {
+            "case": "1",
+            "velocity_l2": 0.0027002976396191592,
+            "pressure_l2": 0.006155003181544902
+          },
+          {
+            "case": "2",
+            "velocity_l2": 0.002091498747187611,
+            "pressure_l2": 0.006862039738685681
+          },
+          {
+            "case": "3",
+            "velocity_l2": 0.004368583335128948,
+            "pressure_l2": 0.0070967739026225485
+          },
+          {
+            "case": "4",
+            "velocity_l2": 0.008415097265511803,
+            "pressure_l2": 0.008938425506348607
+          },
+          {
+            "case": "5",
+            "velocity_l2": 0.010899862571207427,
+            "pressure_l2": 0.010226099831757192
+          },
+          {
+            "case": "6",
+            "velocity_l2": 0.013046198595232464,
+            "pressure_l2": 0.007251794010845294
+          },
+          {
+            "case": "7",
+            "velocity_l2": 0.008405098205352953,
+            "pressure_l2": 0.023988819840723506
+          },
+          {
+            "case": "8",
+            "velocity_l2": 0.014155313041111194,
+            "pressure_l2": 0.013697953367589642
+          },
+          {
+            "case": "9",
+            "velocity_l2": 0.011347693922431165,
+            "pressure_l2": 0.007014813989101573
+          },
+          {
+            "case": "10",
+            "velocity_l2": 0.014696936979320795,
+            "pressure_l2": 0.011167279027184092
+          },
+          {
+            "case": "11",
+            "velocity_l2": 0.018577390581880508,
+            "pressure_l2": 0.01976690419270045
+          },
+          {
+            "case": "12",
+            "velocity_l2": 0.0357070468469065,
+            "pressure_l2": 0.010262987950910091
+          },
+          {
+            "case": "13",
+            "velocity_l2": 0.018304452665811526,
+            "pressure_l2": 0.011844363669961352
+          },
+          {
+            "case": "14",
+            "velocity_l2": 0.04415791139493714,
+            "pressure_l2": 0.05280074255782073
+          },
+          {
+            "case": "15",
+            "velocity_l2": 0.031295390388619414,
+            "pressure_l2": 0.032866761919018696
+          },
+          {
+            "case": "16",
+            "velocity_l2": 0.07113228103123849,
+            "pressure_l2": 0.13700499097384533
+          },
+          {
+            "case": "17",
+            "velocity_l2": 0.016026887607035037,
+            "pressure_l2": 0.01899267821477078
+          },
+          {
+            "case": "18",
+            "velocity_l2": 0.009256277774206354,
+            "pressure_l2": 0.008776782145228115
+          },
+          {
+            "case": "19",
+            "velocity_l2": 0.0158318966954755,
+            "pressure_l2": 0.010820291473270379
+          },
+          {
+            "case": "20",
+            "velocity_l2": 0.04925494727400627,
+            "pressure_l2": 0.014100767038603093
+          },
+          {
+            "case": "pilot_0",
+            "velocity_l2": 0.0032282965890957404,
+            "pressure_l2": 0.0015385879399188473
+          },
+          {
+            "case": "pilot_1",
+            "velocity_l2": 0.008899435303308783,
+            "pressure_l2": 0.003519868532077153
+          },
+          {
+            "case": "pilot_2",
+            "velocity_l2": 0.007772990475228034,
+            "pressure_l2": 0.004738614295862246
+          },
+          {
+            "case": "pilot_3",
+            "velocity_l2": 0.009048860571444951,
+            "pressure_l2": 0.003765513639262662
+          },
+          {
+            "case": "pilot_4",
+            "velocity_l2": 0.018685574431694957,
+            "pressure_l2": 0.028541650866621103
+          },
+          {
+            "case": "pilot_5",
+            "velocity_l2": 0.008488789925443245,
+            "pressure_l2": 0.005738547635655754
+          },
+          {
+            "case": "pilot_6",
+            "velocity_l2": 0.0177285332144491,
+            "pressure_l2": 0.01668685996558045
+          },
+          {
+            "case": "pilot_7",
+            "velocity_l2": 0.02065534994631351,
+            "pressure_l2": 0.007293694366274415
+          }
+        ],
+        "saved20": {
+          "velocity_l2_median": 0.014426125010215994,
+          "velocity_l2_max": 0.07113228103123849,
+          "pressure_l2_median": 0.010993785250227235,
+          "pressure_l2_max": 0.13700499097384533
+        },
+        "pilot8": {
+          "velocity_l2_median": 0.008974147937376867,
+          "velocity_l2_max": 0.02065534994631351,
+          "pressure_l2_median": 0.005238580965759,
+          "pressure_l2_max": 0.028541650866621103
+        }
+      },
+      "per_case_improvements": {
+        "saved20": {
+          "velocity_l2": 7,
+          "pressure_l2": 12
+        },
+        "pilot8": {
+          "velocity_l2": 6,
+          "pressure_l2": 1
+        }
+      }
+    },
+    "cosine_1e4_2e5": {
+      "config": {
+        "anchor": 342400,
+        "updates": 5000,
+        "optimizer_count": 55001,
+        "mode": "cosine",
+        "lr": 0.0001,
+        "end_lr": 2e-05,
+        "base_sha256": "b49cc0e7c38809a5fe9f9913ae24c35563c6d8c5287af0bfe0aec283a7522018",
+        "case": "cosine_1e4_2e5"
+      },
+      "endpoint": {
+        "step": 347400,
+        "offset": 5000,
+        "control": 0.011555178090929985,
+        "audit": 0.011466610245406628,
+        "elapsed_seconds": 404.04646257700006
+      },
+      "final3_probe_mean": {
+        "control": 0.011443546662727991,
+        "audit": 0.011687305135031542
+      },
+      "relative_probe_change_percent": {
+        "control": -5.149443423870126,
+        "audit": -9.426669294373246
+      },
+      "fem": {
+        "cases": [
+          {
+            "case": "1",
+            "velocity_l2": 0.001625864529205777,
+            "pressure_l2": 0.003953166520443164
+          },
+          {
+            "case": "2",
+            "velocity_l2": 0.002021247423167395,
+            "pressure_l2": 0.0037086393185884877
+          },
+          {
+            "case": "3",
+            "velocity_l2": 0.00477306847474973,
+            "pressure_l2": 0.008721243373212343
+          },
+          {
+            "case": "4",
+            "velocity_l2": 0.007440559456361633,
+            "pressure_l2": 0.015306645408422314
+          },
+          {
+            "case": "5",
+            "velocity_l2": 0.01047888902482227,
+            "pressure_l2": 0.005918393136422726
+          },
+          {
+            "case": "6",
+            "velocity_l2": 0.01133235778582873,
+            "pressure_l2": 0.005690035200321426
+          },
+          {
+            "case": "7",
+            "velocity_l2": 0.007664040736438443,
+            "pressure_l2": 0.022950479735123076
+          },
+          {
+            "case": "8",
+            "velocity_l2": 0.013630143103473925,
+            "pressure_l2": 0.02303440946721929
+          },
+          {
+            "case": "9",
+            "velocity_l2": 0.009067276291913739,
+            "pressure_l2": 0.008399595469626155
+          },
+          {
+            "case": "10",
+            "velocity_l2": 0.011618608439652529,
+            "pressure_l2": 0.009255577573767718
+          },
+          {
+            "case": "11",
+            "velocity_l2": 0.017145518484282297,
+            "pressure_l2": 0.010503613357983941
+          },
+          {
+            "case": "12",
+            "velocity_l2": 0.03549468241745604,
+            "pressure_l2": 0.011699256382095723
+          },
+          {
+            "case": "13",
+            "velocity_l2": 0.019800230855110863,
+            "pressure_l2": 0.01880465973424853
+          },
+          {
+            "case": "14",
+            "velocity_l2": 0.042140709062416334,
+            "pressure_l2": 0.05346660729959959
+          },
+          {
+            "case": "15",
+            "velocity_l2": 0.03359519717109823,
+            "pressure_l2": 0.032405521530421685
+          },
+          {
+            "case": "16",
+            "velocity_l2": 0.07089546192130451,
+            "pressure_l2": 0.11806449102560056
+          },
+          {
+            "case": "17",
+            "velocity_l2": 0.01642032770788524,
+            "pressure_l2": 0.016675002365182094
+          },
+          {
+            "case": "18",
+            "velocity_l2": 0.009514716070099674,
+            "pressure_l2": 0.010599713213006115
+          },
+          {
+            "case": "19",
+            "velocity_l2": 0.017345327873267147,
+            "pressure_l2": 0.010832286217745356
+          },
+          {
+            "case": "20",
+            "velocity_l2": 0.04820455787418485,
+            "pressure_l2": 0.013423020596584165
+          },
+          {
+            "case": "pilot_0",
+            "velocity_l2": 0.0026391471036513,
+            "pressure_l2": 0.002924811950557212
+          },
+          {
+            "case": "pilot_1",
+            "velocity_l2": 0.009448916818474082,
+            "pressure_l2": 0.002634637403162049
+          },
+          {
+            "case": "pilot_2",
+            "velocity_l2": 0.006795682521710303,
+            "pressure_l2": 0.008053257969758785
+          },
+          {
+            "case": "pilot_3",
+            "velocity_l2": 0.00991506171672923,
+            "pressure_l2": 0.004135209196048327
+          },
+          {
+            "case": "pilot_4",
+            "velocity_l2": 0.02147571696132447,
+            "pressure_l2": 0.01671952540772701
+          },
+          {
+            "case": "pilot_5",
+            "velocity_l2": 0.009630677111602832,
+            "pressure_l2": 0.004845827207628011
+          },
+          {
+            "case": "pilot_6",
+            "velocity_l2": 0.018390595669299806,
+            "pressure_l2": 0.010800547517692551
+          },
+          {
+            "case": "pilot_7",
+            "velocity_l2": 0.020889713282881583,
+            "pressure_l2": 0.004006897659968513
+          }
+        ],
+        "saved20": {
+          "velocity_l2_median": 0.012624375771563227,
+          "velocity_l2_max": 0.07089546192130451,
+          "pressure_l2_median": 0.01126577129992054,
+          "pressure_l2_max": 0.11806449102560056
+        },
+        "pilot8": {
+          "velocity_l2_median": 0.009772869414166031,
+          "velocity_l2_max": 0.02147571696132447,
+          "pressure_l2_median": 0.004490518201838168,
+          "pressure_l2_max": 0.01671952540772701
+        }
+      },
+      "per_case_improvements": {
+        "saved20": {
+          "velocity_l2": 12,
+          "pressure_l2": 11
+        },
+        "pilot8": {
+          "velocity_l2": 7,
+          "pressure_l2": 3
+        }
+      }
+    }
+  },
+  "baseline_fem": {
+    "cases": [
+      {
+        "case": "1",
+        "velocity_l2": 0.0021980975609782534,
+        "pressure_l2": 0.003539454948367473
+      },
+      {
+        "case": "2",
+        "velocity_l2": 0.002008834451042529,
+        "pressure_l2": 0.002335360908247607
+      },
+      {
+        "case": "3",
+        "velocity_l2": 0.004228903764150426,
+        "pressure_l2": 0.009989968751411829
+      },
+      {
+        "case": "4",
+        "velocity_l2": 0.009042015650856404,
+        "pressure_l2": 0.01671911905440056
+      },
+      {
+        "case": "5",
+        "velocity_l2": 0.010288933182152078,
+        "pressure_l2": 0.006281789941689188
+      },
+      {
+        "case": "6",
+        "velocity_l2": 0.012876350122941988,
+        "pressure_l2": 0.013740869757760461
+      },
+      {
+        "case": "7",
+        "velocity_l2": 0.008315012558678456,
+        "pressure_l2": 0.021705789496805176
+      },
+      {
+        "case": "8",
+        "velocity_l2": 0.014558683767256872,
+        "pressure_l2": 0.031282258858057084
+      },
+      {
+        "case": "9",
+        "velocity_l2": 0.010098718590768063,
+        "pressure_l2": 0.009233550611776097
+      },
+      {
+        "case": "10",
+        "velocity_l2": 0.011125215970732552,
+        "pressure_l2": 0.007203503002472776
+      },
+      {
+        "case": "11",
+        "velocity_l2": 0.018243826971990527,
+        "pressure_l2": 0.00917361932769152
+      },
+      {
+        "case": "12",
+        "velocity_l2": 0.03533516358885954,
+        "pressure_l2": 0.012444946556101955
+      },
+      {
+        "case": "13",
+        "velocity_l2": 0.020008580888890255,
+        "pressure_l2": 0.015122349003749107
+      },
+      {
+        "case": "14",
+        "velocity_l2": 0.04343207450489879,
+        "pressure_l2": 0.06566878253380837
+      },
+      {
+        "case": "15",
+        "velocity_l2": 0.03262014172843879,
+        "pressure_l2": 0.03322239730348195
+      },
+      {
+        "case": "16",
+        "velocity_l2": 0.07060395069839197,
+        "pressure_l2": 0.11174951999130195
+      },
+      {
+        "case": "17",
+        "velocity_l2": 0.016504639092382766,
+        "pressure_l2": 0.019169429466546255
+      },
+      {
+        "case": "18",
+        "velocity_l2": 0.009312296609293964,
+        "pressure_l2": 0.010429518545949815
+      },
+      {
+        "case": "19",
+        "velocity_l2": 0.018466796073844396,
+        "pressure_l2": 0.010014779220960656
+      },
+      {
+        "case": "20",
+        "velocity_l2": 0.048751607608002685,
+        "pressure_l2": 0.016226327372777877
+      },
+      {
+        "case": "pilot_0",
+        "velocity_l2": 0.003088860818284903,
+        "pressure_l2": 0.0023333478388177847
+      },
+      {
+        "case": "pilot_1",
+        "velocity_l2": 0.01090186139836069,
+        "pressure_l2": 0.003011479235809762
+      },
+      {
+        "case": "pilot_2",
+        "velocity_l2": 0.007337693547851706,
+        "pressure_l2": 0.004622971712619188
+      },
+      {
+        "case": "pilot_3",
+        "velocity_l2": 0.011341348108155989,
+        "pressure_l2": 0.0026459102431051294
+      },
+      {
+        "case": "pilot_4",
+        "velocity_l2": 0.020898623512677513,
+        "pressure_l2": 0.020279011043582314
+      },
+      {
+        "case": "pilot_5",
+        "velocity_l2": 0.00963885982555727,
+        "pressure_l2": 0.004322854664712823
+      },
+      {
+        "case": "pilot_6",
+        "velocity_l2": 0.020542309192118285,
+        "pressure_l2": 0.007689998949288622
+      },
+      {
+        "case": "pilot_7",
+        "velocity_l2": 0.021117216015581218,
+        "pressure_l2": 0.0044155240111588175
+      }
+    ],
+    "saved20": {
+      "velocity_l2_median": 0.01371751694509943,
+      "velocity_l2_max": 0.07060395069839197,
+      "pressure_l2_median": 0.013092908156931208,
+      "pressure_l2_max": 0.11174951999130195
+    },
+    "pilot8": {
+      "velocity_l2_median": 0.01112160475325834,
+      "velocity_l2_max": 0.021117216015581218,
+      "pressure_l2_median": 0.004369189337935821,
+      "pressure_l2_max": 0.020279011043582314
+    }
+  },
+  "verified_snapshots": [
+    {
+      "case": "constant_2e5",
+      "step": 347400,
+      "bytes": 32882188,
+      "sha256": "80d166608b7a1824e5475fe7718583b8f5987d738fb8e7ae3c97d9a2da8bab15",
+      "optimizer": "soap"
+    },
+    {
+      "case": "constant_5e5",
+      "step": 347400,
+      "bytes": 32884202,
+      "sha256": "0ddf8eacf82365bd925b775217c3bd2935b49e69ea00ee4a1d7f7c57552e1a3e",
+      "optimizer": "soap"
+    },
+    {
+      "case": "constant_1e4",
+      "step": 347400,
+      "bytes": 32878915,
+      "sha256": "ed5595f9d7c07bd1e1412c38c0595ac7469ad190a43b49bebedff4e131671253",
+      "optimizer": "soap"
+    },
+    {
+      "case": "constant_2e4",
+      "step": 347400,
+      "bytes": 32884863,
+      "sha256": "da9df02595397fc9fc4b587dd02dbf39f7982fb69a47c3e2a700717fd835a9b9",
+      "optimizer": "soap"
+    },
+    {
+      "case": "cosine_1e4_2e5",
+      "step": 347400,
+      "bytes": 32875871,
+      "sha256": "4688c75a2c33d8bd5fdf0202e010ced944bfb2c4890030ee57c770ecfa16fd52",
+      "optimizer": "soap"
+    }
+  ],
+  "identical_screen_rng_endpoints": true,
+  "extension": {
+    "scope": "Unequal-budget observation; paused, not a completed25k extension",
+    "last_logged_step": 352890,
+    "additional_logged_updates": 5490,
+    "latest_fixed_probe": {
+      "step": 352400,
+      "offset": 5000,
+      "control": 0.012094065546989441,
+      "audit": 0.011901166290044785,
+      "elapsed_seconds": 406.64960674900067
+    },
+    "fem_at_total10000_updates": {
+      "cases": [
+        {
+          "case": "1",
+          "velocity_l2": 0.003095267999859949,
+          "pressure_l2": 0.0036977986678699746
+        },
+        {
+          "case": "2",
+          "velocity_l2": 0.0018498781212740833,
+          "pressure_l2": 0.0032349707304222485
+        },
+        {
+          "case": "3",
+          "velocity_l2": 0.004468056854252953,
+          "pressure_l2": 0.011021416286232556
+        },
+        {
+          "case": "4",
+          "velocity_l2": 0.007028102490479657,
+          "pressure_l2": 0.016909022711231122
+        },
+        {
+          "case": "5",
+          "velocity_l2": 0.010470143177891595,
+          "pressure_l2": 0.004389745827334265
+        },
+        {
+          "case": "6",
+          "velocity_l2": 0.011705843778578803,
+          "pressure_l2": 0.009093627168036631
+        },
+        {
+          "case": "7",
+          "velocity_l2": 0.006978960386208374,
+          "pressure_l2": 0.025755920156252082
+        },
+        {
+          "case": "8",
+          "velocity_l2": 0.014687547870962301,
+          "pressure_l2": 0.021900171363468317
+        },
+        {
+          "case": "9",
+          "velocity_l2": 0.00978633065601493,
+          "pressure_l2": 0.01024617826134863
+        },
+        {
+          "case": "10",
+          "velocity_l2": 0.012249025920893147,
+          "pressure_l2": 0.005931527107140036
+        },
+        {
+          "case": "11",
+          "velocity_l2": 0.018754785503290503,
+          "pressure_l2": 0.011462137876806604
+        },
+        {
+          "case": "12",
+          "velocity_l2": 0.037807081865289124,
+          "pressure_l2": 0.007548386180077183
+        },
+        {
+          "case": "13",
+          "velocity_l2": 0.017191007592416166,
+          "pressure_l2": 0.013568165237243253
+        },
+        {
+          "case": "14",
+          "velocity_l2": 0.04259385990426865,
+          "pressure_l2": 0.055261475303072356
+        },
+        {
+          "case": "15",
+          "velocity_l2": 0.03325541007650057,
+          "pressure_l2": 0.033552235238112293
+        },
+        {
+          "case": "16",
+          "velocity_l2": 0.06598798374046196,
+          "pressure_l2": 0.10861470463602123
+        },
+        {
+          "case": "17",
+          "velocity_l2": 0.01636807571367666,
+          "pressure_l2": 0.0164743629602663
+        },
+        {
+          "case": "18",
+          "velocity_l2": 0.009486605518784523,
+          "pressure_l2": 0.013125609755633188
+        },
+        {
+          "case": "19",
+          "velocity_l2": 0.018305975031841663,
+          "pressure_l2": 0.010018480206169725
+        },
+        {
+          "case": "20",
+          "velocity_l2": 0.04710244040297191,
+          "pressure_l2": 0.01383647504967377
+        },
+        {
+          "case": "pilot_0",
+          "velocity_l2": 0.0035949135442223867,
+          "pressure_l2": 0.003645851031645984
+        },
+        {
+          "case": "pilot_1",
+          "velocity_l2": 0.010859393725535432,
+          "pressure_l2": 0.002738842731368284
+        },
+        {
+          "case": "pilot_2",
+          "velocity_l2": 0.006421314231812672,
+          "pressure_l2": 0.006319565198682548
+        },
+        {
+          "case": "pilot_3",
+          "velocity_l2": 0.008973384757060528,
+          "pressure_l2": 0.007322950738835392
+        },
+        {
+          "case": "pilot_4",
+          "velocity_l2": 0.022890175548416946,
+          "pressure_l2": 0.02136677882593245
+        },
+        {
+          "case": "pilot_5",
+          "velocity_l2": 0.009462048155836704,
+          "pressure_l2": 0.005406857407629304
+        },
+        {
+          "case": "pilot_6",
+          "velocity_l2": 0.018830629671829562,
+          "pressure_l2": 0.01139364461285783
+        },
+        {
+          "case": "pilot_7",
+          "velocity_l2": 0.023001309424927407,
+          "pressure_l2": 0.004029981594235179
+        }
+      ],
+      "saved20": {
+        "velocity_l2_median": 0.013468286895927724,
+        "velocity_l2_max": 0.06598798374046196,
+        "pressure_l2_median": 0.012293873816219896,
+        "pressure_l2_max": 0.10861470463602123
+      },
+      "pilot8": {
+        "velocity_l2_median": 0.010160720940686069,
+        "velocity_l2_max": 0.023001309424927407,
+        "pressure_l2_median": 0.005863211303155926,
+        "pressure_l2_max": 0.02136677882593245
+      }
+    }
+  },
+  "budget": {
+    "screens": 25000,
+    "extension_at_least": 5490,
+    "total_at_least": 30490,
+    "remaining_at_most": 19510,
+    "uncertainty": "Logs every10 updates; live paused state may include up to9 further unlogged updates."
+  }
+}

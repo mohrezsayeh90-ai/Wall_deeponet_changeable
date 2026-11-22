@@ -1,8 +1,11 @@
 {
-  "phase": "running",
+  "phase": "paused_for_analysis",
   "active_case": "constant_1e4_extend25k",
   "completed_updates": 25000,
   "budget": 50000,
   "case_target": 25000,
-  "case_anchor": 347400
+  "case_anchor": 347400,
+  "consumed_updates_lower_bound": 30490,
+  "last_logged_step": 352890,
+  "reason": "Five equal-budget screens analysed; unconditional extension remains paused; no replacement run authorized by this analysis"
 }

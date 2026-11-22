@@ -1,5 +1,7 @@
 # SOAP learning-rate study:50000 total parameter updates
 
+**Five equal-budget screens completed; unconditional extension paused. [Comparison, FEM regressions and conclusion](comparison/README.md).** At least30490 updates were consumed before the user rejected the unconditional allocation. No200k run or reallocated extension has been launched. The original plan below describes the setup history, not current authorization to resume the paused worker.
+
 User authorized a50000-update experiment before choosing a200000-update continuation. Restore the latest **available** complete checkpoint342400, SHA256 `b49cc0e7c38809a5fe9f9913ae24c35563c6d8c5287af0bfe0aec283a7522018`. The missing422400 model cannot be used; its cached plot is not a checkpoint. This tunes continuation of an already-trained operator, not the best LR for training from scratch.
 
 ## Why test1e-4 instead of assuming it is best?

@@ -1,0 +1,15 @@
+{
+  "reason": "User rejected unconditional25k extension; inspect matched screens before allocating remaining budget",
+  "paused_pids": [
+    2544,
+    14925
+  ],
+  "observed_status": {
+    "phase": "running",
+    "active_case": "constant_1e4_extend25k",
+    "completed_updates": 25000,
+    "budget": 50000,
+    "case_target": 25000,
+    "case_anchor": 347400
+  }
+}

@@ -8,6 +8,7 @@ def _rows(_p):
  return [json.loads(x) for x in _p.read_text().splitlines()] if _p.exists() else []
 _names=['constant_1e4','constant_2e5','constant_5e5','constant_2e4','cosine_1e4_2e5','constant_1e4_extend25k']
 _s=_read(_r/'status.json');_active=_s.get('active_case','constant_1e4');_a=_read(_r/_active/'status.json');_fail=_read(_r/'failure.json');_budget=_s.get('completed_updates',0)+(_a.get('offset',0) if _s.get('phase')=='running' else 0)
+_budget=max(_budget,_s.get('consumed_updates_lower_bound',0))
 _header=mo.md(f'''## آزمون ۵۰هزارگامی نرخ SOAP
 **وضعیت:** {_s.get('phase','آماده‌سازی')} · **حالت فعال:** {_active} · **گام حالت:** {_a.get('step',342400):,}
 
