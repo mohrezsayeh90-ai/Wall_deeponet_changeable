@@ -1,0 +1,49 @@
+{
+  "case": "P3_T4",
+  "tau": 1.8,
+  "target": 0.6666666666666666,
+  "model_exit": 0.666665866253206,
+  "geometry": {
+    "min_gap": 0.8426976903665839,
+    "max_gap": 1.0,
+    "center_deviation": 0.13753859972997518,
+    "max_slope": 0.2811264010766529,
+    "max_curvature": 4.012771584092336
+  },
+  "fem": {
+    "coarse": {
+      "exit_y": 0.6528407594661068,
+      "time": 4.835632969426193,
+      "clearance": 0.3390614222799102,
+      "status": "exited",
+      "solver": {
+        "nx": 48,
+        "ny": 16,
+        "iterations": 50,
+        "algebraic_residual": 4.839225539190602e-09,
+        "seconds": 6.744959336999955,
+        "velocity_dofs": 6402,
+        "pressure_dofs": 833,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      }
+    },
+    "fine": {
+      "exit_y": 0.6528880094731119,
+      "time": 4.835320881154442,
+      "clearance": 0.33899937898495913,
+      "status": "exited",
+      "solver": {
+        "nx": 72,
+        "ny": 24,
+        "iterations": 50,
+        "algebraic_residual": 3.2753874218624628e-09,
+        "seconds": 26.79807662899998,
+        "velocity_dofs": 14210,
+        "pressure_dofs": 1825,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      }
+    }
+  },
+  "model_clearance": 0.3248030794134976,
+  "mesh_exit_difference": 4.725000700511739e-05
+}

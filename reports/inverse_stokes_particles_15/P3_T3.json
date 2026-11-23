@@ -1,0 +1,52 @@
+{
+  "case": "P3_T3",
+  "tau": 1.8,
+  "target": 0.5,
+  "model_exit": 0.5013180412951858,
+  "geometry": {
+    "min_gap": 1.0,
+    "max_gap": 1.0,
+    "center_deviation": 0.0,
+    "max_slope": 0.0,
+    "max_curvature": 0.0
+  },
+  "fem": {
+    "coarse": {
+      "exit_y": 0.5,
+      "time": 5.02282586210402,
+      "clearance": 0.5,
+      "status": "exited",
+      "solver": {
+        "nx": 48,
+        "ny": 16,
+        "iterations": 47,
+        "algebraic_residual": 2.9501751895958096e-10,
+        "seconds": 3.936126026000011,
+        "velocity_dofs": 6402,
+        "pressure_dofs": 833,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      }
+    },
+    "fine": {
+      "exit_y": 0.49999999999999933,
+      "time": 5.022825862104005,
+      "clearance": 0.49999999999999933,
+      "status": "exited",
+      "solver": {
+        "nx": 72,
+        "ny": 24,
+        "iterations": 47,
+        "algebraic_residual": 1.9755281309912823e-10,
+        "seconds": 19.499781149,
+        "velocity_dofs": 14210,
+        "pressure_dofs": 1825,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      }
+    }
+  },
+  "model_clearance": 0.49868195870481424,
+  "mesh_exit_difference": 6.661338147750939e-16,
+  "design_method": "DeepONet; checked by two FEM meshes",
+  "initial_deeponet_exit": 0.5013180412951858,
+  "initial_fem_fine_exit": 0.49999999999999933
+}

@@ -1,5 +1,7 @@
 # Geometry-conditioned physics-informed DeepONet
 
+**طراحی معکوس خروج ذرات — ۱۵ حالت ذخیره شد:** سه ذره با درگ استوکس و پنج هدف خروجی در Re=30، با وزن گام ۴۴۲٬۴۰۰. شکل تجمیعی خروجی را به شش قسمت تقسیم می‌کند. هر ۱۵ طرح نهایی در FEM با معیار ۱٪ عرض خروجی قبول شدند؛ ۹ طرح مستقیماً و ۶ طرح پس از اصلاح با FEM درشت. [گزارش و محدودیت‌ها](reports/inverse_stokes_particles_15/README.md) · [شکل تجمیعی](reports/inverse_stokes_particles_15/all_15_designs.png) · [PDF](reports/inverse_stokes_particles_15/designs_and_trajectories.pdf) · [جدول خطاها](reports/inverse_stokes_particles_15/results.csv) · [دانلود کامل](reports/inverse_stokes_particles_15/inverse_particle_results.zip).
+
 **ران تا گام۴۴۲٬۴۰۰ کامل و آرشیو شد:** همهٔ۲۱وزن دوره‌ایِ ران اخیر، وضعیت کامل SOAP،۵۰۰۱رکورد آموزش،۵۱ارزیابی ثابت و۲۲ارزیابی مستقل FEM محفوظ‌اند. موجودی۳۰۹فایل خروجی سه اجرای اخیر با Molab تطبیق داده شد و محتوای مفقودی ندارد. [دانلود وزن نهایی، همهٔ نتایج، نمودارها و نوت‌بوک](reports/molab_soap_warmcos50k/completed/README.md). وزن‌های قبلی حفظ شده‌اند.
 
 **ران جدید ۵۰هزارگامی SOAP با کسینوسی `1e-3 → 1e-4` شروع شد:** از همان وزن مشترک **۳۴۲٬۴۰۰**، محور مقایسه از صفر، هدف **۳۹۲٬۴۰۰** و batch32. منحنی جدید روی نمودارهای قبلی اضافه شد. ارزیاب جداگانه، خطای FEM را برای ۲۰ کانال داخل محدوده، شامل گروه ۱۲تایی با انحنای بیشتر، نمایش می‌دهد؛ جواب FEM وارد آموزش یا تنظیم نرخ نمی‌شود. [تنظیمات و جداسازی ارزیابی](reports/molab_soap_highlr50k/README.md) · [وزن‌ها و خطاهای دوره‌ای](artifacts/molab/soap-highlr50k-v1/).

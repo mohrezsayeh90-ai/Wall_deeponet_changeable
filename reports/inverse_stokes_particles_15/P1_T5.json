@@ -1,0 +1,71 @@
+{
+  "case": "P1_T5",
+  "tau": 0.75,
+  "target": 0.8333333333333334,
+  "model_exit": 0.8077241084249016,
+  "geometry": {
+    "min_gap": 0.6265937647623441,
+    "max_gap": 1.0,
+    "center_deviation": 0.3264916635905181,
+    "max_slope": 0.660302433984122,
+    "max_curvature": 9.384477275021833
+  },
+  "fem": {
+    "coarse": {
+      "exit_y": 0.8330203311034949,
+      "time": 3.6364085233158363,
+      "clearance": 0.1439889819073148,
+      "status": "exited",
+      "solver": {
+        "nx": 48,
+        "ny": 16,
+        "iterations": 55,
+        "algebraic_residual": 8.513251852544409e-09,
+        "seconds": 5.641135176000034,
+        "velocity_dofs": 6402,
+        "pressure_dofs": 833,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      }
+    },
+    "fine": {
+      "exit_y": 0.8332905566915377,
+      "time": 3.635572389981646,
+      "clearance": 0.14379362254507333,
+      "status": "exited",
+      "solver": {
+        "nx": 72,
+        "ny": 24,
+        "iterations": 55,
+        "algebraic_residual": 5.909354068024781e-09,
+        "seconds": 16.383231396000156,
+        "velocity_dofs": 14210,
+        "pressure_dofs": 1825,
+        "outlet": "du_dx/Re-p=0,dv_dx/Re=0"
+      }
+    }
+  },
+  "model_clearance": 0.16865014250507954,
+  "mesh_exit_difference": 0.00027022558804279395,
+  "design_method": "DeepONet initial design; amplitude tuned on coarse FEM",
+  "refinement_trials": [
+    [
+      0.0,
+      0.5
+    ],
+    [
+      1.0,
+      0.8550182615850702
+    ],
+    [
+      0.9389188371468022,
+      0.8199611431437267
+    ],
+    [
+      0.9622176410128965,
+      0.8330203311034949
+    ]
+  ],
+  "refinement_scale": 0.9622176410128965,
+  "initial_deeponet_exit": 0.8333333344543611,
+  "initial_fem_fine_exit": 0.8551843998440051
+}
